@@ -1,0 +1,99 @@
+@import "var";
+body{
+  font: normal 14px/1.5 Arial,STHeiti, Microsoft YaHei, simsun, Helvetica, sans-serif;
+  color: @def;
+  background-color: #e1e3e2;
+  &.index{
+    background-color: @d_blue;
+    color: @white;
+  }
+}
+div{
+  &.container{
+    width: 990px;
+    margin: 50px auto 0 auto;
+    padding-bottom: 30px;
+  }
+}
+
+input, button{
+  font-family: Arial,STHeiti, Microsoft YaHei, simsun, Helvetica, sans-serif;
+}
+
+header{
+  background-color: @green;
+  border-bottom: 2px solid #fff;
+  overflow: hidden;
+  zoom: 1;
+
+  .header{
+    width: 990px;
+    height: 46px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    float: left;
+    margin-top: 11px;
+  }
+
+  p {
+    color: #fff;
+
+    &.name{
+      float: left;
+      padding-top: 17px;
+
+      em{
+        margin: 0 3px 0 10px;
+        vertical-align: 1px;
+      }
+    }
+
+    &.download{
+      float: right;
+      padding-top: 17px;
+      a{
+        color: #fff;
+        text-shadow: 0px 0px 2px #c3c3c3;
+      }
+    }
+  }
+}
+
+footer {
+    width: 100%;
+    min-width: 990px;
+    margin-top: 20px;
+    background-color: #576273;
+    nav {
+        text-align: center;
+        a {
+            display: inline-block;
+            color: #fff;
+            margin: 35px 30px 22px 0;
+            &.micro_message {
+                position: relative;
+                i {
+                    display: none;
+                }
+                &:hover {
+                    i {
+                        position: absolute;
+                        top: -240px;
+                        left: -70px;
+                        display: inline-block;
+                        width: 202px;
+                        height: 232px;
+                        background: url(../images/footer_weixin_hover.png) no-repeat center;
+                    }
+                }
+            }
+        }
+    }
+    p {
+        padding-bottom: 34px;
+        text-align: center;
+        color: @grey_99;
+    }
+}

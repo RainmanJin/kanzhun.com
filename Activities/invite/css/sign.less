@@ -1,0 +1,52 @@
+@import "module/reset";
+@import "common/var";
+
+
+body{
+  background: url("@{img-path}/page4.jpg") no-repeat  #9db9d6;
+}
+
+.content{
+  width: 100%;
+  text-align: center;
+  .addr{
+    width: 90%;
+  }
+
+  @media screen and (min-height: 480px){
+    .addr{
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
+}
+
+.sign_wrap{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 74%;
+  .wrap{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border:1px solid #bfd1e4;
+    border-radius: 20px;
+
+    .sign{
+      width:96%;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 8px 0px;
+      color: #739fd0;
+      display: block;
+      font-size: 20px;
+    }
+  }
+
+  img{
+    width: 40%;
+    margin-top: 10px;
+  }
+}

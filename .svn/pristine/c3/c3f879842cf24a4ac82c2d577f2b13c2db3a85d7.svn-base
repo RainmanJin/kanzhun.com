@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>公司工资</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../../../v2/css/widget.css">
+  <link rel="stylesheet" href="../../../v2/css/ugc/ugc-main.css">
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <!--<script src="/js/require.js" data-main="/v2/js/company/view.js"></script>-->
+</head>
+
+<body class="field_bg">
+<header class="global">
+  <div class="header">
+    <a ka="head-index" href="/" class="logo"><img src="/images/logo.png" width="136" height="40"></a>
+    <nav>
+      <a ka="head-com" href="/gs.html">公司</a>
+      <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+      <a ka="head-recruit" href="/job/">招聘</a>
+      <a ka="head-interview" href="/msh/">面试</a>
+      <a ka="head-news" target="_blank" href="/news/">资讯</a>
+      <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+    </nav>
+    <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+  </div>
+</header>
+
+<div class="container-ugc clearfix">
+  <div class="ugc-con-l">
+    <div class="ugc-main">
+      <p class="ugc-begin">您要发布一条：</p>
+
+      <div class="ugc-main-tabs">
+        <ul class="u-m-selector">
+          <li><a href="/v2/ejs/ugc/main-review">公司点评</a></li>
+          <li><a href="/v2/ejs/ugc/main-interview">面试经验</a></li>
+          <li class="current"><a href="/v2/ejs/ugc/main-salary">工资信息</a></li>
+          <li><a href="/v2/ejs/ugc/main-photo">公司照片</a></li>
+        </ul>
+
+        <div class="u-m-panel">
+          <figure>
+            <img src="/images/blank.gif" class="f-salary">
+            <p>匿名发布您的面试经历。 <br/>
+              真实的记录面试感受。</p>
+          </figure>
+
+          <p class="f_18">就职的公司：</p>
+
+          <ul class="u-m-form-control pt15">
+            <li class="col-label-4">
+              <label>公司简称</label>
+              <input type="text" class="ifd err" placeholder="请输入，如“百度”">
+            </li>
+            <li class="col-label-4">
+              <label>所在城市</label>
+              <input type="text" class="ifd" placeholder="请输入，如“北京”">
+              <p class="err"><i></i>还没有输入所在城市</p>
+            </li>
+            <li class="col-label-4">
+              <label>当前状态</label>
+              <button class="radio radio-checked" type="button">在职 <i></i></button><button class="radio" type="button">离职</button>
+            </li>
+            <li class="col-label-4">
+              <label>入职年份</label>
+              <dl class="select select_s">
+                <dt>
+                  <input type="hidden" name="workBeginDateYear" value="请选择" class="v" data-necessary="1">
+                  <input type="button" value="年" readonly="readonly"><span class="btn"><i></i></span>
+                </dt>
+                <dd>
+                  <a href="javascript:;" rel="nofollow" data-val="2015">2015年</a>
+                  <a href="javascript:;" rel="nofollow" data-val="2014">2014年</a>
+                </dd>
+              </dl>
+            </li>
+            <li class="col-label-4">
+              <label>离职年份</label>
+              <dl class="select select_s">
+                <dt>
+                  <input type="hidden" name="workBeginDateYear" value="请选择" class="v" data-necessary="1">
+                  <input type="button" value="年" readonly="readonly"><span class="btn"><i></i></span>
+                </dt>
+                <dd>
+                  <a href="javascript:;" rel="nofollow" data-val="2015">2015年</a>
+                  <a href="javascript:;" rel="nofollow" data-val="2014">2014年</a>
+                </dd>
+              </dl>
+            </li>
+            <li class="col-label-4">
+              <label>职位名称</label>
+              <input type="text" class="ifd" placeholder="请输入，如“产品经理”">
+            </li>
+            <li class="col-label-4 col-btn-3">
+              <label>工作性质</label>
+              <button class="radio radio-checked" type="button">全职 <i></i></button><button class="radio" type="button">兼职</button><button class="radio" type="button">实习</button>
+            </li>
+            <li class="col-label-4">
+              <label></label>
+              <input class="ugc-orange-btn" type="submit" value="选好了，去发布">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ugc-con-r">
+  <div class="ugc-anonymous">
+    <img src="/images/v2/ugc-r-msg.gif" width="262" height="475">
+  </div>
+
+  <div class="ugc-notice">
+    <p class="f_16 mb15"><i></i>温馨提示</p>
+    <p class="grey_66">
+      看准网非常珍视您贡献的每条信息，我们对所有信息都会进行审核，审核通过后正式发布。但是如果您发布的评论中含有如下内容，我们将会予以删除：
+      <ul>
+        <li>包含侮辱、攻击性、低俗、辱骂或不文明用语；</li>
+        <li>涉及隐私披露，指名道姓；</li>
+        <li>含有完全不相关，大量标题，无逻辑堆砌而成的内容等。</li>
+      </ul>
+    </p>
+  </div>
+</div>
+</div>
+</body>
+</html>

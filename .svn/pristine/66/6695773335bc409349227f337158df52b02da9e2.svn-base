@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>DEMO</title>
+  <link rel="stylesheet" href="css/secret.css">
+</head>
+<body class="grey-body">
+
+<div class="search-job">
+  <strong>产品经理</strong>
+  <span>共9112条工资</span>
+</div>
+
+<ul class="search-ret">
+  <li>
+    <a href="#">
+      <p>
+        <em>产品经理</em>
+        <span><b>257</b> 条</span>
+      </p>
+      <strong>￥17,400 <i></i></strong>
+    </a>
+  </li>
+
+  <li>
+    <a href="#">
+      <p>
+        <em>产品经理</em>
+        <span><b>257</b> 条</span>
+      </p>
+      <strong>￥17,400 <i></i></strong>
+    </a>
+  </li>
+
+  <li>
+    <a href="#">
+      <p>
+        <em>产品经理</em>
+        <span><b>257</b> 条</span>
+      </p>
+      <strong>￥17,400 <i></i></strong>
+    </a>
+  </li>
+</ul>
+</body>
+</html>
+
+

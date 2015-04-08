@@ -1,0 +1,9 @@
+/**
+ * Created by zhuchongyue on 2015/3/13.
+ */
+$(function(){
+    $('.btn').bind('click',function(){
+       var result = $(this).index() + 1;
+        $('#')[0].value = result;
+    });
+});

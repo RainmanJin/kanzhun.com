@@ -1,0 +1,35 @@
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+ul.progress {
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+ul.progress li.step {
+  width: 646px;
+  height: 32px;
+  background-image: url(../images/v2/progress_bar_v2.png);
+  background-repeat: no-repeat;
+}
+ul.progress li.onestep {
+  background-position: left top;
+}
+ul.progress li.twostep {
+  background-position: left -37px;
+}
+ul.progress li.threestep {
+  background-position: left -74px;
+}
+ul.progress li.words {
+  margin-top: 5px;
+}
+ul.progress em {
+  display: inline-block;
+  width: 209px;
+  text-align: center;
+}
+ul.progress em.current {
+  color: #7cb228;
+}

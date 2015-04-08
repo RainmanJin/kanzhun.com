@@ -1,0 +1,275 @@
+@import "../../common/var";
+
+//点评详情列表模块
+dl.review_detail {
+  overflow: hidden;
+  *zoom: 0;
+
+  & > dt {
+    float: left;
+    position: relative;
+
+    img {
+      width: 56px;
+      height: 56px;
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 56px;
+      height: 56px;
+      background: url(../images/positionimgs/po_imgs1.png) no-repeat left top;
+    }
+  }
+
+  & > dd {
+    margin-left: 70px;
+
+    &.i_tt {
+      overflow: hidden;
+      *zoom: 1;
+
+      p {
+        float: right;
+
+        span.grade_star {
+          vertical-align: -2px;
+        }
+
+        i {
+          &.hands {
+            display: inline-block;
+            overflow: hidden;
+            line-height: 0;
+            font-size: 0;
+            width: 18px;
+            height: 18px;
+            background-image: @icons;
+            background-repeat: no-repeat;
+          }
+          
+          &.support {
+            background-position: -25px -265px; 
+          }
+
+          &.nosupport {
+            background-position: -51px -266px;
+            vertical-align: -5px; 
+          }
+        }
+      }
+
+      em.positoninfo {
+        display: inline-block;
+        .ellipsis(ellipsis);
+        width: 330px;
+        padding-top: 4px;
+        line-height: 1em;
+      }
+    }
+    
+    &.i_con {
+      position: relative;
+      padding: 15px;
+      border: 1px solid @grey_e7;
+      border-radius: 5px;
+
+      & > span {
+        &.doubletriangle {
+          position: absolute;
+          width: 0;
+          height: 0;
+          line-height: 0;
+          font-size: 0;
+          overflow: hidden;
+        }
+
+         &.triangleEdge {
+          left: -10px;
+          top: 10px;
+          border-width: 10px 10px 10px 0;
+          border-style: dashed solid;
+          border-color: transparent @grey_e7 transparent  transparent; 
+        }
+        
+        &.triangleCon {
+          left: -9px;
+          top: 10px;
+          border-width: 10px 10px 10px 0;
+          border-style: dashed solid;
+          border-color: transparent #fff transparent  transparent; 
+        } 
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      div.over_evaluation {
+        overflow: hidden;
+        *zoom: 1;
+
+        ul {
+          float: left;
+          width: 360px;
+          margin-bottom: 5px;
+          border-right: 1px solid #d7e8be;
+          overflow: hidden;
+          *zoom: 1;
+
+          li {
+            float: left;
+            width: 170px;
+            padding-bottom: 10px;
+            color: @grey_99;
+          }
+        }
+
+        p {
+          margin: 0 0 5px 380px;
+
+          &.future {
+            overflow: hidden;
+
+            em {
+              display: block;
+              padding-left: 24px;
+            }
+            
+          }
+
+          i.notgood {
+            float: left;
+            display: inline-block;
+            overflow: hidden;
+            line-height: 0;
+            font-size: 0;
+            width: 14px;
+            height: 14px;
+            background: @icons no-repeat -25px -287px;
+            vertical-align: -2px;
+            margin: 3px 10px 0 0;
+
+            &.rise {
+              background-position: -47px -287px;
+            }
+
+            &.smooth {
+              background-position: -69px -287px;
+            }
+          }
+        }
+      }
+
+      p.comments {
+        em.line {
+          color: @grey_e7;
+        }
+      }
+
+      div.i_filterblur {
+        height: 200px;
+        background: url(../images/positionimgs/po_imgs3.jpg) no-repeat left center;
+        padding-top: 1px;
+
+        div {
+          &.nologin {
+            margin-top: 25px;
+          }
+
+          &.send_info {
+            width: 260px;
+            margin: 0 auto;
+            padding: 20px 0 20px 120px;
+            text-align: center;
+            border: 1px solid #cfcfcf;
+            background: #fff url(../images/ugc_interrupt.jpg) no-repeat 15px bottom;
+
+            p {
+              &.tt {
+                padding-bottom: 5px;
+              }
+            }
+          }
+
+          &.login_register {
+            width: 350px;
+            margin: -6px auto 0 auto;
+            padding: 20px 0 0 0;
+            background-color: #fff;
+            border: 1px solid #cfcfcf;
+
+             h5 {
+              font-weight: normal;
+              font-size: 14px;
+              text-align: center;
+            } 
+
+            ul {
+              padding-left: 16px;
+            }
+
+            li {
+              &.l_other {
+                height: 90px;
+                margin: 15px 0 5px 0;
+                background: url(../images/ugc_interuptline.jpg) no-repeat right center;
+
+                a {
+                  display: inline-block;
+                  position: relative;
+                  width: 46px;
+                  font-size: 0;
+                  height: 46px;
+                  border-radius: 30px;
+                  background-color: #f2f2f2;
+                  text-align: center;
+                  margin-right: 10px;
+                  .transition(top .3s ease);
+                
+                  i{
+                    display: inline-block;
+                    height: 23px;
+                    margin-top: 11px;
+                    background-image: url(../images/auth.png);
+                    background-repeat: no-repeat;
+                
+                    &.qq{
+                      background-position: -63px 0;
+                      width: 22px;
+                    }
+                
+                    &.rr{
+                      background-position: -87px 0;
+                      width: 23px;
+                    }
+                
+                    &.wb{
+                      background-position: -114px 0;
+                      width: 29px;
+                    }
+                  }
+                
+                  &:hover{
+                    top: -2px;
+                  }
+                }
+              }
+
+              &.options {
+                padding-top: 45px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+

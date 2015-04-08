@@ -1,0 +1,362 @@
+//面试筛选+打断
+
+@import "../../../../css/common/var";
+@import "../../var";
+
+//面试按条件搜索
+dl.conditional_search {
+  padding-right: 15px;
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color: #f6f6f6;
+
+  dt {
+    float: right;
+    //width: 327px;
+    height: 36px;
+    padding: 12px 0;
+
+    input.v_s_field {
+      width: 312px;
+      height: 15px;
+      line-height: 15px;
+      border: 1px solid #cccccc;
+      border-width: 2px 1px 1px 2px;
+      padding: 9px;
+      vertical-align: middle;
+    }
+
+    span.btn_grey_l {
+      display: inline-block;
+      width: 94px;
+      height: 34px;
+      line-height: 34px;
+      padding: 0;
+      border-color: #cccccc;
+      border-left-width: 0;
+      vertical-align: middle;
+
+      input {
+        padding: 0;
+        width: 94px;
+        text-align: center;
+        height: 34px;
+        line-height: 34px;
+      }
+    }
+  }
+
+  dd {
+    //margin-right: 505px;
+
+    a {
+      //float: left;
+      display: block;
+      border-width: 0 1px 0 0;
+      border-style: solid;
+      border-color: #f0f0f0;
+      width: 93px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      background: url("@{img}/view_v2-img/search_bg.jpg") no-repeat center;
+      color: @grey_66;
+      font-size: 16px;
+
+      span {
+        display: inline-block;
+      }
+
+      &.current {
+        color: @grey_33;
+        background: #ffffff url('');
+        border-bottom-color: #ffffff;
+
+        span {
+          width: 95px;
+          margin: -1px -1px 0 -1px;
+          border-top: 2px solid #7cb228;
+        }
+      }
+    }
+  }
+}
+//搜索条件详情
+dl.c_s_detail {
+  /*overflow: hidden;
+  zoom: 1;*/
+  border-bottom: 1px dashed #e3e3e3;
+
+  dt {
+    float: left;
+    width: 78px;
+    height: 42px;
+    line-height: 42px;
+    text-align: left;
+    color: @grey_66;
+  }
+
+  dd {
+    margin-left: 78px;
+    padding: 10px 0;
+    /*height: 22px;
+    overflow: hidden;*/
+
+    a {
+      display: inline-block;
+      height: 22px;
+      line-height: 22px;
+      margin-right: 0;
+     // margin-bottom: 10px;
+      padding: 0 6px;
+      color: @grey_66;
+      white-space: nowrap;
+
+      span{
+        font-size: 12px;
+        vertical-align: middle;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: @green;
+
+        span {
+          color: @green;
+        }
+      }
+
+      &.current {
+        //background-color: @green;
+        color: @green;
+        //border-radius: 2px;
+
+        span {
+          color: @green;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.has_spread {
+      position: relative;
+    }
+
+    &.put_away {
+      height: 22px;
+      overflow: hidden;
+      zoom: 1;
+      padding-right: 50px;
+
+      a {
+        margin-bottom: 10px;
+      }
+    }
+
+    &.show-all{
+      height: auto;
+      overflow: visible;
+    }
+
+    aside {
+      position: absolute;
+      width: 50px;
+      right: 0;
+      top: 11px;
+      cursor: pointer;
+
+      /*div.C-toggler {
+        i {
+          border-top-color: @grey_99;
+        }
+      }
+
+      div.C-toggler {
+        &.active {
+          i {
+            border-bottom-color: @grey_99;
+          }
+        }
+      }*/
+
+
+      /*&:hover {
+        color: @green;
+
+        div.C-toggler {
+          i {
+            border-top-color: @green;
+          }
+        }
+
+        div.C-toggler {
+          &.active {
+            i {
+              border-bottom-color: @green;
+            }
+          }
+        }
+      }*/
+    }
+  }
+
+  &.boborder {
+    border-bottom: none;
+  }
+}
+
+dl.solid_border {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #e3e3e3;
+}
+div.cmp_images {
+  position: relative;
+  padding: 25px 50px 10px 0;
+
+  aside {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+}
+span.cmp_images {
+  display: inline-block;
+  padding: 0 15px 0 5px;
+  height: 22px;
+  line-height: 22px;
+  color: @grey_33;
+  background: #f6f6f6 url("@{img}/view_v2-img/tags_bg.jpg") no-repeat right center;
+
+}
+//搜索条件中展示
+dl.c_s_show {
+  overflow: hidden;
+  zoom: 1;
+
+  dt {
+    float: right;
+    height: 58px;
+    line-height: 58px;
+
+    .a_checkbox{
+      color: @grey_66;
+      margin-right: 20px;
+
+      .input_checkbox{
+        margin-left: 10px;
+        vertical-align: -3px;
+
+        i {
+          float: left;
+          margin: 3px 0 0 2px;
+        }
+
+        &.current {
+          border-color: @green;
+          color: @green;
+        }
+      }
+      &:hover{
+        text-decoration: none;
+      }
+
+      &.green {
+        color: @green;
+      }
+    }
+
+    a.bank_btn {
+      display: inline-block;
+      padding: 0 5px;
+      height: 20px;
+      line-height: 22px;
+      border: 1px solid #e0e0e0;
+      color: @grey_66;
+      font-size: 12px;
+      border-radius: 2px;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &.current {
+        background-color: @green;
+        color: #ffffff;
+        border-color: @green;
+      }
+    }
+  }
+
+  dd {
+    height: 58px;
+    line-height: 58px;
+    color: @grey_33;
+    font-size: 16px;
+
+    a {
+      color: @grey_33;
+      font-size: 16px;
+    }
+  }
+}
+
+dd.co-searched-options{
+  padding: 20px;
+
+  span {
+    display: inline-block;
+    padding: 0 0 0 8px;
+    height: 22px;
+    line-height: 22px;
+    background-color: @green;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-right: 10px;
+
+    i {
+      vertical-align: -1px;
+    }
+  }
+}
+
+dl.co-break{
+  padding: 22px 0;
+
+  .blue{
+    color: #2c84cc;
+  }
+
+  dd{
+    padding-top: 5px;
+    position: relative;
+
+    h2 {
+      height: 42px;
+      line-height: 42px;
+      padding: 0;
+
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .yellow_btn{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    padding: 0 25px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+
+    &:hover{
+      color: #fff;
+    }
+  }
+}

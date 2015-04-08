@@ -1,0 +1,31 @@
+dl.co_info {
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+}
+dl.co_info dt {
+  float: left;
+  margin-right: 10px;
+}
+dl.co_info dt img {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+dl.co_info dd {
+  line-height: 1.2;
+}
+dl.co_info h1 {
+  font-size: 18px;
+  line-height: 1.4;
+}
+dl.co_info p {
+  color: #999999;
+}
+dl.co_info.detail_head img {
+  width: 44px;
+  height: 44px;
+  border: 0;
+}

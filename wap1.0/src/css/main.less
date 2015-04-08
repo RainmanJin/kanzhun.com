@@ -1,0 +1,867 @@
+@import "common/var";
+@import "module/barrage";
+@import "module/dialog";
+@import "module/comment";
+@import "module/company/pk";
+@icons: url(../images/icons.png) no-repeat;
+//default font size 16px
+//arrows
+i{
+	&.arrow_g{
+		width: 8px;
+		height: 12px;
+		display: inline-block;
+		font-size: 0;
+		background: transparent @icons 0 -22.5px;
+		.background-size(22px);
+	}
+
+	&.arrow_green{
+		width: 8px;
+		height: 12px;
+		display: inline-block;
+		font-size: 0;
+		background: transparent @icons -14.5px -22.5px;
+		.background-size(22px);
+	}
+}
+
+//buttons
+.btn_grey{
+	.box-shadow(0 1px 2px #ccc);
+	display: block;
+	text-align: center;
+	border: 1px solid #a8a8a8;
+	background-color: #e7e7e7;
+	background: linear-gradient(0deg, #e7e7e7 0%, #f9f9f9 100%);
+	font-size: 1em;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 0 10px;
+}
+
+
+
+
+
+.channel{
+	padding: 30px 20px 0;
+	height: 127px;
+	background: url(../images/bg.jpg) no-repeat 0 0;
+	.background-size(100% auto);
+
+	nav{
+		padding: 9px 0;
+		text-align: center;
+		color: #fff;
+		text-shadow:0 0 6px #000;
+
+		a{
+			color: #fff;
+			margin: 0 8px;
+
+			&.current{
+				font-weight: 800;
+				text-shadow: 0 0 10px #000;
+				color: @green;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+
+.search{
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #bfbfbf;
+	padding: 10px 40px 10px 0.5em;
+	position: relative;
+
+	input{
+		&[type=text]{
+			display: block;
+			border: 0;
+			width: 100%;
+			font-size: 1em;
+		}
+
+		&[type=submit]{
+			position: absolute;
+			width: 22px;
+			height: 22px;
+			border: 0;
+			background: transparent @icons;
+			.background-size(22px);
+			right: 1em;
+			top: 50%;
+			margin-top: -11px;
+		}
+	}
+}
+
+ul.v_menu{
+	margin: 10px 10px 0;
+	overflow: hidden;
+
+	li{
+		padding: 10px;
+		margin-bottom: 10px;
+		background-color: #fff;
+		font-size: 16px;
+		position: relative;
+
+		a{
+			display: block;
+			padding-right: 15px;
+		}
+
+		i{
+			margin-top: 6px;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			margin-top: -6px;
+		}
+	}
+}
+
+ul.hot_jobs{
+	font-size: 14px;
+
+	.grey{
+		font-size: 12px;
+	}
+
+	em{
+		color: #ccc;
+		margin: 0 0px;
+	}
+
+	li.co{
+		overflow: hidden;
+
+		
+		p{
+			margin-left: 55px;
+		}
+
+		span.l{
+			border: 1px solid #cfcfcf;
+			padding: 1px;
+			float: left;
+			width: 45px;
+			height: 45px;
+			line-height: 45px;
+			font-size: 0;
+		}
+		img{
+			width: 45px;
+			vertical-align: middle;
+		}
+	}
+}
+ul.salary_detail{
+	li{
+		margin-bottom: 0;
+		border-bottom: 1px dashed @grey_border;
+		.salary{
+			color:@orange;
+		}
+	}
+	li:first-child{
+		background-color: #f6f6f6;
+		border-bottom: 0;
+		.black{
+			font-size: 16px;
+		}
+		.orange{
+			font-weight: bold;
+			font-size: 16px;
+		}
+	}
+	li:last-child{
+		border-bottom: 0;		
+	}
+}
+/*工资详情页赞*/
+.praise{
+		margin:0 10px;
+		border-top: 1px solid #D9D7D7;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;	
+		background: @white;
+}
+
+//添加评论功能
+.user_behavior {
+	overflow: hidden;
+
+	a {
+		float: left;
+		width: 50%;
+
+		em {
+			display: block;
+			border-left: 1px solid #D9D7D7;
+		}
+	}
+}
+
+.cities{
+	padding: 10px 5px;
+
+	dt{
+		padding: 0 5px;
+
+		&:not(:first-child){
+			margin-top: 10px;
+		}
+	}
+	
+	dd{
+		overflow: hidden;
+		>a,>div>a{
+			.box-sizing;
+			float: left;
+			padding: 8px 0;
+			background-color: #fff;
+			text-align: center;
+			width: 25%;
+			border: 5px solid #e5e5e5;
+		}
+
+		>p{
+			padding: 5px 0;
+		}
+	}
+
+	span{
+		color: #999999;
+		margin: 0 5px;
+		line-height: 1.6em;	
+		font-size: 2em;
+		font-weight: bold;
+		display: inline-block;
+		&.current{
+			color: @green;
+			font-weight: bold;
+		}
+	}
+}
+
+
+.search_r{
+	margin: 10px 20px 10px;
+}
+
+h2.tt{
+	color: @grey;
+	border-bottom: 2px solid #d9d7d7;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0 10px;
+	height: 24px;
+
+	span{
+		border-bottom: 2px solid @green;
+		height: 24px;
+		position: relative;
+		bottom: 0px;
+		display: inline-block;
+		padding-right: 5px;
+		color: @green;
+	}
+
+	em{
+		color: @grey;
+	}
+}
+
+.no_result{
+	font-size: 16px;
+	padding: 10px 10px;
+	text-align: center;
+	color: @grey;
+	clear: both;
+}
+
+
+h1{
+	&.job_h1{
+		background-color: #fff;
+		overflow: hidden;
+		padding: 15px 20px;
+		font-size: 16px;
+		font-weight: normal;
+		position: relative;
+		>em{
+			margin-right: 70px;
+			display: block;
+		}
+		span{
+			float: right;
+			color: @blue;
+			font-size: 14px;
+			margin-top: 4px;
+		}
+		p{
+			color: @grey;
+			font-size: 14px;
+			margin-top:8px;
+		}
+		a{
+			position:absolute;
+			top:15px;
+			right:20px;
+		}
+	}
+
+	&.iv_h1{
+		background-color: #fff;
+		overflow: hidden;
+		padding: 15px 10px 5px;
+		font-size: 18px;
+		font-weight: normal;
+
+		span{
+			font-size: 14px;
+			margin-top: 4px;
+			margin-left: 5px;
+			color: @grey;
+		}
+	}
+}
+
+.detail{
+	h2.tt{
+		margin-top: 15px;
+	}
+
+	fieldset{
+		padding: 8px 8px 10px 8px;
+		background-color: #fff;
+		border: 0;
+		margin: 10px;
+
+		.col{
+			li{
+				line-height: 2em;
+			}
+			span{
+				float: left;
+				color: @grey;
+			}
+			p{
+				margin-left: 5em;
+			}
+		}
+
+		.quora{
+			li{
+				line-height: 1.5;
+			}
+			span{
+				float: left;
+				color: @green;
+			}
+			p{
+				margin-left: 3em;
+			}
+		}
+
+		h3{
+			font-size: 14px;
+			padding: 10px 0 0;
+			font-weight: bold;
+		}
+		/*赞的div*/
+		div.praise{
+			border-top: 1px solid #D9D7D7;
+			height: 35px;
+			line-height: 35px;
+			margin: 12px -8px 0 -8px;
+			text-align: center;
+		}
+	}
+
+	.v_menu li{
+		font-size: 1em;
+	}
+}
+
+.iv_top{
+	background-color: #fff;
+	padding: 0 10px 12px;
+
+	em{
+		color: #e7e7e7;
+		margin: 0 0px;
+	}
+}
+
+.v_line{
+	border-left: 3px solid @green;
+	padding-left: 5px;
+	margin: 10px 0 0;
+	line-height: 1;
+	&:first-of-type{
+		margin-top: 0;
+	}
+}
+
+
+
+dl.co_info{
+	overflow: hidden;
+	padding: 10px;
+	background-color: #fff;
+	position: relative;
+	dt{
+		width: 68px;
+		height: 68px;
+		border: 1px solid @grey_s;
+		line-height: 68px;
+		float: left;
+		font-size: 0;
+
+
+		img{
+			width: 68px;
+			vertical-align: middle;
+		}
+	}
+
+	dd{
+		margin-left: 80px;
+		padding-top: 10px;
+		line-height: 1.5;
+	}
+
+	h1{
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	p{
+		font-size: 12px;
+		color: @grey;
+	}
+	a{
+		position: absolute;
+		top:10px;
+		right:10px;
+	}
+}
+
+
+section.menu{
+	background-color: #fff;
+	padding: 0 10px;
+	white-space: nowrap;
+	position: relative;
+	
+	.menu_wrap{
+		border-top: 2px solid #d7d7d7;
+		padding-right: 40px;
+	}
+
+	.menu_con{
+		overflow: hidden;
+		position: relative;
+		top: -2px;
+		left: 0;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+
+		p{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}		
+
+	a{
+		display: inline-block;
+		height: 30px;
+		padding: 0 12px;
+		border-top: 2px solid #d7d7d7;
+
+		&.current{
+			color: @green;
+			border-top: 2px solid @green;
+		}
+	}
+
+
+	.moving{
+		padding: 0;
+		border: 0;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		margin-top: -14px;
+	}
+}
+
+span.more{
+	i{
+		color: @blue;
+		cursor: pointer;
+	}
+}
+
+img.photo{
+	/*width: 100%;*/
+	margin: 10px 0;
+	padding: 0 10px;
+	display: block;
+	opacity: 0;
+	.box-sizing;
+	.transition(opacity .3s ease);
+}
+
+.desc{
+	margin: 10px;
+
+	p{
+		margin-top: 10px;
+		color: @grey;
+	}
+
+	span{
+		color: @green;
+	}
+}
+
+/*工资排行榜*/
+.salary_ranklist{
+	>h2.tt{
+		margin-top:15px;
+	}
+	>h3{
+		margin:15px 10px 0;
+		color: @grey;
+	}
+	>ul{
+		li{
+			font-size: 1em;
+		}
+	}
+	>ul.list{
+		margin: 15px 10px 10px;
+		padding:0 10px;
+		background: @white;
+		li{
+			height: 36px;
+			line-height: 36px;
+			border-bottom:1px solid @grey_border;
+			.l{
+				float:left;
+			}
+			.r{
+				float:right;
+			}
+			&:last-child{
+				border:0;
+			}
+		}
+	}
+}
+
+/*搜工资*/
+.salary_searchlist{
+	>ul.hot_jobs{
+		.c{
+			float:left;
+			margin-left: 5px;
+			margin-top: 11px;
+		}
+		.r{
+			float:right;
+			margin-top: 13px;
+		}
+	}
+}
+
+/*最热评论top50*/
+.comment_top50{
+	>h2.tt{
+		margin-top:15px;
+	}
+	>ul{
+		li{
+			font-size: 1em;
+		}
+	}	
+	>ul.list{
+		margin: 15px 10px 10px;
+		padding:0 10px;
+		background: @white;
+		li{
+			padding: 10px 0;
+			position: relative;
+			border-bottom: 1px solid @grey_border;
+			i.arrow_g{
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				margin-top: -6px;
+			}
+			p{
+				color:@grey;
+			}
+			p.title{
+				color:#000;
+				font-size:16px;
+			}
+			&:last-child{
+				border: 0;
+			}			
+		}		
+	}
+}
+
+/*登录打断*/
+.btn_grey_login{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #f7f7f7;
+	border: 1px solid @grey_border;
+	color: @blue;
+}
+
+/*职位过期提示*/
+section.outdate{
+	margin-top: 15px;
+	padding: 15px 10px;
+	border: 1px dashed @grey_border;
+	background-color: #fff7ed;
+	position: relative;
+	i{
+		&.icon_warn{
+			position: absolute;
+			top:15px;
+			left:10px;
+		}
+	}
+	.warn_info{
+		margin-left: 30px;
+		p{
+			margin-top: 0;
+			margin-bottom: 10px;
+			color: #000;
+			b{
+				font-weight: bold;
+			}
+		}
+	}
+	a{
+		position: static;
+	}
+}
+
+//职位页简历投递弹窗
+h3.deliver_suc {
+	font-size: 16px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+
+	i {
+		vertical-align: -2px;
+	}
+}
+
+/* //弹窗
+div.ugc_pop {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+
+	h1 {
+		padding: 15px 0 15px 15px;
+		font-size: 18px;
+	}
+
+	p {
+		padding: 0 15px 5px 15px;
+	}
+
+	div {
+		width: 100%;
+		border-top: 1px solid #cbcbcb;
+		overflow: hidden;
+
+		a {
+			float: left;
+			width: 50%;
+			height: 34px;
+			line-height: 34px;
+			text-align: center;
+
+			span {
+				display: block;
+				border-left: 1px solid #cbcbcb;
+				color: #7cb228;
+			}
+		}
+	}
+}
+ */
+//领域标签
+div.fields_tags {
+	margin: 10px;
+	background-color: #fff;
+	padding: 10px 10px 0 10px;
+
+	a {
+		display: inline-block;
+		height: 27px;
+		line-height: 27px;
+		padding: 0 7px;
+		margin: 0 10px 10px 0;
+		background-color: #fff;
+		border: 1px solid #d9d9d9;
+		color: @grey_66;
+		.box-shadow(1px 1px 3px #E4E4E4);
+		white-space: nowrap;
+		.transition(all ease .2s);
+
+		span {
+			color: @grey;
+		}
+
+		&:hover {
+			color: #fff;
+			background-color: #67bf58;
+			border-color: #67bf58;
+
+			span {
+				color: #fff;
+			}
+		}
+	}
+}
+
+//应用推荐
+div.shadow_wrap {
+	background-color: #fff;
+	.box-shadow(0 1px 3px #d1d0d0);
+
+	a.application_banner {
+		height: 175px;
+		display: block;
+	}
+}
+
+h2.r_a_tt {
+	height: 44px;
+	line-height: 44px;
+	padding-left: 10px;
+	color: grey;
+}
+
+dl.applications {
+	padding: 10px 0;
+	margin: 0 10px;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+
+	dt {
+		float: left;
+		width: 61px;
+		height: 61px;
+		border: 1px solid #eaeaea;
+		border-radius: 10px;
+
+		img {
+			display: block;
+			height: 61px;
+			width: 61px;
+			border-radius: 9px;
+		}
+	}
+
+	dd {
+		margin-left: 70px;
+
+		a {
+			float: right;
+			width: 60px;
+			height: 30px;
+			margin-top: 15px;
+			line-height: 30px;
+			text-align: center;
+			border-radius: 3px;
+			border: 1px solid #23ac38;
+			background-color: #fff;
+			color: #23ac38;
+		}
+
+		div {
+			margin-right: 75px;
+			padding-top: 5px;
+
+			p {
+				color: @grey;
+				font-size: 12px;
+			}
+		}
+
+		h3 {
+			padding-bottom: 5px;
+			color: @grey_66;
+		}
+	}
+
+
+	&:last-child {
+		border: none;
+	}
+}
+
+div.padding_t_b {
+	padding: 5px 0;
+}
+
+//登录的弹窗
+section.login_pops {
+	background-color: #fff;
+	max-width: 300px;
+
+	h1 {
+		font-size: 18px;
+		padding-bottom: 15px;
+	}
+
+	//dialog 默认关闭按钮样式
+	.dialog_close {
+	  width: 23px;
+	  height: 23px;
+	  display: inline-block;
+	  position: absolute;
+	  background: transparent url("../../images/maskui-close.png") no-repeat;
+	  right: 10px;
+	  top: 10px;
+	  -webkit-transition: all .2s linear;
+	  -moz-transition: all .2s linear;
+	  -ms-transition: all .2s linear;
+	  -o-transition: all .2s linear;
+	  transition: all .2s linear;
+	}
+
+	div.dialog_con {
+		padding: 20px 10px 10px 10px;
+	}
+}

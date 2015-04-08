@@ -1,0 +1,128 @@
+//点评打分
+@import "../../../../css/common/var";
+
+.co-review-grade{
+  padding: 30px 15px;
+  h2 {
+    font-size: 14px;
+    color: @grey_66;
+    font-weight: normal;
+    b{
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+
+  dl{
+    overflow: hidden;
+    zoom:1;
+    margin-top: 20px;
+    dt{
+      float: left;
+      width: 95px;
+      height: 95px;
+      img{
+        float: left;
+        width: 95px;
+        height: 95px;
+        border:1px solid #ccc;
+        padding:1px;
+      }
+    }
+
+    dd{
+      padding-left:20px;
+      width: 560px;
+      float: left;
+
+     .form{
+       width: 400px;
+       float: left;
+
+       div {
+         a{
+           color:#a9a9a9;
+         }
+       }
+
+       h3 {
+         font-size: 24px;
+       }
+
+       div.rating_start_wrap {
+         //大一点的星星（32*32）点评页面底部有用到
+         .rating_rect {
+           width: 185px;
+           height: 32px;
+           overflow: hidden;
+           display: inline-block;
+           font-size: 0;
+           background: url("@{img}/v2/review_start_32.png") no-repeat 0 0;
+           line-height: 0;
+           vertical-align: middle;
+
+           a {
+             width: 32px;
+             height: 32px;
+             float: left;
+             margin-right: 5px;
+           }
+         }
+
+         .rating_r_1 {
+           background-position: 0 -36px;
+         }
+
+         .rating_r_2 {
+           background-position: 0 -72px;
+         }
+
+         .rating_r_3 {
+           background-position: 0 -108px;
+         }
+
+         .rating_r_4 {
+           background-position: 0 -144px;
+         }
+
+         .rating_r_5 {
+           background-position: 0 -180px;
+         }
+
+         em {
+           display: inline-block;
+           height: 32px;
+           line-height: 32px;
+           vertical-align: middle;
+         }
+       }
+
+        textarea {
+          width: 377px;
+          height:60px;
+          float: left;
+          margin-right: 20px;
+          margin-top: 10px;
+          display: inline;
+          border: 1px solid #cccccc;
+        }
+      }
+
+      .link {
+        padding-left: 10px;
+        overflow: hidden;
+        zoom:1;
+        margin-top: 54px;
+        padding-top: 48px;
+        border-left: 1px solid #e5e5e5;
+        a {
+          display: block;
+          font-size: 14px;
+          line-height: 1.7em;
+        }
+      }
+  }
+
+
+  }
+}

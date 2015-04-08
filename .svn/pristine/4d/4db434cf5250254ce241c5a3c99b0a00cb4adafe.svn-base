@@ -1,0 +1,1 @@
+define(['jquery','u/validator', 'u/maskui', 'u/tabs', 'u/core','u/select', 'u/autocomplete','u/placeholder'], function(){});

@@ -1,0 +1,152 @@
+@import "../common/var";
+
+nav.f_minor_nav {
+	height: 40px;
+	padding-left: 10px;
+	background-color: #fff;
+	border-bottom: 2px solid #e5e5e5;
+
+	p {
+		height: 42px;
+		margin-bottom: 2px;
+		background: url(../images/field/f_img4.png) no-repeat left bottom;
+		.background-size(100px, 8.5px);
+
+		a {
+			display: inline-block;
+			width: 100px;
+			margin-right: 5px;
+			font-size: 16px;
+			text-align: center;
+			line-height: 40px;
+			color: @grey_66;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+//每个nav对应的内容
+div.f_minor_con {
+	padding: 20px 10px;
+	background-color: #fff;
+	.box-shadow(0 1px 3px rgba(4, 0, 0, .1));
+
+	& > dl {
+		//margin-bottom: 15px;
+		overflow: hidden;
+
+		dt {
+			float: left;
+			width: 16px;
+			height: 16px;
+			border: 2px solid #e5e5e5;
+			border-radius: 5px;
+			text-align: center;
+
+			i {
+				float: left;
+
+				&.i_recommend, &.i_ceo {
+					margin: 3px 0 0 2px;
+				}
+
+				&.i_comprehensive {
+					margin: 2px 0 0 2px;
+				}
+			}
+		}
+
+		dd {
+			margin-left: 16px;
+
+			& > h3 {
+				height: 20px;
+				padding: 0 0 5px 10px;
+				line-height: 20px;
+				color: @grey_33;
+				font-size: 15px;
+			}
+
+			& > p {
+				padding: 0 0 10px 10px;
+				color: @grey;
+			}
+
+			& > ul {
+				width: 100%;
+				overflow: hidden;
+
+				li {
+					float: left;
+					width: 33.3%;
+
+					& > div {
+						padding: 0 10px;
+						border-right: 1px solid #f3f3f3;
+
+						p {
+							i {
+								vertical-align: 1px;
+								margin-right: 5px;
+							}
+
+							&:first-child {
+								padding-bottom: 10px;
+								.ellipsis(ellipsis);
+							}
+						}
+
+						div {
+							&.doughnua_chart{
+								position: relative;
+								width: 45px;
+								height: 45px;
+								margin: 0 auto 13px auto;
+								//background-color: #ccc;
+
+								span {
+									position: absolute;
+									left: 0;
+									top: 0;
+									display: block;
+									width: 45px;
+									height: 45px;
+									line-height: 45px;
+									text-align: center;
+									font-size: 14px;
+									font-weight: 700;
+									color: #000;
+									z-index: 2;
+								}
+							}
+
+							&.comprehensive {
+								margin-left: -2px;
+
+								span {
+									display: block;
+									margin: 5px auto 5px auto;
+								}
+
+								p {
+									height: 14px;
+									line-height: 14px;
+								}
+							}
+						}
+					}
+
+					&:last-child {
+						div {
+							border-right: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

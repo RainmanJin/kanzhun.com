@@ -1,0 +1,119 @@
+//var toggle = $('div.menu');
+//var slideMenu = $('section.slide-menu');
+//var wrapper = $('div.wrapper');
+//var container = $('div.container');
+//
+//container.css('min-height', slideMenu.height());
+//
+////  wrapper.on('touchmove', function(e){
+////  e.preventDefault();
+////
+////})
+//
+//toggle.on('tap', function(){
+//  container.toggleClass('deactive')
+//});
+//
+
+$(function(){
+  var padding = $(window).width() - 48;
+
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': padding,
+    'tolerance': 70,
+    'fx': 'ease-out'
+  });
+
+  $('div.menu').on('click', function(){
+    slideout.toggle();
+  })
+
+  var rank = $('dl.rank');
+  rank.on('click', 'dt', function(){
+    var _this = $(this);
+    if(_this.next('dd').length == 0){
+    	$.ajax({
+    	      url:"/activity/jinpingmei/reason.json",
+    	      data:{ companyId:_this.attr("data-company-id"),prizeId:$("#curPrizeId").val()},
+    	      dataType:"json",
+    	      success:function(data){
+    	        _this.after(data.html);
+    	        _this.siblings('dt.active').removeClass('active');
+    	        _this.next('dd').siblings('dd').not('.none').addClass('none');
+    	        _this.toggleClass('active').next('dd').toggleClass('none')
+    	      }
+    	    });
+    }else{
+    	_this.siblings('dt.active').removeClass('active');
+        _this.next('dd').siblings('dd').not('.none').addClass('none');
+        _this.toggleClass('active').next('dd').toggleClass('none')
+    }
+
+    
+
+    
+  });
+
+
+  //search
+  var searchFloat = $('section.search-float');
+  $('div.search').on('click', function(){
+    searchFloat.show().find('input[type=text]').focus();
+  });
+
+  searchFloat.on('click', function(){
+    $(this).hide();
+  });
+
+  $("#indusSelect").on("change",function(){
+    var industry =  $(this).attr("data-industry-id");
+    var prize = $(this).val();
+
+    window.location.href="/activity/jinpingmei/"+industry+"/"+prize+"/";
+
+  });
+
+  function more(){
+    var page = parseInt($('#companyList').attr("data-current-page")) + 1;
+    var timer;
+    $(window).on("scroll",function(){
+        if(timer){
+          clearTimeout(timer);
+          timer = null;
+        }
+        timer = setTimeout(function(){
+          loadMore();
+        },200);
+    });
+    function loadMore(){
+
+       var wH = $(window).height();
+       var sT = $(window).scrollTop();
+       var sH = $(document).height();
+       var loading = 0;
+       if(wH + sT >= sH) {
+         if (loading) {
+           return;
+         }
+         loading = 1;
+         $.ajax({
+           url: "/activity/jinpingmei/52/1/more.json?page=" + page,
+           dataType: "json",
+           success: function (result) {
+             loading = 0;
+             page++;
+             $("#companyList").append(result.html);
+           },
+           error: function () {
+             loading = 0;
+           }
+         });
+       }
+    }
+  }//   function more
+
+  more();
+
+});

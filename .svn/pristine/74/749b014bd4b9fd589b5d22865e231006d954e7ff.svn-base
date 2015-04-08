@@ -1,0 +1,236 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "../modules/top-search";
+@import '../../../css/modules/share';   //分享
+@import 'piece/co-header';  //公司级页面头部样式
+@import 'piece/right_con';  //右侧看了该公司的还看了
+@import 'piece/no_result';
+@import 'piece/common-v2';
+@import "piece/co-filter";
+@import 'piece/interview_detail';  //面试详情
+@import "../../../css/modules-v2/dialog-v2";
+@import "../../../css/modules/company/bottomlinks";   //底部链接
+@import "../../../components/toggler/toggler";   //展开
+@import "../../../components/floatword/floatword";   //飘字
+@import "../modules/use_comment_share";
+@import 'piece/co-view-nologin-email-submit';  //关注该公司
+@import 'piece/co-left-basis-tags-search';  //按标签查看更多职位面试
+@import 'piece/co-right-average';  //右侧平均工资入口
+@import 'piece/co-right-newest-job';  //最新职位招聘
+@import 'piece/co-right-latest-staff-review';  //该公司最新员工点评
+@import 'piece/co-left-official-replay';  //官方回复
+
+
+//标题底对齐
+div.cmp_tt {
+  padding-top: 15px;
+
+  h1 {
+    font-weight: bold;
+    font-size: 16px;
+    color: @grey_33;
+  }
+
+  span {
+    margin-top: 3px;
+  }
+}
+
+//#999999颜色的三角
+.t_grey_99 {
+  margin-left: 5px;
+  border-width: 4px 4px 0 4px;
+  border-style: solid dashed;
+  border-color: #999999 transparent transparent transparent;
+  vertical-align: 2px;
+}
+
+//面试总体感觉
+div.iv_grade {
+  padding-bottom: 20px;
+  overflow: hidden;
+  zoom:1;
+
+  dl {
+    float: left;
+
+    &.total {
+      width: 220px;
+    }
+
+    &.level {
+      width: 165px;
+      padding-left: 20px;
+      border-left: 1px solid @grey_e7;
+      border-right: 1px solid @grey_e7;
+      padding-bottom: 25px;
+    }
+
+    &.from {
+      padding-left: 20px;
+
+      p {
+        line-height: 1.8em;
+      }
+
+      span {
+        margin: 0 5px;
+      }
+    }
+
+  }
+
+  dt {
+    height: 32px;
+    line-height: 32px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+}
+.pie_chart {
+  canvas {
+    float: left;
+  }
+
+  .pie_bar {
+    margin-left: 90px;
+  }
+
+  p {
+    line-height: 1.7em;
+    white-space: nowrap;
+    color: @grey_66;
+  }
+
+  span {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+
+    &.easy {
+      background-color: @green;
+    }
+    &.normal {
+      background-color: #abd667;
+    }
+    &.hard {
+      background-color: #ededed;
+    }
+    &.wlzp {
+      background-color: #a7dbff;
+    }
+    &.xyzp {
+      background-color: #16b6cc;
+    }
+    &.nbtj {
+      background-color: #05c1f1;
+    }
+    &.lttj {
+      background-color: #0ca6f0;
+    }
+    &.shzp {
+      background-color: #147cde;
+    }
+    &.qt {
+      background-color: #0870c9;
+    }
+  }
+
+  .pie-bar-toggle{
+    padding-left: 22px;
+  }
+}
+
+.total {
+  padding-bottom: 10px;
+}
+
+
+
+.circle_chart{
+  overflow: hidden;
+  zoom:1;
+
+  .doughnua_chart{
+    float: left;
+
+    span {
+      z-index: 2;
+    }
+  }
+  canvas{
+    vertical-align: middle;
+  }
+
+  h5{
+    padding: 12px 0 0 8px;
+    margin-left: 60px;
+    font-weight: normal;
+    font-size: 14px;
+    color: @grey_66;
+  }
+  .js_correctionceo_bt{
+    &:hover{
+      .i_correction{
+        background-position: -16px -560px;
+      }
+    }
+  }
+}
+
+
+
+//职位的入口
+div.position_enter {
+  p.po_counts {
+    height: 40px;
+    line-height: 40px;
+    //border-bottom: 1px solid #e7e7e7;
+
+    em {
+      color: #e9e9e9;
+      margin: 0 15px;
+    }
+  }
+
+  ul {
+    overflow: hidden;
+    border-top: 1px solid #e7e7e7;
+
+    li {
+      float: left;
+      padding-right: 5px;
+      width: 205px;
+      padding-bottom: 5px;
+
+      a {
+        display: block;
+        .ellipsis(ellipsis);
+        color: @def;
+      }
+    }
+  }
+}
+
+//查看更多面试
+div.view_see_more {
+  p.v_s_m_tt {
+    height: 59px;
+    line-height: 59px;
+    font-size: 16px;
+    color: @grey_33;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  dl.c_s_result {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e2e2;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+

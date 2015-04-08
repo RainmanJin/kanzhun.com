@@ -1,0 +1,151 @@
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pt15 {
+  padding-top: 15px;
+}
+.p20 {
+  padding: 20px;
+}
+.p10 {
+  padding: 10px;
+}
+.green {
+  color: #7cb228;
+}
+.grey {
+  color: #999999;
+}
+.blue {
+  color: #007ead;
+}
+.red {
+  color: #ff0000;
+}
+.orange {
+  color: #f38100;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.f12 {
+  font-size: 12px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f18 {
+  font-size: 18px;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #cccccc;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #cccccc;
+}
+.cube {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font: normal 14px/1.5 Arial, Helvetica, "Microsoft YaHei", STHeiti, "Droid Sans Fallback", sans-serif;
+  color: #343434;
+  overflow-x: hidden;
+  background-color: #f0eff5;
+  height: 100%;
+}
+a {
+  color: #343434;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a.blue {
+  color: #007ead;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background-color: #f0eff5;
+}
+.content {
+  padding-bottom: 46px;
+}
+.bordertgrey {
+  border-top: 1px solid #d9d7d7;
+}

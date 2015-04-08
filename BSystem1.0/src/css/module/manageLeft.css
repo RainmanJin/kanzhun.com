@@ -1,0 +1,43 @@
+aside.manageLeft {
+  width: 204px;
+}
+aside.manageLeft a.send_jobs {
+  background-color: #f38100;
+}
+aside.manageLeft a.send_jobs:hover {
+  background-color: #fa8712;
+}
+aside.manageLeft dl {
+  margin-top: 10px;
+  border: 1px solid #e7e7e7;
+}
+aside.manageLeft dl dt {
+  height: 40px;
+  line-height: 40px;
+  color: #999999;
+  padding-left: 15px;
+}
+aside.manageLeft dl dt span {
+  font-size: 14px;
+  vertical-align: -2px;
+  margin-left: 5px;
+}
+aside.manageLeft dl dd {
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #e7e7e7;
+}
+aside.manageLeft dl dd a {
+  color: #000;
+  display: block;
+  padding-left: 55px;
+}
+aside.manageLeft dl dd.current {
+  background-color: #ededed;
+}
+aside.manageLeft dl dd.current a {
+  color: #7cb228;
+}
+aside.manageLeft dl dd.current a:hover {
+  text-decoration: none;
+}

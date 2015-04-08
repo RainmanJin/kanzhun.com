@@ -1,0 +1,183 @@
+@import "../../common/var";
+
+//排行榜精简看
+div {
+  &.ranking_nav {
+    padding: 0 15px;
+    border-width: 1px 1px 0 1px;
+    border-color:  @grey_dc;
+    border-style: solid;
+    background-color: #fff;
+    //border-bottom: 1px solid #e5e5e5;
+    padding-top: 25px;
+
+    & > div {
+      height: 31px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    & > a {
+      line-height: 1em;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    h2 {
+      float: left;
+      margin-right: 50px;
+      font-size: 15px;
+      color: @grey_33;
+      font-weight: bold;
+      line-height: 1em;
+    }
+
+    p {
+      float: left;
+      height: 32px;
+      margin-bottom: -1px;
+      line-height: 1em;
+      background: url("@{img}/field/f_img5.png") no-repeat left bottom;
+      padding-left: 8px;
+
+      a {
+        color: @def;
+        margin-right: 25px;
+
+        &:hover {
+          text-decoration: none;
+          color: #22ac38;
+        }
+
+        &.current {
+          color: #22ac38;
+          text-decoration: none;
+        }
+
+        &.first_a_p {
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+
+  &.box_con {
+    padding: 20px 15px 0 15px;
+    border-width: 0 1px 1px 1px;
+    border-color:  @grey_dc;
+    border-style: solid;
+    background-color: #fff;
+    .box-shadow(0 1px 0 #e6e6e6);
+  }
+}
+
+dl {
+  &.left_explain {
+    float: left;
+    width: 240px;
+    /* margin-right: 30px;
+    *margin-right: 25px; */
+
+    dt {
+      float: left;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #e5e5e5;
+      border-radius: 5px;
+      background-color: #fff;
+      text-align: center;
+
+      i {
+        float: left;
+
+        &.recommend {
+          margin: 5px 0 0 3px;
+        }
+
+        &.total_ranking {
+          margin: 3px 0 0 3px;
+        }
+
+        &.surpport {
+          margin: 5px 0 0 4px;
+        }
+      }
+    }
+
+    dd {
+      float: left;
+      width: 170px;
+      margin-left: 10px;
+
+      h3 {
+        font-weight: normal;
+        color: #333333;
+        padding: 2px 0 10px 0;
+      }
+    }
+  }
+}
+
+div.right_main {
+  float: left;
+  width: 434px;
+  padding-bottom: 30px;
+  overflow: hidden;
+
+  & > ul {
+    margin-right: -1px;
+    overflow: hidden;
+     *zoom: 1;
+  }
+
+  li {
+    float: left;
+    width: 124px;
+    padding-left: 20px;
+    border-right: 1px solid #eeeeee;
+
+    p {
+      i.s_serial_num {
+        margin-right: 10px;
+        //vertical-align: -3px;
+        vertical-align: middle;
+      }
+
+      a {
+        display: inline-block;
+        .ellipsis(ellipsis);
+        width: 96px;
+        color: @def;
+        font-size: 16px;
+        vertical-align: middle;
+
+        &:hover {
+          color: #2472b4;
+          text-decoration: none;
+        }
+      }
+
+      &.rate {
+        padding-top: 13px;
+      }
+
+      &.total_score {
+        padding-left: 10px;
+      }
+    }
+
+    div.start_score {
+      margin: 0  0 24px 4px;
+
+      span {
+        margin: 5px 0 11px 0;
+        display: block;
+      }
+
+      p {
+        width: 92px;
+      }
+    }
+  }
+}

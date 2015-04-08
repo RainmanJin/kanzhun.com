@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>新闻首页</title>
+<!--[if lte IE 9]>
+<script src="../js/lib/html5shiv.js"></script>
+<script src="../js/lib/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/lib/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/widget.css">
+<link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+  <div class="h_rop">
+    <div>
+      <p class="fright"><a href="">登录</a><em>|</em><a href="">注册</a></p>
+      <a class="mr15" href="">看准网</a><a href="">BOSS直聘</a>
+    </div>
+  </div>
+	<header class="global">
+    <div class="clearfix">
+      <a class="logo" href=""><img src="../images/new_logo.jpg" alt="看准网"></a>
+      <nav class="clearfix">
+        <dl>
+          <dt>分类浏览<span></span></dt>
+          <dd class="none">
+            <img src="../images/news_img2.jpg" alt="">
+            <a href="">看准报告</a><a href="">热点聚焦</a>
+            <a href="">名企动态</a><a href="">高管轶事</a>
+            <a href="">股市风云</a><a href="">行业分析</a>
+            <a href="">职场规则</a><a href="">小道消息</a>
+          </dd>
+        </dl>
+        <a class="mr25" href="">公司点评</a><a href="">薪酬报告</a>
+      </nav>
+      <a class="submission" href=""><i class="submission"></i>我要投稿</a>
+    </div>
+	</header>
+	<div class="container clearfix">
+    <section class="n_l n_d_l">
+      <h2>看准资讯 投稿\爆料</h2>
+      <p class="dashedline mb30"></p>
+      <div>
+        <ul class="mb20">
+          <li><i class="list_style"></i>看准网资讯专注行业和职场最新资讯</li>
+          <li><i class="list_style"></i>帮助职场人及时了解最新动态</li>
+          <li><i class="list_style"></i>把握自己的职业方向！</li>
+        </ul>
+        <p class="f_18">欢迎公司和职场人士投稿：<em class="green">kanzhuntg@gmail.com</em></p>
+        <p class="f_18">欢迎职场人士爆料：<em class="green">blkanzhun@gmail.com</em></p>
+      </div>
+    </section>
+    <section class="n_r">
+      <a class="advertising_r mb30" href=""><img src="../images/temp/temp_img2.jpg" alt=""></a>
+      <h2 class="n_r_tt mb5"><a class="fright" href="">更多</a><span>热门文章</span></h2>
+      <ul class="hotarticles mb30">
+        <li>
+          <a href="" class="articleimg"><img src="../images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="../images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="../images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="../images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="../images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+      </ul>
+      <p class="t-center mb10">微信公众账号：搜索“kanzhunwang” <br>或扫描下面的二维码关注看准网</p>
+      <img src="../images/news_img.jpg" alt="" class="two-dimensional">
+      <p class="mt10 pl20">看准网官方微博：<a href=""><img src="../images/news_img1.jpg" alt=""></a></p>
+    </section>
+	</div>
+  <footer class="footbottom">
+  <nav>
+  <a ka="footer-about" href="http://www.kanzhun.com/about.html" rel="nofollow">关于我们</a><a ka="footer-feedback" href="http://www.kanzhun.com/contact_us.html" rel="nofollow">意见反馈</a><a ka="footer-help" href="http://www.kanzhun.com/help.html" rel="nofollow">使用帮助</a><a ka="footer-user" href="http://www.kanzhun.com/term.html" rel="nofollow">用户协议</a><a ka="footer-weixin" href="javascript:;" class="micro_message" rel="nofollow">看准网微信<i></i></a><a ka="footer-weibo" href="http://www.weibo.com/fenzhi" target="_blank" rel="nofollow">看准网微博</a><a ka="footer-mobile" href="http://m.kanzhun.com/" target="_blank" rel="nofollow" id="toMobile" class="a_green" style="color: #7cb228;">移动版</a>
+  </nav>
+  <p>Copyright© 2014 kanzhun.com京ICP备14013441号-1 , kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+  </footer>
+</body>
+</html>

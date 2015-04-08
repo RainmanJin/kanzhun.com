@@ -1,0 +1,375 @@
+@import "../../../css/common/var";
+@import "../var";
+
+@icons_v2: url("@{img}/icons_v2.png");
+@field_icons: url('@{img}/field/field_icons.png');
+//icons
+.icons_v1_base(){
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-image: @icons_v2;
+  background-repeat: no-repeat;
+}
+
+i {
+	//面试未通过
+	&.view_fail {
+		.icons_v1_base;
+		width: 12px;
+		height: 12px;
+		background-position: -16px 0;
+	}
+
+	//面试通过
+	&.view_succ {
+		.icons_v1_base;
+		width: 12px;
+		height: 12px;
+		background-position: 0 0;
+	}
+	
+	//感觉不靠谱
+	&.feelsad {
+		.icons_v1_base;
+		width: 12px;
+		height: 12px;
+		background-position: -48px 0;
+	}
+
+	//感觉靠谱
+	&.feelhappy {
+		.icons_v1_base;
+		width: 12px;
+		height: 12px;
+		background-position: -32px 0;
+	}
+
+	//小叉--白色的7*9，用在面试搜索条件关闭
+	&.close_conditions {
+		.icons_v1_base;
+		width: 7px;
+		height: 9px;
+		background-position: -65px 0;
+	}
+
+	//公司所在地（用在面试页面）
+	&.cmp_address {
+		.icons_v1_base;
+		width: 11px;
+		height: 16px;
+		background-position: -76px 0;
+	}
+
+    //添加ceo信息
+    &.edit_add {
+      .icons_v1_base;
+      width: 12px;
+      height: 12px;
+      background-position: -186px 0;
+    }
+}
+
+//start
+//大一点的星星（18*17）
+.green_b_star{
+	width: 94px;
+	height: 18px;
+	overflow: hidden;
+	display: inline-block;
+	font-size: 0;
+	background: @field_icons no-repeat 0 -48px;
+	line-height: 0;
+
+	i{
+		display: inline-block;
+		width: 94px;
+		height: 18px;
+		overflow: hidden;
+		display: inline-block;
+		font-size: 0;
+		background: @field_icons no-repeat 0 -28px;
+	}
+}
+
+span {
+	//有用
+	&.u_feel_helpful {
+		.icons_v1_base;
+		width: 14px;
+		height: 13px;
+		background-position: -110px -25px;
+	}
+
+	//评论
+	&.u_comment {
+		.icons_v1_base;
+		width: 16px;
+		height: 13px;
+		background-position: -92px -25px;
+	}
+
+	//分享
+	&.u_share {
+		.icons_v1_base;
+		width: 16px;
+		height: 13px;
+		background-position: -74px -25px;
+	}
+}
+
+//小一点的星星（15*15）
+.green_s_star{
+	width: 79px;
+	height: 15px;
+	overflow: hidden;
+	display: inline-block;
+	font-size: 0;
+	background: @field_icons no-repeat 0 -93px;
+	line-height: 0;
+
+	i{
+		display: inline-block;
+		width: 79px;
+		height: 15px;
+		overflow: hidden;
+		display: inline-block;
+		font-size: 0;
+		background: @field_icons no-repeat 0 -75px;
+	}
+}
+
+//不是一种绿的星星（15*15） 公司点评页用到
+.green_s_star_2{
+	width: 83px;
+	height: 15px;
+	overflow: hidden;
+	display: inline-block;
+	font-size: 0;
+	background: @icons_v2 no-repeat 0 -80px;
+	line-height: 0;
+	vertical-align: middle;
+	i{
+		display: inline-block;
+		width: 83px;
+		height: 15px;
+		overflow: hidden;
+		font-size: 0;
+		background: @icons_v2 no-repeat 0 -60px;
+	}
+}
+
+//小一点的方块（15*15）
+.grade_rect_fifteen {
+	width: 68px;
+	height: 12px;
+	overflow: hidden;
+	display: inline-block;
+	font-size: 0;
+	background: @icons_v2 no-repeat 0 -41px;
+	vertical-align: middle;
+	margin-right: 10px;
+	line-height: 0;
+
+	i {
+		width: 68px;
+		height: 12px;
+		overflow: hidden;
+		display: inline-block;
+		font-size: 0;
+		background: @icons_v2 no-repeat 0 -25px;
+		line-height: 0;
+	}
+}
+
+//按钮
+//黄色的按钮(纯色)
+.yellow_btn {
+	display: inline-block;
+	background-color: #f97200;
+	border-radius: 5px; 
+	text-align: center;
+	color: #fff;
+
+	&:hover {
+      background-color: #e96b00;
+      text-decoration: none;
+	}
+}
+
+.select{
+	height: 36px;
+	border: 1px solid #cfcfcf;
+	border-width: 2px 1px 1px 2px;
+	position: relative;
+
+	dt{
+		text-align: center;
+		vertical-align: middle;
+		height: 36px;
+		background-color: #fff;
+		padding: 0 40px 0 0;
+
+		input{
+			height: 36px;
+			line-height: 36px;
+			float: left;
+			border: 0;
+			width: 100%;
+			color: @def;
+			padding-left: 15px;
+			background-color: transparent;
+			text-align: left;
+		}
+
+		span{
+			width: 36px;
+			height: 20px;
+			padding-top: 16px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: block;
+			border-left: 1px solid #e6e6e6;
+			font-size: 0;
+			background-color: #f6f6f6 ;
+			text-align: center;
+			cursor: pointer;
+			zoom: 1;
+
+			i{
+				display: inline-block;
+				font-size: 0;
+				zoom: 1;
+				width: 9px;
+				height: 5px;
+				overflow: hidden;
+				.transition(all .2s linear);
+				.transform(rotate(0deg));
+				background: transparent url("@{img}/trangle.png") no-repeat;
+			}
+
+			&.on{
+				i{
+					.transform(rotate(180deg));
+				}
+			}
+		}
+	}
+
+	dd{
+		position: absolute;
+		z-index: 100;
+		max-height: 260px;
+		overflow: auto;
+		.box-shadow(0 2px 6px #ccc);
+		left: -1px;
+		top: 37px;
+		border: 1px solid #cfcfcf;
+		border-top: 0;
+		background-color: #fff;
+		width: 100%;
+		display: none;
+		a{
+			display: block;
+			height: 26px;
+			line-height: 26px;
+			padding-left: 15px;
+
+			&:hover{
+				text-decoration: none;
+				background-color: #007ead;
+				color: #fff;
+			}
+		}
+	}
+}
+
+/*白底灰边箭头start*/
+//带灰色边的上箭头
+.tangle_greyb_up{
+	display: inline-block;
+	width: 12px;
+	height: 7px;
+	background: @icons_v2 no-repeat -90px 0;
+}
+//带灰色边的左箭头
+.tangle_greyb_left{
+	display: inline-block;
+	width: 8px;
+	height: 14px;
+	background: @icons_v2 no-repeat -110px 0;
+}
+/*白底灰边箭头end*/
+
+//绿色对勾
+.i_check_green{
+	display: inline-block;
+	width: 9px;
+	height: 7px;
+	background: @icons_v2 no-repeat -150px 0;
+}
+//自定义checkbox
+.input_checkbox{
+	width: 13px;
+	height: 13px;
+	line-height: 13px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	vertical-align: middle;
+	i{
+		display: none;
+	}
+	&.current{
+		i{
+			display: inline-block;
+		}
+	}
+}
+
+//蓝底白色问号
+.i_question_blue{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: @icons_v2 no-repeat -130px 0;
+}
+
+
+/*
+
+	3个添加的角标   zhuchongyue  2015/3/19
+  boss在线
+*/
+i.i_bossonline{
+  background: url('@{img}/v2/ugc_icons.png') no-repeat;
+  background-position: 0px -90px;
+  width: 66px;
+  height: 17px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/*直聘*/
+i.i_bossdir{
+  background: url('@{img}/v2/ugc_icons.png') no-repeat;
+  background-position: -73px -90px;
+  width: 44px;
+  height: 17px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/*在线*/
+i.i_online{
+  background: url('@{img}/v2/ugc_icons.png') no-repeat;
+  background-position: -123px -90px;
+  width: 34px;
+  height: 17px;
+  display: inline-block;
+  overflow: hidden;
+
+}

@@ -1,0 +1,26 @@
+@import "../../common/var";
+
+dl.cmp_news {
+	padding-bottom: 10px;
+	overflow: hidden;
+	*zoom: 1;
+
+	dt {
+		float: left;
+		padding-top: 7px;
+		height: 6px;
+		width: 6px;
+
+		img {
+			display: block;
+		}
+	}
+
+	dd {
+		margin-left: 12px;
+
+		& > p {
+			padding-bottom: 3px;
+		}
+	}
+}

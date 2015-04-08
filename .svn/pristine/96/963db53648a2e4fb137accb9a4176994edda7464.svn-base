@@ -1,0 +1,19 @@
+@import "../../../../css/common/var";
+@import "../../var";
+//链接的颜色变化
+a {
+  &.links {
+    color: #2c84cc;
+
+    &:hover {
+      color: #2472b4;
+      text-decoration: none;
+    }
+  }
+
+  &.hover_deff {
+    &:hover {
+      color: @def;
+    }
+  }
+}

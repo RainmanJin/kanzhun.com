@@ -1,0 +1,140 @@
+@import "common/var";
+@import "module/reset";
+@import "common/common";
+
+body{
+  &.index-bg{
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#5f5f5f), to(#293032));
+    background: -webkit-radial-gradient(circle, #5f5f5f, #293032);
+
+    .wrapper{
+      height: 100%;
+      img{
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  &.ret-bg{
+    background: url("../images/ret-bg.jpg") repeat-y;
+    .background-size(100%);
+  }
+}
+
+
+.container{
+  padding: 10px;
+}
+
+.block{
+  display: block;
+}
+
+dl.step{
+  background-color: #eeeeee;
+  border: 1px solid #a0a0a0;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+
+  dt{
+    line-height: 1.2em;
+    color: #626262;
+    padding-bottom: 10px;
+  }
+
+  dd{
+    background-color: #fff;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    padding: 10px 0;
+
+    input[type=text]{
+      background-color: #fff;
+      border: 0;
+      .box-sizing();
+      padding: 0 10px;
+      width: 100%;
+    }
+
+    p.line{
+      height: 0px;
+      overflow: hidden;
+      font-size: 0;
+      border-bottom: 1px solid #a0a0a0;
+      margin: 10px 0;
+    }
+
+    button{
+      width: 100%;
+      background: url("@{img-path}/add.jpg") no-repeat 20px 2px;
+      .background-size(16px);
+      text-align: left;
+      padding-left: 45px;
+      color: @placeholder;
+      .box-sizing();
+    }
+    
+    select{
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      width: 100%;
+      padding: 5px 0 5px 5px;
+      .box-sizing();
+      background: url("@{img-path}/select.jpg") no-repeat right -2px;
+      .background-size(27px);
+    }
+  }
+}
+
+.btn, input.btn{
+  padding: 12px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 100%;
+  border: 0;
+
+  &.both{
+    padding: 5px 0;
+    span{
+      display: block;
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.1em;
+    }
+  }
+}
+.green-btn{
+  background-color: #85ca65;
+}
+.cyan-btn{
+  background-color: #2cc4c1;
+}
+.blue-btn{
+  background-color: #8c97cb;
+}
+
+.ret-content{
+  width: 84.6875%;
+  margin: 0 auto;
+}
+
+.share-to-wx{
+  background: rgba(0, 0, 0, .8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  
+  img{
+    margin-top: 10px;
+  }
+}
+

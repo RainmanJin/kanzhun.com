@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>你跟对人了吗</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/follow.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <section class="content">
+    <div class="con">
+      <header class="ml10 mr10">作为职场人，你了<strong>跟对人</strong>吗<b>?</b> </header>
+
+      <p class="mt10">经过测试，以下类型的Boss和你气场不合、命中相克，职场中遇到请谨慎对待。</p>
+      <p class="answer">D、高屋建瓴、过度放权的战略</p>
+      <div class="intro ">
+        实际上你是工作能力很强，聪明机智，思维活跃的人。最怕遇到似乎什么事情都要过问，事必躬亲的领导。能独当一面的你最讨厌外行人的指手画脚。当你遇到这样的领导，势必会感觉碍手碍脚，凡事都不由自主，并且可能会感到郁闷和厌倦
+      </div>
+      <h3 class="tips">
+        <i class="icon_title"></i>
+      </h3>
+      <div class="tips_info">
+        如果短期内无法改变现状，可以尝试着听从领导的指挥，不要心浮气躁，如果以太过激烈的方式表现出来就弄巧成拙了。建议低调地做人做事，锻炼成长，积攒实力，等到时机成熟时，一定有大展身手的机会。
+      </div>
+      <img class="imgs mb20 mt20" src="images/chart.jpg" >
+      <a class="btn bt_transmit" href="#">立即分享</a>
+    </div>
+  </section>
+</div>
+
+<script src="js/zepto.js"></script>
+<script src="js/wx.js"></script>
+</body>
+</html>

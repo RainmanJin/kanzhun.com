@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>公司面试详情页</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css"/>
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/company/review_detail.css"/>
+  <script>
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/company/salary.js"></script>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+<% include ../modules/mini-search %>
+<% include piece/co-header %>
+
+<div class="container_v2 clearfix">
+
+  <section class="f_l_con clearfix">
+    <div class="wrap_style position_enter mb15">
+      <h1 class="l_tt_16">百胜餐饮集团肯德基储备经理面试</h1>
+      <p class="po_counts"><a href="/gsm122656.html" ka="gsm">返回查看全部职位面试</a><em>|</em><a href="/msh/g122656-z754482/" ka="msh">返回查看全部储备经理面试</a></p>
+    </div>
+
+    <!-- 其他互联网公司面试 -->
+    <% include piece/co-left-review-item.ejs %>
+    <!-- 其他互联网公司面试 -->
+
+    <!-- 评论 -->
+    <% include piece/co-left-comment.ejs %>
+    <!-- 评论 -->
+
+    <!--点评-->
+    <div class="sy_comment wrap_style">
+      <h3>更多互联网行业公司点评</h3>
+    </div>
+    <!--点评-->
+
+    <!--点评list-->
+    <% include piece/co-left-compentlist.ejs %>
+    <!--点评list-->
+
+    <!--点评link-->
+    <div class="sy_comment wrap_style mt15 t-center">
+      <a href="">更多互联网行业公司点评</a>
+    </div>
+    <!--点评link-->
+
+
+    <!--打分-->
+    <% include piece/co-review-grade.ejs %>
+    <!--打分-->
+
+  </section>
+
+
+
+  <section class="f_r_con clearfix">
+    <% include piece/co-right-publish.ejs %>
+
+    <% include piece/co-right-average.ejs %>
+
+    <% include piece/co-right-companylist.ejs %>
+
+    <% include piece/co-right-hotpost.ejs %>
+
+  </section>
+</div>
+
+</body>
+</html>

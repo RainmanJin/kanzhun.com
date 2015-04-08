@@ -1,0 +1,37 @@
+@import "../../common/var";
+
+div.tt {
+  position: relative;
+  border-bottom: 1px solid @grey_e7;
+
+  h1,h2 {
+    float: left;
+    padding-bottom: 5px;
+    *padding-bottom: 10px;
+    margin-bottom: -1px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    vertical-align: bottom;
+    border-bottom: 1px solid @green;
+  }
+
+  em {
+    margin-left: 5px;
+    font-size: 18px;
+    line-height: 18px;
+    color: @grey_e7;
+    font-weight: 400;
+  }
+
+  a {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    font-weight: normal;
+    margin-top: -5px;
+  }
+}

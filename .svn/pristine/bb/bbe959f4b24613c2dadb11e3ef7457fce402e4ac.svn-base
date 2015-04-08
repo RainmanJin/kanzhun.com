@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>您还没有发布的内容</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/profile.css" />
+<script src="../js/require.js" data-main="../js/site/profile.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">招聘</a>
+				<a href="#" class="current">公司</a>
+				<a href="#">工资</a>
+				<a href="#">面试</a>
+				<a href="#" class="mycomment">我要点评</a>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="container profiles clearfix">
+		<p><strong class="f_16">会员中心</strong> &gt; 我的看准</p>
+		<p class="line"></p>
+		<aside class="profiles_nav">
+			<figure>
+				<div><img src="../images/portrait.jpg" /><span></span></div>
+				<p class="t-center"><strong>Lionizing</strong></p>
+				<p class="auth"><i class="phone_auth"></i><span class="grey_99">手机已认证</span> &nbsp;&nbsp;&nbsp;&nbsp;<i class="mail"></i><a href="#">邮箱认证</a></p>
+			</figure>
+
+			<nav>
+				<p><a href="#">我的看准</a></p>
+				<p><a href="#">职位搜索器</a></p>
+				<p><a href="#">收藏的职位</a></p>
+				<p><a href="#">关注的公司</a></p>
+				<p class="current"><a href="#">发布的内容</a></p>
+				<p><a href="#">账号设置</a></p>
+				<p><a href="#">个人信息</a></p>
+			</nav>
+		</aside>
+
+		<section class="profiles_con">
+			<ul class="pf_bar">
+				<li>
+					<i class="s"></i><p>职位搜索器 <br> <a href="">123</a></p>
+				</li>
+				<li>
+					<i class="c"></i><p>收藏的职位 <br> <a href="">2</a></p>
+				</li>
+				<li>
+					<i class="f"></i><p>关注的公司 <br> <a href="">65</a></p>
+				</li>
+				<li class="nobg">
+					<i class="p"></i><p>发布的内容 <br> <a href="">3214</a></p>
+				</li>
+			</ul>
+
+			<h3 class="p_tt">我发布的内容</h3>
+			<table class="p_table p_table_co" cellspacing="0" cellpadding="0">
+				<tr>
+					<th width="520">公司</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<p class="t-center"><img src="../images/nocontent2_03.jpg" alt="您还没有发布的内容"></p>
+					</td>
+				</tr>
+			</table>
+			
+			<h3 class="p_tt">推荐关注</h3>
+			<table class="p_table p_table_co" cellspacing="0" cellpadding="0">
+				<tr>
+					<th width="310">公司</th>
+					<th width="270">&nbsp;</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td>
+						<a href=""><img src="../images/portrait.jpg" class="co_log" /></a>
+						<div>
+							<strong>易宝支付</strong>
+							<p><span class="grade_star"><i style="width:40px;"></i></span> 4.0分 <em>|</em> 235条信息</p>
+						</div>
+					</td>
+					<td><p>点评：“很棒，是一家值得信赖的公司，是一家值得信赖的公司。” <br> <span class="grey_99">产品经理 发布于4天前</span></p></td>
+					<td><a href="" class="btn_grey_s ml15"><em class="ok"></em>已关注</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href=""><img src="../images/portrait.jpg" class="co_log" /></a>
+						<div>
+							<strong>易宝支付</strong>
+							<p><span class="grade_star"><i style="width:40px;"></i></span> 4.0分 <em>|</em> 235条信息</p>
+						</div>
+					</td>
+					<td><p>点评：“很棒，是一家值得信赖的公司，是一家值得信赖的公司。” <br> <span class="grey_99">产品经理 发布于4天前</span></p></td>
+					<td><a href="" class="btn_grey_s ml15"><em class="ok"></em>已关注</a></td>
+				</tr>
+			</table>
+		</section>
+	</div>
+	
+	
+</body>
+</html>

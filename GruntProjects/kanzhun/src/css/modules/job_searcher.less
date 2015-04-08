@@ -1,0 +1,66 @@
+@import "../common/var";
+@import "../modules/dialog";
+
+//创建职位搜索器
+
+.job_create{
+    width: 630px;
+    .dialog_con{
+
+    }
+}
+.job_c_f{
+    padding: 0 30px;
+    h4{
+        font-weight: normal;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .ifd{
+        width: 230px;
+    }
+
+    .select{
+        width: 254px;
+    }
+
+    fieldset{
+        border: 0;
+
+        &.job_s_m{
+            .select{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .btn_grey_l{
+        padding: 0 45px;
+    }
+
+    p{
+        &.err{
+            clear: both;
+            left: 0;
+            top: 36px;
+            color: #f00;
+            padding: 5px 10px 0;
+            white-space: nowrap;
+            display: none;
+        }
+
+        &.j_err{
+            font-size: 14px;
+            color: #f00;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.job_s_suc{
+    text-align: center;
+    padding: 20px 0;
+    p{
+        margin-bottom: 30px;
+    }
+}

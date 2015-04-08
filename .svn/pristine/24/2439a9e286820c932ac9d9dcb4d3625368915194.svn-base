@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>邮箱验证</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+  <header class="global">
+    <div class="header">
+      <img class="logo" src="../images/logo.jpg"/>
+      <span class="title">企业用户专区</span>
+      <div class="user"><a href="#">登录企业账户</a></div>
+    </div>
+  </header>
+  <div class="container clearfix">
+    <section class="l_con">
+      <h1>免费注册企业账户</h1>
+      <ul class="progress">
+        <li class="step threestep"></li>
+        <li class="words">
+          <em class="current">选定公司</em>
+          <em class="current">注册</em>
+          <em class="current">邮箱验证</em>
+        </li>
+      </ul>
+      <p class="hadsend mt20 mb10">验证邮件已发送至<strong class="ml10">caiyaohui@techwolf.cn</strong></p>
+      <p class="grey_99 f_14">请登录邮箱点击邮件内的链接，验证后即可完成注册</p>
+      <p class="line"></p>
+      <dl>
+        <dt class="grey_99 f_14 mb10">没有收到邮件，怎么办?</dt>
+        <dd>1.邮箱地址填写错误？<a href="">重新填写邮箱地址</a></dd>
+        <dd>2.看看是否在邮箱的垃圾邮件、广告邮件目录里</dd>
+        <dd>3.稍等几分钟，若还未收到验证邮件，<a href="">重新发送验证邮件</a></dd>
+        <dd>4.还未收到验证邮件，请联系我们，邮箱：caiyaohui@kanzhun.com&nbsp;&nbsp;电话：010-88888888</dd>
+      </dl>
+    </section> 
+    <section class="r_con">
+      <h2 class="r_tt">常见问题</h2>
+      <dl class="infolist">
+        <dt><i class="base problem"></i>什么是公司简称？</dt>
+        <dd>大众对贵公司最为熟悉的名称，可能是公司的简称，也可能是贵公司知名产品的名字。</dd>
+        <dt><i class="base problem"></i>为什么要认领公司？</dt>
+        <dd>看准网已有用户发起创建的公司127万余家，并已积累多条数据，选定已存在的您的公司，即可维护您的雇主品牌。</dd>
+        <dt><i class="base problem"></i>什么是公司简称？</dt>
+        <dd>大众对贵公司最为熟悉的名称，可能是公司的简称，也可能是贵公司知名产品的名字。</dd>
+        <dt><i class="base problem"></i>为什么要认领公司？</dt>
+        <dd>看准网已有用户发起创建的公司127万余家，并已积累多条数据，选定已存在的您的公司，即可维护您的雇主品牌。</dd>
+      </dl>
+    </section>
+  </div>
+</body>
+</html>

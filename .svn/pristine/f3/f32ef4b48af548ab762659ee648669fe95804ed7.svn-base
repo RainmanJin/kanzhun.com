@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>看准雇主品牌沙龙邀请函</title>
+    <link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+    <section id="main">
+        <div id="content">
+            <form action="">
+                <div class="data_wrap">
+                    <div id="tag" class="tag">
+                        <img src="images/kanzhun.png" width="130px"/>
+                    </div>
+                    <ul class="data">
+                        <li>
+                            <label for="name">嘉宾姓名</label>
+                            <input id="name" name="name" type="text"/>
+                        </li>
+                        <li>
+                            <label for="enterprise">企业名称</label>
+                            <input id="enterprise" name="enterprise" type="text"/>
+                        </li>
+                        <li>
+                            <label for="position">嘉宾职位</label>
+                            <input id="position" name="position" type="text"/>
+                        </li>
+                        <li>
+                            <label for="contact">联系方式</label>
+                            <input id="contact" name="contact" type="text"/>
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
+            <div id="submit_wrap">
+                <button id="submit">
+                    确认登机
+                </button>
+            </div>
+            <div id="url">
+                <img src="images/url.png" />
+            </div>
+        </div>
+    </section>
+</body>
+</html>

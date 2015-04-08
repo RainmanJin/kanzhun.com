@@ -1,0 +1,157 @@
+$(function(){
+  function intiWebUpload(){
+    // 初始化Web Uploader
+    var uploader = WebUploader.create({
+      // 选完文件后，是否自动上传。
+      auto: true,
+      // swf文件路径
+      swf: '/js/Uploader.swf',
+      // 文件接收服务端。
+      server: '/file/upload.json',
+      // 选择文件的按钮。可选。
+      // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+      pick: {
+        id: '#filebtn',
+        label: '更换营业执照'
+      },
+      // 只允许选择图片文件。
+      accept: {
+          title: 'Images',
+          extensions: 'gif,jpg,jpeg,bmp,png',
+          mimeTypes: 'image/*'
+      }
+    });
+    // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+    uploader.on( 'uploadSuccess', function( file , response ) {
+      if(response.rescode==1){
+        var imgUrl=response.imgFileUrl;
+        $("#licenseImg").attr("src","http://img.kanzhun.com"+imgUrl);
+        $.ajax({
+          url:"/epuser/changeLicense.json",
+          dataType:"json",
+          data:{
+            userId:userId,
+            url:imgUrl
+          },
+          success:function(result){
+
+          }
+        });
+      }else{
+        alert(response.resmsg);
+      }
+    });
+  }
+  try{
+    intiWebUpload();
+  }catch(e){
+    
+  } 
+  $(".js_changeCompany").on("click",function(){
+    var companyName=$.trim($('input[name="companyName"]').val());
+    if(companyName==""){
+      alert("公司名字不能为空");
+      return;
+    }
+    $.ajax({
+      url:"/epuser/changeCompany.json",
+      //type:"post",
+      dataType:"json",
+      data:{
+        userId:userId,
+        companyName:companyName
+      },
+      success:function(result){
+        if(result.rescode==1){
+          location.reload();
+        }else{
+          alert(result.resmsg);
+        }
+      }
+    });
+  });
+  $(".js_changeEmail").on("click",function(){
+    var email=$.trim($('input[name="email"]').val());
+    if(email==""){
+      alert("邮箱不能为空");
+      return;
+    }
+    $.ajax({
+      url:"/epuser/changeEmail.json",
+      //type:"post",
+      dataType:"json",
+      data:{
+        userId:userId,
+        email:email
+      },
+      success:function(result){
+        if(result.rescode==1){
+          location.reload();
+        }else{
+          alert(result.resmsg);
+        }
+      }
+    });
+  }); 
+  $(".js_changeUserStatus").on("click",function(){
+    var data_type=$(this).attr("data-type");
+    var confMsg="确定要驳回么";
+    if(data_type=="1"){
+      confMsg="确定要通过么";
+    }
+    if(confirm(confMsg)){
+      //alert("确定");
+      //return true;
+    }else{
+      //alert("取消");
+      return false;
+    }
+    var reason="";
+    if(data_type=="2"){
+      reason=$.trim($('input[name="reason"]').val());
+      if(reason==""){
+        alert("驳回原因不能为空");
+        return;
+      }
+    }
+    $.ajax({
+      url:"/epuser/changeUserStatus.json",
+      //type:"post",
+      dataType:"json",
+      data:{
+        userId:userId,
+        status:data_type,
+        reason:reason
+      },
+      success:function(result){
+        if(result.rescode==1){
+          location.reload();
+        }else{
+          alert(result.resmsg);
+        }
+      }
+    });
+  });
+
+  var searchForm = $('#searchForm'),
+    btn = $('input[type=submit]', searchForm);
+  searchForm.on('click', 'input[type=submit]', function(e){
+    e.preventDefault();
+    var url = $(this).data('action');
+    searchForm.attr('action', url);
+    searchForm.submit();
+  })
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

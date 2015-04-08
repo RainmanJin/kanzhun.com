@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/subway.css"/>
+<title>DEMO</title>
+</head>
+
+<body>
+  <header class="sw"><img src="images/banner.jpg"></header>
+
+  <div class="search">
+    <form id="searchForm" action="xxx.json">
+      <p class="t-center">地铁补助那家强？看准告诉你！</p>
+      <p>
+        <input type="text" placeholder="请输入公司名称" id="coSuggest" name="company">
+        <button class="orange-btn" type="submit">查询一下</button>
+      </p>
+    </form>
+  </div>
+
+  <script>
+    var require = {
+      baseUrl: 'js/site/',
+      urlArgs : "v=1.0.1"
+    };
+  </script>
+  <script src="js/lib/jquery-2.1.1.min.js"></script>
+  <script src="js/lib/require.js" data-main="search.js"></script>
+</body>
+</html>
+
+

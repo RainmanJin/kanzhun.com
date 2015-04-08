@@ -1,0 +1,46 @@
+1、活动订阅
+请求：/activity/blacklist/sub.json?email=邮箱
+输入：email 订阅邮箱
+输出：
+{
+"resmsg": "请求成功",
+"rescode": 1
+}
+
+{
+"resmsg": "请求失败",
+"rescode": 0
+}
+
+2、报名公司搜索提示
+请求：/activity/blacklist/company.json?q=百
+输入：q 搜索词
+输出：
+{
+    "suggestions": [
+    {
+        "logo": "/image/l11514.gif",
+        "data": "百度|11514|7393",
+        "industry": "门户网站/搜索引擎",
+        "city": "北京"
+    },
+    {
+        "logo": "/images/logo/20141220/73b2ab1100832caa7d0bd66a6a7ea73c.jpg",
+        "data": "百胜餐饮集团肯德基|122656|2484",
+        "industry": "餐饮",
+        "city": "北京"
+    }
+    ],
+    "query": "百"
+}
+
+3、报名次数
+请求：/activity/blacklist/signuprank.json?companyId=3131&prizeId=1
+输入：companyId 公司ID
+          prizeId 奖项ID
+输出：
+{
+"rank": 1,
+"prizeId": 1,
+"companyId": 3131
+}

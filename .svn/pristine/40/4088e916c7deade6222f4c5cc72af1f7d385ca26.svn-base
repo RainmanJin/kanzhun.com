@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>看准出品-企业金评莓奖</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/step1.css"/>
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/utils/autocomplete.js"></script>
+    <script src="js/site/step1.js"></script>
+</head>
+<body>
+    <section class="content" id="content">
+          <div class="title">
+                <img  class="mark" src="images/title.png" alt=""/>
+                <img  class="vertical" src="images/vertical.png" alt=""/>
+                <p class="word">公司提名</p>
+         </div>
+
+         <div class="form">
+             <input type="text" id="companyNameSuggest" placeholder="请输入您要提名的公司" name="company"/>
+             <input type="hidden" id="" name=""/>
+             <p class="tip">*您已经提名<span>2</span>次，还可以提名<span>18</span>次</p>
+             <div class="center-wrap">
+                 <p class="h2">请选择您和TA的关系</p>
+                 <div class="re-wrap">
+                     <input type="radio" name="relation" id="r1"/>
+                     <label for="r1">已经分手的前任</label>
+                     <p class="bg"></p>
+                 </div>
+                 <div class="re-wrap">
+                     <input type="radio" name="relation" id="r2"/>
+                     <label for="r2">貌合神离的现任</label>
+                     <p class="bg"></p>
+                 </div>
+                 <div class="re-wrap">
+                     <input type="radio" name="relation" id="r3"/>
+                     <label for="r3">不得不匿名发布</label>
+                     <p class="bg"></p>
+                 </div>
+                 <a href="step2.html" class="next">下一页</a>
+             </div>
+         </div>
+    </section>
+</body>
+</html>

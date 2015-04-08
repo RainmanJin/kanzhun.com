@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>CCTV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/cctv.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <section class="index">
+    <div class="tt">已有 <strong class="yellow">45</strong> 位 <br/>CCTV <span class="yellow">~电视民工~</span> 匿名分享了工资</div>
+    <p class="t-center white f16 mt20">——— 选择职位，匿名分享工资 ———</p>
+
+    <ul class="title">
+      <li>
+        <a>
+        <p><span>中心主任副主任</span></p>
+        <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>频道总监副总监</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>副制片人</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>中心主任副主任</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>频道总监副总监</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>副制片人</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>记者</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>导播</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>副制片人</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>副制片人</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>中心主任副主任</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>频道总监副总监</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>副制片人</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>记者</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>导播</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+      <li>
+        <a>
+          <p><span>副制片人</span></p>
+          <p>平均￥20000 <br/> <b>20</b>人分享</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<script src="js/zepto.js"></script>
+</body>
+</html>

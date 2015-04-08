@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>boss-邀请函</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/idangerous.swiper.css" />
+  <link rel="stylesheet" href="css/invite.css"/>
+</head>
+
+<body>
+<div class="swiper-container" id='pages'>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide page" id="page1">
+      <div class="t1 animated bounce">
+        <p>“&nbsp;&nbsp;&nbsp;&nbsp;千万牛人&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>在线等您 ... ”</p>
+      </div>
+      <p class="t2 animated flash"><i class="i i_point"></i> Boss直聘合作企业专场招聘会 <i class="i i_point"></i> </p>
+      <span class="wx">
+        <i class="icon_wx"></i>
+      </span>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+    <div class="swiper-slide page" id="page2">
+        <div class="c1">
+          <div class="p">
+            <p>无论您在哪儿</p>
+            <p>用您的碎片时间</p>
+            <p>通过线上聊天</p>
+            <p>在APP上招到人</p>
+          </div>
+          <div class="b_i">
+            <i class="i i_1"></i>
+            <i class="i i_2"></i>
+            <i class="i i_3"></i>
+          </div>
+        </div>
+        <div class="people">
+          <img class="people_1" src="images/people_1.png" width="220">
+          <img class="icon_1" src="images/icon_1.png" width="86">
+        </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+    <div class="swiper-slide page" id="page3">
+      <div class="c1">
+        <div class="p">
+          <p><span><em>20</em>家</span> 主流媒体报道</p>
+          <p><span><em>50</em>万</span> 精确edm推送</p>
+          <p><span><em>130</em>万</span> uv看准网首页推荐</p>
+        </div>
+        <div class="b_i">
+          <i class="i i_4"></i>
+          <i class="i i_5"></i>
+          <i class="i i_6"></i>
+        </div>
+      </div>
+      <div class="people">
+        <img class="timeline" src="images/timeline.png" width="247">
+        <img class="people_2" src="images/people_2.png" width="212">
+      </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div> 
+    <div class="swiper-slide page" id="page4">
+      <div class="c1">
+        <p class="p">“您需要做什么”</p>
+        <div class="b_i">
+          <i class="i i_star"></i>
+          <i class="i i_star"></i>
+          <i class="i i_star"></i>
+        </div>
+      </div>
+      <div class="c2">
+        <img class="people_3" src="images/people_3.png" width="95">
+        <span class="circle c_1">下载<br>Boss直聘</span>
+        <span class="circle c_2">注册并<br>完善资料</span>
+        <span class="circle c_3">积极<br>回复牛人</span>
+      </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div> 
+    <div class="swiper-slide page" id="page5">
+      <div class="top"></div>
+      <div class="c">
+        <p class="p1">私人定制</p>
+        <p class="p2"><i class="i i_point"></i> 您的专属招聘会 <i class="i i_point"></i></p>
+        <p class="p3">联系我们</p>
+        <p class="p4">电话/微信：15201300358</p>
+        <img src="images/code.png" width="120">
+        <p class="p5"><a style="display:inline-block;background:#6471ae;color:#fff;padding:5px 30px;border-radius:15px;" href="#">立即下载BOSS直聘</a></p>
+        <img class="people_4" src="images/people_4.png" width="61">
+        <img class="people_5" src="images/people_5.png" width="64">
+      </div>
+    </div>   
+  </div>   
+</div>  
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.js"></script>
+<script type="text/javascript" src="js/invite.js"></script>
+</html>

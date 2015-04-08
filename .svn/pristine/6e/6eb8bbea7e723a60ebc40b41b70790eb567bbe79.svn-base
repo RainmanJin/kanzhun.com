@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员中心-登录页</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/auth-dialog.css" />
+<script type="text/javascript">var CONTEXTPATH='';  var STATICURL='http://img.kanzhun.com';</script>
+<script src="../js/require.js" data-main="../js/site/auth.js"></script>
+
+</head>
+
+<body class="auth">
+    <section class="auth_dialog" id="loginDialog">
+        <div class="dialog_con">
+        <a href="#" class="dialog_close"></a>
+            <h3>登录</h3>
+           <form action="/login" method="post" id="loginForm">
+                <ul class="login">
+                    <li>
+                        <span class="field name"><input type="text" name="account" placeholder="输入邮箱\手机号"  /></span>
+                        <p class="err" data-msg="请输入邮箱或手机号！"></p>
+                    </li>
+                    <li>
+                        <span class="field password"><input type="password" name="password" placeholder="输入登录密码"  /></span>
+                        <p class="err" data-msg="请输入登录密码！"></p>
+                    </li>
+                    <li id="forget"><a href="#" class="fright">忘记密码</a><input type="checkbox" name="autologin" id="autoLogin" value="" class="auto_login" /><label for="autoLogin" class="grey_99"> 下次自动登录</label></li>
+                    <li><input type="submit" value="登&nbsp;&nbsp;录" class="btn_o_l"></li>
+                </ul>
+                
+                <aside>
+                    <p class="to_register">还没有账号？ <a href="login-dialog.html#login">立即注册</a></p>
+                    <p class="f_14">使用以下账号直接登录</p>
+                    <p class="mb10 mt10"><a href="/connect/weibo"><img src="../images/login-wb.jpg" /></a></p>
+                    <p><a href="/connect/renren"><img src="../images/login-rr.jpg" /></a></p>
+                </aside>
+                </form>
+        </div>
+    </section>
+    <section class="auth_dialog" id="registerDialog">
+        <div class="dialog_con reg_con">
+        <a href="#" class="dialog_close"></a>
+            <h3>邮箱注册</h3>
+           <form action="/register/email.json" method="post" id="registerForm">
+            <ul class="login">
+                <li>
+                    <span class="field"><input type="text" name="account" placeholder="请输入您的常用邮箱"  /></span><i></i>
+                    <p class="err" data-msg="请输入您的常用邮箱！"></p>
+                </li>
+                <li>
+                    <span class="field"><input type="password" name="password" placeholder="设置登录密码" /></span><i></i>
+                    <p class="err" data-msg="密码不能为空！"></p>
+                </li>
+                <li>
+                    <span class="field"><input type="password" name="confirmPassword" placeholder="密码确认" /></span><i></i>
+                    <p class="err" data-msg="确认密码不能为空！"></p>
+                </li>
+                <li class="authcode">
+                    <img src="../images/authcode.jpg"  class="" /><span class="field"><input type="password" name="captcha" placeholder="输入验证码"  /></span><i></i>
+                    <p class="err" data-msg="请输入验证码！"></p>
+                </li>
+                <li><a href="">查看用户协议</a></li>
+                <li><input type="submit" value="同意用户协议并注册" class="btn_o_l" /></li>
+            </ul>
+            </form>
+            <aside>
+                <p class="to_login">已注册？ <a href="../Registrationlogin/login.html">立即登录</a></p>
+                <p class="f_14">使用以下账号直接登录</p>
+                <p class="mb10 mt10"><img src="../images/login-wb.jpg" /></p>
+                <p><img src="../images/login-rr.jpg" /></p>
+            </aside>
+            
+        </div>
+    </section>
+    <span class="middle-helper"></span>
+</body>
+</html>

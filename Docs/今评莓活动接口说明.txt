@@ -1,0 +1,113 @@
+1、活动订阅
+请求：/activity/jinpingmei/sub.json?email=邮箱
+输入：email 订阅邮箱
+输出：
+{
+"resmsg": "请求成功",
+"rescode": 1
+}
+
+{
+"resmsg": "请求失败",
+"rescode": 0
+}
+
+2、报名公司搜索提示
+请求：/activity/jinpingmei/company.json?q=百
+输入：q 搜索词
+输出：
+{
+    "suggestions": [
+    {
+        "logo": "/image/l11514.gif",
+        "data": "百度|11514|7393",
+        "industry": "门户网站/搜索引擎",
+        "city": "北京"
+    },
+    {
+        "logo": "/images/logo/20141220/73b2ab1100832caa7d0bd66a6a7ea73c.jpg",
+        "data": "百胜餐饮集团肯德基|122656|2484",
+        "industry": "餐饮",
+        "city": "北京"
+    }
+    ],
+    "query": "百"
+}
+
+3、报名次数
+请求：/activity/jinpingmei/signuprank.json?companyId=3131&prizeId=1
+输入：companyId 公司ID
+          prizeId 奖项ID
+输出：
+{
+"rank": 1,
+"prizeId": 1,
+"companyId": 3131
+}
+
+4、排行加载更多
+请求：/activity/jinpingmei/52/1/more.json?rankindex=28
+输入：行业 52、53等
+          奖项 1、2、3、4、5
+          rankindex 起始位置
+输出：
+{
+"rescode": 1,
+"resmsg": "请求成功",
+"html": "<li>\n\t <div class=\"ol_inner\">\n\t <div class=\"oli_t\">\n\t <a ka=\"bl-com-1\" href=\"/gso1127539.html\" target=\"_blank\" title=\"南通淘金时代\"><h4 class=\"h\">南通淘金时代</h4></a>\n\t <p>行业：电子商务</p>\n\t <p>总部：南通</p>\n\t </div>\n\t\t<div class=\"oli_b t-center\">\n\t <a class=\"bt_s color_y\" href=\"javascript:;\">助他夺冠</a><a class=\"bt_s color_o ml15\" href=\"javascript:;\">帮他下榜</a>\n\t </div>\n\t </div>\n\t</li>\n\t<li>\n\t <div class=\"ol_inner\">\n\t <div class=\"oli_t\">\n\t <a ka=\"bl-com-2\" href=\"/gso1947227.html\" target=\"_blank\" title=\"尉氏县新天地房产经纪有限公司\"><h4 class=\"h\">尉氏县新天地房产经纪</h4></a>\n\t <p>行业：移动互联网</p>\n\t <p>总部：安庆</p>\n\t </div>\n\t\t<div class=\"oli_b t-center\">\n\t <a class=\"bt_s color_y\" href=\"javascript:;\">助他夺冠</a><a class=\"bt_s color_o ml15\" href=\"javascript:;\">帮他下榜</a>\n\t </div>\n\t </div>\n\t</li>",
+"rankindex": 0,
+"more": false
+}
+
+5、助他夺冠
+请求：/activity/jinpingmei/onlist.json?companyId=1947227&prizeId=1
+输入：companyId 公司ID
+          prizeId 奖项 ID 1、2、3、4、5
+          注：需要一个参数确定返回的html样式
+输出：
+{
+"resmsg": "请求成功",
+"rescode": 1,
+"html": "<div class=\"tli_b t-center\">\n <div class=\"tlib_l\">\n <p class=\"p1\">4<em>人</em></p>\n <p class=\"p2\">助他夺冠</p>\n </div>\n <i class=\"i i_pk\"></i>\n <div class=\"tlib_r\">\n <p class=\"p1\">3<em>人</em></p>\n <p class=\"p2\">帮他下榜</p>\n </div>\n</div>"
+}
+
+6、帮他下榜
+请求：/activity/jinpingmei/offlist.json?companyId=1947227&prizeId=1
+输入：companyId 公司ID
+          prizeId 奖项 ID 1、2、3、4、5
+          注：需要一个参数确定返回的html样式
+输出：
+{
+"resmsg": "请求成功",
+"rescode": 1,
+"html": "<div class=\"tli_b t-center\">\n <div class=\"tlib_l\">\n <p class=\"p1\">4<em>人</em></p>\n <p class=\"p2\">助他夺冠</p>\n </div>\n <i class=\"i i_pk\"></i>\n <div class=\"tlib_r\">\n <p class=\"p1\">4<em>人</em></p>\n <p class=\"p2\">帮他下榜</p>\n </div>\n</div>"
+}
+
+7、曝过 黑过 帮过
+请求：/activity/jinpingmei/userdata/more.json?datatype=1&lastId=114&page=1
+输入：datatype 1曝过 4黑过 3帮过
+          lastId 上次加载最后一条记录ID
+          page 页数
+输出：
+{
+"lastId": 109,
+"resmsg": "请求成功",
+"rescode": 1,
+"html": "<li>\n\t <h4>百度</h4>\n\t <p>在<em>永不加薪</em>榜上更新了排名</p>\n\t</li>\n\t<li>\n\t <h4>北京白鹭时代信息技术有限公司</h4>\n\t <p>在<em>永不加薪</em>榜上更新了排名</p>\n\t</li>",
+"more": false
+}
+
+8、报名
+请求：/activity/jinpingmei/signup.json
+输入：companyId 公司ID
+          prizeId 奖项ID
+          content 内容
+          tag 标签字符串逗号分隔
+          userStatus 用户状态
+          
+输出：
+{
+"resmsg": "请求成功",
+"rescode": 1,
+"html": ""
+}

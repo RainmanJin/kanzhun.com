@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <title>薪酬-个人信息</title>
+  <link rel="stylesheet" href="../css/public.css"/>
+  <link rel="stylesheet" href="../css/report/remuneration-wx.css"/>
+</head>
+<body>
+
+<section class="rem_con">
+<header class="page_hd">
+  <a class="top_back" href="javascript:;"><i></i>返回</a>
+  <strong>晒面经</strong>
+</header>
+<form action="" id="salaryReportForm">
+  <h3 class="mt10 p10 f_16">个人信息</h3>
+
+  <ul class="rem_form">
+    <li>
+      <label><i>*</i> 姓名</label>
+      <div>
+      <input type="text" class="rem_ifd" />
+      </div>
+    </li>
+    <li class="select_tap" id="degreeTap">
+      <label><i>*</i> 学历</label>
+      <div>
+        <button type="button"><i class="arrow_g"></i>请选择</button>
+      </div>
+    </li>
+  </ul>
+  <h3 class="mt10 p10 f_16">公司信息</h3>
+
+  <ul class="rem_form">
+    <li>
+      <label><i>*</i> 公司名称</label>
+      <div>
+        <input type="text" class="rem_ifd" placeholder="请输入您当前职位名称" />
+      </div>
+    </li>
+    <li>
+      <label><i>*</i> 公司规模</label>
+      <div>
+        <button type="button"><i class="arrow_g"></i>请选择您所在公司规模</button>
+      </div>
+    </li>
+    <li>
+      <label><i>*</i> 是否在职</label>
+        <ul class="bt_change">
+          <li class="l on"><input type="radio" name="" id=""/>在职</li>
+          <li class="r">已离职</li>
+        </ul>
+    </li>
+    <li>
+      <button type="button"><i class="arrow_g"></i>请选择入职年份</button>
+    </li>
+    <li>
+      <button type="button"><i class="arrow_g"></i>请选择离职年份</button>
+    </li>
+  </ul>
+
+<h3 class="mt10 p10 f_16">职位信息</h3>
+
+<ul class="rem_form">
+  <li class="select_tap" id="industryTap">
+    <label><i>*</i> 行业</label>
+    <div>
+      <button type="button"><i class="arrow_g"></i>请选择您从事的行业类别</button>
+    </div>
+  </li>
+
+  <li class="select_tap" id="cityTap">
+    <label><i>*</i> 城市</label>
+    <div>
+      <button type="button"><i class="arrow_g"></i>请选择您从事的行业类别</button>
+    </div>
+  </li>
+
+  <li>
+    <label><i>*</i> 月薪</label>
+    <div class="rem_s">
+      <input type="text" class="rem_ifd" placeholder="请输入您的税前工资收入" maxlength="10" />
+      <span>元</span>
+    </div>
+  </li>
+  <li class="select_tap" id="experienceTap">
+    <label><i>*</i> 经验</label>
+    <div>
+      <button type="button"><i class="arrow_g"></i>请输入您的工作年限</button>
+    </div>
+  </li>
+
+  <li>
+    <label><i>*</i> 常用邮箱</label>
+    <div>
+      <input type="text" class="rem_ifd" placeholder="用于接收薪酬报告" maxlength="30" />
+    </div>
+  </li>
+</ul>
+
+  <p class="p10"><input class="btn_green_b" type="submit" value="生成个人薪酬报告"/></p>
+</form>
+</section>
+
+<section class="slide_select_wrap">
+  <div class="slide_select">
+    <div class="options">
+      <ul id="industry">
+        <li>互联网</li>
+        <li>计算机软件</li>
+        <li>IT服务</li>
+        <li>计算机硬件</li>
+        <li>通讯</li>
+        <li>电子</li>
+        <li>网络游戏</li>
+        <li>互联网</li>
+        <li>计算机软件</li>
+        <li>IT服务</li>
+        <li>计算机硬件</li>
+        <li>通讯</li>
+        <li>电子</li>
+        <li>网络游戏</li>
+        <li>互联网</li>
+        <li>计算机软件</li>
+        <li>IT服务</li>
+        <li>计算机硬件</li>
+        <li>通讯</li>
+        <li>电子</li>
+        <li>网络游戏</li>
+        <li>互联网</li>
+        <li>计算机软件</li>
+        <li>IT服务</li>
+        <li>计算机硬件</li>
+        <li>通讯</li>
+        <li>电子</li>
+        <li>网络游戏</li>
+      </ul>
+
+      <ul id="city">
+        <li>北京</li>
+        <li>上海</li>
+      </ul>
+
+      <ul id="degree">
+        <li>本科</li>
+        <li>大专</li>
+      </ul>
+
+      <ul id="experience">
+        <li>10年</li>
+        <li>5年</li>
+      </ul>
+
+      <ul id="scale">
+        <li>1000人</li>
+        <li>400人</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="maskui_dialog" style="position: fixed; margin-left: -150px; margin-top: -22px; top: 50%; left: 50%; z-index: 101; display: block;"><div><div><div class="m_dialog_con f_16"><span class="red">请先输入并选择正确的职位！</span></div><p class="m_dialog_btn"><a href="javascript:;" class="maskui_close btn btn_block">确定</a></p></div></div></section>
+
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/utils/validator.js"></script>
+<script src="../js/remuneration.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BOSS-管理-添加职位</title>
+  <!--[if lte IE 9]>
+  <script src="../js/utils/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+  <link rel="stylesheet" href="../css/ugc.css" />
+  <script src="../js/require.js" data-main="../js/site/detail.js"></script>
+</head>
+<body>
+<header class="global">
+  <div class="header">
+    <a href="/"><img src="../images/logo.jpg" alt="Boss直聘" width="111" height="35" class="logo"></a>
+    <p class="name"><em>|</em>【Boss】罗永浩</p>
+    <p class="download"><a href="">立即下载Boss直聘</a></p>
+  </div>
+</header>
+<div class="container clearfix">
+  <section class="ugcl_con">
+    <div class="modifyhead ugc_m"><img src="../images/img_08.jpg" alt="大罗永浩"><span></span></div>
+    <h2 class="white f_20 t-center">大罗永浩<em class="green">@锤子科技伟业</em></h2>
+    <p class="white t-center">移动事业部大产品运营总监</p>
+    <div class="sidenav">
+      <p><a href="">基本信息</a></p>
+      <p><a href="">公司诱惑</a></p>
+      <p><a href="" class="current">管理职位（3）</a></p>
+      <p><a href="">站台管理</a></p>
+    </div>
+  </section>
+  <section class="ugcr_con">
+    <div class="basicinfo mt30">
+      <form action="" class="def">
+        <ul>
+          <li>
+            <label class="label">职位类型</label>
+            <dl class="select" id="jobMenu">
+              <dt>
+                <input type="button" name="" value="职位类型" readyonly="readyonly" ><span class="btn"><i></i></span>
+              </dt>
+              <dd class="openmenu">
+                <h2>技术</h2>
+                <ul class="clearfix">
+                  <li><a href="javascript:;">后端开发<i></i></a></li>
+                  <li><a href="javascript:;">移动开发<i></i></a>
+                    <div> 
+                      <a href="javascript:;">设计经理/主管</a>
+                      <a href="javascript:;">设计总监</a>
+                      <a href="javascript:;">视觉设计经理/主管</a>
+                      <a href="javascript:;">视觉设计总监</a>
+                      <a href="javascript:;">交互设计经理/主管</a>
+                      <a href="javascript:;">交互设计总监</a>
+                      <a href="javascript:;">用户研究经理/主管</a>
+                      <a href="javascript:;">用户研究总监 </a>
+                    </div>
+                  </li>
+                  <li><a href="javascript:;">测试<i></i></a></li>
+                  <li><a href="javascript:;">运维<i></i></a></li>
+                  <li><a href="javascript:;">DBA<i></i></a></li>
+                  <li><a href="javascript:;">项目管理<i></i></a></li>
+                  <li><a href="javascript:;">高端技术职位<i></i></a></li>
+                </ul>
+                <h2>产品</h2>
+                <ul class="clearfix">
+                  <li><a href="javascript:;">产品经理<i></i></a></li>
+                  <li><a href="javascript:;">产品设计师<i></i></a></li>
+                  <li><a href="javascript:;">高端产品职位<i></i></a></li>
+                </ul>
+                <h2>设计</h2>
+                <ul class="clearfix">
+                  <li><a href="javascript:;">视觉设计<i></i></a></li>
+                  <li><a href="javascript:;">交互设计<i></i></a></li>
+                  <li><a href="javascript:;">用户研究<i></i></a></li>
+                  <li><a href="javascript:;">高端设计职位<i></i></a></li>
+                </ul>
+                <h2>运营</h2>
+                <ul class="clearfix">
+                  <li><a href="javascript:;">运营<i></i></a></li>
+                  <li><a href="javascript:;">编辑<i></i></a></li>
+                  <li><a href="javascript:;">客服<i></i></a></li>
+                  <li><a href="javascript:;">高端运营职位<i></i></a></li>
+                </ul>
+                <h2>市场与销售</h2>
+                <ul class="clearfix">
+                  <li><a href="javascript:;">市场/营销<i></i></a></li>
+                  <li><a href="javascript:;">公关<i></i></a></li>
+                  <li><a href="javascript:;">销售<i></i></a></li>
+                  <li><a href="javascript:;">高端市场职位<i></i></a></li>
+                  <li><a href="javascript:;">高端销售职位<i></i></a></li>
+                </ul>
+                <h2>职能</h2>
+                <ul class="clearfix">
+                  <li><a href="javascript:;">人力资源<i></i></a></li>
+                  <li><a href="javascript:;">行政<i></i></a></li>
+                  <li><a href="javascript:;">财务<i></i></a></li>
+                  <li><a href="javascript:;">高端职能职位<i></i></a></li>
+                </ul>
+              </dd>
+            </dl>
+            <!-- <input type="text" placeholder="请选择职位类型" class="ifd ifd_f" > -->
+            <span class="err">1231231</span>
+          </li>
+          <li>
+            <label class="label">职位名称</label>
+            <input type="text" placeholder="请填写职位名称" class="ifd" >
+          </li>
+          <li>
+            <label class="label">工资范围</label>
+            <input type="text" placeholder="Ok" class="ifd" >
+          </li>
+          <li>
+            <label class="label">所在地</label>
+            <input type="text" placeholder="请填写所在地" class="ifd" >
+          </li>
+          <li>
+            <label class="label">经验要求</label>
+            <input type="text" placeholder="请填写经验要求" class="ifd" >
+          </li>
+          <li>
+            <label class="label">学历要求</label>
+            <dl class="select" style="z-index: 2;">
+              <dt>
+                <input type="button" name="" value="学历要求" readyonly="readyonly" ><span class="btn"><i></i></span>
+              </dt>
+              <dd>
+                <a href="#">本科</a>
+                <a href="#">大专</a>
+                <a href="#">高中</a>
+                <a href="#">初中</a>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <label class="label">职位诱惑</label>
+            <input type="text" placeholder="请填写公司地址" class="ifd ifd_l" >
+            <p class="attention">最多可输入20个字</p>
+          </li>
+          <li>
+            <label class="label t_top">任职要求</label>
+            <textarea name="" id="" placeholder="请填写任职要求" class="chat_fild" rows="5"></textarea>
+            <p class="attention">最多可输入300个字</p>
+          </li>
+          <li>
+            <label class="label t_top">岗位职责</label>
+            <textarea name="" id="" placeholder="请填写岗位职责" class="chat_fild" rows="5"></textarea>
+            <p class="attention">最多可输入300个字</p>
+          </li>
+          <li>
+            <label class="label "></label>
+            <input type="submit"  value="保存" class="green_btn save" >
+          </li>
+        </ul>
+
+      </form>
+    </div>
+  </section>
+</div>
+<footer>
+  <nav>
+    <a href="">关于我们</a><a href="">意见反馈</a><a href="">使用帮助</a><a href="">用户协议</a><a href="" class="micro_message">看准网微信<i></i></a><a href="">看准网微博</a>
+  </nav>
+  <p>Copyright@ 2010 kanzhun.com苏ICP备08022608号2009-2014, kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,578 @@
+@import "common/var";
+@import "common/reset";
+@import "common/common";
+
+body{
+  background: url(../images/bg.jpg) repeat-y;
+  background-size: 100%;
+}
+.index_middle{
+  margin-top: 20px;
+  position: relative;
+  i.cloud{
+    display: inline-block;
+    background: url(../images/cloud.png) no-repeat;
+    position: absolute;
+    &.cloud_1{
+      top: 30px;
+      right: 0;
+      width: 30px;
+      height: 18px;
+      z-index: 0;
+      background-size: 30px;
+      -webkit-animation: arrows_1 10s infinite linear;
+    }
+    &.cloud_2{
+      top: -10px;
+      right: 0;
+      width: 60px;
+      height: 37px;
+      z-index: 0;
+      background-size: 60px;
+      -webkit-animation: arrows_1 10s infinite linear;
+    }
+    &.cloud_3{
+      top: 10px;
+      right: 50px;
+      width: 60px;
+      height: 37px;
+      z-index: 0;
+      background-size: 60px;
+    } 
+    &.cloud_4{
+      top: 30px;
+      right: 20px;
+      width: 30px;
+      height: 18px;
+      z-index: 0;
+      background-size: 30px;
+    } 
+    @-webkit-keyframes arrows_1{
+      0%{
+        //-webkit-transform: translate(100%,0);
+      }
+      /*
+      50%{
+        -webkit-transform: translate(20,0);
+      }*/
+      100%{
+        -webkit-transform: translate(-360px,0);
+      }
+    }          
+  }
+  .index_people{
+    z-index: 1;
+    position: relative;
+  }
+}
+.index_btn{
+  margin: 10px;
+}
+.btn{
+  border: 0;
+  clear: both;
+  display: block;
+  background-color: #c44323;
+  padding: 5px 0;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  font: bold 20px/1.5 Arial, Helvetica, "Microsoft YaHei", STHeiti, "Droid Sans Fallback", sans-serif;
+}
+header.head{
+  overflow: hidden;
+  padding: 10px;
+  .headPic{
+    float: left;
+    img{
+      width: 65px;
+      height: 65px;
+      border: 3px solid #c9ddf2;
+      border-radius: 68px; 
+    }
+  }
+  .info{
+    padding: 5px 0 0 10px;
+    float: left;
+    .nick{
+      color: #2e3f73;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .tips{
+      padding: 5px 10px;
+      color: #fff;
+      background: #2e3f73;
+    }
+  }
+}
+.effect_t{
+  padding: 5px 0;
+  background-color: #fafcfe;
+  border-top: 1px solid #2e3f73;
+  border-bottom: 1px solid #2e3f73;
+  text-align: center;
+  b{
+    color: #ef6917;
+    font-weight: bold;
+  }
+}
+.set_content{
+  padding: 0 10px;
+  h2.h2_t{
+    margin-top: 15px;
+    font-weight: normal;
+    b{
+      color: #2e3f73;
+      font-weight: normal;
+    }
+  }
+  ul.pic{
+    margin-top: 30px;
+    margin-right: -5px;
+    li{
+      width: 20%;
+      float: left;
+      a{
+        margin-right: 5px;
+        display: block;
+        background-color: #f0f0f0;
+        height: 57px;
+        border-radius: 7px;
+        text-align: center;
+        i{
+          display: inline-block;
+          width: 60px;
+          height: 50px;
+          margin-top: -20px;
+          text-align: center;
+          &.pic_1{
+            background:url(../images/people_1.png) no-repeat top center;
+            background-size: 40px;
+          }
+          &.pic_2{
+            background:url(../images/people_2.png) no-repeat top center;
+            background-size: 37px;
+          }  
+          &.pic_3{
+            background:url(../images/people_3.png) no-repeat top center;
+            background-size: 51px;
+          }  
+          &.pic_4{
+            background:url(../images/people_4.png) no-repeat top center;
+            background-size: 60px;
+          }  
+          &.pic_5{
+            background:url(../images/people_5.png) no-repeat top center;
+            background-size: 45px;
+          }                           
+        }
+      }
+      &.on{
+        a{
+          background-color: #2e3f73;
+          color: #fff;
+        }
+      }
+    }
+  }
+  ul.tips{
+    margin-top: 15px;
+    margin-right: -10px;
+    overflow: hidden;
+    li{
+      width: 33%;
+      float: left;
+      margin-bottom: 10px;
+      a{
+        margin-right: 10px;
+        display: block;
+        border: 1px solid #e0e1e2;
+        padding: 5px 5px;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+      span{
+        margin-right: 10px;
+        padding: 0 5px;
+        display: block;
+        border: 1px solid #e0e1e2;
+        background-color: #fff;
+        input{
+          border: 0; 
+          height: 31px;
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+        &.err{
+          border-color: red;
+        }
+      }
+      &.on{
+        a{
+          background-color: #2e3f73;
+          color: #fff; 
+        }       
+      }
+    }
+  }
+}
+.content_result{
+  padding: 10px;
+  margin-bottom: 50px;
+  dl{
+    background-color: #f2f7fc;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    min-height: 80px;
+    dt{
+      position: absolute;
+      z-index: 0;
+    }
+    dd{
+      position: relative;
+      z-index: 1;
+      margin-left: 65px;
+      margin-top: 5px;
+      ul{
+        overflow: hidden;
+        li{
+          float: left;
+          margin-right: 7px;
+          margin-bottom: 7px;
+          span{
+            display: inline-block;
+            padding: 5px 10px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    &.dl_1{
+      dt{
+        top: -5px;
+        i{
+          display: inline-block;
+          width: 50px;
+          height: 82px;
+          background:url(../images/people_1.png) no-repeat top center;
+          background-size: 50px;                    
+        }
+      }
+      dd{
+        ul{
+          li{
+            &.color_1{
+              span{
+                background: #4781d2;
+              }
+              color: #4781d2;
+            }
+            &.color_2{
+              span{
+                background: #4174bc;
+              }
+              color: #4174bc;
+            }
+            &.color_3{
+              span{
+                background: #5c8acc;
+              }
+              color: #5c8acc;
+            }
+            &.color_4{
+              span{
+                background: #2c6ac0;
+              }
+              color: #2c6ac0; 
+            }
+            &.color_5{
+              span{
+                background: #3479d9;
+              }
+              color: #3479d9; 
+            }
+          }
+        }
+      }
+    }
+    &.dl_2{
+      dt{
+        top: -5px;
+        i{
+          display: inline-block;
+          width: 46px;
+          height: 83px;
+          background:url(../images/people_2.png) no-repeat top center;
+          background-size: 46px;                    
+        }
+      }
+      dd{
+        ul{
+          li{
+            &.color_1{
+              span{
+                background: #dc9e5b;
+              }
+              color: #dc9e5b;
+            }
+            &.color_2{
+              span{
+                background: #d27109;
+              }
+              color: #d27109;
+            }
+            &.color_3{
+              span{
+                background: #db8a4e;
+              }
+              color: #db8a4e;
+            }
+            &.color_4{
+              span{
+                background: #e9a13a;
+              }
+              color: #e9a13a; 
+            }
+            &.color_5{
+              span{
+                background: #d18b3f;
+              }
+              color: #d18b3f; 
+            }
+          }
+        }
+      }
+    } 
+    &.dl_3{
+      dt{
+        top: -5px;
+        left: 0px;
+        i{
+          display: inline-block;
+          width: 68px;
+          height: 73px;
+          background:url(../images/people_3.png) no-repeat top center;
+          background-size: 68px;                    
+        }
+      }
+      dd{
+        ul{
+          li{
+            &.color_1{
+              span{
+                background: #37b391;
+              }
+              color: #37b391;
+            }
+            &.color_2{
+              span{
+                background: #22a581;
+              }
+              color: #22a581;
+            }
+            &.color_3{
+              span{
+                background: #34c29b;
+              }
+              color: #34c29b;
+            }
+            &.color_4{
+              span{
+                background: #349f82;
+              }
+              color: #349f82; 
+            }
+            &.color_5{
+              span{
+                background: #21bd92;
+              }
+              color: #21bd92; 
+            }
+          }
+        }
+      }
+    }  
+    &.dl_4{
+      dt{
+        top: -5px;
+        left: -5px;
+        i{
+          display: inline-block;
+          width: 90px;
+          height: 83px;
+          background:url(../images/people_4.png) no-repeat top center;
+          background-size: 90px;                    
+        }
+      }
+      dd{
+        ul{
+          li{
+            &.color_1{
+              span{
+                background: #ee5e71;
+              }
+              color: #ee5e71;
+            }
+            &.color_2{
+              span{
+                background: #e25063;
+              }
+              color: #e25063;
+            }
+            &.color_3{
+              span{
+                background: #f6677a;
+              }
+              color: #f6677a;
+            }
+            &.color_4{
+              span{
+                background: #e84359;
+              }
+              color: #e84359; 
+            }
+            &.color_5{
+              span{
+                background: #e5596b;
+              }
+              color: #e5596b; 
+            }
+          }
+        }
+      }
+    }    
+    &.dl_5{
+      dt{
+        top: -5px;
+        i{
+          display: inline-block;
+          width: 68px;
+          height: 85px;
+          background:url(../images/people_5.png) no-repeat top center;
+          background-size: 68px;                    
+        }
+      }
+      dd{
+        ul{
+          li{
+            &.color_1{
+              span{
+                background: #33c6cb;
+              }
+              color: #33c6cb;
+            }
+            &.color_2{
+              span{
+                background: #2bbec3;
+              }
+              color: #2bbec3;
+            }
+            &.color_3{
+              span{
+                background: #3bcacf;
+              }
+              color: #3bcacf;
+            }
+            &.color_4{
+              span{
+                background: #18b7bc;
+              }
+              color: #18b7bc; 
+            }
+            &.color_5{
+              span{
+                background: #2dccd1;
+              }
+              color: #2dccd1; 
+            }
+          }
+        }
+      }
+    }   
+  }
+}
+h2.no_result{
+  font-size: 20px;
+  color: #999;
+  text-align: center;
+}
+footer.foot{
+  display: block;
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  .l{
+    float: left;
+    width: 50%;
+    background: rgba(33, 33, 33, 0.9);
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+  }
+  .r{
+    float: left;
+    width: 50%;
+    background: rgba(89, 89, 89, 0.9);
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+  }
+}
+//转发提示
+.mask{
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+}
+.transmitDialog{
+  position: fixed;
+  z-index: 10;
+  top: 150px;
+  min-height: 150px;
+  left: 50%;
+  margin-left: -128px;
+  margin-top: -61px;
+  background: url(../images/oval_bg.png) no-repeat;
+  background-size: 257px;
+  width: 257px;
+  i.arrows{
+    display: inline-block;
+    background: url(../images/arrows.png) no-repeat;
+    background-size: 63px;
+    width: 63px;
+    height: 65px;
+    position: absolute;
+    top: -70px;
+    right: -5px;
+    -webkit-animation: arrowsUp 1s infinite linear;
+  }
+  p{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+  }
+}
+@-webkit-keyframes arrowsUp{
+  0%{
+    -webkit-transform: translate(0,0);
+  }
+  50%{
+    -webkit-transform: translate(10px,-10px);
+  }
+  100%{
+    -webkit-transform: translate(0,0);
+  }
+}

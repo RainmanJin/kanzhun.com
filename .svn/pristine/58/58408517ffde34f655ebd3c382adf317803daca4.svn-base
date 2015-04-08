@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>UGC-发布公司信息</title>
+		<!--[if lte IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!--[if gt IE 9]><!-->
+		<script src="../js/jquery-2.1.0.min.js"></script>
+		<![endif]-->
+        <link rel="stylesheet" href="../css/ugc.css" />
+        <link rel="stylesheet" href="../css/widget.css" />
+        <script src="../js/require.js" data-main="../js/site/base.js"></script>
+        <!-- // <script>
+        //   $(function(){
+        //     $('.ugcbtn').hover(function(){
+        //     $(this).parent().parent('dl').addClass("hover");
+        // },function(){
+        //     $(this).parent().parent('dl').removeClass("hover");
+        // });
+        //   })
+        // </script> -->
+	</head>
+	<body>
+		<header class="global">
+			<div class="header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<p class="loginfo"><a href="#">我的看准</a><i>|</i><a href="#">退出</a></p>
+			</div>
+		</header>
+
+		<div class="ugc clearfix">
+			<header class="ugcheader">
+				<p>超过100万用户在看准网匿名发布公司信息，这些信息使得求职者更好的了解公司内部的情况，以至于更好的选择公司。请您加入我们，分享您的信息，获取更多的信息。</p>
+			</header>
+
+			<section class="ugc_left">
+				<img src="../images/ugc_img.jpg" alt="">
+			</section>
+
+			<section class="ugc_right clearfix">
+        <dl class="imgmenu">
+          <dt class="comment"></dt>
+          <dd>
+            <p>混进职场多年，就职过的公司好坏你最清楚。匿名分享下您的公司评价。</p>
+            <a href="" class="ugcbtn">写一条点评<span></span></a>
+          </dd>
+        </dl>
+        <dl class="imgmenu">
+          <dt class="photo"></dt>
+          <dd>
+            <p>公司环境高大上有木有，无图无真相。</p>
+            <a href="" class="ugcbtn">发照片<span></span></a>
+          </dd>
+        </dl>
+        <dl class="imgmenu">
+          <dt class="salary"></dt>
+          <dd>
+            <p>发布一条工资，看看您的职场地位。</p>
+            <a href="" class="ugcbtn">发一条工资<span></span></a>
+          </dd>
+        </dl>
+        <dl class="imgmenu">
+          <dt class="audition"></dt>
+          <dd>
+            <p>匿名发布您的面试经历，真实的记录面试感受。</p>
+            <a href="" class="ugcbtn">写一条面试经历<span></span></a>
+          </dd>
+        </dl>
+        <dl class="imgmenu nofind">
+          <dt class="archives"></dt>
+          <dd>
+            <p>没找到您所在的公司信息？<br>立即创建公司的档案，让更多的同事和朋友一起分享公司信息。</p>
+            <a href="" class="ugcbtn">创建公司档案<span></span></a>
+          </dd>
+        </dl>
+      </section>
+		</div>
+	</body>
+</html>

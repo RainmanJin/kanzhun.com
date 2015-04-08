@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>关于看准</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/profile.css" />
+<script src="../js/require.js" data-main="../js/site/profile.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">招聘</a>
+				<a href="#">公司</a>
+				<a href="#">工资</a>
+				<a href="#">面试</a>
+				<a href="#" class="mycomment">我要点评</a>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="container profiles clearfix">
+		<aside class="profiles_nav usehelp_nav">
+			<nav>
+				<p class="current"><a href="#">关于看准</a></p>
+				<p><a href="#">意见反馈</a></p>
+				<p><a href="#">使用帮助</a></p>
+				<p><a href="#">用户协议</a></p>
+			</nav>
+		</aside>
+
+		<section class="profiles_con">
+			<h3 class="p_tt usehelp_tt">关于看准</h3>
+			<div class="aboutkanzhun">
+				<a href="" class><img src="../images/about_kanzhun.jpg" alt=""></a>
+				<p>    欢迎来到看准网（www.kanzhun.com），本协议在您开始使用本网站，并成为本网站的注册会员即产生法律效力。视情况，看准网有可能更新协议内容，并通过电子邮件来通知用户。更新结果将在看准网通知之日起生效。协议包括看准网的网站用户互动规范，使用政策及相应的隐私政策。</p>
+			</div>
+			<p class="kanzhun_what">    看准网是一家提供全面的公司信息的网站，包括公司名称、地点、时间，除此之外，我们还提供公司评论和面试信息，这些信息 class="kanzhun_what"将帮助您全面的了解一家公司。同时我们提供的信息完全免费，您不需要为此付任何的费用。</p>
+			<p class="kanzhun_what"> 看准网是一个匿名的交流工作和职业场所的平台。看准网以全面、准确、真实的数据给用户提供了参考，给就业一个清晰的思路。希望通过我们的努力，可以给用户提供真实透明的信息，可以更好的帮助用户在职场中成长。</p>	
+			<h3 class="p_tt usehelp_tt">联系我们</h3>
+			<dl class="information">
+				<dt>北京华品博瑞科网络技术有限公司</dt>
+				<dd>地　　址：北京市朝阳区太阳宫恒川公寓L栋01</dd>
+				<dd>电　　话：010-98765432</dd>
+				<dd class="mt10">客服QQ：198766554</dd>
+				<dd>客服支持：support@kanzhun.com</dd>
+				<dd>工作时间：周一到周五，上午9：00至19：00</dd>
+				<dd>联系客服：1234567890</dd>
+			</dl>
+		</section>
+	</div>
+	
+	
+</body>
+</html>

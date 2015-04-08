@@ -1,0 +1,112 @@
+.grade_star_b {
+  width: 118px;
+  height: 22px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  background: url(../images/manage_icons.png) no-repeat 0 0;
+  vertical-align: middle;
+  line-height: 0;
+}
+.grade_star_b i {
+  display: inline-block;
+  width: 118px;
+  height: 22px;
+  overflow: hidden;
+  font-size: 0;
+  background: url(../images/manage_icons.png) no-repeat 0 -24px;
+}
+section.co_header {
+  position: relative;
+  width: 990px;
+  background-color: #fff;
+  margin: 0 auto 0 auto;
+}
+section.co_header .co_logo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 1px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  top: 20px;
+  left: 20px;
+  overflow: hidden;
+  font-size: 0;
+}
+section.co_header .co_logo:after {
+  content: '';
+}
+section.co_header .co_logo:after,
+section.co_header .co_logo span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+section.co_header .co_logo img {
+  width: 150px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+section.co_header .co_info {
+  padding: 40px 0 25px 195px;
+}
+section.co_header .co_info h2 {
+  font: bold 24px/1.5 Arial, STHeiti, Microsoft YaHei, simhei, simsun;
+}
+section.co_header .co_info em {
+  margin: 0 8px;
+  color: #e7e7e7;
+}
+section.co_header .msg {
+  font-size: 14px;
+  height: 22px;
+  line-height: 22px;
+  padding: 5px 0;
+  color: #999999;
+}
+section.co_header .msg strong {
+  font-size: 16px;
+  color: #343434;
+}
+section.co_header .msg .grade_star_b {
+  vertical-align: -5px;
+  *vertical-align: middle;
+  margin-right: 10px;
+}
+section.co_header .params {
+  color: #999999;
+  font-size: 14px;
+}
+section.co_header nav {
+  height: 40px;
+  line-height: 40px;
+  background-color: #6e6e6e;
+  padding-left: 200px;
+}
+section.co_header nav a {
+  font-size: 16px;
+  padding: 0 35px;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid #999999;
+  white-space: nowrap;
+}
+section.co_header nav a:hover {
+  text-decoration: none;
+}
+section.co_header nav a.current {
+  background-color: #7cb228;
+  border: 1px solid #7cb228;
+  border-radius: 2px;
+  position: relative;
+  top: -1px;
+  left: -1px;
+}

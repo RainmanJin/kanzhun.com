@@ -1,0 +1,171 @@
+body .ac_header {
+  width: 1200px;
+  margin: 0 auto;
+  border: 0;
+}
+body .ac_header img {
+  width: 1200px;
+}
+.index_wrap {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: none;
+}
+.index_wrap div {
+  width: 1200px;
+}
+a.downloadlink {
+  display: inline-block;
+  width: 270px;
+  height: 64px;
+  line-height: 66px;
+  color: #019875;
+  font-size: 24px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 2px #000000;
+  -moz-box-shadow: 0 1px 2px #000000;
+  -ms-box-shadow: 0 1px 2px #000000;
+  box-shadow: 0 1px 2px #000000;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  zoom: 1;
+}
+a.downloadlink i {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  vertical-align: middle;
+}
+a.downloadlink i.iphone {
+  width: 34px;
+  height: 41px;
+  background: url(../images/icons.png) no-repeat -244px top;
+  margin-bottom: 7px;
+}
+a.downloadlink i.android {
+  width: 35px;
+  height: 41px;
+  background: url(../images/icons.png) no-repeat -283px top;
+  margin-bottom: 3px;
+}
+a.downloadlink:hover {
+  background-color: #019875;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 0 #000000;
+  -moz-box-shadow: 0 0 0 #000000;
+  -ms-box-shadow: 0 0 0 #000000;
+  box-shadow: 0 0 0 #000000;
+}
+a.downloadlink:hover i.iphone {
+  background-position: -244px -51px;
+}
+a.downloadlink:hover i.android {
+  background-position: -283px -51px;
+}
+ul.owncon i {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  width: 6px;
+  height: 6px;
+  background: url(../images/icons.png) no-repeat -323px top;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+ul.owncon li {
+  color: #e1ebfe;
+  font-size: 22px;
+}
+h1.title {
+  font-size: 66px;
+  font-weight: bold;
+  -webkit-text-shadow: 0 2px 2px #000000;
+  -moz-text-shadow: 0 2px 2px #000000;
+  -ms-text-shadow: 0 2px 2px #000000;
+  text-shadow: 0 2px 2px #000000;
+}
+h1.iam {
+  padding-top: 70px;
+  font-size: 50px;
+}
+div.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+div.bg_one {
+  padding-right: 130px;
+  height: 900px;
+  background: url(../images/index_img_2.jpg) no-repeat left top;
+}
+div.online {
+  height: 900px;
+  background: url(../images/index_img_4.jpg) no-repeat left top;
+}
+div.online p {
+  font-size: 38px;
+  line-height: 1em;
+  padding-top: 30px;
+}
+div.online h1 {
+  padding: 10px 0 20px 0;
+  line-height: 1em;
+}
+section.header {
+  height: 500px;
+  background: url(../images/index_img_1.jpg) no-repeat left top;
+  padding: 170px 0 30px 0;
+}
+section.header p {
+  font-size: 16px;
+  color: #e1ebfe;
+  text-align: center;
+}
+section.header p.appexplain {
+  height: 63px;
+  line-height: 63px;
+  font-size: 20px;
+  color: #03494b;
+}
+section.header div {
+  padding-top: 40px;
+  text-align: center;
+}
+section.geek {
+  height: 900px;
+  padding-left: 105px;
+  background: url(../images/index_img_3.jpg) no-repeat left top;
+}
+section.hiring {
+  height: 672px;
+  padding: 400px 0 0 105px;
+  background: url(../images/index_img_5.jpg) no-repeat left top;
+}
+section.hiring li {
+  font-size: 24px;
+  color: #fff;
+}
+section.hiring aside {
+  width: 106px;
+  height: 69px;
+  margin-left: 220px;
+  background: url(../images/icons.png) no-repeat -334px top;
+}
+section.hiring p.download {
+  padding-bottom: 80px;
+  font-size: 35px;
+  font-weight: bold;
+}
+section.hiring p.download em {
+  font-weight: normal;
+  font-size: 28px;
+}

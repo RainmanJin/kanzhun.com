@@ -1,0 +1,335 @@
+@import "../../common/var";
+#ugc_dialog_review,#ugc_dialog_review_suc{
+	width:640px;
+}
+.ugc_dialog{
+	h3{
+		span{
+			font-size: 14px;
+		}
+	}
+	.form{
+		position: relative;
+		ul.fieldset{
+			li.fieldset{
+				margin-bottom: 20px;
+				input{
+					vertical-align: middle;
+					border-width: 2px 2px 1px 1px;
+					border-color: #ebebeb #d6d6d6 #e7e7e7 #f4f4f4;
+				}
+				a.more_review{
+					float: right;
+				}
+				p.guide{
+					text-align: right;
+					color: @grey_99;
+				}
+				.ceo{
+					display: inline-block;
+					width: 90px;
+					height: 23px;
+					background: url("@{img}/ugc_dialog/rating_small.png") no-repeat;
+					background-position: -100px -240px;
+					padding-right: 5px;
+					vertical-align: middle;	
+					a{
+						&.current{
+							background-position: -100px -280px;
+						}
+						&.t_d{
+							&.current{
+								background-position: -145px -280px;
+							}
+						}
+					}
+				}
+				.rcmd{
+					display: inline-block;
+					width: 90px;
+					height: 23px;
+					background: url("@{img}/ugc_dialog/rating_small.png") no-repeat;
+					background-position: -100px -320px;
+					padding-right: 5px;
+					vertical-align: middle;	
+					a{
+						&.current{
+							background-position: -100px -360px;
+						}
+						&.t_d{
+							&.current{
+								background-position: -145px -360px;
+							}
+						}
+					}					
+				}
+				.trend{
+					display: inline-block;
+					width: 135px;
+					height: 23px;
+					background: url("@{img}/ugc_dialog/rating_small.png") no-repeat;
+					background-position: 0 -400px;
+					padding-right: 5px;	
+					vertical-align: middle;	
+					a{
+						&.current{
+							background-position: 0 -440px;
+						}
+						&.t_n{
+							&.current{
+								background-position: -45px -440px;
+							}
+						}
+						&.t_d{
+							&.current{
+								background-position: -90px -440px;
+							}
+						}
+					}						
+				}
+				&.es_detail{
+					background-color: #f2f2f2;
+					border: 1px solid #e8e8e8;
+					padding: 10px 15px;
+					margin-top: -10px;
+					margin-left: 5px;
+					position: relative;
+					.time{
+						margin-bottom: 10px;
+						label{
+							float:left;
+							margin-top: 8px;
+						}
+						.select_u{
+							width: 109px;
+							margin-left: 5px;
+							float: left;
+							border-width: 2px 2px 1px 1px;
+							border-color: #ebebeb #d6d6d6 #e7e7e7 #f4f4f4;
+						}						
+					}
+					.s_l,.s_r{
+						float: left;
+						position: relative;
+						p.err{
+							position: absolute;
+							top: 35px;
+							padding-left: 5.5em;
+						}
+					}
+					i.i_up{
+						display: inline-block;
+						width: 13px;
+						height: 8px;
+						background-image: url("@{img}/ugc_dialog/rating_small.png");
+						background-repeat: no-repeat;	
+						background-position: 0 -360px;
+						position: absolute;
+						top: -8px;
+						left: 73px;		
+					}
+					&.leave{
+						i.i_up{
+							left: 133px;
+						}
+					}
+				}
+				&.rv_detail{
+					background-color: #f2f2f2;
+					border: 1px solid #e8e8e8;
+					padding: 10px 15px 5px;
+					margin-top: -10px;
+					margin-left: 5px;
+					ul{
+						overflow: hidden;
+						li{
+							width: 50%;
+							float: left;
+							margin-bottom: 5px;
+							.rating_rect{
+								margin-left: 10px;
+							}
+						}
+					}
+				}
+				&.choose{
+					label{
+						width: 12.5em;
+						display: inline-block;
+					}
+					a{
+						display: inline-block;
+						float: left;
+						width: 45px;
+						height: 23px;
+						background-image: url("@{img}/ugc_dialog/rating_small.png");
+						background-repeat: no-repeat;	
+						background-position: 0 100px;				
+					}
+				}
+				&.ta{
+					position: relative;
+					label{
+						line-height: 34px;
+					}
+					p.err{
+						position: absolute;
+						top: 35px;
+						padding-left: 5.5em;
+						left: 0 !important;
+					}
+				}
+				&.sbm{
+					padding-left: 5.5em;
+					overflow: hidden;
+					.sbm_l{
+						float: left;
+					}
+					.sbm_r{
+						margin-left: 20px;
+						float: left;
+						line-height: 1.3;
+						color: #797979;
+					}
+				}
+			}
+		}
+		figure{
+			span{
+				width: 65px;
+				height: 65px;
+				float: left;
+				border: 1px solid #e8e8e8;
+
+				img{
+					width: 65px;
+					height: 65px;
+				}	
+			}
+			position: absolute;
+			right: 0px;
+			top: 0px;
+		}
+		.err{
+			display: none;
+			color: @red;
+			i.i_err{
+				display: inline-block;
+				width: 6px;
+				height: 9px;
+				background: url("@{img}/rem/err_tg.png") no-repeat;
+			}
+		}
+	}
+	.ugc_suc{
+		padding: 40px 20px 0;
+		.h1{
+			font-size: 24px;
+			text-align: center;
+			span{
+				font-size: 18px;
+			}
+		}
+		.ugc_prompt {
+	    padding: 20px 10px;
+	    margin: 0 0 40px 0;
+	    background-color: #fff7ed;
+	    border: 1px solid #fdd6ab;
+	    i{
+	    	display: inline-block;
+		    margin-right: 10px;
+		    overflow: hidden;
+		    width: 49px;
+		    height: 48px;
+		    background: url('@{img}/prompt_big.jpg') no-repeat 0 0;
+		    vertical-align: middle;
+	    }
+	    em {
+	    	display: inline-block;
+	    	width: 315px;
+	    	vertical-align: middle;
+	    }
+		}
+	}
+}	
+.rating_star{
+	display: inline-block;
+	font-size: 0;
+	height: 23px;
+	overflow: hidden;
+	background-image: url("@{img}/ugc_dialog/rating_small.png");
+	background-repeat:  no-repeat;
+	vertical-align: middle;
+	a{
+		width: 23px;
+		height: 23px;
+		float: left;
+		margin-right: 4px;
+	}
+}
+
+.rating_s_1{
+	background-position: 0 -40px;
+}
+.rating_s_2{
+	background-position: 0 -80px;
+}
+.rating_s_3{
+	background-position: 0 -120px;
+}
+.rating_s_4{
+	background-position: 0 -160px;
+}
+.rating_s_5{
+	background-position: 0 -200px;
+}
+
+.rating_rect{
+	display: inline-block;
+	font-size: 0;
+	height: 14px;
+	overflow: hidden;
+	background-image: url('@{img}/ugc_dialog/rating_small.png');
+	background-repeat:  no-repeat;
+	background-position: 0 -240px;
+	vertical-align: middle;
+	a{
+		width: 14px;
+		height: 15px;
+		float: left;
+		margin-right: 2px;
+	}
+}
+
+
+.rating_r_1{
+	background-position: 0 -260px;
+}
+.rating_r_2{
+	background-position: 0 -280px;
+}
+.rating_r_3{
+	background-position: 0 -300px;
+}
+.rating_r_4{
+	background-position: 0 -320px;
+}
+.rating_r_5{
+	background-position: 0 -340px;
+}
+textarea{
+	&.uta{
+		width: 480px;
+		padding: 5px 5px 5px 30px;
+		display: inline;
+		border-width: 1px 1px 0 0px;
+		border-style: solid;
+		border-color: #d6d6d6 #e9e9e9 #fff #e9e9e9;
+		font-size: 14px;
+		line-height: 1.6em;
+		background: #fff url("@{img}/pen.jpg") no-repeat 8px 6px;
+		.box-shadow(inset 1px 0px 1px #ccc);
+		vertical-align: top;
+		text-align: left;
+	}
+}	

@@ -1,0 +1,246 @@
+@import "common/var";
+@import "module/reset";
+@import "common/common";
+
+html{
+  font-size: 14px;
+}
+
+body{
+  background: url("@{img-path}/step_bg.jpg") #0c3b82 no-repeat top center;
+  background-size: 100% auto;
+}
+
+.content{
+  position: relative;
+  .title{
+    padding-top: 30px;
+    text-align: center;
+    .mark{
+      width:80%;
+    }
+    .vertical{
+      margin-top: -20px;
+      width:75%;
+    }
+    .word{
+      position: relative;
+      top: -1.8em;
+      font-size: 1.5rem;
+      color:red;
+      font-weight: bold;
+    }
+  }//title
+
+
+  .form{
+    width: 80%;
+    margin: 0 auto;
+
+    .h2{
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: center;
+      color:#fff;
+      margin-top: -25px;
+    }
+
+
+    .select-wrap{
+      position: relative;
+      select{
+        width: 100%;
+        background-color: #fefefe;
+        border: 0px;
+        padding: 10px 5px;
+        font-size: 1.2rem;
+        color: rgb( 153, 153, 153 );
+      }
+      .down{
+        .trangle(down,#666,10px);
+        position: absolute;
+        right: 10px;
+        top: 18px;
+      }
+      button{
+        width: 100%;
+        background-color: #fefefe;
+        border: 0px;
+        padding: 10px 5px;
+        font-size: 1.2rem;
+        color: rgb( 153, 153, 153 );
+        display: block;
+        height: 3rem;
+      }
+    }
+
+
+
+    .center-wrap{
+      text-align: center;
+      color: #fff;
+
+
+      .h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      textarea{
+        background-color: #fefefe;
+        padding: 5px;
+        width: 97%;
+      }
+
+      .items{
+        display: none;
+
+        &.actived{
+          display: block;
+        }
+      }
+
+      .re-wrap {
+        border: 1px solid #ffffff;
+        border-radius: 6px;
+        background-color: rgba(124, 178, 40, 0);
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 0px;
+        font-size: 1.2rem;
+        position: relative;
+
+        label{
+          position: relative;
+          height: 100%;
+          width: 100%;
+          display: inline-block;
+          z-index: 3;
+        }
+
+        input[type=checkbox]{
+          display: none;
+        }
+
+        input[type=radio]{
+          display: none;
+        }
+
+        input:checked~.bg{
+          background-color: #ffaa12;
+          border: 1px solid #ffaa12;
+        }
+
+        .bg{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: -1px;
+          left: -1px;
+          border-radius: 6px;
+        }
+
+
+      }
+      .next{
+        color: #fff;
+        background-color: #e77200;
+        width: 50%;
+        margin: 10px auto;
+        padding: 10px 0px;
+        display: inline-block;
+        border-radius: 6px;
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        &.disabled{
+          background-color:#aaa;
+        }
+      }
+    }
+
+
+  }
+}
+.protocol{
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  a{
+    color:#f4c010;
+  }
+}
+
+
+/*三角  上 up   下down 左left 右right */
+.trangle(up,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-bottom: @height dashed @c;
+}
+
+.trangle(down,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-top: @height dashed @c;
+}
+
+
+.trangle(left,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-right: @height dashed @c;
+}
+
+.trangle(right,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-left: @height dashed @c;
+}
+
+section.reason_dialog{
+  position: relative;
+  display: none;
+  ul li{
+    background-color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.4rem 0;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #666;
+    img{
+      width: 66px;
+      float: left;
+      padding: 10px 0;
+    }
+
+    div{
+      padding-right: 40px;
+    }
+
+    .arrow{
+      position: absolute;
+      right: 5px;
+      height:30px;
+      width: 20px;
+      top: 50%;
+      margin-top: -25px;
+    }
+    .h2{
+      font-size: 1.3rem;
+      font-weight: bolder;
+    }
+    &:nth-of-type(2){
+      img.i{
+        margin-top: -0.6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import "../../../css/common/var";
+@import "../var";
+
+body.bg_ea {
+  background-color: #eaeaea;
+}
+
+div.container {
+  background-color: #eaeaea;
+}
+
+section {
+  &.seo_search_nav {
+    margin: 10px 0 10px 0;
+    background-color: #f3f3f3;
+
+    ul {
+      overflow: hidden;
+
+      li {
+        float: left;
+        width: 100px;
+        height: 44px;
+        border-right: 1px solid #eaeaea;
+
+        a {
+          display: block;
+          color: @grey_66;
+          height: 44px;
+          line-height: 44px;
+          text-align: center;
+          background: url("@{img}/v2/seo_search.jpg") no-repeat left top;
+
+          &:hover, &.current {
+            background: #fff url('');
+            border-top: 2px solid @green;
+            line-height: 41px;
+            text-decoration: none;
+            color: @green;
+          }
+        }
+      }
+    }
+  }
+
+  &.wrap_style {
+    border: 1px solid #E2E2E2;
+    background: #f3f3f3;
+    .box-shadow(1px 1px 2px #e2e2e2);
+    padding: 0 15px 20px 15px;
+  }
+
+  &.hot_job {
+    background-color: #fff;
+    h2 {
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      color: @grey_66;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+
+  &.sort_word {
+    dl {
+      overflow: hidden;
+      padding-top: 25px;
+      .transition(all, ease, .2s);
+
+      dt {
+        float: left;
+        width: 35px;
+        text-align: left;
+        color: @green;
+        font-size: 20px;
+      }
+
+      dd {
+        margin-left: 35px;
+        border-left: 1px solid #e7e7e7;
+        padding-left: 10px;
+      }
+    }
+
+    &:hover {
+      border-color: @green;
+      background-color: #fff;
+    }
+  }
+}
+
+ul.job_list {
+  overflow: hidden;
+  margin-bottom: -10px;
+  li {
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    border-left: 1px solid #e7e7e7;
+    margin-left: -1px;
+    line-height: 1em;
+
+
+    a {
+      color: @grey_99;
+
+      &:hover {
+        color: @blue;
+        text-decoration: none;
+      }
+    }
+  }
+}

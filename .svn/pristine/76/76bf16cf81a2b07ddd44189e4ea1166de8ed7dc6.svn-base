@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员中心-找回密码-完成</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/findpassword.css" />
+<script src="../js/require.js" data-main="../js/site/profile.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">招聘</a>
+				<a href="#" class="current">公司</a>
+				<a href="#">工资</a>
+				<a href="#">面试</a>
+				<a href="#" class="mycomment">我要点评</a>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="container findpassword clearfix">
+		<h1 class="r_tt">找回密码</h1>	
+		<div class="process_img"><img src="../images/set_successfully.jpg" alt="" /></div>
+		<p class="prompt mb15 success">密码设置成功！</p>
+		<p class="prompt mb15">您可以：</p>
+		<div class="btn"><a href="" class="btn_grey_s mr10">看准网首页</a><a href="" class="findlogin">返回看准网首页随便看看</a></div>
+		<div class="btn mykanzhun"><a href="" class="btn_grey_s mr10">我的看准</a><a href="" class="findlogin">去个人中心完善您的信息</a></div>
+		<div class="btn"><a href="" class="btn_grey_s mr10">写一条评论</a><a href="" class="findlogin">点评一下您的公司、薪酬或者写下您的面试经历</a></div>
+	</div>
+	
+	<footer>
+		<nav>
+			<a href="">关于我们</a><a href="">意见反馈</a><a href="">使用帮助</a><a href="">用户协议</a><a href="" class="micro_message">看准网微信<i></i></a><a href="">看准网微博</a>
+		</nav>
+		<p>Copyright@ 2010 kanzhun.com苏ICP备08022608号2009-2014, kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+	</footer>
+</body>
+</html>

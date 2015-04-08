@@ -1,0 +1,437 @@
+@import "common/var";
+@import "modules/company/common";
+@import "modules/company/cmp_titles";
+@import "modules/company/bottomlinks";
+//@import "modules/dialog";
+@import "modules-v2/dialog-v2";
+@import "modules/comment";
+@import "modules/share";
+@import "modules/prompt_box";
+@import "modules/company/financing";  //公司融资信息
+@import "modules/company/salary_desc"; //工资图表
+@import "../v2/css/company/piece/co-header"; //公司公共头部
+
+.send_salary{
+	background-color: #f3f3f3;
+	padding: 15px 20px;
+	margin-top: 15px;
+	width: 645px;
+	position: relative;
+	left: -20px;
+	top: 0;
+
+	.btn_grey_b{
+		float: left;
+	}
+}
+
+.salary_search{
+	padding: 10px 20px;
+	background-color: #f3f3f3;
+	width: 645px;
+	position: relative;
+	left: -20px;
+	top: -1px;
+	margin: 0 0 10px;
+
+	.field_b{
+		float: left;
+		width: 230px;
+		margin-right: 15px;
+	}
+
+	.select{
+		float: left;
+		width: 180px;
+		margin-right: 15px;
+	}
+	
+	.btn_grey_l{
+		float: left;
+		width: 120px;
+		padding: 0;
+
+		input{
+			padding: 0;
+			width: 120px;
+			text-align: center;
+		}
+	}
+
+	.search_close{
+		float: right;
+		margin-top: 12px;
+		color: @blue;
+		cursor: pointer;
+	}
+
+	.search_cancel{
+		display: block;
+		width:4em;
+		float: right;
+		margin-top: 12px;
+	}
+}
+
+.salary_why{
+	position: absolute;
+	width: 200px;
+	.box-shadow(0 1px 6px #aaa);
+	z-index: 10;
+	display: none;
+
+
+	.dialog_con{
+		background-color: #fff;
+		padding: 10px;
+		border: 1px solid #ddd;
+	}
+	
+}
+
+#showSalarySearch{
+	margin-left: 10px;
+	color: @blue;
+	cursor: pointer;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+
+/*.salary_slide{
+	width: 645px;
+	overflow: hidden;
+	*position: relative;
+
+	.slide_con{
+		width: 1300px;
+		overflow: hidden;
+		zoom: 1;
+		.transition(margin .3s ease);
+		padding-bottom: 15px;
+	}
+
+	table{
+		float: left;
+		table-layout: fixed;
+	}
+}*/
+
+.salary_table{
+	tr:nth-child(2){
+		background-color: #f3f3f3;
+		td.items{
+			font-weight: bold;
+			text-align: center;
+			padding: 0;
+		}
+	}
+	td.items{
+		text-align: right;
+		padding-right: 30px;
+	}
+}
+
+//添加按钮
+a.addsalary {
+	float: right;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	font-weight: normal;
+}
+
+p.branchcmp {
+	padding-top: 10px;
+	clear: both;
+	color: @grey_99;
+}
+
+//发布工资表单
+p {
+	&.bask {
+		padding: 10px 0;
+
+		i {
+			display: inline-block;
+			font-size: 0;
+			line-height: 0;
+			overflow: hidden;
+			width: 18px;
+			height: 19px;
+			background: @icons no-repeat -33px -121px;
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+
+		span {
+			margin-left: 10px;
+		}
+	}
+
+	&.radios {
+		float: left;
+		height: 39px;
+		line-height: 39px;
+
+		input {
+			vertical-align: -2px;
+		}
+	}
+
+	&.thanks {
+		text-align: center;
+		padding: 20px 0;
+		i {
+			display: inline-block;
+			font-size: 0;
+			line-height: 0;
+			overflow: hidden;
+			width: 26px;
+			height: 20px;
+			background: @icons no-repeat -214px top;
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+	}
+
+	&.err {
+		clear: both;
+		color: #d60000;
+		padding-top: 2px;
+		position: absolute;
+		top: 37px;
+		left: 6em;
+	}
+}
+
+ul {
+	&.sendsalarycon {
+		background-color: #eff9ef;
+		padding: 25px 0 10px 15px;
+
+		li {
+			position: relative;
+			margin-bottom: 20px;
+
+			label.tt {
+				display: block;
+				float: left;
+				width: 5em;
+				margin-right: 10px;
+				height: 39px;
+				line-height: 39px;
+			}
+
+			div.space {
+				float: left;
+
+				span.zhi {
+					display: block;
+					float: left;
+					height: 39px;
+					line-height: 39px;
+					padding: 0 10px;
+				}
+
+				dl {
+					float: left;
+				}
+			}
+
+			input.salaryipt {
+				width: 180px;
+			}
+
+			label em {
+				margin-right: 3px;
+			}
+
+			input.btn_o_l {
+				padding: 0;
+				width: 190px;
+			}
+
+
+			span.unit{
+				position: absolute;
+				right: 25px;
+				top: 10px;
+			}
+
+			&.addincome {
+				padding-left: 5.7em;
+				margin-bottom: 10px;
+				*margin-bottom: 0;
+
+				a.salaryDetaile{
+					margin-right: 85px;
+
+	        i{
+	          margin-left: 10px;
+	        }
+				}
+
+				span{
+					color: #d60000;
+				}
+			}
+
+			p.iptpay {
+				left: 300px;
+				top: 8px;
+			}
+
+			&.adddetail {
+				padding-left: 80px;
+				margin: 0;
+			}
+		}
+	}
+
+	&.add_salary_detail{
+		background-color: #fff;
+		border: 1px solid #d7d8d7;
+		width: 310px;
+		padding: 20px 20px 10px 20px;
+		margin: 0 0 15px 0;
+		background-color: #f5fbf6;
+
+		input {
+			width: 180px; 
+			padding-right: 30px;
+
+			&.onlyready {
+				background-color: #e5e5e5;
+			}
+		}
+	}
+
+	&.salary-info{
+		li.salaryimg{
+			padding-top: 10px;
+			overflow: hidden;
+			zoom: 1;
+
+			img{
+				float: left;
+				width: 94px;
+				height: 42px;
+			}
+
+			p{
+				float: left;
+				height: 30px;
+				margin-left: 10px;
+				background-color: #fff;
+				background: url(../images/left-line.jpg) no-repeat left center;
+
+				span{
+					display: inline-block;
+					margin-left: 7px;
+					padding: 0 10px;
+					height: 28px;
+					line-height: 28px;
+					border: 1px solid @grey_e7;
+					border-left: none;
+					color: #eb7676;
+					font-size: 17px;
+				}
+			}
+		}
+
+		a.seeinfo{
+			padding: 0 88px;
+		}
+	}
+
+	&.othersalary {
+		width: 665px;
+		overflow: hidden;
+		zoom: 1;
+		margin-right: -20px;
+		li {
+			overflow: hidden;
+			zoom: 1;
+			float: left;
+			width: 310px;
+			margin: 0 10px 5px 0;	
+			
+			p {
+				float: left;
+				width: 200px;
+
+				span {
+					display: inline-block;
+					.ellipsis(ellipsis);
+					width: 10em;
+				}
+
+				em {
+					float: right;
+					color: @grey_99;
+				}
+			}	
+
+			div {
+				float: left;
+				height: 12px;
+				margin-top: 4px;
+				background-color: @green;
+			}
+		}
+	}
+
+	&.similar {
+		em {
+			float: right;
+			color: @grey_99;
+		}
+
+		span {
+			display: inline-block;
+			.ellipsis(ellipsis);
+			width: 12em;
+		}
+	}
+}
+
+div.othersalary_wrap {
+	overflow: hidden;
+}
+
+dl {
+	&.selecttime {
+		width: 120px;
+	}
+
+	&.experience {
+		width: 190px;
+	}
+}
+
+h3 {
+	&.allposition {
+		border-bottom: 1px solid #e7e7e7;
+		font-weight: normal;
+		padding-bottom: 5px;
+	}
+}
+
+//离开时间提示框
+div.prompt_wrap {
+	position: absolute;
+	right: 105px;
+	top: 10px;
+	width: 16px;
+	height: 16px;
+
+	div {
+		width: 13em;
+		top: 30px;
+		left: -25px;
+		color: @grey_99;
+	}
+}

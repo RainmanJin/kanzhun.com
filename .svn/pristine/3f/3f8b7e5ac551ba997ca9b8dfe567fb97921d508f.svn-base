@@ -1,0 +1,359 @@
+.btn_grey {
+  display: block;
+  text-align: center;
+  border: 1px solid #cccccc;
+  background-color: #e7e7e7;
+  background: linear-gradient(0deg, #e7e7e7 0%, #f9f9f9 100%);
+  font-size: 1em;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+ul.inner_nav {
+  background-color: #fff;
+  overflow: hidden;
+}
+ul.inner_nav li {
+  width: 20%;
+  float: left;
+}
+ul.inner_nav li a {
+  display: block;
+  height: 28px;
+  padding-top: 12px;
+  color: #666666;
+  text-align: center;
+}
+ul.inner_nav li a span {
+  display: block;
+  height: 14px;
+  line-height: 14px;
+  border-right: 1px solid #d9d8d8;
+}
+ul.inner_nav li a.current {
+  color: #7cb228;
+}
+ul.inner_nav li:last-child span {
+  border-right: none;
+}
+.v_line {
+  border-left: 3px solid #7cb228;
+  padding-left: 5px;
+  line-height: 1em;
+}
+.wrap_style {
+  background-color: #fff;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+span.more i {
+  color: #007ead;
+  cursor: pointer;
+}
+a.p_salary_list {
+  display: block;
+}
+a.p_salary_list h3 {
+  padding-bottom: 10px;
+}
+a.p_salary_list h3 span {
+  color: #ccc;
+  font-size: 12px;
+}
+a.p_salary_list p em {
+  color: #ea5153;
+}
+div.p_interview_wrap {
+  /*赞的div*/
+}
+div.p_interview_wrap > a {
+  display: block;
+}
+div.p_interview_wrap div.logo {
+  overflow: hidden;
+}
+div.p_interview_wrap div.logo span {
+  float: left;
+  width: 29px;
+  height: 29px;
+  border: 1px solid #cfcfcf;
+}
+div.p_interview_wrap div.logo span img {
+  display: block;
+  width: 29px;
+  height: 29px;
+}
+div.p_interview_wrap div.logo h3 {
+  margin-left: 40px;
+  color: #000;
+  font-weight: normal;
+  padding: 0;
+}
+div.p_interview_wrap p.view_result {
+  padding-bottom: 6px;
+}
+div.p_interview_wrap p.view_result img {
+  vertical-align: -1px;
+}
+div.p_interview_wrap .col li {
+  line-height: 2em;
+}
+div.p_interview_wrap .col span {
+  float: left;
+  color: #999999;
+}
+div.p_interview_wrap .col p {
+  margin-left: 5em;
+}
+div.p_interview_wrap .quora li {
+  line-height: 1.5;
+}
+div.p_interview_wrap .quora span {
+  float: left;
+  color: #7cb228;
+}
+div.p_interview_wrap .quora p {
+  margin-left: 3em;
+}
+div.p_interview_wrap h3 {
+  font-size: 14px;
+  padding: 10px 0 0;
+  font-weight: bold;
+}
+div.p_interview_wrap div.praise {
+  border-top: 1px solid #D9D7D7;
+  height: 35px;
+  line-height: 35px;
+  margin: 12px -10px 0 -10px;
+  text-align: center;
+}
+dl.data_explain dt {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+}
+dl.data_explain dd {
+  overflow: hidden;
+}
+dl.data_explain dd i {
+  float: left;
+  width: 5px;
+  height: 5px;
+  margin-top: 7px;
+  background-color: #666666;
+  border-radius: 100%;
+}
+dl.data_explain dd p {
+  margin-left: 10px;
+}
+i.grey {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  line-height: 15px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  margin-right: 5px;
+  vertical-align: -2px;
+  background-color: #cccccc;
+}
+i.l_green {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  line-height: 15px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  margin-right: 5px;
+  vertical-align: -2px;
+  background-color: #67bf58;
+}
+i.l_yellow {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  line-height: 15px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  margin-right: 5px;
+  vertical-align: -2px;
+  background-color: #ebc657;
+}
+ul.p_best_jobcity li {
+  width: 100%;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+ul.p_best_jobcity li > p {
+  width: 23%;
+  float: left;
+}
+ul.p_best_jobcity li > p i {
+  float: left;
+}
+ul.p_best_jobcity li > p span {
+  margin-left: 19px;
+  display: block;
+  padding-right: 2px;
+  line-height: 1em;
+}
+ul.p_best_jobcity li > p span em {
+  display: block;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}
+ul.p_best_jobcity li > div.bar {
+  width: 45%;
+  float: left;
+  height: 10px;
+  padding-top: 2px;
+}
+ul.p_best_jobcity li > div.bar div {
+  height: 10px;
+  background-color: #7cb228;
+}
+ul.p_best_jobcity li > div.bar.yellow div {
+  background-color: #ebc657;
+}
+ul.p_best_jobcity li > div.position_count {
+  width: 32%;
+  float: left;
+}
+ul.p_best_jobcity li > div.position_count p {
+  padding-left: 2px;
+  line-height: 1em;
+}
+ul.p_best_jobcity li > div.position_count p em {
+  display: block;
+  text-align: right;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}
+ul.p_best_jobcity li:last-child {
+  padding-bottom: 5px;
+}
+ul.recruitment_list li a {
+  display: block;
+  position: relative;
+}
+ul.recruitment_list li a > i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -6px;
+  width: 8px;
+  height: 12px;
+  display: inline-block;
+  font-size: 0;
+  background: transparent url(../images/icons.png) no-repeat 0 -22.5px;
+  -webkit-background-size: 22px;
+  -moz-background-size: 22px;
+  -o-background-size: 22px;
+  background-size: 22px;
+}
+ul.recruitment_list li a > div {
+  padding: 0 15px 5px 0;
+}
+ul.recruitment_list li a > div em {
+  padding-top: 6px;
+  color: #c9c9c9;
+  line-height: 1em;
+}
+ul.recruitment_list li a > div p {
+  margin-right: 50px;
+}
+ul.recruitment_list li a > div p span {
+  display: block;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}
+ul.recruitment_list li a > div p span u {
+  text-decoration: none;
+}
+ul.recruitment_list li a > p em {
+  color: #e5e5e5;
+  margin: 0 5px;
+}
+ul.recruitment_list li a > p span {
+  color: #007ead;
+}
+i.remind {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+  width: 18.5px;
+  height: 15px;
+  background: url(../images/position/position_img1.png) no-repeat left top;
+  -webkit-background-size: 18.5px 15px;
+  -moz-background-size: 18.5px 15px;
+  -o-background-size: 18.5px 15px;
+  background-size: 18.5px 15px;
+}
+p.no-result {
+  padding: 20px 0 30px 0;
+}
+p.no-result i {
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+section.maskui_dialog {
+  width: 280px;
+}
+div.ugc_pop {
+  margin: 0 auto;
+  background-color: #fff;
+}
+div.ugc_pop h1 {
+  padding: 15px 0 15px 15px;
+  font-size: 18px;
+}
+div.ugc_pop p {
+  padding: 0 15px 5px 15px;
+}
+div.ugc_pop div {
+  width: 100%;
+  border-top: 1px solid #cbcbcb;
+  overflow: hidden;
+}
+div.ugc_pop div a {
+  float: left;
+  width: 50%;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+}
+div.ugc_pop div a span {
+  display: block;
+  border-left: 1px solid #cbcbcb;
+  color: #7cb228;
+}

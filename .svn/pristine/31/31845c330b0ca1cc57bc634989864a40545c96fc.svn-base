@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>员工页-来自百度</title>
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/employee.css" />
+</head>	
+<body>
+<div class="wrapper">
+	<div class="content">	
+		<header class="page_hd">
+			<a class="top_back" href="javascript:;"><i></i>返回</a>		
+			<strong>来自百度</strong>	
+		</header>
+
+		<ul class="e_detail">
+			<li>
+				<a href="" class="e_headimg"><img src="http://tp2.sinaimg.cn/1289338185/180/5640491316/0" alt=""></a>
+				<div class="e_detail">
+					<h4>字体设计 <i></i></h4>
+					<p>
+						展示展示展示展示<br />
+						微博简介微博简介微博简介微博简介微博简介微博简介微博微博简介简介微博简介简介微博简介微博简简介微博简介微博简
+					</p>
+				</div>
+			</li>
+			<li>
+				<a href="" class="e_headimg"><img src="http://tp2.sinaimg.cn/1289338185/180/5640491316/0" alt=""></a>
+				<div class="e_detail">
+					<h4>字体设计 <i></i></h4>
+					<p>
+						展示展示展示展示<br />
+						微博简介微博简介微博简介微博简介微博简介微博简介微博微博简介简介微博简介简介微博简介微博简简介微博简介微博简
+					</p>
+				</div>
+			</li>
+			<li>
+				<a href="" class="e_headimg"><img src="http://tp2.sinaimg.cn/1289338185/180/5640491316/0" alt=""></a>
+				<div class="e_detail">
+					<h4>字体设计 <i></i></h4>
+					<p>
+						展示展示展示展示<br />
+						微博简介微博简介微博简介微博简介微博简介微博简介微博微博简介简介微博简介简介微博简介微博简简介微博简介微博简
+					</p>
+				</div>
+			</li>
+			<li>
+				<a href="" class="e_headimg"><img src="http://tp2.sinaimg.cn/1289338185/180/5640491316/0" alt=""></a>
+				<div class="e_detail">
+					<h4>字体设计 <i></i></h4>
+					<p>
+						展示展示展示展示<br />
+						微博简介 微博简介 微博简介微博简介微 博简介微博简介微博微博 简介简介微博简介简介微博简介微 博简简介微博简介微博简
+					</p>
+				</div>
+			</li>
+		</ul>
+		<p class="e_see"><a href="" class="btn_grey_large">更多...</a></p>
+		<ul class="v_menu">
+			<li>
+				<a href="">查看“易宝支付”招聘<i class="arrow_g"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+</html>
+
+

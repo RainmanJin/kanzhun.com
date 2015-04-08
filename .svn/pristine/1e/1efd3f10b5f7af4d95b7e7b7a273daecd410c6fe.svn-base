@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>查询公司有结果页</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+  <header class="global">
+    <div class="header">
+      <img class="logo" src="../images/logo.jpg"/>
+      <span class="title">企业用户专区</span>
+      <div class="user"><a href="#">登录企业账户</a></div>
+    </div>
+  </header>
+  <div class="container clearfix">
+    <section class="mian_con">
+      <ul class="progress">
+        <li class="step twostep"></li>
+        <li class="words">
+            <em class="grey_33">注册账号</em><em class="current">确认公司名称</em><em class="grey_99">邮箱验证</em>
+        </li>
+      </ul>
+      <div class="searchinfo">
+        <p class="grey_33"><a href="" class="fright links">返回修改</a>根据您填写的公司名称 <span class="blue_v2 f_18">华品博睿</span>，请选择您的公司：</p>
+      </div>
+      <dl class="clearfix searchcon">
+        <dt><a href="/gso552031.html"><img src="../images/temp/img.jpg" title="" alt=""/><span></span></a></dt>
+        <dd>
+            <aside><a href="" class="btn_yellow_b">使用这个公司</a></aside>
+            <p class="grey_99"><strong class="def f_20">易宝支付</strong></p>
+            <div class="msgs"><em class="f_16">4.3<span class="grey_99 f_14">分</span></em><span class="grade_star_b"><i style="width:101px;"></i></span><a ka="com-info" href="/gso10611.html" class="grey_99">519人评价</a></div>
+            <p class="grey_99">互联网<em>|</em>杭州<em>|</em>100-9999人<em>|</em>私企</p>
+        </dd>
+      </dl>
+        <dl class="clearfix searchcon">
+            <dt><a href="/gso552031.html"><img src="../images/temp/img.jpg" title="" alt=""/><span></span></a></dt>
+            <dd>
+                <aside><a href="" class="btn_yellow_b">使用这个公司</a></aside>
+                <p class="grey_99"><strong class="def f_20">易宝支付</strong></p>
+                <div class="msgs"><em class="f_16">4.3<span class="grey_99 f_14">分</span></em><span class="grade_star_b"><i style="width:101px;"></i></span><a ka="com-info" href="/gso10611.html" class="grey_99">519人评价</a></div>
+                <p class="grey_99">互联网<em>|</em>杭州<em>|</em>100-9999人<em>|</em>私企</p>
+            </dd>
+        </dl>
+        <dl class="clearfix searchcon">
+            <dt><a href="/gso552031.html"><img src="../images/temp/img.jpg" title="" alt=""/><span></span></a></dt>
+            <dd>
+                <aside><a href="" class="btn_yellow_b">使用这个公司</a></aside>
+                <p class="grey_99"><strong class="def f_20">易宝支付</strong></p>
+                <div class="msgs"><em class="f_16">4.3<span class="grey_99 f_14">分</span></em><span class="grade_star_b"><i style="width:101px;"></i></span><a ka="com-info" href="/gso10611.html" class="grey_99">519人评价</a></div>
+                <p class="grey_99">互联网<em>|</em>杭州<em>|</em>100-9999人<em>|</em>私企</p>
+            </dd>
+        </dl>
+      <p class="mt10 t-right"><a href="" class="f_20 links">+创建新公司</a></p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+ul.v_menu {
+  margin: 10px 10px 0;
+  overflow: hidden;
+}
+ul.v_menu li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+ul.v_menu li a {
+  display: block;
+  padding-right: 15px;
+}
+ul.v_menu li i {
+  margin-top: 6px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -6px;
+}
+ul.hot_jobs {
+  font-size: 14px;
+}
+ul.hot_jobs .grey {
+  font-size: 12px;
+}
+ul.hot_jobs em {
+  color: #ccc;
+  margin: 0 6px;
+}
+ul.hot_jobs li.co {
+  overflow: hidden;
+}
+ul.hot_jobs li.co p {
+  margin-left: 55px;
+}
+ul.hot_jobs li.co span.l {
+  border: 1px solid #cfcfcf;
+  padding: 1px;
+  float: left;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 0;
+}
+ul.hot_jobs li.co img {
+  width: 45px;
+  vertical-align: middle;
+}

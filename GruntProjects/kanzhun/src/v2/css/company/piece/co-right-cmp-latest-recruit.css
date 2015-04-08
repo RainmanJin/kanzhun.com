@@ -1,0 +1,27 @@
+div.cmp_latest_recruit h2.f_tt {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #e5e5e5;
+  color: #333;
+}
+div.cmp_latest_recruit ul.newest {
+  margin-top: -10px;
+}
+div.cmp_latest_recruit ul.newest li {
+  border-bottom: 1px dashed #e7e7e7;
+  padding: 10px 0;
+}
+div.cmp_latest_recruit ul.newest li a {
+  display: block;
+  cursor: pointer;
+}
+div.cmp_latest_recruit ul.newest li span {
+  float: right;
+  color: #eb7676;
+}
+div.cmp_latest_recruit ul.newest li em {
+  margin: 0 5px;
+  vertical-align: 1px;
+  color: #e7e7e7;
+}

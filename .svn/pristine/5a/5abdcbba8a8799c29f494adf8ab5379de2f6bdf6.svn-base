@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>公司面试详情页</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget-v2.css"/>
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/company/review.css"/>
+  <script>
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/company/salary.js"></script>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+<% include ../modules/mini-search %>
+<% include piece/co-header %>
+
+<div class="container_v2 clearfix">
+
+  <section class="f_l_con clearfix">
+    <div class="wrap_style mb15">
+      <div class="cmp_tt clearfix">
+        <span class="grey_99 fright">最后更新七天内（2015-01-29）</span>
+        <h1>易宝支付怎么样</h1>
+        <p class="ml10">互联网行业雇主综合排名<em>NO.1</em>，<a href="#">查看排名</a></p>
+      </div>
+      <p class="line"></p>
+      <div class="co_grade clearfix">
+        <div class="cg_t clearfix">
+          <ul class="cgt_l clearfix">
+            <li class="cgtl_l">
+              <div class="font_h2">--<em>%</em></div>
+              <p class="mt5">员工满意度</p>
+            </li>
+            <li class="cgtl_r">
+              <p><span class="grade_star_b mr10"><i style="width:92px;"></i></span><strong>4.8</strong>分</p>
+              <p>暂无公司点评</p>
+              <p class="mt5"><a class="yellow_btn" href="#">+ 写一条点评</a></p>
+            </li>
+          </ul>
+          <div class="cgt_r">
+            <div class="ceo">
+              <img src="http://img.kanzhun.com/image/9595.gif">
+              <p class="f_14">田国立<br><em class="grey_99 f_12">首席执行官</em></p>
+              <a class="fright grey_99 mt10 js_correctionceo_bt" href="javascript:;" data-coid="9595" ka="review-ceo-edit"><i class="i_correction"></i>纠错</a>
+            </div>
+            <span class="tangle_init"></span>
+          </div>
+        </div>
+        <ul class="cg_b">
+          <li class="circle_chart">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>--%的员工<br>愿意推荐朋友来<br>这里工作</h5>
+          </li>
+          <li class="circle_chart">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>--%的员工<br>看好公司<br>未来发展</h5>
+          </li>
+          <li class="circle_chart li_last">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>--%的员工<br>支持CEO马化腾</h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--点评-->
+    <div class="sy_comment wrap_style">
+      <h3>更多互联网行业公司点评</h3>
+    </div>
+    <!--点评-->
+
+    <!--点评list-->
+    <% include piece/co-left-compentlist.ejs %>
+    <!--点评list-->
+
+    <!--点评link-->
+    <div class="sy_comment wrap_style mt15 t-center">
+      <a href="">更多互联网行业公司点评</a>
+    </div>
+    <!--点评link-->
+
+
+    <!--打分-->
+    <% include piece/co-review-grade.ejs %>
+    <!--打分-->
+
+  </section>
+
+
+
+  <section class="f_r_con clearfix">
+    <% include piece/co-right-publish.ejs %>
+
+    <% include piece/co-right-average.ejs %>
+
+    <% include piece/co-right-companylist.ejs %>
+
+    <% include piece/co-right-hotpost.ejs %>
+
+  </section>
+</div>
+
+</body>
+</html>

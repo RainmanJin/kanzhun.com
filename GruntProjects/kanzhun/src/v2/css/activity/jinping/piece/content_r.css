@@ -1,0 +1,213 @@
+.cr_top {
+  height: 130px;
+  background-color: #5f4b90;
+  position: relative;
+}
+.cr_top .i_face {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+.cr_top .crt_r {
+  margin-left: 115px;
+  padding-top: 15px;
+}
+.cr_top .crt_r .font_p1 {
+  background: url("/images/activity/jinping/fonts.png") no-repeat -200px -180px;
+  width: 193px;
+  height: 22px;
+  margin-bottom: 5px;
+}
+.cr_top .crt_r .p2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.cr_top .crt_r a.bt_enter {
+  display: inline-block;
+  background: url("/images/activity/jinping/bgs.png") no-repeat;
+  width: 191px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.cr_top .crt_r a.bt_enter:hover {
+  text-decoration: none;
+}
+.cr_top .crt_r > ul {
+  margin-bottom: 5px;
+}
+.cr_top .crt_r > ul li {
+  float: left;
+  color: #fff;
+  margin-right: 15px;
+}
+.cr_top .crt_r > ul li p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.cr_top .crt_r > ul li a {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 5px;
+  background-color: #7668a4;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.cr_top .crt_r > ul li a:hover,
+.cr_top .crt_r > ul li a.current {
+  text-decoration: none;
+  background-color: #ffe236;
+  color: #442d7b;
+}
+.cr_top .bt_other {
+  color: #ffe236;
+}
+.cr_top .i_triangle {
+  display: inline-block;
+  border-width: 5px 0 5px 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ffe236;
+}
+.cr_top .crt_list {
+  position: absolute;
+  z-index: 1;
+  top: 144px;
+  width: 323px;
+  border: 1px solid #7c36bc;
+  background-color: #f6f5f9;
+}
+.cr_top .crt_list i.i_triangle_d {
+  display: inline-block;
+  background: url("/images/activity/jinping/icons.png") no-repeat -80px -280px;
+  width: 25px;
+  height: 13px;
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  margin-left: -13px;
+}
+.cr_top .crt_list .crtl_inner {
+  height: 415px;
+  padding-bottom: 15px;
+  overflow: auto;
+}
+.cr_top .crt_list .crtl_inner ul {
+  margin: 15px 10px 0;
+  overflow: auto;
+}
+.cr_top .crt_list .crtl_inner ul li {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #574189;
+}
+.cr_top .crt_list .crtl_inner ul li h4 {
+  font-size: 18px;
+}
+.cr_top .crt_list .crtl_inner ul li p {
+  font-size: 16px;
+}
+.cr_top .crt_list .crtl_inner ul li p em {
+  display: inline-block;
+  font-size: 14px;
+  color: #680000;
+  background-color: #ffe236;
+  border-radius: 3px;
+}
+.cr_top .crt_list .crtl_inner ul li p em.color_b {
+  background-color: #00c0ff;
+  color: #fff;
+}
+.cr_top .crt_list .crtl_inner .bt_more {
+  color: #333333;
+  display: block;
+  text-align: center;
+}
+.cr_top.fixed {
+  position: fixed;
+  width: 325px;
+  top: 5px;
+  z-index: 2;
+}
+.cr_newList {
+  background-color: #4a2357;
+  padding: 0 10px 15px;
+}
+.cr_newList h2 {
+  display: inline-block;
+  background: url("/images/activity/jinping/fonts.png") no-repeat -400px -180px;
+  width: 306px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #fff;
+}
+.cr_newList .crnl_c {
+  overflow: hidden;
+  height: 1080px;
+}
+.cr_newList .crnl_c ul {
+  position: relative;
+}
+.cr_newList .crnl_c ul li {
+  background-color: #5d3968;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.cr_newList .crnl_c ul li h4 {
+  font-weight: normal;
+  font-size: 16px;
+}
+.cr_newList .crnl_c ul li h4 span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffe236;
+  vertical-align: middle;
+}
+.cr_newList .crnl_c ul li h4 span.color_b {
+  color: #00c0ff;
+}
+.cr_newList .crnl_c ul li h4 em {
+  display: inline-block;
+  background-color: #ffe236;
+  padding: 0 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #680000;
+}
+.cr_newList .crnl_c ul li h4 em.color_b {
+  background-color: #00c0ff;
+  color: #fff;
+}
+.cr_newList .crnl_c ul li div.t img {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #dcdadf;
+  float: left;
+}
+.cr_newList .crnl_c ul li div.t p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 50px;
+  padding-top: 5px;
+}
+.cr_newList .crnl_c ul li a {
+  color: #fff;
+}
+.cr_newList .crnl_c ul li a:hover {
+  text-decoration: none;
+}
+.cr_newList .crnl_c ul li.reason_new {
+  position: absolute;
+  top: 0;
+  width: 285px;
+}

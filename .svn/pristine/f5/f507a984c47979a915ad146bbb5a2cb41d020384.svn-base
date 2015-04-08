@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>评公司-2</title>
+<link rel="stylesheet" href="css/ugc_public.css" />
+<link rel="stylesheet" href="css/ugc_page.css">
+</head>	
+<body>
+<div class="wrapper">
+<div class="js_comment_step2 content">	
+	<header class="page_hd">		
+		<a class="top_back" href="javascript:;"><i></i>返回</a>
+		<strong>评公司</strong>
+	</header>
+	<h1 class="comment_title_2 ml20 mr20 mt10 grey">
+		<i class="i i_hand_b"></i>
+		<span>您的信息非常详细，将对广大求职者的求职规划有很大帮助！填写下面信息，即可完成发布。</span>
+	</h1>
+	<div class="divInput_1 bdefault ml20 mr20 mt20">
+		<label>职位名称</label>
+		<input type="text"/>
+	</div>
+	<div class="divInput_1 bdefault mt20 ml20 mr20">
+		<label>所在城市</label>
+		<input type="text"/>
+	</div>
+	<section class="comment_status mt20 ml20 mr20">
+		<label>您是否在仍在易宝工作：</label>
+		<ul class="bt_change">
+			<li class="l on">在职</li>
+			<li class="r">曾经在职</li>
+		</ul>	
+	</section>	
+	<div class="ml20 mr20 mt20 mb10"><button class="js_submit btn_submit_1" type="submit">提交</button></div>
+	<p class="ml20 mr20 mb10 grey">所有信息均匿名发布，您的真实身份不会被他人知晓</p>
+</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+</html>
+
+

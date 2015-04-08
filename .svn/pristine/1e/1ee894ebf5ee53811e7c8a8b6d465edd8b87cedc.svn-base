@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <title>谈框</title>
+    <!--[if lte IE 9]>
+       <script src="http://s.kanzhun.com/js/html5shiv.js"></script>
+       <script src="http://s.kanzhun.com/js/jquery-1.11.0.min.js"></script>
+       <!--[if gt IE 9]><!-->
+    <link rel="stylesheet" href=/v2/css/widget.css />
+    <script src="http://s.kanzhun.com/js/jquery-2.1.0.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/v2/css/activity/jinping/piece/share.css"/>
+    <script src="/js/require.js" data-main="/v2/js/activity/jinping/share.js"></script>
+</head>
+<body>
+    <div class="main">
+
+        <div class="frame1">
+            <p class="shut">× 下次再说</p>
+            <div class="left">
+                <p class="title">
+                    上榜人气+1
+                </p>
+                <p class="content">
+                    目前该公司排第<em class="red">85</em>名<br>
+                    您成功的为<em class="blod">上海证明物流有限公司</em><br>
+                    在 <em class="em">永不加薪榜</em> 上增加1个【上榜人气】<br>
+                    该公司前进一步
+                </p>
+                <p class="support">还差10人支持！</p>
+                <div class="shout">
+                    快找小伙伴来助攻，顶他夺冠！
+                    <img src="/images/activity/jinping/angle.png" class="angle"/>
+                </div>
+                <img src="/images/activity/jinping/partner.png" class="partner"/>
+            </div>
+            <div class="right">
+                <p class="wechat">
+                    <img class="wechat_logo" src="/images/activity/jinping/wechat_logo.png" alt=""/>
+                    <span class="wechat_word">微信扫一扫</span>
+                </p>
+                <p class="ml10">
+                    <img class="qr_code" width="154"  height="154" src="/images/activity/jinping/kz_weixin.jpg" alt=""/>
+                </p>
+                <p class="word ml10">
+                    扫一扫告诉更多受害者，<br>
+                    一起打下更多职场大老虎。
+                </p>
+                <p class="btn_wrap">
+                    <a href="javascript:;">分享到微博拉票</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="frame2">
+            <p class="shut">× 下次再说</p>
+            <div class="left">
+                <p class="title">
+                    下榜人气+1
+                </p>
+                <p class="content">
+                    目前该公司排第<em class="red">85</em>名<br>
+                    您成功的为<em class="blod">上海证明物流有限公司</em><br>
+                    在 <em class="em">永不加薪榜</em> 上增加1个【下榜人气】<br>
+                    该公司后退一步
+                </p>
+                <p class="support">还差10人支持！</p>
+                <div class="shout">
+                    如此真爱，快找小伙伴来投票，为他正名!
+                    <img src="/images/activity/jinping/angle.png" class="angle"/>
+                </div>
+                <img src="/images/activity/jinping/partner.png" class="partner"/>
+            </div>
+            <div class="right">
+                <p class="wechat">
+                    <img class="wechat_logo" src="/images/activity/jinping/wechat_logo.png" alt=""/>
+                    <span class="wechat_word">微信扫一扫</span>
+                </p>
+                <p class="ml10">
+                    <img class="qr_code" width="154"  height="154" src="/images/activity/jinping/kz_weixin.jpg" alt=""/>
+                </p>
+                <p class="word ml10">
+                    扫一扫分享给更多的真爱，<br>
+                    拯救你心目中的好公司。
+                </p>
+                <p class="btn_wrap">
+                    <a href="javascript:;">分享到微博拉票</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

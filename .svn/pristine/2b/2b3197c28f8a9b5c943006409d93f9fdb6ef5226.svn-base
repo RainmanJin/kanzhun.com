@@ -1,0 +1,27 @@
+@import "../common/var";
+
+.btn_grey_b {
+  border: 1px solid #dfdfdf;
+  height: 30px;
+  line-height: 30px;
+  background: @icons repeat-x 0 -31px;
+  display: inline-block;
+  padding: 0 35px;
+  text-align: center;
+  font-size: 14px;
+  color: @black;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    border: 1px solid #d3d3d3;
+    background: #f6f6f6 url('');
+    text-decoration: none;
+  }
+
+  input{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

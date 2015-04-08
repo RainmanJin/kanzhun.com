@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+<header>
+    <h3></h3>
+    <img src="images/logo.png" class="logo"/>
+    <img src="images/q1/person.png" class="person"/>
+</header>
+<section id="content">
+    <img src="images/result/avatar.jpg" class="avatar"/>
+    <div>
+        <img src="images/result/bujiaban.png" class="declar"/>
+        <h3 class="person">我是 <i>moliya</i> 我不加班，我晒幸福! </h3>
+    </div>
+
+    <div class="pros">
+        <div class="progress">
+            每天加班<i>3</i>小时
+            <img src="images/result/r1.png" alt="" class="r_icon"/>
+            <p class="finish">
+
+            </p>
+        </div>
+        <div class="progress">
+            每周工作<i>6</i>天
+            <img src="images/result/r2.png" alt="" class="r_icon"/>
+            <p class="finish">
+
+            </p>
+        </div>
+        <div class="progress">
+            相当于每年为公司奉献<i>196</i>个工作日
+            <img src="images/result/r3.png" alt="" class="r_icon"/>
+            <p class="finish"></p>
+        </div>
+        <div class="progress">
+            折合<i>8</i>个月
+            <img src="images/result/r4.png" alt="" class="r_icon"/>
+            <p class="finish">
+
+            </p>
+        </div>
+        <div class="progress">
+            我战胜了<i>80%</i>的人
+            <img src="images/result/r5.png" alt="" class="r_icon"/>
+            <p class="finish">
+
+            </p>
+        </div>
+    </div>
+
+    <div class="obtain_wrap">
+        <div class="obtain" id="obtain">
+            我获得
+            <img src="images/result/name1.png" class="name" alt=""/>
+            称号
+        </div>
+    </div>
+
+</section>
+<section id="oper">
+    <a href="#" class="generate">立刻分享</a>
+    <a href="rank.html" class="rank">行业加班榜</a>
+</section>
+<script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/site/result.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+body {
+  background-color: #f2f2f2;
+}
+section.ques-banner {
+  height: 468px;
+  width: 100%;
+  min-width: 990px;
+  background: #d73d2b url("../../images/questionnaire/1111/banner.jpg") no-repeat center top;
+  -webkit-box-shadow: 0 5px 20px #bbbbbb;
+  -moz-box-shadow: 0 5px 20px #bbbbbb;
+  -ms-box-shadow: 0 5px 20px #bbbbbb;
+  box-shadow: 0 5px 20px #bbbbbb;
+}
+section.ques-list {
+  background-color: #fff;
+  width: 890px;
+  margin: 40px auto 100px;
+  padding: 50px;
+  position: relative;
+  -webkit-box-shadow: 0 4px 20px #e0e0e0;
+  -moz-box-shadow: 0 4px 20px #e0e0e0;
+  -ms-box-shadow: 0 4px 20px #e0e0e0;
+  box-shadow: 0 4px 20px #e0e0e0;
+}
+section.ques-list .ques-count {
+  position: absolute;
+  right: 50px;
+  top: -5px;
+  background: url("../../images/questionnaire/1111/count.png") no-repeat;
+  width: 277px;
+  height: 106px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+}
+section.ques-list .ques-count strong {
+  font-size: 30px;
+  vertical-align: middle;
+}
+section.ques-list dl {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #d0d0d0;
+}
+section.ques-list dl.err {
+  background-color: #ffffea;
+}
+section.ques-list dl dt {
+  font-size: 20px;
+  background: url("../../images/questionnaire/1111/img-1107-1.png") no-repeat 10px 0;
+  padding-left: 50px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+section.ques-list dl dd {
+  padding: 5px 65px;
+  font-size: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+section.ques-list dl dd:hover {
+  color: #d03f3b;
+}
+section.ques-list dl dd.current {
+  color: #d03f3b;
+}
+section.ques-list dl input {
+  margin-top: 5px;
+  margin-right: 8px;
+  float: left;
+  cursor: pointer;
+}
+section.ques-list dl label {
+  cursor: pointer;
+  float: left;
+  margin-right: 20px;
+  max-width: 600px;
+}
+p.ques-submit {
+  text-align: center;
+  padding: 30px;
+}
+p.ques-submit input {
+  font-size: 22px;
+  padding: 10px 50px;
+  background-color: #cb2f1e;
+  font-weight: bold;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+p.ques-submit input.forbidden {
+  background-color: #cccccc;
+}
+div.ret-tt {
+  margin-top: 30px;
+  background: url("../../images/questionnaire/1111/succ.jpg") no-repeat;
+  padding-left: 60px;
+}
+div.ret-tt h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+div.ret-tt p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+div.share {
+  background-color: #f6f6f6;
+  padding: 10px 60px;
+}
+div.share span {
+  margin: 5px 20px 0 0;
+  float: left;
+}
+@-webkit-keyframes sliding {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-ms-keyframes sliding {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes sliding {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.sliding {
+  -webkit-animation-name: sliding;
+  -ms-animation-name: sliding;
+  -moz-animation-name: sliding;
+  animation-name: sliding;
+  -webkit-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+div.ret-con {
+  padding-top: 90px;
+  margin-top: 40px;
+  position: relative;
+}
+div.ret-con .ret-h {
+  position: absolute;
+  left: -50px;
+  top: 0;
+}
+div.ret-con .ratio {
+  width: 550px;
+  height: 20px;
+  float: right;
+  overflow: hidden;
+}
+div.ret-con .ratio p {
+  background-color: #e7e7e7;
+  border-radius: 8px;
+  height: 15px;
+  width: 480px;
+  float: left;
+  margin-top: 5px;
+}
+div.ret-con .ratio p span {
+  display: block;
+  height: 15px;
+}
+div.ret-con .ratio p span i {
+  border-radius: 8px;
+  width: 100%;
+  display: block;
+  height: 15px;
+  -webkit-animation-name: sliding;
+  -ms-animation-name: sliding;
+  -moz-animation-name: sliding;
+  animation-name: sliding;
+  -webkit-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+div.ret-con .ratio p span i.ratio-1 {
+  background-color: #f3bfce;
+}
+div.ret-con .ratio p span i.ratio-2 {
+  background-color: #d4cbeb;
+}
+div.ret-con .ratio p span i.ratio-3 {
+  background-color: #9fdacf;
+}
+div.ret-con .ratio p span i.ratio-4 {
+  background-color: #ffd985;
+}
+div.ret-con .ratio p span i.ratio-5 {
+  background-color: #aad0e6;
+}
+div.ret-con .ratio strong {
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}

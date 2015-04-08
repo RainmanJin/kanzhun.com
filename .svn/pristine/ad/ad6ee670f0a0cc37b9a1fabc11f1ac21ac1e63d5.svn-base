@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>公司面经无结果页面</title>
+  <!--[if lte IE 9]>
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"> </script>
+    <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/css/widget-v2.css"/>
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/company/view.css"/>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+<% include ../modules/mini-search %>
+<% include piece/co-header %>
+
+	<div class="container_v2 clearfix">
+		<section class="f_l_con clearfix">
+			<!-- 面试搜索无结果 -->
+			<div class="wrap_style mb15">
+				<h1 class="l_tt_16">易宝支付面试</h1>
+				<p class="line"></p>
+				<div class="noresult">
+					<p class="grey_66">在易宝支付面试过？</p>
+					<p class="mt10 mb10"><a rel="nofollow" href="/interviewugc941726/" class="btn_grey_b hover_deff" ka="cominterview-none-ugcinterview"><strong>+</strong>&nbsp;发一条面经（匿名）</a></p>
+					<p class="grey_99 f_12">请发布易宝支付真实、客观的面试信息，您的信息将作为重要的参考依据，帮助他人更进一步了解易宝支付面试情况。</p>
+				</div>
+			</div>
+			<!-- 面试搜索无结果 -->
+			<!-- 热门面试推荐 -->
+			<div class="wrap_style mb15">
+				<h2 class="l_tt_16">查看互联网行业热门职位的面经</h2>
+				<p class="line"></p>
+				<div class="jobs_recommend">
+					<a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a><a href="">产品经理<span class="grey_99">（19条面试）</span></a>
+				</div>
+			</div>
+			<!-- 热门面试推荐 -->
+
+
+			<!-- 其他互联网公司面试 -->
+      <% include piece/co-left-interview-item.ejs %>
+			<!-- 其他互联网公司面试 -->
+
+
+		</section>
+
+		<!-- 右半部分 -->
+    <section class="f_r_con">
+      <% include piece/co-right-publish.ejs %>
+      <a href="" class="advertis_area mb15" style="height: 58px;"><img src="/images/view_v2-img/r_img.jpg" alt=""></a>
+      <% include piece/co-right-companylist.ejs %>
+    </section>
+		<!-- 右半部分 -->
+	</div>
+</body>
+</html>

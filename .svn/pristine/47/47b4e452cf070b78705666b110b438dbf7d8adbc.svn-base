@@ -1,0 +1,76 @@
+@import "../../common/var";
+
+dl.send_views {
+  overflow: hidden;
+  *zoom: 1;
+
+  dt {
+    float: left;
+    width: 56px;
+    height: 56px;
+    padding-top: 5px;
+  }
+
+  dd {
+    position: relative;
+    margin-left: 70px;
+    padding: 15px 10px 15px 15px;
+    border: 1px solid #deecc9;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+
+    span {
+      &.doubletriangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        overflow: hidden;
+      }
+      
+       &.triangleEdge {
+        left: -10px;
+        top: 20px;
+        border-width: 10px 10px 10px 0;
+        border-style: dashed solid;
+        border-color: transparent #deecc9 transparent  transparent; 
+      }
+      
+      &.triangleCon {
+        left: -9px;
+        top: 20px;
+        border-width: 10px 10px 10px 0;
+        border-style: dashed solid;
+        border-color: transparent #f3f3f3 transparent  transparent; 
+      } 
+    }
+
+    p {
+      width: 420px;
+      margin-right: 10px;
+
+      em {
+        color: #7cb228;
+      }
+    }
+
+    a.btn_grey_b {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      margin-top: -18px;
+      padding: 0 15px;
+    }
+  }
+}
+
+dl.review_send {
+  dd {
+    margin-top: 7px;
+
+    span.triangleCon, span.triangleEdge {
+      top: 15px;
+    }
+  }
+}

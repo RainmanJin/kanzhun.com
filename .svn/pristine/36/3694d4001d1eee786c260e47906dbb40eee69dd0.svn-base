@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>公司评论页面</title>
+	<!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+	<link rel="stylesheet" href="../../css/base.css" />
+	<link rel="stylesheet" href="../../css/cmp_management.css" />
+    <script type="text/javascript">
+       var require = {
+         baseUrl: "/",
+         urlArgs: "v=v1.2.3"
+       };
+    </script>
+    <script src="/js/require.js" data-main="/js/site/company/comment.js"></script>
+</head>
+<body>
+    <header class="global">
+        <div class="header">
+            <img class="logo" src="../../images/logo.jpg"/>
+            <span class="title">企业用户专区</span  >
+            <!--<div class="user"><a href="#" class="mr15">登录</a><a href="#">注册</a></div>-->
+            <div class="user hello">
+                <dl>
+                    <dt>你好，117064092@qq.com&nbsp;<i></i></dt>
+                    <dd style="display: none;">
+                        <a ka="h_change_password" id="js_changePwd" href="javascript:;">修改密码</a>
+                    </dd>
+                </dl>
+                <em>|</em><a ka="logout" href="/logout/" class="logout"><i class="base logout"></i>退出</a>
+            </div>
+        </div>
+    </header>
+    <section class="co_header clearfix">
+        <a rel="nofollow" href="/gso36459.html" class="co_logo">
+            <img src="http://img.kanzhun.com/images/logo/20140704/96d2f08e5fe2e075d8fcdf2bf7054334.jpg" width="150" title="北汽福田汽车" alt="北汽福田汽车logo">
+            <span></span>
+        </a>
+        <div class="co_info">
+            <h2 id="companyName">北汽福田汽车</h2>
+            <p class="msg">
+                <strong>4.8</strong><span class="grey_66">分</span>&nbsp;&nbsp;<span class="grade_star_b"> <i style="width:80px;"></i>
+                        </span>946人评价
+            </p>
+            <p class="params">
+                互联网<em>|</em>杭州<em>|</em>1000-9999人
+            </p>
+        </div>
+        <nav class="clearfix">
+            <a href="">招聘管理</a><a href="">简历库</a><a href="">测评管理</a><a href="" class="current">公司管理</a><a href="">个人设置</a>
+        </nav>
+    </section>
+	<section class="manageContent">
+        <aside class="manageLeft">
+            <dl class="l_nav mb20">
+                <dt> <i class="base cmp_manage"></i>
+                    <span href="#">公司管理</span>
+                </dt>
+                <dd>
+                    <a href="#">基本资料</a>
+                </dd>
+                <dd>
+                    <a href="#">营业执照</a>
+                </dd>
+                <dd>
+                    <a href="#">公司介绍</a>
+                </dd>
+                <dd>
+                    <a href="#">照片管理</a>
+                </dd>
+                <dd class="current">
+                    <a href="#">评论管理</a>
+                </dd>
+            </dl>
+            <p class="grey_99 f_12 pl15 pr15">使用过程中有任何问题，请发送邮件到：<span class="grey_33">liuna@kanzhun.com</span></p>
+        </aside>
+		<div class="manageRight" id="js_cmp_comment">
+			<h3 class="p_tt mt15 mb20">评论管理</h3>
+            <div class="cmp_comment_wrap mb40">
+                <dl class="c_s_result">
+                    <aside class="hadrepley">已回复<i class="tangle_init"></i></aside>
+                    <dt class="anonymous_portrait"><img src="../../images/v2/xiaoren.jpg" alt=""></dt>
+                    <dd class="c_s_result_detail">
+                        <h2><a class="links" href="/pl462062.html" ka="comreview-blocker3-reviewname1" target="_blank"><span>“</span>福利不错 氛围简单不错的<span>”</span></a></h2>
+                        <p class="f_12 grey_99 view_address">离职员工 - 5年SM -&nbsp;&nbsp;<i class="base cmp_address"></i>北京</p>
+                        <p class="c_s_result_text">
+                            <em>公司优点：</em>
+                            有发展快速晋升职位的
+                        </p>
+                        <p class="c_s_result_text">
+                            <em>公司缺点：</em>
+                            压力大 没有人文关怀
+                        </p>
+                        <p class="c_s_result_text">
+                            <em>意见和建议：</em>
+                            涨工资 尤其是底层员工
+                            <a class="links" rel="nofollow" href="/pl462062.html" ka="comreview-blocker3-seeall1" target="_blank">查看全部&gt;&gt;</a>
+                        </p>
+                        <div class="c_s_v_result mb20" style="z-index: 2;">
+                            <span class="green_s_star_2 js_hover_gd"><i style="width:66px;"></i></span>
+                            <i class="tangle_init"></i><em>值得加入</em>
+                            <i class="i_rect color_r mr5"></i><em class="grey_99 f_12">不愿意推荐朋友</em>
+                            <i class="i_rect color_g mr5"></i><em class="grey_99 f_12">支持CEO</em>
+                            <i class="i_rect color_y mr5"></i><span class="grey_99 f_12">公司发展持平</span>
+                            <div class="grade_detail">
+                                <i class="tangle_greyb_up"></i>
+                                <ul>
+                                    <li>职业成长<span class="grade_rect_fifteen ml5"><i style="width:41px;"></i></span></li>
+                                    <li>技能成长<span class="grade_rect_fifteen ml5"><i style="width:54px;"></i></span></li>
+                                    <li>环境氛围<span class="grade_rect_fifteen ml5"><i style="width:41px;"></i></span></li>
+                                    <li>工作压力<span class="grade_rect_fifteen ml5"><i style="width:54px;"></i></span></li>
+                                    <li>公司前景<span class="grade_rect_fifteen ml5"><i style="width:41px;"></i></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="line_only"></p>
+                        <div class="u_c_s clearfix">
+                            <p class="fright u_options">
+                                <a href="javascript:;" rel="nofollow" class="float_wrap helpful mr10 mark" data-mtype="useful.json" data-sid="462062" ka="comreview-blocker3-up1"><span class="u_feel_helpful"></span>有用<em class="grey_99">（</em><i class="grey_99">2</i><em class="grey_99">）</em></a>
+                                <a ka="review1-re" href="/pl462062.html" target="_blank" class="comment mr10"><span class="u_comment"></span>评论<em class="grey_99">（0）</em></a>
+                                <a ka="review1-share" rel="nofollow" href="javascript:;" data-desc="福利不错 氛围简单不错的" data-url="/pl462062.html" class="share"><span class="u_share"></span>分享</a>
+                            </p>
+                            <timer class="grey_99 f_12">
+                                3个月内
+                            </timer>
+                        </div>
+                        <p class="line_only mb20"></p>
+                        <dl class="replay_to">
+                            <dt>
+                                <img src="http://img.kanzhun.com/images/logo/20150215/b17b18b0028cf7516988e41fbaa20f77.jpg" alt="">
+                            </dt>
+                            <dd>
+                                <p class="tt"><span class="grey_33">看准网</span>官方回复：</p>
+                                <p>啥事情，你到是说说啊？你不说我怎么知道？你以为我知道，实际上我是不知道的。就算我知道，你也要说说我知道是否跟你知道的一样啊？交流才有意义嘛。啥事情，你到是说说啊？你不说我怎么知道？你以为我知道，实际上我是不知道的。就算我知道，你也要说说我知道是否跟你知道的一样啊？交流才有意义嘛。啥事情，你到是说说啊？你不说我怎么知道？你以为我知道，实际上我是不知道的。就算我知道，你也要说说我知道是否跟你知道的一样啊？交流才有意义嘛。啥事情，你到是说说啊？你不说我怎么知道？</p>
+                                <time class="grey_99"><a href="javascript:;" class="fright links">编辑</a>2015-03-02 10:23</time>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </div>
+            <div class="cmp_comment_wrap">
+                <dl class="c_s_result">
+                    <a class="repley js_comment_pop"><i class="base cmp_replay"></i>回复</a>
+                    <dt class="anonymous_portrait"><img src="../../images/v2/xiaoren.jpg" alt=""></dt>
+                    <dd class="c_s_result_detail">
+                        <h2><a class="links" href="/pl462062.html" ka="comreview-blocker3-reviewname1" target="_blank"><span>“</span>福利不错 氛围简单不错的<span>”</span></a></h2>
+                        <p class="f_12 grey_99 view_address">离职员工 - 5年SM -&nbsp;&nbsp;<i class="base cmp_address"></i>北京</p>
+                        <p class="c_s_result_text">
+                            <em>公司优点：</em>
+                            有发展快速晋升职位的
+                        </p>
+                        <p class="c_s_result_text">
+                            <em>公司缺点：</em>
+                            压力大 没有人文关怀
+                        </p>
+                        <p class="c_s_result_text">
+                            <em>意见和建议：</em>
+                            涨工资 尤其是底层员工
+                            <a class="links" rel="nofollow" href="/pl462062.html" ka="comreview-blocker3-seeall1" target="_blank">查看全部&gt;&gt;</a>
+                        </p>
+                        <div class="c_s_v_result mb20" style="z-index: 2;">
+                            <span class="green_s_star_2 js_hover_gd"><i style="width:66px;"></i></span>
+                            <i class="tangle_init"></i><em>值得加入</em>
+                            <i class="i_rect color_r mr5"></i><em class="grey_99 f_12">不愿意推荐朋友</em>
+                            <i class="i_rect color_g mr5"></i><em class="grey_99 f_12">支持CEO</em>
+                            <i class="i_rect color_y mr5"></i><span class="grey_99 f_12">公司发展持平</span>
+                            <div class="grade_detail">
+                                <i class="tangle_greyb_up"></i>
+                                <ul>
+                                    <li>职业成长<span class="grade_rect_fifteen ml5"><i style="width:41px;"></i></span></li>
+                                    <li>技能成长<span class="grade_rect_fifteen ml5"><i style="width:54px;"></i></span></li>
+                                    <li>环境氛围<span class="grade_rect_fifteen ml5"><i style="width:41px;"></i></span></li>
+                                    <li>工作压力<span class="grade_rect_fifteen ml5"><i style="width:54px;"></i></span></li>
+                                    <li>公司前景<span class="grade_rect_fifteen ml5"><i style="width:41px;"></i></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="line_only"></p>
+                        <div class="u_c_s clearfix">
+                            <p class="fright u_options">
+                                <a href="javascript:;" rel="nofollow" class="float_wrap helpful mr10 mark" data-mtype="useful.json" data-sid="462062" ka="comreview-blocker3-up1"><span class="u_feel_helpful"></span>有用<em class="grey_99">（</em><i class="grey_99">2</i><em class="grey_99">）</em></a>
+                                <a ka="review1-re" href="/pl462062.html" target="_blank" class="comment mr10"><span class="u_comment"></span>评论<em class="grey_99">（0）</em></a>
+                                <a ka="review1-share" rel="nofollow" href="javascript:;" data-desc="福利不错 氛围简单不错的" data-url="/pl462062.html" class="share"><span class="u_share js_sinaShare"></span>分享</a>
+                            </p>
+                            <timer class="grey_99 f_12">
+                                3个月内
+                            </timer>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="promppt_info">
+                <p>上传营业执照并审核通过，即可拥有评论管理功能，<a href="" class="links">立即上传&nbsp;&gt;</a></p>
+            </div>
+        </div>
+    
+	</section>
+    <!--弹窗-->
+    <section class="maskui_dialog comment_pop" id="comment_pop" style="display: none;">
+        <form action="/" id="comment_pop_frm">
+            <div class="dialog_con">
+                <a href="javascript:;" class="dialog_close maskuiclose"></a>
+                <h3>发布你的评论</h3>
+                <textarea name="" id="shortViewContent" class="text" style="width:467px;height: 62px;" placeholder="请输入您的评论..."></textarea>
+                <p class="t-right mt15"><span id="shortViewPrompt" class="mr10 grey_99">您还可以输入<strong class="ok">300</strong>字</span><span class="btn_grey_b"><input type="submit" value="发布" ka="blocker6-submit"></span></p>
+                <!-- <p><a class="maskui_close grey_99 links" href="javascript:;" ka="wrong-com-cancel">取消</a></p> -->
+            </div>
+        </form>
+    </section>
+</body>
+</html>

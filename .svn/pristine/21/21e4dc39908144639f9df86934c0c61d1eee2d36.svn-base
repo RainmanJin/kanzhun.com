@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>马桶上的招聘节</title>
+  <link rel="stylesheet" href="css/jobs.css">
+  <script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/utils/jquery.keyframes.min.js"></script>
+  <script type="text/javascript" src="js/utils/barrage.js"></script>
+
+</head>
+<body class="grey">
+  <dl class="ol">
+    <dt>
+      <span>当前在线BOSS</span><strong>正在沟通中</strong><span>当前在线牛人</span>
+    </dt>
+    <dd>
+      <img src="images/top.jpg" class="counts">
+      <ul>
+        <li><span>8211</span></li>
+        <li><span>1954</span></li>
+        <li><span>63496</span></li>
+      </ul>
+    </dd>
+  </dl>
+
+  <div class="barrage">
+        <div>
+          <p class="up">
+            <a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+
+          </p>
+          <p class="down">
+            <a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+            <a href="">腾讯</a><a href="">京东</a><a href="">阿里巴巴</a><a href="">百度</a><a href="">腾讯</a><a href="">京东</a>
+          </p>
+        </div>
+  </div>
+
+  <p><img src="images/top100.jpg" width="100%" class="block"></p>
+
+  <ul class="jobs-list">
+    <li>
+      <span><img src="http://img.kanzhun.com/images/logo/20150215/73f0b6d1e0be1dc5bfabf50f61672ac0.jpg"><em></em></span>
+      <div>
+        <h4>清流资本·招聘专场</h4>
+        <p><i class="b"></i>256位Boss在线 <i class="c"></i>52位Boss沟通中</p>
+      </div>
+    </li>
+    <li>
+      <span><img src="http://img.kanzhun.com/images/logo/20140707/a2c288af2a656285658db8bb658592cc.jpg"><em></em></span>
+      <div>
+        <h4>清流资本·招聘专场</h4>
+        <p><i class="b"></i>256位Boss在线 <i class="c"></i>52位Boss沟通中</p>
+      </div>
+    </li>
+    <li>
+      <span><img src="http://img.kanzhun.com/images/logo/20150215/9e05852dc540ee9e214c570aa5582b76.jpg"><em></em></span>
+      <div>
+        <h4>清流资本·招聘专场</h4>
+        <p><i class="b"></i>256位Boss在线 <i class="c"></i>52位Boss沟通中</p>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

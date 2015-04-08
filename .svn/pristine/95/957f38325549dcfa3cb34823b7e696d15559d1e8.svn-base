@@ -1,0 +1,49 @@
+@import "../common/var";
+
+//label
+label.lb_tt {
+  float: left;
+  margin-right: 10px;
+  width: 4em;
+  text-align: right;
+  height: 35px;
+  line-height: 35px;
+}
+
+//右侧标题
+h3.p_tt {
+  padding-left: 8px;
+  border-left: 4px solid @green;
+  line-height: 1em;
+  font-size: 16px;
+}
+
+//表格顶部选择
+div.sorting {
+  height: 46px;
+  padding: 0 10px;
+  line-height: 46px;
+  border: 1px solid #eaeae8;
+
+  p {
+    float: right;
+
+    strong {
+      margin: 0 5px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 10px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #eaeae8;
+    color: @def;
+    &:hover, &.current {
+      color: @green;
+      text-decoration: none;
+    }
+  }
+}
+

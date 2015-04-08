@@ -1,0 +1,404 @@
+@import "../../../css/common/var";
+@import "../var";
+//@import '../../../css/modules/mini_search';   //搜索
+@import "../modules/top-search";
+@import 'piece/co-header';  //公司级页面头部样式
+@import 'piece/common-v2';  //公司级页面公布部分（目前只是面试和点评页面）
+@import "piece/co-filter";
+@import "../../../css/modules-v2/dialog-v2";
+
+@import "piece/co_left_review_item";
+@import 'piece/co-review-grade';  //左侧点评打分
+@import 'piece/co-left-compentlist';  //左侧点评列表
+@import '../modules/use_comment_share';//评论模块
+@import 'piece/co-left-official-replay';  //官方回复
+@import '../../../css/modules/share';   //分享
+@import '../../../components/toggler/toggler';   //展开的样式
+@import "../../../css/modules/ugc/company_correction";  //公司纠错
+@import "../../../components/floatword/floatword";   //飘字
+@import 'piece/co-left-basis-tags-search';  //按标签查看更多点评
+@import 'piece/right_con';  //右侧看了该公司的还看了
+@import 'piece/co-right-average';  //右侧平均工资入口
+@import 'piece/co-right-hotpost';  //右侧热门职位
+@import 'piece/co-right-cmp-latest-recruit';  //该公司员工最新点评
+@import 'piece/co-right-latest-staff-review';  //该公司最新招聘
+
+@import '../../../css/modules/company/bottomlinks'; //底部友情推荐
+@import 'piece/co-view-nologin-email-submit';  //邮箱验证
+
+
+//标题底对齐
+div.cmp_tt {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  h1 {
+    font-weight: bold;
+    font-size: 16px;
+    color: @grey_33;
+    float: left;
+  }
+  p{
+    float: left;
+    margin-top: 3px;
+    em{
+      color: @orange;
+    }
+  }
+  span {
+    margin-top: 3px;
+  }
+}
+div.co_grade{
+  padding-left: 40px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  .cg_t{
+    ul.cgt_l{
+      float: left;
+      padding-top: 15px;
+      li.cgtl_l{
+        float: left;
+        text-align: center;
+        .font_h2{
+          color: #e85253;
+          font-size: 50px;
+          font-weight: bold;
+          //padding-top: 7px;
+          line-height: 1;
+          em{
+            font-size: 40px;
+          }
+        }
+        .font_no {
+          color: @grey_33;
+          padding-top: 0;
+        }
+      }
+      li.cgtl_r{
+        float: left;
+        padding-left: 15px;
+        //position: relative;
+        & > div.font_h3{
+
+          a.bt_showCgd {
+            position: relative;
+            float: right;
+            display: block;
+            height: 16px;
+            line-height: 16px;
+            vertical-align: -3px;
+            padding-top: 5px;
+
+            &:hover {
+              /*div.co_grade_detail {
+                display: block;
+              }*/
+
+              &>i {
+                background-position: -165px 0;
+              }
+            }
+            span.span_question{
+              display: inline-block;
+              background-color: #eaf5ff;
+              padding: 3px 5px;
+            }
+          }
+
+          p.employee_comment {
+            font-size: 20px;
+            white-space: nowrap;
+            margin-right: 85px;
+          }
+        }
+        strong{
+          font-size: 20px;
+          color: @grey_66;
+        }
+        .co_grade_detail{
+          top: -23px;
+          left: 91px;
+        }
+        a.yellow_btn{
+          padding: 5px 10px;
+          &:hover{
+            color: #fff;
+          }
+        }
+
+        a.no_yellow_btn {
+          border-radius: 3px;
+          height: 26px;
+          line-height: 26px;
+          padding: 0 20px;
+        }
+      }
+    }
+    div.cgt_r{
+      float: right;
+      background-color: #f6f6f6;
+      padding: 15px;
+      width: 220px;
+      position: relative;
+      div.ceo{
+        position: relative;
+        overflow: hidden;
+        img{
+          padding: 2px;
+          border: 1px solid #e7e7e7;
+          background-color: #fff;
+          float: left;
+          width: 64px;
+          height: 64px;
+        }
+        p{
+          margin-left: 80px;
+          line-height: 1.4em;
+          padding-top: 15px;
+        }
+        .js_correctionceo_bt{
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          &:hover{
+            color: @orange;
+            .i_correction{
+              background-position: -16px -560px;
+            }
+          }
+        }
+
+        a.edit_add {
+          &:hover {
+            i {
+              background-position: -203px 0;
+            }
+
+            color: #2472b4;
+            text-decoration: none;
+          }
+
+          i {
+            margin-right: 5px;
+            vertical-align: -1px;
+          }
+        }
+      }
+      span.tangle_init {
+        position: absolute;
+        left: 50%;
+        bottom: -7px;
+        margin-left: -7px;
+        border-width: 7px 7px 0 7px;
+        border-style: dashed solid;
+        border-color: #f6f6f6 transparent transparent transparent;
+      }
+    }
+  }
+  ul.cg_b{
+    margin-top: 20px;
+    li{
+      width: 180px;
+      float: left;
+      border-right: 1px solid @grey_e7;
+      margin-right: 30px;
+      &.li_last{
+        border-right: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.circle_chart{
+  overflow: hidden;
+  zoom:1;
+
+  .doughnua_chart{
+    float: left;
+
+    span {
+      z-index: 2;
+    }
+  }
+  canvas{
+    vertical-align: middle;
+  }
+
+  h5{
+    padding: 3px 0 0 8px;
+    margin-left: 65px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+//公司等级详情
+div.co_grade_detail{
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  width: 360px;
+  padding: 20px;
+  position: absolute;
+  z-index: 11;
+  ul.cgd_t{
+    border-bottom: 1px dashed #e5e5e5;
+    padding-bottom: 15px;
+    overflow: hidden;
+    .font_h2{
+      float: left;
+      color: #e85253;
+      font-size: 50px;
+      font-weight: bold;
+      padding-top: 4px;
+      line-height: 1;
+      margin-right: 25px;
+      em{
+        font-size: 40px;
+      }
+    }
+
+    .font_h3 {
+      font-size: 20px;
+      color: @grey_66;
+      height: 36px;
+      line-height: 36px;
+    }
+  }
+  ul.cgd_m{
+    padding-top: 10px;
+    border-bottom: 1px dashed #e5e5e5;
+    padding-bottom: 15px;
+    li{
+      margin-top: 5px;
+      /*span.column{
+        display: inline-block;
+        background-color: @grey_e5;
+        width: 100px;
+        height: 7px;
+        border-radius: 2px;
+        position: relative;*/
+        em.column {
+          display: inline-block;
+          background-color: @green;
+          width: 100px;
+          height: 7px;
+          border-radius: 2px;
+        }
+      /*}*/
+      em.counts {
+        color: @grey_66;
+        font-size: 14px;
+      }
+      span.start_text {
+        display: inline-block;
+        width: 72px;
+        text-align: left;
+        vertical-align: -1px;
+        font-size: 12px;
+      }
+      .grade_star_b{
+        vertical-align: -2px;
+      }
+    }
+  }
+  ul.cgd_b{
+    padding-top: 10px;
+    li{
+      float: left;
+      margin-top: 5px;
+      color: @grey_99;
+      .grade_rect_fifteen{
+        margin-right: 5px;
+      }
+    }
+  }
+  .tangle_greyb_left{
+    position: absolute;
+    left: -8px;
+    top: 30px;
+  }
+}
+
+
+//职位的入口
+div.position_enter {
+  p.po_counts {
+    height: 40px;
+    line-height: 40px;
+    //border-bottom: 1px solid #e7e7e7;
+
+    em {
+      color: #e9e9e9;
+      margin: 0 15px;
+    }
+  }
+
+  ul {
+    overflow: hidden;
+    border-top: 1px solid #e7e7e7;
+
+    li {
+      float: left;
+      padding-right: 5px;
+      width: 205px;
+      padding-bottom: 5px;
+
+      a {
+        display: block;
+        .ellipsis(ellipsis);
+        color: @def;
+      }
+    }
+  }
+}
+//点评
+.sy_comment {
+  height: 60px;
+  line-height: 60px;
+  h3{
+    color: @grey_33;
+    a{
+      color: @grey_33 !important;
+      font-size: 14px;
+      &:hover {
+        color:#2c84cc;
+      }
+    }
+  }
+}
+
+//员工认为该公司非常靠谱-查看详情
+div.see_review_detail {
+  padding-top: 10px;
+  padding-bottom: 15px;
+
+  span {
+    font-size: 30px;
+    color: #e85253;
+  }
+
+  a.see_detail {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    background-color: #7cb228;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 10px;
+
+    &:hover {
+      background-color: #96ca46;
+      text-decoration: none;
+    }
+  }
+
+  p.come {
+    line-height: 1em;
+    padding-top: 5px;
+  }
+}
+

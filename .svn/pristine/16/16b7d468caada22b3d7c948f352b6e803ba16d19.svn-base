@@ -1,0 +1,29 @@
+<!--公司模块-公司头部-已认证-->
+<section class="co_header clearfix" style="z-index: 4;">
+    <input id="shareTextHid" type="hidden" value="">
+    <input id="shareCoTextHid" type="hidden" value="">
+    <input type="hidden" id="shareImgHid" value="">
+    <a href="" class="co_logo">
+        <i class="tag cubeugc_icon_my"></i><img src="http://img.kanzhun.com/images/logo/20140925/3aaa7746fa42066c1dfd3912c0afb025.jpg" width="150" title="华为" alt="华为logo" data-bd-imgshare-binded="1"><span></span>
+    </a>
+    <div class="co_info">
+        <p class="cmpname" id="companyName">华为 <span class="icon_v"><img src="/images/v2/icon_v.png"> <img class="icon_offical" src="/images/v2/icon_offical.png"></span> <a href="#" class="share_pk">公司PK</a></p>
+        <div class="msgs"><strong>3.5</strong><span class="grade_star_b"><i style="width:83px;"></i></span><a href="" class="grey_99">19556人评价</a></div>
+        <p class="grey_33">绿色支付，快乐生活——中国行业支付的开创者</p>
+    </div>
+    <nav class="clearfix">
+        <p id="fixedCoNav">
+            <span class="f_n_name" id="fixedcmpname"><em>华为</em></span>
+            <a href="" title="">简介</a>
+            <a href="" title="">工资</a>
+            <a href="" title="">点评</a>
+            <a href="" title="">招聘</a>
+            <a href="" class="current" title="">面试</a>
+            <a href="" title="">照片</a>
+            <a href="" title="">员工</a>
+        </p>
+    </nav>
+    <aside>
+        <div><a href="" id="headerfollow" class="fright" data-hadattention="no" data-cid="3131" data-mtype="follow.json" class="follow attention_collection">+&nbsp;关注<span class="tangle_init"></span></a><em>233333912人浏览</em></div>
+    </aside>
+</section>

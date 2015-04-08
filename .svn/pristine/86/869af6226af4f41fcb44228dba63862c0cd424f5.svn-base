@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>keyword of the year</title>
+  <link rel="stylesheet" href="css/keyword.css"/>
+</head>	
+<body>
+<div class="container">
+    <section>
+      <img src="images/bg.jpg" class="kw-bg">
+
+      <ul>
+        <li>我在陌陌</li>
+        <li>我是产品经理</li>
+        <li>我的2014挺爽！</li>
+      </ul>
+      <img class="kw-tt" src="images/kw-tt.png" >
+      <img class="kw-ft" src="images/kw-ft.png" >
+    </section>
+    <a href="form.html" class="go">我也要来一发</a>
+    <a href="javascript:;" class="go share-to-wx">分享到朋友圈</a>
+</div>
+
+<div class="kw-dialog">
+  <img src="images/share.png">
+</div>
+
+<script>
+  (function(){
+    var dialog = document.querySelector('div.kw-dialog');
+    document.querySelector('a.share-to-wx').addEventListener('click', function(){
+      dialog.style.display = 'block';
+    }, false);
+    dialog.addEventListener('click', function(){
+      this.style.display = 'none';
+    }, false);
+  })();
+</script>
+</body>
+</html>
+
+

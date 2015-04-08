@@ -1,0 +1,14 @@
+{
+  "name": "Boss",
+  "version": "1.0.0",
+  "description": "proud of yourself",
+  "author": "fe team",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-requirejs": "*"
+  }
+}

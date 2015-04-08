@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html style="">
+<head>
+  <meta charset="utf-8" />
+  <title>Boss 登录页</title>
+  <link rel="stylesheet" href="../css/login.css"/>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <script src="../js/login.js"></script>
+  <![endif]-->
+</head>
+
+<body class="grey_bd">
+  <header class="header">
+    <div>
+      <img src="../images/logo.jpg" alt="BOSS直聘网页版" class="logo">
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="content">
+      <section class="leftcon">
+        <img src="../images/xiaoren.png" alt="">
+      </section>
+      <section class="rightcon">
+        <form action="" method="post" id="loginForm">
+          <div class="login">
+            <h3><img src="../images/loginbox_img01.jpg" alt=""></h3>
+            <p class="sys_err"><span></span></p>
+            <ul id="loginField">
+              <li>
+                <div>
+                  <label><i class="user"></i></label><input type="text" id="account" class="ifd" name="account" placeholder="请输入手机号"><p class="err" data-msg="请输入手机号！"></p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <label><i class="pwd"></i></label><input type="password" id="password" class="ifd" name="password" placeholder="请输入登录密码"><p class="err" data-msg="请输入登录密码！"></p>
+                </div>
+              </li>
+              <li class="code">
+                <img src="" onclick="changeAuthCode(this);" alt="看不清？点击换一张">
+                <div>
+                  <input type="text" name="captcha" placeholder="请输入验证码" maxlength="4" class="ifd">
+                  <input type="hidden" name="randomKey" value><p class="err" data-msg="请输入验证码！"></p>
+                </div>
+              </li>
+            </ul>
+            <p class="agree">
+              <input type="checkbox" id="remember" name="remember" value="true" checked="checked">&nbsp;<input type="hidden" name="_remember" value="on"><label for="remember">记住我</label>
+            </p>
+            <p>
+              <input type="submit" class="login_btn" value="登 录">
+            </p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

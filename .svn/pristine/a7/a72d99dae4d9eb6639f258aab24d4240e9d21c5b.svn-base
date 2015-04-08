@@ -1,0 +1,77 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+body.field_bg {
+	background-color: #eaeaea;
+}
+
+div {
+	&.container_v2 {
+		width: 990px;
+		margin: 15px auto 0 auto;
+	}
+}
+
+//有边带阴影的盒子外形
+.wrap_style {
+	padding: 0 15px;
+	border: 1px solid @grey_dc;
+	background-color: #ffffff;
+	.box-shadow(0 1px 0 #e6e6e6);
+}
+
+section {
+	&.f_l_con {
+		float: left;
+		width: 711px;
+		margin-right: 15px;
+	}
+	
+	&.f_r_con {
+		float: left;
+		width: 264px;
+	}
+}
+
+//链接的颜色变化
+a {
+  &.links {
+    color: #2c84cc;
+
+    &:hover {
+      color: #2472b4;
+      text-decoration: none;
+    }
+  }
+
+  &.hover_deff {
+      &:hover {
+          color: @def;
+      }
+  }
+}
+
+//带颜色的小三角
+.tangle_init {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+
+//页面左侧标题（16+线）
+.l_tt_16 {
+	font-weight: bold;
+	font-size: 16px;
+	color: #333333;
+	padding-top: 15px;
+}
+
+.haswidth  {
+	.ellipsis(ellipsis);
+	width: 30em;
+}
+
+
+
+

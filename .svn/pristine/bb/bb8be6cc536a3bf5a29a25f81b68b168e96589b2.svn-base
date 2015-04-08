@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>DEMO</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="qa">
+
+<header>CCTV对话马云</header>
+
+<div class="kz-tip test-tip">
+  请您提问马云
+</div>
+
+<section class="ali-test hidden">
+  <textarea  rows="6" class="writing">我记得，巴菲特曾经说过，在赚钱的问题上，我证明了谁也弄不过我；在花钱的问题上，我比不过比尔盖茨，所以我把我的钱交给了盖茨基金，希望他花的更有意义。说好的大自然保护协会会长马云呢？</textarea>
+
+  <p class="t-right f12 grey-l">还可以输入<strong class="orange">140</strong>字</p>
+  <p class="f12 grey-l mt20 pt15 mb5">每名厂工只能提一个问题，不能修改或删除</p>
+  <p><a class="btn-orange" href="#">下一步</a></p>
+</section>
+
+<section class="profile">
+  <form action="#">
+    <ul>
+      <li class="state">
+        <button class="sel" type="button" value="1">在职</button>
+        <button type="button" value="0">离职</button>
+      </li>
+
+      <li class="select">
+        <select name="">
+          <option value="1">百度</option>
+          <option value="1">SOHU</option>
+        </select>
+      </li>
+
+      <li>
+        <input type="text" name="" placeholder="输入职位">
+      </li>
+
+      <li>
+        <input type="text" name="" placeholder="输入邮箱">
+      </li>
+    </ul>
+    <p class="f12 grey-l">如果您的提问通过票选，我们将通过邮箱通知您，在节目现场向马云提问</p>
+    <p style="margin-top:50px;"><input type="submit" value="提 交" class="btn-orange"></p>
+  </form>
+</section>
+
+
+
+<script src="js/lib/zepto.js"></script>
+<script>
+  var require = {
+    urlArgs : "v=2.0",
+    baseUrl: 'js/site/'
+  };
+</script>
+<script src="js/lib/require.js" data-main="q.js"></script>
+</body>
+</html>
+
+

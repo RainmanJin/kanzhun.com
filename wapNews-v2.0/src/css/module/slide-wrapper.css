@@ -1,0 +1,86 @@
+.wrapper {
+  padding-bottom: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrapper .container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+div.slide-mask {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: none;
+}
+aside.slide-wrapper {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 60%;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+aside.slide-wrapper > div {
+  background-color: #343434;
+  min-height: 100%;
+}
+aside.slide-wrapper > div > div {
+  padding: 0 10px;
+  height: 45px;
+  background-color: #262626;
+  overflow: hidden;
+}
+aside.slide-wrapper > div > div strong {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: normal;
+}
+aside.slide-wrapper > div > div a {
+  margin-top: 8px;
+  float: right;
+  padding: 3px 10px;
+  border: 1px solid #4d4d4d;
+}
+aside.slide-wrapper.moved {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+aside.slide-wrapper li > a {
+  padding: 15px 10px;
+  border-top: 1px solid #4d4d4d;
+  border-bottom: 1px solid #262626;
+  font-size: 15px;
+  display: block;
+}
+aside.slide-wrapper li.current > a {
+  background-color: #262626;
+}

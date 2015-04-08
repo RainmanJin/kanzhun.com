@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>关于我们</title>
+<link rel="stylesheet" href="../css/import/ugc.css" />
+</head>	
+<body>
+<div class="wrapper">
+	<div class="content">	
+		<header class="page_hd">
+			<a class="top_back" href="javascript:;"><i></i>返回</a>		
+			<strong>关于我们</strong>	
+		</header>
+		
+		<h2 class="tt_greenline"><i></i>关于我们</h2>	
+		<p class="detail">欢迎来到看准网（www.kanzhun.com），本协议在您开始使用本网站，并成为本网站的注册会员即产生法律效力。视情况，看准网有可能更新协议内容，并通过电子邮件来通知用户。更新结果将在看准网通知之日起生效。协议包括看准网的网站用户互动规范，使用政策及相应的隐私政策。</p>
+		<p class="detail">看准网是一家提供全面的公司信息的网站，包括公司名称、地点、时间，除此之外，我们还提供公司评论和面试信息，这些信息将帮助您全面的了解一家公司。同时我们提供的信息完全免费，您不需要为此付任何的费用。
+		</p>
+		<p class="detail">看准网是一个匿名的交流工作和职业场所的平台。看准网以全面、准确、真实的数据给用户提供了参考，给就业一个清晰的思路。希望通过我们的努力，可以给用户提供真实透明的信息，可以更好的帮助用户在职场中成长。</p>	
+		<h2 class="tt_greenline"><i></i>联系我们</h2>	
+		<dl class="contact">
+			<dt>北京华品博瑞科网络技术有限公司</dt>
+			<dd>地　　址：北京市朝阳区太阳宫恒川公寓L栋01</dd>
+			<dd class="phone">电　　话：010-98765432</dd>
+
+			<dd>客服QQ：198766554</dd>
+			<dd>客服支持：support@kanzhun.com</dd>
+			<dd>工作时间：周一到周五，上午9：00至19：00</dd>
+		</dl>
+	</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+</html>
+
+

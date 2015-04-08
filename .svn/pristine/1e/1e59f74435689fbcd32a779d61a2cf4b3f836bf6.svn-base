@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>职位概况</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<!-- <script type="text/javascript">
+	window.CONTEXTPATH=location.host;
+</script> -->
+<link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/position.css" />
+<script src="../js/require.js" data-main="../js/site/job/position.js"></script>
+</head>
+
+<body>
+	<header class="global"> 
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+
+	<section class="co_header po_header clearfix">
+		<div class="po_name clearfix" style="z-index: 2;"><h1>产品经理</h1>
+			<dl class="po_other"><dt>[互联网行业]<i class="op_triangle"></i></dt>
+				<dd class="none">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<ul>
+						<li><a href="">医疗设备</a></li>
+						<li><a href="">电气/电力/水利</a></li>
+						<li><a href="">检测</a></li>
+						<li><a href="">矿业</a></li>
+						<li><a href="">工业自动化</a></li>
+						<li><a href="">生物化工</a></li>
+						<li><a href="">运输</a></li>
+						<li><a href="">重工业</a></li>
+						<li><a href="">食品</a></li>
+						<li><a href="">养殖业</a></li>
+						<li><a href="">医药/医院</a></li>
+						<li><a href="">政府</a></li>
+						<li><a href="">美容保健</a></li>
+						<li><a href="">环保</a></li>
+						<li><a href="">卫生保健</a></li>
+						<li><a href="">农业</a></li>
+						<li><a href="">休闲/体育/娱乐</a></li>
+						<li><a href="">跨领域经营</a></li>
+						<li><a href="">航空</a></li>
+						<li><a href="">石化/能源</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div> 
+		<p class="params">22条工资<em>|</em>332条面试<em>|</em>232条招聘</p>
+		<nav class="clearfix" style="z-index: 1;">
+			<a class="current" href="#">职位概况</a><a href="#">工资</a><a href="#">就业趋势</a><a href="#">面试</a><a href="#">招聘</a>
+		</nav>
+	</section>
+
+	<div class="container clearfix">
+		<section class="l_con clearfix">
+			<div class="op_ttt mb20 clearfix">
+				<h2>产品经理简介</h2>
+			</div>
+			<!-- 岗位职责 -->
+			<dl class="po_info mb30">
+				<dt class="mb10"><a class="edit fright" id="js-edit" href="javascript:;"><i></i>信息有误？编辑</a><h3><i></i>岗位职责</h3></dt>
+				<dd class="ponsibility">产品经理（Product manager，简称为 PM）是指在公司中，针对某一项或是某一类的产品进行规划和管理的人，主要负责产品的需求分析，研发、制造、营销、渠道等<span class="more_details none">产品经理（Product manager，简称为 PM）是指在公司中，针对某一项或是某一类的产品进行规划和管理的人，主要负责产品的需求分析，研发、制造、营销、渠道
+				</span><span class="more">...[<i>展开</i>]</span></dd>
+			</dl>
+			<!-- 岗位职责 -->
+			<!-- 技能与专长 -->
+			<dl class="po_info mb30">
+				<dt class="mb10"><h3><i></i>技能与专长</h3></dt>
+				<dd class="expertise">
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="skill"><span>数据分析<i></i></span></div>
+					<div class="addskill"><a href="javascript:;"><span>+&nbsp;点击添加技能<i></i></span></a></div>
+					<p class="clear none" id="js-submitskill"><input class="addskill" type="text" placeholder="输入新的技能标签，最多5个字"><a class="btn_o_l" href="javascript:;">提交</a></p>
+					<p class="js-err red"></p>
+				</dd>
+			</dl>
+			<!-- 技能与专长 -->
+			<div class="op_ttt clearfix">
+				<h2>产品经理工资</h2><p class="grey_99 fright">所有工资由公司员工匿名提交<a class="btn_o_l addsalary ml10" href="">+&nbsp;我来发条工资</a></p>
+			</div>
+			<!-- 图表 -->
+			<div class="salary_sort clearfix" id="salarySortWrapper">
+				<ul id="salarySort">
+					<li class="current" ka="comsalary-blocker2-excle"><i class="sort_p"></i>图表</li>
+					<li ka="comsalary-blocker2-word"><i class="sort_t"></i>文字</li>
+				</ul>
+				<em class="mr15">各公司产品经理工资</em> 
+				<em class="grey_99">最后更新&nbsp;&nbsp;2014-08-22</em> 
+			</div>
+			<!-- 图表 -->
+			<div class="salary_slide" style="z-index: 1;">
+				<div class="slide_con" id="salarySlide">
+					<table class="salary_chart" cellspacing="0" cellspacing="0">
+						<tr>
+							<th width="140">公司</th>
+							<th width="80">平均工资/月</th>
+							<th width="60">&nbsp;</th>
+							<th class="s">￥10K</th>
+							<th class="s">￥20K</th>
+							<th>￥30K</th>
+							<th width="40">&nbsp;</th>
+						</tr>
+						<tr>
+							<td><a href="/gzxs98956.html" ka="comsalary-blocker2-jobname1">客服专员(384条)</a></td>
+							<td width="100">￥3795</td>
+							<td colspan="5" class="chartmark">
+								<span>￥8,0000</span>
+								<figure class="s_where">
+									<div style="margin-left:13px;">
+										<ul class="none">
+											<li class="where_tt"><a href="#" rel="nofollow" class="mark fright" data-mtype="useful.json" data-sid="98956" ka="comsalary-blocker2-up1">靠谱（<i>8</i>）</a>平均工资分布图</li>
+											<li id="s_minchart" style="width:275px;height: 130px;background-color: #ccc;">
+						
+											</li>
+											<li class="identification"><img src="../images/po_img3.png" alt=""></li>
+										</ul>
+									</div>
+								</figure>
+								<span>￥9,0000</span>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="/gzxs98956.html" ka="comsalary-blocker2-jobname1">客服专员(384条)</a></td>
+							<td width="100">￥3795</td>
+							<td colspan="5" class="chartmark">
+								<span>￥8,0000</span>
+								<figure class="s_where">
+									<div style="margin-left:13px;">
+										<ul class="none">
+											<li class="where_tt"><a href="#" rel="nofollow" class="mark fright" data-mtype="useful.json" data-sid="98956" ka="comsalary-blocker2-up1">靠谱（<i>8</i>）</a>平均工资分布图</li>
+											<li id="s_minchart" style="width:275px;height: 130px;background-color: #ccc;">
+						
+											</li>
+											<li class="identification"><img src="../images/po_img3.png" alt=""></li>
+										</ul>
+									</div>
+								</figure>
+								<span>￥9,0000</span>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="/gzxs98956.html" ka="comsalary-blocker2-jobname1">客服专员(384条)</a></td>
+							<td width="100">￥3795</td>
+							<td colspan="5" class="chartmark">
+								<span>￥8,0000</span>
+								<figure class="s_where">
+									<div style="margin-left:13px;">
+										<ul class="none">
+											<li class="where_tt"><a href="#" rel="nofollow" class="mark fright" data-mtype="useful.json" data-sid="98956" ka="comsalary-blocker2-up1">靠谱（<i>8</i>）</a>平均工资分布图</li>
+											<li id="s_minchart" style="width:275px;height: 130px;background-color: #ccc;">
+						
+											</li>
+											<li class="identification"><img src="../images/po_img3.png" alt=""></li>
+										</ul>
+									</div>
+								</figure>
+								<span>￥9,0000</span>
+							</td>
+						</tr>
+					</table>
+					<table class="salary_chart" cellspacing="0" cellspacing="0">
+						<tr>
+							<th width="140">职位</th>
+							<th width="100">平均工资/月</th>
+							<th>工资范围</th>
+						</tr>
+						<tr>
+							<td><a href="/gzxs98956.html" ka="comsalary-blocker2-jobname1">客服专员(384条)</a></td>
+							<td>￥3795</td>
+							<td class="chart">
+							<p class="fleft"><span class="grey_99">最低工资：</span> ￥1,320
+							<span class="grey_99 ml15">最高工资：</span> ￥18,480<br>
+							<span class="grey_99">大部分人集中在：</span>￥13000-￥15600</p>
+							<a href="#" rel="nofollow" class="mark reliable" data-mtype="useful.json" data-sid="98956" ka="comsalary-blocker2-up1">靠谱（<i>8</i>）</a>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="/gzxs98956.html" ka="comsalary-blocker2-jobname1">客服专员(384条)</a></td>
+							<td>￥3795</td>
+							<td class="chart">
+							<p class="fleft"><span class="grey_99">最低工资：</span> ￥1,320
+							<span class="grey_99 ml15">最高工资：</span> ￥18,480<br>
+							<span class="grey_99">大部分人集中在：</span>￥13000-￥15600</p>
+							<a href="#" rel="nofollow" class="mark reliable" data-mtype="useful.json" data-sid="98956" ka="comsalary-blocker2-up1">靠谱（<i>8</i>）</a>
+							</td>
+						</tr>
+						<tr>
+								<td><a href="/gzxs98956.html" ka="comsalary-blocker2-jobname1">客服专员(384条)</a></td>
+								<td>￥3795</td>
+								<td class="chart">
+								<p class="fleft"><span class="grey_99">最低工资：</span> ￥1,320
+								<span class="grey_99 ml15">最高工资：</span> ￥18,480<br>
+								<span class="grey_99">大部分人集中在：</span>￥13000-￥15600</p>
+								<a href="#" rel="nofollow" class="mark reliable" data-mtype="useful.json" data-sid="98956" ka="comsalary-blocker2-up1">靠谱（<i>8</i>）</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<p class="grey_99 mb30"><a href="">查看全部工资</a>（共93989条，8282个公司）</p>
+			<div class="op_ttt">
+				<h2>产品经理面试</h2><p class="grey_99 fright">所有面试经历由面试过该职位的用户匿名提交<a class="btn_o_l addsalary ml10" href="">+&nbsp;我来写条面经</a></p>
+			</div>
+			<!-- 面试 -->
+			<dl class="interview_detail mb30 mt20">
+				<dt>
+					<img src="../images/positionimgs/po_imgs2.jpg" alt="您的匿名头像"><span></span>
+				</dt>
+				<dd class="i_tt mb10"><em>匿名用户</em><h3>面试华为<a href="">产品经理</a></h3><em class="grey_99">&nbsp;-&nbsp;北京</em></dd>
+				<dd class="i_con">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<h2><a href="">"易宝支付是锻炼行业产品经理的好地方"</a></h2>
+					<p class="mb10"><i class="succ"></i>面试通过&nbsp;&nbsp;&nbsp;<em class="grey_99">面试感受：</em>一般&nbsp;&nbsp;&nbsp;<em class="grey_99">面试难度：</em><span class="grade_rect "><i></i></span></p>
+					<strong>面试经历：</strong>
+					<p class="mb10">笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;</p>
+					<dl class="i_questions">
+						<dt>问题1：</dt>
+						<dd>如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？</dd>
+					</dl>
+					<p class="line"></p>
+					<div>
+						<p class="fright options comments">
+							<a href="" class="helpful" data-mtype="" data-sid="" ka=""><span class="img helpful"></span>有用<em class="grey_99">(<i>28</i>)</em></a><em class="line">|</em>
+							<a ka="" href="" class="cmt"><span class="img cmt"></span>评论<em class="grey_99">(1)</em></a><em class="line">|</em>
+							<a ka=""  href="" class="share"><span class="img share"></span>分享</a>
+						</p>
+						<em class="grey_99">2014-06-15</em>
+					</div>
+				</dd>
+			</dl>
+			<dl class="interview_detail mb30">
+				<dt>
+					<img src="../images/positionimgs/po_imgs2.jpg" alt="您的匿名头像"><span></span>
+				</dt>
+				<dd class="i_tt mb10"><em>匿名用户</em><h3>面试华为<a href="">产品经理</a></h3><em class="grey_99">&nbsp;-&nbsp;北京</em></dd>
+				<dd class="i_con">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<h2><a href="">"易宝支付是锻炼行业产品经理的好地方"</a></h2>
+					<p class="mb10"><i class="succ"></i>面试通过&nbsp;&nbsp;&nbsp;<em class="grey_99">面试感受：</em>一般&nbsp;&nbsp;&nbsp;<em class="grey_99">面试难度：</em><span class="grade_rect "><i></i></span></p>
+					<strong>面试经历：</strong>
+					<p class="mb10">笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;</p>
+					<dl class="i_questions">
+						<dt>问题1：</dt>
+						<dd>如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？</dd>
+					</dl>
+					<p class="line"></p>
+					<div>
+						<p class="fright options comments">
+							<a href="" class="helpful" data-mtype="" data-sid="" ka=""><span class="img helpful"></span>有用<em class="grey_99">(<i>28</i>)</em></a><em class="line">|</em>
+							<a ka="" href="" class="cmt"><span class="img cmt"></span>评论<em class="grey_99">(1)</em></a><em class="line">|</em>
+							<a ka=""  href="" class="share"><span class="img share"></span>分享</a>
+						</p>
+						<em class="grey_99">2014-06-15</em>
+					</div>
+				</dd>
+			</dl>
+			<!-- 面试 -->
+			<p class="grey_99 mb30"><a href="">查看全部面试</a>（共93989条，8282个公司）</p>
+			<div class="op_ttt">
+				<h2>产品经理面试</h2>
+			</div>
+			<p class="mb30"><a href="">查看完整分析报告</a></p>
+			<div class="op_ttt">
+				<h2>关于产品经理的问答</h2><p class="grey_99 fright"><a class="btn_o_l addsalary ml10" href="">+&nbsp;我来提问</a></p>
+			</div>
+			<ul class="l_questions mt10">
+				<li><a href=""><i class="greendot"></i>【热】支付产品经理是什么水平？【热】支付产品经理是什么水平？【热】支付产品经理是什么水平？【热】支付产品经理是什么水平？【热】支付产品经理是什么水平？【热】支付产品经理是什么水平？【热】支付产品经理是什么水平？【热】支付产品经理是什么水平？【热】支付产品经理是什么水平？【热】支付产品经理是什么水平？</a><em class="grey_99 fright">23个回答</em></li>
+				<li><a href=""><i class="greendot"></i>【热】支付产品经理是什么水平？</a><em class="grey_99 fright">23个回答</em></li>
+				<li><a href=""><i class="greendot"></i>什么样的人才算合格的合格的产品？</a><em class="grey_99 fright">23个回答</em></li>
+				<li><a href=""><i class="greendot"></i>如何向领导提出涨工资？</a><em class="grey_99 fright">23个回答</em></li>
+				<li><a href=""><i class="greendot"></i>如何向领导提出涨工资？</a><em class="grey_99 fright">23个回答</em></li>
+			</ul>
+		</section>
+		<section class="r_con">
+			<h2 class="por_tt">产品经理最新招聘</h2>
+			<ul class="jobs_show positions">
+				<li><em>4k-6k</em><a ka="remenzhaopin-1" href="/job/27505717.html" title="百度客服">百度客服</a><span>北京百思特捷迅科技有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京<br></span></li>
+				<li><em>4k-10k</em><a ka="remenzhaopin-2" href="/job/27544471.html" title="百度销售">百度销售</a><span>北京艾尚智美科技有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京-石景山区<br></span></li>
+				<li><em>5k-8k</em><a ka="remenzhaopin-3" href="/job/27741630.html" title="Web前端开发工程师">Web前端开发工程师</a><span>中公教育&nbsp;&nbsp;-&nbsp;&nbsp;北京<br></span></li>
+				<li><em>面议</em><a ka="remenzhaopin-4" href="/job/27521055.html" title="JAVA工程师-百度文学">JAVA工程师-百度文学</a><span>北京幻想纵横网络技术有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京<br></span></li>
+				<li><em>4k-5k</em><a ka="remenzhaopin-5" href="/job/27669731.html" title="百度竞价专员">百度竞价专员</a><span>北京八方纳海网络科技有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京-丰台区<br></span></li>
+				<li><em>6k-8k</em><a ka="remenzhaopin-6" href="/job/27568310.html" title="Web前端工程师">Web前端工程师</a><span>智云凌飞(北京)科技有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京-海淀区<br></span></li>
+			</ul>
+			<p class="mb20"><a href="">更多产品经理招聘</a></p>
+
+			<h2 class="por_tt">产品经理热门招聘公司</h2>
+			<ul class="salary_show mb10">
+				<li><em>45条招聘</em><i class="hot">1</i><p><a ka="blocker3-item1" href="/job/g3189.html" target="_blank">淘宝网</a>&nbsp;&nbsp;4.2分</p></li>
+				<li><em>667条招聘</em><i class="hot">2</i><p><a ka="blocker3-item2" href="/job/g3418.html" target="_blank">京东商城</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>84条招聘</em><i class="hot">3</i><p><a ka="blocker3-item3" href="/job/g10329.html" target="_blank">58同城</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>23条招聘</em><i>4</i><p><a ka="blocker3-item4" href="/job/g15868.html" target="_blank">支付宝</a>&nbsp;&nbsp;4.2分</p></li>
+				<li><em>262条招聘</em><i>5</i><p><a ka="blocker3-item5" href="/job/g25007.html" target="_blank">赶集网</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>861条招聘</em><i>6</i><p><a ka="blocker3-item6" href="/job/g4119.html" target="_blank">新浪（sina）</a>&nbsp;&nbsp;3.7分</p></li>
+				<li><em>2390条招聘</em><i>7</i><p><a ka="blocker3-item7" href="/job/g9012.html" target="_blank">阿里巴巴</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>1614条招聘</em><i>8</i><p><a ka="blocker3-item8" href="/job/g5855.html" target="_blank">腾讯</a>&nbsp;&nbsp;3.9分</p></li>
+				<li><em>600条招聘</em><i>9</i><p><a ka="blocker3-item9" href="/job/g8144.html" target="_blank">搜狐</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>147条招聘</em><i>10</i><p><a ka="blocker3-item10" href="/job/g32261.html" target="_blank">凤凰网</a>&nbsp;&nbsp;3.4分</p></li>
+			</ul>
+			<p class="mb20"><a href="">更多产品经理热门招聘公司</a></p>
+		</section>
+	</div>
+</body>
+</html>
+
+<div style="position: relative;">
+	<form action=""></form><div style="position: sbaolute;"></div>
+</div>

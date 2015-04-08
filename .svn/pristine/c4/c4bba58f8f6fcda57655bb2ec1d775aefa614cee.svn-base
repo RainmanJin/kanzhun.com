@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>洗车</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/washcar.css" />
+  <link rel="stylesheet" href="css/wx.css" />
+</head>
+<body class="index">
+<section class="banner">
+  <img class="banner_bg" src="images/banner.jpg" width="100%">
+  <div class="list" id="phoneList">
+  	<div class="inner">
+		  <ul>
+		  	<li>183****4561已成功领取！</li>
+		  	<li>183****4562已成功领取！</li>
+		  	<li>183****4563已成功领取！</li>
+		  	<li>183****4564已成功领取！</li>
+		  	<li>183****4565已成功领取！</li>
+		  	<li>183****4511已成功领取！</li>
+		  	<li>183****4522已成功领取！</li>
+		  	<li>183****4533已成功领取！</li>
+		  	<li>183****4544已成功领取！</li>
+		  	<li>183****4555已成功领取！</li>
+		  </ul>
+	  </div>
+  </div>
+</section>
+<section class="content">
+	<h2>请输入您的手机号：</h2>
+	<form action="test" >
+	<ul class="form clearfix">
+		<li class="f_l"><input type="text" data-type="phone"></li>
+		<li class="f_r"><a action-type="sbm" class="sbm" href="javascript:;">领取</a></li>
+	</ul>
+	</form>
+	<a class="orange_btn mt20 bt_transmit">邀请朋友免费领取洗车券</a>
+	<p class="b_info clearfix">
+		<a href="#">活动详情</a>
+		<span>此活动最终解释权归看准网所有</span>
+	</p>
+</section>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/washcar.js"></script>
+<script type="text/javascript" src="js/wx.js"></script>
+</html>

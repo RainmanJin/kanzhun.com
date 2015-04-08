@@ -1,0 +1,71 @@
+.page_wrap {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 10px 0;
+}
+.f_pager {
+  overflow: hidden;
+  *zoom: 1;
+}
+.f_pager a {
+  float: left;
+  width: 26px;
+  height: 26px;
+  margin-left: 6px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #666666;
+  border-radius: 2px;
+}
+.f_pager a:hover {
+  border-color: #85d487;
+  background-color: #85d487;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.f_pager a.current {
+  border-color: #67bf58;
+  background-color: #67bf58;
+  color: #ffffff;
+  font-weight: bold;
+}
+.f_pager a.p_first i {
+  width: 8px;
+  height: 10px;
+  display: block;
+  margin: 9px 0 0 9px;
+  *margin-left: 3px;
+  text-indent: -99999px;
+  background: url(../images/icons_v2.png) no-repeat -114px 0;
+}
+.f_pager a.p_first:hover i {
+  background-position: -126px 0;
+}
+.f_pager a.p_prev i {
+  display: block;
+  margin: 8px 0 0 10px;
+  *margin-left: 3px;
+  text-indent: -99999px;
+  width: 6px;
+  height: 10px;
+  background: url(../images/icons_v2.png) no-repeat -139px 0;
+}
+.f_pager a.p_prev:hover i {
+  background-position: -150px 0;
+}
+.f_pager a.p_next i {
+  display: block;
+  margin: 8px 0 0 10px;
+  *margin-left: 3px;
+  text-indent: -99999px;
+  width: 6px;
+  height: 10px;
+  background: url(../images/icons_v2.png) no-repeat -160px 0;
+}
+.f_pager a.p_next:hover i {
+  background-position: -170px 0;
+}

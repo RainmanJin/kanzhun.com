@@ -1,0 +1,64 @@
+@import "common/reset";
+@import "common/common";
+@icons: url(../images/icons_2.png) no-repeat;
+header.page_hd{
+	padding: 9px 10px;
+	text-align: center;
+	background-color: #22282a;
+	position: relative;
+
+	strong{
+		font-size: 18px;
+		color: #fff;
+		font-weight: normal;
+	}
+
+	a{
+		width: 60px;
+		height: 26px;
+		line-height: 26px;
+		border: 1px solid #4e5355;
+		border-radius: 2px;
+		color: #fff;
+		position: absolute;
+
+		&.fleft, &.top_back{
+			left: 10px;
+		}
+
+		&.fright{
+			right: 10px;
+		}
+
+		&.top_back{
+			float: left;
+			i{
+				width: 7px;
+				height: 12px;
+				background: transparent @icons 0 -35px;
+				display: inline-block;
+				vertical-align: -1px;
+				.background-size(100px);
+				margin-right: 5px;
+			}
+		}
+	}
+	.menu{
+		display: block;
+		left: 10px;
+		width: 40px;
+		height: 36px;
+		padding: 9px 10px 0 0;
+		border: 0;
+		top: 0;
+
+		img{
+			border: 1px solid #96c153;
+			padding: 5px 10px;
+			border-radius: 2px;
+			width: 16px;
+			height: 16px;
+		}
+	}	
+}
+

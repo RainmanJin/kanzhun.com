@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <title>个人信息录入</title>
+  <!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/lib/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/person.css" />
+</head>
+<body>
+<header class="person_header">
+  <div class="inner">
+    <img src="../../images/logo.png">
+    <div class="inner_r">
+      <i class="i i_person"></i>
+      alicesu<em>|</em><a href="javascript:;"><i class="i i_quit"></i> 退出</a>
+    </div>
+  </div>
+</header>
+<section class="content">
+  <div class="content_inner">
+    <h2 class="ct">
+      <i class="i i_title"></i>个人信息录入
+      <div class="b_line"></div>
+    </h2>
+    <div class="infoForm">
+      <p class="grey_88 mt20">请输入准确的个人信息，以便招聘方识别您的身份</p>
+      <ul class="fieldList mt10">
+        <li class="fl_li">
+          <label>账号</label>
+          <span class="sp">abc123</span>
+        </li>
+        <li class="fl_li clear">
+          <label><em class="red">*</em> 姓名</label>
+          <input class="ipt" type="text">
+          <p class="err" data-msg="请输入姓名"></p>
+        </li>
+        <li class="fl_li">
+          <label><em class="red">*</em> 性别</label>
+          <dl class="select" style="z-index: 3">
+            <dt>
+              <input type="text" value="男" readonly="readonly">
+              <input type="hidden" value="1"><div></div><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+              <a href="javascript:;" data-val="1">男</a>
+              <a href="javascript:;" data-val="2">女</a>
+            </dd>
+          </dl>
+          <p class="err" data-msg="请选择性别"></p>
+        </li>
+        <li class="fl_li">
+          <label><em class="red">*</em> 年龄</label>
+          <input class="ipt" type="text">
+          <p class="err" data-msg="请输入年龄"></p>
+        </li>
+        <li class="fl_li">
+          <label><em class="red">*</em> 学历</label>
+          <dl class="select" style="z-index: 3">
+            <dt>
+              <input type="text" value="本科" readonly="readonly">
+              <input type="hidden" value="1"><div></div><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+              <a href="javascript:;" data-val="1">本科</a>
+              <a href="javascript:;" data-val="2">专科</a>
+            </dd>
+          </dl>
+          <p class="err" data-msg="请选择学历"></p>
+        </li>
+        <li class="fl_li">
+          <label>毕业学校</label>
+          <input class="ipt" type="text">
+        </li>
+        <li class="fl_li">
+          <label>专业方向</label>
+          <input class="ipt" type="text">
+        </li>
+        <li class="fl_li">
+          <label><em class="red">*</em> 应聘职位</label>
+          <input class="ipt" type="text">
+          <p class="err" data-msg="请输入应聘职位"></p>
+        </li>
+        <li class="fl_li">
+          <label><em class="red">*</em> 身份证号</label>
+          <input class="ipt" type="text">
+          <p class="err" data-msg="请输入身份证号"></p>
+        </li>
+        <li class="fl_li">
+          <label><em class="red">*</em> 电子邮箱</label>
+          <input class="ipt" type="text">
+          <p class="err" data-msg="请输入电子邮箱"></p>
+        </li>
+        <li class="fl_li">
+          <label><em class="red">*</em> 联系电话</label>
+          <input class="ipt" type="text">
+          <p class="err" data-msg="请输入联系电话"></p>
+        </li>
+        <li class="fl_li">
+          <label><em class="red">*</em> 联系地址</label>
+          <input class="ipt" type="text">
+          <p class="err" data-msg="请输入联系地址"></p>
+        </li>
+        <li class="fl_li clear">
+          <label></label>
+          <input class="green_btn" type="submit" value="提交">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <p>Copyright © 2014 kanzhun.com京ICP备14013441号-1 , kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,257 @@
+@import "common/var";
+@import "module/company_header";
+@import "module/resumeleft";
+@import "module/resume_common";
+@import "module/paging-v2";
+
+//简历搜索页面右侧表单
+div.promppt_info {
+  padding: 15px 0;
+
+  p {
+    padding-left: 10px;
+  }
+}
+
+ul.job_edit {
+  padding: 20px 0 0 25px;
+
+  li {
+    height: 35px;
+    margin-bottom: 20px;
+
+    label {
+      em {
+        color: #d60000;
+      }
+    }
+
+    div.ipt_wrap {
+      margin-left: 71px;
+
+      p.center_line, em {
+        display: inline-block;
+        width: 36px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #cccccc;
+      }
+
+      input {
+        &.w_ipt {
+          width: 125px;
+        }
+      }
+    }
+
+    dl {
+      &.po_select {
+        width: 330px;
+      }
+
+      &.e_select {
+        float: left;
+        width: 145px;
+      }
+    }
+
+    &.search_r_btn {
+      padding-left: 70px;
+
+      span {
+        padding: 0 45px;
+      }
+    }
+
+    &.d_r_search {
+      span {
+        padding: 0 45px;
+      }
+    }
+  }
+}
+
+//搜索结果页面
+div {
+  &.change_select {
+    height: 48px;
+    padding: 0 15px;
+    line-height: 48px;
+    background-color: #f8f8f8;
+    border: 1px solid #eaeae8;
+
+    p {
+      float: right;
+
+      strong {
+        margin: 0 5px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 10px;
+      margin-left: 30px;
+      border: 1px solid #bedbe5;
+      background-color: #ffffff;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//表格显示简历信息简略
+table.tb_resume {
+  table-layout: fixed;
+  border: 1px solid #ecebeb;
+  border-width: 0 1px 1px 1px;
+
+  tr {
+    &.tb_tt {
+        background-color: #f0f7e5;
+       td {
+        height: 35px;
+        
+
+        p {
+          .ellipsis(ellipsis);
+          width: 95%;
+          margin: 0 auto;
+
+          &.cmp_name {
+            padding-left: 10px;
+          }
+        }
+       }
+
+       a.btn_detail {
+        float: right;
+        width: 78px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 14px;
+       }
+    }
+
+    &.e_detail {
+      overflow: hidden;
+      *zoom: 1;
+
+      td {
+        position: relative;
+        padding: 20px 0 10px 0;
+
+        a.btn_yellow_b {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          margin-top: -13px;
+          height: 26px;
+          line-height: 26px;
+          padding: 0 25px;
+          font-size: 14px;
+        }
+      }
+
+      ul {
+        //margin: 25px 0;
+
+        li {
+          height: 20px;
+          line-height: 20px;
+          margin-bottom: 10px;
+          text-align: left;
+          .ellipsis(ellipsis);
+
+          em {
+            color: #d5d5d5;
+            margin: 0 5px;
+            vertical-align: 1px;
+          }
+        }
+
+        /*&.educations {
+          width: 335px;
+          padding: 0 30px 0 15px;
+        }*/
+
+        &.experiences {
+          padding-right: 130px;
+          padding-left: 10px;
+          border-left: 1px solid #ecebeb;
+        }
+      }
+    }
+  }
+
+  th {
+    height: 40px;
+    background-color: @green;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  td { 
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    &.t_left {
+      text-align: left;
+    }
+
+    /*&.interval {
+      border-bottom: 1px solid #ecebeb;
+      border-top: 1px solid #ecebeb;
+    }*/
+
+    /*&.paging {
+      padding-left: 15px;
+      border-top: 1px solid #ecebeb;
+    }*/
+
+    &.noresult {
+      i {
+        vertical-align: -11px;
+      }
+    }
+  }
+}
+
+table.tb_hadsee {
+  margin-bottom: 10px;
+
+  tr {
+    &.hadsee_tt {
+      background-color: #f0f7e5;
+
+      &:nth-child(odd) {
+        background-color: #ffffff;
+      }
+    }
+  }
+  td {
+    /*border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #f3f3f3 #fff;*/
+
+    &.noborder {
+      border-right: none;
+      color: @grey_99;
+    }
+  }
+}
+
+span#eerr {
+  float: left;
+  line-height: 35px;
+  line-height: 35px;
+  margin-left: 16px;
+}
+

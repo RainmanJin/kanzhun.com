@@ -1,0 +1,194 @@
+@import "common/var";
+@import "module/reset";
+@import "common/common";
+
+body{
+  background-color: #ababab;
+}
+
+div.container{
+  width: 100%;
+  .box-sizing();
+  padding: 20px;
+
+
+
+  section{
+    width: 100%;
+    position: relative;
+
+    ul{
+      position: absolute;
+      top: 28%;
+      left: 8.75%;
+      font-size: 20px;
+      color: #ffffff;
+      line-height: 1.5em;
+    }
+
+    img{
+      display: block;
+      &.kw-bg{
+        width: 100%;
+        .box-shadow(10px 10px 25px #333);
+      }
+
+      &.kw-tt{
+        position: absolute;
+        width: 82.5%;
+        top: 10px;
+        left: 8.75%;
+      }
+
+      &.kw-ft{
+        position: absolute;
+        width: 58.5%;
+        bottom: 20px;
+        right: 15px;
+      }
+    }
+  }
+}
+
+a{
+  border: 0;
+  background-color: transparent;
+
+  &.go{
+    margin-top: 30px;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    .box-sizing();
+    border: 1px solid #bfbfbf;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+  }
+}
+
+
+.wrapper{
+  height: 100%;
+
+  .steps, form{
+    height: 100%;
+    width: 100%;
+  }
+
+
+  section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img{
+      width: 82px;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      margin-left: -41px;
+      margin-bottom: 48px;
+    }
+  }
+
+   input{
+     &.info{
+       font-weight: 100;
+       width: 100%;
+       font-size: 20px;
+       padding: 10px 0;
+       text-align: center;
+       border: 0;
+       background-color: #fff;
+       display: block;
+       position: absolute;
+       top: 50%;
+       margin-top: -20px;
+     }
+   }
+
+  button[type=button]{
+    color: #707070;
+    font-size: 18px;
+    padding: 15px 0;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+.kw-dialog{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+  text-align: right;
+
+  img{
+    width: 205px;
+    margin-top: 10px;
+  }
+}
+
+//shine
+@-webkit-keyframes twinkle {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  20% {
+    background-color: rgb(255, 180, 180);
+  }
+  40% {
+    background-color: rgb(255, 222, 222);
+  }
+  60% {
+    background-color: rgb(255, 180, 180);
+  }
+  80% {
+    background-color: rgb(255, 222, 222);
+  }
+  100% {
+    background-color: rgb(255, 200, 200);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  20% {
+    background-color: rgb(255, 180, 180);
+  }
+  40% {
+    background-color: rgb(255, 222, 222);
+  }
+  60% {
+    background-color: rgb(255, 180, 180);
+  }
+  80% {
+    background-color: rgb(255, 222, 222);
+  }
+  100% {
+    background-color: rgb(255, 200, 200);
+  }
+}
+
+.shine {
+  .animation(twinkle .6s ease none);
+}
+
+
+
+

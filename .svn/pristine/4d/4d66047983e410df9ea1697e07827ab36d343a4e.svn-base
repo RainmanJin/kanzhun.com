@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>马桶上的招聘节</title>
+  <link rel="stylesheet" href="css/jobs.css">
+</head>
+<body class="blue">
+  <header class="mars">
+    <img src="images/mars.jpg" class="block" width="100%">
+  </header>
+
+  <div class="mars-tt">
+    <img src="images/mars-logo.png">
+    <span><i class="m-b"></i>49位Boss在线</span><span><i class="m-c"></i>26位Boss沟通中</span>
+  </div>
+
+  <div class="mars-content">
+    <div class="mars-search">
+      <select>
+        <option value="1">移动产品经理</option>
+      </select><span>职位筛选</span>
+    </div>
+
+    <table class="mars-tb">
+      <tr>
+        <td>Mars推荐</td>
+        <td>智能硬件</td>
+        <td>互联网金融</td>
+      </tr>
+      <tr>
+        <td>在线教育</td>
+        <td class="current">O2O</td>
+        <td>其他子类</td>
+      </tr>
+      <tr>
+        <td>O2O</td>
+        <td>其他子类</td>
+        <td>在线教育</td>
+      </tr>
+    </table>
+
+    <ul class="mars-list">
+      <li>
+        <img src="images/portrait.jpg" >
+        <div>
+          <p>张磊</p>
+          <p>看准网 ｜ 首席架构师</p>
+          <p><em>￥15k-20k</em> <img src="images/m-t.png">3-5年 <img src="images/m-d.png">本科</p>
+        </div>
+        <strong>产品经理</strong>
+      </li>
+      <li>
+        <img src="images/portrait.jpg" >
+        <div>
+          <p>张磊</p>
+          <p>看准网 ｜ 首席架构师</p>
+          <p><em>￥15k-20k</em> <img src="images/m-t.png">3-5年 <img src="images/m-d.png">本科</p>
+        </div>
+        <strong>产品经理</strong>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<section class="top-search">
+  <div class="top-search-form">
+    <form action="">
+      <fieldset>
+        <input type="text" name="" placeholder="搜索公司/职位">
+        <input type="submit" value="搜索">
+      </fieldset>
+      <p>
+        热搜词：
+        <a href="#">百度</a>
+        <a href="#">产品经理</a>
+        <a href="#">设计师</a>
+        <a href="#">程序员</a>
+      </p>
+    </form>
+  </div>
+</section>

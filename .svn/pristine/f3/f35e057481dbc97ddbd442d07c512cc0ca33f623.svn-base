@@ -1,0 +1,154 @@
+define(['c/widgets'], function () {
+  $(function () {
+    $('#MSSCity, input[name=q]', minisearchForm).placeholder();
+
+    //search
+    var minisearchForm = $('#minisearchForm'),
+      miniSearchSuggestCity = $('#MSSCity'),
+      miniSearchSuggestFloor = $('#MSSFloor'),
+      hid = $('input[name=cityCode]', minisearchForm);
+
+
+    //choose city autocomplete
+    miniSearchSuggestCity.autocomplete({
+      serviceUrl: CONTEXTPATH + '/autocomplete/city.json',
+      paramName: 'query',
+      dataType: 'json',
+      transformResult: function (response) {
+        return {
+          suggestions: $.map(response.suggestions, function (dataItem) {
+            return { value: dataItem.value, data: dataItem.data};
+          })
+        };
+      },
+      onSelect: function (suggestion) {
+        hid.val(suggestion.data);
+      },
+      onSearchStart: function () {
+        //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+        hid.val('');
+      },
+      onInvalidateSelection: function () {
+        hid.val('');
+      },
+      onSearchComplete: function (query, suggestions) {
+        if (suggestions.length === 0) {
+          hid.val('');
+          return;
+        }
+        //auto select when only one result
+        if (suggestions.length === 1) {
+          hid.val(suggestions[0].data);
+        }
+      },
+      autoSelectFirst: true
+    });
+
+    //company and job  autocomplete
+    miniSearchSuggestFloor.autocomplete({
+      serviceUrl: CONTEXTPATH + '/autocomplete/searchkey.json',
+      paramName: 'query',
+      params: function (query) {
+        return {
+          query: query,
+          type: $('#MSSQType').val()
+        };
+      },
+      dataType: 'json',
+      transformResult: function (response) {
+        return {
+          suggestions: $.map(response.suggestions, function (dataItem) {
+            return { value: dataItem.value, type: dataItem.type};
+          })
+        };
+      },
+
+      customHTML: function (suggestions, className, formatResult, value) {
+        var html = [],
+          co = [],
+          job = [],
+          type;
+        $.each(suggestions || [], function (i, suggestion) {
+          if(i === 0){type = suggestion.type;}
+          if (suggestion.type == '1') {
+            co.push('<div class="' + className + '" data-index="' + i + '">' + formatResult(suggestion, value) + '</div>');
+          } else {
+            job.push('<div class="' + className + '" data-index="' + i + '">' + formatResult(suggestion, value) + '</div>');
+          }
+        });
+
+        if (job.length) {
+          /*if (co.length) {
+            html.push('<dt>公司</dt><dd>' + co.join('') + '</dd>');
+          }*/
+
+          var op = type == 0 ? 'unshift' : 'push';
+          if(op == 'unshift') {
+            html[op]('<dt>职位</dt><dd>' + job.join('') + '</dd>');
+
+            if (co.length) {
+              html.push('<dt class="bd">公司</dt><dd class="bd">' + co.join('') + '</dd>');
+            }
+          }else {
+            html[op]('<dt class="bd">职位</dt><dd class="bd">' + job.join('') + '</dd>');
+
+            if (co.length) {
+              html.unshift('<dt>公司</dt><dd>' + co.join('') + '</dd>');
+            }
+          }
+          
+        }else{
+          //搜索公司时 不需要分类显示
+          if (co.length) {
+            html = [];
+            html.push(co.join(''));
+
+            return html.join('');
+          }
+        }
+
+        if (html.length === 1) {
+          return ''
+        } else {
+          return '<dl>'+ html.join('') +'</dl>';
+        }
+
+      },
+//      autoSelectFirst: true,
+
+      onSelect: function (suggestion) {
+        $('#MSSSType').val(suggestion.type);
+        minisearchForm.submit();
+      }
+    });
+
+    miniSearchSuggestCity.on('focus', function () {
+      hid.val('');
+    });
+
+    minisearchForm.on('submit', function (e) {
+      if (hid.val() === '' && $.trim(miniSearchSuggestCity.val()) !== '') {
+        return false;
+      } else {
+        return true;
+      }
+    });
+
+    $('#minisearchS').DIYSelect({
+      listCallback: function (list, field, target) {
+        minisearchForm.attr('action', $(this).attr('href'));
+
+        var s = $('input[name=q]', minisearchForm),
+          placeholders = ['职位/公司名称', '公司名称', '职位/公司名称', '职位/公司名称'];
+
+        $('#MSSQType').val($(this).index() + 1);
+
+        s.attr('placeholder', placeholders[$(this).index() || 0]).trigger('blur');
+        //输入框都为空时 不搜索
+        if (miniSearchSuggestCity.val() !== '' || s.val() !== '') {
+          minisearchForm.submit();
+        }
+      }
+    });
+  });
+});

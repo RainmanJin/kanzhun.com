@@ -1,0 +1,94 @@
+@import "common/var";
+@import "module/company_header";
+@import "module/resumeleft";
+@import "module/resume_common";
+@import "module/paging-v2";
+
+//表格显示简历信息简略
+table.tb_evaluation {
+  table-layout: fixed;
+  border-left: 1px solid #f3f3f3;
+  margin-bottom: 10px;
+
+  tr {
+    height: 40px;
+    border-bottom: 1px solid #f3f3f3;
+    background-color: #ffffff;
+
+    &:nth-child(odd) {
+      background-color: #f6f6f6;
+    }
+
+    td,th {
+      border-right: 1px solid #f3f3f3;
+    }
+
+    th {
+      height: 40px;
+      background-color: @green;
+      color: #fff;
+      font-weight: normal;
+      font-size: 14px;
+      border-right-color: #88b93d;
+
+      &.status {
+        border-right: none;
+      }
+    }
+
+    td {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      height: 38px;
+
+      p {
+        .ellipsis(ellipsis);
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+div.five_evaluation {
+  padding: 15px 0;
+
+  p {
+    padding-left: 10px;
+  }
+}
+
+.get_account {
+  width: 310px;
+  background-color: #f6f6f6;
+  border: 1px solid #e7e7e7;
+  padding: 20px 15px;
+
+  dd.get_btn {
+    a, span {
+      display: block;
+      height: 42px;
+      line-height: 42px;
+    }
+
+    span {
+      background-color: #cccccc;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
+
+dl.promppt_info {
+  padding-top: 15px;
+  padding-bottom: 5px;
+
+  dt, dd {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+}
+

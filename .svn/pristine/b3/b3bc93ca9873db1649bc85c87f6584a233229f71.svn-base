@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>查地铁票价</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/subway.css" />
+</head>
+<body class="index">
+<section class="banner">
+  <img src="images/banner_1.jpg" width="100%">
+</section>
+<section class="content">
+  <img class="bg" src="images/index_bg.jpg" width="100%">
+  <ul class="fieldset">
+    <li>
+      <select class="l" id="originLine">
+        <option>1号线</option>
+      </select>
+      <select class="r" id="origin">
+        <option value="1">苹果园</option>
+        <option value="2">西直门</option>
+      </select>
+    </li>
+    <li>
+      <select class="l" id="destinationLine">
+        <option>1号线</option>
+      </select>
+      <select class="r" id="destination">
+        <option value="1">苹果园</option>
+        <option value="2">西直门</option>
+      </select>
+    </li>
+  </ul>
+  <div class="ml10 mr10 mb10">
+    <a class="orange_btn search" href="javascript:;">查一下我的交通成本</a>
+    <div class="mt20">
+      <a class="orange_btn" style="background-color:#ef7778
+  " href="http://m.kanzhun.com/activity/watch/home/">查一查朋友的工资</a>
+    </div>
+    <div class="mt20">
+      <a class="orange_btn" style="background-color:#d53738" href="#">雾霾马拉松找终点</a>
+    </div>
+    <p style="text-align:left;margin-top:30px"><a style="color:#2662ac;border-bottom:1px solid #2662ac;" href="http://mp.weixin.qq.com/s?__biz=MzA5OTQ0NTExNA==&mid=201010065&idx=2&sn=c0a482472675eb4e5c5c0f03693043cc#rd">地铁涨价省钱攻略，请慎用！</a></p>
+    <p class="mt10" style="text-align:left;"><a style="color:#2662ac;border-bottom:1px solid #2662ac;" href="http://m.bosszhipin.com/download">想抵消地铁涨价？来Boss直聘，给你个涨薪理由</a></p>
+    <div class="mt10">
+      <img src="images/kz.jpg" width="100%">
+    </div>
+  </div>
+</section>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/subway.js"></script>
+</html>

@@ -1,0 +1,201 @@
+@import "var";
+
+.icons_base(){
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+i {
+  &.iinit {
+    .icons_base;
+    background-image: url(../images/icons.png);
+    .background-size(220px);
+  }
+
+  &.ihome {
+    width: 21px;
+    height: 18px;
+    background-position: 0 0;
+  }
+
+  &.iandroid {
+    width: 16.5px;
+    height: 19px;
+    background-position: -23px 0;
+  }
+
+  &.iphone {
+    width: 15.5px;
+    height: 19px;
+    background-position: -41.5px 0;
+  }
+
+  &.icmpprofile {
+    width: 15px;
+    height: 9.5px;
+    background-position: -58.5px 0;
+  }
+
+  &.icmpurl {
+    width: 17px;
+    height: 16.5px;
+    background-position: -75.5px 0;
+  }
+
+  &.icmpname {
+    width: 15px;
+    height: 16.5px;
+    background-position: -94px 0;
+  }
+
+  &.iaddress {
+    width: 12px;
+    height: 16px;
+    background-position: -111px 0;
+  }
+
+  &.iask {
+    width: 12.5px;
+    height: 13px;
+    background-position: -125px 0;
+  }
+
+  &.ianswer {
+    width: 13px;
+    height: 13px;
+    background-position: -139.5px 0;
+  }
+
+  &.iforword {
+    width: 21px;
+    height: 16.5px;
+    background-position: -154px 0;
+  }
+
+  &.igospeak {
+    width: 21px;
+    height: 20px;
+    background-position: -177px 0;
+  }
+
+  &.iinvites {
+    width: 15px;
+    height: 19.5px;
+    background-position: -200px 0;
+  } 
+
+  &.iset {
+    width: 23px;
+    height: 23px;
+    background-position: 0 -25px;
+  }
+
+  &.istroll {
+    width: 28px;
+    height: 29px;
+    background-position: -25px -25px;
+  }
+
+  &.istroll_h {
+    width: 27.5px;
+    height: 28px;
+    background-position: -149px -25px;
+  }
+
+  &.ichat {
+    width: 30px;
+    height: 28px;
+    background-position: -55px -25px;
+  }
+
+  &.ichat_h {
+    width: 30px;
+    height: 27px;
+    background-position: -178px -25px;
+  }
+
+  &.ime {
+    width: 22.5px;
+    height: 25.5px;
+    background-position: 0 -59.5px;
+  }
+
+  &.ime_h {
+    width: 22.5px;
+    height: 25.5px;
+    background-position: -86.5px -25px;
+  }
+
+  &.iworkshow {
+    width: 22px;
+    height: 22px;
+    background-position: -111px -25px;
+  }
+
+  &.igoback {
+    width: 12px;
+    height: 20px;
+    background-position: -135px -25px;
+  }
+
+  &.ipin {
+    width: 25px;
+    height: 19px;
+    background-position: -24.5px -59.5px;
+  }
+
+  &.icitys {
+    width: 8px;
+    height: 10.5px;
+    background-position: -51.5px -59.5px;
+  }
+
+  &.iyears {
+    width: 11px;
+    height: 10.5px;
+    background-position: -62px -59.5px;
+  }
+
+  &.iedus {
+    width: 13.5px;
+    height: 10px;
+    background-position: -75.5px -59.5px;
+  }
+
+  &.irecruitment_c {
+    width: 8px;
+    height: 13.5px;
+    background-position: -91px -59.5px;
+  }
+
+  &.irecruitment {
+    width: 8px;
+    height: 13.5px;
+    background-position: -101.5px -59.5px;
+  }
+
+  &.idetails_c {
+    width: 12px;
+    height: 9.5px;
+    background-position: -112px -59.5px;
+  }
+
+  &.idetails {
+    width: 12px;
+    height: 9.5px;
+    background-position: -126.5px -59.5px;
+  }
+
+  &.igo {
+    width: 8px;
+    height: 22.5px;
+    background-position: -141px -59.5px;
+  }
+
+  &.iflag {
+    width: 13px;
+    height: 16px;
+    background-position: -152px -59.5px;
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://dev.onebox.so.com/thirdChecks/standardCaseMobile##more -->
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<title>移动端_onebox大学专业模块开发页面</title>
+	<link rel="stylesheet" href="http://s2.qhimg.com/static/c9920e0bbd65448f.css">
+	<script>(function(e){function t(e,t){var n=document,r=n.getElementsByTagName("head")[0]||n.documentElement,i=n.createElement("script"),s=!1;i.src=e,i.onerror=i.onload=i.onreadystatechange=function(){!s&&(!this.readyState||this.readyState=="loaded"||this.readyState=="complete")&&(s=!0,t&&t(),i.onerror=i.onload=i.onreadystatechange=null,r.removeChild(i))},r.insertBefore(i,r.firstChild)}function n(e){var t,n,r,i;for(t=0;t<o.length;t++){r=o[t],i=r.requires;for(n=0;n<i.length;n++)if(i[n]==e)break;i.splice(n,1),i.length===0&&(r.fun(),o.splice(t,1))}}function r(){var e=s.splice(0,1)[0],o=i[e],a=function(){n(e),o.loaded=!0,s.length?r():u=!1};if(!o)return;u=!0,o.loaded||o.checker&&o.checker()?a(e):t(o.url,function(){a(e)})}var i={zepto:{url:"http://s9.qhimg.com/static/5d0cb4bd42d5cb6e/zepto_1.1.2.js",checker:function(){return!!e.Zepto}},openinapp:{url:"http://s9.qhimg.com/static/5e7b97ce21ad52e6/openinapp.js"}},s=[],o=[],u=!1,a={ready:function(e,t){function n(){clearTimeout(t.__QWDomReadyTimer);if(r.length){var e=r.shift();r.length&&(t.__QWDomReadyTimer=setTimeout(n,0)),e()}}t=t||document;var r=t.__QWDomReadyCbs=t.__QWDomReadyCbs||[];r.push(e),setTimeout(function(){if(/complete/.test(t.readyState))n();else if(t.addEventListener)"interactive"==t.readyState?n():t.addEventListener("DOMContentLoaded",n,!1);else{var e=function(){e=new Function,n()};(function(){try{t.body.doScroll("left")}catch(n){return setTimeout(arguments.callee,1)}e()})(),t.attachEvent("onreadystatechange",function(){"complete"==t.readyState&&e()})}},0)}};e._loader={add:function(e,t,n){i[e]||(i[e]={url:t,checker:n})},use:function(e,t){a.ready(function(){e=e.split(/\s*,\s*/g),s=s.concat(e),o.push({requires:e,fun:t}),u||r()})}}})(window)
+	</script>
+	</head>
+<body>
+	<div id="main">
+		<div class="r-results">
+<!--规范：
+
+	1. 移动端的页面必须设置成响应式的，须满足最小宽度320px。高度自定。
+	
+	2. 开发者不需要设置字体、大小、行高等样式属性，可直接应用360搜索的公共样式。公共样式如：
+		* onebox外框（.g-card .g-block）
+		* onebox内容区域（.mohe-wrap）
+		* 标题（.res-title .title）
+		* 清除浮动（.g-clearfix）
+		* 底部通用导航（.mohe-navbar .mohe-item）
+		* 通栏查看更多（.mohe-link .mohe-more）
+		* 通栏展开收起（.mohe-fold .mohe-more ）
+	
+	3. 公共清除浮动：如果用了float，要在其父元素上使用 g-clearfix 清除子元素的浮动
+
+	4. 开发者所有的className命名前缀必须为 “mh-”，选择器层级保持在2-3层即可
+
+   	5. 第三方提供的onebox代码样式上请与大环境统一。包括行高、行距、按钮样式。
+
+-->
+<!-- start：第三方提供的代码片段 -->
+<style>
+	#mohe-m-obo_m_mkzzy .mh-pic {float:left;width:60px;height:60px;margin-right:10px;border:1px solid #ccc;border-radius:4px}
+	#mohe-m-obo_m_mkzzy .mh-desc {font-size:.875rem;line-height:1.5;color:#262626;-webkit-line-clamp:3}
+	#mohe-m-obo_m_mkzzy .mohe-navbar {margin-top:10px}
+	#mohe-m-obo_m_mkzzy .mh-professional-tab {background-color: #fafafa; border-width: 1px 0;border-color: #dadada; border-style: solid;}
+	#mohe-m-obo_m_mkzzy .mh-professional-tab li {width: 33.3%; float: left; height: 35px; line-height: 35px;}
+	
+	#mohe-m-obo_m_mkzzy .mh-professional-tab li a {display: block; margin-bottom: -1px; height: 35px; border-bottom: 1px solid #dadada; border-right: 1px solid #dadada; color: #333333; text-align: center;}
+	#mohe-m-obo_m_mkzzy .mh-professional-tab li a.mh-last {border-right: none;}
+	#mohe-m-obo_m_mkzzy .mh-professional-tab li a.mh-current {border-bottom-color: #fff; background-color: #fff;}
+	#mohe-m-obo_m_mkzzy .mh-tab-con-wrap {padding: 10px;}
+	#mohe-m-obo_m_mkzzy .mh-tab-con-wrap a {display: block; color: #666666;}
+	#mohe-m-obo_m_mkzzy .mh-tab-con-wrap .mh-tab-con-p-prospect p {padding-bottom: 5px;}
+	#mohe-m-obo_m_mkzzy .mh-tab-con-wrap .mh-tab-con-p-prospect p.mh-last-p {padding-bottom: 0;}
+	#mohe-m-obo_m_mkzzy .mh-tab-con-wrap .mh-tab-con-p-prospect p i {float: left; margin-top: 2px; width: 15px; height: 15px; line-height: 15px; overflow: hidden;margin-right: 5px; background-color: #5cb642; font-size: 12px; color: #fff; text-align: center;}
+	#mohe-m-obo_m_mkzzy .mh-tab-con-wrap .mh-tab-con-p-prospect p span {color: #999;}
+	#mohe-m-obo_m_mkzzy .mh-tab-con-wrap .mh-tab-con-p-prospect p i.mh-grey {display: inline-block; width: 15px; height: 15px; line-height: 15px; overflow: hidden;margin-right: 5px; vertical-align: -2px; background-color: #bababa; font-size: 12px; color: #fff; text-align: center;}
+	#mohe-m-obo_m_mkzzy div.mh-none {display: none;}
+</style>
+<!--此处id必须是唯一的
+	该id="mohe-m-obo_m_demo"是demo的id
+	在开发中，必须修改，命名准则是：id="mohe-m-[对应的项目ID]"
+	详情参考【我的项目-规范-开发规范】中的 HTML规范
+ -->
+			<div class="g-mohe res-list g-card g-block" id="mohe-m-obo_m_mkzzy">
+				<!-- 
+				     公共CSS样式，其使用详见下方实例
+				     	(1) onebox卡片：.g-card
+					                    .g-block
+					    (2) 标题：.res-title  搜索结果的标题
+					     		   .title  onebox的标题
+						(3) 标题的手机图标：.icon-mobile
+					    (4) 清除浮动：.g-clearfix
+					    (5) onebox内容：.mohe-wrap
+					    (6) 底部通用导航：.mohe-navbar .mohe-item
+					    (7) 底部通栏的查看更多：.mohe-link.mohe-more
+					    (8) 底部通栏的展开收起：.mohe-fold.mohe-more 
+					 详情参考CSS规范，见【我的项目-规范-开发规范】
+				-->
+				<!-- start：开发者的HTML结构-->
+				<!-- 通用标题类名"title"，直接使用 -->
+				<a class="title" href="www.kanzhun.com">
+					<!-- 通用"res-title icon-mobile"，保留，直接使用 -->
+					<h3 class="res-title">
+						<!-- 飘红直接用<em>标签飘，360的公共样式中对其进行了定义 -->
+						<em>土木工程专业</em>&nbsp;-&nbsp;看准网
+					</h3>
+				</a>
+				<ul class="mh-professional-tab g-clearfix">
+					<li>
+						<a href="javasceript:;" class="mh-current">专业简介</a>
+					</li>
+					<li>
+						<a href="javasceript:;">就业前景</a>
+					</li>
+					<li>
+						<a href="javasceript:;" class="mh-last">院校排名</a>
+					</li>
+				</ul>
+				<!-- 专业简介 -->
+				<div class="mh-tab-con-wrap">
+					<a href="" class="mh-tab-con-p-info">
+						<p>专业类别：土木类</p>
+						<p>就业趋势：近年市场需求有所上升</p>
+						<p>专业简介：<em>土木工程</em></p>
+						<p>业务培养目标：本专业培养掌握体力学、岩土力学和市政学科的基本理论和基本岩土力学和市政学科的...</p>
+					</a>
+				</div>
+				<!-- 专业简介 -->
+				<!-- 就业前景 -->
+				<div class="mh-tab-con-wrap mh-none">
+					<a href="" class="mh-tab-con-p-prospect">
+						<p>平均工资：<em>￥6732</em></p>
+						<p><i>1</i>北京<span>（34131个职位）</span></p>
+						<p><i>2</i>北京<span>（34131个职位）</span></p>
+						<p class="mh-last-p"><i>3</i>北京<span>（34131个职位）</span></p>
+					</a>
+				</div>
+				<!-- 就业前景 -->
+				<!-- 院校排名 -->
+				<div class="mh-tab-con-wrap mh-tab-con-wrap-last mh-none">
+					<a href="" class="mh-tab-con-p-prospect">
+						<p></p>
+						<p><i>1</i>清华大学</p>
+						<p><i>2</i>清华大学</p>
+						<p><i>3</i>清华大学</p>
+						<p><i class="mh-grey">4</i>清华大学</p>
+						<p class="mh-last-p"><i class="mh-grey">5</i>清华大学</p>
+					</a>
+				</div>
+				<!-- 院校排名 -->
+				<a class="mohe-link mohe-more" href="##more">查看更多</a>
+			</div>
+			<script>
+				_loader.use('zepto', function(){
+					$('ul.mh-professional-tab li a').click(function(){
+						var index = $(this).parent('li').index();
+						$(this).addClass('mh-current').parent('li').siblings().find('a').removeClass('mh-current');
+						$('div.mh-tab-con-wrap').eq(index).removeClass('mh-none').siblings().addClass('mh-none');
+					})
+				});
+			</script>
+<!-- end：第三方提供的代码片段 -->
+		</div>
+	</div>
+</body>
+</html>

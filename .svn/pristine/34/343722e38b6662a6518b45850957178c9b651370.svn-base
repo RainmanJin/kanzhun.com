@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>职位详情页-含公司信息</title>
+		<!--[if lte IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!--[if gt IE 9]><!-->
+		<script src="../js/jquery-2.1.0.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="../css/job_detail.css" />
+		<link rel="stylesheet" href="../css/widget.css" />
+		<script src="/js/require.js" data-main="/js/site/search_result.js"></script>
+	</head>
+
+	<body>
+		
+		<header class="global">
+			<div class="header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<nav>
+					<a href="#">招聘</a>
+					<a href="#" class="current">公司</a>
+					<a href="#">工资</a>
+					<a href="#">面试</a>
+					<a href="#" class="mycomment">我要点评</a>
+				</nav>
+				<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+			</div>
+		</header>
+
+		<section class="ps_header clearfix">
+			<div class="clearfix">
+				<dl class="select ps_salary_slt">
+					<dt>
+						<input type="text" name="" value="工资" readyonly="readyonly" /><span class="btn"><i></i></span>
+					</dt>
+					<dd>
+						<a href="#">2014年</a>
+        		<a href="#">2014年</a>
+        		<a href="#">2014年</a>
+        		<a href="#">2014年</a>
+					</dd>
+				</dl><input type="text" class="ps_ipt yibao" placeholder="易宝"/><input type="text" class="ps_ipt city" placeholder="全部城市"/><input type="submit" value="搜索" class="btn_grey_ps search" />
+			</div>
+		</section>
+
+		<div class="container ps_con clearfix">
+			<section class="l_con job_con clearfix">
+				<aside class="c_collection">
+					<a href="javascript:;" rel="nofollow" data-j="${job.id}" id="jdFavorite"><i class="collection"></i>收藏</a>
+					<a href="javascript:;" rel="nofollow" class="hadcollection"><i class="hadcollection"></i>已收藏</a>
+				</aside>
+				<div class="position-info">
+					<h1 class="name_address">产品经理<i class="directsup"></i></h1>
+					<p class="mb10">北京天天向上有限公司<em class="grey_99 ml10">发布时间：&nbsp;2014.3.13</em></p>
+				</div>
+				<p class="request mt15">1-3年<em>|</em>本科及以上<em>|</em>全职<em>|</em><b>5k-8k</b></p>
+				<div class="temptation mt10 mb30">
+					<h3 class="mb10">职位诱惑：</h3>
+					<p><em>待遇优厚</em><em>发展空间巨大</em><em>合作伙伴</em><em>合作伙伴</em><em>合作伙伴</em></p>
+				</div>
+				<div class="description"><img src="../images/position_info.png" alt="职位描述" /></div>
+				<dl class="content">
+					<dt><i></i>核心指责</dt>
+					<dd>1、负责用户端产品规划、设计以及持续改进，不断创新、挖掘、设计新的产品或功能；</dd>
+					<dd>2、负责产品需求收集、整理，撰写，进行用户需求分析，了解竞品动态与行业情况；</dd>
+					<dd>3、负责与seo部门对接，优化招聘的seo和sem；</dd>
+					<dd>4、进行持续的数据监控及分析，把握用户需求，不断对产品优化迭代。</dd>
+					<dt><i></i>任职要求</dt>
+					<dd>1、本科或以上学历，2年以上互联网产品工作经历；</dd>
+					<dd>2、擅长产品数据分析，能够从数据中挖掘内在的隐性规律，并找到改进方向；</dd>
+					<dd>3、熟悉各种需求分析工具， 熟练掌握axure等界面原型设计工具；</dd>
+					<dd>4、有良好的团队合作精神，较强的责任心、学习能力及抗压能力；</dd>
+					<dd>5、招聘类项目背景的经验优先。</dd>
+				</dl>
+				<div class="resume">
+					<p class="grey_99">您尚未创建简历，创建简历后才能申请职位。<a href="">立即创建</a></p><a href="" class="btn disable">投递简历</a>
+				</div>
+				<h3>公司介绍</h3>
+				<section class="cmpinfo" id="index_tabs">
+					<nav class="cmpinfonav">
+						<p>
+							<a href="" class="nav-first">公司简介</a><a href="">点评<em>(234条)</em></a><a href="">工资<em>(234条)</em></a><a href="">面试<em>(234条)</em></a>
+						</p>
+					</nav>
+					<div class="panel">
+						<dl class="cmpinto">
+							<dt><img src="../images/cmpinto_img.jpg" alt=""></dt>
+							<dd>
+								<h4>京东商城北京投资股份公司</h4>
+								<p class="cmpstar"><span class="np_sr_grade_start"><i style="width:64px;"></i></span></p>
+								<p class="grey_99">娱乐传媒&nbsp;&nbsp;<em>|</em>&nbsp;&nbsp;www.jd.com&nbsp;&nbsp;<em>|</em>&nbsp;&nbsp;北京&nbsp;&nbsp;<em>|</em>&nbsp;&nbsp;100-999人</p>
+								<p class="cmpinto-con mt15">自2004年初正式涉足电子商务领域以来，京东网上商城一直保持高速成长，连续四年增长率均超过300%。京东网上商城始终坚持以纯电子商务模式运营，缩减中间环节，为消费者在第一时间提供优质费者在第一时间提供优，缩减中间环节，为消费者在第一时间提供优...<a href="">查看公司详情</a></p>
+							</dd>
+						</dl>
+					</div>
+					<div class="panel">
+						<p class="comments mb10"><em class="grey_99">2014-07-02</em><a href="">华为，一个锻炼技能的绝佳之地</a></p>
+						<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等，比较符合个人胃口。笔试真的都是大题，比较开放式，涉及比较广有线程调度比、算法、语言、系统设计等...</p>
+						<p class="options mt10"><a href="" class="haveuse"><i class="img haveuse"></i>有用(3)</a><em class="grey_99">|</em><a href="" class="evaluation"><i class="img evaluation"></i>评论(2)</a>
+						</p>
+						<p class="line"></p>
+						<p class="comments mb10"><em class="grey_99">2014-07-02</em><a href="">华为，一个锻炼技能的绝佳之地</a></p>
+						<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等，比较符合个人胃口。笔试真的都是大题，比较开放式，涉及比较广有线程调度比、算法、语言、系统设计等...</p>
+						<p class="options mt10"><a href="" class="haveuse"><i class="img haveuse"></i>有用(3)</a><em class="grey_99">|</em><a href="" class="evaluation"><i class="img evaluation"></i>评论(2)</a>
+						</p>
+						<p class="line"></p>
+						<p class="comments mb10"><em class="grey_99">2014-07-02</em><a href="">华为，一个锻炼技能的绝佳之地</a></p>
+						<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等，比较符合个人胃口。笔试真的都是大题，比较开放式，涉及比较广有线程调度比、算法、语言、系统设计等...</p>
+						<p class="options mt10"><a href="" class="haveuse"><i class="img haveuse"></i>有用(3)</a><em class="grey_99">|</em><a href="" class="evaluation"><i class="img evaluation"></i>评论(2)</a>
+						</p>
+						<p class="mt10"><a href="">查看全部</a></p>
+					</div>
+					<div class="panel">
+						<div class="salary_sort">
+							<ul id="salarySort">
+								<li class="current" ka="blocker4-salary-excle"><i class="sort_p"></i>图表</li>
+								<li ka="blocker4-salary-word"><i class="sort_t"></i>文字</li>
+							</ul>
+							<em class="def">默认排序</em>
+						</div>
+						<div class="salary_slide">
+						<div class="slide_con" id="salarySlide">
+							<table class="salary_chart" cellspacing="0" cellspacing="0">
+								<tr>
+									<th width="140">职位</th>
+									<th width="80">平均工资/月</th>
+									<th width="10">&nbsp;</th>
+									<th class="s">￥0</th>
+									<th class="s">￥10K</th>
+									<th class="s">￥20K</th>
+									<th>￥30K</th>
+								</tr>
+									<tr>
+										<td class="def"><a href="/gzxs84124.html" target="_blank" title="南方都市报记者工资待遇" ka="blocker4-salaryname1">记者(16条)</a></td>
+										<td>￥5138</td>
+										<td colspan="5" class="chart">
+											<figure>
+												<div style="margin-left:13px;width:143px;">
+													<dl>
+														<dt></dt>
+														<dd>记者工资 <br><span class="grey_99">工资范围：</span>￥1,400-￥12,000 <br><span class="grey_99">平均工资：</span>￥5,138 <br>
+														<a href="#" rel="nofollow" class="mark marked" data-mtype="useful.json" data-sid="84124" >靠谱（<i>1</i>）</a>
+														</dd>
+													</dl>
+												</div>
+											</figure>
+										</td>
+									</tr>
+									<tr>
+										<td class="def"><a href="/gzxs31711.html" target="_blank" title="南方都市报编辑工资待遇" ka="blocker4-salaryname2">编辑(8条)</a></td>
+										<td>￥9050</td>
+										<td colspan="5" class="chart">
+											<figure>
+												<div style="margin-left:13px;width:156px;">
+													<dl>
+														<dt></dt>
+														<dd>编辑工资 <br><span class="grey_99">工资范围：</span>￥1,400-￥13,000 <br><span class="grey_99">平均工资：</span>￥9,050 <br>
+														<a href="#" rel="nofollow" class="mark marked" data-mtype="useful.json" data-sid="31711" >靠谱（<i>1</i>）</a>
+														</dd>
+													</dl>
+												</div>
+											</figure>
+										</td>
+									</tr>
+									<tr>
+										<td class="def"><a href="/gzxs371235.html" target="_blank" title="南方都市报媒介顾问工资待遇" ka="blocker4-salaryname3">媒介顾问(4条)</a></td>
+										<td>￥8775</td>
+										<td colspan="5" class="chart">
+											<figure>
+												<div style="margin-left:65px;width:130px;">
+													<dl>
+														<dt></dt>
+														<dd>媒介顾问工资 <br><span class="grey_99">工资范围：</span>￥5,900-￥14,500 <br><span class="grey_99">平均工资：</span>￥8,775 <br>
+														<a href="#" rel="nofollow" class="mark marked" data-mtype="useful.json" data-sid="371235" >靠谱（<i>1</i>）</a>
+														</dd>
+													</dl>
+												</div>
+											</figure>
+										</td>
+									</tr>
+									<tr>
+										<td class="def"><a href="/gzxs437552.html" target="_blank" title="南方都市报实习生工资待遇" ka="blocker4-salaryname4">实习生(4条)</a></td>
+										<td>￥788</td>
+										<td colspan="5" class="chart">
+											<figure>
+												<div style="margin-left:0px;width:26px;">
+													<dl>
+														<dt></dt>
+														<dd>实习生工资 <br><span class="grey_99">工资范围：</span>￥450-￥1,100 <br><span class="grey_99">平均工资：</span>￥788 <br>
+														<a href="#" rel="nofollow" class="mark" data-mtype="useful.json" data-sid="437552">靠谱（<i>0</i>）</a>
+														</dd>
+													</dl>
+												</div>
+											</figure>
+										</td>
+									</tr>
+									<tr>
+										<td class="def"><a href="/gzxs483394.html" target="_blank" title="南方都市报记者-实习生工资待遇" ka="blocker4-salaryname5">记者-实习生(3条)</a></td>
+										<td>￥933</td>
+										<td colspan="5" class="chart">
+											<figure>
+												<div style="margin-left:0px;width:26px;">
+													<dl>
+														<dt></dt>
+														<dd>记者-实习生工资 <br><span class="grey_99">工资范围：</span>￥800-￥1,200 <br><span class="grey_99">平均工资：</span>￥933 <br>
+														<a href="#" rel="nofollow" class="mark marked" data-mtype="useful.json" data-sid="483394" >靠谱（<i>1</i>）</a>
+														</dd>
+													</dl>
+												</div>
+											</figure>
+										</td>
+									</tr>
+							</table>
+							<table class="salary_chart" cellspacing="0" cellspacing="0">
+								<tr>
+									<th width="140">职位</th>
+									<th width="100">平均工资/月</th>
+									<th>工资范围</th>
+								</tr>
+								<tr>
+									<td><a href="/gzxs84124.html" target="_blank" title="南方都市报记者工资待遇" ka="blocker4-salaryname1">记者(16条)</a></td>
+									<td>￥5138</td>
+									<td class="chart"><span class="grey_99">最低工资：</span> ￥1,400 <span class="grey_99 ml15">最高工资：</span> ￥12,000 
+									<a href="#" rel="nofollow" class="mark ml20 marked" data-mtype="useful.json" data-sid="84124">靠谱（<i>1</i>）</a>
+									</td>
+								</tr>
+								<tr>
+									<td><a href="/gzxs31711.html" target="_blank" title="南方都市报编辑工资待遇" ka="blocker4-salaryname2">编辑(8条)</a></td>
+									<td>￥9050</td>
+									<td class="chart"><span class="grey_99">最低工资：</span> ￥1,400 <span class="grey_99 ml15">最高工资：</span> ￥13,000 
+									<a href="#" rel="nofollow" class="mark ml20 marked" data-mtype="useful.json" data-sid="31711">靠谱（<i>1</i>）</a>
+									</td>
+								</tr>
+								<tr>
+									<td><a href="/gzxs371235.html" target="_blank" title="南方都市报媒介顾问工资待遇" ka="blocker4-salaryname3">媒介顾问(4条)</a></td>
+									<td>￥8775</td>
+									<td class="chart"><span class="grey_99">最低工资：</span> ￥5,900 <span class="grey_99 ml15">最高工资：</span> ￥14,500 
+									<a href="#" rel="nofollow" class="mark ml20 marked" data-mtype="useful.json" data-sid="371235">靠谱（<i>1</i>）</a>
+									</td>
+								</tr>
+								<tr>
+									<td><a href="/gzxs437552.html" target="_blank" title="南方都市报实习生工资待遇" ka="blocker4-salaryname4">实习生(4条)</a></td>
+									<td>￥788</td>
+									<td class="chart"><span class="grey_99">最低工资：</span> ￥450 <span class="grey_99 ml15">最高工资：</span> ￥1,100 
+									<a href="#" rel="nofollow" class="mark ml20" data-mtype="useful.json" data-sid="437552">靠谱（<i>0</i>）</a>
+									</td>
+								</tr>
+								<tr>
+									<td><a href="/gzxs483394.html" target="_blank" title="南方都市报记者-实习生工资待遇" ka="blocker4-salaryname5">记者-实习生(3条)</a></td>
+									<td>￥933</td>
+									<td class="chart"><span class="grey_99">最低工资：</span> ￥800 <span class="grey_99 ml15">最高工资：</span> ￥1,200 
+									<a href="#" rel="nofollow" class="mark ml20 marked" data-mtype="useful.json" data-sid="483394">靠谱（<i>1</i>）</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<p class="mt10"><a href="">查看全部</a></p>
+					</div>
+					<div class="panel">
+						<p class="comments mb10"><em class="grey_99">2014-07-02</em><a href="">华为，一个锻炼技能的绝佳之地</a></p>
+						<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等，比较符合个人胃口。笔试真的都是大题，比较开放式，涉及比较广有线程调度比、算法、语言、系统设计等...</p>
+						<p class="options mt10"><a href="" class="haveuse"><i class="img haveuse"></i>有用(3)</a><em class="grey_99">|</em><a href="" class="evaluation"><i class="img evaluation"></i>评论(2)</a>
+						</p>
+						<p class="line"></p>
+						<p class="comments mb10"><em class="grey_99">2014-07-02</em><a href="">华为，一个锻炼技能的绝佳之地</a></p>
+						<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等，比较符合个人胃口。笔试真的都是大题，比较开放式，涉及比较广有线程调度比、算法、语言、系统设计等...</p>
+						<p class="options mt10"><a href="" class="haveuse"><i class="img haveuse"></i>有用(3)</a><em class="grey_99">|</em><a href="" class="evaluation"><i class="img evaluation"></i>评论(2)</a>
+						</p>
+						<p class="line"></p>
+						<p class="comments mb10"><em class="grey_99">2014-07-02</em><a href="">华为，一个锻炼技能的绝佳之地</a></p>
+						<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等，比较符合个人胃口。笔试真的都是大题，比较开放式，涉及比较广有线程调度比、算法、语言、系统设计等...</p>
+						<p class="options mt10"><a href="" class="haveuse"><i class="img haveuse"></i>有用(3)</a><em class="grey_99">|</em><a href="" class="evaluation"><i class="img evaluation"></i>评论(2)</a>
+						</p>
+						<p class="mt10"><a href="">查看全部</a></p>
+					</div>
+				</section>
+				<div class="relevant-src">
+					<em>搜索更多相关职位：</em><input type="text" class="field_b" placeholder="天天向上产品经理" /><input type="text" value="搜索职位" class="btn_grey_l" /><input type="text" value="搜索公司"  class="btn_grey_l"/>
+				</div>
+				<h3 class="allposition r_tt mt30">该公司其他招聘职位</h3>
+				<ul class="hangye">
+					<li><a href="">客户经理</a></li>
+					<li><a href="">客户经理薪酬</a></li>
+					<li><a href="">行政助理工资</a></li>
+					<li><a href="">分析师的薪酬</a></li>
+					<li><a href="">助理经理工资</a></li>
+					<li><a href="">员工工资</a></li>
+					<li><a href="">律师的薪水</a></li>
+					<li><a href="">客户经理</a></li>
+					<li><a href="">客户经理薪酬</a></li>
+					<li><a href="">行政助理工资</a></li>
+					<li><a href="">分析师的薪酬</a></li>
+					<li><a href="">助理经理工资</a></li>
+					<li><a href="">员工工资</a></li>
+					<li><a href="">律师的薪水</a></li>
+					<li><a href="">客户经理</a></li>
+					<li><a href="">客户经理薪酬</a></li>
+					<li><a href="">行政助理工资</a></li>
+					<li><a href="">分析师的薪酬</a></li>
+					<li><a href="">助理经理工资</a></li>
+					<li><a href="">员工工资</a></li>
+					<li><a href="">律师的薪水</a></li>
+				</ul>
+				<p class="mt10"><a href="">查看全部</a></p>
+				<h3 class="allposition r_tt mt30">该公司其他招聘职位</h3>
+				<ul class="hangye">
+					<li><a href="">客户经理</a></li>
+					<li><a href="">客户经理薪酬</a></li>
+					<li><a href="">行政助理工资</a></li>
+					<li><a href="">分析师的薪酬</a></li>
+					<li><a href="">助理经理工资</a></li>
+					<li><a href="">员工工资</a></li>
+					<li><a href="">律师的薪水</a></li>
+					<li><a href="">客户经理</a></li>
+					<li><a href="">客户经理薪酬</a></li>
+					<li><a href="">行政助理工资</a></li>
+					<li><a href="">分析师的薪酬</a></li>
+					<li><a href="">助理经理工资</a></li>
+					<li><a href="">员工工资</a></li>
+					<li><a href="">律师的薪水</a></li>
+					<li><a href="">客户经理</a></li>
+					<li><a href="">客户经理薪酬</a></li>
+					<li><a href="">行政助理工资</a></li>
+					<li><a href="">分析师的薪酬</a></li>
+					<li><a href="">助理经理工资</a></li>
+					<li><a href="">员工工资</a></li>
+					<li><a href="">律师的薪水</a></li>
+				</ul>
+				<p class="mt10"><a href="">查看全部</a></p>
+			</section>
+
+			<section class="r_con clearfix">
+				<dl>
+					<dt><a href=""><img src="../images/np_jobdetail_img.jpg" alt="" width="79"><span></span></a></dt>
+					<dd class="taobao"><strong>淘宝网</strong></dd>
+					<dd><span class="np_sr_grade_start"><i style="width:64px;"></i></span></dd>
+					<dd class="grey_99">4.0分<em>|</em>来自235条信息</dd>
+				</dl>
+				<p class="information"><strong>官网</strong>http://www.baidu.com/</p>
+				<p class="information"><strong>行业</strong>互联网</p>
+				<p class="information"><strong>城市</strong>北京</p>
+				<p class="information"><strong>规模</strong>500-1000人</p>
+				<h3 class="allposition r_tt mt30 mb10">相关职位</h3>
+				<ul class="jobs_show positions">
+					<li><em>10K-20K</em><a href="#">系统部_PHP研发工程师</a><span>百度 – 上海<br /></span></li>
+					<li><em>10K-20K</em><a href="#">系统部_PHP研发工程师</a><span>百度 – 上海<br /></span></li>
+					<li><em>10K-20K</em><a href="#">系统部_PHP研发工程师</a><span>百度 – 上海<br /></span></li>
+					<li><em>10K-20K</em><a href="#">系统部_PHP研发工程师</a><span>百度 – 上海<br /></span></li>
+					<li><em>10K-20K</em><a href="#">系统部_PHP研发工程师</a><span>百度 – 上海<br /></span></li>
+					<li><em>10K-20K</em><a href="#">系统部_PHP研发工程师</a><span>百度 – 上海<br /></span></li>
+				</ul>
+				<p><a href="">查看更多</a></p>
+				<h3 class="allposition r_tt mt30 mb10">北京产品经理平均工资</h3>
+				<ul class="salary-info">
+					<li class="salaryimg"><img src="../images/average-salary.jpg" alt="" /><p><span><em class="def">￥</em>9850</span></p></li>
+					<li class="grey_99 mt10 mb10">此数据为平均值，是根据看准网网友提供的样本统计出的结果。仅供参考。</li>
+					<li><a href="" class="btn_grey_b seeinfo">查看工资详情</a></li>
+				</ul>
+				<h3 class="allposition r_tt mt30 mb10">产品经理面试经验</h3>
+				<ul class="inter-experience">
+					<li>
+						<p class="inter-info">网易游戏的福利好（限工作室），非工作室非工作室非工作室</p>
+						<p class="options"><em class="cmpname">中兴通讯电子兴通兴通</em><a href="" class="haveuse"><i class="img haveuse"></i>有用(3)</a><em class="grey_99">|</em><a href="" class="evaluation"><i class="img evaluation"></i>评论(2)</a>
+						</p>
+					</li>
+					<li>
+						<p class="inter-info">网易游戏的福利好（限工作室），非工作室非工作室非工作室</p>
+						<p class="options"><em class="cmpname">中兴通讯电子兴通兴通</em><a href="" class="haveuse"><i class="img haveuse"></i>有用(3)</a><em class="grey_99">|</em><a href="" class="evaluation"><i class="img evaluation"></i>评论(2)</a>
+						</p>
+					</li>
+					<li>
+						<p class="inter-info">网易游戏的福利好（限工作室），非工作室非工作室非工作室</p>
+						<p class="options"><em class="cmpname">中兴通讯电子兴通兴通兴通兴通</em><a href="" class="haveuse"><i class="img haveuse"></i>有用(3)</a><em class="grey_99">|</em><a href="" class="evaluation"><i class="img evaluation"></i>评论(2)</a>
+						</p>
+					</li>
+				</ul>
+				<p class="grey_99 t-center mt20 mb10">共有<em class="def">18条</em>职位面试经验供您考</p>
+				<p><a href="" class="btn_grey_b seeinfo">查看工资详情</a></p>
+				<h3 class="allposition r_tt mt30 mb10">北京热门公司招聘</h3>
+				<ul class="salary_show hot_recruitment">
+					<li><em>94条招聘</em><p><a ka="blocker3-item1" href="/gso111090.html" target="_blank">广东汤臣倍健</a>&nbsp;&nbsp;5.0分</p></li>
+					<li><em>17条招聘</em><p><a ka="blocker3-item2" href="/gso171915.html" target="_blank">利尔化学</a>&nbsp;&nbsp;5.0分</p></li>
+					<li><em>16条招聘</em><p><a ka="blocker3-item3" href="/gso923293.html" target="_blank">中控科技</a>&nbsp;&nbsp;5.0分</p></li>
+					<li><em>130条招聘</em><p><a ka="blocker3-item4" href="/gso390037.html" target="_blank">烟台万华聚氨酯股份有限公司</a>&nbsp;&nbsp;4.7分</p></li>
+					<li><em>249条招聘</em><p><a ka="blocker3-item5" href="/gso20403.html" target="_blank">陶氏化学</a>&nbsp;&nbsp;4.3分</p></li>
+					<li><em>17条招聘</em><p><a ka="blocker3-item6" href="/gso12937.html" target="_blank">德美化工</a>&nbsp;&nbsp;4.0分</p></li>
+					<li><em>48条招聘</em><p><a ka="blocker3-item7" href="/gso69359.html" target="_blank">安科生物</a>&nbsp;&nbsp;3.6分</p></li>
+					<li><em>386条招聘</em><p><a ka="blocker3-item8" href="/gso16386.html" target="_blank">睿智化学</a>&nbsp;&nbsp;3.5分</p></li>
+					<li><em>26条招聘</em><p><a ka="blocker3-item9" href="/gso559852.html" target="_blank">舒泰神（北京）生物制药有限公司</a>&nbsp;&nbsp;3.5分</p></li>
+					<li><em>100条招聘</em><p><a ka="blocker3-item10" href="/gso859236.html" target="_blank">中国科学院</a>&nbsp;&nbsp;3.4分</p></li>
+				</ul>
+			</section>
+		</div>
+		<section class="dialog_collection">
+			<p><i class="suc_p"></i>收藏成功!</p>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,376 @@
+.green-btn {
+  background-color: #85c15d;
+  text-align: center;
+  padding: 8px 0;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+input[type=submit].green-btn {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.hollow-btn {
+  text-align: center;
+  padding: 8px 0;
+  color: #f38100;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #f38100;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  line-height: 1.5em;
+}
+.hollow-btn-g {
+  text-align: center;
+  padding: 8px 0;
+  color: #7cb228;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #7cb228;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 4px;
+  background-color: transparent;
+  display: block;
+}
+input[type=button].hollow-btn-g {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.maskui_dialog {
+  width: 100%;
+  display: none;
+}
+.maskui_dialog .dialog_con {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #666;
+  -moz-box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px #666;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.maskui_dialog .dialog_close {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  position: absolute;
+  background: transparent url("../images/maskui-close.png") no-repeat;
+  right: 10px;
+  top: 10px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.maskui_dialog .dialog_close:hover {
+  background-color: #eee;
+}
+.maskui_dialog .dialog_ac {
+  padding: 10px 0 10px;
+  text-align: center;
+}
+.maskui_dialog .dialog_ac p {
+  margin-top: 20px;
+}
+.maskui_dialog .dialog_btn {
+  border: 0;
+  height: 33px;
+  line-height: 33px;
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: #85c15d;
+  width: 100%;
+}
+.maskui_dialog .dialog_btn:hover {
+  text-decoration: none;
+}
+.maskui_dialog .confirm_ok {
+  margin-right: 10px;
+}
+.autocomplete-suggestions {
+  border: 1px solid #d1d1d1;
+  background: #FFF;
+  cursor: default;
+  overflow: auto;
+}
+.autocomplete-suggestions strong {
+  font-weight: bold;
+  color: #007ead;
+}
+.autocomplete-suggestion {
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.autocomplete-selected {
+  background: #007ead;
+  color: #fff;
+}
+.autocomplete-selected strong {
+  color: #ffd;
+}
+.grey-bg {
+  background-color: #f0eff5;
+}
+section.search-c {
+  background-color: #fff;
+}
+div.co-noret {
+  color: #cccccc;
+  -webkit-text-shadow: 0 0 2px #ffffff;
+  -ms-text-shadow: 0 0 2px #ffffff;
+  text-shadow: 0 0 2px #ffffff;
+  text-align: center;
+  line-height: 2em;
+  padding-top: 100px;
+}
+div.co-noret p:last-child {
+  font-size: 16px;
+}
+div.publish-suc {
+  padding: 60px 10px;
+  text-align: center;
+}
+div.publish-suc p:first-child {
+  font-size: 18px;
+}
+div.publish-suc p:first-child img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+div.publish-suc p:nth-of-type(2) {
+  padding: 10px 0 20px;
+}
+dl.co_info {
+  background-color: #f0eff5;
+}
+dl.co_info h1 {
+  margin-top: 12px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+}
+.interview-form {
+  padding: 0 10px 10px;
+}
+.interview-form li {
+  border-bottom: 1px solid #dfdfdd;
+  padding: 10px 0;
+  position: relative;
+}
+.interview-form li.inline {
+  overflow: hidden;
+}
+.interview-form li.inline .tt {
+  float: left;
+}
+.interview-form li.inline .edit {
+  margin-left: 5em;
+}
+.interview-form li.inline p.err {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+.interview-form li:last-child {
+  border: 0;
+}
+.interview-form .tt {
+  font-weight: bold;
+  font-size: 15px;
+}
+.interview-form .tt span {
+  font-size: 12px;
+  color: #cccccc;
+  font-weight: normal;
+}
+.interview-form input[type=text] {
+  border: 0;
+  width: 100%;
+}
+.interview-form textarea {
+  border: 0;
+  padding: 10px 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+.interview-form p.err {
+  display: none;
+  color: #f10303;
+  font-size: 12px;
+}
+.interview-form li.inline .i-ret {
+  clear: both;
+  text-align: center;
+  margin-left: 0;
+}
+.interview-form li.inline .i-ret button {
+  margin: 10px 5px;
+  vertical-align: middle;
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 2.9em;
+  height: 2.9em;
+  -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  font-weight: bold;
+  color: #666;
+}
+.interview-form li.inline .i-ret button:nth-of-type(1).on {
+  background-color: #58a967;
+  color: #ffffff;
+}
+.interview-form li.inline .i-ret button:nth-of-type(2).on {
+  background-color: #a1c966;
+  color: #ffffff;
+}
+.interview-form li.inline .i-ret button:nth-of-type(3).on {
+  background-color: #ffba4c;
+  color: #ffffff;
+}
+.interview-form li.inline .i-ret button:nth-of-type(4).on {
+  background-color: #e26060;
+  color: #ffffff;
+}
+.interview-form li.inline .i-progress {
+  overflow: hidden;
+  clear: both;
+  margin-left: 0;
+}
+.interview-form li.inline .i-feeling {
+  overflow: hidden;
+  clear: both;
+  padding: 15px 0;
+  margin-left: 0;
+  font-size: 0;
+}
+.interview-form li.inline .i-feeling button {
+  font-size: 14px;
+  border: 1px solid #d1d1d1;
+  margin: 0;
+  background-color: #fff;
+  padding: 5px 10px;
+  color: #999999;
+  font-weight: bold;
+}
+.interview-form li.inline .i-feeling button:nth-of-type(1) {
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+}
+.interview-form li.inline .i-feeling button:nth-of-type(1).on {
+  background-color: #85c15d;
+  color: #ffffff;
+}
+.interview-form li.inline .i-feeling button:nth-of-type(2) {
+  border-width: 1px 0;
+}
+.interview-form li.inline .i-feeling button:nth-of-type(2).on {
+  background-color: #ffba4c;
+  color: #ffffff;
+}
+.interview-form li.inline .i-feeling button:nth-of-type(3) {
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+.interview-form li.inline .i-feeling button:nth-of-type(3).on {
+  background-color: #e26060;
+  color: #ffffff;
+}
+.interview-form li.inline .i-level {
+  overflow: hidden;
+  clear: both;
+  padding: 15px 0;
+  margin-left: 0;
+}
+.interview-form li.inline .i-level span {
+  color: #999999;
+  vertical-align: middle;
+}
+.interview-form li.inline .i-level button {
+  border: 1px solid #d1d1d1;
+  margin: 0;
+  height: 26px;
+  width: 22px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.interview-form li.inline .i-level button.on {
+  background-color: #85c15d;
+}
+.interview-form li.inline .i-chance {
+  overflow: hidden;
+  clear: both;
+  padding: 15px 0;
+  margin-left: 0;
+}
+.interview-form li.inline .i-chance button {
+  float: left;
+  border: 1px solid #d1d1d1;
+  margin: 5px 10px 5px 0;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px 0;
+  color: #999999;
+  font-weight: bold;
+  width: 30%;
+}
+.interview-form li.inline .i-chance button.on {
+  background-color: #85c15d;
+  color: #ffffff;
+}
+.i-d-btn {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.i-d-btn input {
+  font-size: 14px;
+  width: 48%;
+  line-height: 1.5em;
+  float: right;
+  border: 1px solid #85c15d;
+}
+.i-d-btn a {
+  font-size: 14px;
+  float: left;
+  width: 48%;
+}
+.interview-form-d li {
+  border-bottom: 1px dotted #dfdfdd;
+}
+.interview-form-d textarea {
+  padding: 5px 0;
+}
+section.co-search .autocomplete-suggestions {
+  display: none;
+}
+.i-step-one,
+.i-step-two {
+  background-color: #ffffff;
+}

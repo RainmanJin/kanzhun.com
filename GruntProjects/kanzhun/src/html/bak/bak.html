@@ -1,0 +1,133 @@
+<dl class="total">
+	<dt>公司总评分4.0分</dt>
+	<dd class="total_chart_w">
+		<table class="total_chart" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2">5分</td>
+				<td colspan="3" class="t-right">1分</td>
+			</tr>
+			<tr>
+				<td class="g_1" width="10%">&nbsp;</td>
+				<td class="g_2" width="70%">&nbsp;</td>
+				<td class="g_3" width="10%">&nbsp;</td>
+				<td class="g_4" width="6%">&nbsp;</td>
+				<td class="g_5">&nbsp;</td>
+			</tr>
+		</table>
+		<span class="chart_tip">4分 - 占比70%</span>
+	</dd>
+	<dd class="circle_chart">78%的员工愿意推荐朋友来这里工作</dd>
+</dl>
+
+<style>
+	.co_grade{
+	padding-top: 20px;
+	overflow: hidden;
+	zoom:1;
+
+	dl{
+		float: left;
+		height: 174px;
+
+		&.total{
+			width: 295px;
+			border-right: 1px solid @grey_e7;
+		}
+
+		&.category{
+			width: 160px;
+			padding-left: 20px;
+			border-right: 1px solid @grey_e7;
+			dd{
+				line-height: 2.5em;
+			}
+
+			span{
+				margin-left: 10px;
+			}
+		}
+		&.ceo{
+			padding-left: 20px;
+			img{
+				padding: 1px;
+				border: 1px solid @grey_e7;
+				background-color: #fff;
+				float: left;
+				width: 40px;
+				height: 45px;
+			}
+
+			p{
+				margin-left: 56px;
+				line-height: 1.4em;
+				padding-top: 15px;
+			}
+
+			dd{
+				clear: both;
+			}
+		}
+
+	}
+	dt{
+		color: @black;
+		padding-bottom: 10px;
+		font-weight: bold;
+	}
+
+	.total_chart{
+		width: 275px;
+
+		td{
+			height: 22px;
+			border-right: 1px solid #fff;
+
+			&:hover{
+				opacity: 0.8;
+				filter: alpha(opacity=80);
+			}
+		}
+	}
+
+	.g_1{
+		background-color: @green;
+		border-top: 1px solid #d5eeae;
+	}
+	.g_2{
+		background-color: #82cd0d;
+		border-top: 1px solid #d5eeae;
+	}
+	.g_3{
+		background-color: #92d825;
+		border-top: 1px solid #d5eeae;
+	}
+	.g_4{
+		background-color: #b1ea59;
+		border-top: 1px solid #d5eeae;
+	}
+	.g_5{
+		background-color: #cdf490;
+		border-top: 1px solid #d5eeae;
+	}
+
+	.total_chart_w{
+		padding-bottom: 40px;
+
+		em{
+			margin: 0 8px;
+			color: @grey_99;
+		}
+	}
+
+	.chart_tip{
+		width: 83px;
+		height: 22px;
+		line-height: 22px;
+		padding: 10px 5px 0;
+		background: @icons no-repeat -134px -116px;
+		text-align: center;
+		position: absolute;
+		top: 48px;
+	}
+}
+</style>

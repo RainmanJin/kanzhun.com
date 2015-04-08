@@ -1,0 +1,55 @@
+@import "../../common/var";
+@f_img: "../../images/";
+
+//内部导航(页面左侧顶部绿色部分)
+div {
+	&.secondary_nav {
+		padding-left: 30px;
+		height: 200px;
+		background: url("@{f_img}/field/f_img1.jpg") no-repeat left top;
+		.box-shadow(0 1px 0 #e6e6e6);
+
+		h1 {
+			margin-bottom: 10px;
+			padding-top: 100px;
+			color: #ffffff;
+			font-size: 28px;
+		}
+
+		ul {
+			padding-right: 30px;
+			overflow: hidden;
+			*zoom: 1;
+
+			li {
+				float: left;
+				margin-left: 20px;
+
+				i {
+					margin-right: 5px;
+				}
+
+				a {
+					color: #ffffff;
+
+					&:hover {
+						text-decoration: underline;
+					}
+
+					&.current {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		p {
+			color: #ffffff;
+
+			em {
+				color: #65c690;
+				margin: 0 10px;
+			}
+		}
+	}
+}

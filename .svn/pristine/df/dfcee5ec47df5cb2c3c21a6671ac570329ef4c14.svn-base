@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>公司面经详情页面</title>
+  <!--[if lte IE 9]>
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"> </script>
+    <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css"/>
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/company/view.css"/>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+<% include ../modules/top-search.ejs %>
+<% include piece/co-header %>
+
+	<div class="container_v2 clearfix">
+		<section class="f_l_con clearfix">
+			<div class="wrap_style position_enter mb15">
+					<h1 class="l_tt_16">百胜餐饮集团肯德基储备经理面试</h1>
+					<p class="po_counts"><a href="/gsm122656.html" ka="gsm">查看全部职位面试</a><em>|</em><a href="/msh/g122656-z754482/" ka="msh">查看全部产品经理面试</a></p>
+			</div>
+
+            <!-- 其他互联网公司面试 -->
+            <% include piece/co-left-interview-item.ejs %>
+			<!-- 其他互联网公司面试 -->
+
+            <!--官方回复-->
+            <% include piece/co-left-official-replay.ejs %>
+            <!--官方回复-->
+
+            <!-- 评论 -->
+      <% include piece/co-left-comment.ejs %>
+        <!-- 评论 -->
+
+      <!-- 按标签查看更多职位面试 -->
+        <% include piece/co-left-basis-tags-search.ejs %>
+      <!-- 按标签查看更多职位面试 -->
+
+    <div class="view_see_more wrap_style mb15">
+        <p class="v_s_m_tt"><a href="" class="fright f_14 links">查看全部&gt;</a>更多互联网行业产品经理面试</p>
+        <dl class="c_s_result">
+            <dt class="anonymous_portrait"><img src="/images/view_v2-img/xiaoren.jpg" alt="" data-bd-imgshare-binded="1"></dt>
+            <dd class="c_s_result_detail">
+                <h2><a href="/gsmsh783960.html" class="links" ka="blocker3-interviewname1" target="_blank"><span>“</span>面试官只有一个，很年轻，全程都在埋头记录，基本没有说过话。<span>”</span></a></h2>
+                <p class="f_12 grey_99 view_address">
+                    匿名用户&nbsp;&nbsp;&nbsp;&nbsp;面试百度的
+                    <a ka="interview-name1" href="/interview/1775/" class="links" target="_blank">产品经理助理</a>
+                    &nbsp;-&nbsp;&nbsp;<i class="cmp_address"></i>北京
+                </p>
+                <p class="c_s_result_text">
+                    第一轮面试，我准备的战略就是上来主动自我介绍，把面试官的注意力吸引到自己的强项学生工作和社会实践这块，再跟他大聊特聊，使他<a rel="nofollow" href="/gsmsh783960.html" class="links" ka="cominterview-blocker3-seeall1" target="_blank">查看全部&gt;&gt;</a>
+                </p>
+            </dd>
+        </dl>
+        <dl class="c_s_result">
+            <dt class="anonymous_portrait"><img src="/images/view_v2-img/xiaoren.jpg" alt="" data-bd-imgshare-binded="1"></dt>
+            <dd class="c_s_result_detail">
+                <h2><a href="/gsmsh783960.html" class="links" ka="blocker3-interviewname1" target="_blank"><span>“</span>面试官只有一个，很年轻，全程都在埋头记录，基本没有说过话。<span>”</span></a></h2>
+                <p class="f_12 grey_99 view_address">
+                    匿名用户&nbsp;&nbsp;&nbsp;&nbsp;面试百度的
+                    <a ka="interview-name1" href="/interview/1775/" class="links" target="_blank">产品经理助理</a>
+                    &nbsp;-&nbsp;&nbsp;<i class="cmp_address"></i>北京
+                </p>
+                <p class="c_s_result_text">
+                    第一轮面试，我准备的战略就是上来主动自我介绍，把面试官的注意力吸引到自己的强项学生工作和社会实践这块，再跟他大聊特聊，使他<a rel="nofollow" href="/gsmsh783960.html" class="links" ka="cominterview-blocker3-seeall1" target="_blank">查看全部&gt;&gt;</a>
+                </p>
+            </dd>
+        </dl>
+        <dl class="c_s_result">
+            <dt class="anonymous_portrait"><img src="/images/view_v2-img/xiaoren.jpg" alt="" data-bd-imgshare-binded="1"></dt>
+            <dd class="c_s_result_detail">
+                <h2><a href="/gsmsh783960.html" class="links" ka="blocker3-interviewname1" target="_blank"><span>“</span>面试官只有一个，很年轻，全程都在埋头记录，基本没有说过话。<span>”</span></a></h2>
+                <p class="f_12 grey_99 view_address">
+                    匿名用户&nbsp;&nbsp;&nbsp;&nbsp;面试百度的
+                    <a ka="interview-name1" href="/interview/1775/" class="links" target="_blank">产品经理助理</a>
+                    &nbsp;-&nbsp;&nbsp;<i class="cmp_address"></i>北京
+                </p>
+                <p class="c_s_result_text">
+                    第一轮面试，我准备的战略就是上来主动自我介绍，把面试官的注意力吸引到自己的强项学生工作和社会实践这块，再跟他大聊特聊，使他<a rel="nofollow" href="/gsmsh783960.html" class="links" ka="cominterview-blocker3-seeall1" target="_blank">查看全部&gt;&gt;</a>
+                </p>
+            </dd>
+        </dl>
+    </div>
+
+        <div class="wrap_style position_enter">
+            <p class="l_tt_16">产品经理相关信息</p>
+            <p class="grey_99 po_counts mb10">3294条面试<em>|</em>10580条工资<em>|</em>28518条招聘</p>
+            <ul class="lists mb15 pt10">
+                <li><a href="/salary/167/" target="_blank" class="links" ka="position-salary">人事助理待遇</a></li>
+                <li><a href="/interview/167/" target="_blank" class="links" ka="position-interview">人事助理面试</a></li>
+                <li><a href="/trends/167/" target="_blank" class="links" ka="position-trends">人事助理就业趋势</a></li>
+                <li><a href="/jobs/167/" target="_blank" class="links" ka="position-jobs">人事助理岗位职责</a></li>
+                <li><a href="/recruit/167/" target="_blank" class="links" ka="position-recruit">人事助理最新招聘</a></li>
+            </ul>
+        </div>
+    </section>
+
+		<!-- 右半部分 -->
+    <section class="f_r_con">
+        <% include piece/co-right-average.ejs %>
+        <% include piece/co-right-newest-job.ejs %>
+      <% include piece/co-right-companylist.ejs %>
+    </section>
+		<!-- 右半部分 -->
+	</div>
+</body>
+</html>

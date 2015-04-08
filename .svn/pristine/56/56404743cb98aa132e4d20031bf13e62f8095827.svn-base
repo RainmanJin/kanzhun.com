@@ -1,0 +1,127 @@
+@import "../../../css/common/var";
+@import "../var";
+
+.right-co-alias{
+  dl.co-alias-info{
+    overflow: hidden;
+
+    dt{
+      float: left;
+
+      img{
+        width: 66px;
+        height: 66px;
+        border: 1px solid #cccccc;
+        padding: 1px;
+      }
+    }
+
+    dd{
+      margin-left: 80px;
+    }
+  }
+
+  .co-alias-rank{
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 10px;
+
+    .orange{
+      color: #fb7200;
+    }
+  }
+
+  .co-alias-tabs{
+    margin-top: 20px;
+
+    dt{
+      margin: 0 -15px;
+      overflow: hidden;
+      white-space: nowrap;
+
+      span{
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        width: 87px;
+        border-right: 1px solid #eeeeee;
+        display: inline-block;
+        padding: 12px 0;
+        text-align: center;
+        cursor: pointer;
+        .linear-gradient(top, #f8f8f8 #fff #f8f8f8);
+
+        small{
+          font-size: 12px;
+          color: #999;
+        }
+
+        &.current{
+          cursor: default;
+          background: #fff;
+          border-top: 2px solid @green;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+
+  dd.co-alias-salary{
+    padding: 15px 0 0;
+    line-height: 2em;
+    li{
+      em{
+        float: right;
+        color: @red;
+      }
+    }
+
+    .jd-list-more{
+      margin: 0 -15px;
+      padding-top: 15px;
+    }
+  }
+
+  dd.c_s_result_detail {
+    h2 {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      font-size: 16px;
+      font-weight: normal;
+      span {
+        font-weight: bold;
+      }
+    }
+
+    p.view_address {
+      padding-bottom: 20px;
+
+      i.cmp_address {
+        margin-right: 5px;
+        vertical-align: -2px;
+      }
+    }
+
+    .c_s_result_text {
+      line-height: 2em;
+      color: @grey_66;
+      em{
+        color: @grey_33;
+      }
+    }
+
+    dt {
+      float: left;
+      width: 55px;
+      color: @grey_33;
+      font-weight: bold;
+    }
+
+    dd {
+      margin-left: 55px;
+    }
+
+    div.u_c_s {
+      padding: 15px 0;
+    }
+  }
+}

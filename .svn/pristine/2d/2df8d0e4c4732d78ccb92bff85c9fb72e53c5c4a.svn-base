@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>kanzhun</title>
+  <link rel="stylesheet" href="../css/lottery.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <p class="banner"><img src="../images/banner.jpg" ></p>
+
+  <div class="content">
+    <p class="t-center f18 mt10 mb10 orange"><b>抱歉，没有中奖哦！</b></p>
+    <p class="grey t-center">感谢您支持看准活动，下次继续努力！</p>
+
+    <p class="mb10"></p>
+  </div>
+
+  <p class="saw"></p>
+
+  <section class="ball">
+    <div class="ball_tt">双色球 <span class="green"><b>139828</b> 期</span></div>
+
+    <p class="grey">1000万尽在咫尺，就是这注了...</p>
+
+    <ul class="balls">
+      <li>13</li><li>02</li><li>03</li><li>02</li><li>02</li><li>02</li><li class="blue">33</li>
+    </ul>
+
+  </section>
+</div>
+</body>
+</html>
+
+

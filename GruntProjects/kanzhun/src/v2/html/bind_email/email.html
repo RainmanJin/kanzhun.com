@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta http-equiv="Cache-Control" content="no-transform ">
+  <meta name="viewport" content="width=device-width">
+  <script type="text/javascript">
+    var CONTEXTPATH='';
+    var STATICURL='http://img.kanzhun.com';
+    var require = {
+      urlArgs : "v=v1.1.31"
+    };
+  </script>
+  <!--[if lte IE 9]>
+      <script src="http://s.kanzhun.com/js/html5shiv.js"></script>
+      <script src="http://s.kanzhun.com/js/jquery-1.11.0.min.js"></script>
+      <!--[if gt IE 9]><!-->
+  <script src="http://s.kanzhun.com/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/v2/css/widget.css" />
+  <title>第三方登录绑定邮箱</title>
+  <link rel="stylesheet" href=/v2/css/bind_email/bind_email.css />
+  <script src="/js/require.js" data-main="/v2/js/bind_email/bind_email.js"></script>
+</head>
+<body>
+<header class="global">
+  <div class="header">
+    <a ka="head-index" href="/" class="logo"><img src="/images/logo.png" width="136" height="40"></a>
+    <nav>
+      <a ka="head-com" href="/gs.html">公司</a>
+      <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+      <a ka="head-recruit" href="/job/">招聘</a>
+      <a ka="head-interview" href="/msh/">面试</a>
+      <a ka="head-news" target="_blank" href="/news/">资讯</a>
+      <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+    </nav>
+    <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+  </div>
+</header>
+<div class="auto_view">
+  <h2>绑定邮箱账号</h2>
+  <section class="auth">
+    <p>请输入邮箱，绑定您现在登录的QQ账号。</p>
+    <p class="f_12 grey_66">绑定后，使用QQ账号或者邮箱地址都可以登录到你现有的账号。</p>
+    <form action="" method="post" id="bindEmailForm">
+      <p class="sys_err"><span></span></p>
+      <ul>
+        <li>
+          <div>
+            <label><i class="user"></i></label><input type="text" class="ifd" placeholder="请输入您的常用邮箱" name="account" ka="register_account"><input type="hidden" name="accountCheck" value="" />
+            <p class="err" data-msg="请输入您的常用邮箱！"></p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <label><i class="pwd"></i></label><input class="ifd" type="password" name="password" placeholder="输入6-14位密码，必须含数字和字母" maxlength="14" ka="register_password">
+            <p class="err" data-msg="密码不能为空！"></p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <label><i class="pwd"></i></label><input class="ifd" type="password" name="confirmPassword" placeholder="密码确认" ka="register_confirmpassword">
+            <p class="err" data-msg="确认密码不能为空！"></p>
+          </div>
+        </li>
+      </ul>
+      <p><input type="submit" value="绑 定" class="auth_btn"></p>
+    </form>
+  </section>
+</div>
+</body>
+</html>

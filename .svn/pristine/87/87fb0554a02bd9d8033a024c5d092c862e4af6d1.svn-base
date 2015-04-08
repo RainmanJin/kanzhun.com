@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>员工详情页面</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/employee_detail.css" />
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">招聘</a>
+				<a href="#" class="current">公司</a>
+				<a href="#">工资</a>
+				<a href="#">面试</a>
+				<a href="#" class="mycomment">我要点评</a>
+			</nav>
+			<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="co_header clearfix">
+		<a href="#"><img src="../images/img-04.jpg" width="150" height="150" alt="" class="co_logo" /></a>
+		<div class="co_info">
+			<h1>易宝支付</h1>
+			<p class="msg"><span class="grade_star_b"><i style="width:56px;"></i></span><strong>2.2</strong>分<em>|</em><a href=""><b>235条</b></a>信息</p>
+			<p class="params">互联网<em>|</em>www.yeepay.com<em>|</em>北京<em>|</em>500-100人</p>
+		</div>
+		<nav class="clearfix">
+			<a href="#">简介</a><a href="#">薪酬</a><a href="#">评论</a><a href="#">面试</a><a href="#">照片</a><a href="#" class="current">员工</a>
+		</nav>
+		<aside>
+			<br />
+			<br />
+			<a href="" class="btn_grey_b follow"><b>+</b> 关注公司</a>
+		</aside>
+	</section>
+
+	<div class="container clearfix">
+		<section class="l_con clearfix">
+			<dl class="main_intro mb10">
+				<dt>
+					<div>
+						<img src="../images/sr_img_09.jpg" alt=""><span></span>
+					</div>
+					<a href="">访问微博</a>
+				</dt>
+				<dd>
+					<div class="e_n_sex">
+						<strong>牛魔王</strong><i class="e_female"></i><i class="e_male"></i>北京&nbsp;&nbsp;昌平区
+					</div>
+					<p>关注：<span class="blue">48</span><em>|</em>粉丝：<span class="blue">2332</span><em>|</em>微博：<span class="blue">2321</span></p>
+					<div class="e_con_align">
+						<span>简&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;介：</span><p>生活不过如此，生活不过如此，生活不过如此，生活不过如此，生活不过如此，生活不过如此，生活不过如此。</p>
+					</div>
+					<div class="e_con_align">
+						<span>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签：</span><p>电&nbsp;&nbsp;&nbsp;&nbsp;淘宝&nbsp;&nbsp;&nbsp;&nbsp;倒萨商&nbsp;&nbsp;&nbsp;&nbsp;奔驰</p>
+					</div>
+					<div class="e_con_align">
+						<span>教育信息：</span><p>沈阳工业大学</p>
+					</div>
+				</dd>
+			</dl>
+			<p class="dashed_line mb20"></p>
+			<h3 class="f_16 mb15"><i class="e_times"></i>职业生涯</h3>
+			<dl class="position_career clearfix">
+				<dt>
+					<a href="">
+						<img src="http://img.kanzhun.com/images/logo/20140619/6aaefb6248d3745422a3c25237740acf.jpg" title="携程旅行网" alt="携程旅行网logo" width="91"><span></span>
+					</a>
+				</dt>
+				<dd>
+					<h4><a href="">淘宝</a></h4>
+					<div class="cmp_nohave mb20">
+						<p class="mb10">该公司还未被看准收录。</p>
+						<p>如果您了解这家公司，请您帮助我们创建该公司档案。<a href="">立即创建公司档案</a></p>
+					</div>
+					<p class="dashed_line mb10"></p>
+				</dd>
+			</dl>
+			<dl class="position_career clearfix">
+				<dt>
+					<a class="current" href="">
+						<img src="http://img.kanzhun.com/images/logo/20140619/6aaefb6248d3745422a3c25237740acf.jpg" title="携程旅行网" alt="携程旅行网logo" width="91"><span></span>
+					</a>
+				</dt>
+				<dd>
+					<h4><a href="">淘宝</a></h4>
+					<p class="p_c_start"><span class="grade_star"><i style="width:77.89999999999999px;"></i></span><strong>4.0</strong>分<em class="p_c_line">|</em>1638条信息</p>
+					<p class="grey_99 mb10">互联网<em class="p_c_line">|</em>www.taobao.com<em class="p_c_line">|</em>杭州<em class="p_c_line">|</em>10000人以上</p>
+					<p class="mb10"><a class="fright" href="">查看更多</a><strong>最新员工点评</strong></p>
+					<div class="career_con clearfix mb20">
+						<span class="c_trangle"></span>
+						<a href=""><img src="../images/employee_detail_img3.jpg" alt=""></a>
+						<div>
+							<p class="grey_99"><em class="p_c_tt">来自该公司工作过2年的运维开发</em><span class="fright">2014-10-31</span></p>
+							<p>沟通顺畅，层级不分明沟通顺畅，层级不分明沟通顺畅，层级不分明沟通顺畅，层级不分明沟通顺畅，层级不分明...<a href="">查看详情</a></p>
+						</div>
+					</div>
+					<p class="dashed_line mb10"></p>
+				</dd>
+			</dl>
+			<dl class="position_career last_noborder clearfix">
+				<dt>
+					<a href="">
+						<img src="http://img.kanzhun.com/images/logo/20140619/6aaefb6248d3745422a3c25237740acf.jpg" title="携程旅行网" alt="携程旅行网logo" width="91"><span></span>
+					</a>
+				</dt>
+				<dd>
+					<h4><a href="">淘宝</a></h4>
+					<p class="p_c_start"><span class="grade_star"><i style="width:77.89999999999999px;"></i></span><strong>4.0</strong>分<em class="p_c_line">|</em>1638条信息</p>
+					<p class="grey_99 mb10">互联网<em class="p_c_line">|</em>www.taobao.com<em class="p_c_line">|</em>杭州<em class="p_c_line">|</em>10000人以上</p>
+					<p class="mb10"><a class="fright" href="">查看更多</a><strong>最新员工点评</strong></p>
+					<div class="career_con clearfix mb20">
+						<span class="c_trangle"></span>
+						<a href=""><img src="http://img.kanzhun.com/images/logo/20140619/6aaefb6248d3745422a3c25237740acf.jpg" alt=""><span></span></a>
+						<div>
+							<p class="grey_99"><em class="p_c_tt">来自该公司工作过2年的运维开发来自该公司工作过2年的运维开发来自该公司工作过2年的运维开发</em><span class="fright">2014-10-31</span></p>
+							<p>沟通顺畅，层级不分明沟通顺畅，层级不分明沟通顺畅，层级不分明沟通顺畅，层级不分明沟通顺畅，层级不分明...<a href="">查看详情</a></p>
+						</div>
+					</div>
+				</dd>
+			</dl>
+		</section>
+		<section class="r_con">
+			<h3 class="r_tt">TA在这里的同事</h3>
+			<p class="line_only"></p>
+			<ul class="workin">
+				<li>
+					<a href="" class="imgshow"><img src="http://tp2.sinaimg.cn/1498441097/180/5619251325/1"><span></span>
+					</a>
+					<div>
+						<p>
+							<a href="" class="wbname">金越v</a><i class="vip"></i></p>
+							<p>动静等观</p>
+					</div>
+				</li>
+				<li>
+					<a href="" class="imgshow"><img src="http://tp2.sinaimg.cn/1498441097/180/5619251325/1"><span></span>
+					</a>
+					<div>
+						<p>
+							<a href="" class="wbname">金越v</a><i class="vip"></i></p>
+							<p>动静等观</p>
+					</div>
+				</li>
+				<li>
+					<a href="" class="imgshow"><img src="http://tp2.sinaimg.cn/1498441097/180/5619251325/1"><span></span>
+					</a>
+					<div>
+						<p>
+							<a href="" class="wbname">金越v</a><i class="vip"></i></p>
+							<p>动静等观</p>
+					</div>
+				</li>
+				<li>
+					<a href="" class="imgshow"><img src="http://tp2.sinaimg.cn/1498441097/180/5619251325/1"><span></span>
+					</a>
+					<div>
+						<p>
+							<a href="" class="wbname">金越v</a><i class="vip"></i></p>
+							<p>动静等观</p>
+					</div>
+				</li>
+				<li>
+					<a href="" class="imgshow"><img src="http://tp2.sinaimg.cn/1498441097/180/5619251325/1"><span></span>
+					</a>
+					<div>
+						<p>
+							<a href="" class="wbname">金越v</a><i class="vip"></i></p>
+							<p>动静等观动静等观动静等观动静等观</p>
+					</div>
+				</li>
+				<li>
+					<a href="" class="imgshow"><img src="http://tp2.sinaimg.cn/1498441097/180/5619251325/1"><span></span>
+					</a>
+					<div>
+						<p>
+							<a href="" class="wbname">金越v</a><i class="vip"></i></p>
+							<p>动静等观</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+</body>
+</html>

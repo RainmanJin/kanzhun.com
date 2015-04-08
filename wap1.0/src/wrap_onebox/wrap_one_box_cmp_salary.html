@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://dev.onebox.so.com/thirdChecks/standardCaseMobile##more -->
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<title>公司工资页面</title>
+	<link rel="stylesheet" href="http://s2.qhimg.com/static/c9920e0bbd65448f.css">
+	<script>(function(e){function t(e,t){var n=document,r=n.getElementsByTagName("head")[0]||n.documentElement,i=n.createElement("script"),s=!1;i.src=e,i.onerror=i.onload=i.onreadystatechange=function(){!s&&(!this.readyState||this.readyState=="loaded"||this.readyState=="complete")&&(s=!0,t&&t(),i.onerror=i.onload=i.onreadystatechange=null,r.removeChild(i))},r.insertBefore(i,r.firstChild)}function n(e){var t,n,r,i;for(t=0;t<o.length;t++){r=o[t],i=r.requires;for(n=0;n<i.length;n++)if(i[n]==e)break;i.splice(n,1),i.length===0&&(r.fun(),o.splice(t,1))}}function r(){var e=s.splice(0,1)[0],o=i[e],a=function(){n(e),o.loaded=!0,s.length?r():u=!1};if(!o)return;u=!0,o.loaded||o.checker&&o.checker()?a(e):t(o.url,function(){a(e)})}var i={zepto:{url:"http://s9.qhimg.com/static/5d0cb4bd42d5cb6e/zepto_1.1.2.js",checker:function(){return!!e.Zepto}},openinapp:{url:"http://s9.qhimg.com/static/5e7b97ce21ad52e6/openinapp.js"}},s=[],o=[],u=!1,a={ready:function(e,t){function n(){clearTimeout(t.__QWDomReadyTimer);if(r.length){var e=r.shift();r.length&&(t.__QWDomReadyTimer=setTimeout(n,0)),e()}}t=t||document;var r=t.__QWDomReadyCbs=t.__QWDomReadyCbs||[];r.push(e),setTimeout(function(){if(/complete/.test(t.readyState))n();else if(t.addEventListener)"interactive"==t.readyState?n():t.addEventListener("DOMContentLoaded",n,!1);else{var e=function(){e=new Function,n()};(function(){try{t.body.doScroll("left")}catch(n){return setTimeout(arguments.callee,1)}e()})(),t.attachEvent("onreadystatechange",function(){"complete"==t.readyState&&e()})}},0)}};e._loader={add:function(e,t,n){i[e]||(i[e]={url:t,checker:n})},use:function(e,t){a.ready(function(){e=e.split(/\s*,\s*/g),s=s.concat(e),o.push({requires:e,fun:t}),u||r()})}}})(window)
+	</script>
+	</head>
+<body>
+	<div id="main">
+		<div class="r-results">
+<!--规范：
+
+	1. 移动端的页面必须设置成响应式的，须满足最小宽度320px。高度自定。
+	
+	2. 开发者不需要设置字体、大小、行高等样式属性，可直接应用360搜索的公共样式。公共样式如：
+		* onebox外框（.g-card .g-block）
+		* onebox内容区域（.mohe-wrap）
+		* 标题（.res-title .title）
+		* 清除浮动（.g-clearfix）
+		* 底部通用导航（.mohe-navbar .mohe-item）
+		* 通栏查看更多（.mohe-link .mohe-more）
+		* 通栏展开收起（.mohe-fold .mohe-more ）
+	
+	3. 公共清除浮动：如果用了float，要在其父元素上使用 g-clearfix 清除子元素的浮动
+
+	4. 开发者所有的className命名前缀必须为 “mh-”，选择器层级保持在2-3层即可
+
+   	5. 第三方提供的onebox代码样式上请与大环境统一。包括行高、行距、按钮样式。
+
+-->
+<!-- start：第三方提供的代码片段 -->
+<style>
+	#mohe-m-obo_m_mkzgsx .mh-pic {float:left;width:60px;height:60px;margin-right:10px;border:1px solid #ccc;border-radius:4px}
+	#mohe-m-obo_m_mkzgsx .mh-desc {font-size:.875rem;line-height:1.5;color:#262626;-webkit-line-clamp:3}
+	#mohe-m-obo_m_mkzgsx .mohe-navbar {margin-top:10px}
+	#mohe-m-obo_m_mkzgsx .mh-cmp_comment .mh-cmp_info {display: block;padding: 10px 8px 0 8px;}
+	#mohe-m-obo_m_mkzgsx .mh-cmp_comment .mh-cmp_info div.mh-cmp-logo {float: left; width: 60px; height: 60px; border: 1px solid #ededed;}
+	#mohe-m-obo_m_mkzgsx .mh-cmp_comment .mh-cmp_info img {width: 60px; height: 60px;}
+	#mohe-m-obo_m_mkzgsx .mh-cmp_comment .mh-cmp_info div.mh-cmp-con {margin-left: 71px; color: #666666;}
+	#mohe-m-obo_m_mkzgsx .mh-cmp_comment .mh-cmp_info div.mh-cmp-con p {font-size: 14px;}
+	#mohe-m-obo_m_mkzgsx .mh-cmp_comment .mh-cmp_info div.mh-cmp-con p.mh-interview {padding-bottom: 4px;}
+	#mohe-m-obo_m_mkzgsx .mh-cmp_comment .mh-cmp_info div.mh-cmp-con p span.mh-scores {color: #2fa50e;}
+</style>
+<!--此处id必须是唯一的
+	该id="mohe-m-obo_m_demo"是demo的id
+	在开发中，必须修改，命名准则是：id="mohe-m-[对应的项目ID]"
+	详情参考【我的项目-规范-开发规范】中的 HTML规范
+ -->
+			<div class="g-mohe res-list g-card g-block" id="mohe-m-obo_m_mkzgsx">
+				<!-- 
+				     公共CSS样式，其使用详见下方实例
+				     	(1) onebox卡片：.g-card
+					                    .g-block
+					    (2) 标题：.res-title  搜索结果的标题
+					     		   .title  onebox的标题
+						(3) 标题的手机图标：.icon-mobile
+					    (4) 清除浮动：.g-clearfix
+					    (5) onebox内容：.mohe-wrap
+					    (6) 底部通用导航：.mohe-navbar .mohe-item
+					    (7) 底部通栏的查看更多：.mohe-link.mohe-more
+					    (8) 底部通栏的展开收起：.mohe-fold.mohe-more 
+					 详情参考CSS规范，见【我的项目-规范-开发规范】
+				-->
+				<!-- start：开发者的HTML结构-->
+				<!-- 通用标题类名"title"，直接使用 -->
+				<a class="title" href="www.kanzhun.com">
+					<!-- 通用"res-title icon-mobile"，保留，直接使用 -->
+					<h3 class="res-title">
+						<!-- 飘红直接用<em>标签飘，360的公共样式中对其进行了定义 -->
+						<em>华为</em>工资待遇&nbsp;-&nbsp;看准网
+					</h3>
+				</a>
+				<div class="mh-cmp_comment">
+					<a href="" class="mh-cmp_info g-clearfix">
+						<div class="mh-cmp-logo"><img src="http://img.kanzhun.com/images/logo/20140627/14e0696de5b7870d6c2f282776b121e3.jpg" alt=""></div>
+						<div class="mh-cmp-con">
+							<p>平均工资：<em>￥2344</em></p>
+							<p>所属行业：互联网</p>
+							<p>总部城市：深圳</p>
+						</div>
+					</a>
+				</div>
+				<!-- s: 通用 navbar -->
+				<nav class="mohe-navbar">
+					<a class="mohe-item" href="http://m.baike.so.com/doc/1287918-1361771.html?sid=&anchor=1#1287918-1361771-1">面试经验</a>
+					<a class="mohe-item" href="http://m.baike.so.com/doc/1287918-1361771.html?sid=&anchor=2#1287918-1361771-2">工资待遇</a>
+					<a class="mohe-item" href="http://m.baike.so.com/doc/1287918-1361771.html?sid=&anchor=3#1287918-1361771-3">员工点评</a>
+					<a class="mohe-item" href="http://m.baike.so.com/doc/1287918-1361771.html?sid=&anchor=4#1287918-1361771-4">最新招聘</a>
+				</nav>
+				<!-- end：开发者的HTML结构 -->
+			</div>
+<!-- end：第三方提供的代码片段 -->
+		</div>
+	</div>
+</body>
+</html>

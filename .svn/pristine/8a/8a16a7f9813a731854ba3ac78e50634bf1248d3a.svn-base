@@ -1,0 +1,137 @@
+@import "../../../../css/common/var";
+
+//右侧标题(领域页面)
+.f_tt {
+	padding-bottom: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid #e5e5e5;
+	color: @grey_33;
+
+	a.seemore {
+		font-weight: normal;
+		font-size: 14px;
+	}
+}
+
+//右侧标题(领域页面)
+.view_r_tt {
+  height: 59px;
+  line-height: 59px;
+  border-bottom: 1px solid #e5e5e5;
+  color: @grey_33;
+  font-size: 15px;
+}
+
+div.send_interview {
+	padding-top: 20px;
+
+	a {
+		padding: 0 60px;
+		height: 42px;
+		line-height: 42px;
+		font-size: 18px;
+
+		&:hover {
+			color: #ffffff;
+		}
+	}
+
+  img{
+    margin-left: -15px;
+    margin-bottom: 15px;
+    display: block;
+  }
+}
+
+a.advertis_area {
+	display: block;
+	border: 1px solid #e2e2e2;
+}
+
+//广告（领域页面）
+div {
+	&.advertis_area {
+		height: 200px;
+
+		a {
+			display: block;
+		}
+
+		img {
+			width: 264px;
+			height: 200px;
+		}
+	}
+}
+
+//热门领域
+ul.hot_field_list {
+	li {
+		padding: 0 4px 5px 4px;
+
+		i {
+			margin-right: 10px;
+		}
+
+		a {
+			color: @grey_33;
+		}
+	}
+}
+
+
+//热门公司(领域页面右侧和面试页面右侧看了该公司的还看了)
+dl.hot_cmp {
+	padding-bottom: 15px;
+	overflow: hidden;
+	*zoom: 1;
+
+	dt {
+		float: left;
+		width: 50px;
+		height: 50px;
+
+		a {
+			display: block;
+			width: 44px;
+			height: 44px;
+			padding: 2px;
+			background-color: #ffffff;
+			border: 1px solid @grey_e7;
+			font-size: 0;
+			text-decoration: none;
+
+			img {
+				width: 44px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			span {
+				display: inline-block;
+				width: 0;
+				height: 100%;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	dd {
+		margin-left: 60px;
+		padding-top: 5px;
+
+        p {
+          a {
+            &:hover {
+              color: #2472b4;
+              text-decoration: none;
+            }
+          }
+        }
+
+		span.green_s_star  {
+			vertical-align: -3px;
+		}
+	}
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>搜索公司页面</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css">
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/search/search-jobs.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <!--<script src="/js/require.js" data-main="/v2/js/company/view.js"></script>-->
+</head>
+
+<body class="grey-bg">
+<% include ../modules/header %>
+<% include ../modules/top-search.ejs %>
+<% include piece/top-search-nav.ejs %>
+
+<div class="container-search clearfix">
+  <section class="s_l_con clearfix">
+    <% include piece/search_conditions %>
+  </section>
+
+  <section class="s_r_con clearfix">
+    <dl class="wrap_style search-options">
+      <dt><a href="#">查看与 “<span>百度</span>” 相关的职位工资 &gt;</a> <strong>找到 30 个与“<span>百度</span>”相关的招聘</strong></dt>
+      <dd>
+        筛选条件：
+        <span>客服<a href="#"><i class="close_conditions"></i></a></span>
+        <span>北京<a href="#"><i class="close_conditions"></i></a></span>
+        <span>面试通过<a href="#"><i class="close_conditions"></i></a></span>
+      </dd>
+    </dl>
+
+    <div class="wrap_style mt15 search-jobs-list">
+      <div class="sparrow">
+        <dl class="clearfix spw">
+          <dt>
+            <a ka="job1-logo" href="/gso40003.html" target="_blank"><img src="http://img.kanzhun.com/images/logo/20150215/847435233c60c44bce48f2209949c5d8.jpg" title="大公国际资信评估有限公司" width="65"><span></span></a>
+<span class="grey_99">
+今天
+</span>
+          </dt>
+          <dd>
+            <h3 class="r_tt"><a ka="job1-title" href="/job/1000025593.html" target="_blank">信用评级分析师</a><i class="directsup"></i></h3>
+            <p class="jieshao">
+              <a ka="job1-comjob" href="/job/g40003.html" target="_blank">大公国际资信评估有限公司</a>
+              <em></em>
+              <span class="np_sr_grade_start vh"><i style="width:40px;"></i></span><em></em>
+              <a ka="job1-ugccount" href="/gso40003.html" target="_blank" rel="nofollow">311条信息</a><em class="grey_f3">|</em>
+              <i class="grey_99">北京</i>
+            </p>
+            <p class="request">
+              硕士
+              <em>|</em>全职
+              <em>|</em><b>6k-8k</b>
+            </p>
+            <p class="company_advantage">岗位职责：
+              1、根据公司业务需求，完成项目的分析报告和研发工作，独立完成评级报告；
+              2、从事工商企业、公用事业、金融机构、结构融资等行<span class="more">...</span><a href="/job/1000025593.html" target="_blank" rel="nofollow">查看完整</a>
+            </p>
+            <p class="sr_nav">
+              <a ka="job1-com" rel="nofollow" href="/job/tc/40003/1/" data-panel="job_c">公司</a>
+              <em class="grey_f3">|</em><a ka="job1-review" rel="nofollow" href="/job/tr/40003/1/" data-panel="job_r">点评</a>
+              <em class="grey_f3">|</em><a ka="job1-salary" rel="nofollow" href="/job/ts/40003/1/" data-panel="job_s">工资</a>
+              <em class="grey_f3">|</em><a ka="job1-interview" rel="nofollow" href="/job/ti/40003/1/" data-panel="job_i">面试</a>
+            </p>
+          </dd>
+        </dl>
+        <div class="loading"><img src="/images/loading.gif"></div>
+      </div>
+      <p class="line"></p>
+      <div class="sparrow">
+        <dl class="clearfix spw">
+          <dt>
+            <a ka="job2-logo" href="/gso710892.html" target="_blank"><img src="http://img.kanzhun.com/images/logo/20150215/7ac8ac58f8d771a46eb4de83950fe886.jpg" title="烟台欣和企业食品有限公司" width="65"><span></span></a>
+<span class="grey_99">
+今天
+</span>
+          </dt>
+          <dd>
+            <h3 class="r_tt"><a ka="job2-title" href="/job/1000025591.html" target="_blank">UI设计师</a><i class="directsup"></i></h3>
+            <p class="jieshao">
+              <a ka="job2-comjob" href="/job/g710892.html" target="_blank">烟台欣和企业食品有限公司</a>
+              <em></em>
+              <span class="np_sr_grade_start vh"><i style="width:61px;"></i></span><em></em>
+              <a ka="job2-ugccount" href="/gso710892.html" target="_blank" rel="nofollow">14条信息</a><em class="grey_f3">|</em>
+              <i class="grey_99">北京</i>
+            </p>
+            <p class="request">
+              3-5年
+              <em>|</em>本科
+              <em>|</em>全职
+              <em>|</em><b>6k-10k</b>
+            </p>
+            <p class="company_advantage">岗位职责：
+              1、负责公司产品网站（PC端和移动端）的UI设计，改版优化，更新及创新；
+              2、负责公司iOS app的UI设计，改版优化，更<span class="more">...</span><a href="/job/1000025591.html" target="_blank" rel="nofollow">查看完整</a>
+            </p>
+            <p class="sr_nav">
+              <a ka="job2-com" rel="nofollow" href="/job/tc/710892/2/" data-panel="job_c">公司</a>
+              <em class="grey_f3">|</em><a ka="job2-review" rel="nofollow" href="/job/tr/710892/2/" data-panel="job_r">点评</a>
+              <em class="grey_f3">|</em><a ka="job2-salary" rel="nofollow" href="/job/ts/710892/2/" data-panel="job_s">工资</a>
+              <em class="grey_f3">|</em><a ka="job2-interview" rel="nofollow" href="/job/ti/710892/2/" data-panel="job_i">面试</a>
+              <em class="grey_f3">|</em><a ka="job2-photo" rel="nofollow" href="/job/tp/710892/2/" data-panel="job_p">照片</a>
+            </p>
+          </dd>
+        </dl>
+        <div class="loading"><img src="/images/loading.gif"></div>
+      </div>
+      <p class="line"></p>
+      <div class="sparrow">
+        <dl class="clearfix spw">
+          <dt>
+            <a ka="job3-logo" href="/gso207882.html" target="_blank"><img src="http://img.kanzhun.com/images/logo/20141209/1ec253c1b6d6178737ebc9d490485b06.jpg" title="豆瓣网" width="65"><span></span></a>
+<span class="grey_99">
+最近3天
+</span>
+          </dt>
+          <dd>
+            <h3 class="r_tt"><a ka="job3-title" href="/job/1000025538.html" target="_blank">iOS开发工程师</a><i class="directsup"></i></h3>
+            <p class="jieshao">
+              <a ka="job3-comjob" href="/job/g207882.html" target="_blank">豆瓣网</a>
+              <em></em>
+              <span class="np_sr_grade_start vh"><i style="width:54px;"></i></span><em></em>
+              <a ka="job3-ugccount" href="/gso207882.html" target="_blank" rel="nofollow">57条信息</a><em class="grey_f3">|</em>
+              <i class="grey_99">北京</i>
+            </p>
+            <p class="request">
+              1-3年
+              <em>|</em>本科
+              <em>|</em>全职
+              <em>|</em><b>15k-25k</b>
+            </p>
+            <p class="company_advantage">职位描述:
+              开发和维护豆瓣iOS移动客户端
+              职位要求:
+              1. 熟悉 Objective-C 和 Cocoa Touch，至少经历过<span class="more">...</span><a href="/job/1000025538.html" target="_blank" rel="nofollow">查看完整</a>
+            </p>
+            <p class="sr_nav">
+              <a ka="job3-com" rel="nofollow" href="/job/tc/207882/3/" data-panel="job_c">公司</a>
+              <em class="grey_f3">|</em><a ka="job3-review" rel="nofollow" href="/job/tr/207882/3/" data-panel="job_r">点评</a>
+              <em class="grey_f3">|</em><a ka="job3-salary" rel="nofollow" href="/job/ts/207882/3/" data-panel="job_s">工资</a>
+              <em class="grey_f3">|</em><a ka="job3-interview" rel="nofollow" href="/job/ti/207882/3/" data-panel="job_i">面试</a>
+              <em class="grey_f3">|</em><a ka="job3-photo" rel="nofollow" href="/job/tp/207882/3/" data-panel="job_p">照片</a>
+            </p>
+          </dd>
+        </dl>
+        <div class="loading"><img src="/images/loading.gif"></div>
+      </div>
+    </div>
+
+
+    <div class="page_wrap mt20">
+      <div class="f_pager t-right fright">
+        <a ka="paging1" href="/gsx3131.html" class="current">1</a>
+        <a ka="paging2" href="/gsx3131p2.html" rel="nofollow">2</a>
+        <a ka="paging3" href="/gsx3131p3.html" rel="nofollow">3</a>
+        <a ka="paging4" href="/gsx3131p4.html" rel="nofollow">4</a>
+        <a ka="paging2" href="/gsx3131p2.html" data-page="2" rel="nofollow" class="p_next"><i class="p_next">&gt;</i></a>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>我的简历</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/ugc_page.css">
+</head>	
+<body id="js_myResume" style="position:relative">
+<div class="kanzhun">
+	<aside class="slide_menu">
+		<span><img src="/images/kanzhun.jpg" width="189"></span>
+		<a href="/">首页</a>
+		<a href="/uh/">我要点评<i class="i i_edit_g ml10"></i></a>
+		<a href="/usercenter/content/">我发布的内容</a>
+		<a href="/resume/index/">我的简历</a>
+		<a href="/usercenter/jobsearcher/index/">职位订阅</a>
+		<a href="/company/focus/">我关注的公司</a>
+		<a href="/jobtitle/focus/">我收藏的职位</a>
+		
+			<a href="/password/change/">修改密码</a>
+		
+		<a href="/feedback/create/">意见反馈</a>
+		
+			
+			
+				<a href="/logout">退出</a>
+			
+		
+	</aside>
+	<div id="container" class="ease">
+		<div class="wrapper">
+			<div class="content">	
+				<header class="page_hd">		
+					<a class="top_back" href="javascript:;"><i></i>返回</a>
+					<strong>我的简历</strong>	
+				</header>
+				<nav class="resume_nav">
+					<div class="doughnua_chart nav_l"><span>78%</span><canvas width="69" height="69" class="reviewsDoughnutChart" data-ratio="0.01_1.00"></canvas></div>
+					<div class="nav_r">
+						<h1>准确填写期望工作可以大大提高求职率哦！</h1>
+						<p>
+							<a class="btn_orange_1" href="#qwgz">立即去完善</a>
+						</p>
+					</div>	
+				</nav>
+				<h2 class="tt ml10 mr10 mt15"><span>基本资料</span><a class="js_revise fright grey"  node-type="basic"><i class="i i_pen"></i> 修改基本资料</a></h2>
+				<section class="js_basicField field" style="display:none">
+					<form name="basicForm" action="/resume/basic/store">
+					<div class="headPic">
+						<a href="javascript:;">
+							<img src="images/headpic.jpg">
+							<span>上传头像</span>
+							<input class="js_upload" type="file">
+							<input type="hidden" name="headsUrl">
+						</a>
+					</div>
+					<div class="splitInput_2">
+						<em class="red">*</em>
+						<p class="divCommonInput bdefault ml10">
+							<input name="name" type="text" placeholder="真实姓名">
+							<em class="js_error error" style="display:none">姓名不能为空</em>				
+						</p>
+					</div>
+					<div class="mt20">
+						<em class="red">*</em>
+						<input type="radio" name="gender" checked> 男
+						<input type="radio" name="gender"> 女 
+					</div>
+					<div class="splitInput_2">
+						<em class="red">*</em>
+						<p class="defSelect_2 bdefault ml10">
+							<select name="experience">
+								<option value="0">工作年限</option>
+								<option value="1">今天</option>
+								<option value="2">最近3天</option>
+								<option value="3">最近一周</option>
+								<option value="4">最近一月</option>
+							</select>
+							<em class="js_error error" style="display:none" >请选择工作年限</em>	                
+						</p>
+					</div>
+					<div class="splitInput_2">
+						<em class="red">*</em>
+						<p class="defSelect_2 bdefault ml10">
+							<select name="degree">
+								<option value="0">最高学历</option>
+								<option value="1">今天</option>
+								<option value="2">最近3天</option>
+								<option value="3">最近一周</option>
+								<option value="4">最近一月</option>
+							</select>
+							<em class="js_error error" style="display:none" >请选择最高学历</em>	                
+						</p>
+					</div>
+					<div class="splitInput_2">
+						<em class="red">*</em>
+						<p class="divCommonInput bdefault ml10">
+							<input name="mobile" type="text" placeholder="手机号码" maxlength=11>
+							<em class="js_error error" style="display:none">手机号码不能为空</em>					
+						</p>
+					</div>
+					<div class="splitInput_2">
+						<em class="red">*</em>
+						<p class="divCommonInput bdefault ml10">
+							<input name="email" type="text" placeholder="邮箱地址">
+							<em class="js_error error" style="display:none">邮箱地址不能为空</em>					
+						</p>
+					</div>
+					<div class="splitInput_2">
+						<em class="red">*</em>
+						<p class="defSelect_2 bdefault ml10">
+							<select name="currentStatus">
+								<option value="0">目前状态</option>
+								<option value="1">今天</option>
+								<option value="2">最近3天</option>
+								<option value="3">最近一周</option>
+								<option value="4">最近一月</option>
+							</select>
+							<em class="js_error error" style="display:none">目前状态不能为空</em>	
+						</p>
+					</div>
+					<div class="splitInput_2">
+						<em class="red">*</em>
+						<p class="defSelect_3 ml10">
+							<select name="year" class="bdefault">
+								<option value="0">出生年份</option>
+								<option value="1">1986</option>
+								<option value="2">1987</option>
+								<option value="3">1988</option>
+								<option value="4">1989</option>
+							</select>
+							<select name="month" class="bdefault" style="width:80px">
+								<option value="0">月</option>
+								<option value="1">1986</option>
+								<option value="2">1987</option>
+								<option value="3">1988</option>
+								<option value="4">1989</option>
+							</select>
+							<select name="day" class="bdefault" style="width:80px">
+								<option value="0">日</option>
+								<option value="1">1986</option>
+								<option value="2">1987</option>
+								<option value="3">1988</option>
+								<option value="4">1989</option>
+							</select> 
+							<em class="js_error error" style="display:none"></em>	                               
+						</p>
+					</div>
+					<div class="ml10 mt20">
+						<a class="js_submit btn_orange_1">确定</a>
+						<a class="btn_grey_1">取消</a>
+					</div>
+					</form>	        		 		        	        			
+				</section>
+				<section class="js_basicInfo field resumeShow">
+					<div class="headPic">
+						<a href="javascript:;">
+							<img src="images/headpic.jpg">
+							<span>上传头像</span>
+							<input class="js_upload"type="file">				
+						</a>
+					</div> 
+					<dl>
+						<dt>刘备</dt>
+						<dd>男 | 本科 | 3年工作经验 | 1988.01.01</dd>
+						<dd>13801234567  |  baimochen@baidu.com</dd>
+						<dd>我目前在职，正考虑换个新环境</dd>
+					</dl>   	        			
+				</section>	
+				<h2 class="tt ml10 mr10 mt15"><span id="qwgz">期望工作</span><a class="fright grey"><i class="i i_pen"></i> 修改期望工作</a></h2>
+				<section class="field">
+					<div class="resumeAdd">
+						<em class="icon"><i class="i i_plus"></i></em>
+						<h3>准确填写期望工作可以大大提高求职率哦！<p class="red">(必填项)</p></h3>
+					</div>
+				</section>
+				<section class="js_basicInfo field resumeShow">
+					<dl>
+						<dd>北京 | 全职 | 5k-10k</dd>
+						<dd>产品经理</dd>
+					</dl>   	        			
+				</section>	
+				<h2 class="tt ml10 mr10 mt15"><span id="gzjl">工作经历</span><a class="fright grey">+ 添加工作经历</a></h2>
+				<section class="field">
+					<div class="resumeAdd">
+						<em class="icon"><i class="i i_plus"></i></em>
+						<h3>准确填写工作经历可以大大提高求职率哦！<p class="red">(必填项)</p></h3>
+						
+					</div>
+				</section>
+				<section class="field resumeShow">
+					<ul class="set">	
+						<li><a><i class="i i_set"></i></a></li>
+						<li><a class="js_del"><i class="i i_del"></i></a></li>
+					</ul>
+					<dl>
+						<dd class="grey">2012/10  --  至今</dd>
+						<dd>北京天宇朗通通信设备有限公司  |  产品专员</dd>
+						<dd class="grey">互联网/电子商务</dd>
+						<dd>
+							负责与用户沟通合作，了解用户需求，调动引导用户行为
+							针对不同用户群，对产品进行相应活动策划，提升用户黏性与重复访问率
+							针对新上线阶段产品，进行活动策划，以及活动执行
+							配合市场活动，带动网站人气扩展，提升网站品牌知名度
+							分析用户需求，根据需求调整及优化产品
+							官方微博互动
+						</dd>
+					</dl> 
+				</section>
+				<h2 class="tt ml10 mr10 mt15"><span id="xmjy">项目经验</span><a class="fright grey">+ 添加项目经验</a></h2>
+				<section class="field">
+					<div class="resumeAdd">
+						<em class="icon"><i class="i i_plus"></i></em>
+						<h3>准确填写项目经验可以大大提高求职率哦！</h3>	
+					</div>
+				</section>
+				<section class="field resumeShow">
+					<ul class="set">	
+						<li><a><i class="i i_set"></i></a></li>
+						<li><a class="js_del"><i class="i i_del"></i></a></li>
+					</ul>		
+					<dl>
+						<dd class="grey">2012/10  --  至今</dd>
+						<dd>北京天宇朗通通信设备有限公司  |  产品专员</dd>
+						<dd>
+							负责与用户沟通合作，了解用户需求，调动引导用户行为
+							针对不同用户群，对产品进行相应活动策划，提升用户黏性与重复访问率
+							针对新上线阶段产品，进行活动策划，以及活动执行
+							配合市场活动，带动网站人气扩展，提升网站品牌知名度
+							分析用户需求，根据需求调整及优化产品
+							官方微博互动
+						</dd>
+					</dl> 
+				</section>										
+				<h2 class="tt ml10 mr10 mt15"><span id="jybj">教育背景</span><a class="fright grey">+ 添加教育背景</a></h2>
+				<section class="field">
+					<div class="resumeAdd">
+						<em class="icon"><i class="i i_plus"></i></em>
+						<h3>准确填写教育背景可以大大提高求职率哦！<p class="red">(必填项)</p></h3>
+					</div>
+				</section>
+				<section class="field resumeShow">
+					<ul class="set">	
+						<li><a><i class="i i_set"></i></a></li>
+						<li><a class="js_del"><i class="i i_del"></i></a></li>
+					</ul>		
+					<dl>
+						<dd class="grey">2012/10  --  至今</dd>
+						<dd>北京大学 | 计算机科学与技术 | 本科</dd>
+					</dl> 
+				</section>
+				<h2 class="tt ml10 mr10 mt15"><span id="zwms">自我描述</span><a class="fright grey"><i class="i i_pen"></i> 修改基本资料</a></h2>
+				<section class="field">
+					<div class="resumeAdd">
+						<em class="icon"><i class="i i_plus"></i></em>
+						<h3>准确填写自我描述可以大大提高求职率哦！</h3>
+						
+					</div>
+				</section>
+				<section class="field resumeShow">	
+					<dl>
+						<dd>本人工作认真负责，能吃苦耐劳，积极进取，能承受一定的压力。</dd>
+					</dl> 
+				</section>	
+				<h2 class="tt ml10 mr10 mt15"><span id="zpzs">作品展示</span><a class="fright grey">+ 添加作品展示</a></h2>
+				<section class="field">
+					<div class="resumeAdd">
+						<em class="icon"><i class="i i_plus"></i></em>
+						<h3>准确填写作品展示可以大大提高求职率哦！</h3>
+					</div>
+				</section>
+				<section class="field resumeShow" name="maodian">
+					<ul class="set">	
+						<li><a><i class="i i_set"></i></a></li>
+						<li><a class="js_del"><i class="i i_del"></i></a></li>
+					</ul>		
+					<dl>
+						<dd>www.baidu.com</dd>
+						<dd>描述描述描述</dd>
+					</dl> 
+				</section>				
+			</div>
+		</div>
+		<footer class="page_ft">
+			<p>电脑版  |  移动版</p>
+			<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+		</footer>
+	</div>
+</div>
+<div class="mask" style="display:none"></div>
+<div class="dialog" style="display:none">
+	<h3>提示</h3>
+	<div class="bordertgrey mt10"></div>
+	<p class="mt20">确定要删除吗？</p>
+	<div class="set ml10 mt20">
+		<a class="btn_orange_1">确定</a>
+		<a class="btn_grey_1 ml10">取消</a>
+    </div>
+</div>
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/common.js"></script>
+<script src="js/utils/chart.js"></script>
+<script src="js/utils/uploadFile.js"></script>
+<script src="js/resume.js"></script>
+</html>
+
+

@@ -1,0 +1,149 @@
+@import "var";
+
+div {
+  &.hdtop {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid @green;
+
+    p {
+      width: 990px;
+      margin: 0 auto;
+      height: 34px;
+      line-height: 34px;
+      overflow: hidden;
+      zoom: 1;
+      
+      a {
+        color: #666666;
+      }
+
+      em {
+        color: @grey_cc;
+        margin: 0 10px;
+        vertical-align: 1px;
+      }
+
+      i.submission {
+        margin-right: 5px;
+        vertical-align: -1px;
+      }
+    }
+  }
+
+  &.search {
+    overflow: hidden;
+    zoom: 1;
+    width: 990px;
+    margin: 0 auto;
+    padding: 15px 0;
+    
+    a {
+      &.logo {
+        display: block;
+        float: left;
+
+        img {
+          width: 157px;
+          height: 40px;
+        }
+      }
+
+      &.submission {
+        float: right;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 10px 0 50px;
+        border: 1px solid @green;
+        background: url(../images/tougao.jpg) no-repeat 10px 7px;
+        color: @def;
+        font-size: 16px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    
+    p.explain {
+      width: 450px;
+      float: left;
+      color: @grey_99;
+      font-size: 16px;
+      margin-top: 23px;
+      line-height: 14px;
+    }
+
+    div {
+      float: right;
+      border: 1px solid @grey_cc;
+      border-width: 1px 1px 1px 2px;
+      border-left-color: #e1e1e1;
+
+      input.searchipt {
+        width: 280px;
+        height: 14px;
+        line-height: 14px;
+        padding: 10px 0 10px 10px;
+        vertical-align: middle;
+      }
+
+      input.sub {
+        width: 20px;
+        height: 20px;
+        background: url(../images/icons.png) no-repeat left top;  
+        vertical-align: middle;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+
+      a {
+        display: inline-block;
+        zoom: 1;
+        width: 42px;
+        line-height: 0;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+header.globlenav {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+
+  div {
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+
+    & > a {
+      float: left;
+      padding-top: 15px;
+    }
+
+    nav {
+      float: right;
+
+      a {
+        display: inline-block;
+        width: 90px;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px;
+        color: @def;
+        .transition(all .3s ease);
+
+        &:hover, &.current {
+          color: #fff;
+          background-color: #7cb228;
+          text-decoration: none;
+        } 
+      }
+    }
+  }
+}

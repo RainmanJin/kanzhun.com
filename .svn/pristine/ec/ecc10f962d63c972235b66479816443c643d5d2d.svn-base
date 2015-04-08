@@ -1,0 +1,81 @@
+require.config({
+    baseUrl: '/js/site',
+    paths: {
+        u: '../utils',
+        c: '.'
+    }
+});
+
+require(['c/user_response', 'c/widgets', 'u/validator'],function(user_response){
+	$(function(){
+
+    //鼠标滑过点评列表分数详情(优化)
+    $('span.js_hover_gd').on('mouseenter',function(){
+      var _t=$(this);
+      _t.siblings('.grade_detail').show().end().next().addClass('fronts_a_hover');
+    }).on('mouseleave',function(){
+      var _t=$(this);
+      _t.siblings('.grade_detail').hide().end().next().removeClass('fronts_a_hover');
+    });
+    $('span.js_hover_gd').next().on('mouseenter', function(){
+      $(this).siblings('.grade_detail').show().end().addClass('fronts_a_hover');
+    }).on('mouseleave', function(){
+      $(this).siblings('.grade_detail').hide().end().removeClass('fronts_a_hover');
+    });
+
+    //评论弹窗
+    var comment_pop = $('#comment_pop'),
+        shortViewContent = $('#shortViewContent'),
+        shortViewPrompt = $('#shortViewPrompt');
+    $('#js_cmp_comment').on('click', 'a.js_comment_pop', function(){
+      $.maskUI.open({
+        elem: comment_pop
+      });
+
+      //输入评论信息计数
+      shortViewContent.on('keyup', function(e){
+        e.stopPropagation();
+        var remain = this.value.length - 300;
+        if(remain <= 0){
+          shortViewPrompt.html('您还可以输入<strong class="ok">' + Math.abs(remain) + '</strong>字');
+          $('#shortreviewForm input[type=submit]').prop('disabled', false);
+        }else{
+          shortViewPrompt.html('您已超出输入<strong class="err">' + remain + '</strong>字');
+          $('#shortreviewForm input[type=submit]').prop('disabled', true);
+        }
+      });
+
+      $('#comment_pop_frm').ajaxForm({
+        selector: 'textarea',
+        validate: function(components){
+          if($.trim(shortViewContent.val()) === ''){
+            shortViewContent.addClass('shine');
+            return false;
+          }else{
+            return true;
+          }
+        },
+        dataType: 'html',
+        beforeSend: function(){
+          shortViewContent.val('');
+          shortViewPrompt.html('您还可以输入<strong class="ok">300</strong>字');
+        },
+        success: function(ret, components){
+          if(ret){
+            //$('#reviewsWrapper').prepend(ret);
+          }
+        }
+      });
+    });
+
+    //分享
+    var shareComments = user_response.share();
+    shareComments.build({
+      selectors: 'a.share',
+      config: function(){
+        $('#shareTextHid').val('有人点评了【'+ $('#companyName').html() +'】，说这里“'+ $(this).data('desc') +'”，快来看看吧！http://'+ window.location.host + $(this).data('url') +' #看准网#@看准 ');
+      }
+    });
+
+	});
+});

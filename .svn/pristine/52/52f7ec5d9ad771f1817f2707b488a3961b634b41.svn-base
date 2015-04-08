@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>实习生</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget-v2.css" />
+  <link rel="stylesheet" href="../css/intern/intern.css" />
+</head>
+
+<body>
+
+<section class="ps_header clearfix">
+  <div class="clearfix">
+    <form action="/companyl/search/" method="get" id="minisearchForm">
+      <input id="MSSQType" value="2" type="hidden">
+      <input name="stype" id="MSSSType" value="" type="hidden">
+      <dl class="select ps_salary_slt" id="minisearchS">
+        <dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly"><div></div><span class="btn"><i></i></span></dt>
+        <dd>
+          <a href="/jobl/p/">职位</a>
+          <a href="/companyl/search/">公司</a>
+          <a href="/salaryl/search/">工资</a>
+          <a href="/interviewl/search/">面试</a>
+        </dd>
+      </dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value=""><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" autocomplete="off"><input type="hidden" id="cityCode" name="cityCode" value=""><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索"></span>
+    </form>
+  </div>
+</section>
+
+<div class="container clearfix intern-wrap">
+  <div class="intern-tt"><strong>实习生档案</strong></div>
+
+  <div class="employ-form-wrap">
+    <form action="#" class="form-def employ-form">
+      <div class="intern-tt intern-tt-s"><strong>基本资料</strong></div>
+      <ul>
+        <li>
+          <label class="def"><em>*</em> 真实姓名</label> <input type="text" class="ifd" name="" maxlength="30" value="" placeholder="" >
+          <p class="err" data-msg="请输入真实姓名！" style="display: block">请输入真实姓名</p>
+        </li>
+
+        <li>
+          <label class="def"><em>*</em> 性别</label>
+          <p class="f-def-radio">
+            <input type="radio" name="gender" id="male" class="mr10" value="1" checked="checked"><label for="male">男</label>
+            <input type="radio" name="gender" id="female" class="ml15 mr10" value="2"><label for="female">女</label>
+          </p>
+        </li>
+
+        <li>
+          <label class="def"><em>*</em> 实习意向</label> <input type="text" class="ifd" name="" maxlength="30" value="" placeholder="请填写您期望的职位" >
+          <p class="err" data-msg="请输入实习意向！" ></p>
+        </li>
+
+        <li>
+          <label class="def"><em>*</em> 期望行业</label>
+          <dl class="select select_s">
+            <dt>
+              <input type="hidden" name="" value="" class="v" data-necessary="1">
+              <input type="button" name="" value="年" readonly="readonly"><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+              <a href="javascript:;" rel="nofollow" data-val="7">1</a>
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <label class="def"><em>*</em> 实习时间</label>
+          <dl class="select select_s">
+            <dt>
+              <input type="hidden" name="" value="" class="v" data-necessary="1">
+              <input type="button" name="" value="年" readonly="readonly"><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+              <a href="javascript:;" rel="nofollow" data-val="7">1</a>
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <label class="def"><em>*</em> 联系邮箱</label> <input type="text" class="ifd" name="" maxlength="30" value="" >
+          <p class="err" data-msg="请输入联系邮箱！" ></p>
+        </li>
+      </ul>
+
+      <div class="intern-tt intern-tt-s"><strong>教育经历</strong></div>
+      <ul>
+        <li>
+          <label class="def"><em>*</em> 学校名称</label> <input type="text" class="ifd" name="" maxlength="30" value="" placeholder="如：北京大学" >
+          <p class="err" data-msg="请输入实习意向！" ></p>
+        </li>
+
+        <li>
+          <label class="def"><em>*</em> 学历</label>
+          <dl class="select select_s">
+            <dt>
+              <input type="hidden" name="" value="" class="v" data-necessary="1">
+              <input type="button" name="" value="请选择" readonly="readonly"><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+              <a href="javascript:;" rel="nofollow" data-val="7">1</a>
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <label class="def"><em>*</em> 专业名称</label> <input type="text" class="ifd" name="" maxlength="30" value="" placeholder="专业名称" >
+          <p class="err" data-msg="请输入专业名称！" ></p>
+        </li>
+
+        <li>
+          <label class="def"><em>*</em> 时间</label>
+          <dl class="select select_s select-short">
+            <dt>
+              <input type="hidden" name="" value="" class="v" data-necessary="1">
+              <input type="button" name="" value="年" readonly="readonly"><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+              <a href="javascript:;" rel="nofollow" data-val="7">1</a>
+            </dd>
+          </dl>
+          <span class="f-d-dash">--</span>
+          <dl class="select select_s select-short">
+            <dt>
+              <input type="hidden" name="" value="" class="v" data-necessary="1">
+              <input type="button" name="" value="年" readonly="readonly"><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+              <a href="javascript:;" rel="nofollow" data-val="7">1</a>
+            </dd>
+          </dl>
+          <p class="err" data-msg="请选择工作年限！" style="display: block">请选择工作年限</p>
+        </li>
+      </ul>
+
+      <div class="intern-tt intern-tt-s"><strong>自我介绍</strong></div>
+      <ul>
+        <li class="auto_h">
+          <label class="def" ></label>
+          <textarea name=""  rows="5" ></textarea>
+          <p class="err" data-msg="请输入职位描述！"></p>
+        </li>
+        <li>
+          <label class="def"><em>*</em> 验证码</label>
+          <img src="/captcha/?randomKey=${randomKey}" title="看不清？点击换一张" height="35" class="ml20" />
+          <input type="text" class="ifd ifd-short" name="captcha" placeholder="请输入验证码" maxlength="4"  />
+        </li>
+        <li class="employ-submit">
+          <label class="def"></label>
+          <input type="submit" value="保存" class="btn_o_l">
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

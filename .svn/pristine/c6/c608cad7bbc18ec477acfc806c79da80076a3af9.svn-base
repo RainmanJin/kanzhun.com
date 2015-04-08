@@ -1,0 +1,114 @@
+@import "../common/var";
+section.bottomFix{
+	position: fixed;
+	width: 100%;
+	padding:10px; 
+	bottom: 0;
+	.bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #333;
+		opacity: .7;
+		filter: alpha(opacity=70);
+		z-index: 1;
+	}
+	.content{
+		position: relative;
+		z-index: 2;
+		margin: 0 auto;
+		width: 990px;
+		.l_a{
+			float: left;
+			padding-left: 250px;
+			a{
+				margin-right:5px;
+			}
+		}
+		.r_a{
+			float: right;
+			a{
+				margin-right:5px;
+			}
+		}
+		.choose{
+			padding-left: 275px;
+			position: relative;
+			.h{
+				font-size: 18px;
+				color: #fff;
+				text-align: left;
+			}
+			ul{
+				margin-top: 10px;
+				float: left;
+				width: 550px;
+				li{
+					float: left;
+					margin: 0 10px 10px 0;
+				}
+			}
+			.p{
+				clear: both;
+				text-align: left;
+				color: #fff;
+			}
+			.skip{
+				position: absolute;
+				top: 5px;
+				right: 90px;
+				color: #fff;
+			}
+		}
+	}
+
+	.reasons {
+		width: 740px;
+		padding-left: 250px;
+    display: none;
+
+		p {
+			&.reasons_tt {
+				font-size: 16px;
+				color: #fff;
+        padding: 10px 0;
+
+				a.skip {
+					float: right;
+					padding: 7px 100px 0 0;
+					font-size: 12px;
+					color: #fff;
+				}
+			}
+
+			.otherrson {
+				color: #fff;
+			}
+		}
+
+		.select_point {
+
+			a {
+				display: inline-block;
+				zoom: 1;
+				width: 8em;
+				height: 30px;
+				line-height: 30px;
+				padding: 0 15px;
+				margin: 0 10px 10px 0;
+				background-color: #ededed;
+				text-align: center;
+				color: @grey_99;
+        cursor: pointer;
+
+				&:hover {
+          background-color: @green;
+          color: #ffffff;
+          text-decoration: none;
+				}
+			}
+		}
+	}
+}

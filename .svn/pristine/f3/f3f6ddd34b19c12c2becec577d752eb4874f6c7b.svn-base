@@ -1,0 +1,34 @@
+div.co_header {
+  background-color: #fafafa;
+}
+div.co_header .ch_t {
+  font-size: 24px;
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  margin: 0 -15px;
+}
+div.co_header .ch_t a {
+  margin-top: 10px;
+  font-size: 14px;
+}
+div.co_header dl.ch_c {
+  overflow: hidden;
+  padding: 20px 0;
+}
+div.co_header dl.ch_c dt {
+  float: left;
+  width: 98px;
+  height: 98px;
+  border: 1px solid #e7e7e7;
+}
+div.co_header dl.ch_c dt img {
+  width: 98px;
+  height: 98px;
+}
+div.co_header dl.ch_c dd {
+  margin: 20px 0 0 115px;
+}
+div.co_header dl.ch_c dd .f_h {
+  font-size: 22px;
+}

@@ -1,0 +1,15 @@
+@import "common/var";
+@import "modules/reset";
+@import "common/effect";
+@import "modules/header";
+@import "modules/component";
+@import "../components/select/select";
+@import "modules/paging-v2";
+@import "modules/footer";
+@import "modules/company/cube_ugc";  //立体ugc
+@import "modules/links";
+@import "modules/select"; //新加的大下拉框
+@import "modules/sidebar";
+@import "modules/ugc/ugc_dialog";  //点评弹框
+@import "../components/floatword/floatword";   //飘字
+

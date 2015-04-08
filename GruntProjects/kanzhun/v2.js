@@ -1,0 +1,147 @@
+module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    less:{
+        build: {
+            options: {
+                paths: ['src/v2/css/'],
+                //yuicompress: true
+                cleancss: true
+            },
+            files: [
+                {
+                    expand: true,
+                    cwd: 'src/v2/css/',
+                    src: ['**/**/*.less'],
+                    dest: 'build/v2/css/',
+                    ext: '.css'
+                }
+            ]
+        }
+    },
+
+    uglify: {
+      my_target: {
+        files: [{
+          expand: true,
+
+          //为了合并时不影响到v1下面的JS
+          cwd: 'src/v2/js',
+          src: '**/**/*.js',
+          dest: 'build/v2/js'
+        }]
+      }
+    },
+
+    requirejs: {
+      compile: {
+        options:{
+          appDir: 'src/v2/js/',
+          baseUrl: './',
+          paths: {
+            highcharts: 'empty:',
+            u: '../../js/utils',
+            c: '../../js/site',
+            comp: '../../components',
+            v2: '.'
+          },
+          dir: 'build/v2/js',
+          optimize: 'uglify',
+
+          //指定需要合并依赖模块
+          modules: [
+            {
+              name: 'company/company',
+              exclude: ['c/widgets','c/auth_dialog',  'c/general']
+            },
+            {
+              name: 'company/view',
+              exclude: ['c/widgets','c/auth_dialog',  'c/general']
+            },
+            {
+              name: 'company/review',
+              exclude: ['c/widgets','c/auth_dialog', 'c/general']
+            },
+            {
+              name: 'ugc/main-complete',
+              exclude: ['c/widgets','c/auth_dialog']
+            },
+            {
+              name: 'ugc/ugc-salary',
+              exclude: ['c/widgets','c/auth_dialog', 'u/validator']
+            },
+            {
+              name: 'ugc/ugc_common',
+              exclude: ['c/widgets','u/validator']
+            },
+            {
+              name: 'ugc/ugc_review',
+              exclude: ['c/widgets','c/auth_dialog']
+            },
+            {
+              name: 'ugc/ugc_interview',
+              exclude: ['c/widgets','c/auth_dialog']
+            },
+            {
+              name: 'search/search-company',
+              exclude: ['c/widgets','c/auth_dialog']
+            },
+            {
+              name: 'search/search-interview',
+              exclude: ['c/widgets','c/auth_dialog']
+            },
+            {
+              name: 'search/search-jobs',
+              exclude: ['c/widgets','c/auth_dialog','c/company/salary_desc']
+            },
+            {
+              name: 'search/search-salary',
+              exclude: ['c/widgets','c/auth_dialog', 'c/company/salary_desc']
+            },
+            {
+              name: 'job/job-detail',
+              exclude: ['c/widgets','c/auth_dialog']
+            }
+          ]
+        }
+      }
+    },
+
+
+    ejs: {
+      all: {
+        options: {
+          //修改生成的html的CSS路径
+          previewUrl: '../../..'
+        },
+        cwd: 'src/v2/ejs',
+        src: ['**/*.ejs'],
+        dest: 'src/v2/html/',
+        expand: true,
+        ext: '.html'
+      }
+    },
+
+    watch: {
+      files: ['**/*'],
+      tasks: ['e']
+    }
+  });
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-ejs');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  grunt.registerTask('u', ['uglify']);
+  grunt.registerTask('r', ['requirejs']);
+  grunt.registerTask('css', ['less']);
+  grunt.registerTask('e', ['ejs']);
+  grunt.registerTask('w', ['watch']);
+  grunt.registerTask('all', ['requirejs', 'less']);
+};

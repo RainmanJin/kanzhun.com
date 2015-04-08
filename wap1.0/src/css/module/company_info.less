@@ -1,0 +1,87 @@
+@import "../common/var";
+dl.co_info{
+	overflow: hidden;
+	padding: 10px;
+	background-color: #fff;
+
+	dt{
+		width: 68px;
+		height: 68px;
+		border: 1px solid @grey_s;
+		line-height: 68px;
+		float: left;
+		font-size: 0;
+
+
+		img{
+			width: 68px;
+			vertical-align: middle;
+		}
+	}
+
+	dd{
+		margin-left: 80px;
+		line-height: 1.5;
+		padding-top: 10px;
+	}
+
+	h1{
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.5;
+		margin-right: 70px;
+	}
+
+	p{
+		font-size: 12px;
+		color: @grey;
+		a{
+			height: 18px;
+			display: inline-block;
+			float: right;
+			color:#228eba;
+			i{
+				margin-right:2px;
+			}
+		}
+		em{
+			color: #ccc;
+		}
+	}
+}
+/*跟icons.less重复了,先注释掉*/
+/*
+.grade_star{
+	width: 69px;
+	height: 13px;
+	display: inline-block;
+	font-size: 0;
+	vertical-align: middle;
+	overflow: hidden;
+	background: transparent url(../../images/m_grade.png) no-repeat -2px 0;
+	.background-size(100%);
+
+	i{
+		height: 13px;
+		float: left;
+		background: transparent url(../../images/m_grade.png) no-repeat 0 -13.5px;
+		.background-size(auto 26px);
+
+		&.s_1{
+			width: 13px;
+		}
+		&.s_2{
+			width: 27px;
+		}
+		&.s_3{
+			width: 41px;
+		}
+		&.s_4{
+			width: 54px;
+		}
+		&.s_5{
+			width: 69px;
+		}
+	}
+}
+*/

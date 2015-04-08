@@ -1,0 +1,83 @@
+@import "../common/var";
+
+.form-def{
+
+  li{
+    height: 55px;
+    position: relative;
+
+    &.auto_h{
+      height: auto;
+      overflow: hidden;
+      zoom: 1;
+
+      p.err{
+        top: auto;
+        bottom: 4px;
+      }
+    }
+  }
+
+  .select{
+    float: left;
+    width: 100px;
+    z-index: 2;
+  }
+
+  .f-def-radio{
+    line-height: 35px;
+    float: left;
+    input{
+      vertical-align: -2px;
+    }
+  }
+
+  .f-d-dash{
+    width: 80px;
+    float: left;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .def{
+    width: 5em;
+    text-align: right;
+    float: left;
+    margin-right: 15px;
+    height: 35px;
+    line-height: 35px;
+
+    em{
+      color: @red;
+    }
+  }
+
+  .ifd{
+    border: 1px solid #cfcfcf;
+    border-width: 2px 1px 1px 2px;
+    float: left;
+    font-size: 14px;
+    line-height: 1em;
+  }
+
+  textarea{
+    width: 264px;
+    float: left;
+    border: 1px solid #cfcfcf;
+    border-width: 2px 1px 1px 2px;
+    padding: 5px 10px;
+    line-height: 1.8em;
+    resize: none;
+    margin-bottom: 25px;
+  }
+
+  p.err{
+    clear: both;
+    color: #d60000;
+    padding-top: 2px;
+    position: absolute;
+    top: 34px;
+    left: 7em;
+    display: none;
+  }
+}

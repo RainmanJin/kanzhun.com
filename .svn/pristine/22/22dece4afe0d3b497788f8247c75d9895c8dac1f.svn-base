@@ -1,0 +1,169 @@
+@import "common/var";
+@import "common/reset";
+@import "common/common";
+
+body{
+}
+
+.wrapper{
+}
+
+header{
+  img{
+    width: 100%;
+  }
+}
+section{
+  &.content{
+    padding: 10px;
+    
+    h1{
+      color: @red;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    h2{
+      text-align: center;
+      font-size: 16px;
+
+      strong{
+        color: @red;
+        font-size: 30px;
+      }
+    }
+    
+    h3{
+      font-size: 20px;
+      color: @red;
+      text-align: center;
+    }
+
+    p{
+      &.bd{
+        font-size: 16px;
+        color: #333;
+        padding: 15px 0;
+        border-bottom: 1px dashed #f5dddf;
+        text-align: center;
+      }
+    }
+  }
+}
+
+form.phone{
+  p{
+    &:nth-of-type(1){
+      font-size: 16px;
+      font-weight: bold;
+
+      em{
+        font-size: 14px;
+        color: @red;
+        display: none;
+      }
+    }
+
+    &:nth-of-type(2){
+      padding: 10px 0 15px;
+      input{
+        width: 100%;
+        .box-sizing();
+        padding: 0 10px;
+        border: 2px solid @red;
+        border-radius: 4px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.info{
+  margin-top: 40px;
+}
+
+ul.fellas{
+  font-size: 0;
+  text-align: center;
+  margin: 30px auto;
+
+  
+  li{
+    margin: 10px 2px;
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background: url(../images/fellas.jpg) no-repeat -44px 0;
+    .background-size(auto, 37px);
+
+    &.on{
+      background-position: 0 0;
+    }
+  }
+}
+
+.btn{
+  border: 0;
+  clear: both;
+  display: block;
+  background-color: @red;
+  padding: 10px 0;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  font: bold 20px/1.5 Arial, Helvetica, "Microsoft YaHei", STHeiti, "Droid Sans Fallback", sans-serif;
+}
+
+
+
+
+//转发提示
+.mask{
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+}
+.transmitDialog{
+  position: fixed;
+  z-index: 10;
+  top: 150px;
+  min-height: 150px;
+  left: 50%;
+  margin-left: -128px;
+  margin-top: -61px;
+  background: url(../images/oval_bg.png) no-repeat;
+  background-size: 257px;
+  width: 257px;
+  i.arrows{
+    display: inline-block;
+    background: url(../images/arrows.png) no-repeat;
+    background-size: 63px;
+    width: 63px;
+    height: 65px;
+    position: absolute;
+    top: -70px;
+    right: -5px;
+    -webkit-animation: arrowsUp 1s infinite linear;
+  }
+  p{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+  }
+}
+@-webkit-keyframes arrowsUp{
+  0%{
+    -webkit-transform: translate(0,0);
+  }
+  50%{
+    -webkit-transform: translate(10px,-10px);
+  }
+  100%{
+    -webkit-transform: translate(0,0);
+  }
+}

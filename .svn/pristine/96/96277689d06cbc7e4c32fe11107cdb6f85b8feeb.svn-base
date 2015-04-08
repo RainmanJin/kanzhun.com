@@ -1,0 +1,484 @@
+@import "common/var";
+@import "modules/company/common";
+//@import "modules/dialog";
+@import "modules-v2/dialog-v2";
+@import "noresult";
+@import "modules/share";
+@import "modules/company/financing";  //公司融资信息
+@import '../v2/css/company/piece/co-header';  //公司级页面头部样式
+
+.employee{
+	dt{
+		width: 70px;
+		float: left;
+		position: relative;
+		min-height: 920px;
+		_height: 920px;
+
+		ul{
+			&.way{
+				background-image: url(../images/way-v.jpg);
+				background-repeat: no-repeat;
+				width: 77px;
+				display: block;
+				position: absolute;
+				left: -10px;
+				top: 20px;
+				//margin-left: -485px;
+				text-align: center;
+				//padding-top: 20px;
+				line-height: 18px;
+
+				li{
+					margin-bottom: 24px;
+				}
+
+				a{
+					text-align: center;
+					color: @grey_99;
+					display: block;
+					cursor: pointer;
+
+					&:hover{
+						color: @green;
+						text-decoration: none;
+						font-weight: bold;
+					}
+					&.from{
+						width: 58px;
+						height: 58px;
+						line-height: 58px;
+						margin: 0 auto;
+					}
+
+					&.staff{
+						width: 77px;
+						height: 77px;
+						line-height: 77px;
+					}
+				}
+					
+				strong{
+					text-align: center;
+					color: @green;	
+					display: block;
+					&.from{
+						width: 58px;
+						height: 58px;
+						line-height: 58px;
+						margin: 0 auto;
+					}
+
+					&.staff{
+						width: 77px;
+						height: 77px;
+						line-height: 77px;
+					}
+				}
+
+				li.hcolor {
+					color: #7CB228;
+				}
+
+				&.fixed{
+					position: fixed;
+					left: 50%;
+					top: 45px;
+					margin-left: -485px;
+				}
+			}
+
+			&.way_from{
+				background-position: -78px 0;
+
+				li {
+					color: @green;
+				}
+			}
+
+			&.way_current{
+				background-position: -156px 0;
+			}
+
+			&.way_to{
+				background-position: 0 0;
+			}
+		}
+		
+		// li{
+		// 	font-size: 14px;
+		// 	margin-bottom: 73px;
+		// }
+		
+	}
+
+	dd{
+		padding: 15px 0;
+		zoom: 1;
+		overflow: hidden;
+		margin-left: 80px;
+	}
+
+	.btn_grey_l{
+		padding: 0 45px;
+		font-size: 17px;
+	}
+}
+
+.employee_co{
+	dd{
+		border-bottom: 1px solid @grey_e7;
+		.e_logo{
+			width: 90px;
+			height: 90px;
+			padding: 2px;
+			border: 1px solid @grey_e7;
+			float: left;
+			margin-right: 10px;
+		}
+
+		.e_headimg {
+			width: 70px;
+			height: 70px;
+			float: left;
+			margin-right: 10px;
+
+			&:hover{
+				span{
+					background-position: -75px top;
+				}
+			}
+		}
+
+		.e_info{
+			width: 105px;
+			float: left;
+			padding-top: 20px;
+
+			p{
+				border-bottom: 1px solid @grey_e7;
+				padding: 5px 0;
+				margin-bottom: 5px;
+				font-size: 15px;
+			}
+		}
+
+		.e_detail {
+			width: 440px;
+			float: left;
+			h4 {
+				font-size: 14px;
+				color: @blue;
+				font-weight: normal;
+			}
+			p.position {
+				padding: 5px 0;
+			}
+		}
+
+		ul{
+			margin-left: 220px;
+			padding-top: 15px;
+			overflow: hidden;
+			zoom:1;
+
+			&.noimg {
+				span {
+					background: transparent url(../images/employ_05.jpg) no-repeat;
+				}
+			}
+		}
+		li{
+			display: inline-block;
+			margin-left: 10px;
+			float: left;
+			width: 54px;
+			overflow: hidden;
+			white-space: nowrap;
+
+			p{
+				padding: 5px 0;
+				text-align: center;
+        width: 4em;
+
+        a{
+          .ellipsis(ellipsis);
+          display: block;
+        }
+			}
+		}
+
+		.wb{
+			position: relative;
+			display: block;
+			font-size: 0;
+			img{
+				width: 54px;
+				height: 54px;
+			}
+			span{
+				display: block;
+				width: 54px;
+				height: 54px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: transparent url(../images/circle_mask24.png) no-repeat left top;
+			}
+		}
+
+		.staff {
+			&:hover{
+				span{
+					background-position: -58px top;
+			}
+			}
+				
+		}
+
+		.e_headimg {
+			img {
+				width: 70px;
+				height: 70px;
+			}
+
+			span {
+				width: 70px;
+				height: 70px;
+				background: transparent url(../images/employ_03.png) no-repeat left top;
+			}
+
+			span.current {
+				background-position: -75px top;
+			}
+
+			// /*鼠标经过变方*/
+			// &:hover {
+			// 	span{
+			// 		opacity: 0;
+			// 		-webkit-transition: all .5s;
+			// 		-moz-transition: all .5s;
+			// 		transition: all .5s;					
+			// 	}
+			// }
+		}
+
+	}
+
+	.more_e{
+		padding: 30px 0;
+		border-bottom: 0;
+		text-align: center;
+		background: url('');
+	}
+}
+
+
+.employee_p{
+	dd {
+		background: url('');
+		&.leave {
+			background: url(../images/employee_img.jpg) no-repeat right top;
+		}
+	}
+}
+
+
+.maskui_dialog{
+	width: 700px;
+
+	.loading{
+		background-color: #fff;
+		text-align: center;
+		padding: 20px 0;
+		color: @grey_99;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.dialog_con{
+		//padding: 20px 0 0;
+	}
+}
+.wb_protriat{
+	width: 106px;
+	height: 106px;
+	position: relative;
+	span{
+		width: 106px;
+		height: 106px;
+		display: block;
+		background: url(../images/wb_mask.png) no-repeat;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+.d_share{
+	background-color: #fff;
+	padding: 30px;
+	border-bottom: 1px solid #bfbfbf;
+	overflow: hidden;
+	zoom: 1;
+
+	dt{
+		float: left;
+		width: 106px;
+		img{
+			width: 100px;
+			height: 100px;
+		}
+		a{
+			font-size: 15px;
+			display: inline-block;
+			padding: 0 10px;
+			border: 2px solid #f4cb9a;
+			border-radius: 3px;
+			margin-left: 8px;
+			color: #4c4c4c;
+		}
+		p.micro_blog {
+			a:hover {
+				border-color: #f48d19;
+				text-decoration: none;
+			}
+		}
+	}
+
+	dd{
+		margin-left: 115px;
+		line-height: 1.6em;
+
+		h4{
+			font-size: 17px;
+			padding: 5px 0;
+			border-bottom: 1px solid @grey_e7;
+			margin-bottom: 10px;
+		}
+
+		a,span{
+			margin: 0 5px;
+			color: @grey_99;
+		}
+
+		a:hover {
+			color: @green;
+			text-decoration: none;
+		}
+	}
+
+	.female{
+		width: 12px;
+		height: 12px;
+		overflow: hidden;
+		display: inline-block;
+		background: @icons no-repeat -85px -128px;
+		margin-right: 5px;
+	}
+	.male{
+		width: 12px;
+		height: 12px;
+		overflow: hidden;
+		display: inline-block;
+		background: @icons no-repeat -60px -128px;
+		margin-right: 5px;
+	}
+	span.currentcmp {
+		color: #7cb228;
+	}
+}
+
+.way_h{
+	padding: 30px 0;
+	background: #dedede url(../images/way-h.jpg) no-repeat 0 80px;
+	table{
+		width: 680px;
+	}
+	td{
+		vertical-align: middle;
+		text-align: center;
+		width: 136px;
+		padding-left: 0px;
+	}
+
+	.co{
+		td{
+			height: 115px;
+			background: url(../images/way_circle.png) no-repeat 30px 10px;
+			text-align: center;
+
+			img{
+				width: 58px;
+				margin-left: 20px;
+			}
+
+			&.first{
+				background: url(../images/way_circle.png) no-repeat right 10px;
+				img{
+					margin-left: 40px;
+				}
+			}
+
+			&.last{
+				background: url(../images/way_circle.png) no-repeat 14px 10px;
+				img{
+					margin-right: 30px;
+				}
+			}
+
+			&.mid{
+				background: url(../images/way_circle_b.png) no-repeat 20px 0;
+				img{
+					width: 72px;
+				}
+			}
+			&.nobg{
+				background: transparent url('');
+			}
+		}
+	}
+
+	.pic{
+		td{
+			padding: 5px 0;
+			line-height: 1.4em;
+			
+			p{
+				margin-left: 10px;
+				color: @grey_99;
+			}
+			&.first{
+				p{
+					margin-left: 30px;
+				}
+			}
+
+			&.last{
+				p{
+					margin-right: 30px;
+				}
+			}
+			em{
+				margin: 0 4px;
+			}
+		}
+
+		a{
+			display: inline-block;
+			font-size: 15px;
+			.ellipsis(ellipsis);
+			width: 6em;
+			line-height: 1.5em;
+		}
+	}
+
+	a.prevent{
+		color: @grey_99;
+		cursor: default;
+		&:hover{
+			color: @grey_99;
+			text-decoration: none;
+		}
+	}
+}

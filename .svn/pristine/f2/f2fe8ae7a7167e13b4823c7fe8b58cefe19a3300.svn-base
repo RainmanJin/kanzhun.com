@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>你跟对人了吗</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/follow.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <section class="content">
+    <div class="con">
+      <header class="ml10 mr10">作为职场人，你了<strong>跟对人</strong>吗<b>?</b> </header>
+
+      <div class="q" id="questions"></div>
+
+      <ul class="answers" id="answersList"></ul>
+    </div>
+  </section>
+</div>
+<script src="js/zepto.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/wx.js"></script>
+</body>
+</html>

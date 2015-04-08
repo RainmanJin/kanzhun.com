@@ -1,0 +1,14 @@
+<!--公司模块-右侧是否想要来这家公司/简介-->
+<div class="wrap_style wart_part mb15">
+    <div class="wp_c">
+        <div class="fleft"><img src="/images/v2/building.png"></div>
+        <div class="wp_r">
+            <p>基于这个公司简介</p>
+            <p>您会想到这家公司工作吗？</p>
+            <p class="mt10">
+                <a class="btn_grey_s mr10" href="javascript:;">想</a><a class="btn_grey_s mr10" href="javascript:;">可能会</a><a class="btn_grey_s" href="javascript:;">不想</a>
+            </p>
+        </div>
+    </div>
+    <p class="wp_ok none"><i class="i_ok_g_25_21 mr10"></i>感谢您的反馈！</p>
+</div>

@@ -1,0 +1,60 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+section.basis_tags_search {
+  overflow: hidden;
+
+  dl.b_t_s_nav {
+    line-height: 59px;
+    border-bottom: 1px solid #e7e7e7;
+
+    dt {
+      float: right;
+      width: 80px;
+      height: 59px;
+      text-align: right;
+    }
+
+    dd {
+      height: 60px;
+      margin-bottom: -1px;
+      background: url("@{img}/v2/hover_line.jpg") no-repeat left 58px;
+
+      a {
+        display: inline-block;
+        height: 59px;
+        color: @grey_66;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      em {
+        display: inline-block;
+        color: #e7e7e7;
+        margin: 0 15px;
+        height: 59px;
+      }
+    }
+  }
+
+  div.con {
+    overflow: hidden;
+    margin-right: -25px;
+    padding-top: 20px;
+
+    a {
+      float: left;
+      color: @grey_66;
+      white-space: nowrap;
+      margin-right: 25px;
+      padding-bottom: 15px;
+
+      &:hover {
+        text-decoration: none;
+        color: #2472b4;
+      }
+    }
+  }
+}

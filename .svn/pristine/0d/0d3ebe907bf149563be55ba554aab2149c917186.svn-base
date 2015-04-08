@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>西游记</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/xiyou.css" />
+</head>
+
+<body>
+  <header class="head">
+    <div class="headPic">
+      <img src="images/temp/img_1.jpg">
+    </div>
+    <div class="info">
+      <p class="nick">艾薇儿</p>
+      <span class="tips">我是西游记里什么角色？</span>
+    </div>
+  </header>
+  <h2 class="no_result">还没有人对你进行评价</h2>
+</body>
+<script src="js/zepto.js"></script>
+</html>

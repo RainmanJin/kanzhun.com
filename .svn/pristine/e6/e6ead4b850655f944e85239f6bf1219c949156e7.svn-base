@@ -1,0 +1,237 @@
+@import "common/var";
+@import "common/reset";
+@import "common/common";
+
+body{
+  background-color: #b0cad8;
+}
+
+.wrapper{
+  background:-webkit-gradient(radial,50% 50%,0,50% 50%,300,from(rgba(255, 255, 255, 1)),to( #b0cad8));
+}
+
+section{
+  &.content{
+    padding: 0 10px;
+
+    h2{
+      font-size: 16px;
+      padding: 10px 0 0;
+
+      img{
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+
+    .traffic{
+
+      overflow: hidden;
+
+      li{
+        .box-sizing();
+        float: left;
+        width: 20%;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        text-align: center;
+        padding-top: 30px;
+        position: relative;
+        background-color: transparent;
+
+        img{
+          position: absolute;
+          left: 2px;
+        }
+
+        &.current{
+          p{
+            background-color: #1c74a2;
+            color: #ffffff;
+          }
+        }
+
+        &:nth-of-type(1){
+          img{
+            top: 15px;
+          }
+        }
+        &:nth-of-type(2){
+          img{
+            top: 23px;
+          }
+        }
+        &:nth-of-type(3){
+          img{
+            top: 20px;
+          }
+        }
+        &:nth-of-type(4){
+          img{
+            top: 9px;
+          }
+        }
+        &:nth-of-type(5){
+          img{
+            top: 1px;
+            left: 10px;
+          }
+        }
+      }
+
+      p{
+        background-color: #fff;
+        height: 30px;
+        padding-top: 5px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+
+.time{
+  li{
+    width: 33%;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-bottom: 10px;
+
+    float: left;
+    .box-sizing();
+    text-align: center;
+
+    a{
+      display: block;
+      padding: 8px 0;
+      background-color: #fff;
+
+      &.current{
+        background-color: #1c74a2;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+
+.red_btn{
+  border: 0;
+  clear: both;
+  display: block;
+  background-color: #e6513a;
+  padding: 5px 0;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  font: bold 20px/1.5 Arial, Helvetica, "Microsoft YaHei", STHeiti, "Droid Sans Fallback", sans-serif;
+
+  img{
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+
+.ret{
+  width: 300px;
+  margin: 10px auto;
+  overflow: hidden;
+  
+  &.r1{
+    background: url(../images/1.png) no-repeat 40px 0;
+    .background-size(47px);
+  }
+
+  &.r3{
+    background: url(../images/2.png) no-repeat 15px 24px;
+    .background-size(100px);
+  }
+
+  &.r5{
+    background: url(../images/3.png) no-repeat 15px 12px;
+    .background-size(100px);
+  }
+
+  &.r4{
+    background: url(../images/4.png) no-repeat 30px 0;
+    .background-size(80px);
+  }
+
+  &.r2{
+    background: url(../images/5.png) no-repeat 24px 0;
+    .background-size(80px);
+  }
+  
+  h2{
+    text-align: center;
+    padding: 10px 0;
+    line-height: 2em;
+    
+    strong{
+      color: #e26956;
+    }
+  }
+}
+
+.msg{
+  width: 240px;
+  margin: 15px auto;
+  text-align: center;
+  background-color: rgba(255,255,255, .5);
+  padding: 20px 0;
+  border-radius: 5px;
+
+}
+
+
+//转发提示
+.mask{
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+}
+.transmitDialog{
+  position: fixed;
+  z-index: 10;
+  top: 150px;
+  min-height: 150px;
+  left: 50%;
+  margin-left: -128px;
+  margin-top: -61px;
+  background: url(../images/oval_bg.png) no-repeat;
+  background-size: 257px;
+  width: 257px;
+  i.arrows{
+    display: inline-block;
+    background: url(../images/arrows.png) no-repeat;
+    background-size: 63px;
+    width: 63px;
+    height: 65px;
+    position: absolute;
+    top: -70px;
+    right: -5px;
+    -webkit-animation: arrowsUp 1s infinite linear;
+  }
+  p{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+  }
+}
+@-webkit-keyframes arrowsUp{
+  0%{
+    -webkit-transform: translate(0,0);
+  }
+  50%{
+    -webkit-transform: translate(10px,-10px);
+  }
+  100%{
+    -webkit-transform: translate(0,0);
+  }
+}

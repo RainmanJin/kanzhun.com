@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>简历详情</title>
+	<!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+	<link rel="stylesheet" href="../../css/base.css" />
+	<link rel="stylesheet" href="../../css/manage.css" />
+  <script>
+    var require = {
+      urlArgs : "v=1234"
+    };
+  </script>
+  <script data-main="../../js/site/resume_ret" src="../../js/require.js"></script>
+</head>
+<body>
+	<header class="global">
+		<div class="header">
+			<img class="logo" src="../../images/logo.jpg"/>
+			<span class="title">企业用户专区</span>
+			<div class="user"><a href="#" class="mr15">登录</a><a href="#">注册</a></div>
+		</div>
+	</header>
+	<section class="co_header clearfix">
+		<a rel="nofollow" href="/gso36459.html" class="co_logo">
+			<img src="http://img.kanzhun.com/images/logo/20140704/96d2f08e5fe2e075d8fcdf2bf7054334.jpg" width="150" title="北汽福田汽车" alt="北汽福田汽车logo">
+			<span></span>
+		</a>
+		<div class="co_info">
+			<h2 id="companyName">北汽福田汽车</h2>
+			<p class="msg">
+				<span class="grade_star_b"> <i style="width:80px;"></i>
+				</span> <strong>3.4</strong>
+				分 <em>|</em>
+				946条信息
+			</p>
+			<p class="params">
+				汽车/摩托车 <em>|</em>
+				www.foton.com.cn/
+				<em>|</em>
+				北京
+				<em>|</em>
+				1000-9999人
+			</p>
+		</div>
+		<nav class="clearfix">
+			<a class="current">招聘管理</a>
+		</nav>
+	</section>
+	<section class="manageContent">
+		<aside class="manageLeft">
+			<a class="btn_green b" href="#">发布新职位</a>
+			<dl>
+				<dt> <i class="base letter"></i>
+					<span href="#">我收到的简历</span>
+				</dt>
+				<dd>
+					<a href="#">待处理简历</a>
+				</dd>
+				<dd>
+					<a href="#">已通知面试简历</a>
+				</dd>
+				<dd>
+					<a href="#">不合适简历</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<i class="base flag"></i>
+					<span href="#">我发布的职位</span>
+				</dt>
+				<dd class="current">
+					<a href="#">有效职位</a>
+				</dd>
+				<dd>
+					<a href="#">已下线职位</a>
+				</dd>
+			</dl>
+		</aside>
+		<div class="manageRight">
+			<h3 class="p_tt">刘备的简历</h3>
+			<div class="resume_detail">
+				<h4 class="title">基本资料</h4>
+				<p class="line"></p>
+				<div class="content">
+					<p>刘备  |  男  |  本科  |  3年工作经验  |  1988.01.01</p>
+					<p>13801234567  |  baimochen@baidu.com</p>
+					<p>我目前在职，正考虑换个新幻境</p>
+					<div class="rHeadpic">
+						<img src="http://img.kanzhun.com/images/img_cp.jpg">
+					</div>
+				</div>
+				<h4 class="title">期望工作</h4>
+				<p class="line"></p>				
+				<div class="content">
+					<p>北京 |  全职  |  5k-10k</p>
+					<p>互联网/电子商务  |  产品经理</p>
+				</div>
+				<h4 class="title">工作经历</h4>
+				<p class="line"></p>				
+				<div class="content">
+					<p class="grey_99">2012/10  --  至今</p>
+					<p>北京天宇朗通通信设备有限公司  |  电子商务部  |  产品专员</p>
+					<p class="grey_99">互联网/电子商务</p>
+					<p class="f_12">
+						负责与用户沟通合作，了解用户需求，调动引导用户行为<br>
+						针对不同用户群，对产品进行相应活动策划，提升用户黏性与重复访问率<br>
+						针对新上线阶段产品，进行活动策划，以及活动执行<br>
+						配合市场活动，带动网站人气扩展，提升网站品牌知名度<br>
+						分析用户需求，根据需求调整及优化产品<br>
+						官方微博互动<br>
+					</p>
+				</div>
+				<h4 class="title">项目经验</h4>
+				<p class="line"></p>				
+				<div class="content">
+					<p class="grey_99">2012/10  --  至今</p>
+					<p>天语app  |  产品经理</p>
+					<p class="f_12">
+						负责与用户沟通合作，了解用户需求，调动引导用户行为<br>
+						针对不同用户群，对产品进行相应活动策划，提升用户黏性与重复访问率<br>
+						针对新上线阶段产品，进行活动策划，以及活动执行<br>
+						配合市场活动，带动网站人气扩展，提升网站品牌知名度<br>
+						分析用户需求，根据需求调整及优化产品<br>
+						官方微博互动<br>
+					</p>
+				</div>	
+				<h4 class="title">教育背景</h4>
+				<p class="line"></p>				
+				<div class="content">
+					<p class="grey_99">2012/10  --  至今</p>
+					<p>北京大学  |  计算机科学与技术  |  本科</p>
+				</div>
+				<h4 class="title">语言能力</h4>
+				<p class="line"></p>				
+				<div class="content">
+					<p>日语：读写能力良好  |  听说能力一般</p>
+					<p>英语：读写能力一般  |  听说能力一般</p>
+				</div>
+				<h4 class="title">自我描述</h4>
+				<p class="line"></p>				
+				<div class="content">
+					<p>本人工作认真负责，能吃苦耐劳，积极进取，能承受一定的压力</p>
+				</div>
+				<h4 class="title">作品展示</h4>
+				<p class="line"></p>				
+				<div class="content">
+					<p>http:\\www.baidu.com</p>
+					<p>描述描述描述</p>
+				</div>																				
+			</div>
+		</div>
+	</section>
+	<section class="bottomFix">
+		<div class="bg"></div>
+		<div class="content clearfix">
+			<div class="l_a">
+			<a class="btn_green s" href="#"><i class="base print"></i></a>
+			<a class="btn_green s" href="#"><i class="base download"></i></a>
+			</div>
+			<div class="r_a">
+				<a class="btn_green m" href="#" id="resumePass">通知面试</a>
+				<a class="btn_green m" href="#" id="resumeNoPass">不合适</a>
+			</div>		
+		</div>
+		<div class="content reasons clearfix" id="resumeReasons">
+      <form action="" id="resumeRetForm" method="post">
+			<p class="reasons_tt"><a href="#" class="skip">跳过</a>请告诉我您看上他哪点了，以便以后为您推荐更合适的候选人</p>
+			<div class="select_point">
+        <a href="#">网页产品经理经理</a><a href="#">网页产品经理经理</a><a href="#">网页产品经理经理</a><a href="#">网页产品经理经理</a><a href="#">网页产品经理经理</a><a href="#">网页产品经理经理</a><a href="#">网页产品经理经理</a><a href="#">网页产品经理经理</a>
+      </div>
+        <input name="reason" type="hidden"/>
+      <p class="mt10"><em class="mr10 f_14 otherrson">其他原因</em><input type="text" class="ipt mr10"><input type="submit" class="grey_green" value="提交" ></p>
+      </form>
+		</div>
+	</section>
+
+
+  <section class="p_dialog" id="passedForm">
+    <div class="dialog_con">
+      <h3 class="poptitle">面试通知</h3>
+      <a href="javascript:;" class="dialog_close maskuiclose"></a>
+      <div class="dialog_alert">
+        <ul class="notice_con mt20">
+          <li>
+            <label for="" class="ttlabel">收件人</label><em class="f_14">123456789@qq.com</em>
+          </li>
+          <li>
+            <label for="" class="ttlabel">主题</label><input type="text" placeholder="华品博睿：产品经理面试通知" class="ipt pop_ipt">
+          </li>
+          <li>
+            <label for="" class="ttlabel">面试时间</label><input type="text" class="ipt pop_ipt">
+          </li>
+          <li>
+            <label for="" class="ttlabel">面试地点</label><input type="text" placeholder="北京朝阳区西坝河恒川公寓L01" class="ipt pop_ipt">
+          </li>
+          <li>
+            <label for="" class="ttlabel">联系人</label><input type="text" class="ipt pop_ipt">
+          </li>
+          <li>
+            <label for="" class="ttlabel">联系电话</label><input type="text" placeholder="13552100000" class="ipt pop_ipt">
+          </li>
+          <li>
+            <div class="email_con"><textarea name="" id="" cols="30" rows="10" placeholder="请您准时参加面试，如遇特殊情况请提前来电或回复邮件至：caiyaohui@techwolf.cn"></textarea></div><label for="" class="ttlabel">补充内容</label>
+          </li>
+          <li class="options">
+            <a href="javascript:;" class="btn_grey_a_s confirm_ok">确定</a>
+            <a href="javascript:;" class="grey_99 ml20 reset">取消</a>
+            <input type="reset" value="取消"  class="grey_99 ml20">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+//职位最新招聘
+div.newest_job {
+  dl.job_info {
+    overflow: hidden;
+    margin-bottom: 15px;
+
+    dt {
+      float: left;
+
+      a {
+        display: block;
+        border: 1px solid #ebebeb;
+
+        img {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+
+    dd {
+      margin-left: 58px;
+      padding-top: 2px;
+
+      & > a {
+        display: block;
+        color: @grey_66;
+        line-height: 1.8em;
+      }
+
+      p {
+        color: @grey_99;
+
+        strong {
+          color: #eb7676;
+        }
+
+        span {
+          display: block;
+          .ellipsis(ellipsis);
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  p.links_more {
+    height: 59px;
+    line-height: 59px;
+    border-top: 1px solid #e3e3e3;
+  }
+}

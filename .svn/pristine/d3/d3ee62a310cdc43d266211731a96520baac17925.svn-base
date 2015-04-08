@@ -1,0 +1,176 @@
+@import "../../common/var";
+@import "email_dialog";
+//立体ugc模块
+section.l_con{
+  position: relative;
+}
+section.f_l_con{// 给v2版结构用的
+  position: relative;
+}
+.cube_ugcEnter{
+  display: none;
+  position: absolute;
+  left: -30px;
+  i.icon_cubeugc{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("@{img}/icon_cubeugc.png") no-repeat;     
+  }
+}
+div.cube_ugc{
+  display: none;
+  background-color: #2670ad;
+  margin-bottom: 15px;
+  padding: 30px 20px 40px 40px;
+  position: relative;
+  p.h{
+    margin-top: 10px;
+  	font-size: 18px;
+  	color: #fff;
+  }
+  div.p{
+  	margin-top:20px;
+    position: relative;
+  	>a{
+  		margin-right: 10px;
+  	}
+  	a.skip{
+  		color:#fff;
+  	}
+  	.select{
+  		width: 110px;
+  		float: left;
+  		margin-right: 10px;
+  		&.month{
+  			width: 90px;
+  		}
+  	}
+  	.sbm{
+  		width:90px;
+  		height: 35px;
+  		line-height: 35px;
+  		background-color: #ffe50a;
+  		border: 0;
+  		border-radius: 3px;
+  		font-size: 16px;
+      color: @def;
+  		cursor: pointer;
+  	}
+    p.err{
+      display: none;
+      color:red;
+      position: absolute;
+      left: 0;
+      top: 40px;
+    }
+  }
+  ul.salarycon{
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 30px;
+    li{
+      margin-bottom: 20px;
+      position: relative;
+      .space{
+        float: left;
+        position: relative;
+        dl{
+          float: left;
+          width: 180px;
+        }
+      }
+      label.tt{
+        display: block;
+        float: left;
+        width: 4em;
+        margin-right: 10px;
+        height: 39px;
+        line-height: 39px;
+        text-align: right;
+      }
+      .salaryipt{
+        width: 170px;
+      }
+      p.err{
+        clear: both;
+        color: red;
+        padding-top: 2px;
+        position: absolute;
+        top: 37px;
+        left: 65px;
+      }
+      span.unit{
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        color: #000;
+      }      
+      &.addincome{
+        padding-left: 65px;
+        a{
+          color: #fff;
+        }
+        span{
+          color: red;
+        }
+      }
+      &.adddetail{
+        padding-left: 65px;
+        ul.adddetail{
+          color: #000;
+          border: 1px solid #d7d8d7;
+          width: 310px;
+          padding: 20px 20px 10px;
+          margin: 0 0 15px;
+          background-color: #fff;
+          li{
+            label.tt{
+              display: block;
+              float: left;
+              width: 5em;
+              margin-right: 10px;
+              height: 39px;
+              line-height: 39px;
+            }
+            input{
+              width: 180px;
+              padding-right: 30px;
+              &.onlyready{
+                background-color: #e5e5e5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .a_close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+   	.close{
+   		vertical-align: -2px;
+   		margin-right: 5px;
+   	}
+  } 
+}
+
+#portrait{
+  width: 550px;
+
+  .dialog_con{
+    padding: 0;
+    border: 0;
+  }
+  object{
+    float: left;
+  }
+
+  h3{
+    border-bottom: 1px solid #ccc;
+    margin: 0 15px;
+    padding: 15px 0 5px;
+  }
+}

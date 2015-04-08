@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>DEMO</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="qa">
+
+<header>CCTV对话马云</header>
+
+<div class="kz-tip test-tip">
+  完善您的信息
+</div>
+
+<section class="profile">
+  <form action="#">
+    <ul>
+      <li class="state">
+        <button class="sel" type="button" value="1">在职</button>
+        <button type="button" value="0">离职</button>
+      </li>
+
+      <li class="select">
+        <select name="">
+          <option value="1">百度</option>
+          <option value="1">SOHU</option>
+        </select>
+      </li>
+      
+      <li>
+        <input type="text" name="" placeholder="输入职位">
+      </li>
+
+      <li>
+        <input type="text" name="" placeholder="输入邮箱">
+      </li>
+    </ul>
+    <p class="f12 grey-l">如果您的提问通过票选，我们将通过邮箱通知您，在节目现场向马云提问</p>
+    <p style="margin-top:50px;"><input type="submit" value="提 交" class="btn-orange"></p>
+  </form>
+</section>
+
+
+<script src="js/lib/zepto.js"></script>
+<script>
+  var require = {
+    urlArgs : "v=2.0",
+    baseUrl: 'js/site/'
+  };
+</script>
+<script src="js/lib/require.js" data-main="q.js"></script>
+</body>
+</html>
+
+

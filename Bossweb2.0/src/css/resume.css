@@ -1,0 +1,394 @@
+body {
+  color: #ffffff;
+}
+body.mbg_1 {
+  background: url(../images/mbg_1.jpg) no-repeat fixed center top;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+body.mbg_2 {
+  background: url(../images/mbg_2.jpg) no-repeat fixed center top;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+body.mbg_3 {
+  background: url(../images/mbg_3.jpg) no-repeat fixed center top;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+body.mbg_4 {
+  background: url(../images/mbg_4.jpg) no-repeat fixed center top;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+body.mbg_5 {
+  background: url(../images/mbg_5.jpg) no-repeat fixed center top;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+body.mbg_6 {
+  background: url(../images/mbg_6.jpg) no-repeat fixed center top;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+body.mbg_7 {
+  background: url(../images/mbg_7.jpg) no-repeat fixed center top;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+body.mbg_8 {
+  background: url(../images/mbg_8.jpg) no-repeat fixed center top;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+div.r_wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+div.additional {
+  height: 65px;
+}
+section.probably {
+  height: 182px;
+  border-bottom: 2px solid #53cac3;
+}
+section.probably h1 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+section.probably div {
+  position: relative;
+}
+section.probably div a {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+section.probably div a i {
+  margin-right: 5px;
+  vertical-align: -5px;
+}
+section.probably div.user_img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 10px auto;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+section.probably div.user_img img {
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+}
+section.probably p:nth-of-type(1) {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+section.probably p:last-child {
+  text-align: center;
+}
+section.probably p:last-child span {
+  display: inline-block;
+  padding: 0 15px;
+  background-color: #676059;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+section.probably.noborder {
+  border-bottom: none;
+}
+section.bg_1 {
+  background: url(../images/bg_1.jpg) no-repeat center top;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+section.bg_2 {
+  background: url(../images/bg_2.jpg) no-repeat center top;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+section.bg_3 {
+  background: url(../images/bg_3.jpg) no-repeat center top;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+section.bg_4 {
+  background: url(../images/bg_4.jpg) no-repeat center top;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+section.bg_5 {
+  background: url(../images/bg_5.jpg) no-repeat center top;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+section.bg_6 {
+  background: url(../images/bg_6.jpg) no-repeat center top;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+section.bg_7 {
+  background: url(../images/bg_7.jpg) no-repeat center top;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+section.bg_8 {
+  background: url(../images/bg_8.jpg) no-repeat center top;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+h2.view_tt {
+  color: #53cac3;
+  font-size: 16px;
+  padding: 15px 0 10px 10px;
+}
+div.view_questions {
+  padding: 0 10px 0 16px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+div.view_questions dl {
+  border-left: 1px solid #53cac3;
+  padding: 10px 0 10px 0;
+}
+div.view_questions dl:first-child {
+  padding: 0;
+}
+div.view_questions dl dt {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px 0 -7px;
+}
+div.view_questions dl dt span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  background-color: #53cac3;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+div.view_questions dl dd {
+  margin: 0 0 0 12px;
+  position: relative;
+  top: -2px;
+}
+div.view_questions dl:last-child {
+  border: none;
+  margin-top: -13px;
+}
+section.position_mian {
+  margin: 10px 10px 0 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+section.position_mian div.bossinfo {
+  padding: 15px 15px 10px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+section.position_mian div.bossinfo h2 {
+  font-size: 16px;
+  color: #53cac3;
+  padding-bottom: 5px;
+}
+section.position_mian div.bossinfo h2 i.ipin {
+  margin: 0 5px 0 -3px;
+}
+section.position_mian div.bossinfo p {
+  padding: 0 0 5px 30px;
+}
+section.position_mian div.bossinfo p.city i {
+  margin-right: 4px;
+  vertical-align: 0;
+}
+section.position_mian div.bossinfo p.city em {
+  margin-right: 15px;
+}
+footer.po_foot {
+  z-index: 20;
+}
+footer.po_foot a {
+  background-color: #989590;
+}
+ul.r_nav {
+  overflow: hidden;
+  border-top: 1px solid #4e5255;
+}
+ul.r_nav li {
+  float: left;
+  width: 50%;
+}
+ul.r_nav li a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  text-align: center;
+  color: #848484;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-bottom: 1px solid #53cac3;
+}
+ul.r_nav li a i {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+ul.r_nav li a.current {
+  height: 35px;
+  border: none;
+  background: url(../images/mini_resume_bg.png) no-repeat center bottom;
+  -webkit-background-size: 500px 35px;
+  -moz-background-size: 500px 35px;
+  -o-background-size: 500px 35px;
+  background-size: 500px 35px;
+  color: #fff;
+}
+ul.r_nav li span {
+  display: block;
+  height: 5.5px;
+  border-bottom: 1px solid #53cac3;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+ul.r_nav li.current a {
+  color: #ffffff;
+}
+ul.r_nav li.current span {
+  height: 6.5px;
+  background: url(../images/mini_resumeimg3.png) no-repeat center top;
+  -webkit-background-size: auto 6.5px;
+  -moz-background-size: auto 6.5px;
+  -o-background-size: auto 6.5px;
+  background-size: auto 6.5px;
+  border: none;
+}
+ul.r_nav li:first-child {
+  position: relative;
+}
+ul.r_nav li:first-child em.line {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 34px;
+  width: 0;
+  overflow: hidden;
+  line-height: 0;
+  border-right: 1px solid #4e5255;
+}
+section.box_con {
+  padding-top: 10px;
+}
+section.box_con a {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+section.box_con a em {
+  display: inline-block;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+section.box_con a span {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  color: #ff5151;
+}
+section.box_con a i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+dl.p_infos {
+  padding: 15px 10px 0 10px;
+}
+dl.p_infos dt {
+  padding-bottom: 8px;
+  font-size: 16px;
+  color: #53cac3;
+}
+dl.p_infos dt span {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px;
+  margin: 0 10px 10px 0;
+  background-color: #717171;
+  color: #ffffff;
+  font-size: 12px;
+}
+dl.p_infos dd {
+  padding-bottom: 10px;
+}
+dl.p_infos dd em {
+  color: #cccccc;
+}
+ul.cmpinfo li {
+  padding: 10px 10px 10px 0;
+  border-top: 1px dashed #d7d7d7;
+}
+ul.cmpinfo li span {
+  float: left;
+  width: 35px;
+  text-align: center;
+}
+ul.cmpinfo li em.limittext {
+  display: block;
+  padding-left: 35px;
+}

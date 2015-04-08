@@ -1,0 +1,254 @@
+body {
+  background-color: #eaeaea;
+}
+div.auto_view {
+  width: 990px;
+  padding: 0 15px;
+  margin: 15px auto;
+  overflow: hidden;
+  background-color: #fff;
+}
+div.auto_view h2 {
+  font-size: 22px;
+  font-weight: normal;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+div.auto_view section.auth {
+  padding: 70px 0;
+  border-top: 0;
+  background-color: #fff;
+}
+section.auth {
+  padding: 30px 50px;
+  width: 324px;
+  margin: 0 auto;
+  text-align: left;
+  vertical-align: middle;
+  background: #eaeaea;
+}
+section.auth h3 {
+  font-size: 22px;
+  font-weight: normal;
+  height: 34px;
+  position: relative;
+}
+section.auth h3 span {
+  font-size: 16px;
+  float: right;
+  color: #999999;
+  margin-top: 5px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+section.auth h3 span i {
+  width: 20px;
+  height: 19px;
+  display: inline-block;
+  background: url('/images/auth.png') no-repeat -41px 0;
+  vertical-align: -3px;
+  *vertical-align: middle;
+  margin-left: 2px;
+}
+section.auth h3 a {
+  color: #7cb228;
+}
+section.auth h3 a.jump:hover {
+  color: #96ca46;
+}
+section.auth h3 a.dialog_close {
+  position: absolute;
+  right: -40px;
+  top: -22px;
+  background: url('/images/auth.png') no-repeat -145px -1px;
+  width: 18px;
+  height: 18px;
+  display: block;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+section.auth h3 a.dialog_close:hover {
+  background-color: #e0e0e0;
+}
+section.auth ul div {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d5d5d5 #d8d8d8 #d5d5d5 #d8d8d8;
+  height: 26px;
+  border-radius: 4px;
+  padding: 8px 0;
+  background-color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+section.auth ul div.focus {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #7cb228;
+}
+section.auth ul div.error {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d60000;
+}
+section.auth ul label {
+  width: 18px;
+  padding: 2px 12px 0 12px;
+  height: 26px;
+  border-right: 1px solid #e1e1e1;
+  float: left;
+  font-size: 0;
+}
+section.auth ul label i {
+  background-image: url('/images/auth.png');
+  background-repeat: no-repeat;
+  width: 18px;
+  display: inline-block;
+}
+section.auth ul label i.user {
+  width: 19px;
+  height: 17px;
+  margin-top: 3px;
+  background-position: 0 0;
+}
+section.auth ul label i.pwd {
+  height: 26px;
+  background-position: -21px 0;
+}
+section.auth ul .ifd {
+  border: 0;
+  background-color: transparent;
+  font-size: 14px;
+  color: #999;
+  width: 258px;
+  padding: 5px 10px;
+  margin-left: 42px;
+  display: block;
+}
+section.auth ul p.err {
+  display: none;
+  width: 122px;
+  height: 28px;
+  position: absolute;
+  font-size: 12px;
+  left: 169px;
+  top: -15px;
+  color: #d60000;
+  padding-left: 32px;
+  line-height: 22px;
+  overflow: hidden;
+  background: url('/images/auth.png') no-repeat 0 -28px;
+  z-index: 2;
+}
+section.auth ul .code div {
+  width: 220px;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  margin-top: 0;
+}
+section.auth ul .code .ifd {
+  width: 156px;
+  margin: 0;
+  background-color: #fff;
+}
+section.auth ul .code img {
+  height: 42px;
+  float: right;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+}
+section.auth .agree {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 15px;
+}
+section.auth .agree input {
+  vertical-align: -1px;
+  margin-right: 2px;
+}
+section.auth .agree a {
+  color: #7cb228;
+}
+.sys_err {
+  color: #d60000;
+  height: 16px;
+  text-align: right;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+span.middle-helper {
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  margin-right: -1px;
+  vertical-align: middle;
+}
+.auth_btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 322px;
+  height: 42px;
+  border: 0;
+  background-color: #7cb228;
+  color: #fff;
+  line-height: 42px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.auth_btn:hover {
+  background-color: #96ca46;
+  text-decoration: none;
+}
+footer.auth_footer {
+  width: 990px;
+  margin: 50px auto;
+}
+footer.auth_footer nav,
+footer.auth_footer p {
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 0;
+  color: #797979;
+}
+footer.auth_footer nav a,
+footer.auth_footer p a {
+  color: #797979;
+  margin: 0 30px 0 0;
+}
+footer.auth_footer nav a.micro_message,
+footer.auth_footer p a.micro_message {
+  position: relative;
+}
+footer.auth_footer nav a.micro_message i,
+footer.auth_footer p a.micro_message i {
+  display: none;
+}
+footer.auth_footer nav a.micro_message:hover i,
+footer.auth_footer p a.micro_message:hover i {
+  position: absolute;
+  top: -238px;
+  left: -70px;
+  display: inline-block;
+  width: 202px;
+  height: 232px;
+  background: url("/images/footer_weixin_hover.png") no-repeat center;
+}

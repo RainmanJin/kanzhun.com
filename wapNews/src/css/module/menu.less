@@ -1,0 +1,62 @@
+@import "../common/var";
+
+section.menu {
+  background-color: #fff;
+  padding-left: 10px;
+  white-space: nowrap;
+  position: relative;
+
+  .menu_wrap {
+    padding-right: 30px;
+  }
+
+  .menu_con {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    
+    p {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      a {
+        display: inline-block;
+        padding-right: 15px;
+        height: 40px;
+        line-height: 40px;
+
+        &.current {
+          color: #7cb228;
+        }
+
+        &:last-child{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .moving {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 0;
+
+    i.arrow_green {
+      width: 6px;
+      height: 11.5px;
+      margin-top: 13px;
+      display: inline-block;
+      line-height: 0;
+      font-size: 0;
+      background: transparent url('@{img_path}icon_7.png') no-repeat;
+      .background-size(6px 11.5px);
+    }
+  }
+} 

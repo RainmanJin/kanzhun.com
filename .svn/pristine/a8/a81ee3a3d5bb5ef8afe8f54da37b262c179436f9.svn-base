@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>实习生</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget-v2.css" />
+  <link rel="stylesheet" href="../css/intern/intern.css" />
+</head>
+
+<body>
+
+<section class="ps_header clearfix">
+  <div class="clearfix">
+    <form action="/companyl/search/" method="get" id="minisearchForm">
+      <input id="MSSQType" value="2" type="hidden">
+      <input name="stype" id="MSSSType" value="" type="hidden">
+      <dl class="select ps_salary_slt" id="minisearchS">
+        <dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly"><div></div><span class="btn"><i></i></span></dt>
+        <dd>
+          <a href="/jobl/p/">职位</a>
+          <a href="/companyl/search/">公司</a>
+          <a href="/salaryl/search/">工资</a>
+          <a href="/interviewl/search/">面试</a>
+        </dd>
+      </dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value=""><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" autocomplete="off"><input type="hidden" id="cityCode" name="cityCode" value=""><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索"></span>
+    </form>
+  </div>
+</section>
+
+<div class="container clearfix intern-wrap">
+  <div class="intern-tabs">
+    <a class="i-t-active" href="#">实习生展示</a>
+    <a class="i-t-no" href="#">实习职位展示</a>
+    <a class="i-t-edit" href="#"><i></i>我的实习生档案</a>
+  </div>
+
+  <div class="intern-list">
+    <ul>
+      <li>
+        <a href="#" class="btn_grey_s">查看</a>
+        <p><a href="#"><b>销售人员</b></a></p>
+        <p>北京鑫银华泰科技发展有限公司 <span class="ml20">广州</span></p>
+        <p>学历不限 <em>|</em> 实习 <em>|</em> <strong>4K-6K</strong></p>
+        <p class="mt10 grey_66">岗位描述： 1、开拓并维护银行客户关系，对需求信息进行收集、分析。 2、对客户现阶段及后期市场进行分析、报告及预测，以及...<a href="#">查看完整</a></p>
+      </li>
+      <li>
+        <a href="#" class="btn_grey_s">查看</a>
+        <p><a href="#"><b>销售人员</b></a></p>
+        <p>北京鑫银华泰科技发展有限公司 <span class="ml20">广州</span></p>
+        <p>学历不限 <em>|</em> 实习 <em>|</em> <strong>4K-6K</strong></p>
+        <p class="mt10 grey_66">岗位描述： 1、开拓并维护银行客户关系，对需求信息进行收集、分析。 2、对客户现阶段及后期市场进行分析、报告及预测，以及...<a href="#">查看完整</a></p>
+      </li>
+      <li>
+        <a href="#" class="btn_grey_s">查看</a>
+        <p><a href="#"><b>销售人员</b></a></p>
+        <p>北京鑫银华泰科技发展有限公司 <span class="ml20">广州</span></p>
+        <p>学历不限 <em>|</em> 实习 <em>|</em> <strong>4K-6K</strong></p>
+        <p class="mt10 grey_66">岗位描述： 1、开拓并维护银行客户关系，对需求信息进行收集、分析。 2、对客户现阶段及后期市场进行分析、报告及预测，以及...<a href="#">查看完整</a></p>
+      </li>
+    </ul>
+    <div class="page_wrap">
+      <div class="f_pager t-center">
+        <a href="" class="page_ctrl">&lt;&nbsp;上一页</a><a href="" class="current">1</a><span>... </span><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a><a href="">7</a><a href="">8</a><a href="">9</a><span>... </span><a href="" class="page_ctrl page_ctrl_next">&gt;&nbsp;下一页</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="intern-r">
+    <img src="../images/intern/intern-adv.jpg" width="265" height="238" >
+
+    <dl class="i-r-rcm mt20">
+      <dt>实习生热门职位</dt>
+      <dd>
+        <p><a href="#">物流助理</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+      <dd>
+        <p><a href="#">营运副总(大型连锁餐饮公司)</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+      <dd>
+        <p><a href="#">绿坞咖啡·工作人员</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+      <dd>
+        <p><a href="#">物流助理</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+      <dd>
+        <p><a href="#">营运副总(大型连锁餐饮公司)</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+      <dd>
+        <p><a href="#">绿坞咖啡·工作人员</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+      <dd>
+        <p><a href="#">物流助理</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+      <dd>
+        <p><a href="#">营运副总(大型连锁餐饮公司)</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+      <dd>
+        <p><a href="#">绿坞咖啡·工作人员</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+      <dd>
+        <p><a href="#">绿坞咖啡·工作人员</a></p>
+        <p class="grey_99">北京鑫银华泰科技发展有限公司  -  广州</p>
+      </dd>
+    </dl>
+  </div>
+</div>
+
+</body>
+</html>

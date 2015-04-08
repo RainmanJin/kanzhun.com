@@ -1,0 +1,76 @@
+header.global {
+  height: 45px;
+  background-color: #7cb228;
+  color: #fff;
+}
+header.global .header {
+  width: 990px;
+  margin: 0 auto;
+}
+header.global .header .logo {
+  float: left;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+header.global .header .title {
+  float: left;
+  font-size: 14px;
+  padding-top: 20px;
+}
+header.global .header .user {
+  float: right;
+  padding-top: 20px;
+}
+header.global .header .user a {
+  color: #fff;
+}
+header.global .header .hello {
+  text-align: right;
+  padding-top: 18px;
+}
+header.global .header .hello dl {
+  position: relative;
+  z-index: 4;
+  float: left;
+  text-align: right;
+  height: 26px;
+  cursor: pointer;
+}
+header.global .header .hello dl dt {
+  color: #fff;
+}
+header.global .header .hello dl dt i {
+  display: inline-block;
+  font-size: 0;
+  overflow: hidden;
+  width: 9px;
+  height: 5px;
+  background: url(../images/manage_icons.png) no-repeat -127px -31px;
+}
+header.global .header .hello dl dd {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 110px;
+  border: 1px solid #9a9999;
+  background-color: #fff;
+  display: none;
+  line-height: 28px;
+}
+header.global .header .hello dl dd a {
+  display: block;
+  text-align: left;
+  padding-left: 12px;
+  color: #343434;
+}
+header.global .header .hello dl dd a:hover {
+  color: #007ead;
+  text-decoration: none;
+}
+header.global .header .hello em {
+  margin: 0 10px;
+  color: #88c331;
+}
+header.global .header .hello a {
+  color: #fff;
+}

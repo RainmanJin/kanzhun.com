@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>看准出品-企业金评莓奖</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/step2.css"/>
+</head>
+<body>
+    <section class="content" id="content">
+          <div class="title">
+                <img  class="mark" src="images/title.png" alt=""/>
+                <img  class="vertical" src="images/vertical.png" alt=""/>
+                <p class="word">公司提名</p>
+         </div>
+
+         <div class="form">
+             <div class="select-wrap">
+                 <!--
+                 <select name="prize" id="prize">
+                     <option value="0" selected>请选择TA的提名奖项</option>
+                     <option value="1">永不加薪奖</option>
+                     <option value="2">压力山大奖</option>
+                     <option value="3">员工过劳奖</option>
+                     <option value="4">宫斗内耗奖</option>
+                     <option value="4">福利扣出翔奖</option>
+                 </select>
+                 -->
+                 <button id="prize" name="prize">永不加薪榜</button>
+                 <div class="down"></div>
+             </div>
+
+             <div class="center-wrap">
+                 <p class="h2">请选择提名理由(多选)</p>
+                 <div class="items actived">
+                     <div class="re-wrap">
+                         <input ka="check1" type="checkbox" name="tag" id="每到加薪日，老板就出差" form="form2" value="0">
+                         <label for="每到加薪日，老板就出差">每到加薪日，老板就出差</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check2" type="checkbox" name="tag" id="入职已1年，薪水零涨幅" form="form2" value="1">
+                         <label for="入职已1年，薪水零涨幅">入职已1年，薪水零涨幅</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check3" type="checkbox" name="tag" id="职位随便升，工资不见涨" form="form2" value="2">
+                         <label for="职位随便升，工资不见涨">职位随便升，工资不见涨</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check4" type="checkbox" name="tag" id="谈加薪已谈出恐惧症" form="form2" value="3">
+                         <label for="谈加薪已谈出恐惧症">谈加薪已谈出恐惧症</label>
+                         <p class="bg"></p>
+                     </div>
+                 </div>
+                 <div class="items ">
+                     <div class="re-wrap">
+                         <input ka="check1" type="checkbox" name="tag" id="老板开会就开骂，心脏一直吊吊着" form="form2" value="0">
+                         <label for="老板开会就开骂，心脏一直吊吊着">老板开会就开骂，心脏一直吊吊着</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check2" type="checkbox" name="tag" id="办公室太安静，电话都得嘘嘘声" form="form2" value="1">
+                         <label for="办公室太安静，电话都得嘘嘘声">办公室太安静，电话都得嘘嘘声</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check3" type="checkbox" name="tag" id="待办事项一箩筐，没人帮忙心慌慌" form="form2" value="2">
+                         <label for="待办事项一箩筐，没人帮忙心慌慌">待办事项一箩筐，没人帮忙心慌慌</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check4" type="checkbox" name="tag" id="boss挥挥手，下岗员工满街走" form="form2" value="3">
+                         <label for="boss挥挥手，下岗员工满街走">boss挥挥手，下岗员工满街走</label>
+                         <p class="bg"></p>
+                     </div>
+                 </div>
+                 <div class="items">
+                     <div class="re-wrap">
+                         <input ka="check1" type="checkbox" name="tag" id="加班加到1点半，月亮知道我在干" form="form2" value="0">
+                         <label for="加班加到1点半，月亮知道我在干">加班加到1点半，月亮知道我在干</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check2" type="checkbox" name="tag" id="工作一整天，没空拉便便......" form="form2" value="1">
+                         <label for="工作一整天，没空拉便便......">工作一整天，没空拉便便......</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check3" type="checkbox" name="tag" id="领导好几个，会议无穷多！" form="form2" value="2">
+                         <label for="领导好几个，会议无穷多！">领导好几个，会议无穷多！</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check4" type="checkbox" name="tag" id="号称下班不打卡，其实从来不下班" form="form2" value="3">
+                         <label for="号称下班不打卡，其实从来不下班">号称下班不打卡，其实从来不下班</label>
+                         <p class="bg"></p>
+                     </div>
+                 </div>
+                 <div class="items">
+                     <div class="re-wrap">
+                         <input ka="check1" type="checkbox" name="tag" id="都是我在做，都是我在错！" form="form2" value="0">
+                         <label for="都是我在做，都是我在错！">都是我在做，都是我在错！</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check2" type="checkbox" name="tag" id="皮球踢来又踢走，想要推进真难受" form="form2" value="1">
+                         <label for="皮球踢来又踢走，想要推进真难受">皮球踢来又踢走，想要推进真难受</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check3" type="checkbox" name="tag" id="今天穿小鞋，明天挨飞刀！" form="form2" value="2">
+                         <label for="今天穿小鞋，明天挨飞刀！">今天穿小鞋，明天挨飞刀！</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check4" type="checkbox" name="tag" id="山头林立，派系不绝" form="form2" value="3">
+                         <label for="山头林立，派系不绝">山头林立，派系不绝</label>
+                         <p class="bg"></p>
+                     </div>
+                 </div>
+                 <div class="items">
+                     <div class="re-wrap">
+                         <input ka="check1" type="checkbox" name="tag" id="领导话费1800，我连一毛都木有" form="form2" value="0">
+                         <label for="领导话费1800，我连一毛都木有">领导话费1800，我连一毛都木有</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check2" type="checkbox" name="tag" id="闺蜜3.8晒好礼，只能眼馋好捉急" form="form2" value="1">
+                         <label for="闺蜜3.8晒好礼，只能眼馋好捉急">闺蜜3.8晒好礼，只能眼馋好捉急</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check3" type="checkbox" name="tag" id="没有年终奖，回乡泪两行！" form="form2" value="2">
+                         <label for="没有年终奖，回乡泪两行！">没有年终奖，回乡泪两行！</label>
+                         <p class="bg"></p>
+                     </div>
+                     <div class="re-wrap">
+                         <input ka="check4" type="checkbox" name="tag" id="招聘广告吹牛皮，分红提成得1厘" form="form2" value="3">
+                         <label for="招聘广告吹牛皮，分红提成得1厘">招聘广告吹牛皮，分红提成得1厘</label>
+                         <p class="bg"></p>
+                     </div>
+                 </div>
+                 <textarea name="content" ka="text" id="" cols="30" rows="3" placeholder="我自己填..." form="form2"></textarea>
+                 <button type="submit" ka="next" class="next" form="form2">完成</button>
+             </div>
+
+             <!--<div class="center-wrap">
+                 <p class="h2">请选择提名理由</p>
+                 <div class="re-wrap">
+                     <input type="radio" name="reason" id="r1"/>
+                     <label for="r1">每次谈加薪老板就谈情怀</label>
+                     <p class="bg"></p>
+                 </div>
+                 <div class="re-wrap">
+                     <input type="radio" name="reason" id="r2"/>
+                     <label for="r2">呆满12个月0涨薪</label>
+                     <p class="bg"></p>
+                 </div>
+                 <div class="re-wrap">
+                     <input type="radio" name="reason" id="r3"/>
+                     <label for="r3">工资已无法买鸡蛋灌饼</label>
+                     <p class="bg"></p>
+                 </div>
+
+                 <textarea name="" id="" cols="30" rows="3" placeholder="我自己填..."></textarea>
+                 <a href="#" class="next">完成</a>
+
+             </div>-->
+         </div>
+        <p class="protocol">
+            <input type="checkbox" checked/>
+            参与活动即刻表明我认同并遵守<a href="rank.html">《游戏规则》</a>
+        </p>
+    </section>
+
+<section class="reason_dialog">
+    <ul>
+        <li data-val="1">
+            <img class="i" src="images/reason1.png" alt=""/>
+            <div>
+                <p class="h2">永不加班榜</p>
+                加班容易加薪难。我们要加薪，不要谈心
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+        <li data-val="2">
+            <img class="i" src="images/reason2.png" alt=""/>
+            <div>
+                <p class="h2">压力山大榜</p>
+                上班的心情比上坟还沉重……
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+        <li data-val="3">
+            <img class="i" src="images/reason4.png" alt=""/>
+            <div>
+                <p class="h2">员工过劳榜</p>
+                珍爱“绳命”，远离过劳。
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+        <li data-val="4">
+            <img class="i" src="images/reason3.png" alt=""/>
+            <div>
+                <p class="h2">宫廷内斗榜</p>
+                为什么受伤的总是我？不怕枪林弹雨，就怕站错队!
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+        <li data-val="5">
+            <img class="i" src="images/reason5.png" alt=""/>
+            <div>
+                <p class="h2">福利扣出翔榜</p>
+                没有补贴没有爱！没有奖金不发礼物就是耍流氓！
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+    </ul>
+</section>
+</body>
+<script src="js/lib/jquery-2.1.1.min.js"></script>
+<script src="js/utils/maskui.js"></script>
+<script>
+    $('#prize').on('click',function(){
+        var reasonDialog=$('section.reason_dialog');
+        $.maskUI.open({
+            elem:reasonDialog
+        });
+        reasonDialog.one('click','li',function(){
+            var _t=$(this);
+            $('#prize').html(_t.find('.h2').html()).val(_t.data('val'));
+            $.maskUI.close();
+
+            var index = _t.index();
+
+            console.log(index+"---")
+
+            $(".items").eq(index).addClass("actived").siblings(".items").removeClass("actived").find("input[type=checkbox]").removeAttr("checked")
+
+        });
+
+    });
+
+</script>
+</html>

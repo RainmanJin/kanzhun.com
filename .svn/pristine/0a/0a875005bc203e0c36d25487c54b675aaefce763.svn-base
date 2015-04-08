@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>搜索公司页面</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../../../v2/css/widget.css">
+  <link rel="stylesheet" href="../../../v2/css/search/search-jobs.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <!--<script src="/js/require.js" data-main="/v2/js/company/view.js"></script>-->
+</head>
+
+<body class="grey-bg">
+<header class="global">
+  <div class="header">
+    <a ka="head-index" href="/" class="logo"><img src="/images/logo.png" width="136" height="40"></a>
+    <nav>
+      <a ka="head-com" href="/gs.html">公司</a>
+      <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+      <a ka="head-recruit" href="/job/">招聘</a>
+      <a ka="head-interview" href="/msh/">面试</a>
+      <a ka="head-news" target="_blank" href="/news/">资讯</a>
+      <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+    </nav>
+    <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+  </div>
+</header>
+<section class="top-search">
+  <div class="top-search-form">
+    <form action="">
+      <fieldset>
+        <input type="text" name="" placeholder="搜索公司/职位">
+        <input type="submit" value="搜索">
+      </fieldset>
+      <p>
+        热搜词：
+        <a href="#">百度</a>
+        <a href="#">产品经理</a>
+        <a href="#">设计师</a>
+        <a href="#">程序员</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+<nav class="top-search-nav">
+  <a href="#" class="current">公司</a>
+  <a href="#">工资</a>
+  <a href="#">招聘</a>
+  <a href="#">面试</a>
+</nav>
+
+<div class="container-search clearfix">
+  <section class="s_l_con clearfix">
+    <div class="wrap_style plr_twenty" id="searchLeftOptions">
+<h2>热门公司：</h2>
+<div class="hot_cmp">
+  <a href="">百度<span>(54)</span></a>
+  <a href="">腾讯<span>(504)</span></a>
+  <a href="">京东<span>(50)</span></a>
+  <a href="">360<span>(58)</span></a>
+  <a href="">阿里巴巴<span>(54)</span></a>
+  <a href="">小米<span>(4)</span></a>
+  <a href="">锤子<span>(4)</span></a>
+  <a href="">美团<span>(50)</span></a>
+  <div class="s-opts-more">
+    <a href="">百度<span>(54)</span></a>
+    <a href="">腾讯<span>(504)</span></a>
+    <a href="">京东<span>(50)</span></a>
+    <a href="">360<span>(58)</span></a>
+    <a href="">阿里巴巴<span>(54)</span></a>
+    <a href="">小米<span>(4)</span></a>
+    <a href="">锤子<span>(4)</span></a>
+    <a href="">美团<span>(50)</span></a>
+  </div>
+  <div class="clear see_more">
+    <div class="C-toggler">
+      展开<i></i>
+    </div>
+  </div>
+</div>
+<h2>所在城市：</h2>
+<div class="host_city">
+  <a href="" class="links">北京</a>
+  <a href="" class="links">上海</a>
+  <a href="" class="links">天津</a>
+  <a href="" class="links">杭州</a>
+  <a href="" class="links">重庆</a>
+  <a href="" class="links">成都</a>
+  <a href="" class="links">沈阳</a>
+  <a href="" class="links">长沙</a>
+  <a href="" class="links">南京</a>
+  <a href="" class="links">兰州</a>
+  <div class="s-opts-more clear">
+    <p class="tt mb10">
+      按拼音首字母选择
+    </p>
+    <ul class="first_letter">
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>E</li>
+      <li>F</li>
+      <li>G</li>
+      <li>H</li>
+      <li>I</li>
+      <li>J</li>
+      <li>K</li>
+      <li class="current">L</li>
+      <li>M</li>
+      <li>N</li>
+      <li>O</li>
+      <li>P</li>
+      <li>Q</li>
+      <li>R</li>
+      <li>S</li>
+      <li>T</li>
+      <li>U</li>
+      <li>V</li>
+      <li>W</li>
+      <li>X</li>
+      <li>Y</li>
+      <li>Z</li>
+    </ul>
+    <a href="" class="links">兰州</a>
+    <a href="" class="links">临沂</a>
+    <a href="" class="links">连云港</a>
+    <a href="" class="links">聊城</a>
+    <a href="" class="links">临汾</a>
+    <a href="" class="links">柳州</a>
+    <a href="" class="links">洛阳</a>
+    <a href="" class="links">廊坊</a>
+    <a href="" class="links">龙岩</a>
+    <a href="" class="links">莱芜</a>
+    <a href="" class="links">丽水</a>
+    <a href="" class="links">灵宝</a>
+    <a href="" class="links">莱阳</a>
+    <a href="" class="links">临沧</a>
+    <a href="" class="links">丽江</a>
+    <a href="" class="links">凌海</a>
+    <a href="" class="links">滦南</a>
+    <a href="" class="links">辽阳</a>
+    <a href="" class="links">浏阳</a>
+    <a href="" class="links">陆丰</a>
+    <a href="" class="links">乐陵</a>
+    <a href="" class="links">六安</a>
+    <a href="" class="links">辽源</a>
+    <a href="" class="links">醴陵</a>
+    <a href="" class="links">冷水</a>
+    <a href="" class="links">江灵山</a>
+    <a href="" class="links">龙海</a>
+    <a href="" class="links">阆中</a>
+    <a href="" class="links">乐昌</a>
+    <a href="" class="links">乐山</a>
+    <a href="" class="links">娄底</a>
+    <a href="" class="links">临海</a>
+    <a href="" class="links">乐平龙口</a>
+    <a href="" class="links">老河口</a>
+    <a href="" class="links">莱州</a>
+    <a href="" class="links">廉江</a>
+    <a href="" class="links">吕梁</a>
+  </div>
+  <div class="clear see_more">
+    <div class="C-toggler">
+      展开<i></i>
+    </div>
+  </div>
+</div>
+<h2>行业领域：</h2>
+<ul class="industry_field">
+  <li>
+    <a class="default" href="javascript:;">IT/互联网<i class="i_right"></i></a>
+    <div class="more_list clearfix">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-11" href="/jobli_70-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="SNS/社交网络"><em>SNS/社交网络</em>（766）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-12" href="/jobli_105-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="智能硬件"><em>智能硬件</em>（263）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-13" href="/jobli_100-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="搜索引擎/门户网站"><em>搜索引擎/门户网站</em>（2011）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-14" href="/jobli_82-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="在线旅游"><em>在线旅游</em>（429）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-15" href="/jobli_69-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="O2O"><em>O2O</em>（3554）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-16" href="/jobli_78-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="医疗服务"><em>医疗服务</em>（849）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-17" href="/jobli_116-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="电子商务"><em>电子商务</em>（5153）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-18" href="/jobli_119-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="移动互联网"><em>移动互联网</em>（14900）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-19" href="/jobli_73-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="互联网金融"><em>互联网金融</em>（3268）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-110" href="/jobli_72-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="云计算/大数据"><em>云计算/大数据</em>（1790）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-111" href="/jobli_81-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="在线教育"><em>在线教育</em>（1538）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-112" href="/jobli_121-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="网络招聘"><em>网络招聘</em>（414）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-113" href="/jobli_120-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="网络安全"><em>网络安全</em>（180）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-114" href="/jobli_4-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="互联网"><em>互联网</em>（134337）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-115" href="/jobli_2-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="计算机软件"><em>计算机软件</em>（65524）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-116" href="/jobli_3-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="IT服务/系统集成"><em>IT服务/系统集成</em>（51468）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-117" href="/jobli_5-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="网游/手游"><em>网游/手游</em>（15900）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">电子/通信/硬件<i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-21" href="/jobli_126-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="运营商/增值服务"><em>运营商/增值服务</em>（15433）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-22" href="/jobli_1-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="计算机硬件/网络设备"><em>计算机硬件/网络设备</em>（17442）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-23" href="/jobli_6-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="通信设备"><em>通信设备</em>（15478）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-24" href="/jobli_7-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="电子/半导体/集成电路"><em>电子/半导体/集成电路</em>（15591）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">金融<i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-31" href="/jobli_9-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="银行"><em>银行</em>（15444）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-32" href="/jobli_10-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="保险"><em>保险</em>（24448）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-33" href="/jobli_84-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="基金"><em>基金</em>（70156）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-34" href="/jobli_118-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="租赁"><em>租赁</em>（1）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-35" href="/jobli_98-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="投资/融资"><em>投资/融资</em>（13147）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-36" href="/jobli_99-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="担保/典当/拍卖"><em>担保/典当/拍卖</em>（17442）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">生活服务<i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-41" href="/jobli_12-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="餐饮"><em>餐饮</em>（1388）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-42" href="/jobli_36-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="酒店"><em>酒店</em>（12303）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-43" href="/jobli_108-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="汽车租赁"><em>汽车租赁</em>（3136）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-44" href="/jobli_104-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="旅游"><em>旅游</em>（5754）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-45" href="/jobli_20-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="中介服务"><em>中介服务</em>（17906）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-46" href="/jobli_34-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="娱乐/休闲/体育"><em>娱乐/休闲/体育</em>（9335）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-47" href="/jobli_88-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="婚庆/摄影"><em>婚庆/摄影</em>（2）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-48" href="/jobli_24-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="丽人/美容/美发"><em>丽人/美容/美发</em>（12）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">汽车<i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-51" href="/jobli_110-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="汽车销售"><em>汽车销售</em>（1）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-52" href="/jobli_29-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="汽车生产"><em>汽车生产</em>（12593）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-53" href="/jobli_111-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="汽车零部件"><em>汽车零部件</em>（60）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">交通/贸易/物流 <i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-61" href="/jobli_30-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="交通/运输"><em>交通/运输</em>（7168）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-62" href="/jobli_113-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="物流/仓储"><em>物流/仓储</em>（2137）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-63" href="/jobli_21-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="贸易/进出口"><em>贸易/进出口</em>（18582）</a>
+			</span>
+    </div>
+  </li>
+</ul>
+<ul class="industry_field s-opts-more">
+<li>
+  <a class="default" href="javascript:;">专业服务<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-71" href="/jobli_17-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="咨询"><em>咨询</em>（50）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-72" href="/jobli_125-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="财务/审计/税务"><em>财务/审计/税务</em>（42936）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-73" href="/jobli_112-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="法律"><em>法律</em>（963）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-74" href="/jobli_74-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="人才服务"><em>人才服务</em>（17）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-75" href="/jobli_85-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="外包服务"><em>外包服务</em>（4282）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-76" href="/jobli_122-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="翻译"><em>翻译</em>（2）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-77" href="/jobli_71-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="专利/知识产权/商标"><em>专利/知识产权/商标</em>（2）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-78" href="/jobli_19-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="检测/认证"><em>检测/认证</em>（3480）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">广告/传媒/文化<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-81" href="/jobli_14-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="广告/公关/会展"><em>广告/公关/会展</em>（31584）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-82" href="/jobli_15-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="影视/媒体"><em>影视/媒体</em>（29053）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-83" href="/jobli_102-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="文化/艺术/出版"><em>文化/艺术/出版</em>（1869）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">房地产/建筑<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-91" href="/jobli_83-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="地产经纪/中介"><em>地产经纪/中介</em>（42）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-92" href="/jobli_13-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="物业管理/商业中心"><em>物业管理/商业中心</em>（14817）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-93" href="/jobli_97-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="建筑设计"><em>建筑设计</em>（1700）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-94" href="/jobli_94-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="工程施工"><em>工程施工</em>（4194）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-95" href="/jobli_80-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="园林景观"><em>园林景观</em>（2）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-96" href="/jobli_11-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="房地产开发"><em>房地产开发</em>（49325）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-97" href="/jobli_51-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="装修装饰"><em>装修装饰</em>（7761）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">机械/制造<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-101" href="/jobli_27-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="机械制造/机电/重工"><em>机械制造/机电/重工</em>（11509）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-102" href="/jobli_28-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="原材料及加工/模具"><em>原材料及加工/模具</em>（7731）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-103" href="/jobli_16-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="印刷/包装/造纸"><em>印刷/包装/造纸</em>（2944）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-104" href="/jobli_8-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="仪器/仪表/工业自动化"><em>仪器/仪表/工业自动化</em>（11623）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-105" href="/jobli_40-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="航空/航天"><em>航空/航天</em>（3601）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">能源/化工/环保<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-111" href="/jobli_103-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="新能源(太阳能/风能)"><em>新能源(太阳能/风能)</em>（3063）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-112" href="/jobli_43-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="环保"><em>环保</em>（9033）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-113" href="/jobli_39-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="电力/水利"><em>电力/水利</em>（8397）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-114" href="/jobli_37-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="石油/石化/化工"><em>石油/石化/化工</em>（6958）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-115" href="/jobli_38-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="矿产/地质/采掘/冶炼"><em>矿产/地质/采掘/冶炼</em>（6353）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">消费品<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-121" href="/jobli_77-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="办公用品及设备"><em>办公用品及设备</em>（2320）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-122" href="/jobli_26-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="家电"><em>家电</em>（985）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-123" href="/jobli_41-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="服装/服饰/纺织/皮革"><em>服装/服饰/纺织/皮革</em>（10669）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-124" href="/jobli_87-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="奢侈品/收藏品"><em>奢侈品/收藏品</em>（2317）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-125" href="/jobli_22-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="零售(超市)/批发"><em>零售(超市)/批发</em>（14888）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-126" href="/jobli_50-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="玩具/礼品"><em>玩具/礼品</em>（5569）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-127" href="/jobli_23-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="食品/饮料/烟酒/日化"><em>食品/饮料/烟酒/日化</em>（14053）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-128" href="/jobli_92-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="家具/家居"><em>家具/家居</em>（1449）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-129" href="/jobli_115-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="珠宝/首饰/工艺品"><em>珠宝/首饰/工艺品</em>（638）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">制药/医疗<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-131" href="/jobli_25-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="制药(生物/化学)"><em>制药(生物/化学)</em>（19192）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-132" href="/jobli_33-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="医疗器械"><em>医疗器械</em>（13111）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-133" href="/jobli_31-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="医疗卫生"><em>医疗卫生</em>（16591）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">教育/培训<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-141" href="/jobli_86-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="外语培训"><em>外语培训</em>（13）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-142" href="/jobli_76-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="其他技能培训"><em>其他技能培训</em>（31）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-143" href="/jobli_90-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="学术/科研"><em>学术/科研</em>（6406）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-144" href="/jobli_18-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="院校"><em>院校</em>（64）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">政府/非盈利机构<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-151" href="/jobli_127-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="非盈利机构"><em>非盈利机构</em>（299）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-152" href="/jobli_42-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="政府/公共事业"><em>政府/公共事业</em>（5226）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">农/林/牧/渔/其他<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-161" href="/jobli_44-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="养殖/种植/水产"><em>养殖/种植/水产</em>（5）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-162" href="/jobli_46-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="其他"><em>其他</em>（16258）</a>
+			</span>
+  </div>
+</li>
+</ul>
+<div class="clear see_more">
+  <div class="C-toggler" id="industryOthersToggler" ka="select-hangye-zhankai">
+    展开<i></i>
+  </div>
+</div>
+<h2>面试结果：</h2>
+<div class="hot_cmp">
+  <a href="">面试通过</a><a href="">感觉靠谱</a><a href="">感觉没戏</a><a href="">未通过</a>
+</div>
+</div>
+  </section>
+
+  <section class="s_r_con clearfix">
+    <dl class="wrap_style search-options">
+      <dt><a href="#">查看与 “<span>百度</span>” 相关的职位工资 &gt;</a> <strong>找到 30 个与“<span>百度</span>”相关的招聘</strong></dt>
+      <dd>
+        筛选条件：
+        <span>客服<a href="#"><i class="close_conditions"></i></a></span>
+        <span>北京<a href="#"><i class="close_conditions"></i></a></span>
+        <span>面试通过<a href="#"><i class="close_conditions"></i></a></span>
+      </dd>
+    </dl>
+
+    <div class="wrap_style mt15 search-jobs-list">
+      <div class="sparrow">
+        <dl class="clearfix spw">
+          <dt>
+            <a ka="job1-logo" href="/gso40003.html" target="_blank"><img src="http://img.kanzhun.com/images/logo/20150215/847435233c60c44bce48f2209949c5d8.jpg" title="大公国际资信评估有限公司" width="65"><span></span></a>
+<span class="grey_99">
+今天
+</span>
+          </dt>
+          <dd>
+            <h3 class="r_tt"><a ka="job1-title" href="/job/1000025593.html" target="_blank">信用评级分析师</a><i class="directsup"></i></h3>
+            <p class="jieshao">
+              <a ka="job1-comjob" href="/job/g40003.html" target="_blank">大公国际资信评估有限公司</a>
+              <em></em>
+              <span class="np_sr_grade_start vh"><i style="width:40px;"></i></span><em></em>
+              <a ka="job1-ugccount" href="/gso40003.html" target="_blank" rel="nofollow">311条信息</a><em class="grey_f3">|</em>
+              <i class="grey_99">北京</i>
+            </p>
+            <p class="request">
+              硕士
+              <em>|</em>全职
+              <em>|</em><b>6k-8k</b>
+            </p>
+            <p class="company_advantage">岗位职责：
+              1、根据公司业务需求，完成项目的分析报告和研发工作，独立完成评级报告；
+              2、从事工商企业、公用事业、金融机构、结构融资等行<span class="more">...</span><a href="/job/1000025593.html" target="_blank" rel="nofollow">查看完整</a>
+            </p>
+            <p class="sr_nav">
+              <a ka="job1-com" rel="nofollow" href="/job/tc/40003/1/" data-panel="job_c">公司</a>
+              <em class="grey_f3">|</em><a ka="job1-review" rel="nofollow" href="/job/tr/40003/1/" data-panel="job_r">点评</a>
+              <em class="grey_f3">|</em><a ka="job1-salary" rel="nofollow" href="/job/ts/40003/1/" data-panel="job_s">工资</a>
+              <em class="grey_f3">|</em><a ka="job1-interview" rel="nofollow" href="/job/ti/40003/1/" data-panel="job_i">面试</a>
+            </p>
+          </dd>
+        </dl>
+        <div class="loading"><img src="/images/loading.gif"></div>
+      </div>
+      <p class="line"></p>
+      <div class="sparrow">
+        <dl class="clearfix spw">
+          <dt>
+            <a ka="job2-logo" href="/gso710892.html" target="_blank"><img src="http://img.kanzhun.com/images/logo/20150215/7ac8ac58f8d771a46eb4de83950fe886.jpg" title="烟台欣和企业食品有限公司" width="65"><span></span></a>
+<span class="grey_99">
+今天
+</span>
+          </dt>
+          <dd>
+            <h3 class="r_tt"><a ka="job2-title" href="/job/1000025591.html" target="_blank">UI设计师</a><i class="directsup"></i></h3>
+            <p class="jieshao">
+              <a ka="job2-comjob" href="/job/g710892.html" target="_blank">烟台欣和企业食品有限公司</a>
+              <em></em>
+              <span class="np_sr_grade_start vh"><i style="width:61px;"></i></span><em></em>
+              <a ka="job2-ugccount" href="/gso710892.html" target="_blank" rel="nofollow">14条信息</a><em class="grey_f3">|</em>
+              <i class="grey_99">北京</i>
+            </p>
+            <p class="request">
+              3-5年
+              <em>|</em>本科
+              <em>|</em>全职
+              <em>|</em><b>6k-10k</b>
+            </p>
+            <p class="company_advantage">岗位职责：
+              1、负责公司产品网站（PC端和移动端）的UI设计，改版优化，更新及创新；
+              2、负责公司iOS app的UI设计，改版优化，更<span class="more">...</span><a href="/job/1000025591.html" target="_blank" rel="nofollow">查看完整</a>
+            </p>
+            <p class="sr_nav">
+              <a ka="job2-com" rel="nofollow" href="/job/tc/710892/2/" data-panel="job_c">公司</a>
+              <em class="grey_f3">|</em><a ka="job2-review" rel="nofollow" href="/job/tr/710892/2/" data-panel="job_r">点评</a>
+              <em class="grey_f3">|</em><a ka="job2-salary" rel="nofollow" href="/job/ts/710892/2/" data-panel="job_s">工资</a>
+              <em class="grey_f3">|</em><a ka="job2-interview" rel="nofollow" href="/job/ti/710892/2/" data-panel="job_i">面试</a>
+              <em class="grey_f3">|</em><a ka="job2-photo" rel="nofollow" href="/job/tp/710892/2/" data-panel="job_p">照片</a>
+            </p>
+          </dd>
+        </dl>
+        <div class="loading"><img src="/images/loading.gif"></div>
+      </div>
+      <p class="line"></p>
+      <div class="sparrow">
+        <dl class="clearfix spw">
+          <dt>
+            <a ka="job3-logo" href="/gso207882.html" target="_blank"><img src="http://img.kanzhun.com/images/logo/20141209/1ec253c1b6d6178737ebc9d490485b06.jpg" title="豆瓣网" width="65"><span></span></a>
+<span class="grey_99">
+最近3天
+</span>
+          </dt>
+          <dd>
+            <h3 class="r_tt"><a ka="job3-title" href="/job/1000025538.html" target="_blank">iOS开发工程师</a><i class="directsup"></i></h3>
+            <p class="jieshao">
+              <a ka="job3-comjob" href="/job/g207882.html" target="_blank">豆瓣网</a>
+              <em></em>
+              <span class="np_sr_grade_start vh"><i style="width:54px;"></i></span><em></em>
+              <a ka="job3-ugccount" href="/gso207882.html" target="_blank" rel="nofollow">57条信息</a><em class="grey_f3">|</em>
+              <i class="grey_99">北京</i>
+            </p>
+            <p class="request">
+              1-3年
+              <em>|</em>本科
+              <em>|</em>全职
+              <em>|</em><b>15k-25k</b>
+            </p>
+            <p class="company_advantage">职位描述:
+              开发和维护豆瓣iOS移动客户端
+              职位要求:
+              1. 熟悉 Objective-C 和 Cocoa Touch，至少经历过<span class="more">...</span><a href="/job/1000025538.html" target="_blank" rel="nofollow">查看完整</a>
+            </p>
+            <p class="sr_nav">
+              <a ka="job3-com" rel="nofollow" href="/job/tc/207882/3/" data-panel="job_c">公司</a>
+              <em class="grey_f3">|</em><a ka="job3-review" rel="nofollow" href="/job/tr/207882/3/" data-panel="job_r">点评</a>
+              <em class="grey_f3">|</em><a ka="job3-salary" rel="nofollow" href="/job/ts/207882/3/" data-panel="job_s">工资</a>
+              <em class="grey_f3">|</em><a ka="job3-interview" rel="nofollow" href="/job/ti/207882/3/" data-panel="job_i">面试</a>
+              <em class="grey_f3">|</em><a ka="job3-photo" rel="nofollow" href="/job/tp/207882/3/" data-panel="job_p">照片</a>
+            </p>
+          </dd>
+        </dl>
+        <div class="loading"><img src="/images/loading.gif"></div>
+      </div>
+    </div>
+
+
+    <div class="page_wrap mt20">
+      <div class="f_pager t-right fright">
+        <a ka="paging1" href="/gsx3131.html" class="current">1</a>
+        <a ka="paging2" href="/gsx3131p2.html" rel="nofollow">2</a>
+        <a ka="paging3" href="/gsx3131p3.html" rel="nofollow">3</a>
+        <a ka="paging4" href="/gsx3131p4.html" rel="nofollow">4</a>
+        <a ka="paging2" href="/gsx3131p2.html" data-page="2" rel="nofollow" class="p_next"><i class="p_next">&gt;</i></a>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

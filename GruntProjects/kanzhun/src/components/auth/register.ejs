@@ -1,0 +1,42 @@
+<section class="auth" id="registerDialog">
+  <h3><span>已注册, <a href="/login/" class="jump">立即登录<i></i></a></span>邮箱注册</h3>
+  <form id="registerForm" action="/register/email.json" method="post">
+    <p class="sys_err"><span></span></p>
+    <ul>
+      <li>
+        <div>
+          <label><i class="user"></i></label><input id="account" name="account" placeholder="请输入您的常用邮箱" ka="register_account" class="ifd" type="text" value=""/><input type="hidden" name="accountCheck" value="" />
+          <p class="err" data-msg="请输入您的常用邮箱！"></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label><i class="pwd"></i></label><input id="password" name="password" placeholder="输入6-14位密码，必须含数字和字母" ka="register_password" class="ifd" type="password" value="" maxlength="14"/>
+          <p class="err" data-msg="密码不能为空！"></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label><i class="pwd"></i></label><input id="confirmPassword" name="confirmPassword" placeholder="密码确认" ka="register_confirmPassword" class="ifd" type="password" value="" maxlength="14"/>
+          <p class="err" data-msg="确认密码不能为空！"></p>
+        </div>
+      </li>
+      <li class="code">
+        <img src="/captcha/?randomKey=DjVGII6iZtcJzfuoQy0mIxR1pH57xyoZ" onclick="changeAuthCode(this);" title="看不清？点击换一张" />
+        <div>
+          <input id="captcha" name="captcha" placeholder="输入验证码" ka="register_account" class="ifd" type="text" value="" maxlength="4" autocomplete="off"/>
+          <input id="randomKey" name="randomKey" type="hidden" value="DjVGII6iZtcJzfuoQy0mIxR1pH57xyoZ"/>
+          <p class="err" data-msg="请输入验证码！"><i></i></p>
+        </div>
+      </li>
+    </ul>
+    <p class="agree"><input type="checkbox" name="" id="agreeCb" checked ka="register_agree"><label for="agreeCb">同意并愿意遵守<a href="/term.html" target="_blank">《用户协议》</a></label></p>
+    <p><input type="submit" value="注 册" class="auth_btn" ka="register_btn"></p>
+  </form>
+  <aside>
+    <p>使用以下账号直接登录</p>
+    <p>
+      <a href="/connect/weibo/" target="_blank" ka="register_weibo"><i class="wb"></i></a><a href="/connect/qq/" ka="register_qq"><i class="qq"></i></a><a href="/connect/renren/" target="_blank" ka="register_renren"><i class="rr"></i></a>
+    </p>
+  </aside>
+</section>

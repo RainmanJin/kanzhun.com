@@ -1,0 +1,67 @@
+@import 'reset';
+@import 'general';
+@import 'component';
+
+.breadcrumb{
+  border-bottom: 1px solid @grey;
+  padding: 10px 0;
+  font-weight: normal;
+}
+
+.w_1200 {
+  width: 1200px;
+}
+
+.editorcon {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 20px 0 20px 20px;
+
+  ul {
+    li {
+      margin: 15px 0;
+    }
+    p {
+      &.author {
+        float: left;
+        margin-right: 20px;
+      }
+    }
+
+    input[type="checkbox"] {
+      vertical-align: middle;
+    }
+
+    textarea.summary {
+      width: 600px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      height: 150px;
+      margin-top: 10px;
+      resize: none;
+    }
+  }
+}
+
+.autocomplete-suggestions { 
+    border: 1px solid #e7e7e7; 
+    background: #FFF; cursor: 
+    default; overflow: auto; 
+
+    strong{
+        font-weight: bold;
+        color: #007ead;
+    }
+}
+.autocomplete-suggestion { 
+    padding: 5px;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+.autocomplete-selected {
+    background: #007ead; 
+    color: #fff;
+    strong{
+        color: #ffd;
+    }
+}

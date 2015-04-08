@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>比工资</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/compare_salary.css" />
+<script src="../js/utils/easypiechart.js"></script>	
+<script src="../js/site/compare_salary.js"></script>	
+</head>
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	<section class="banner_bg">
+		<div class="banner"></div>
+	</section>	
+	<section class="content">
+		<div class="info">
+			<div class="chart_pic">
+				<span class="chart" data-percent="50" id="chart">
+						<span class="percent barOrange"></span>
+				</span>	
+			</div>
+			<div class="chart_info">
+				<p>你只打败了北京互联网行业 <b class="barOrange">50%</b> 的产品经理。</p>
+				<p>兄弟你拖了全国人民的后退，你造吗？啥也不说了，赶紧换工作把，不要让你的才能被埋没！</p>
+			</div>
+		</div>
+		<div class="pk_salary">
+			<ul>
+				<li>
+					<label>工作城市</label><br>
+					<dl class="select select_s">
+						<dt>
+							<input type="hidden" value="">
+							<input type="button" value="请选择" readonly="readonly"><span class="btn"><i></i></span>
+						</dt>
+						<dd>
+							<a href="javascript:;" data-val="1">北京</a>
+							<a href="javascript:;" data-val="2">上海</a>
+						</dd>
+					</dl>		
+				</li>
+				<li>
+					<label>所在行业</label><br>
+					<dl class="select select_s">
+						<dt>
+							<input type="hidden" value="">
+							<input type="button" value="请选择" readonly="readonly"><span class="btn"><i></i></span>
+						</dt>
+						<dd>
+							<a href="javascript:;" data-val="1">行业1</a>
+							<a href="javascript:;" data-val="2">行业1</a>
+						</dd>
+					</dl>				
+				</li>
+				<li>
+					<label>职位名称</label><br>
+					<input class="ifd" type="text">						
+				</li>
+				<li>
+					<label>税前月薪</label><br>
+					<input class="ifd" type="text">					
+				</li>
+				<li>
+					<input class="btn_o_l" type="submit" value="PK工资">
+				</li>
+			</ul>
+		</div>
+		<div class="hot">
+			<div class="company">
+				<h3 class="title">想换工作吗？好公司在这里！</h3>
+				<ul>
+					<li>
+						<a class="logo" href="#" target="_blank"><img src="http://img.kanzhun.com/image/l8929.gif"></a>
+						<p class="name">智联招聘</p>
+					</li>
+					<li>
+						<a class="logo" href="#" target="_blank"><img src="http://img.kanzhun.com/image/l8929.gif"></a>
+						<p class="name">智联招聘</p>
+					</li>
+					<li>
+						<a class="logo" href="#" target="_blank"><img src="http://img.kanzhun.com/image/l8929.gif"></a>
+						<p class="name">智联招聘</p>
+					</li>
+					<li>
+						<a class="logo" href="#" target="_blank"><img src="http://img.kanzhun.com/image/l8929.gif"></a>
+						<p class="name">智联招聘</p>
+					</li>
+					<li>
+						<a class="logo" href="#" target="_blank"><img src="http://img.kanzhun.com/image/l8929.gif"></a>
+						<p class="name">智联招聘</p>
+					</li>
+					<li>
+						<a class="logo" href="#" target="_blank"><img src="http://img.kanzhun.com/image/l8929.gif"></a>
+						<p class="name">智联招聘</p>
+					</li>
+					<li>
+						<a class="logo" href="#" target="_blank"><img src="http://img.kanzhun.com/image/l8929.gif"></a>
+						<p class="name">智联招聘</p>
+					</li>
+					<li>
+						<a class="logo" href="#" target="_blank"><img src="http://img.kanzhun.com/image/l8929.gif"></a>
+						<p class="name">智联招聘</p>
+					</li>																																			
+				</ul>
+				<p class="more"><a class="blue" href="#">查看更多公司</a></p>
+			</div>
+			<div class="job">
+				<h3 class="title">想跳槽？高薪职位等你来！</h3>
+				<ul class="jobs_show">
+					<li>
+						<em>6k-8k元/月</em>
+						<a href="#">UI设计师</a><br>
+						<span>京东方现代显示技术有限公司</span>
+					</li>
+					<li>
+						<em>6k-8k元/月</em>
+						<a href="#">UI设计师</a><br>
+						<span>京东方现代显示技术有限公司</span>
+					</li>
+					<li>
+						<em>6k-8k元/月</em>
+						<a href="#">UI设计师</a><br>
+						<span>京东方现代显示技术有限公司</span>
+					</li>
+					<li>
+						<em>6k-8k元/月</em>
+						<a href="#">UI设计师</a><br>
+						<span>京东方现代显示技术有限公司</span>
+					</li>
+					<li>
+						<em>6k-8k元/月</em>
+						<a href="#">UI设计师</a><br>
+						<span>京东方现代显示技术有限公司</span>
+					</li>																				
+				</ul>
+				<p class="more"><a class="blue" href="#">查看更多职位</a></p>
+			</div>
+		</div>
+	</section>	
+</body>
+</html>

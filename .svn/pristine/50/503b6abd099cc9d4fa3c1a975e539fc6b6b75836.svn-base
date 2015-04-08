@@ -1,0 +1,330 @@
+define(function(){
+  return function(){
+
+    var $barrageFlag = $('#barrageFlag');
+    var w = $(window).width();
+    var speed = 13; //滚动速度
+    var sMyBarrageC=''; //记录我发的弹幕内容
+
+    var keepMoving = function(barrageWidth, callback){
+      var left = Math.floor(this.css('left').replace('px', ''));
+      var bw = barrageWidth || Math.floor(this.width());
+
+      //路径的距离不等于终点left的值，而是等于终点left值+屏幕宽度
+      this.animate({'left': -1 * bw}, Math.floor(bw + left) * speed, 'linear', function(){
+        $barrageFlag.data('screen', parseInt($barrageFlag.data('screen')) + 1);
+        callback();
+      });
+    };
+
+
+    var loadBarrage = function(){
+      $.delCookie('barrage');
+      $('div.barrage').stop(true).remove();
+      $.ajax({
+        type: 'get',
+        url: '/common/barrage.json',
+        data: {
+          page: $barrageFlag.data('screen')
+        },
+        beforeSend: function(){
+          $barrageFlag.data('forbidden', true);
+        },
+        success: function(ret){
+          if(ret){
+            $('body').append(ret);
+            $barrageFlag.data('forbidden', false);
+            var $barrage = $('div.barrage');
+            var bw = Math.floor($barrage.width());
+
+            //滚动一屏的速度
+            $barrage.animate({'left': -1 * bw}, {
+              duration :(bw + w) * speed,
+              easing :'linear',
+              complete:function(){
+                $barrageFlag.data('screen', parseInt($barrageFlag.data('screen')) + 1);
+                setTimeout(function(){
+                  loadBarrage()
+                }, 3000);
+              },
+              progress:function(){
+                //话题button滚到头时固定fixed
+                var sL=$('>p:first a:first',$barrage).offset().left;
+                if(sL<=0){
+                  $('.bt_topic_fixed').show();
+                }
+              }
+            });
+
+            $barrage.on('mouseenter', 'a', function(){
+              $barrage.stop(true);
+            }).on('mouseleave', 'a', function(){
+              keepMoving.call($barrage, bw, function(){
+                setTimeout(function(){
+                  loadBarrage()
+                }, 3000);
+              });
+            });
+
+            //显示关闭弹幕
+            $barrageFlag.next('div.ab-guide').delay(2000).fadeIn(function(){
+              $barrageFlag.addClass('rubberBand').one('animationend webkitAnimationEnd oAnimationEnd', function () {
+                $(this).removeClass('rubberBand');
+              });
+              $(this).delay(4000).fadeOut();
+            });
+
+            $('div.barrage>p:first a:first').after(sMyBarrageC);
+            sMyBarrageC='';
+
+          }
+        }
+      });
+    }
+
+
+    /*function should_enable_ads() {
+      var __a = $.readCookie('__a');
+      if (__a && __a.split('.').length === 8) {
+        var parts = __a.split('.');
+        // 6: how many pages visited by this user in this session
+        // 5: how many times this user visited this site;
+        if (parts[6] >= 5 || parts[5] >= 3) {
+          return false;
+        }
+      }
+      return true;
+    }*/
+
+
+    //cookie
+    //没有主动关闭的cookie 并且来过次数小于3次 打开弹幕
+
+    var $barrageFlagIcon = $barrageFlag.find('i');
+    if(!$.readCookie('barrage')){
+      setTimeout(function(){
+        loadBarrage();
+      }, 500);
+    }else{
+      $barrageFlagIcon.addClass('barrage-i-dis');
+    };
+
+
+    //开关
+
+    $barrageFlag.on('click', function(){
+      //防止重复点击
+      if($(this).data('forbidden')){
+        return;
+      }
+
+      var $barrage = $('div.barrage');
+      if($barrage.length === 0){
+        loadBarrage();
+        $barrageFlagIcon.removeClass('barrage-i-dis');
+        return;
+      }
+
+      $barrageFlag.next('span').hide();
+
+      //关闭
+      if(!$barrage.is(':hidden')){
+        $barrage.stop(true);
+        if(!$barrage.is(':animated')){
+          //$barrage.fadeOut();
+          $barrage.hide();
+          $barrageFlagIcon.addClass('barrage-i-dis');
+          $.writeCookie('barrage', '1', 100);
+        }
+
+
+      //打开
+      }else{
+        if(!$barrage.is(':animated')){
+          $barrageFlagIcon.removeClass('barrage-i-dis');
+          /*
+          $barrage.fadeIn(200, function(){
+            keepMoving.call($barrage, null, function(){
+              setTimeout(function(){
+                loadBarrage()
+              }, 3000);
+            });
+          });
+          */
+          $barrage.show();
+          keepMoving.call($barrage, null, function(){
+            setTimeout(function(){
+              loadBarrage()
+            }, 3000);
+          });
+          $.delCookie('barrage');
+        }
+      }
+    }).hover(function(){
+      var msg = $('div.barrage').is(':hidden') ? '打开弹幕' : '关闭弹幕';
+      $(this).next('div.ab-guide').html('<i class="tg"></i>' + msg).show();
+    }, function(){
+      $(this).next('div.ab-guide').hide();
+    });
+
+    //发射弹幕相关
+    $('body').on('click','.js_bt_showBarrageDialog',function(){
+      var h=''+
+        '<section class="maskui_dialog barrage_dialog ab-shoot-form" style="width: 500px;">'+
+        '<div class="dialog_con">'+
+          '<form action="/barrage/publish.json">'+
+            '<a href="javascript:;" class="dialog_close maskuiclose"></a>'+
+            '<h3>正在参与话题：# 晒晒你的年终奖</h3>'+
+            '<div class="field_set mt10 grey_99 clearfix">'+
+              '<textarea class="uta v param" style="height:87px" name="content" placeholder="你的年终奖是..." maxlength="140"></textarea>'+
+              '<p class="err" style="top:100px" data-msg="内容不能为空!"><i class="i_err"></i> </p>'+
+              '<p class="guide">你还可以输入<span node-type="num">140</span>字</p>'+
+            '</div>'+
+            '<div class="field_set mt10 mb20">'+
+              '<input class="ifd v" name="companyName" type="text" placeholder="你的公司是..." />'+
+              '<input class="param" name="companyId" type="hidden"/>'+
+              '<p class="err" data-msg="请输入并选择公司!"><i class="i_err"></i> </p>'+
+            '</div>'+
+            '<p class="mt10">'+
+              '<input class="bt_shoot" type="submit" value="确定发射"> '+
+              '<a class="bt_cancel maskuiclose ml20" href="javascript:;">取消</a>'+
+            '</p>'+
+          '</form>'+
+        '</div>'+
+        '</section>';
+      $.maskUI.open({
+        elem: $(h),
+        destroy: true,
+        pos:'absolute',
+        createCallback:function(){
+          //$('#maskOverlay').remove();
+        }
+      });
+      initAbShoot();
+    });
+    function initAbShoot(){
+      var $abShootForm=$('.ab-shoot-form');
+      var companyNameSuggest = $('[name=companyName]',$abShootForm),
+        companyNameSuggestHid = $('[name=companyId]',$abShootForm);
+      $.ajax({
+        url:'/barrage/checkcompany.json',
+        dataType:'json',
+        success:function(result){
+          if(result.rescode==1){
+            companyNameSuggest.val(result.comdata.name);
+            companyNameSuggestHid.val(result.comdata.name);
+          }
+        }
+      });
+      //发射
+      $("form",$abShootForm).validatorAll({
+        elems:".v",
+        prompt:{
+          succ:function(target){
+            target.siblings(".err").hide();
+          },
+          err:function(target,msg){
+            var prompt=target.siblings(".err");
+            prompt.html('<i class="i_err"></i> ' + (msg||prompt.data("msg")) ).show();
+          },
+          normal:function(target){
+            target.siblings(".err").hide();
+          }
+        },
+        more:{
+          companyName: function (_this, prompt, e) {
+            var s = setTimeout(function () {
+              clearTimeout(s);
+              if (companyNameSuggestHid.val() === '') {
+                companyNameSuggest.val('').trigger('blur');
+              }
+              return true;
+            }, 300);
+            return true;
+          }
+        },
+        ajaxSubmit: {
+          elems: '.param',
+          beforeSend: function(){},
+          success: function(result){
+            if(result.rescode==1){
+              var $barrage=$('.barrage');
+              var $list=$('>p:eq(0) a',$barrage);
+              var len=$list.length;
+              $list.each(function(k,v){
+                var nLeft=$(v).offset().left;
+                if(nLeft>=$(window).width()){
+                  //$(v).before('<a ka="barrage-pub1-3" href="/gso3131.html" target="_blank"><img src="http://img.kanzhun.com/images/logo/20140925/3aaa7746fa42066c1dfd3912c0afb025.jpg"><span>华为小伙伴："'+sContent+'"</span></a>');
+                  $(v).before(result.html);
+                  return false;
+                }
+                if(len-1==k){
+                  $(v).after(result.html);
+                }
+              });
+              $('.maskuiclose').trigger('click');
+
+              sMyBarrageC+=result.html;
+            }
+          }
+        }
+      }).init().submit();
+      //字数计算
+      $abShootForm.on("keyup",'[name="content"]',function(){
+        var _this=$(this),
+          val=$.trim(_this.val()),
+          len=val.length,
+          target=_this.siblings(".guide").find('[node-type="num"]');
+        var remain = len - 140;
+        if (remain <= 0) {
+          _this.siblings(".guide").html('您还可以输入<span>' + Math.abs(remain) + '</span>个字');
+        } else {
+          _this.siblings(".guide").html('您已超出输入<span class="err">' + remain + '</span>个字');
+        }
+      });
+      //选择公司
+      companyNameSuggest.autocomplete({
+        containerClass: 'autocomplete-suggestions',
+        serviceUrl: CONTEXTPATH + '/autocomplete/company.json',
+        paramName: 'query',
+        dataType: 'json',
+        transformResult: function (response) {
+          return {
+            suggestions: $.map(response.suggestions, function (dataItem) {
+              var arr = dataItem.data.split('|');
+              return { value: arr[0], data: arr[1], num: arr[2], logo: dataItem.logo, url: dataItem.url};
+            })
+          };
+        },
+        //这个方法很吊！
+        formatResult: function (suggestion, currentValue) {
+          //return '<dl><dt><img src='+STATICURL + suggestion.logo + '></dt><dd><p>' + suggestion.value + '</p><p class="f_12 grey_99">' + suggestion.url + '</p></dd></dl>';
+          return suggestion.value + '（' + suggestion.num + '）';
+        },
+        onSelect: function (suggestion) {
+          companyNameSuggestHid.val(suggestion.data);
+        },
+        onSearchStart: function () {
+          //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+          companyNameSuggestHid.val('');
+        },
+        onInvalidateSelection: function () {
+          companyNameSuggestHid.val('');
+        },
+        onSearchComplete: function (query, suggestions) {
+          if (suggestions.length === 0) {
+            companyNameSuggestHid.val('');
+            return;
+          }
+          //auto select when only one result
+          if (suggestions.length === 1) {
+            companyNameSuggestHid.val(suggestions[0].data);
+          }
+        },
+        autoSelectFirst: true,
+        noCache: false
+      });
+    }
+
+  }
+});

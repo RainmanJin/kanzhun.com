@@ -1,0 +1,15 @@
+{
+  "name": "kanzhun",
+  "version": "1.0.0",
+  "description": "proud of yourself",
+  "author": "zs.lin",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-requirejs": "*",
+    "grunt-spritesmith": "*"
+  }
+}

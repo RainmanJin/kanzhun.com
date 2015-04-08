@@ -1,0 +1,380 @@
+section.home_content {
+  width: 100%;
+  height: 226px;
+  padding-top: 95px;
+  background: url(../images/downbg1.jpg) no-repeat center top;
+  -webkit-background-size: 100% 321px;
+  -moz-background-size: 100% 321px;
+  -o-background-size: 100% 321px;
+  background-size: 100% 321px;
+  text-align: center;
+  color: #ffffff;
+}
+section.home_content h2 {
+  padding-bottom: 10px;
+  font-size: 43px;
+  font-weight: bold;
+}
+section.home_content h3 {
+  padding-bottom: 43px;
+  font-size: 23px;
+}
+section.home_content a {
+  display: block;
+  width: 119px;
+  line-height: 37px;
+  margin: 0 auto;
+  padding-left: 11px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #5c5957;
+  color: #ffffff;
+  text-align: left;
+}
+section.home_content a i {
+  margin-right: 10px;
+  vertical-align: -4px;
+}
+section.home_content a:last-child {
+  margin: 10px auto 0 auto;
+}
+div.bg {
+  width: 100%;
+  height: 80px;
+  background: url(../images/downbg2.jpg) no-repeat center top;
+  -webkit-background-size: 100% 80px;
+  -moz-background-size: 100% 80px;
+  -o-background-size: 100% 80px;
+  background-size: 100% 80px;
+}
+div.phone_bg {
+  width: 100%;
+  height: 349.5px;
+  background: url(../images/downbg3.jpg) no-repeat center top;
+  -webkit-background-size: 100% 349.5px;
+  -moz-background-size: 100% 349.5px;
+  -o-background-size: 100% 349.5px;
+  background-size: 100% 349.5px;
+}
+dl.summarinfo {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+dl.summarinfo dt {
+  padding-bottom: 20px;
+  font-size: 26px;
+  color: #ff5800;
+}
+dl.summarinfo dd {
+  padding-bottom: 10px;
+  color: #262c2f;
+  font-size: 16px;
+}
+section.position_mian {
+  margin: 20px 20px 0 20px;
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+}
+section.position_mian dl.bossinfo {
+  padding: 15px 15px 10px 0;
+  border-bottom: 1px dashed #d7d7d7;
+}
+section.position_mian dl.bossinfo dt {
+  float: right;
+  width: 60px;
+  text-align: center;
+}
+section.position_mian dl.bossinfo dt img {
+  display: block;
+  margin: 0 auto;
+  width: 55px;
+  height: 55px;
+  border-radius: 27.5px;
+}
+section.position_mian dl.bossinfo dt p {
+  padding-top: 5px;
+}
+section.position_mian dl.bossinfo dd {
+  margin-right: 65px;
+}
+section.position_mian dl.bossinfo dd h2 {
+  position: relative;
+  padding-left: 27px;
+  font-size: 16px;
+  color: #53cac3;
+  padding-bottom: 5px;
+}
+section.position_mian dl.bossinfo dd h2 i.ipin {
+  position: absolute;
+  top: 0;
+  left: -3px;
+}
+section.position_mian dl.bossinfo dd p {
+  padding: 0 0 5px 25px;
+}
+section.position_mian dl.bossinfo dd p.city i {
+  margin-right: 4px;
+  vertical-align: 0;
+}
+section.position_mian dl.bossinfo dd p.city em {
+  margin-right: 10px;
+}
+section.position_mian dl.bossinfo dd div {
+  position: relative;
+  margin: 0 70px 0 10px;
+  background-color: #c0e8e8;
+  border-radius: 5px;
+  padding: 10px;
+  color: #53cac3;
+}
+section.position_mian dl.bossinfo dd div span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 5px 0 5px 6px;
+  border-style: dashed solid;
+  border-color: transparent transparent transparent #53cac3;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+section.position_mian dl.bossinfo dd div span:last-child {
+  position: absolute;
+  top: 5px;
+  right: -18px;
+  border-width: 7px 0 7px 20px;
+  border-color: transparent transparent transparent #c0e8e8;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+section.position_mian dl.p_infos {
+  padding: 15px 10px 0 10px;
+}
+section.position_mian dl.p_infos dt {
+  padding-bottom: 8px;
+  font-size: 16px;
+  color: #53cac3;
+}
+section.position_mian dl.p_infos dt span {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px;
+  margin: 0 10px 10px 0;
+  background-color: #53cac3;
+  color: #ffffff;
+}
+section.position_mian dl.p_infos dd {
+  padding-bottom: 10px;
+}
+section.position_mian dl.p_infos dd em {
+  color: #cccccc;
+}
+section.position_mian ul.cmpinfo li {
+  padding: 10px 10px 10px 0;
+  border-top: 1px dashed #d7d7d7;
+}
+section.position_mian ul.cmpinfo li span {
+  float: left;
+  width: 35px;
+  text-align: center;
+}
+section.position_mian ul.cmpinfo li em.limittext {
+  display: block;
+  padding-left: 35px;
+}
+h2.view_tt {
+  color: #53cac3;
+  font-size: 16px;
+  padding: 15px 0 8px 10px;
+}
+div.view_questions {
+  padding: 0 10px 0 16px;
+  border-bottom: 1px dashed #d7d7d7;
+}
+div.view_questions dl {
+  border-left: 1px solid #53cac3;
+  padding-bottom: 10px;
+}
+div.view_questions dl:last-child {
+  border: none;
+  margin-top: -4px;
+}
+div.view_questions dl:first-child dt {
+  background-color: #fff;
+}
+div.view_questions dl dt {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px 0 -7px;
+  padding-top: 4px;
+}
+div.view_questions dl dt span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  background-color: #53cac3;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+div.view_questions dl dd {
+  margin: 0 0 0 12px;
+}
+div.greatinfo {
+  width: 100%;
+  padding-top: 15px;
+  height: 152px;
+  background: url(../images/greatimg1.jpg) no-repeat left top;
+  -webkit-background-size: 100% 167px;
+  -moz-background-size: 100% 167px;
+  -o-background-size: 100% 167px;
+  background-size: 100% 167px;
+  text-align: center;
+}
+div.greatinfo > img {
+  width: 58px;
+  height: 58px;
+  border-radius: 30px;
+  border: 2px solid #c0c0bd;
+}
+div.greatinfo p:nth-of-type(1) {
+  white-space: nowrap;
+  padding: 0 10px;
+  line-height: 1em;
+}
+div.greatinfo ul {
+  width: 100%;
+  margin-top: 6px;
+  border-top: 1px solid #5a5a5a;
+}
+div.greatinfo ul li {
+  float: left;
+  width: 33.3%;
+  height: 40px;
+  text-align: center;
+}
+div.greatinfo ul li a {
+  display: block;
+  padding: 11px 0;
+  margin: 0 20%;
+  line-height: 1em;
+  color: #ffffff;
+  font-size: 16px;
+}
+div.greatinfo ul li a.current {
+  color: #53cac3;
+  border-bottom: 2px solid #53cac3;
+}
+section.great_main {
+  width: 100%;
+}
+section.great_main ul.wantinfo {
+  padding-left: 20px;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+}
+section.great_main ul.wantinfo li {
+  padding: 15px 10px 15px 0;
+  border-bottom: 1px solid #cccccc;
+  overflow: hidden;
+  *zoom: 1;
+}
+section.great_main ul.wantinfo li:last-child {
+  border-bottom: none;
+}
+section.great_main ul.wantinfo li span {
+  float: right;
+  color: #797979;
+}
+section.great_main ul.wantinfo li em {
+  color: #dbdbdb;
+}
+section.great_main ul.wantinfo li em.c_name {
+  float: left;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30%;
+  word-wrap: normal;
+  color: #262c2f;
+}
+section.great_main ul.wantinfo li a {
+  float: right;
+  width: 70%;
+}
+section.great_main ul.wantinfo li a b {
+  display: block;
+  padding-left: 20px;
+  text-align: right;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+}
+section.great_main ul.station {
+  border-top: none;
+}
+section.great_main p.tt {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+section.great_main p.tt i {
+  margin-right: 5px;
+}
+section.education ul.wantinfo:first-child {
+  border-top: none;
+}
+section.works ul.wantinfo:first-child {
+  border-top: none;
+}
+dl.great_ask {
+  padding-left: 20px;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+}
+dl.great_ask dt {
+  padding: 17px 0;
+  border-bottom: 1px solid #cccccc;
+}
+dl.great_ask dd {
+  padding: 17px 0;
+  border-bottom: 1px solid #cccccc;
+}
+dl.great_ask dd i {
+  margin-top: 4px;
+}
+dl.great_ask dd p {
+  padding: 0 10px 0 24px;
+}
+dl.great_ask dd em {
+  color: #538bca;
+}
+dl.great_ask dd:last-child {
+  padding: 10px 0;
+  border-bottom: none;
+}
+dl.great_ask dd:last-child img {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  border-radius: 13px;
+  vertical-align: middle;
+}
+dl.great_ask:first-child {
+  border-top: none;
+}

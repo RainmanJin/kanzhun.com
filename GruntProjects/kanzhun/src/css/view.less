@@ -1,0 +1,381 @@
+@import "common/var";
+@import "modules/company/common";
+@import "modules/company/interview_list";
+@import "modules/company/bottomlinks";
+//@import "modules/dialog";
+@import "modules-v2/dialog-v2";
+@import "modules/comment";
+@import "modules/share";
+@import "modules/company/select_interview"; 
+@import "modules/company/interview_detail";  //面试详情模块；
+@import "modules/company/send_views";    //匿名发布点评或者面试；
+@import "modules/company/comment_detail";   //点评详情模块；
+@import "modules/ugc/company_correction";  //公司纠错
+@import "modules/company/financing";  //公司融资信息
+
+.send_review{
+	background-color: #f3f3f3;
+	padding: 15px 20px;
+	width: 645px;
+	position: relative;
+	left: -20px;
+	top: -1px;
+
+	.btn_grey_b{
+		float: left;
+	}
+}
+
+.view_detail{
+	span.grade_rect {
+		margin-top: -2px;
+	}
+}
+
+.co_grade_r{
+	padding-top: 5px;
+}
+
+
+.view_search{
+	padding: 10px 20px;
+	background-color: #f3f3f3;
+	width: 645px;
+	position: relative;
+	left: -20px;
+	top: -1px;
+
+	.field_b{
+		float: left;
+		width: 230px;
+		margin-right: 15px;
+	}
+
+	.select{
+		float: left;
+		width: 180px;
+		margin-right: 15px;
+	}
+	
+	.btn_grey_l{
+		float: left;
+		width: 120px;
+		padding: 0;
+
+		input{
+			padding: 0;
+			width: 120px;
+			text-align: center;
+		}
+	}
+
+	.search_close{
+		float: right;
+		margin-top: 12px;
+		color: @blue;
+		cursor: pointer;
+	}
+
+	.search_cancel{
+		display: block;
+		width:4em;
+		float: right;
+		margin-top: 12px;
+	}
+
+	.search_hot{
+		position: relative;
+		clear:both;
+		overflow: hidden;
+		zoom:1;
+		line-height: 18px;
+		padding: 10px 0 5px;
+
+		span{
+			float: left;
+			margin-top: 3px;
+		}
+
+		ul {
+			width: 530px;
+			float: left;
+			overflow: hidden;
+
+			li {
+				float: left;
+				line-height: 1em;
+				border-left: 1px solid @grey_e7;
+				margin: 5px 0 5px -6px;
+				padding: 0 10px;
+
+				a {
+					white-space: nowrap;
+				}
+
+				&.morejobs {
+					display: none;
+				}
+			}
+		}
+
+		a{			
+			&.options {
+				position: absolute;
+				right: 0;
+				bottom: 7px;
+				color: @def;
+				i {
+					float: none;
+					display: inline-block;
+					font-size: 0;
+					zoom: 1;
+					width: 9px;
+					height: 5px;
+					margin-left: 2px;
+					overflow: hidden;
+					vertical-align: middle;
+					.transition(all .2s linear);
+					.transform(rotate(0deg));
+					background: transparent url(../images/trangle.png) no-repeat;
+
+					&.toggles {
+						.transform(rotate(180deg));
+					}
+				}
+			}
+		}
+	}
+} 
+
+//面试
+.iv_grade{
+	padding-top: 15px;
+	overflow: hidden;
+	zoom:1;
+
+	dl{
+		float: left;
+
+		&.total{
+			width: 220px;
+		}
+
+		&.level{
+			width: 165px;
+			padding-left: 20px;
+			border-left: 1px solid @grey_e7;
+			border-right: 1px solid @grey_e7;
+      padding-bottom: 25px;
+		}
+		&.from{
+			padding-left: 20px;
+
+			p{
+				line-height: 1.8em;
+			}
+			span{
+				margin: 0 5px;
+			}
+		}
+
+	}
+	dt{
+		color: @black;
+		padding-bottom: 10px;
+		font-weight: bold;
+	}
+}
+
+#showViewSearch{
+	margin-left: 10px;
+	color: @blue;
+	cursor: pointer;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.circle_chart{
+	overflow: hidden;
+	zoom:1;
+
+	.doughnua_chart{
+		float: left;
+	}
+	canvas{
+		vertical-align: middle;
+	}
+
+	h5{
+		padding: 12px 0 0 8px;
+		margin-left: 60px;
+		font-weight: normal;
+		font-size: 14px;
+	}
+	.js_correctionceo_bt{
+		&:hover{
+			.i_correction{
+				background-position: -16px -560px;
+			}
+		}
+	}
+}
+
+.comehere {
+	margin-top: 20px;
+}
+
+.pie_chart{
+	canvas{
+		float: left;
+	}
+
+	.pie_bar{
+		margin-left: 90px;
+	}
+
+	p{
+		line-height: 1.7em;
+    white-space: nowrap;
+	}
+	
+	span{
+		width: 13px;
+		height: 13px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 8px;
+
+		&.easy{
+			background-color: @green;
+		}
+		&.normal{
+			background-color: #abd667;
+		}
+		&.hard{
+			background-color: #ededed;
+		}
+    &.wlzp{
+      background-color: #a7dbff;
+    }
+    &.xyzp{
+      background-color: #16b6cc;
+    }
+    &.nbtj{
+      background-color: #05c1f1;
+    }
+    &.lttj{
+      background-color: #0ca6f0;
+    }
+    &.shzp{
+      background-color: #147cde;
+    }
+    &.qt{
+      background-color: #0870c9;
+    }
+	}
+
+  .pie-bar-toggle{
+    padding-left: 22px;
+    em{
+      cursor: pointer;
+    }
+
+    i{
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      border-width: 4px 4px 0 4px;
+      border-style: solid dashed;
+      border-color: #6f6e6e transparent transparent transparent;
+      vertical-align: 2px;
+    }
+
+    em.active{
+      i{
+        border-width: 0 4px 4px 4px;
+        border-color: transparent transparent #6f6e6e transparent;
+      }
+    }
+  }
+}
+
+.total {
+	padding-bottom: 10px;
+}
+
+//修改
+div.review_grade {
+	dl {
+		&.reviewTotal {
+			width: 275px;
+			border-right: none;
+			padding-right: 5px;
+		}
+
+		&.reviewCategory {
+			border-left: 1px solid @grey_e7;
+			width: 160px;
+			padding-left: 15px;
+		}
+
+		&.ceo {
+			padding-left: 15px;
+		}
+	}
+}
+
+//标题底对齐
+div.cmp_tt {
+	h1.haswidth {
+		.ellipsis(ellipsis);
+		width: 30em;
+	}
+
+	span, a {
+		margin-top: 3px;
+	}
+}
+
+//关注了该公司的还关注了
+h3.attention_tt {
+	position: relative;
+}
+
+div.attention_option {
+	position: absolute;
+	width: 26px;
+	height: 13px;
+	overflow: hidden;
+	right: 0;
+	top: 4px;
+
+	a {
+		display: block;
+		width: 7px;
+		height: 13px;
+		background: url(../images/icons.png) no-repeat;
+
+		&.option_left {
+			background-position: -59px -560px;
+
+			&:hover, &.current {
+				background-position: -72px -560px;
+			}
+		}
+
+		&.option_right {
+			background-position: -85px -560px;
+
+			&:hover, &.current {
+				background-position: -98px -560px;
+			}
+		}
+	}
+}
+

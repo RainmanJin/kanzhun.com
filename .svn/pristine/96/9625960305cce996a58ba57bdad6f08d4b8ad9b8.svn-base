@@ -1,0 +1,21 @@
+/**
+ * Created by zhuchongyue on 2015/3/13.
+ */
+$(function(){
+
+    $("#page1 .icon").bind('click',function(){
+
+        $(this).closest("li").siblings().find(".icon").removeClass("click");
+        $(this).addClass("click");
+
+        var src = $(this).children('img').attr('src');
+        var newSrc = src.replace('icons','click');
+
+         $("#page1 .icon img").each(function(i,val){
+             $(val).attr('src',$(val).attr('src').replace('click','icons'));
+
+         });
+        $(this).children('img').attr('src',newSrc);
+
+    });
+});

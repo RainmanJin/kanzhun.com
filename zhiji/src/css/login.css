@@ -1,0 +1,46 @@
+section.content {
+  text-align: center;
+}
+section.content .login_logo {
+  margin-top: 90px;
+}
+section.content > h2 {
+  margin-top: 15px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #666;
+}
+section.content > h3 {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #666;
+}
+section.content ul.form {
+  padding-top: 10px;
+  width: 323px;
+  margin: 0 auto;
+}
+section.content ul.form li {
+  margin-bottom: 20px;
+}
+section.content ul.form li .ipt {
+  width: 300px;
+}
+section.content ul.form li .green_btn {
+  width: 323px;
+}
+section.content ul.form li .err {
+  color: #e60e0e;
+  text-align: left;
+}
+section.content ul.form li.code {
+  text-align: left;
+}
+section.content ul.form li.code img {
+  float: right;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

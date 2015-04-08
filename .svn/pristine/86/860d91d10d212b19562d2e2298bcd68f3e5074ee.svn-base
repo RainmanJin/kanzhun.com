@@ -1,0 +1,356 @@
+require.config({
+  baseUrl: '/js/site',
+  paths: {
+    u: '../utils',
+    c: '.'
+  }
+});
+
+require(['c/user_response', 'c/auth_dialog', 'c/widgets', 'c/mini_search', 'c/field/chart-v2'], function(user_response, auth_dialog){
+	$(function(){
+
+		var companyNameOne = $('#comOne'),
+				companyNameTwo = $('#comTwo'),
+				cmpArr = [],
+				com1 = $('input[name=com1]'),
+				com2 = $('input[name=com2]');
+
+			var o = {
+		  serviceUrl: CONTEXTPATH + '/autocomplete/company.json',
+		  paramName: 'query',
+		  dataType: 'json',
+		  transformResult: function (response) {
+		    return {
+		      suggestions: $.map(response.suggestions, function (dataItem) {
+		        var arr = dataItem.data.split('|');
+		        return { value: arr[0], data: arr[1], num: arr[2]};
+		      })
+		    };
+		  },
+		  //这个方法很吊！
+		  formatResult: function (suggestion, currentValue) {
+		    return suggestion.value + '（' + suggestion.num + '）';
+		  },
+		  onSelect: function (suggestion) {
+		  	var cmpThis = $(this);
+	  		if( $.inArray(suggestion.value ,cmpArr) == -1 ){
+	  			cmpArr.unshift(suggestion.value);
+	  		}
+
+		  	cmpThis.parent().removeClass('selected');
+		   	cmpThis.siblings('input[type=hidden]').val(suggestion.data).data('name', suggestion.value);
+
+		    $.ajax({
+		    	type: 'get',
+		    	url: '/company/queryid.json',
+		    	data: {encryptCompId: suggestion.data},
+		    	success: function(ret){
+		    		if( ret.logo !== "" ) {
+		    			cmpThis.parent('div').siblings('div.cmp_logo').find('img.logo').attr('src', 'http://img.kanzhun.com/' + ret.logo);
+
+		    			if( com1.val() !== "" &&  com2.val() !== "" && com1.val() !== com2.val()) {
+		    				$('#pkfrm').submit();
+		    			}else if(com1.val() == com2.val()) {
+		    				$.maskUI.alert({
+		    					msg: '请不要自己&nbsp;<span style="color: #e33a00;font-size: 20px;font-weight: bold;">K</span>&nbsp;自己哦！'
+		    				});
+		    			}else {
+		    				return false;
+		    			}
+
+		    		}
+		    	}
+		    })
+
+		    //console.log($.trim(com1.val()) !== "")
+		  },
+		  onSearchStart: function () {
+		    //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+		    $(this).siblings('input[type=hidden]').val('');
+		  },
+		  onInvalidateSelection: function () {
+		    $(this).siblings('input[type=hidden]').val('');
+		  },
+		  onSearchComplete: function (query, suggestions) {
+		    if (suggestions.length === 0) {
+		      $(this).siblings('input[type=hidden]').val('');
+
+		      return;
+		    }
+		    //auto select when only one result
+		    if (suggestions.length === 1) {
+		      $(this).siblings('input[type=hidden]').val(suggestions[0].data);
+		    }
+		  },
+		  autoSelectFirst: true
+		};
+
+		companyNameOne.autocomplete($.extend({},o,{
+			appendTo: $('#oneHistory')
+		}));
+
+    companyNameTwo.autocomplete($.extend({},o,{
+      appendTo: $('#twoHistory')
+    }));
+
+		$('input.companyName').focus(function(){
+			$(this).parent().addClass('selected');
+			if( $.trim(this.value) === '' && cmpArr.length !== 0) {
+				var str = '';
+				if( cmpArr.length > 10 ){
+					$.each( cmpArr, function(i, v){
+						if( i > 9 ){
+							splice(cmpArr[i]) 
+						}
+					})
+				}else {
+					$.each( cmpArr, function(i, v){
+						str += '<div class="autocomplete-suggestion" data-index=' + i + '>' + v + '</div>';
+					})
+				}
+				$(this).parent().find('div.autocomplete-suggestions').html(str);
+				$(this).parent().find('div.autocomplete-suggestions').css('display', 'block');
+			}
+		}).blur(function(){
+			$(this).parent().removeClass('selected');
+		})
+		
+		/*//提交pk
+		$('#js-pk').click(function(){
+			//console.log(com1.val() !== "" &&  com2.val() !== "" && com1.val() !== com2.val())
+				if( com1.val() !== "" &&  com2.val() !== "" && com1.val() !== com2.val()) {
+					$('#pkfrm').submit();
+				}else {
+					return false;
+				}
+		});*/
+
+		//重新选择pk公司
+		$('a.change_pk').click(function(){
+			$(this).parent('p').hide().next('div').removeClass('none');
+		})
+
+		//支持
+		$('div.pk_proportion').on('click', 'a', function(){
+			var sThis = $(this);
+			if( !sThis.hasClass('default') ){
+				var	support = sThis.data('cmpid'),
+						other = sThis.siblings('a').data('cmpid'),
+						aSupport = $('div.pk_proportion a.support'),
+						aCount = $('p.pk_count span em'),
+						index = aSupport.index($(this)),
+						half = aSupport.length/2,
+						partner = (index - half) >= 0 ? aCount.eq(index-half) : aCount.eq(half+index);
+						psrtnerThis = (index - half) >= 0 ? aSupport.eq(index-half) : aSupport.eq(half+index);
+
+						$.ajax({
+							type: 'get',
+							url: '/activity/bcompany/support.json',
+							data: {support: support, other: other},
+							dataType: 'json',
+							success: function(ret){
+								if( ret.rescode == 1 ){
+									//+1
+									$.each([aCount.eq(index), partner], function(i, v){
+										$(v).html((parseInt($(v).html(), 10) || 0) + 1);
+									})
+
+									var effect = $('<b>+1</b>');
+									sThis.append(effect);
+									effect.animate({'top': -50, 'opacity': 0, 'font-size': '40px'}, 400, function(){
+									  $(this).remove();
+									});
+									$.each([sThis[0], psrtnerThis], function(i, v){
+										$(v).siblings('a').addClass('default');
+										$(v).addClass('default current');
+									})
+
+									var cmpnum = sThis.data('num'),cmpname;
+									if( cmpnum == 1 ){
+										cmpname = com1.data('name');
+										var pkProportionW = ret.companyPkData.supportCountOne/(ret.companyPkData.supportCountOne + ret.companyPkData.supportCountTwo)*100 + '%';
+									}else {
+										cmpname = com2.data('name');
+										var pkProportionW = (100 - ret.companyPkData.supportCountOne/(ret.companyPkData.supportCountOne + ret.companyPkData.supportCountTwo)*100) + '%';
+									}
+
+									
+									if( pkProportionW == "100%" ){
+										$('div.pk_proportion div div').css('borderRadius', 0);
+									}
+									$('div.pk_proportion div div').css('width', pkProportionW);
+
+									$('dl.ipt_comments textarea.content_ipt').attr('placeholder', '【我支持了'+ cmpname + '】我来说两句...').data('content', '【我支持了'+ cmpname + '】');
+									$('#sendMessage').attr('href', '/reviewugc' + support);
+								}
+							}
+					})
+			}else {
+				return false;
+			}
+		});
+	
+		//fixed
+		  var fixedCmpTt = $('div.cmp_pk_details section > h2');
+      if(fixedCmpTt.length){
+        var f_n_s = setTimeout(function(){
+          var cmpTtPos = fixedCmpTt.offset().top;
+          $(window).on('scroll', function(){
+            var st = $(document).scrollTop();
+            if(st > cmpTtPos){
+              fixedCmpTt.addClass('fixedTt');
+            }else{
+              fixedCmpTt.removeClass('fixedTt');
+            }
+          });
+        }, 1000);
+      }
+
+		//chart
+		var canvasPk = $('canvas.reviewsDoughnutChart'),
+				canvasPkR = $('canvas.pkDoughnutChart');
+
+		canvasPk.doughnutChart({
+		  colors: ['#ea3903', '#ededed'],
+		  centerColor: '#ffffff',
+		  borderWidth: 6,
+		  borderWidthT: 7
+		});
+
+		canvasPkR.doughnutChart({
+		  colors: ['#0076e3', '#ededed'],
+		  centerColor: '#ffffff',
+		  borderWidth: 6,
+		  borderWidthT: 7
+		});
+
+		//点击标签
+		$('div.tags').on('click', 'a', function(){
+			var self = $(this);
+			$.ajax({
+				type: 'get',
+				url: '/activity/bcompany/tag.json',
+				data: {companyId: $(this).parent('div').data('cmpid'), tag: $(this).data('content-id')},
+				dataType: 'html',
+				success: function(ret){
+					if( ret !== "" ){
+						self.parent().find('a').removeClass('current');
+						self.addClass('current').parent().next('div.pk_comment_con').html(ret);
+					}
+					}
+				})
+			})
+
+			$('#js_cmp_pk_useful').upOrDown({
+			  url: CONTEXTPATH + '/review/',
+			  delegate: 'a.mark',
+			  data: function () {
+			    return {
+			      reviewId: this.data('sid')
+			    };
+			  }
+			});
+
+			//评论置顶
+			$('#reviewsWrapper').upOrDown({
+			    url: CONTEXTPATH +'/shortreview/',
+			    delegate: 'a.mark',
+			    data: function(){
+			        return {
+			            shortreviewId: this.data('pid')
+			        };
+			    },
+			    callback: function(ret){
+			        var mtype = this.data('mtype');
+			        if(ret && ret.rescode == '1'){
+			            var num = this.find('i');
+			            this.addClass('marked');
+			            num.html((parseInt(num.html(), 10) || 0) + 1);
+
+			            this.siblings('a.mark').addClass('marked').data('mtype', null);
+
+			            var effects = $('<b>+1</b>');
+			            $(this).append(effects);
+			            effects.animate({'top': -50, 'opacity': 0, 'font-size': '40px'}, 400, function(){
+			              $(this).remove();
+			            });
+
+			        }else{
+			            this.data('mtype', mtype);
+			        }
+			    }
+			});
+
+		//滚动
+		  var scrollWrap = $('div.scroll_wrap'),
+		      scrollInner = $('div.scroll_inner'),
+		      scrollItems = scrollInner.find('dl'),
+		      Iheight = 0;
+
+		  addHeight = function(targets){
+		    $.each(targets, function(i, v){
+		      if($(v).index() < 5) {
+		        Iheight = Iheight + $(v).height();
+		      }
+		    })
+		    scrollWrap.css('height', Iheight + 75); 
+		    Iheight = 0;
+		  }
+
+		  addHeight(scrollItems);
+
+		  scrollText = function() {
+		    var  scrollItemsR = scrollInner.find('dl'),
+		         item = scrollItemsR[scrollItemsR.length - 1];
+		      scrollInner.css('top', -$(item).height());
+		      scrollInner.prepend(item);
+
+		      addHeight(scrollItemsR);
+
+		      $(item).css('opacity', 0);
+		      scrollInner.animate({
+		        top: 0
+		      }, 400);
+		      $(item).animate({
+		        opacity: 1
+		      }, 3500);
+
+		  };
+		      
+		  setInterval(scrollText, 10000);
+
+		  setTimeout(function(){
+		  	//戳
+		  	var targetImg = $('div.cmp_pk_select img.hasimg'),
+		  			endWidth = targetImg.width(),
+		  			endHeight = targetImg.height();
+		  			startWidth = endWidth*4,
+		  			startHeight = endHeight*4;
+
+		  	targetImg.css({
+		  		width: startWidth + 'px',
+		  		height: startHeight + 'px'
+		  	}).animate({
+		  		opacity: '1',
+		  		width: endWidth + 'px',
+		  		height: endHeight + 'px'
+		  	}, 400);
+		  }, 1000);
+
+		  //评论
+		  //useful + reply + share
+	    user_response.comment({
+	      delegate: $('#js_cmp_pk'),
+	      needToInit: true,
+	      contentCallback: function(){
+	      	var textareaStr = $('textarea.content_ipt').data('content'),
+	      			val = $.trim(textareaStr + $('textarea.content_ipt').val());
+	      			return val;
+	      }
+	    });
+
+	  user_response.share();
+
+	})
+});
+

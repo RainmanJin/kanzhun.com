@@ -1,0 +1,69 @@
+<!--点评列表-->
+
+<div>
+    <dl class="co-left-compentlist wrap_style mt15">
+        <dt>
+            <img src="/images/view_v2-img/xiaoren.jpg" alt="">
+            <h3>北京大学</h3>
+            <span class="green_s_star_2"><i style="width:57px;"></i></span>
+        </dt>
+        <dd class="c_s_result_detail">
+
+            <h2>
+                <a href=""><span>“易宝支付是锻炼行业产品经理的好地方”</span></a>
+            </h2>
+
+            <p class="f_12 grey_99 view_address">在职员工 - 2年外勤业务专员业务专员 -&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+
+            <p class="c_s_result_text"><strong>公司优点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度。</p>
+
+            <p class="c_s_result_text"><strong>公司缺点：</strong>笔试都是大题，涉及比较广有线程调度。</p>
+
+            <p class="c_s_result_text"><strong>意见和建议：</strong>笔试都是大题，比较开放式，中堆和栈增长方涉及比调度 <a href="">查看全部&gt;&gt;</a></p>
+        </dd>
+    </dl>
+
+    <dl class="co-left-compentlist wrap_style mt15">
+        <dt>
+            <img src="/images/view_v2-img/xiaoren.jpg" alt="">
+        <h3>北京大学</h3>
+        <span class="green_s_star_2"><i style="width:57px;"></i></span>
+        </dt>
+        <dd class="c_s_result_detail">
+
+            <h2>
+                <a href=""><span>“易宝支付是锻炼行业产品经理的好地方”</span></a>
+            </h2>
+
+            <p class="f_12 grey_99 view_address">在职员工 - 2年外勤业务专员业务专员 -&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+
+            <p class="c_s_result_text"><strong>公司优点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度。</p>
+
+            <p class="c_s_result_text"><strong>公司缺点：</strong>笔试都是大题，涉及比较广有线程调度。</p>
+
+            <p class="c_s_result_text"><strong>意见和建议：</strong>笔试都是大题，比较开放式，中堆和栈增长方涉及比调度 <a href="">查看全部&gt;&gt;</a></p>
+        </dd>
+    </dl>
+
+    <dl class="co-left-compentlist wrap_style mt15">
+        <dt>
+            <img src="/images/view_v2-img/xiaoren.jpg" alt="">
+        <h3>北京大学</h3>
+        <span class="green_s_star_2"><i style="width:57px;"></i></span>
+        </dt>
+        <dd class="c_s_result_detail">
+
+            <h2>
+                <a href=""><span>“易宝支付是锻炼行业产品经理的好地方”</span></a>
+            </h2>
+
+            <p class="f_12 grey_99 view_address">在职员工 - 2年外勤业务专员业务专员 -&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+
+            <p><strong>公司优点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度。</p>
+
+            <p><strong>公司缺点：</strong>笔试都是大题，涉及比较广有线程调度。</p>
+
+            <p><strong>意见和建议：</strong>笔试都是大题，比较开放式，中堆和栈增长方涉及比调度 <a href="">查看全部&gt;&gt;</a></p>
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,103 @@
+.co-review-grade {
+  padding: 30px 15px;
+}
+.co-review-grade h2 {
+  font-size: 14px;
+  color: #666666;
+  font-weight: normal;
+}
+.co-review-grade h2 b {
+  font-size: 18px;
+  font-weight: normal;
+}
+.co-review-grade dl {
+  overflow: hidden;
+  zoom: 1;
+  margin-top: 20px;
+}
+.co-review-grade dl dt {
+  float: left;
+  width: 95px;
+  height: 95px;
+}
+.co-review-grade dl dt img {
+  float: left;
+  width: 95px;
+  height: 95px;
+  border: 1px solid #ccc;
+  padding: 1px;
+}
+.co-review-grade dl dd {
+  padding-left: 20px;
+  width: 560px;
+  float: left;
+}
+.co-review-grade dl dd .form {
+  width: 400px;
+  float: left;
+}
+.co-review-grade dl dd .form div a {
+  color: #a9a9a9;
+}
+.co-review-grade dl dd .form h3 {
+  font-size: 24px;
+}
+.co-review-grade dl dd .form div.rating_start_wrap .rating_rect {
+  width: 185px;
+  height: 32px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  background: url("../images/v2/review_start_32.png") no-repeat 0 0;
+  line-height: 0;
+  vertical-align: middle;
+}
+.co-review-grade dl dd .form div.rating_start_wrap .rating_rect a {
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin-right: 5px;
+}
+.co-review-grade dl dd .form div.rating_start_wrap .rating_r_1 {
+  background-position: 0 -36px;
+}
+.co-review-grade dl dd .form div.rating_start_wrap .rating_r_2 {
+  background-position: 0 -72px;
+}
+.co-review-grade dl dd .form div.rating_start_wrap .rating_r_3 {
+  background-position: 0 -108px;
+}
+.co-review-grade dl dd .form div.rating_start_wrap .rating_r_4 {
+  background-position: 0 -144px;
+}
+.co-review-grade dl dd .form div.rating_start_wrap .rating_r_5 {
+  background-position: 0 -180px;
+}
+.co-review-grade dl dd .form div.rating_start_wrap em {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+}
+.co-review-grade dl dd .form textarea {
+  width: 377px;
+  height: 60px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline;
+  border: 1px solid #cccccc;
+}
+.co-review-grade dl dd .link {
+  padding-left: 10px;
+  overflow: hidden;
+  zoom: 1;
+  margin-top: 54px;
+  padding-top: 48px;
+  border-left: 1px solid #e5e5e5;
+}
+.co-review-grade dl dd .link a {
+  display: block;
+  font-size: 14px;
+  line-height: 1.7em;
+}

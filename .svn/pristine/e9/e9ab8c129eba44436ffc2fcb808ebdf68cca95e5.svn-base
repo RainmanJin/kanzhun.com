@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>查工资</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/main.css">
+</head>	
+<body>
+<div class="wrapper">
+<div class="content salary_searchlist">	
+	<header class="page_hd">		
+		<a class="top_back" href="javascript:;"><i></i>返回</a>
+		<strong>查工资</strong>
+		<a href="javascript:;" class="fright">北京</a>		
+	</header>
+	<div class="search search_r">
+		<form action="" method="get" autocomplete="off">
+		<input type="text" name="q" value="" placeholder="">
+		<input type="submit" value="">
+		</form>
+	</div>
+	<p class="s_noresult">
+		抱歉，没有找到相关的公司。您可以换个词再试试
+	</p>	
+	<h2 class="sr_tt">公司面试经历搜索结果</h2>
+	<ul class="cologo_list clearfix">
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			<img src="http:/img.kanzhun.com/image/l11514.gif" width="60" height="60">
+			</a>
+		</li>	
+	</ul>	
+</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+</html>
+
+

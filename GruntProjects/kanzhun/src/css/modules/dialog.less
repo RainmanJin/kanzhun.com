@@ -1,0 +1,269 @@
+@import "../common/var";
+@import "../modules/maskui";
+//dialog
+
+
+input.ipt::-webkit-input-placeholder { 
+    color: #D6D0CA !important; /* WebKit browsers */
+}
+input.ipt:-moz-placeholder { 
+    color: #D6D0CA !important;  /* Mozilla Firefox 4 to 18 */
+}
+input.ipt::-moz-placeholder { 
+    color: #D6D0CA !important;  /* Mozilla Firefox 19+ */
+}
+input.ipt:-ms-input-placeholder { 
+    color: #D6D0CA !important; /* Internet Explorer 10+ */
+}
+
+.dialog{
+	background-color: #e9e9e9;
+	background-color: rgba(233, 233, 233, 0.8);
+	padding: 10px;
+	border-radius: 5px;
+	.box-shadow(1px 1px 6px #666);
+
+	.dialog_con{
+		position: relative;
+		border: 1px solid #bbb;
+	}
+
+	.dialog_close{
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		position: absolute;
+		background: transparent url("@{img}/close.png") no-repeat;
+		right: -5px;
+		top: -5px;
+		.transition(all .2s linear);
+		.transform(rotate(0deg));
+		
+
+		&:hover{
+			.transform(rotate(90deg));
+		}
+	}
+
+	.direct{
+		width: 13px;
+		height: 18px;
+		overflow: hidden;
+		background: transparent @icons no-repeat 0 0;
+		position: absolute;
+	}
+	.direct_l{
+		left: -24px;
+		top: 5px;
+	}
+}
+
+
+.p_dialog{
+	width: 420px;
+	background-color: #e9e9e9;
+	background-color: rgba(233, 233, 233, 0.8);
+	padding: 8px;
+	border-radius: 8px;
+	.box-shadow(0 0 10px #666);
+	display: none;
+
+	.dialog_con{
+		position: relative;
+		border: 1px solid #a0a0a0;
+		min-height: 100px;
+		_height: 100px;
+		background-color: #fff;
+		padding: 20px;
+	}
+
+	.dialog_close, .fddialog_close{
+		width: 23px;
+		height: 23px;
+		display: inline-block;
+		position: absolute;
+		background: transparent url("@{img}/profiles.png") no-repeat -258px 0;
+		right: 10px;
+		top: 10px;
+		.transition(all .2s linear);
+		
+
+		&:hover{
+			background-color: #eee;
+		}
+	}
+
+	h3{
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	.dialog_alert{
+		padding: 10px 0 10px;
+		text-align: center;
+		p{
+			margin-top: 20px;
+		}
+	}
+}
+
+section.i_dialog{
+	width: 765px;
+
+	.dialog_con{
+		height: 665px;
+		padding: 80px 195px 90px 195px;
+		background: #fff url("@{img}/invitaiton_bg.jpg") no-repeat 90px 50px;
+
+		h2{
+			color: #655d5a;
+			font-size: 20px;
+			span{
+				color: @green;
+			}
+
+			&.invitationsus{
+				text-align: center;
+				padding: 70px 0 40px 0;
+				i{
+					display: inline-block;
+					font-size: 0;
+					line-height: 0;
+					overflow: hidden;
+					width: 45px;
+					height: 33px;
+					background: @invitation_icons no-repeat -64px 0;
+					vertical-align: middle;
+				}
+			}
+		}
+
+		p{
+			&.to{
+				margin: 20px 0;
+				background: url("@{img}/invitation_img_01.png") no-repeat left center;
+			}
+
+			&.from{
+				margin-top: 20px;
+				background: url("@{img}/invitation_img_02.png") no-repeat 93px center;
+				input{
+					margin-left: 240px;
+				}
+			}
+
+			&.urlbtn{
+				margin-top: 30px;
+				text-align: center;
+				a{
+					display: inline-block;
+					background-color: @green;
+					color: #fff;
+					font-size: 18px;
+					padding: 10px 40px;
+					border-radius: 5px;
+					&:hover{
+						background-color: #6c9b23;
+						text-decoration: none;
+					}
+				}
+			}
+
+			&.tit{
+				padding-top: 10px;
+				text-align: center;
+			}
+
+			&.pcolor{
+				color: #655D5A;
+			}
+		}
+
+		input{
+			&.ipt{
+				background-color: transparent;
+				border: none;
+				border-bottom: 1px solid #dcd5d3;
+				margin-left: 40px;
+				font-size: 18px;
+				height: 18px;
+				line-height: 18px;
+				padding: 18px 0 10px 10px;
+				width: 120px;
+				color: #655D5A;
+			}
+			
+			&.urlipt{
+				background-color: #fff;
+				border: 1px solid @grey_e7;
+				border-width: 2px 1px 1px 2px;
+				background-color: #fff;
+				padding: 15px 40px;
+				width: 300px;
+				font-size: 14px;
+				height: 14px;
+				line-height: 14px;
+				color: #655D5A;
+			}
+		}
+
+		div.iptArea{
+			width: 370px;
+			border: 1px solid @grey_e7;
+			border-width: 2px 1px 1px 2px;
+			background-color: #fff;
+			textarea{
+				width: 350px;
+				height: 100px;
+				padding: 10px;
+				border: none;
+				background-color: transparent;
+				resize: none;
+				color: #655D5A;
+			}
+			p{
+				padding: 5px 10px;
+				text-align: right;
+				color: @grey_99;
+				strong{
+					&.ok{
+						color: @green;
+					}
+					&.err{
+						color: #f00;
+					}
+				}
+			}
+		}
+
+		a.cmplogo{
+			display: block;
+			padding: 5px;
+			position: absolute;
+			top: 80px;
+			right: 195px;
+			width: 88px;
+			height: 70px;
+			line-height: 70px;
+			overflow: hidden;
+			font-size: 0;
+			text-align: center;
+			background: @invitation_icons no-repeat left -40px;
+			cursor: default;
+			img{
+				width: 80px;
+				display: inline-block;
+				vertical-align: middle;
+				max-height: 70px;
+			}
+			span{
+				display: inline-block;
+				width: 0;
+				height: 100%;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+

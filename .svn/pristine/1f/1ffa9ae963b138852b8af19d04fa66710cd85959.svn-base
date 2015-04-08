@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>UGC面试</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%=previewUrl%>/v2/css/widget.css">
+  <link rel="stylesheet" href="<%=previewUrl%>/v2/css/ugc/ugc_view.css">
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/ugc/ugc_interview.js"></script>
+</head>
+
+<body>
+<% include ../modules/header %>
+
+<div class="container-ugc clearfix">
+  <div class="ugc-con-l">
+    <% include piece/left_co_header.ejs %>
+    <section class="ugc_wrap">
+      <form action="/interviewugc/save/" method="post" id="ugcForm" name="ugcForm">
+      <div class="wrap_style mb15" id="step_1">
+        <aside class="aside_nav">
+          <span></span>
+          <i>1</i>
+        </aside>
+        <h3 class="ugc_h3">面试整体感受<aside class="spread_option grey_99"><div class="C-toggler">展开<i></i></div></aside></h3>
+        <div class="ground step_content mt15">
+          <div class="date clearfix mb15" id="interviewDate" style="position:relative;z-index: 1">
+            <label class="timer"><em>*</em> 面试时间：</label>
+            <dl class="select select_u">
+              <dt ka="interview1-year">
+                <input type="text" id="interviewYear" name="interviewYear" value="2015" readonly="readonly"><div></div><span class="btn"><i></i></span>
+              </dt>
+              <dd style="display: none;">
+                <a href="javascript:;" rel="nofollow" data-val="2015">2015</a>
+                <a href="javascript:;" rel="nofollow" data-val="2014">2014</a>
+                <a href="javascript:;" rel="nofollow" data-val="2013">2013</a>
+              </dd>
+            </dl><strong class="mr15">年</strong>
+            <dl class="select select_u">
+              <dt ka="interview1-month">
+                <input type="text" id="interviewMonth" name="interviewMonth" value="02" readonly="readonly" class="year_color"><div></div><span class="btn"><i></i></span>
+              </dt>
+              <dd style="display: none;">
+                <a href="javascript:;" rel="nofollow" data-val="1">1</a>
+                <a href="javascript:;" rel="nofollow" data-val="2">2</a>
+                <a href="javascript:;" rel="nofollow" data-val="3">3</a>
+                <a href="javascript:;" rel="nofollow" data-val="4">4</a>
+                <a href="javascript:;" rel="nofollow" data-val="5">5</a>
+                <a href="javascript:;" rel="nofollow" data-val="6">6</a>
+                <a href="javascript:;" rel="nofollow" data-val="7">7</a>
+                <a href="javascript:;" rel="nofollow" data-val="8">8</a>
+                <a href="javascript:;" rel="nofollow" data-val="9">9</a>
+                <a href="javascript:;" rel="nofollow" data-val="10">10</a>
+                <a href="javascript:;" rel="nofollow" data-val="11">11</a>
+                <a href="javascript:;" rel="nofollow" data-val="12">12</a>
+              </dd>
+            </dl><strong>月</strong><div class="prompt_wrap clear" style="z-index: 2;left: 370px;"><i class="prompt_icons"></i><div class="prompt_box none"><a class="closeprompt" href="javascript:;"></a><span class="triangle_edge"></span>为保证向用户提供的内容的时效性，我们只接受最近两年的面试经历</div></div>
+          </div>
+          <div class="clearfix mb15" id="resultDIV" ka="interview1-result">
+            <input type="hidden" id="result" name="result">
+            <label><em>*</em> 面试结果：</label><a href="javascript:;" rel="nofollow" class="btn_grey_b mr10" data-vl="3"><i class="i_cornerMark_ok"></i>确定通过</a><a href="javascript:;" rel="nofollow" class="btn_grey_b mr10" data-vl="4"><i class="i_cornerMark_ok"></i>感觉靠谱</a><a href="javascript:;" rel="nofollow" class="btn_grey_b mr10" data-vl="5"><i class="i_cornerMark_ok"></i>感觉没戏</a><a href="javascript:;" rel="nofollow" class="btn_grey_b  mr10" data-vl="1"><i class="i_cornerMark_ok"></i>确定未通过</a>
+          </div>
+          <div class="basicwage clearfix mb15 none" id="salaryDIV">
+            <label class="fleft"><em>*</em> 月薪：</label><input ka="interview1-salary" type="text" class="ifd v" style="width:180px" name="salary" data-unnecessary="1" maxlength="10">&nbsp;&nbsp;<span class="unit">元</span>
+          </div>
+          <div class="mb15 none" id="difficultyP">
+            <label class="experience"><em>*</em> 面试难度：</label><span ka="interview2-difficulty" style="vertical-align: middle;" class="rating_rect"><input type="hidden" class="pi" name="difficulty" value=""><a href="javascript:;" rel="nofollow" title="很容易"></a><a href="javascript:;" rel="nofollow" title="一般 "></a><a href="javascript:;" rel="nofollow" title="有难度"></a><a href="javascript:;" rel="nofollow" title="困难"></a><a href="javascript:;" rel="nofollow" title="巨难"></a></span><em class="grey_99 middle"></em>
+          </div>
+        </div>
+      </div>
+      <div class="wrap_style mb15 none" id="step_2">
+        <aside class="aside_nav">
+          <i>2</i>
+        </aside>
+        <h3 class="ugc_h3">面试经历</h3>
+        <div class="step_content mt15">
+          <dl class="ff_ta mt15 clearfix">
+            <dt><em>*</em> 一句话描述面试经历</dt>
+            <dd class="mt5">
+              <textarea class="ta v" style="height: 22px" name="title" maxlength="30" data-type="countNum" placeholder="一句话精辟概括你的面试感受；例：面试官很年轻，没有什么刁难的问题，过程很愉快。"></textarea>
+              <div>
+                <p class="err fleft" data-msg="一句话描述面试经历不能为空！"><i class="i_excl"></i> <span></span></p>
+                <p class="ta_hint fright">已输入 <span class="green" node-type="num">0</span>/30 个字（最少输入10个字）</p>
+              </div>
+            </dd>
+          </dl>
+          <dl class="ff_ta mt15 clearfix">
+            <dt><em>*</em> 面试过程</dt>
+            <dd class="mt5 clearfix">
+              <textarea class="ta autosizejs v" name="process" maxlength="1000" data-type="countNum" placeholder="告诉大家你在这家公司面试细节，分享过程中专业的、有趣的或者奇葩的经历。"></textarea>
+              <div>
+                <p class="err fleft" data-msg="面试过程不能为空！"><i class="i_excl"></i> <span></span></p>
+                <p class="ta_hint fright">已输入 <span class="green" node-type="num">0</span>/1000 个字（最少输入10个字）</p>
+              </div>
+            </dd>
+          </dl>
+          <p class="dashed_line mt20 mb20"></p>
+          <div id="questionDIV" style="position: relative">
+            <dl class="ff_ta mt15 mb15 clearfix">
+              <dt>令您印象深刻的问题</dt>
+              <dd class="mt5">
+                <textarea class="ta autosizejs v" name="question" maxlength="1000" data-type="countNum" data-unnecessary="1" placeholder="写下你在面试过程中被问到的问题，给其他朋友一个参考"></textarea>
+                <div>
+                  <p class="err fleft"><i class="i_excl"></i> <span></span></p>
+                  <p class="ta_hint fright">已输入 <span class="green" node-type="num">0</span>/1000 个字（最少输入10个字）</p>
+                </div>
+              </dd>
+            </dl>
+            <dl class="ff_ta mt15 mb15 clearfix">
+              <dt>您的回答</dt>
+              <dd class="mt5">
+                <textarea class="ta autosizejs v" name="answer" maxlength="1000" data-type="countNum" data-unnecessary="1" placeholder="写下你在面对问题时的经典回答，让大家一起学习分享"></textarea>
+                <div>
+                  <p class="err fleft"><i class="i_excl"></i> <span></span></p>
+                  <p class="ta_hint fright">已输入 <span class="green" node-type="num">0</span>/1000 个字（最少输入10个字）</p>
+                </div>
+              </dd>
+            </dl>
+            <a class="impressive links" href="javascript:;" rel="nofollow">+ 令您印象深刻的问题</a>
+          </div>
+          <p class="t-center mt30 mb30">
+            <input class="btn_o_g" type="submit" value="下一步">
+          </p>
+        </div>
+      </div>
+      <div class="wrap_style mb15 none" id="step_3">
+        <aside class="aside_nav">
+          <i>3</i>
+        </aside>
+        <h3 class="ugc_h3">面试印象</h3>
+        <div class="mt15">
+          <dl class="ff_more iv_ffm mb15">
+            <dt>面试印象：</dt>
+            <dd>
+              <ul class="tag clearfix" style="display: none" id="iv_tag"></ul>
+              <p class="err mt5" data-msg="您最多只能添加5个面试印象">
+                <i class="i_excl"></i> <span></span>
+              </p>
+              <p><input class="tag_ipt" type="text" placeholder="添加印象标签"><span class="orange none ml10">按回车添加</span></p>
+              <p class="mt5">例如：面试环境好</p>
+            </dd>
+          </dl>
+          <dl class="ff_more iv_ffm mb15">
+            <dt>面试过程：</dt>
+            <dd class="check_radio js_radio">
+              <input type="hidden" id="experience" name="experience" value="0">
+              <a class="a_tag mr10" href="javascript:;" data-vl="3">很好</a><a class="a_tag bg_orange mr10" href="javascript:;" data-vl="2">一般</a><a class="a_tag bg_red mr10" href="javascript:;" data-vl="1">不好</a>
+            </dd>
+          </dl>
+          <dl class="ff_more iv_ffm mb15">
+            <dt>面试来源：</dt>
+            <dd class="sta js_radio">
+              <input type="hidden" id="source" name="source" value="0">
+              <a class="a_tag mr10" href="javascript:;" data-vl="1">网络招聘</a><a class="a_tag mr10" href="javascript:;" data-vl="2">校园招聘</a><a class="a_tag mr10" href="javascript:;" data-vl="3">内部推荐</a><a class="a_tag mr10" href="javascript:;" data-vl="4">猎头推荐</a><a class="a_tag mr10" href="javascript:;" data-vl="5">社会招聘</a><a class="a_tag mr10" href="javascript:;" data-vl="6">其他</a>
+            </dd>
+          </dl>
+          <p class="t-center mt30 mb30">
+            <input class="btn_o_g" type="submit" value="完成">
+          </p>
+        </div>
+      </div>
+      </form>
+    </section>
+  </div>
+  <% include piece/ugc-right.ejs %>
+</div>
+</body>
+</html>

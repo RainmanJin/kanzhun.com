@@ -1,0 +1,111 @@
+footer.footbottom {
+  width: 100%;
+  min-width: 990px;
+  margin-top: 40px;
+  padding: 30px 0;
+  background-color: #6f6e6e;
+}
+footer.footbottom nav {
+  text-align: center;
+}
+footer.footbottom nav a {
+  display: inline-block;
+  color: #fff;
+  margin: 0 30px 15px 0;
+}
+footer.footbottom nav a.a_green {
+  color: #7cb228;
+}
+footer.footbottom p {
+  text-align: center;
+  color: #999999;
+}
+a.left-feedback {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.2em 8px;
+  color: #ffffff;
+  display: block;
+  background-color: #333333;
+  width: 1em;
+  line-height: 1.2em;
+  margin-top: -3em;
+  -webkit-transition: padding 0.1s linear;
+  -moz-transition: padding 0.1s linear;
+  -ms-transition: padding 0.1s linear;
+  -o-transition: padding 0.1s linear;
+  transition: padding 0.1s linear;
+}
+a.left-feedback i {
+  width: 15px;
+  height: 17px;
+  display: block;
+  overflow: hidden;
+  background: url("../images/icons.png") no-repeat -38px -556px;
+  margin-bottom: 5px;
+}
+a.left-feedback:hover {
+  background-color: #7cb228;
+  padding-left: 10px;
+}
+span.site_index {
+  position: relative;
+  color: #fff;
+  margin-right: 30px;
+  cursor: pointer;
+}
+span.site_index div.index_con {
+  display: none;
+  position: absolute;
+  top: -45px;
+  left: -174px;
+  width: 405px;
+  height: 29px;
+  line-height: 29px;
+  background-color: #fff;
+  opacity: .8;
+  text-align: center;
+  border: 1px solid #dfdcdc;
+}
+span.site_index div.index_con span {
+  position: absolute;
+  width: 405px;
+  top: 29px;
+  left: 0;
+  height: 17px;
+  background-color: transparent;
+  z-index: 1;
+}
+span.site_index div.index_con i {
+  position: absolute;
+  top: 0;
+  left: 192px;
+  height: 0;
+  width: 0;
+  border-width: 7px 9px 0 9px;
+  border-style: solid dashed;
+  border-color: #fff transparent transparent transparent;
+  opacity: .8;
+  z-index: 2;
+}
+span.site_index div.index_con a {
+  padding: 0 10px;
+  border-right: 1px solid #fff;
+  color: #666666;
+  line-height: 1em;
+  white-space: nowrap;
+  margin: 0;
+}
+span.site_index div.index_con a:hover {
+  color: #2c84cc;
+  text-decoration: none;
+}
+span.site_index div.index_con a.last {
+  border-right: none;
+}
+span.site_index:hover div.index_con {
+  display: block;
+}

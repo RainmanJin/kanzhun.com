@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>我关注的公司-图标+文字</title>
+<link rel="stylesheet" href="../css/import/ugc.css" />
+<link rel="stylesheet" href="../css/import/module/icons.css" />
+
+</head>	
+<body>
+<div class="wrapper">
+	<div class="content">	
+		<header class="page_hd">
+			<strong>我关注的公司</strong>	
+		</header>
+		
+		<ul class="myfocus">
+			<li> 
+				<p>产品助理 <span class="grey ml15">1天前</span></p>
+				<p class="grey">167条点评 <em>|</em> 167条工资 <em>|</em> 167条面试 </p>
+				<a class="btn_hasfocus"><i class="i i_focus"></i>已关注</a>
+			</li>
+			<li>
+				<p>产品助理 <span class="grey ml15">1天前</span></p>
+				<p class="grey">167条点评 <em>|</em> 167条工资 <em>|</em> 167条面试 </p>
+				<a class="btn_focus">+关注</a>
+			</li>
+			<li>
+				<p>产品助理 <span class="grey ml15">1天前</span></p>
+				<p class="grey">167条点评 <em>|</em> 167条工资 <em>|</em> 167条面试 </p>
+				<a class="btn_hasfocus"><i></i>已关注</a>
+			</li>
+			<li>
+				<p>产品助理 <span class="grey ml15">1天前</span></p>
+				<p class="grey">167条点评 <em>|</em> 167条工资 <em>|</em> 167条面试 </p>
+				<a class="btn_hasfocus"><i></i>已关注</a>
+			</li>
+		</ul>
+		
+	</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+</html>
+
+

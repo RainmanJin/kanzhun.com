@@ -1,0 +1,77 @@
+@import "var";
+
+//margin padding
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.ml15{margin-left: 15px;}
+.ml20{margin-left: 20px;}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+.pt10{padding-top: 10px;}
+.pt15{padding-top: 15px;}
+.p20{padding: 20px;}
+.p10{padding: 10px;}
+
+//font
+.f_12{
+	font-size: 12px;
+}
+.f_15 {
+	font-size: 15px;
+}
+.f_16{
+  font-size: 16px;
+}
+.f_18{
+  font-size: 18px;
+}
+
+//placeholder
+::-webkit-input-placeholder {
+  color: @placeholder;
+}
+:-moz-placeholder {
+  color: @placeholder;
+}
+::-moz-placeholder {
+  color: @placeholder;
+}
+:-ms-input-placeholder {
+  color: @placeholder;
+}
+input.onholder{color:@placeholder;}
+span.onholder{color:@placeholder; position: absolute;z-index: 8;}
+
+
+
+//link
+a {
+  color: @a-def;
+  text-decoration: none;
+
+  //默认带下划线
+  &.a_ul{
+    text-decoration: underline;
+  }
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+//body
+body{
+	font: normal 14px/1.5 Arial,STHeiti, Microsoft YaHei, simsun, Helvetica, sans-serif;
+}
+input, button, textarea{
+	font: normal 14px/1.5 Arial,STHeiti, Microsoft YaHei, simsun, Helvetica, sans-serif;
+}
+

@@ -1,0 +1,87 @@
+{
+    "id": 1,
+    "title": "双11",
+    "count": 0,
+    "realCount": 1,
+    "addUser": 0,
+    "addTime": "2014-11-07 10:04:11",
+    "investigationQuestionInfoList": [
+        
+        {
+            "id": 1,
+            "investigationId": 1,
+            "name": "问题1",
+            "type": 1,
+            "answerNum": 0,
+            "addUser": 0,
+            "addTime": "2014-11-07 10:04:31",
+            "investigationAnswerInfoList": [
+                
+                {
+                    "id": 1,
+                    "questionId": 1,
+                    "name": "选项11",
+                    "count": 0,
+                    "realCount": 0,
+                    "percentage": 0,
+                    "addUser": 0,
+                    "addTime": "2014-11-07 10:05:04",
+                    "choose": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 1,
+                    "name": "选项12",
+                    "count": 0,
+                    "realCount": 0,
+                    "percentage": 100,
+                    "addUser": 0,
+                    "addTime": "2014-11-07 10:05:40",
+                    "choose": true
+                },
+                {
+                    "id": 3,
+                    "questionId": 1,
+                    "name": "选项13",
+                    "count": 0,
+                    "realCount": 0,
+                    "percentage": 0,
+                    "addUser": 0,
+                    "addTime": "2014-11-07 10:06:41",
+                    "choose": false
+                }]
+        },
+        {
+            "id": 2,
+            "investigationId": 1,
+            "name": "问题2",
+            "type": 1,
+            "answerNum": 0,
+            "addUser": 0,
+            "addTime": "2014-11-07 10:04:51",
+            "investigationAnswerInfoList": [
+                
+                {
+                    "id": 4,
+                    "questionId": 2,
+                    "name": "选项21",
+                    "count": 0,
+                    "realCount": 0,
+                    "percentage": 100,
+                    "addUser": 0,
+                    "addTime": "2014-11-07 10:06:50",
+                    "choose": true
+                },
+                {
+                    "id": 5,
+                    "questionId": 2,
+                    "name": "选项22",
+                    "count": 0,
+                    "realCount": 0,
+                    "percentage": 0,
+                    "addUser": 0,
+                    "addTime": "2014-11-07 10:06:57",
+                    "choose": false
+                }]
+        }]
+}

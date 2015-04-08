@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>马桶上的招聘节</title>
+  <link rel="stylesheet" href="css/matong.css?r=3333">
+</head>
+<body>
+<div id="loading"><img src="images/loading.png" width="20" class="rotating infinite"></div>
+<div class="swiper-container">
+  <div class="swiper-wrapper none" id="swiperWrapper">
+
+    <div class="swiper-slide page s1">
+        <span class="middle-helper">
+        </span><div class="wrap middle-content">
+      <header>
+        <img src="images/mt-tt.png">
+      </header>
+
+      <section class="white-box">
+        <img src="images/box.png" class="box-bg">
+
+        <div class="box-con">
+          <div>
+            <ul class="page1 effect pe1">
+              <li>我是<em class="ml10 zoomIn2">张磊</em></li>
+              <li>我是<em class="ml10 zoomIn2">看准网VP</em></li>
+              <li>我正在参加</li>
+              <li><em class="zoomIn2">3.24“马桶上的招聘节”</em></li>
+              <li>我承诺在BOSS直聘：</li>
+            </ul>
+            <div class="p1-icon effect zoomIn delay3 pe1">
+              <div><img src="images/chat.png"><p>我本人<br/>与你直接开聊</p></div>
+              <div><img src="images/offer.png"><p>有诚意<br/>我能拍板签offer</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page s2">
+        <span class="middle-helper">
+        </span><div class="wrap middle-content">
+      <section class="white-box">
+        <img src="images/box.png" class="box-bg">
+
+        <div class="box-con">
+          <img src="images/p2-tt.png" class="p2-tt">
+              <span class="middle-helper">
+              </span><div class="middle-content">
+          <img src="images/p2-time.png" width="100%" class="zoomIn effect pe2">
+        </div>
+        </div>
+      </section>
+    </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page s3">
+        <span class="middle-helper">
+        </span><div class="wrap middle-content">
+      <header>
+        <img src="images/mt-tt.png">
+      </header>
+
+      <section class="white-box">
+        <img src="images/box.png" class="box-bg">
+        <div class="box-con">
+            <span class="middle-helper">
+              </span><div class="middle-content">
+          <img src="images/p3-bg.png" width="100%">
+        </div>
+          <span class="p3-1"><img src="images/p3-1.png" width="84" height="42.5" class="effect pe3 fadeInRight animated"></span>
+          <span class="p3-2"><img src="images/p3-2.png" width="84" height="42.5" class="effect pe3 fadeInLeft animated"></span>
+          <span class="p3-3"><img src="images/p3-3.png" width="102.5" height="91" class="effect pe3 fadeInRight animated"></span>
+        </div>
+      </section>
+    </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page s4">
+        <span class="middle-helper">
+        </span><div class="wrap middle-content">
+      <header>
+        <img src="images/mt-tt.png">
+      </header>
+
+      <section class="white-box">
+        <img src="images/box.png" class="box-bg">
+        <div class="box-con">
+          <ul class="page4">
+            <li><img src="images/p4-1.png" class="swing effect pe4"></li>
+            <li><img src="images/p4-2.png" class="fadeInLeft delay2 animated effect pe4"></li>
+            <li><img src="images/p4-3.png" class="fadeInRight delay3 animated effect pe4"></li>
+            <li><img src="images/p4-4.png" class="fadeInLeft delay4 animated effect pe4"></li>
+            <li><img src="images/p4-5.png" class="zoomIn delay6 effect pe4"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page s5">
+        <span class="middle-helper">
+        </span><div class="wrap middle-content">
+      <header>
+        <img src="images/mt-tt.png">
+      </header>
+
+      <section class="white-box">
+        <img src="images/box.png" class="box-bg">
+        <div class="box-con">
+          <ul class="page5">
+            <li><img src="images/p5-1.png" class="swing effect pe5"></li>
+            <li><img src="images/p5-2.png" class="fadeInLeft delay2 animated effect pe5"></li>
+            <li><img src="images/p5-3.png" class="fadeInLeft delay4 animated effect pe5"></li>
+            <li><img src="images/p5-4.png" class="zoomIn delay6 effect pe5"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page s6">
+        <span class="middle-helper">
+        </span><div class="wrap middle-content">
+      <header>
+        <img src="images/mt-tt.png">
+      </header>
+
+      <section class="white-box">
+        <img src="images/box.png" class="box-bg">
+        <div class="box-con">
+            <span class="middle-helper">
+              </span><div class="middle-content">
+          <img src="images/p6-1-1.png" class="hidden" width="100%">
+          <img src="images/p6-1-2.png" class="hidden" width="100%">
+          <img src="images/p6-1-3.png" class="hidden" width="100%">
+        </div>
+          <ul class="page6">
+            <li><img src="images/p6-3.png" width="67.5" height="63" class="zoomIn effect p6"></li>
+            <li><img src="images/p6-4.png" width="45" height="68" class="zoomIn delay6 effect p6"></li>
+            <li><img src="images/p6-5.png" width="69" height="55.5" class="zoomIn delay4 effect p6"></li>
+            <li><img src="images/p6-2.png" width="100%" class="zoomIn delay8 effect p6"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page s7">
+        <span class="middle-helper">
+        </span><div class="wrap middle-content">
+      <header>
+        <img src="images/mt-tt.png">
+      </header>
+
+      <section class="white-box">
+        <img src="images/box.png" class="box-bg">
+        <div class="box-con">
+          <ul class="page7">
+            <li>我是第 <strong class="swing effect pe7">194</strong> 位报名BOSS<br/>一起来吗？
+              <p>距离报名结束还有</p>
+            </li>
+            <li class="times"><em><b class="one"></b></em><em><b class="two"></b></em> 时 <em><b class="three"></b></em><em><b class="four"></b></em> 分 <em><b class="five"></b></em><em><b class="six"></b></em> 秒</li>
+            <li><a href="#">立即报名</a></li>
+            <li><a class="share" href="#">立即分享</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/lib/zepto.js"></script>
+<script src="js/utils/swiper.jquery.min.js"></script>
+<script src="js/site/matong2.js?r=333"></script>
+</body>
+</html>
+
+

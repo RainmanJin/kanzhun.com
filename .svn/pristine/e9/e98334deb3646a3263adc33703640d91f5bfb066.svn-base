@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>UGC工资</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/v2/css/widget.css">
+  <link rel="stylesheet" href="/v2/css/ugc/ugc_view.css">
+  <link rel="stylesheet" href="/v2/css/ugc/salary.css">
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/ugc/ugc-salary.js"></script>
+</head>
+
+<body>
+<% include ../modules/header %>
+
+<div class="container-ugc clearfix">
+  <div class="ugc-con-l">
+    <% include piece/left_co_header.ejs %>
+
+    <div class="wrap_style clearfix">
+      <ul class="u-m-form-control pt15">
+        <li class="col-label-5">
+          <label><em>*</em>职位经验：</label>
+          <dl class="select select_s">
+            <dt>
+              <input type="hidden" name="workBeginDateYear" value="请选择" class="v" data-necessary="1">
+              <input type="button" value="年" readonly="readonly"><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+              <a href="javascript:;" rel="nofollow" data-val="2015">2015年</a>
+              <a href="javascript:;" rel="nofollow" data-val="2014">2014年</a>
+            </dd>
+          </dl>
+        </li>
+        <li class="col-label-5">
+          <label><em>*</em>月薪：</label>
+          <input type="text" class="ifd" maxlength="15">
+          <em class="ifd-unit">元</em>
+        </li>
+      </ul>
+      <div class="salary-detail-tt">
+        <div class="C-toggler">添加公司明细<i></i></div>
+        <span class="ml20 red none" id="sDetailErr">工资明细不能大于月薪,请重新输入。</span>
+      </div>
+      <ul class="u-m-form-control salary-detail">
+        <li class="col-label-4">
+          <label>基本工资：</label>
+          <input type="text" class="ifd " maxlength="15">
+          <em class="ifd-unit">元</em>
+        </li>
+        <li class="col-label-4">
+          <label>奖金：</label>
+          <input type="text" class="ifd" maxlength="15">
+          <em class="ifd-unit">元</em>
+        </li>
+        <li class="col-label-4">
+          <label>补助：</label>
+          <input type="text" class="ifd" maxlength="15">
+          <em class="ifd-unit">元</em>
+        </li>
+        <li class="col-label-4">
+          <label>销售提成：</label>
+          <input type="text" class="ifd" maxlength="15">
+          <em class="ifd-unit">元</em>
+        </li>
+        <li class="col-label-4">
+          <label>其他收入：</label>
+          <input type="text" class="ifd" maxlength="15">
+          <em class="ifd-unit">元</em>
+        </li>
+      </ul>
+
+      <p class="u-m-form-control salary-done">
+        <input class="ugc-orange-btn" type="submit" value="完成">
+      </p>
+    </div>
+  </div>
+
+
+  <% include piece/ugc-right.ejs %>
+</div>
+</body>
+</html>

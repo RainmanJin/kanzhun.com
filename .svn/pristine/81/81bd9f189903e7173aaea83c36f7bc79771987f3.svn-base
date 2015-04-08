@@ -1,0 +1,25 @@
+@import "var";
+.autocomplete-suggestions {
+  border-width: 0 2px 2px;
+  border-style: solid;
+  border-color: #61bda8 #82c9b9 #61bda8 #82c9b9;
+  background: #FFF; cursor:
+default; overflow: auto;
+
+  strong{
+    font-weight: bold;
+    color: #007ead;
+  }
+}
+.autocomplete-suggestion {
+  padding: 5px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.autocomplete-selected {
+  background: #aad8cd;
+  color: #fff;
+  strong{
+    color: #ffd;
+  }
+}

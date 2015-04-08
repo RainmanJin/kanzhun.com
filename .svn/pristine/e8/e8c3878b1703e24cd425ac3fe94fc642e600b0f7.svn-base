@@ -1,0 +1,144 @@
+require.config({
+    baseUrl: '/js/site',
+    paths: {
+        u: '../utils',
+        c: '.'
+    }
+});
+
+require(['c/widgets','u/validator'],function(){
+	$(function(){
+      $('input:text, input:password').placeholder();
+      $('.select').DIYSelect({
+          listCallback: function (list, field, select) {
+              select.removeClass('s_err').addClass('s_suc');
+              select.find('dt>input:hidden').val($(this).data('val'));
+          }
+      });
+      function intiWebUpload(){
+          // 初始化Web Uploader
+          var uploader = WebUploader.create({
+              // 选完文件后，是否自动上传。
+              auto: true,
+              // swf文件路径
+              swf: '/js/Uploader.swf',
+              // 文件接收服务端。
+              server: '/photougc/upload.json',
+              // 选择文件的按钮。可选。
+              // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+              pick: {
+                  id: '.filebtn'
+                  //label: '上传'
+              },
+              fileSingleSizeLimit: 1024*1024*4, //最大限制4M
+              // 只允许选择图片文件。
+              accept: {
+                  title: 'Images',
+                  extensions: 'gif,jpg,jpeg,bmp,png',
+                  mimeTypes: 'image/*'
+              }
+          });
+          var loading=$('.uploading'),
+            filebtn=$('.filebtn');
+          uploader.on( 'uploadStart', function(file) {
+              filebtn.hide();
+              loading.show();
+          });
+          uploader.on( 'error', function( type ) {
+              if(type == 'F_EXCEED_SIZE'){
+                  alert('上传照片不能超过4M!');
+              }
+              if(type=="F_DUPLICATE"){
+                  //alert("文件重复");
+              }
+          });
+          // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+          uploader.on( 'uploadSuccess', function( file , response ) {
+              if(response.rescode){
+
+              }else{
+                  alert("上传失败");
+              }
+          });
+      }
+      try{
+          intiWebUpload();
+      }catch(e){
+          //console.log(e);
+      }
+
+      //选择城市
+      var newCompanyCitySuggest = $('#newCompanyCitySuggest'),
+        newCompanyCitySuggestHid = $('input[name=cityCode]');
+      newCompanyCitySuggest.autocomplete({
+          serviceUrl: '/autocomplete/city.json',
+          paramName: 'query',
+          dataType: 'json',
+          transformResult: function (response) {
+              return {
+                  suggestions: $.map(response.suggestions, function (dataItem) {
+                      return { value: dataItem.value, data: dataItem.data};
+                  })
+              };
+          },
+          onSelect: function (suggestion) {
+              newCompanyCitySuggestHid.val(suggestion.data);
+          },
+          onSearchStart: function () {
+              //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+              newCompanyCitySuggestHid.val('');
+          },
+          onInvalidateSelection: function () {
+              newCompanyCitySuggestHid.val('');
+          },
+          onSearchComplete: function (query, suggestions) {
+              if (suggestions.length === 0) {
+                  newCompanyCitySuggestHid.val('');
+                  return;
+              }
+              //auto select when only one result
+              if (suggestions.length === 1) {
+                  newCompanyCitySuggestHid.val(suggestions[0].data);
+              }
+          },
+          autoSelectFirst: true
+      });
+
+      $('#baseinfoForm').validatorAll({
+          elems: '.v',
+          prompt: {
+              succ: function (target, e) {
+                  var parent = target.parent();
+                  $('.err', parent).hide();
+              },
+              err: function (target, msg, e) {
+                  var parent = target.parent();
+                  var elem = $('.err', parent);
+                  elem.html('<i class="base errormsg"></i>' + (msg || elem.data('msg'))).show();
+              },
+              normal: function (target, e) {
+                  var parent = target.parent();
+                  $('.err', target.parent()).hide();
+              }
+          },
+          more: {
+              city: function (_this, prompt, e) {
+                  var s = setTimeout(function () {
+                      clearTimeout(s);
+                      if (newCompanyCitySuggestHid.val() === '') {
+                          newCompanyCitySuggest.val('').trigger('blur');
+                      }
+                      return true;
+                  }, 300);
+                  return true;
+              }
+          }
+      }).init().submit(function(){
+          if (newCompanyCitySuggestHid.val() === '') {
+              return false;
+          }else{
+              return true;
+          }
+      });
+	});
+});

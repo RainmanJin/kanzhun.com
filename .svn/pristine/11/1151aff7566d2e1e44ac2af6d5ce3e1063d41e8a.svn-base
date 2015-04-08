@@ -1,0 +1,107 @@
+@import "module/reset";
+@import "common/var";
+
+body{
+  background: url("@{img-path}/form_bg.jpg") no-repeat #7ca1c8;
+  background-size: 100%;
+}
+
+#content{
+  position: relative;
+  width: 100%;
+
+  .data_wrap{
+      border-radius: 18px;
+      width: 85%;
+      background-color:#fff;
+      margin: 0 auto;
+      margin-top: 20%;
+      opacity: 0.8;
+
+    @media screen and (max-height: 480px){
+      margin-top: 10%;
+    }
+      .tag{
+        background-color: #789dd0;
+        padding-left: 20px;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+      }
+
+       ul.data{
+
+         padding: 20px 0px 0px 20px;
+
+         li{
+           padding: 5px 0px;
+         }
+
+       label{
+         color: rgb( 97, 142, 203 );
+         font-size: 16px;
+         font-weight: bolder;
+         margin-right: 5px;
+       }
+
+       input{
+         background-color: #d4dee9;
+         border: 1px solid #d4dee9;
+         border-radius: 8px;
+         padding: 8px 0px 8px 5px;
+         width: 60%;
+         &:focus{
+           border-color: #7ea1c8;
+         }
+       }
+
+        .error{
+           border-color: red;
+         }
+     }
+  }
+
+}
+
+
+
+#feedback{
+  text-align: center;
+  color: red;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0px;
+
+}
+
+#submit_wrap{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 2px;
+  border:1px solid #bfd1e4;
+  border-radius: 20px;
+
+  button{
+    width:98%;
+    border-radius: 16px;
+    background-color: #fff;
+    margin: 0px;
+    padding: 10px 0px;
+    color: #739fd0;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+}
+
+#url{
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 30px;
+  img{
+    width: 100%;
+  }
+}
+
+
+

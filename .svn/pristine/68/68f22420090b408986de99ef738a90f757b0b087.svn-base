@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>搜索公司页面</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../../../v2/css/widget.css">
+  <link rel="stylesheet" href="../../../v2/css/search/search-salary.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <!--<script src="/js/require.js" data-main="/v2/js/company/view.js"></script>-->
+</head>
+
+<body class="grey-bg">
+<header class="global">
+  <div class="header">
+    <a ka="head-index" href="/" class="logo"><img src="/images/logo.png" width="136" height="40"></a>
+    <nav>
+      <a ka="head-com" href="/gs.html">公司</a>
+      <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+      <a ka="head-recruit" href="/job/">招聘</a>
+      <a ka="head-interview" href="/msh/">面试</a>
+      <a ka="head-news" target="_blank" href="/news/">资讯</a>
+      <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+    </nav>
+    <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+  </div>
+</header>
+<section class="top-search">
+  <div class="top-search-form">
+    <form action="">
+      <fieldset>
+        <input type="text" name="" placeholder="搜索公司/职位">
+        <input type="submit" value="搜索">
+      </fieldset>
+      <p>
+        热搜词：
+        <a href="#">百度</a>
+        <a href="#">产品经理</a>
+        <a href="#">设计师</a>
+        <a href="#">程序员</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+<nav class="top-search-nav">
+  <a href="#" class="current">公司</a>
+  <a href="#">工资</a>
+  <a href="#">招聘</a>
+  <a href="#">面试</a>
+</nav>
+
+<div class="container-search clearfix">
+<section class="s_l_con clearfix">
+  <div class="wrap_style plr_twenty" id="searchLeftOptions">
+<h2>热门公司：</h2>
+<div class="hot_cmp">
+  <a href="">百度<span>(54)</span></a>
+  <a href="">腾讯<span>(504)</span></a>
+  <a href="">京东<span>(50)</span></a>
+  <a href="">360<span>(58)</span></a>
+  <a href="">阿里巴巴<span>(54)</span></a>
+  <a href="">小米<span>(4)</span></a>
+  <a href="">锤子<span>(4)</span></a>
+  <a href="">美团<span>(50)</span></a>
+  <div class="s-opts-more">
+    <a href="">百度<span>(54)</span></a>
+    <a href="">腾讯<span>(504)</span></a>
+    <a href="">京东<span>(50)</span></a>
+    <a href="">360<span>(58)</span></a>
+    <a href="">阿里巴巴<span>(54)</span></a>
+    <a href="">小米<span>(4)</span></a>
+    <a href="">锤子<span>(4)</span></a>
+    <a href="">美团<span>(50)</span></a>
+  </div>
+  <div class="clear see_more">
+    <div class="C-toggler">
+      展开<i></i>
+    </div>
+  </div>
+</div>
+<h2>所在城市：</h2>
+<div class="host_city">
+  <a href="">北京</a>
+  <a href="">上海</a>
+  <a href="">天津</a>
+  <a href="">杭州</a>
+  <a href="">重庆</a>
+  <a href="">成都</a>
+  <a href="">沈阳</a>
+  <a href="">长沙</a>
+  <a href="">南京</a>
+  <a href="">兰州</a>
+  <div class="s-opts-more clear">
+  <p class="tt mb10">按拼音首字母选择</p>
+  <ul class="first_letter">
+
+    <li>B</li>
+
+    <li>C</li>
+
+    <li>D</li>
+
+    <li>F</li>
+
+    <li>G</li>
+
+    <li>H</li>
+
+    <li>J</li>
+
+    <li>K</li>
+
+    <li>L</li>
+
+    <li>M</li>
+
+    <li>N</li>
+
+    <li>Q</li>
+
+    <li>S</li>
+
+    <li>T</li>
+
+    <li>W</li>
+
+    <li>X</li>
+
+    <li>Y</li>
+
+    <li>Z</li>
+
+  </ul>
+  <ul class="search-opts-cities">
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=6&amp;industryCode=0">包头</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=7&amp;industryCode=0">北京</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=7&amp;industryCode=0">北京</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=9&amp;industryCode=0">重庆</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=12&amp;industryCode=0">成都</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=15&amp;industryCode=0">长沙</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=18&amp;industryCode=0">长春</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=9&amp;industryCode=0">重庆</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=422&amp;industryCode=0">台湾</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=8&amp;industryCode=0">大连</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=37&amp;industryCode=0">福州</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=38&amp;industryCode=0">阜阳</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=34&amp;industryCode=0">广州</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=36&amp;industryCode=0">赣州</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=31&amp;industryCode=0">哈尔滨</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=41&amp;industryCode=0">合肥</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=42&amp;industryCode=0">杭州</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=153&amp;industryCode=0">衡水</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=370&amp;industryCode=0">菏泽</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=381&amp;industryCode=0">辽宁</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=412&amp;industryCode=0">黑龙江</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=55&amp;industryCode=0">济南</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=263&amp;industryCode=0">吉安</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=161&amp;industryCode=0">吉林</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=281&amp;industryCode=0">安徽</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=331&amp;industryCode=0">江苏</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=334&amp;industryCode=0">河北</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=335&amp;industryCode=0">河南</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=339&amp;industryCode=0">浙江</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=350&amp;industryCode=0">湖北</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=351&amp;industryCode=0">湖南</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=206&amp;industryCode=0">昆山</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=236&amp;industryCode=0">云南</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=243&amp;industryCode=0">内蒙古</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=64&amp;industryCode=0">柳州</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=155&amp;industryCode=0">廊坊</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=183&amp;industryCode=0">连云港</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=185&amp;industryCode=0">山西</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=188&amp;industryCode=0">山东</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=190&amp;industryCode=0">陕西</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=200&amp;industryCode=0">丽江</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=68&amp;industryCode=0">绵阳</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=2&amp;industryCode=0">南京</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=3&amp;industryCode=0">广东</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=166&amp;industryCode=0">南通</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=167&amp;industryCode=0">南宁</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=171&amp;industryCode=0">江西</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=47&amp;industryCode=0">其它</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=48&amp;industryCode=0">四川</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=70&amp;industryCode=0">泉州</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=75&amp;industryCode=0">青岛</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=1&amp;industryCode=0">上海</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=49&amp;industryCode=0">深圳</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=50&amp;industryCode=0">苏州</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=51&amp;industryCode=0">沈阳</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=52&amp;industryCode=0">福建</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=85&amp;industryCode=0">石家庄</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=1&amp;industryCode=0">上海</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=88&amp;industryCode=0">天津</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=90&amp;industryCode=0">台州</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=91&amp;industryCode=0">太原</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=88&amp;industryCode=0">天津</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=452&amp;industryCode=0">台北</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=53&amp;industryCode=0">武汉</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=96&amp;industryCode=0">无锡</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=105&amp;industryCode=0">西安</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=106&amp;industryCode=0">厦门</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=116&amp;industryCode=0">徐州</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=120&amp;industryCode=0">扬州</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=417&amp;industryCode=0">阳泉</a>
+
+  </li>
+
+  <li>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=111&amp;industryCode=0">郑州</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=112&amp;industryCode=0">广西</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=135&amp;industryCode=0">中山</a>
+
+    <a href="/companyl/search?q=百度&amp;sortType=0&amp;cityCode=137&amp;industryCode=0">淄博</a>
+
+  </li>
+
+  </ul>
+  </div>
+  <div class="clear see_more">
+    <div class="C-toggler">展开<i></i></div>
+  </div>
+</div>
+<h2>行业领域：</h2>
+<ul class="industry_field">
+  <li>
+    <a class="default" href="javascript:;">IT/互联网<i class="i_right"></i></a>
+    <div class="more_list clearfix">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-11" href="/jobli_70-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="SNS/社交网络"><em>SNS/社交网络</em>（766）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-12" href="/jobli_105-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="智能硬件"><em>智能硬件</em>（263）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-13" href="/jobli_100-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="搜索引擎/门户网站"><em>搜索引擎/门户网站</em>（2011）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-14" href="/jobli_82-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="在线旅游"><em>在线旅游</em>（429）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-15" href="/jobli_69-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="O2O"><em>O2O</em>（3554）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-16" href="/jobli_78-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="医疗服务"><em>医疗服务</em>（849）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-17" href="/jobli_116-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="电子商务"><em>电子商务</em>（5153）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-18" href="/jobli_119-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="移动互联网"><em>移动互联网</em>（14900）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-19" href="/jobli_73-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="互联网金融"><em>互联网金融</em>（3268）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-110" href="/jobli_72-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="云计算/大数据"><em>云计算/大数据</em>（1790）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-111" href="/jobli_81-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="在线教育"><em>在线教育</em>（1538）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-112" href="/jobli_121-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="网络招聘"><em>网络招聘</em>（414）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-113" href="/jobli_120-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="网络安全"><em>网络安全</em>（180）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-114" href="/jobli_4-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="互联网"><em>互联网</em>（134337）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-115" href="/jobli_2-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="计算机软件"><em>计算机软件</em>（65524）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-116" href="/jobli_3-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="IT服务/系统集成"><em>IT服务/系统集成</em>（51468）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-117" href="/jobli_5-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="网游/手游"><em>网游/手游</em>（15900）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">电子/通信/硬件<i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-21" href="/jobli_126-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="运营商/增值服务"><em>运营商/增值服务</em>（15433）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-22" href="/jobli_1-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="计算机硬件/网络设备"><em>计算机硬件/网络设备</em>（17442）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-23" href="/jobli_6-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="通信设备"><em>通信设备</em>（15478）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-24" href="/jobli_7-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="电子/半导体/集成电路"><em>电子/半导体/集成电路</em>（15591）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">金融<i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-31" href="/jobli_9-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="银行"><em>银行</em>（15444）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-32" href="/jobli_10-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="保险"><em>保险</em>（24448）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-33" href="/jobli_84-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="基金"><em>基金</em>（70156）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-34" href="/jobli_118-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="租赁"><em>租赁</em>（1）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-35" href="/jobli_98-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="投资/融资"><em>投资/融资</em>（13147）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-36" href="/jobli_99-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="担保/典当/拍卖"><em>担保/典当/拍卖</em>（17442）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">生活服务<i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-41" href="/jobli_12-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="餐饮"><em>餐饮</em>（1388）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-42" href="/jobli_36-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="酒店"><em>酒店</em>（12303）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-43" href="/jobli_108-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="汽车租赁"><em>汽车租赁</em>（3136）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-44" href="/jobli_104-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="旅游"><em>旅游</em>（5754）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-45" href="/jobli_20-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="中介服务"><em>中介服务</em>（17906）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-46" href="/jobli_34-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="娱乐/休闲/体育"><em>娱乐/休闲/体育</em>（9335）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-47" href="/jobli_88-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="婚庆/摄影"><em>婚庆/摄影</em>（2）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-48" href="/jobli_24-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="丽人/美容/美发"><em>丽人/美容/美发</em>（12）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">汽车<i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-51" href="/jobli_110-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="汽车销售"><em>汽车销售</em>（1）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-52" href="/jobli_29-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="汽车生产"><em>汽车生产</em>（12593）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-53" href="/jobli_111-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="汽车零部件"><em>汽车零部件</em>（60）</a>
+			</span>
+    </div>
+  </li>
+  <li>
+    <a class="default" href="javascript:;">交通/贸易/物流 <i class="i_right"></i></a>
+    <div class="more_list">
+      <s></s>
+			<span>
+			<a class="def" ka="select-hangye-61" href="/jobli_30-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="交通/运输"><em>交通/运输</em>（7168）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-62" href="/jobli_113-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="物流/仓储"><em>物流/仓储</em>（2137）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-63" href="/jobli_21-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="贸易/进出口"><em>贸易/进出口</em>（18582）</a>
+			</span>
+    </div>
+  </li>
+</ul>
+<ul class="industry_field s-opts-more">
+<li>
+  <a class="default" href="javascript:;">专业服务<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-71" href="/jobli_17-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="咨询"><em>咨询</em>（50）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-72" href="/jobli_125-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="财务/审计/税务"><em>财务/审计/税务</em>（42936）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-73" href="/jobli_112-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="法律"><em>法律</em>（963）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-74" href="/jobli_74-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="人才服务"><em>人才服务</em>（17）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-75" href="/jobli_85-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="外包服务"><em>外包服务</em>（4282）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-76" href="/jobli_122-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="翻译"><em>翻译</em>（2）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-77" href="/jobli_71-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="专利/知识产权/商标"><em>专利/知识产权/商标</em>（2）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-78" href="/jobli_19-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="检测/认证"><em>检测/认证</em>（3480）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">广告/传媒/文化<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-81" href="/jobli_14-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="广告/公关/会展"><em>广告/公关/会展</em>（31584）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-82" href="/jobli_15-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="影视/媒体"><em>影视/媒体</em>（29053）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-83" href="/jobli_102-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="文化/艺术/出版"><em>文化/艺术/出版</em>（1869）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">房地产/建筑<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-91" href="/jobli_83-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="地产经纪/中介"><em>地产经纪/中介</em>（42）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-92" href="/jobli_13-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="物业管理/商业中心"><em>物业管理/商业中心</em>（14817）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-93" href="/jobli_97-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="建筑设计"><em>建筑设计</em>（1700）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-94" href="/jobli_94-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="工程施工"><em>工程施工</em>（4194）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-95" href="/jobli_80-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="园林景观"><em>园林景观</em>（2）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-96" href="/jobli_11-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="房地产开发"><em>房地产开发</em>（49325）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-97" href="/jobli_51-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="装修装饰"><em>装修装饰</em>（7761）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">机械/制造<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-101" href="/jobli_27-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="机械制造/机电/重工"><em>机械制造/机电/重工</em>（11509）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-102" href="/jobli_28-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="原材料及加工/模具"><em>原材料及加工/模具</em>（7731）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-103" href="/jobli_16-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="印刷/包装/造纸"><em>印刷/包装/造纸</em>（2944）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-104" href="/jobli_8-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="仪器/仪表/工业自动化"><em>仪器/仪表/工业自动化</em>（11623）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-105" href="/jobli_40-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="航空/航天"><em>航空/航天</em>（3601）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">能源/化工/环保<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-111" href="/jobli_103-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="新能源(太阳能/风能)"><em>新能源(太阳能/风能)</em>（3063）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-112" href="/jobli_43-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="环保"><em>环保</em>（9033）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-113" href="/jobli_39-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="电力/水利"><em>电力/水利</em>（8397）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-114" href="/jobli_37-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="石油/石化/化工"><em>石油/石化/化工</em>（6958）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-115" href="/jobli_38-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="矿产/地质/采掘/冶炼"><em>矿产/地质/采掘/冶炼</em>（6353）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">消费品<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-121" href="/jobli_77-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="办公用品及设备"><em>办公用品及设备</em>（2320）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-122" href="/jobli_26-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="家电"><em>家电</em>（985）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-123" href="/jobli_41-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="服装/服饰/纺织/皮革"><em>服装/服饰/纺织/皮革</em>（10669）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-124" href="/jobli_87-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="奢侈品/收藏品"><em>奢侈品/收藏品</em>（2317）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-125" href="/jobli_22-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="零售(超市)/批发"><em>零售(超市)/批发</em>（14888）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-126" href="/jobli_50-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="玩具/礼品"><em>玩具/礼品</em>（5569）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-127" href="/jobli_23-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="食品/饮料/烟酒/日化"><em>食品/饮料/烟酒/日化</em>（14053）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-128" href="/jobli_92-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="家具/家居"><em>家具/家居</em>（1449）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-129" href="/jobli_115-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="珠宝/首饰/工艺品"><em>珠宝/首饰/工艺品</em>（638）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">制药/医疗<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-131" href="/jobli_25-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="制药(生物/化学)"><em>制药(生物/化学)</em>（19192）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-132" href="/jobli_33-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="医疗器械"><em>医疗器械</em>（13111）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-133" href="/jobli_31-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="医疗卫生"><em>医疗卫生</em>（16591）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">教育/培训<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-141" href="/jobli_86-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="外语培训"><em>外语培训</em>（13）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-142" href="/jobli_76-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="其他技能培训"><em>其他技能培训</em>（31）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-143" href="/jobli_90-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="学术/科研"><em>学术/科研</em>（6406）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-144" href="/jobli_18-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="院校"><em>院校</em>（64）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">政府/非盈利机构<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-151" href="/jobli_127-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="非盈利机构"><em>非盈利机构</em>（299）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-152" href="/jobli_42-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="政府/公共事业"><em>政府/公共事业</em>（5226）</a>
+			</span>
+  </div>
+</li>
+<li>
+  <a class="default" href="javascript:;">农/林/牧/渔/其他<i class="i_right"></i></a>
+  <div class="more_list">
+    <s></s>
+			<span>
+			<a class="def" ka="select-hangye-161" href="/jobli_44-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="养殖/种植/水产"><em>养殖/种植/水产</em>（5）</a>
+			</span>
+			<span>
+			<a class="def" ka="select-hangye-162" href="/jobli_46-t_0-e_0-d_0-s_0-j_0-k_0/p/?cityCode=7" title="其他"><em>其他</em>（16258）</a>
+			</span>
+  </div>
+</li>
+</ul>
+<div class="clear see_more">
+  <div class="C-toggler" id="industryOthersToggler" ka="select-hangye-zhankai">
+    展开<i></i>
+  </div>
+</div>
+<h2>面试结果：</h2>
+<div class="hot_cmp">
+  <a href="">面试通过</a><a href="">感觉靠谱</a><a href="">感觉没戏</a><a href="">未通过</a>
+</div>
+</div>
+</section>
+
+<section class="s_r_con clearfix">
+  <dl class="wrap_style search-options">
+    <dt><a href="#">查看与 “<span>百度</span>” 相关的职位工资 &gt;</a> <strong>找到 30 个与“<span>百度</span>”相关的工资</strong></dt>
+    <dd>
+      筛选条件：
+      <span>客服<a href="#"><i class="close_conditions"></i></a></span>
+      <span>北京<a href="#"><i class="close_conditions"></i></a></span>
+      <span>面试通过<a href="#"><i class="close_conditions"></i></a></span>
+    </dd>
+  </dl>
+
+  <div class="wrap_style mt15">
+    <table class="salary-desc salary-desc-th" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="145">职位</td>
+        <td width="85" class="s-d-average">平均工资/月</td>
+        <td>
+          <div class="s-d-digit">
+            <em class="s-d-digit-min">最低</em><p></p><em class="s-d-digit-max">最高</em>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="wrap_style mt15">
+    <div class="search-list-co-brief">
+      <a href="" class="fright mt15">查看更多 &gt;</a>
+      <a ka="job3-logo" href="/gso3321.html" target="_blank"><img src="http://img.kanzhun.com/images/logo/20140707/ea1558006b083ebfe594d9681576e32e.jpg" title="中兴通讯" width="65"></a>
+      <span class="f_16">百度的工资</span> <span class="grey_99">（3044条）</span>
+    </div>
+    <table class="salary-desc" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr id="SD_642323" data-url="/xs/salary/3131/barchart.json?job=%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="show_flip">
+      <td width="145"><a href="/gzxs642323.html" ka="comsalary-blocker2-jobname1">软件开发工程师(3722条)</a></td>
+      <td class="s-d-average" width="85">￥11060</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname1show">
+          <p>
+            <em class="s-d-l">￥6600</em>
+            <span style="margin-left: 46px;"></span>
+            <em class="s-d-r">￥26100</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_642323_C" class="s-d-c">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥26,100</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥6,600</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="642323" ka="comsalary-blocker2-up1">
+                <i></i>靠谱 <em>8</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart" data-highcharts-chart="0">
+            <div class="highcharts-container" id="highcharts-0"
+                 style="position: relative; overflow: hidden; width: 420px; height: 190px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+              <svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="420" height="190">
+                <desc>Created with Highcharts 4.0.3</desc>
+                <defs>
+                  <clipPath id="highcharts-1">
+                    <rect x="0" y="0" width="362" height="139"></rect>
+                  </clipPath>
+                </defs>
+                <rect x="0" y="0" width="420" height="190" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect>
+                <g class="highcharts-grid" zIndex="1"></g>
+                <g class="highcharts-grid" zIndex="1">
+                  <path fill="none" d="M 48 9.5 L 410 9.5" stroke="#f2f2f2" stroke-width="1" zIndex="1" opacity="1"></path>
+                  <path fill="none" d="M 48 80.5 L 410 80.5" stroke="#f2f2f2" stroke-width="1" zIndex="1" opacity="1"></path>
+                  <path fill="none" d="M 48 149.5 L 410 149.5" stroke="#f2f2f2" stroke-width="1" zIndex="1" opacity="1"></path>
+                </g>
+                <g class="highcharts-axis" zIndex="2">
+                  <path fill="none" d="M 150.5 149 L 150.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 202.5 149 L 202.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 254.5 149 L 254.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 306.5 149 L 306.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 357.5 149 L 357.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 410.5 149 L 410.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 99.5 149 L 99.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 47.5 149 L 47.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 48 149.5 L 410 149.5" stroke="#007ead" stroke-width="1" zIndex="7" visibility="visible"></path>
+                </g>
+                <g class="highcharts-axis" zIndex="2">
+                  <path fill="none" d="M 47.5 10 L 47.5 149" stroke="#007ead" stroke-width="1" zIndex="7" visibility="visible"></path>
+                </g>
+                <g class="highcharts-series-group" zIndex="3">
+                  <g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(48,10) scale(1 1)" clip-path="url(#highcharts-1)">
+                    <path fill="rgba(124,181,236,0.3)"
+                          d="M 25.857142857142858 135.83775 L 77.57142857142857 67.03275 L 129.28571428571428 33.60325 L 181 31.622500000000002 L 232.71428571428572 107.169 L 284.4285714285714 121.347 L 336.1428571428571 128.9225 L 336.1428571428571 139 L 25.857142857142858 139"
+                          zIndex="0"></path>
+                    <path fill="none"
+                          d="M 25.857142857142858 135.83775 L 77.57142857142857 67.03275 L 129.28571428571428 33.60325 L 181 31.622500000000002 L 232.71428571428572 107.169 L 284.4285714285714 121.347 L 336.1428571428571 128.9225"
+                          stroke="#7cb5ec" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path>
+                    <path fill="none"
+                          d="M 15.857142857142858 135.83775 L 25.857142857142858 135.83775 L 77.57142857142857 67.03275 L 129.28571428571428 33.60325 L 181 31.622500000000002 L 232.71428571428572 107.169 L 284.4285714285714 121.347 L 336.1428571428571 128.9225 L 346.1428571428571 128.9225"
+                          stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path>
+                  </g>
+                  <g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(48,10) scale(1 1)" clip-path="none" style="">
+                    <path fill="#7db2e6" d="M 336 123.92250000000001 C 342.66 123.92250000000001 342.66 133.9225 336 133.9225 C 329.34 133.9225 329.34 123.92250000000001 336 123.92250000000001 Z" stroke="#fff"
+                          stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 284 116.347 C 290.66 116.347 290.66 126.347 284 126.347 C 277.34 126.347 277.34 116.347 284 116.347 Z" stroke="#fff" stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 232 102.169 C 238.66 102.169 238.66 112.169 232 112.169 C 225.34 112.169 225.34 102.169 232 102.169 Z" stroke="#fff" stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 181 26.622500000000002 C 187.66 26.622500000000002 187.66 36.6225 181 36.6225 C 174.34 36.6225 174.34 26.622500000000002 181 26.622500000000002 Z" stroke="#fff"
+                          stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 129 28.603250000000003 C 135.66 28.603250000000003 135.66 38.60325 129 38.60325 C 122.34 38.60325 122.34 28.603250000000003 129 28.603250000000003 Z" stroke="#fff"
+                          stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 77 62.03274999999999 C 83.66 62.03274999999999 83.66 72.03275 77 72.03275 C 70.34 72.03275 70.34 62.03274999999999 77 62.03274999999999 Z" stroke="#fff" stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 25 130.83775 C 31.66 130.83775 31.66 140.83775 25 140.83775 C 18.34 140.83775 18.34 130.83775 25 130.83775 Z" stroke="#fff" stroke-width="2"></path>
+                  </g>
+                </g>
+                <g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7">
+                  <text x="73.85714285714286" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">0-6k</text>
+                  <text x="125.57142857142858" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">6-10k</text>
+                  <text x="177.28571428571428" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">10-12k</text>
+                  <text x="229" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">12-16k</text>
+                  <text x="280.7142857142857" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">16-20k</text>
+                  <text x="332.42857142857144" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">20-25k</text>
+                  <text x="384.14285714285717" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">&gt;25k</text>
+                </g>
+                <g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7">
+                  <text x="33" text-anchor="end" style="width:119px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="153" opacity="1">0%</text>
+                  <text x="33" text-anchor="end" style="width:119px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="83.5" opacity="1">20%</text>
+                  <text x="33" text-anchor="end" style="width:119px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="14" opacity="1">40%</text>
+                </g>
+                <g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)">
+                  <path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996"
+                        stroke-width="5" transform="translate(1, 1)"></path>
+                  <path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999"
+                        stroke-width="3" transform="translate(1, 1)"></path>
+                  <path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1"
+                        transform="translate(1, 1)"></path>
+                  <path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0"></path>
+                  <text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="21"></text>
+                </g>
+              </svg>
+            </div>
+          </section>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_143442" data-url="/xs/salary/3131/barchart.json?job=%E7%A0%94%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="">
+      <td><a href="/gzxs143442.html" ka="comsalary-blocker2-jobname2">研发工程师(758条)</a></td>
+      <td class="s-d-average">￥11600</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname2show">
+          <p>
+            <em class="s-d-l">￥7381</em>
+            <span style="margin-left: 43px;"></span>
+            <em class="s-d-r">￥26860</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_143442_C" class="s-d-c none">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥26,860</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥7,381</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="143442" ka="comsalary-blocker2-up2">
+                <i></i>靠谱 <em>19</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart">
+          </section>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_118333" data-url="/xs/salary/3131/barchart.json?job=%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="">
+      <td><a href="/gzxs118333.html" ka="comsalary-blocker2-jobname3">工程师(675条)</a></td>
+      <td class="s-d-average">￥12640</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname3show">
+          <p>
+            <em class="s-d-l">￥6600</em>
+            <span style="margin-left: 48px;"></span>
+            <em class="s-d-r">￥31600</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_118333_C" class="s-d-c none">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥31,600</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥6,600</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="118333" ka="comsalary-blocker2-up3">
+                <i></i>靠谱 <em>21</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart">
+          </section>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_25962" data-url="/xs/salary/3131/barchart.json?job=%E7%A1%AC%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="">
+      <td><a href="/gzxs25962.html" ka="comsalary-blocker2-jobname4">硬件工程师(464条)</a></td>
+      <td class="s-d-average">￥11600</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname4show">
+          <p>
+            <em class="s-d-l">￥7920</em>
+            <span style="margin-left: 48px;"></span>
+            <em class="s-d-r">￥23200</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_25962_C" class="s-d-c none">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥23,200</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥7,920</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="25962" ka="comsalary-blocker2-up4">
+                <i></i>靠谱 <em>18</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart">
+          </section>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_135367" data-url="/xs/salary/3131/barchart.json?job=%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="">
+      <td><a href="/gzxs135367.html" ka="comsalary-blocker2-jobname5">测试工程师(404条)</a></td>
+      <td class="s-d-average">￥10560</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname5show">
+          <p>
+            <em class="s-d-l">￥6525</em>
+            <span style="margin-left: 46px;"></span>
+            <em class="s-d-r">￥23925</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_135367_C" class="s-d-c none">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥23,925</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥6,525</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="135367" ka="comsalary-blocker2-up5">
+                <i></i>靠谱 <em>20</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart">
+          </section>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+
+  <div class="wrap_style mt15">
+    <p class="mt15">图例： <span class="s-c-flag"></span>工资范围 <span class="s-c-flag s-c-flag2"></span>平均工资</p>
+    <p class="mt10 mb15">说明： <span class="grey_99">所有工资数据来自用户匿名分享。工资水平受地域、工作年限等多种因素影响，仅供参考。</span></p>
+  </div>
+
+  <div class="page_wrap mt20">
+    <div class="f_pager t-right fright">
+      <a ka="paging1" href="/gsx3131.html" class="current">1</a>
+      <a ka="paging2" href="/gsx3131p2.html" rel="nofollow">2</a>
+      <a ka="paging3" href="/gsx3131p3.html" rel="nofollow">3</a>
+      <a ka="paging4" href="/gsx3131p4.html" rel="nofollow">4</a>
+      <a ka="paging2" href="/gsx3131p2.html" data-page="2" rel="nofollow" class="p_next"><i class="p_next">&gt;</i></a>
+    </div>
+  </div>
+</section>
+</div>
+</body>
+</html>

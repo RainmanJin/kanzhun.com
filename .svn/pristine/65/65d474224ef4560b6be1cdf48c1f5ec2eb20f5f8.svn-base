@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>kanzhun</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+<div class="wrapper detail">
+	<div class="content">
+		<header class="page_hd">
+			<a href="index.html" class="top_back"><i></i>返回</a>
+			<strong>公司详情</strong>
+			<a href="city.html" class="fright">主页</a>
+		</header>
+
+		<dl class="co_info">
+			<dt><img src="../images/portrait.jpg" /></dt>
+			<dd>
+				<h1>易宝支付</h1>
+				<p><span class="grade_star"><i class="s_4"></i></span> 4.0分</p>
+				<p>www.yeepay.com | 北京</p>
+			</dd>
+		</dl>
+
+		<section class="menu">
+			<div class="menu_wrap">
+				<div class="menu_con" id="companyMenu">
+				<p><a href="#">基本信息</a><a href="#">招聘</a><a href="#" class="current">工资</a><a href="job-details.html">点评</a><a href="interview-details.html">面试</a><a href="#">照片</a></p>
+				</div>
+			</div>
+			<a class="moving" href="javascript:;"><i class="arrow_green"></i></a>
+		</section>
+
+		<fieldset>
+			<ul class="col">
+			<li><span>官网</span><p>http://www.baidu.com/</p></li>
+			<li><span>行业</span><p>互联网</p></li>
+			<li><span>城市</span><p>北京</p></li>
+			<li><span>规模</span><p>500-1000人</p></li>
+			<li><span>CEO</span><p>李彦宏</p></li>
+			<li><span>竞争对手</span><p><em class="blue">网易有道</em> <em class="blue">奇虎360</em></p></li>
+			</ul>
+		</fieldset>
+
+		<h2 class="tt"><span>内部资料</span></h2>
+		<ul class="v_menu">
+			<li><a href="#">内部员工点评易宝支付<span class="grey">（235条工资）</span><i class="arrow_g"></i></a></li>
+			<li><a href="#">各职位工资 <span class="grey">（24条点评）</span><i class="arrow_g"></i></a></li>
+			<li><a href="#">面试易宝支付经历<span class="grey">（1524条点评）</span><i class="arrow_g"></i></a></li>
+			<li><a href="#">公司环境照片<span class="grey">（1524条点评）</span><i class="arrow_g"></i></a></li>
+		</ul>
+
+		<h2 class="tt"><span>公司介绍</span></h2>
+		<fieldset>
+			<p>百度，2000年1月创立于北京中关村，是全球最大的中文网站、最大的中文搜索引擎。
+	2000年1月1日，公司创始人李彦宏、徐勇从美国硅谷回国，创建了百度。创立之初，百度便将“让人们更便捷地获取信息”作为自己的使命，并为此始终如一、不懈地努力奋斗。<span class="show_details hidden">啦啦啦啦啦啦啦阿拉啦</span><span class="more">... <i>展开</i></span></p>
+		</fieldset>
+
+		<ul class="v_menu">
+			<li><a href="#">查看更多"易宝支付"的面试经历<i class="arrow_g"></i></a></li>
+		</ul>
+
+		<a href="photos.html" class="btn_grey more_details">更多</a>
+		<ul class="v_menu">
+			<li><a href="#">查看“产品经理”招聘  <i class="arrow_g"></i></a></li>
+		</ul>
+
+		<div id="co_pk">
+			<h2 class="tt"><span>公司大PK</span></h2>
+			<div class="pk-co">
+				<dl class="index-hot-tabs">
+					<dd id="pkHotList">
+						<div>
+							<div class="inner">
+								<ul>
+									<li ka="current1">
+										<a href="/activity/bcompany/result/?com1=7693&amp;com2=11038">
+											<span class="center"><i class="hot"></i>37005人正在参与pk</span>
+												<span class="fleft">
+													<img src="http://img.kanzhun.com/image/l7693.gif">
+													上海通用汽车
+												</span>
+												<span class="fright">
+													上海大众汽车
+													<img src="http://img.kanzhun.com/images/logo/20140707/b2e45e8b1a313b9480c07c8a14d56150.jpg">
+												</span>
+										</a>
+									</li>
+									<li ka="current2">
+										<a href="/activity/bcompany/result/?com1=7693&amp;com2=11038">
+											<span class="center"><i class="hot"></i>37005人正在参与pk</span>
+												<span class="fleft">
+													<img src="http://img.kanzhun.com/image/l7693.gif">
+													上海通用汽车
+												</span>
+												<span class="fright">
+													上海大众汽车
+													<img src="http://img.kanzhun.com/images/logo/20140707/b2e45e8b1a313b9480c07c8a14d56150.jpg">
+												</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<a href="#" class="btn_grey" style="margin-bottom: 10px;">更多</a>
+		</div>
+		<script>
+			$('#co_pk').load('http://test');
+		</script>
+	</div>
+</div>
+<footer class="page_ft">
+		<p>看准网移动版 m.kanzhun.com</p>
+		<p>电脑版  |  移动版</p>
+</footer>
+<a class="js_floatFooter floatFooter" style="display:none" href="#">
+	<em>我在这里工作过-我要点评</em>
+</a>
+<script src="js/zepto.js"></script>
+<script src="js/iscroll-lite.js"></script>
+<script src="js/m-kanzhun.js"></script>
+<script type="text/javascript">
+	document.querySelector('span.more').addEventListener('click', function(e){
+        var details = this.parentNode.querySelector('span.show_details');
+
+        if(details){
+            if(details.classList.contains('hidden')){
+                this.innerHTML = '<i class="ml10">收起</i>';
+                details.classList.remove('hidden');
+            }else{
+                this.innerHTML = '... <i>展开</i>';
+                details.classList.add('hidden');
+            }
+        }
+    }, false);
+    $.setCompanyMenu(2);
+</script>
+</body>
+</html>
+
+

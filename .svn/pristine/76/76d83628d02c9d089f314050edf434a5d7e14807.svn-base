@@ -1,0 +1,38 @@
+@import "../common/var";
+
+//分享有用评论
+.icons_v1_base(){
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-image: @manage_icons;
+  background-repeat: no-repeat;
+}
+
+span {
+  //有用
+  &.u_feel_helpful {
+    .icons_v1_base;
+    width: 14px;
+    height: 13px;
+    background-position : -110px -198px;
+    margin-right: 5px;
+  }
+
+  //评论
+  &.u_comment {
+    .icons_v1_base;
+    width: 16px;
+    height: 13px;
+    background-position: -92px -198px;
+    margin-right: 5px;
+  }
+/*
+  //分享
+  &.u_share {
+    .icons_v1_base;
+    width: 16px;
+    height: 13px;
+    background-position: -74px -198px;
+  }*/
+}

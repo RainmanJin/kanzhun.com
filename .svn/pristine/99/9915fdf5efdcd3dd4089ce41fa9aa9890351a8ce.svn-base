@@ -1,0 +1,90 @@
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+.mt25{margin-top: 25px;}
+.mt30{margin-top: 30px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb25{margin-bottom: 25px;}
+.mb30{margin-bottom: 30px;}
+.ml10{margin-left: 10px;}
+.ml15{margin-left: 15px;}
+.ml20{margin-left: 20px;}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+.mr25{margin-right: 25px;}
+.pv10{padding: 10px 0;}
+.ph10{padding: 0 10px;}
+.pt10{padding-top: 10px;}
+.pt15{padding-top: 15px;}
+.pr20{padding-right: 20px;}
+
+
+.bisys{
+  .pagination{
+    vertical-align: middle;
+  }
+  .bi-pa{
+    margin-left: 20px;
+    .form-control{
+      width: 35px;
+    }
+  }
+
+  .table{
+    th{
+      background-color: #f5f5f5;
+    }
+
+    td{
+      padding: 0;
+      vertical-align: bottom;
+
+      div{
+        padding: 8px 8px 2px;
+      }
+    }
+  }
+  .percent{
+    width: 100%;
+    height: 8px;
+    margin: 0;
+
+    i{
+      background-color: #ede907;
+      display: block;
+      height: 8px;
+      width: 0;
+      overflow: hidden;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+    }
+  }
+
+
+  .chart{
+    border: 1px solid #ccc;
+    min-height: 300px;
+    width: 100%;
+  }
+
+  .chart-control{
+    width: 300px;
+    vertical-align: top;
+    padding-left: 20px;
+
+    >p>.btn{
+      width: 128px;
+      margin-bottom: 4px;
+    }
+  }
+
+  .chart-control-b{
+    vertical-align: bottom;
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../css/common/var';
+
+a {
+	&.l_m_collection {
+		color: @grey_99;
+		i.collection {
+      background: url("@{img}/icons_v2.png") no-repeat -161px -25px;
+			margin-right: 5px;
+			vertical-align: -2px;
+		}
+
+		&:hover {
+			color: @blue;
+			text-decoration: none;
+
+      i.collection {
+        background: url("@{img}/icons_v2.png") no-repeat -161px -41px;
+      }
+		}
+	}
+
+	&.hadcollection {
+		color: @grey_99;
+		cursor: default;
+		i.hadcollection {
+      background: url("@{img}/icons_v2.png") no-repeat -161px -41px;
+			margin-right: 5px;
+			vertical-align: -2px;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+

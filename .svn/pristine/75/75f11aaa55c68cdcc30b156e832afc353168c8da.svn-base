@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>查看朋友公司</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="stylesheet" href="css/report.css"/>
+</head>
+
+<body style="background-color: #426ead;">
+<img class="index-banner" src="images/index-bg.jpg">
+
+<div class="index-btn">
+  <img src="images/index-btn.png" width="91" class="shine">
+</div>
+
+<p class="t-center f16 white">你有1次查询机会， <a href="#" class="a-yellow">获取更多查询机会</a></p>
+
+<div class="mt10 ml10 mr10">
+	<a href="#">
+  	<img src="images/kz.jpg" width="100%">
+	</a>
+</div>
+<script src="js/zepto.js"></script>
+<script src="js/wx.js"></script>
+</body>
+</html>

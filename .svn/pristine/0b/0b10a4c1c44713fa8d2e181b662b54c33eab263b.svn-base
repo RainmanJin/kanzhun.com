@@ -1,0 +1,76 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+section.bg {
+  background: url("@{img}/activity/jinping/list_bg_line.png") repeat-y center;
+}
+.main{
+  background: url("@{img}/activity/jinping/season_bg.jpg")  center no-repeat;
+  min-height: 1400px;
+  .title-wrap{
+    text-align: center;
+    padding-top: 40px;
+    .horzontal{
+      margin-top: -20px;
+    }
+    p{
+      margin-top: -55px;
+      padding-bottom: 50px;
+        font-size: 32px;
+        color: rgb( 189, 18, 0 );
+        font-weight: bold;
+    }
+  }
+}
+div.co_header{
+  margin: -60px auto 0;
+  width: 1150px;
+  height: 210px;
+  padding-top: 15px;
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+  .ch_inner{
+    height: 170px;
+    border: 2px solid #6e74ac;
+    background-color: #473681;
+    margin: 0 15px;
+    padding: 20px 20px 0 ;
+    .logo{
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      float: left;
+    }
+    .chi_r{
+      margin-left: 180px;
+      h2{
+        font-size: 20px;
+      }
+      .p1{
+        color: #fefefe;
+        em{
+          color: #5d589f;
+          margin: 0 10px;
+        }
+      }
+      ul{
+        li{
+          float: left;
+          background: url("@{img}/activity/jinping/bgs.png") no-repeat 0 -60px;
+          width: 132px;
+          height: 76px;
+          text-align: center;
+          margin-right: 10px;
+          h4{
+            font-size: 26px;
+            color: #ffe236;
+          }
+          p{
+            font-weight: bold;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

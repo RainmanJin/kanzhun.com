@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>个人薪酬填写</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+  <link rel="stylesheet" href="../css/remuneration/remuneration.css"/>
+</head>
+
+<body>
+
+<header class="global">
+  <div class="header">
+    <a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+    <nav>
+      <a href="#">招聘</a>
+      <a href="#">公司</a>
+      <a href="#">工资</a>
+      <a href="#">面试</a>
+      <a href="#" class="mycomment">我要点评</a>
+    </nav>
+    <p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+  </div>
+</header>
+
+<section class="ps_header clearfix">
+  <div class="clearfix">
+    <form action="/companyl/search/" method="get" id="minisearchForm">
+      <input id="MSSQType" value="2" type="hidden">
+      <input name="stype" id="MSSSType" value="" type="hidden">
+      <dl class="select ps_salary_slt" id="minisearchS">
+        <dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly"><div></div><span class="btn"><i></i></span></dt>
+        <dd>
+          <a href="/jobl/p/">职位</a>
+          <a href="/companyl/search/">公司</a>
+          <a href="/salaryl/search/">工资</a>
+          <a href="/interviewl/search/">面试</a>
+        </dd>
+      </dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value=""><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" autocomplete="off"><input type="hidden" id="cityCode" name="cityCode" value=""><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索"></span>
+    </form>
+  </div>
+</section>
+
+<div class="container clearfix ps_con">
+  <section class="r_content r_f">
+
+    <div class="r_form_tt">
+      <img src="../images/rem/rem_pic.jpg" alt=""/>
+      <h2>个人薪酬报告</h2>
+    </div>
+    <p class="grey_99 mt10">薪酬报告是根据您的职业背景给出针对您个人的专业薪酬分析结果。 <br/> 请填写如下信息，即可获得个人专属的PDF薪酬报告。</p>
+
+    <div class="r_form">
+    <form id="reportsaveForm" action="/xs/report.html" method="post">
+    <h3>我的职业信息</h3>
+    <ul>
+    <li style="z-index: 3;">
+      <div class="space">
+        <label class="def"><em>*</em> 姓名</label> <input type="text" class="ifd" name="fullName" maxlength="30" value="" placeholder="真实姓名" ka="salary-inputname">
+        <p class="err" data-msg="请输入姓名！" style="display: none;"></p>
+      </div>
+      <div class="space">
+        <label class="def"><em>*</em> 学历</label>
+        <dl class="select select_s">
+          <dt ka="salary-inputjobeducation">
+            <input type="hidden" name="degree" value="" class="v" data-necessary="1">
+            <input type="button" name="degree_s" value="请选择"><span class="btn"><i></i></span>
+          </dt>
+          <dd>
+            <a href="javascript:;" rel="nofollow" data-val="4">中专</a>
+          </dd>
+        </dl>
+        <p class="err" data-msg="请选择学历！"></p>
+      </div>
+    </li>
+    <li class="line"></li>
+    <li>
+      <div class="space">
+        <label class="def"><em>*</em> 公司名称</label> <input type="text" class="ifd" name="fullName" maxlength="30" value="" placeholder="真实姓名" ka="salary-inputname">
+        <p class="err" data-msg="请输入公司名称！" style="display: none;"></p>
+      </div>
+      <div class="space">
+        <label class="def"><em>*</em> 公司规模</label>
+        <dl class="select select_s">
+          <dt ka="salary-inputjobeducation">
+            <input type="hidden" name="degree" value="" class="v" data-necessary="1">
+            <input type="button" name="degree_s" value="请选择"><span class="btn"><i></i></span>
+          </dt>
+          <dd>
+            <a href="javascript:;" rel="nofollow" data-val="4">中专</a>
+          </dd>
+        </dl>
+        <p class="err" data-msg="请选择学历！"></p>
+      </div>
+    </li>
+    <li class="space_radio">
+      <label class="def"><em>*</em> 是否在职</label>
+      <input type="radio" name=""/><label for="">在职</label><input type="radio" name=""/><label for="">离职</label>
+    </li>
+    <li class="space_short">
+      <label class="def"></label>
+      <input type="text" class="ifd ifd_short" name="fullName" maxlength="30" value="" placeholder="入职年份" ka="salary-inputname">
+      <span>—</span>
+      <input type="text" class="ifd ifd_short" name="fullName" maxlength="30" value="" placeholder="离职年份" ka="salary-inputname">
+    </li>
+    <li class="line"></li>
+    <li style="z-index: 5;">
+      <div class="space">
+        <label class="def"><em>*</em> 职位名称</label> <input type="text" class="ifd" name="jobTitle" maxlength="30" value="" placeholder="如：产品经理" ka="salary-inputjobname" autocomplete="off">
+        <input class="v" type="hidden" name="jobTitleId" maxlength="30" value="" data-necessary="1">
+        <p class="err" data-msg="请输入职位名称！" style="display: none;"></p>
+      </div>
+      <div class="space">
+        <label class="def"><em>*</em> 所属行业</label>
+        <dl class="select select_s js_industrySelect">
+          <dt ka="salary-inputindustry">
+            <input type="hidden" name="industryCode" value="" class="v" data-necessary="1">
+            <input type="button" name="industry_s" value="请选择"><span class="btn"><i></i></span>
+          </dt>
+          <dd>
+
+          </dd>
+        </dl>
+        <p class="err" data-msg="请选择公司行业！"></p>
+      </div>
+    </li>
+      <li style="z-index: 2;">
+        <div class="space">
+          <label class="def"><em>*</em> 工作经验</label>
+          <dl class="select select_s">
+            <dt ka="salary-inputyear">
+              <input type="hidden" name="experience" value="" class="v" data-necessary="1">
+              <input type="button" name="experience_s" value="请选择"><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+              <a href="javascript:;" rel="nofollow" data-val="1">1年以下</a>
+            </dd>
+          </dl>
+          <p class="err" data-msg="请选择工作经验！"></p>
+        </div>
+        <div class="space">
+          <label class="def"><em>*</em> 工作城市</label>
+          <dl class="select select_s">
+            <dt ka="salary-inputcity">
+              <input type="hidden" name="cityCode" value="" class="v" data-necessary="1">
+              <input type="button" name="city_s" value="请选择"><span class="btn"><i></i></span>
+            </dt>
+            <dd>
+            </dd>
+          </dl>
+          <p class="err" data-msg="请选择工作城市！" style="display: none;"></p>
+        </div>
+      </li>
+    <li>
+      <div class="space">
+        <label class="def"><em>*</em> 月薪</label> <input type="text" class="ifd" name="salary" maxlength="6" value="" placeholder="请输入税前工资，如5000元" ka="salary-inputsalary">
+        <p class="err" data-msg="请输入月薪！" style="display: none;"></p>
+      </div>
+      <a href="javascript:;" class="mt10 blue fleft">添加公司明细 <i class="open"></i></a>
+    </li>
+
+    <li class="rem_s_d clearfix">
+      <div class="space">
+        <label class="def">基本工资</label> <input type="text" class="ifd" name="salary" />
+        <label class="def">补助</label> <input type="text" class="ifd" name="salary" />
+        <label class="def">其他收入</label> <input type="text" class="ifd" name="salary" />
+      </div>
+      <div class="space">
+        <label class="def">奖金</label> <input type="text" class="ifd" name="salary" />
+        <label class="def">销售提成</label> <input type="text" class="ifd" name="salary" />
+      </div>
+    </li>
+
+    <li style="z-index: 1;">
+      <div class="space">
+        <label class="def"><em>*</em> 常用邮箱</label> <input type="text" class="ifd" name="email" maxlength="30" value="forlala@163.com" ka="salary-inputemail">
+        <p class="err" data-msg="请输入邮箱！" style="display: none;"></p>
+      </div>
+    </li>
+    <li class="mt10">
+      <label class="def"></label><input type="submit" value="生成个人薪酬报告" class="r_submit" ka="salary-inputcreate">
+    </li>
+    </ul>
+    </form>
+    </div>
+
+  </section>
+
+
+</div>
+
+</body>
+</html>

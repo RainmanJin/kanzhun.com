@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>个人薪酬</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+  <link rel="stylesheet" href="../css/remuneration/remuneration.css"/>
+</head>
+
+<body>
+
+<header class="global">
+  <div class="header">
+    <a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+    <nav>
+      <a href="#">招聘</a>
+      <a href="#">公司</a>
+      <a href="#">工资</a>
+      <a href="#">面试</a>
+      <a href="#" class="mycomment">我要点评</a>
+    </nav>
+    <p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+  </div>
+</header>
+
+<section class="ps_header clearfix">
+  <div class="clearfix">
+    <form action="/companyl/search/" method="get" id="minisearchForm">
+      <input id="MSSQType" value="2" type="hidden">
+      <input name="stype" id="MSSSType" value="" type="hidden">
+      <dl class="select ps_salary_slt" id="minisearchS">
+        <dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly"><div></div><span class="btn"><i></i></span></dt>
+        <dd>
+          <a href="/jobl/p/">职位</a>
+          <a href="/companyl/search/">公司</a>
+          <a href="/salaryl/search/">工资</a>
+          <a href="/interviewl/search/">面试</a>
+        </dd>
+      </dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value=""><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" autocomplete="off"><input type="hidden" id="cityCode" name="cityCode" value=""><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索"></span>
+    </form>
+  </div>
+</section>
+
+<div class="container clearfix ps_con">
+  <section class="l_con clearfix">
+    <div class="rem_banner">
+      <img src="../images/rem/rem_b.jpg" alt=""/>
+      <p>
+        <a href="#" target="_blank" class="blue mr10 a_u">查看报告样例</a>
+        <a class="report_go" href="#">立即生成薪酬报告</a>
+      </p>
+    </div>
+
+    <h3 class="rem_tt mt20 clearfix">
+      <span>热门公司工资</span><a href="#">更多</a>
+    </h3>
+
+    <div class="rem_hot_co">
+      <p>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" alt=""/><span>淘宝</span></a>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140619/aff30606b82c3b3f625850ee74408109.jpg" alt=""/><span>京东</span></a>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" alt=""/><span>淘宝</span></a>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140619/aff30606b82c3b3f625850ee74408109.jpg" alt=""/><span>京东</span></a>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" alt=""/><span>淘宝</span></a>
+      </p>
+    </div>
+
+    <h3 class="rem_tt mt20 clearfix">
+      <span>工资排行榜</span>
+    </h3>
+
+    <div class="rem_hot_s">
+      <dl class="mr20">
+        <dt>地区工资排行</dt>
+        <dd>
+          <ul class="rem_list">
+            <li><i class="hot">1</i><a  href="/gso11514.html" target="_blank">百度</a><span>￥<em>8,800</em></span></li>
+            <li><i class="hot">2</i><a  href="/gso3418.html" target="_blank">京东商城</a><span>￥<em>8,800</em></span></li>
+            <li><i class="hot">3</i><a  href="/gso10329.html" target="_blank">58同城</a><span>￥<em>8,800</em></span></li>
+            <li><i>4</i><a  href="/gso25007.html" target="_blank">赶集网</a><span>￥<em>8,800</em></span></li>
+            <li><i>5</i><a  href="/gso4119.html" target="_blank">新浪（sina）</a><span>￥<em>8,800</em></span></li>
+            <li><i>6</i><a  href="/gso8144.html" target="_blank">搜狐</a><span>￥<em>8,800</em></span></li>
+            <li><i>7</i><a href="/gso32261.html" target="_blank">凤凰网</a><span>￥<em>8,800</em></span></li>
+            <li><i>8</i><a  href="/gso61692.html" target="_blank">去哪儿网</a><span>￥<em>8,800</em></span></li>
+            <li><i>9</i><a href="/gso3275.html" target="_blank">Google（谷歌中国）</a><span>￥<em>8,800</em></span></li>
+            <li><i>10</i><a href="/gso4054.html" target="_blank">亚马逊</a><span>￥<em>8,800</em></span><li>
+          </ul>
+        </dd>
+      </dl>
+
+      <dl class="mr20">
+        <dt>公司工资排行</dt>
+        <dd>
+          <ul class="rem_list">
+            <li><i class="hot">1</i><a  href="/gso11514.html" target="_blank">百度</a><span>￥<em>8,800</em></span></li>
+            <li><i class="hot">2</i><a  href="/gso3418.html" target="_blank">京东商城</a><span>￥<em>8,800</em></span></li>
+            <li><i class="hot">3</i><a  href="/gso10329.html" target="_blank">58同城</a><span>￥<em>8,800</em></span></li>
+            <li><i>4</i><a  href="/gso25007.html" target="_blank">赶集网</a><span>￥<em>8,800</em></span></li>
+            <li><i>5</i><a  href="/gso4119.html" target="_blank">新浪（sina）</a><span>￥<em>8,800</em></span></li>
+            <li><i>6</i><a  href="/gso8144.html" target="_blank">搜狐</a><span>￥<em>8,800</em></span></li>
+            <li><i>7</i><a href="/gso32261.html" target="_blank">凤凰网</a><span>￥<em>8,800</em></span></li>
+            <li><i>8</i><a  href="/gso61692.html" target="_blank">去哪儿网</a><span>￥<em>8,800</em></span></li>
+            <li><i>9</i><a href="/gso3275.html" target="_blank">Google（谷歌中国）</a><span>￥<em>8,800</em></span></li>
+            <li><i>10</i><a href="/gso4054.html" target="_blank">亚马逊</a><span>￥<em>8,800</em></span><li>
+          </ul>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt>职位工资排行</dt>
+        <dd>
+          <ul class="rem_list">
+            <li><i class="hot">1</i><a  href="/gso11514.html" target="_blank">百度</a><span>￥<em>8,800</em></span></li>
+            <li><i class="hot">2</i><a  href="/gso3418.html" target="_blank">京东商城</a><span>￥<em>8,800</em></span></li>
+            <li><i class="hot">3</i><a  href="/gso10329.html" target="_blank">58同城</a><span>￥<em>8,800</em></span></li>
+            <li><i>4</i><a  href="/gso25007.html" target="_blank">赶集网</a><span>￥<em>8,800</em></span></li>
+            <li><i>5</i><a  href="/gso4119.html" target="_blank">新浪（sina）</a><span>￥<em>8,800</em></span></li>
+            <li><i>6</i><a  href="/gso8144.html" target="_blank">搜狐</a><span>￥<em>8,800</em></span></li>
+            <li><i>7</i><a href="/gso32261.html" target="_blank">凤凰网</a><span>￥<em>8,800</em></span></li>
+            <li><i>8</i><a  href="/gso61692.html" target="_blank">去哪儿网</a><span>￥<em>8,800</em></span></li>
+            <li><i>9</i><a href="/gso3275.html" target="_blank">Google（谷歌中国）</a><span>￥<em>8,800</em></span></li>
+            <li><i>10</i><a href="/gso4054.html" target="_blank">亚马逊</a><span>￥<em>8,800</em></span><li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="r_con">
+    <h3 class="rem_tt_r">热门行业工资</h3>
+
+    <ul class="rem_list rem_list_r">
+      <li><a  href="/gso11514.html" target="_blank">百度</a><span>平均￥<em>8,800</em></span></li>
+      <li><a  href="/gso3418.html" target="_blank">京东商城</a><span>平均￥<em>8,800</em></span></li>
+      <li><a  href="/gso10329.html" target="_blank">58同城</a><span>平均￥<em>8,800</em></span></li>
+      <li><a  href="/gso25007.html" target="_blank">赶集网</a><span>平均￥<em>8,800</em></span></li>
+      <li><a  href="/gso4119.html" target="_blank">新浪（sina）</a><span>平均￥<em>8,800</em></span></li>
+      <li><a  href="/gso8144.html" target="_blank">搜狐</a><span>平均￥<em>8,800</em></span></li>
+      <li><a href="/gso32261.html" target="_blank">凤凰网</a><span>平均￥<em>8,800</em></span></li>
+      <li><a  href="/gso61692.html" target="_blank">去哪儿网</a><span>平均￥<em>8,800</em></span></li>
+      <li><a href="/gso3275.html" target="_blank">Google（谷歌中国）</a><span>平均￥<em>8,800</em></span></li>
+      <li><a href="/gso4054.html" target="_blank">亚马逊</a><span>平均￥<em>8,800</em></span><li>
+    </ul>
+
+    <p>&nbsp;</p>
+    <h3 class="rem_tt_r">热门职位工资</h3>
+
+    <div class="rem_mess">
+      <p>
+      <a href="#">销售代表</a><a href="">会计</a><a href="">PHP</a><a href="#">销售代表</a><a href="">会计</a><a href="">PHP</a><a href="#">销售代表</a><a href="">会计</a><a href="">PHP</a><a href="#">销售代表</a><a href="">会计</a><a href="">PHP</a>
+      </p>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+@import "var";
+
+div{
+  &.wrap{
+    width: 1199px;
+    margin: 0 auto;
+  }
+
+  &.bg_one{
+    height: 650px;
+    background: url(../images/temp/index_img_2.jpg) no-repeat left top;
+  }
+
+  &.bg_two{
+    height: 1070px;
+    background: url(../images/temp/index_img_4.jpg) no-repeat left top;
+  }
+}
+section.header{
+  height: 240px;
+  background: url(../images/temp/index_img_1.jpg) no-repeat left top;
+  padding: 140px 0 30px 0;
+
+  p{
+    width: 26em;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #e1ebfe;
+    text-align: center;
+  }
+
+  div{
+    padding-top: 40px;
+    text-align: center;
+    a{
+      display: inline-block;
+      width: 315px;
+      height: 64px;
+      line-height: 64px;
+      color: @green;
+      font-size: 24px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      .box-shadow(0 1px 2px #000);
+      .transition(all .1s linear);
+
+      i{
+        display: inline-block;
+        width: 22px;
+        height: 26px;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+        background: @icons no-repeat -31px top;
+        vertical-align: -4px;
+      }
+      &:hover{
+        background-color: @green;
+        color: @white;
+        text-decoration: none;
+        .box-shadow(0 0 0 #000);
+      }
+    }
+  }
+}
+
+section.terminus{
+  height: 240px;
+  padding: 540px 0 0 525px;
+  background: url(../images/temp/index_img_3.jpg) no-repeat left top;
+  h1{
+    font-size: 50px;
+    text-align: right;
+    padding-right: 118px;
+  }
+  p{
+    width: 26em;
+    color: #e1ebfe;
+    text-align: right;
+    font-size: 22px;
+    &.info{
+      font-size: 16px;
+      padding-left: 10em;
+    }
+  }
+}
+
+section.terminus_two{
+  height: 1390px;
+  background: url(../images/temp/index_img_5.jpg) no-repeat left top;
+  h1{
+    font-size: 50px;
+  }
+  p{
+    width: 26em;
+    margin: 25px auto 0 auto;
+    color: #e1ebfe;
+    text-align: center;
+    font-size: 22px;
+    &.info{
+      font-size: 16px;
+    }
+  }
+}
+
+h1.title{
+  font-size: 66px;
+  font-weight: bold;
+  text-align: center;
+  .text-shadow(0 2px 2px #000);
+}

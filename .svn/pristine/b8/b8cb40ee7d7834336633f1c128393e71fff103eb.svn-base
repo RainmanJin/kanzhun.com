@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>公司面经搜索</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../css/interview.css">
+</head>	
+<body>
+<div class="publish-suc">
+  <p><img src="../images/p-suc.jpg" width="22"/><b>发布成功！</b></p>
+  <p class="grey">感谢您的分享，更多的求职者将因此获益！</p>
+  <p><a class="green-btn" href="#">确定</a></p>
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+</html>
+
+

@@ -1,0 +1,67 @@
+@import "../../../../css/common/var";
+@import "../../var";
+//点评面试页面左侧发一条点评或者面试条-未登录状态下邮箱提交表单
+
+dl.c_noloain_email_submit {
+  padding: 20px 0;
+
+  dt {
+    float: left;
+    width: 57px;
+    height: 57px;
+
+    img {
+      width: 57px;
+      height: 57px;
+    }
+  }
+
+  dd.c_email_frm_wrap {
+    margin-left: 75px;
+    position: relative;
+
+    div.field_div {
+      input.v_email_field {
+        width: 305px;
+        height: 15px;
+        line-height: 15px;
+        border: 1px solid #cccccc;
+        border-width: 2px 1px 1px 2px;
+        padding: 9px;
+        vertical-align: middle;
+      }
+
+      span.btn_grey_l{
+        margin-left: -1px;
+        display: inline-block;
+        height: 34px;
+        padding: 0;
+        border-color: #cccccc;
+        border-width: 1px;
+        vertical-align: middle;
+
+        input {
+          height: 34px;
+          line-height: 34px;
+        }
+      }
+    }
+
+    p.err {
+      position: absolute;
+      top: 42px;
+      left: 415px;
+      display: none;
+    }
+
+    p.send_email_succ {
+      font-size: 18px;
+      padding-bottom: 3px;
+      padding-top: 4px;
+
+      i.suc_p {
+        vertical-align: -4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>boss-邀请函</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/idangerous.swiper.css" />
+  <link rel="stylesheet" href="css/invite.css"/>
+</head>
+
+<body>
+<div class="swiper-container" id='pages'>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide page" id="page1">
+      <img src="images/index-1.jpg" width="100" id="index1">
+      <p  id="index2"><img src="images/index-2.jpg" width="198"></p>
+      <p  id="index3"><img src="images/index-3.jpg" width="198"></p>
+      <p  id="index4"><img src="images/index-4.jpg" width="198"></p>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+    <div class="swiper-slide page" id="page2">
+      <img src="images/51talk-tt.jpg" class="logo" id="logo2">
+      <dl>
+        <dt><img src="images/job-1.png" id="job2"/></dt>
+        <dd>
+          <img src="images/jd-1.png" alt="" id="jd2"/>
+        </dd>
+      </dl>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page" id="page3">
+      <img src="images/51talk-tt.jpg" class="logo" id="logo3">
+      <dl>
+        <dt><img src="images/job-2.png" id="job3"/></dt>
+        <dd>
+          <img src="images/jd-2.png" alt="" id="jd3"/>
+        </dd>
+      </dl>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page" id="page4">
+      <img src="images/51talk-tt.jpg" class="logo" id="logo4">
+      <dl>
+        <dt><img src="images/job-3.png" id="job4"/></dt>
+        <dd>
+          <img src="images/jd-3.png" alt="" id="jd4"/>
+        </dd>
+      </dl>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+    <div class="swiper-slide page" id="page5">
+      <img src="images/51talk-tt.jpg" class="logo" id="logo5">
+      <dl>
+        <dt><img src="images/job-4.png" id="job5"/></dt>
+        <dd>
+          <img src="images/jd-4.png" alt="" id="jd5"/>
+        </dd>
+      </dl>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+    <div class="swiper-slide page" id="page6">
+      <img src="images/51talk-6.jpg" width="131.5" >
+      <a href="http://m.bosszhipin.com/download?from=51h5"><img src="images/51talk-btn.jpg" width="161" ></a>
+    </div>
+  </div>
+</div>  
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/idangerous.swiper.js"></script>
+<script src="js/invite-3.0.js"></script>
+</html>

@@ -1,0 +1,222 @@
+@import "common/var";
+
+section.content{
+  width:990px;
+  margin: 10px auto 0;
+  background-color: #fff;
+  min-height: 900px;
+  .content_inner{
+    padding: 20px;
+    h2.ct{
+      font-size: 20px;
+      i{
+        margin-right: 5px;
+      }
+      .b_line{
+        margin-top: 5px;
+        height:2px;
+        font-size: 0;
+        background-color: @green;
+      }
+    }
+    .table{
+      margin-top: 25px;
+      h3{
+        font-size: 14px;
+        color: #888;
+      }
+      table{
+        margin-top: 5px;
+        tr{
+          height: 40px;
+          text-align: center;
+          th{
+            font-weight: normal;
+            background-color: #333434;
+            border: 1px solid #333434;
+            color: #fff;
+          }
+          td{
+            border: 1px solid #b3b3b3;
+          }
+          &.current{
+            td{
+              background-color: #e7fff9;
+            }
+          }
+        }
+      }
+    }
+    .hint{
+      margin-top: 25px;
+      ul{
+        margin-top: 5px;
+        li{
+          margin-bottom: 10px;
+          i{
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    .hintCc{
+      h3{
+        font-size: 20px;
+      }
+      dl{
+        dd{
+          margin-top: 5px;
+          span{
+            font-size: 18px;
+            color: @green;
+          }
+          em{
+            font-size: 30px;
+            color: #d6d6d6;
+            font-weight: lighter;
+            line-height: 1;
+            vertical-align: -2px;
+          }
+        }
+      }
+    }
+    ul.questList{
+      background-color: #f6f6f6;
+      border: 1px solid #e7e7e7;
+      padding: 15px 15px 0;
+      .ql_li{
+        margin-bottom: 20px;
+        label{
+          font-size: 16px;
+          font-weight: bold;
+        }
+        ul{
+          &.short{
+            margin-top: 10px;
+            li{
+              display: inline-block;
+              width: 130px;
+              height: 35px;
+              line-height: 35px;
+              text-align: center;
+              border: 1px solid #e7e7e7;
+              float: left;
+              a{
+                display: block;
+                color: @def;
+                &:hover{
+                  text-decoration: none;
+                }
+              }
+              &.current{
+                background-color: @green;
+                border: 1px solid @green;
+                a{
+                  color: #fff;
+                }
+              }
+            }
+          }
+          &.long{
+            margin-top: 5px;
+            li{
+              margin-top: 5px;
+              display: block;
+              text-align: left;
+              border: 1px solid #e7e7e7;
+              padding: 7px 10px;
+              a{
+                display: block;
+                color: @def;
+                &:hover{
+                  text-decoration: none;
+                }
+              }
+              &.current{
+                background-color: @green;
+                border: 1px solid @green;
+                a{
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .infoForm{
+      ul.fieldList{
+        padding-left: 70px;
+        li.fl_li{
+          float: left;
+          margin-right: 30px;
+          margin-bottom: 20px;
+          position: relative;
+          .select{
+            float: left;
+          }
+          label{
+            float: left;
+            margin-top: 10px;
+            width: 5em;
+            text-align: right;
+            padding-right: 20px;
+            line-height: 1;
+          }
+          .sp{
+            margin-top: 10px;
+            float: left;
+            line-height: 1;
+          }
+          p.err{
+            position: absolute;
+            top: 35px;
+            color: @red;
+            margin-left: 7em;
+          }
+        }
+      }
+    }
+  }
+}
+.progressBar{
+  margin-top: 40px;
+  .outer{
+    vertical-align: middle;
+    display: inline-block;
+    width: 570px;
+    height: 22px;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    position: relative;
+    margin: 0 5px;
+    .inner{
+      margin: 1px;
+      display: inline-block;
+      background-color: @green;
+      height: 20px;
+      border-radius: 3px;
+    }
+    i{
+      position: absolute;
+      top: -32px;
+      margin-left: -22px;
+      text-align: center;
+      line-height: 28px;
+      font-size: 12px;
+    }
+  }
+}
+.timeBar{
+  vertical-align: -4px;
+  font-weight: bold;
+  font-size: 26px;
+  em{
+    display: inline-block;
+    background: url("@{img_path}icons.png") no-repeat -160px 0;
+    width: 24px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>晒面经-2</title>
+<link rel="stylesheet" href="css/public.css" />
+<link rel="stylesheet" href="css/ugc_page.css">
+</head>	
+<body>
+<div class="wrapper">
+<div class="content">	
+	<header class="page_hd">		
+		<a class="top_back" href="javascript:;"><i></i>返回</a>
+		<strong>晒面经</strong>	
+	</header>
+	<h1 class="ml20 mr10 mt10 mb10">评价面试</h1>
+	<section class="interview_content">			
+		<h3>面试难度</h3>
+		<div class="interview_degree mt10">
+			<span class="grade_rect">
+				<i style="width:40%;"></i>
+				<b style="left:0"></b>
+				<b style="left:20%"></b>
+				<b style="left:40%"></b>
+				<b style="left:60%"></b>
+				<b style="left:80%"></b>						
+			</span>
+			<em>困难</em>
+		</div>
+		<div class="solid_line mt10"></div>
+		<h3 class="mt10">面试过程感受</h3>
+		<ul class="bt_change mt10">
+			<li class="l on">很好</li>
+			<li class="c">一般</li>			
+			<li class="r">不好</li>
+		</ul>
+		<div class="solid_line mt10"></div>		
+		<h3 class="mt10">如何获取面试机会</h3>
+		<div class="mt10">
+			<button class="btn_grey_small_2">网络招聘</button>
+			<button class="btn_green_small_2">校园招聘</button>
+			<button class="btn_grey_small_2">内部推荐</button>
+			<button class="btn_grey_small_2 mt10">猎头推荐</button>
+			<button class="btn_grey_small_2 mt10">社会推荐</button>	
+			<button class="btn_grey_small_2 mt10">其他</button>						
+		</div>
+		<div class="divTextarea_1 bdefault mt10">
+			<textarea  placeholder="一句话精辟概括你的面试感受"></textarea>
+		</div>
+		<div class="mt10 grey"><span class="fright">必填项</span></div>
+		<div class="mt10 grey clear">
+			再详细的介绍下面试过程和令你印象最深的问题吧，让其他求职者更好的看准该职位！继续晒细节...
+		</div>
+		<h3 class="mt10">面试过程</h3>
+		<div class="divTextarea_1 bdefault mt10">
+			<textarea placeholder="一句话示例。"></textarea>
+		</div>
+		<h3 class="mt10">令你印象深刻的问题</h3>
+		<div class="divTextarea_1 bdefault mt10">
+			<textarea placeholder="写一个面试官提出的特有思，或者把你难道的问题。"></textarea>
+		</div>
+		<h3 class="mt10">你的回答</h3>
+		<div class="divTextarea_1 bdefault mt10">
+			<textarea placeholder="你的经典回答是..."></textarea>
+		</div>												
+	</section>
+	<div class="ml10 mr10 mt10 mb10"><button class="btn_submit_1" type="submit">提交</button></div>			
+</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+</html>
+
+

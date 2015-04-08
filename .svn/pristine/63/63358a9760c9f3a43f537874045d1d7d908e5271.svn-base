@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>我要报名</title>
+    <link rel="stylesheet" href="css/sign.css"/>
+</head>
+<body>
+    <div class="content">
+        <img class="bg" src="images/sign_bg.jpg" />
+        <div class="sign_wrap">
+            <div class="wrap">
+                <a class="sign" href="#">
+                    我要报名
+                </a>
+            </div>
+            <img src="images/url.png"/>
+        </div>
+    </div>
+
+</body>
+</html>

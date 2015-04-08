@@ -1,0 +1,120 @@
+i.iinit {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons.png);
+  -webkit-background-size: 220px;
+  -moz-background-size: 220px;
+  -o-background-size: 220px;
+  background-size: 220px;
+}
+i.ihome {
+  width: 21px;
+  height: 18px;
+  background-position: 0 0;
+}
+i.iandroid {
+  width: 16.5px;
+  height: 19px;
+  background-position: -23px 0;
+}
+i.iphone {
+  width: 15.5px;
+  height: 19px;
+  background-position: -41.5px 0;
+}
+i.icmpprofile {
+  width: 15px;
+  height: 9.5px;
+  background-position: -58.5px 0;
+}
+i.icmpurl {
+  width: 16.5px;
+  height: 16.5px;
+  background-position: -75.5px 0;
+}
+i.icmpname {
+  width: 15px;
+  height: 16.5px;
+  background-position: -94px 0;
+}
+i.iaddress {
+  width: 12px;
+  height: 16px;
+  background-position: -111px 0;
+}
+i.iask {
+  width: 12.5px;
+  height: 13px;
+  background-position: -125px 0;
+}
+i.ianswer {
+  width: 13px;
+  height: 13px;
+  background-position: -139.5px 0;
+}
+i.iforword {
+  width: 21px;
+  height: 16.5px;
+  background-position: -154px 0;
+}
+i.igospeak {
+  width: 21px;
+  height: 20px;
+  background-position: -177px 0;
+}
+i.iinvites {
+  width: 15px;
+  height: 19.5px;
+  background-position: -200px 0;
+}
+i.iset {
+  width: 23px;
+  height: 23px;
+  background-position: 0 -25px;
+}
+i.istroll {
+  width: 28px;
+  height: 29px;
+  background-position: -25px -25px;
+}
+i.istroll_h {
+  width: 27.5px;
+  height: 28px;
+  background-position: -149px -25px;
+}
+i.ichat {
+  width: 30px;
+  height: 28px;
+  background-position: -55px -25px;
+}
+i.ichat_h {
+  width: 30px;
+  height: 27px;
+  background-position: -178px -25px;
+}
+i.ime {
+  width: 22.5px;
+  height: 25.5px;
+  background-position: 0 -59.5px;
+}
+i.ime_h {
+  width: 22.5px;
+  height: 25.5px;
+  background-position: -86.5px -25px;
+}
+i.iworkshow {
+  width: 22px;
+  height: 22px;
+  background-position: -111px -25px;
+}
+i.igoback {
+  width: 12px;
+  height: 20px;
+  background-position: -135px -25px;
+}
+i.ipin {
+  width: 24.5px;
+  height: 19px;
+  background-position: -24.5px -59.5px;
+}

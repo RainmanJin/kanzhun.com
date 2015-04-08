@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>西游记</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/xiyou.css" />
+</head>
+
+<body>
+  <img class="mt10"src="images/index_font.png" width="100%">
+  <div class="index_middle">
+    <i class="cloud cloud_1"></i>
+    <i class="cloud cloud_2"></i>
+    <img class="index_people"src="images/index_people.gif" width="100%">
+  </div>
+  <div class="index_btn">
+    <a class="bt_transmit btn" href="javascript:;">邀请朋友来评价我</a>
+  </div>
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/wx.js"></script>
+</html>

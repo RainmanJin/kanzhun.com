@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>领域页面</title>
+<link rel="stylesheet" href="../css/base-v2.css" />
+<link rel="stylesheet" href="../css/field.css" />
+</head>	
+<body>
+	<div class="wrapper f_wrapper">
+		<div class="f_content container">
+			<header class="f_h">
+			  <div><a href="javascript:;" class="slide-menu"><i class="i i_menu"></i></a></div>
+			  <h1>互联网金融领域</h1>
+			  <p>所属行业：互联网<em>|</em>公司：共221家</p>
+			</header>
+			<nav class="f_minor_nav">
+				<p>
+					<a href="">员工推荐排行</a><a href="">综合排行</a><a href="">CEO排行</a>
+				</p>
+			</nav>
+			<!-- 员工推荐排行榜 -->
+			<div class="f_minor_con mb15">
+				<dl>
+					<dt><i class="i i_recommend"></i></dt>
+					<dd>
+						<h3>员工推荐排行榜</h3>
+						<p>按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+						<ul>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_blue">2</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_green">3</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<a href="" class="f_btn_seemore">查看完整榜单</a>
+			</div>
+			<!-- 员工推荐排行榜 -->
+			<!-- 综合排行榜 -->
+			<div class="f_minor_con mb15">
+				<dl>
+					<dt><i class="i i_comprehensive"></i></dt>
+					<dd>
+						<h3>综合评分排行榜</h3>
+						<p>按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+						<ul>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="comprehensive">
+										<span class="green_start"><i style="width: 14.5px;"></i></span>
+										<p class="t-center mb20"><strong class="scores">4.0</strong></p>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="comprehensive">
+										<span class="green_start"><i style="width: 14.5px;"></i></span>
+										<p class="t-center mb20"><strong class="scores">4.0</strong></p>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="comprehensive">
+										<span class="green_start"><i style="width: 14.5px;"></i></span>
+										<p class="t-center mb20"><strong class="scores">4.0</strong></p>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<a href="" class="f_btn_seemore">查看完整榜单</a>
+			</div>
+			<!-- 综合排行榜 -->
+			<!-- CEO排行	 -->
+			<div class="f_minor_con mb15">
+				<dl>
+					<dt><i class="i i_ceo"></i></dt>
+					<dd>
+						<h3>CEO支持率排行榜</h3>
+						<p>按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+						<ul>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">CEO支持率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">CEO支持率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">CEO支持率</p>
+								</div>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<a href="" class="f_btn_seemore">查看完整榜单</a>
+			</div>
+			<!-- CEO排行	 -->
+
+			<div class="shadow_area pb20 mb15">
+				<div class="cmp_pk_tt">
+					<h2 class="f_tt mb10">公司待遇PK</h2>
+					<div class="co_pk_tip_p">
+						<i class="i i_question"></i>
+					</div>
+					<div class="co_pk_tip">
+						<div>
+							<i></i>
+							<p class="mb10"><strong>公司待遇PK</strong>，可以将同一领域内不同公司拥有的相同职位进行工资对比，通过图表方式可更直观的展现公司之间同一职位的待遇差异。</p>
+							<p><span>图表中</span>，横坐标代表工资的区间段；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纵坐标表示各区段工资占比。</p>
+						</div>
+					</div>
+				</div>
+				<p class="charts_explain">百度<em>VS</em>中国移动<span href="">产品经理</span>的工资对比</p>
+				<div class="PK_charts mb10" style="width:100%;height: 130px;">
+					
+				</div>
+				<a href="" class="f_btn_seemore">查看更多公司对比</a>
+			</div>
+			<div class="shadow_area pb20 mb15">
+				<h2 class="f_tt mb10">B2C领域热门公司</h2>
+				<ul class="hot_cmp">
+					<li>
+						<a href=""><span><img src="../images/field/f_img3.jpg" alt=""></span></a>
+						<a class="grey_66 t-center"><p>北京大学北京大学北京大学</p></a>
+					</li>
+					<li>
+						<a href=""><span><img src="../images/field/f_img3.jpg" alt=""></span></a>
+						<a class="grey_66 t-center"><p>北京大学北京大学北京大学</p></a>
+					</li>
+					<li>
+						<a href=""><span><img src="../images/field/f_img3.jpg" alt=""></span></a>
+						<a class="grey_66 t-center"><p>北京大学北京大学北京大学</p></a>
+					</li>
+					<li>
+						<a href=""><span><img src="../images/field/f_img3.jpg" alt=""></span></a>
+						<a class="grey_66 t-center"><p>北京大学北京大学北京大学</p></a>
+					</li>
+					<li>
+						<a href=""><span><img src="../images/field/f_img3.jpg" alt=""></span></a>
+						<a class="grey_66 t-center"><p>北京大学北京大学北京大学</p></a>
+					</li>
+					<li>
+						<a href=""><span><img src="../images/field/f_img3.jpg" alt=""></span></a>
+						<a class="grey_66 t-center"><p>北京大学北京大学北京大学</p></a>
+					</li>
+					<li>
+						<a href=""><span><img src="../images/field/f_img3.jpg" alt=""></span></a>
+						<a class="grey_66 t-center"><p>北京大学北京大学北京大学</p></a>
+					</li>
+					<li>
+						<a href=""><span><img src="../images/field/f_img3.jpg" alt=""></span></a>
+						<a class="grey_66 t-center"><p>北京大学北京大学北京大学</p></a>
+					</li>
+				</ul>
+				<a href="" class="f_btn_seemore">查看更多</a>
+			</div>
+			<div class="shadow_area pb20 mb15">
+				<h2 class="f_tt mb10">热门领域</h2>
+				<div class="tags">
+					<a href="" class="tags_item current">电子商务（212）</a><a href="" class="tags_item">电子商务（212）</a><a href="" class="tags_item">电子商务（212）</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 主侧边栏 -->
+	<div class="slide-mask"></div>
+	<aside class="slide-wrapper">
+	  <div class="slide_bg">
+	    <div class="shadow_area mb15">
+	      <p><a href=""><i class="i i_home"></i>看准首页</a></p>
+	      <div class="line"></div>
+	      <p><a href="">返回上一级</a></p>
+	    </div>
+	    <div class="shadow_area mb15">
+	      <p><a href="">领域概况</a></p>
+	      <div class="line"></div>
+	      <p><a href="">公司排行榜</a></p>
+	      <div class="line"></div>
+	      <p><a href="">公司列表</a></p>
+	    </div>
+	    <div class="shadow_area">
+	      <p><i class="i i_weixin"></i>关注看准微信号：kanzhunwang</p>
+	    </div>
+	  </div>
+	</aside>
+	<!-- 主侧边栏 -->
+	<footer class="f_footer">
+	  <p class="kanzhun">看准网移动版 m.kanzhun.com</p>
+	  <p><a href="http://m.kanzhun.com">移动版</a><em>|</em><a href="http://www.kanzhun.com?wytl=1">电脑版</a></p>
+	</footer>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script>
+		$(function(){
+		  $('aside.slide-wrapper').on('touchstart', 'li', function(e){
+		    $(this).addClass('current').siblings('li').removeClass('current');
+		  });
+
+		  $('a.slide-menu').on('click', function(e){
+		    var wh = $('div.wrapper').height();
+		    $('div.slide-mask').css('height', wh).show();
+		    $('aside.slide-wrapper').css('height', wh).addClass('moved');
+		  });
+
+		  $('div.slide-mask').on('click', function(){
+		    $('div.slide-mask').hide();
+		    $('aside.slide-wrapper').removeClass('moved');
+		  });
+
+		  //back
+		  $('header>strong.channel').on('click', function(){
+		    if(document.referrer.length>0){
+		      history.back();
+		    }else{
+		      location.href="/news";
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>
+
+

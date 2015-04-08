@@ -1,0 +1,38 @@
+.main {
+  background: url("/images/activity/jinping/qifu01_bg.jpg") center no-repeat;
+  height: 1400px;
+  text-align: center;
+  width: 100%;
+}
+.main .title-wrap {
+  padding-top: 168px;
+}
+.main .title-wrap .horzontal {
+  margin-top: -20px;
+}
+.main .title-wrap p {
+  margin-top: -55px;
+  padding-bottom: 50px;
+  font-size: 32px;
+  color: #bd1200;
+  font-weight: bold;
+}
+.main .links {
+  margin-top: 20px;
+}
+.main .links a {
+  margin-right: 10px;
+}
+.main .links .downline {
+  position: relative;
+  top: -30px;
+}
+.main .foot .word {
+  margin-bottom: 20px;
+}
+.main .foot button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  padding: 0px;
+  outline: none;
+}

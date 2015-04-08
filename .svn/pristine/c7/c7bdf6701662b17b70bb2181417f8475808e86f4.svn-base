@@ -1,0 +1,119 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+
+.banner_bg{
+  background: url("@{img}/activity/jinping/wel_banner.jpg")  center no-repeat;
+  height: 925px;
+  .banner_content{
+    padding-top: 520px;
+    div.slipTime{
+      text-align: center;
+      em {
+        background: url("@{img}/activity/jinping/time_bg.png") no-repeat ;
+        display: inline-block;
+        width: 128px;
+        height: 116px;
+        line-height: 116px;
+        vertical-align: bottom;
+        font-size: 88px;
+        font-weight: bold;
+        color: #fff;
+        position: relative;
+        i.i_line{
+          position: absolute;
+          top: 56px;
+          left: 15px;
+          display: inline-block;
+          width: 100px;
+          font-size: 0;
+          height: 0;
+          border-top: 1px solid rgba(0,0,0,.1);
+          border-bottom: 1px solid rgba(0,0,0,.2);
+        }
+      }
+      span{
+        color: #dfdfdf;
+        font-size: 42px;
+        font-weight: bold;
+      }
+    }
+  }
+  p.p1{
+    font-size: 78px;
+    text-align: center;
+    color: rgb( 254, 228, 65 );
+  }
+
+  .steps{
+    margin:0 auto;
+    width: 590px;
+
+    em.serial{
+        font-weight: bold;
+        color: #fee441;
+    }
+
+    p{
+        font-size: 18px;
+      color: #fff;
+    }
+
+    .mail{
+      float: left;
+      margin-right: 40px;
+      p{
+        margin-bottom: 10px;
+      }
+
+      .tip{
+        color: red;
+        font-size: 14px;
+        display: block;
+        height: 20px;
+      }
+
+      input[type=text]{
+        width:278px;
+        padding: 6px;
+        background-color: rgba( 40, 73, 149, 0.5 );
+        border: 1px solid #c2d4eb;
+        border-radius: 2px;
+        color: #fff;
+
+        &:focus{
+          border: 1px solid #c2d4eb;
+          box-shadow: #c2d4eb 0px 0px 2px;
+        }
+
+        &.error{
+          border: 1px solid #f00;
+          box-shadow: #f00 0px 0px 2px;
+        }
+
+      }
+      button{
+        background-color: #fee441;
+        width:290px;
+        height: 38px;
+        border-radius: 3px;
+        font-size: 18px;
+      }
+    }
+
+    .qrcode{
+      overflow: hidden;
+      p{
+        margin-bottom: 10px;
+      }
+      img{
+        align:left;
+        vertical-align: text-top;
+      }
+      .right{
+        float: right;
+      }
+    }
+  }
+
+}

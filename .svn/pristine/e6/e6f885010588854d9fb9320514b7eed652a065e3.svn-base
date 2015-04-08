@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>我关注的公司-无结果页面</title>
+<link rel="stylesheet" href="../css/import/ugc.css" />
+</head>	
+<body>
+<div class="wrapper">
+	<div class="content">	
+		<header class="page_hd">
+			<strong>我关注的公司</strong>	
+		</header>
+		
+		<p class="success">看准网拥有海量公司信息，现在就去公司频道搜索吧！</p>
+		<p class="sure"><button class="btn_submit_1_haveborder" type="submit">立即搜索公司</button></p>
+	</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+</html>
+
+

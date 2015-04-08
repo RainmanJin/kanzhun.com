@@ -1,0 +1,57 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+.co-left-compentlist {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  overflow: hidden;
+  zoom:1;
+  dt {
+    float: left;
+    width: 80px;
+    h3 {
+      font-size: 14px;
+      color: #2472b4;
+      text-align:center;
+      padding-top: 5px;
+      font-weight: normal;
+    }
+    img {
+      width:70px;
+      height: 67px;
+      display: block;
+      margin:0 auto;
+      border: 1px solid @grey_e7;
+    }
+  }
+  dd {
+    h2 {
+      padding-bottom: 5px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+    p {
+      color: @grey_66;
+      strong{
+        color: @grey_33;
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+    p.c_s_result_text {
+      line-height: 2em;
+    }
+    padding:0 0 0 20px;
+    overflow: hidden;
+    zoom:1;
+    .view_address {
+      color: @grey_99;
+      padding-bottom: 20px;
+
+      i {
+        vertical-align: -2px;
+      }
+    }
+  }
+
+}

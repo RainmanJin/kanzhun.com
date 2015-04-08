@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>我的提问页面</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<link rel="stylesheet" href="../css/widget.css">
+<link rel="stylesheet" href="../css/ali/myQuestions.css">
+<![endif]-->
+</head>
+
+<body>
+  <header class="global">
+    <div class="header">
+      <a href="" class="logo"><img src="/images/logo.jpg" width="136" height="40" /></a>
+      <nav>
+        <a href="/gs.html">公司</a>
+        <a class="head_salary " href="/xs/">工资<i></i></a>
+        <a href="/job/">招聘</a>
+        <a href="/msh/">面试</a>
+        <a target="_blank" href="">资讯</a>
+        <a class="mycomment" href="">我要点评</a>
+      </nav>
+      <div class="hello">
+        <dl>
+          <dt><em class="username"><i class="villain"></i>626364837&nbsp;</em><i></i></dt>
+          <dd>
+            <a href="">我的看准</a>
+            <a href="">我的简历</a>
+            <a href="">职位订阅</a>
+            <a href="">投递的职位</a>
+            <a href="">收藏的职位</a>
+            <a href="">关注的公司</a>
+            <a href="">发布的内容</a>
+            <a href="">账号设置</a>
+            <a href="">个人信息</a>
+            <a href="" class="signout">退出</a>
+          </dd>
+        </dl>
+        <em>|</em><a href="http://boss.kanzhun.com">企业客户入口</a>
+      </div>
+    </div>
+  </header>
+  <div class="main_top">
+    <div>
+      <img src="../images/ali/ali_img3.png" alt="对话马云">
+    </div>
+  </div>
+  <div class="main_con_wrap">
+    <div class="main_con">
+      <section class="m_l">
+        <div class="l_tt">提问详情&nbsp;-&nbsp;<span>今日投票机会&nbsp;<em>3</em>&nbsp;次</span></div>
+        <!-- 我的提问页面 -->
+         <!-- <div class="l_tt l_tt_detail">提问详情&nbsp;-&nbsp;<span>今日投票机会&nbsp;<em>3</em>&nbsp;次</span></div> -->
+        <!-- 我的提问页面 -->
+        <div class="l_question mb10">
+          <span class="ranking r_red">NO.1</span>
+          <dl>
+            <dt>
+              <a href=""><span>2293</span><p>已投票</p></a>
+            </dt>
+            <dd>
+              <div><p>支付宝产品经理，目前在职&nbsp;&nbsp;&nbsp;&nbsp;2小时前</p><span>提问：</span></div>
+              <p class="q_con">那个啥，我是哈萨克族，我能谈一下我的看法吗。从party角度说，国家现在的教育政策对新疆的少数民族真的是福利，起码让很多哈萨克牧民的孩子上得了学，出门涨见识，无论从哪个角度说都要比无论从哪个角度说都要比一辈子放羊或者小小年纪出来打拼要好。但是就像另一位知友说的，如bel...</p>
+              <p class="share_c"><a class="share" href="">22</a><em>|</em><a class="comment" href="">33</a></p>
+            </dd>
+          </dl>
+          <div class="btn_send"><a class="hadsend" href="">已投票</a><a class="send" href="">投票</a><a class="sharesend" href="">分享拉票</a></div>
+          <div class="bg"></div>
+        </div>
+        <div class="l_comment">
+          <div class="bg"></div>
+          <div class="comments_con mb30">
+            <input type="hidden" name="companyId" value="11514" />
+            <input type="hidden" name="originId" value="211382" />
+            <input type="hidden" name="type" value="5" />
+            <input type="hidden" name="parentId" value="211382" />
+            <input type="hidden" name="parentFloor" value="0" />
+            <p class="c_tt">网友评论<span>(28)</span></p>
+            <div class="ipt_comment"><textarea class="content_ipt" name="commentContent" placeholder="你怎么看？" style="height: 5.5em;"></textarea></div>
+            <div class="option_sub">
+              <p class="fright"><b class="red mr20 none">发布失败:-(</b>
+              <span class="cmt_w mr10">您还可以输入<strong class="ok">140</strong>字</span><input type="button" value="提交评论"></p>
+              <em>无需登录，即可参与评论</em>
+            </div>
+            <ul class="mt15 comment_list">
+              <li>
+                <div class="con">
+                  <div><img src="../images/ali/ali_img11.png" alt=""><span class="avatar18"></span></div>
+                  <p><em>看准用户 &nbsp;<i class="grey_af">2014-08-25</i></em>才12小时，这也算加班？</p>
+                  <aside><em>2楼</em><a ka="review-re1" rel="nofollow" href="javascript:;" class="add_reply" data-pid="534424" data-pnum="2">删除</a></aside>
+                </div>
+              </li>
+              <li>
+                <div class="con">
+                  <div><img src="../images/ali/ali_img11.png" alt=""><span class="avatar18"></span></div>
+                  <p><em>看准用户 &nbsp;<i class="grey_af">2014-08-25</i></em>才12小时，这也算加班？</p>
+                  <aside><em>1楼</em><a ka="review-re2" rel="nofollow" href="javascript:;" class="add_reply" data-pid="531990" data-pnum="1">删除</a></aside>
+                </div>
+              </li>
+              <li>
+                <div class="con">
+                  <div><img src="../images/ali/ali_img11.png" alt=""><span class="avatar18"></span></div>
+                  <p><em>看准用户 &nbsp;<i class="grey_af">2014-08-25</i></em>才12小时，这也算加班？</p>
+                  <aside><em>2楼</em><a ka="review-re1" rel="nofollow" href="javascript:;" class="add_reply" data-pid="534424" data-pnum="2">删除</a></aside>
+                </div>
+              </li>
+            </ul>
+            <p class="loading" id="cmtsLoading"><img src="/images/loading.gif">加载中...</p>
+          </div>
+        </div>
+      </section>
+      <section class="m_r">
+        <div class="r_tt"><em>查看更多</em>提问排行榜</div>
+        <div class="r_wrap mb10">
+          <span class="ranking r_red">NO.1</span>
+          <div class="bg"></div>
+          <dl class="r_ranking">
+            <dt>
+              <a href=""><span>2293</span><p>投票</p></a>
+            </dt>
+            <dd>
+              <h2>提问：</h2>
+              <p class="q_con"><a href="">那个啥，我是哈萨克族，我能谈一下我的看法吗。从party角度说，国家现在的教育...</a></p>
+              <p class="explain">支付宝产品经理，目前在职</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="r_wrap mb10">
+          <span class="ranking r_blue">NO.2</span>
+          <div class="bg"></div>
+          <dl class="r_ranking">
+            <dt>
+              <a class="send_ticket" href=""><span>2293</span><p>已投票</p></a>
+            </dt>
+            <dd>
+              <h2>提问：</h2>
+              <p class="q_con"><a href="">那个啥，我是哈萨克族，我能谈一下我的看法吗。从party角度说，国家现在的教育...</a></p>
+              <p class="explain">支付宝产品经理，目前在职</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="r_wrap mb10">
+          <span class="ranking r_green">NO.3</span>
+          <div class="bg"></div>
+          <dl class="r_ranking">
+            <dt>
+              <a href=""><span>2293</span><p>投票</p></a>
+            </dt>
+            <dd>
+              <h2>提问：</h2>
+              <p class="q_con"><a href="">那个啥，我是哈萨克族，我能谈一下我的看法吗。从party角度说，国家现在的教育...</a></p>
+              <p class="explain">支付宝产品经理，目前在职</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="r_wrap code mb10">
+          <div class="con">
+            <p>关注<span>看准网</span>公众账号</p>
+            <p>实时查看提问马云的票选现况！</p>
+            <img src="../images/ali/ali_img13.jpg" alt="">
+          </div>
+          <div class="bg"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

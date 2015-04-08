@@ -1,0 +1,51 @@
+@import "var"; 
+
+p {
+  &.line {
+    height: 0;
+    border-top: 1px solid @grey_cc;
+    overflow: hidden;
+  }
+
+  &.line_dashed {
+    height: 0;
+    border-top: 1px dashed @grey_cc;
+    overflow: hidden;
+  }
+}
+
+//背景是白色
+.white_bg {
+  background-color: @white;
+}
+
+//职位诱惑
+dl {
+  &.po_emptation {
+    padding-top: 15px;
+    
+    dt {
+      padding-right: 10px;
+      span {
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 6px;
+        margin: 0 10px 10px 0;
+        background-color: @blue;
+        color: @white;
+      }
+    }
+
+    dd {
+      padding: 0 10px 10px 0;
+      border-bottom: 1px solid @grey_cc;
+    }
+  }
+
+  &.borders {
+    dd {
+      border-bottom: 1px dashed @grey_cc;
+    }
+  }
+}

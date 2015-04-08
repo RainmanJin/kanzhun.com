@@ -1,0 +1,122 @@
+require.config({
+  paths: {
+    u: 'js/utils',
+    c: 'js/site',
+    comp: '../../components',
+    highcharts: 'http://s.kanzhun.com/js/utils/highcharts',
+    v2: 'v2/js'
+  }
+});
+
+require(['c/auth_dialog', 'c/user_response', 'c/mini_search', 'comp/fav/js/collection'], function(auth_dialog){
+  $(function(){
+
+    var boxFlag = true,
+      deliverResume = $('#deliverResumeTop, #deliverResumeBot');
+    deliverResume.on('click', function(){
+      //投递完成的增加禁止状态
+      if( $(this).data('state') == 'disabled' ){
+        return false;
+      }
+
+      $.maskUI.open({
+        elem: $('#deliverResumePop')
+      });
+
+      var boxType = $('div.deliver_resume_option').data('boxtype');
+
+      if( boxType == 'uploader' ){
+        intiWebUpload('#pickers', '上传简历');
+        boxFlag = true;
+      }else {
+        intiWebUpload('#picker', '重新上传');
+        boxFlag = false;
+      }
+    });
+
+    //上传简历
+    function intiWebUpload(itemId, itemText){
+      var uploader = WebUploader.create({
+        // 选完文件后，是否自动上传。
+        auto: true,
+        // swf文件路径
+        swf: '/images/Uploader.swf',
+        // 文件接收服务端。
+
+        server: '/resume/upload.json',
+        // 选择文件的按钮。可选。
+        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+        pick: {
+          id: itemId,
+          label: itemText
+        },
+        fileSingleSizeLimit: 2097152,
+        // 控制上传文件类型。
+        accept: {
+          title: 'Applications',
+          extensions: 'doc,docx,pdf',
+          mimeTypes: 'application/msword,application/pdf'
+        }
+      });
+
+      uploader.on( 'error', function( type ) {
+        if( type == 'F_EXCEED_SIZE' ){
+          alert('上传简历不能超过2M!');
+        }
+      });
+
+      uploader.on( 'uploadSuccess', function( file , response ) {
+        if(response.rescode == 1){
+          $("#license").val(response.docData);
+          $('#fileName').val(response.docName);
+          if( boxFlag ){
+            $('#uploaders').addClass('none');
+            $('#uploader').removeClass('none');
+            intiWebUpload('#picker', '重新上传');
+            $('#rDeliverResume').trigger('click').attr('checked', true);
+          }
+        }else {
+          alert(response.resmsg)
+        }
+      });
+    }
+
+    //submit
+    $('#deliverFrm').validatorAll({
+      elems: 'input.v',
+      prompt: {
+        succ: function(target, e){
+          $('>p.err', target.parent().addClass('focus')).hide();
+        },
+        err: function(target, msg, e){
+          var err = $('>p.err', target.parent().removeClass('focus').addClass('error'));
+          err.html(msg || err.data('msg')).show();
+        },
+        normal: function(target, e){
+          $('>p.err', target.parent().removeClass('focus err')).hide();
+        }
+      },
+      more: {
+        email: {
+          type: 'isMail',
+          msg: '邮箱格式不对！'
+        }
+      },
+      ajaxSubmit: {
+        elems: '.v',
+        dataType: 'json',
+        beforeSend: function(){},
+        success: function(data){
+          if(data.rescode =='1'){
+            deliverResume.data('state', 'disabled').removeClass('btn_o_l').addClass('had_deliver').html('已投递');
+            $('input.parameters').val('null');
+            $('div.success_con').html(data.html);
+          }else {
+            alert(data.resmsg);
+            return false;
+          }
+        }
+      }
+    }).init().submit();
+  });
+});

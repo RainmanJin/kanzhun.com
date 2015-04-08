@@ -1,0 +1,140 @@
+@import "../common/var";
+
+//左侧标题
+div.n_tt {  
+  padding: 10px 0 10px 0;
+
+  div {
+    float: right;
+    font-size: 12px;
+    padding-top: 2px; 
+
+    span {
+      display: inline-block;
+      *zoom: 1;
+      overflow: hidden;
+      height: 12px;
+      line-height: 12px;
+      padding: 1px;
+      background-color: @yellow;
+      color: #fff;
+      vertical-align: middle;
+    }
+  }
+
+  a {
+    font-weight: bold;
+    font-size: 14px;
+
+    &.green {
+      color: #7aba0c;
+    }
+
+    &.darkgreen {
+      color: #16c786;
+    }
+
+    &.blue {
+      color: #0fd2d9;
+    }
+
+    &.darkblue {
+      color: #277fdb;
+    }
+
+    &.pursor {
+      color: #7953d8;
+    }
+
+    &.yellow {
+      color: #ff905a;
+    }
+
+    &.red {
+      color: #ee4c31;
+    }
+
+    &.shallowpursor {
+      color: #d052cb;
+    }
+  }
+
+  & > span {
+    font-size: 12px;
+    color: @grey_99;
+  }
+}
+
+//左侧广告
+a.advertising_l {
+  display: block;
+
+  img {
+    width: 649px;
+    height: 90px;
+  }
+}
+
+//左侧列表
+dl.modular {
+  position: relative;
+  padding-bottom: 20px;
+
+  dt {
+    float: left;
+
+    a {
+      display: block;
+
+      img {
+        width: 230px;
+        height: 153px;
+      }
+    }
+  }
+
+  dd {
+    margin-left: 245px;
+
+    h3 {
+      font-weight: normal;
+      font-size: 18px;
+      color: #0c0c16;
+      padding-bottom: 5px;
+
+      a {
+        display: block;
+        color: #0c0c16;
+        .ellipsis(ellipsis);
+
+        &:hover {
+          color: @blue;
+          text-decoration: none;
+        }
+      }
+    }
+
+    div {
+      color: #666666;
+      line-height: 1.7em;
+
+      p {
+        padding-top: 5px;
+      }
+    }
+
+    a.fixed {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+    }
+  }
+
+  &.hot {
+    img.hot {
+      position: absolute;
+      top: -1px;
+      left: -2px;
+    }
+  }
+}

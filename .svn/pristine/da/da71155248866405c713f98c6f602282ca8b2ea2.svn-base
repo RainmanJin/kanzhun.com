@@ -1,0 +1,131 @@
+@import "var";
+//margin
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb25{margin-bottom: 25px;}
+.mb50{margin-bottom: 50px;}
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.ml15{margin-left: 15px;}
+.ml20{margin-left: 20px;}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+.pt10{padding-top: 10px;}
+.pt15{padding-top: 15px;}
+.pl30{padding-left: 30px;}
+.pl20{padding-left: 20px;}
+.p20{padding: 20px;}
+.p10{padding: 10px;}
+
+//font
+.f_12{
+  font-size: 12px;
+}
+.f_14{
+  font-size: 14px;
+}
+.f_16{
+  font-size: 16px;
+}
+
+
+//color
+.grey_99{
+  color: @grey_99;
+}
+.blue{
+  color: @blue;
+}
+.red{
+  color: @red;
+}
+.def{
+  color: @def;
+}
+
+.yellow {
+  color: @yellow;
+}
+
+
+body{
+  font: normal 12px/1.5 Arial,STHeiti, Microsoft YaHei, simsun, Helvetica, sans-serif;
+  color: @def;
+  background-color: #f6f6f6;
+}
+
+div{
+  &.container{
+    width: 990px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-top: 15px;
+    min-height: 1100px;
+    _height: 1100px;
+  }
+
+  &.findpws {
+    padding: 20px;
+  }
+}
+
+section{
+  &.l_con{
+    width: 645px;
+    float: left;
+    padding: 0 20px 20px 20px;
+    margin-top: 20px;
+    border-right: 1px solid @grey_e7;
+    min-height: 1100px;
+    _height: 1100px;
+  }
+
+  &.r_con{
+    width: 264px;
+    padding: 20px;
+    float: right;
+  }
+}
+
+//placeholder
+input,textarea:-webkit-input-placeholder { color:@placeholder; }
+input,textarea:-moz-placeholder { color:@placeholder; }
+input,textarea:-ms-input-placeholder { color:@placeholder; }
+input.onholder{color:@placeholder;}
+span.onholder{color:@placeholder; position: absolute;z-index: 8;}
+
+//links
+a{
+  color: @blue;
+  outline-style: none;
+
+  &.a_grey{
+    color: @grey_99;
+  }
+
+  &.a_green{
+    color: @green;
+  }
+
+  &.a_underline {
+    text-decoration: underline;
+  }
+}
+
+iframe.overlay{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: transparent;
+}

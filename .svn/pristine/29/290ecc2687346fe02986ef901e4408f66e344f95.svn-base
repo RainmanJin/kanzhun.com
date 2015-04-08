@@ -1,0 +1,25 @@
+@import "common/var";
+@import "modules/company/common";
+
+div.verification {
+	margin-top: 15px;
+	padding: 73px 0 460px 254px;
+}
+
+p.ipt {
+	margin-bottom: 15px;
+	input {
+		width: 108px;
+		height: 12px;
+		padding: 10px 12px;
+		border: 1px solid @grey_99;
+		font-size: 12px;
+		vertical-align: middle;
+		margin-right: 15px;
+	}
+	
+}
+
+.btn_o_l {
+	padding: 0 50px;
+}

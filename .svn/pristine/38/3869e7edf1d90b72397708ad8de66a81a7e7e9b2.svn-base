@@ -1,0 +1,59 @@
+@import "../../../../../css/common/var";
+@import "../../../var";
+aside{
+  position: fixed;
+  top: 50%;
+  right: 0;
+  ul{
+    li{
+      width: 136px;
+      text-align: center;
+      color: #fff;
+      a{
+        color: #fff;
+      }
+      &.li0{
+        position: relative;
+        img{
+          display: inline-block;
+          width: 123px;
+          height: 116px;
+        }
+        i.i{
+          &.i_l{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 6px;
+            height: 5px;
+            background-position: -180px -280px;
+          }
+          &.i_r{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 6px;
+            height: 5px;
+            background-position: -180px -300px;
+          }
+        }
+      }
+      &.li1{
+        background-color: #44488e;
+        padding: 5px 0;
+      }
+      &.li2{
+        background-color: #222667;
+        padding: 10px 0;
+      }
+      &.li3{
+        background-color: #0b0d3f;
+        border-radius: 0 0 5px 5px;
+        padding: 10px 0;
+        a{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

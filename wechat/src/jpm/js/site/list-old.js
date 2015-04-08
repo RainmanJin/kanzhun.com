@@ -1,0 +1,148 @@
+/**
+ * Created by zcy on 2015/3/30.
+ */
+
+$(function(){
+
+    var floatword = (function(){
+        return function(options){
+            var o = $.extend({}, {
+                cfw: '',
+                color: '#2582cf'
+            }, options);
+
+            var effect = $('<b style="color:' + o.color+ '">+1</b>');
+            o.cfw.append(effect);
+            effect.animate({'top': -50, 'opacity': 0, 'font-size': '40px'}, 400, function(){
+                effect.remove();
+            });
+        }
+    })();
+
+    var floatword1 = (function(){
+        return function(options){
+            var o = $.extend({}, {
+                cfw: '',
+                color: '#e77200'
+            }, options);
+
+            var effect = $('<b style="color:' + o.color+ '">-1</b>');
+            o.cfw.append(effect);
+            effect.animate({'top': -50, 'opacity': 0, 'font-size': '40px'}, 400, function(){
+                effect.remove();
+            });
+        }
+    })();
+
+   /* var prizeId = $("#curPrizeId").val();
+
+    $("#companyList").on("click","a.btn-orange",function(){
+
+        var companyId = $(this).parents("dd").prev("dt").attr("data-company-id");
+
+        var _this = $(this);
+
+        $.post("/activity/jinpingmei/onlist.json",
+            {
+                companyId:companyId,
+                prizeId:prizeId
+            },function(data){
+                if(data.rescode == 1){
+                    var $count = _this.parents("dd").prev("dt").find("i.count");
+                    $count.html(parseInt($count.html())+1);
+                    floatword({ cfw: _this });
+                   }else{
+                    alert("您已经投过漂了,想继续投票请等明天再来!");
+                }
+        });
+
+        return false;
+    });
+
+
+    $("#companyList").on("click","a.btn-yellow",function(){
+        var companyId = $(this).parents("dd").prev("dt").attr("data-company-id");
+
+        var _this = $(this);
+
+        $.post("/activity/jinpingmei/offlist.json",
+            {
+                companyId:companyId,
+                prizeId:prizeId
+            },function(data){
+                console.log(data)
+                if(data.rescode == 1){
+                   var $count = _this.parents("dd").prev("dt").find("i.count");
+                    $count.html(parseInt($count.html())-1);
+                    floatword1({ cfw: _this });
+
+                }else{
+                    alert("您已经投过漂了,想继续投票请等明天再来!");
+                }
+            });
+        return false;
+    });*/
+
+    function share(target, msg, callback){
+        $('body').append(
+            '<div class="mask" id="wxMask">'+
+            '<div class="transmitDialog" id="transmitDialog"><p>' +
+            msg +
+            '</p><i class="arrows"></i></div></div>');
+
+        var mask = $('#wxMask'),dialog = $('#transmitDialog');
+
+        if(target){
+            target.on('click', function(e){
+                e.preventDefault();
+                mask.show();
+                dialog.show();
+            });
+        }
+
+        mask.on('click',function(e){
+            mask.hide();
+            dialog.hide();
+        });
+
+        if(callback){
+            callback();
+        }
+
+        return {
+            open: function(msg){
+                $('#transmitDialog>p').html(msg)
+                mask.show();
+                dialog.show();
+            },
+
+            close: function(){
+                mask.hide();
+                dialog.hide();
+            }
+        }
+    }
+
+    share($("#shareWx"),"分享出去");
+    var prizeId = $("#curPrizeId").val();
+
+    $("#companyNameSuggest").autocomplete({
+        containerClass: 'autocomplete-suggestions cmp_select',
+        serviceUrl: '/activity/jinpingmei/company.json?prizeId='+prizeId,
+        paramName: 'q',
+        dataType: 'json',
+        transformResult: function (response) {
+            return {
+                suggestions: $.map(response.suggestions, function (dataItem) {
+                    var arr = dataItem.data.split('|');
+                    return { value: arr[0], data: arr[1], num: arr[2], logo: dataItem.logo, industry : dataItem.industry,city :dataItem.city };
+                })
+            };
+        },
+        onSelect: function (suggestion) {
+            $("#encryptCompId").val(suggestion.data);
+
+            window.location.href = "/activity/jinpingmei/company/"+suggestion.data+"/?prizedId="+prizeId;
+        }
+    });
+});

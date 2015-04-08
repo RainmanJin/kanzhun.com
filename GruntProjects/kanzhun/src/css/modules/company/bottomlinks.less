@@ -1,0 +1,129 @@
+@import "../../common/var";
+
+section.bottomlinks {
+  width: 100%;
+  background-color: @grey_e7;
+  padding: 25px 0;
+  margin-top: 40px;
+  margin-bottom: -40px;
+
+  div {
+    &.linkscon {
+      width: 990px;
+      margin: 0 auto;
+      text-align: left;
+      color: @grey_99;
+    }
+
+    &.navs {
+      .navstt {
+        border-bottom: 1px solid #cbcbcb;
+        height: 33px;
+
+        p {
+          height: 34px;
+          margin-bottom: -1px;
+          *position: relative;
+          background: url("@{img}/bottomlinks_img.jpg") no-repeat left bottom;
+          .transition(all .2s ease);
+        }
+        
+        a {
+          display: inline-block;
+          height: 34px;
+          line-height: 34px;
+          padding: 0 6px;
+          margin-right: 5px;
+          color: @grey_99;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    &.navscon {
+      padding-top: 5px;
+
+      a {
+        display: inline-block;
+        height: 22px;
+        line-height: 22px;
+        padding-right: 15px;
+        white-space: nowrap;
+        color: @grey_99;
+      }
+    }
+
+    &.companycon {
+      position: relative;
+      *zoom: 1;
+      padding-right: 40px;
+
+      &.hiddens {
+        height:   22px;
+        overflow: hidden;
+      }
+
+      aside {
+        position: absolute;
+        right: 10px;
+        top: 13px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+
+      span {
+        &.doubletriangle {
+          position: absolute;
+          width: 0;
+          height: 0;
+          line-height: 0;
+          font-size: 0;
+          overflow: hidden;
+        }
+        
+        right: 0;
+        border-width: 5px 4px 0 4px;
+        border-style: solid dashed;
+        overflow: hidden;
+        .transition(all .3s ease);
+
+        &.wraptriangle {
+          top: 2px;
+          border-color: #4a4a4a transparent transparent transparent;
+        }
+
+        &.innertriangle {
+          top: 0;
+          border-color: @grey_e7 transparent transparent transparent;
+        }
+
+        &.transforms {
+          .transform(rotate(180deg));
+          .transition(all .3s ease);
+
+          &.wraptriangle {
+            top: 0px;
+            border-color: #4a4a4a transparent transparent transparent;
+          }
+
+          &.innertriangle {
+            top: 2px;
+            border-color: @grey_e7 transparent transparent transparent;
+          }
+        }
+      }
+    }
+  }
+
+  p.linkstt {
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #cbcbcb;
+    color: #797979;
+    font-weight: bold;
+  }
+}

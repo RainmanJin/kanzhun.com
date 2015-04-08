@@ -1,0 +1,232 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+dl.c_s_result {
+  padding-top: 22px;
+  //overflow: hidden;
+  zoom: 1;
+
+  dt.anonymous_portrait {
+    float: left;
+    width: 57px;
+    height: 57px;
+
+    img {
+      width: 57px;
+      height: 57px;
+    }
+  }
+
+  dd.c_s_result_detail {
+    margin-left: 75px;
+
+    h2 {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      font-size: 16px;
+      font-weight: normal;
+      span {
+        font-weight: bold;
+      }
+    }
+
+    p.view_address {
+      padding-bottom: 20px;
+
+      i.cmp_address {
+        margin-right: 5px;
+        vertical-align: -2px;
+      }
+    }
+
+    .c_s_result_text {
+      line-height: 2em;
+      color: @grey_66;
+      em{
+        color: @grey_33;
+      }
+    }
+
+    dt {
+      float: left;
+      width: 55px;
+      color: @grey_33;
+      font-weight: bold;
+    }
+
+    dd {
+      margin-left: 55px;
+    }
+
+    div.u_c_s {
+      padding: 15px 0;
+    }
+  }
+}
+
+//点评项下的灰色条
+div.c_s_v_result {
+  padding: 8px 0 10px 20px;
+  margin-top: 22px;
+  background-color: #f6f6f6;
+  position: relative;
+  em {
+    margin-right: 45px;
+  }
+
+  span.green_s_star_2 {
+    vertical-align: -2px;
+  }
+  i.i_rect{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    vertical-align: middle;
+    &.color_g{
+      background-color: @green;
+    }
+    &.color_r{
+      background-color: #e85253;
+    }
+    &.color_y{
+      background-color: #ffcc00;
+    }
+  }
+  i.tangle_init{
+    display: inline-block;
+     border-width: 5px 5px 0 5px;
+     border-style: dashed solid;
+     border-color: @grey_99 transparent transparent transparent;
+     margin: 0 5px;
+     vertical-align: 3px;
+    .transition(all, ease, .2s);
+   }
+
+  i.fronts_a_hover {
+    .transform(rotate(180deg));
+  }
+
+  div.grade_detail{
+    top: 50px;
+    left: -27px;
+  }
+}
+
+div.nologin {
+  margin-top: 36px;
+}
+
+div.i_filterblur {
+  height: 215px;
+  //margin-top: 10px;
+  background: url("@{img}/view_v2-img/view_info.jpg") no-repeat left center;
+  padding-top: 1px;
+  margin-left: -10px;
+  margin-bottom: -15px;
+}
+
+div.send_info {
+  width: 260px;
+  margin: 0 auto;
+  padding: 20px 0 20px 120px;
+  text-align: center;
+  border: 1px solid #cfcfcf;
+  background: #fff url("@{img}/ugc_interrupt.jpg") no-repeat 15px bottom;
+
+  p {
+    &.tt {
+      padding-bottom: 5px;
+    }
+  }
+}
+
+//公司等级详情(列表时用到)
+div.grade_detail{
+  display: none;
+  border: 1px solid #e2e2e2;
+  width: 140px;
+  padding: 15px 15px 20px;
+  background-color: #fff;
+  position: absolute;
+  ul{
+    li{
+      margin-top: 5px;
+    }
+  }
+  .tangle_greyb_up{
+    position: absolute;
+    top: -7px;
+    right: 25px;
+  }
+}
+
+div.login_register {
+  width: 350px;
+  margin: -6px auto 0 auto;
+  padding: 20px 0 0 0;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+
+  h5 {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 16px;
+  }
+
+  li {
+    &.l_other {
+      height: 90px;
+      margin: 15px 0 5px 0;
+      background: url("@{img}/ugc_interuptline.jpg") no-repeat right center;
+
+      a {
+        display: inline-block;
+        position: relative;
+        width: 46px;
+        font-size: 0;
+        height: 46px;
+        border-radius: 30px;
+        background-color: #f2f2f2;
+        text-align: center;
+        margin-right: 10px;
+        .transition(top .3s ease);
+
+        i{
+          display: inline-block;
+          height: 23px;
+          margin-top: 11px;
+          background-image: url("@{img}/auth.png");
+          background-repeat: no-repeat;
+
+          &.qq{
+            background-position: -63px 0;
+            width: 22px;
+          }
+
+          &.rr{
+            background-position: -87px 0;
+            width: 23px;
+          }
+
+          &.wb{
+            background-position: -114px 0;
+            width: 29px;
+          }
+        }
+
+        &:hover{
+          top: -2px;
+        }
+      }
+    }
+    &.options {
+      padding-top: 45px;
+    }
+  }
+
+}

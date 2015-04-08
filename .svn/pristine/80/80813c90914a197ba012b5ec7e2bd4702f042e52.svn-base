@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>下载页面</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/bossweb.css">
+</head> 
+<body>
+  <div class="wrapper">
+    <header class="down_hd">
+      <a href=""><i class="iinit ihome"></i></a>
+      <h1><a href="www.bosszhipin.com">BOSS直聘</a></h1>
+    </header>
+    <section class="home_content">
+      <h2>Boss直聘</h2>
+      <h3>去繁从简 即刻入职</h3><a href=""><i class="iinit iphone"></i>iPhone&nbsp;下载</a><a href=""><i class="iinit iandroid"></i>Android&nbsp; 下载</a>
+    </section>
+    <div class="bg"></div>
+    <div class="phone_bg"></div>
+    <dl class="summarinfo">
+      <dt>直聘：更简单的招聘</dt>
+      <dd>更平等的招聘过程</dd>
+      <dd>比更快还快的问答</dd>
+      <dd>只有你和我的面试</dd>
+    </dl>
+  </div>
+</body>
+</html>

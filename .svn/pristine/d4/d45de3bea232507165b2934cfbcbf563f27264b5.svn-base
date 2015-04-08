@@ -1,0 +1,388 @@
+@import "../common/var";
+
+div{
+  &.top_img{
+    background-repeat: no-repeat;
+    background-position: center 0;
+    height: 150px;
+    width: auto;
+    min-width: 1200px;
+
+    p{
+      width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    i{
+      position: absolute;
+      cursor: pointer;
+      width: 25px;
+      height: 26px;
+      display: block;
+      right: 10px;
+      top: 10px;
+      background: transparent url("@{img}/top_close.png") no-repeat;
+
+      .transition(all .2s linear);
+      .transform(rotate(0deg));
+
+
+      &:hover{
+        .transform(rotate(90deg));
+      }
+    }
+  }
+
+  &.banner {
+  	width: 990px;
+  	margin: 15px auto 0 auto;
+  }
+}
+
+header{
+	&.global{
+		width: 100%;
+		min-width: 990px;
+		height: 45px;
+		background-color: @green;
+	}
+
+
+  /*
+  //节日导航,html如下：
+  <header class="global hd-christmas">
+	  <div class="hd-bg"></div>
+	</header>
+  &.hd-christmas{
+    position: relative;
+    *z-index: 7;
+
+    .hd-bg{
+      background: url("@{img}/days/Christmas.png") no-repeat center top;
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 99px;
+      left: 0;
+      top: 0;
+      *display: none;
+    }
+
+    .header{
+      position: relative;
+      z-index: 7;
+      *z-index: 5;
+    }
+  }*/
+
+	.header{
+		width: 990px;
+		margin: 0 auto;
+    position: relative;
+
+    //需要高于mini-search的z-index:6
+    z-index: 7;
+	}
+
+	.logo{
+		float: left;
+		margin-right: 30px;
+    margin-top: 2px;
+    height: 40px;
+	}
+
+	nav{
+		float: left;
+		line-height: 45px;
+		a{
+			float: left;
+			font-size: 16px;
+			text-shadow: 1px 1px 4px #949494;
+			padding: 0 1em;
+			color: #fff;
+			&:hover {
+				text-decoration: none;
+				background-color: #6a9c16;
+//          background: url("@{img}/days/hd-c-on.png") no-repeat 2px 14px;
+			}
+			&.current {
+//        background: url("@{img}/days/hd-c-on.png") no-repeat 2px 14px;
+				background-color: #6a9c16;
+			}
+			&.mycomment {
+				color: #f0ed03;
+				&:hover {
+					text-decoration: underline;
+					background-color: transparent;
+				}
+			}
+      &.head_salary {
+        position: relative;
+
+        i {
+          position: absolute;
+          right: 3px;
+          top: 3px;
+          overflow: hidden;
+          line-height: 0;
+          font-size: 0;
+          width: 21px;
+          height: 11px;
+          background: @icons no-repeat -142px -558px;
+        }
+      }
+
+      //导航需要加new或hot图标 只要给a加class = h_i
+      &.h_i{
+        position: relative;
+
+        i{
+          position: absolute;
+          right: 3px;
+          top: 3px;
+        }
+      }
+
+      //曝曝入口 下线就注销
+      &.h_baobao_tdc{
+        img{
+          position: absolute;
+          top: 46px;
+          left: 50%;
+          margin-left: -63px;
+          width: 127px;
+          display: none;
+          z-index: 5;
+        }
+
+        &:hover{
+          img{
+            display: block;
+          }
+        }
+      }
+		}
+		em{
+			float: left;
+			color: #fff;
+		}
+	}
+
+	.loginfo{
+		float: right;
+		white-space: nowrap;
+		padding-top: 13px;
+		color: #fff;
+		font-size: 14px;
+
+		a{
+			color: #fff;
+			margin-left: 15px;
+		}
+
+		i{
+			margin-left: 15px;
+			font-weight: normal;
+		}
+
+    span {
+      color: #91c540;
+    }
+	}
+
+	.hello {
+		float: right;
+		text-align: right;
+		padding-top: 12px;
+		dl {
+			position: relative;
+			float: left;
+			text-align: right;
+			height: 26px;
+			
+			dt {
+				color: #fff;
+				i {
+					display: inline-block;
+					font-size: 0;
+					overflow: hidden;/*
+					width: 9px;
+					height: 5px;
+					background: url(../images/profiles.png) no-repeat -429px top; */
+					&.drop_down {
+						width: 0;
+						height: 0;
+						border-width: 5px 4.5px 0 4.5px;
+						border-style: solid dashed;
+						border-color: #e3f6c6 transparent transparent transparent;
+						vertical-align: middle;
+						*vertical-align: -1px;
+						.transition(all, linear, .2s);
+						.transform(rotate(0deg));
+					}
+
+					&.drop_down_h {
+						/* border-width: 0 5px 5px 5px;
+						border-style: solid dashed;
+						border-color: transparent transparent #fff transparent; */
+						.transform(rotate(180deg))
+					}
+					
+					&.drop_down_nocss3 {
+						border-width: 0 4.5px 5px 4.5px;
+						border-color: transparent transparent #e3f6c6 transparent;
+						//.transform(rotate(180deg))
+					}
+
+          &.villain {
+            width: 14px;
+            height: 14px;
+            background: @icons no-repeat -181px -39px;
+            margin-right: 5px;
+            vertical-align: -3px;
+          }
+				}
+
+        em {
+          display: inline-block;
+          vertical-align: middle;
+          *vertical-align: -2px;
+          .ellipsis(ellipsis);
+          width: 9em;
+          margin: 0;
+        }
+			}
+			dd {
+				position: absolute;
+				right: 0;
+				top: 20px;
+				width: 110px;
+				border: 1px solid #9a9999;
+				background-color: #fff;
+				display: none;
+				line-height: 28px;
+        z-index: 8;
+
+				a {
+					display: block;
+					text-align: left;
+					padding-left: 12px;
+					color: @def;
+					&:hover {
+						color: @blue;
+						//background-color: @green;
+						text-decoration: none;
+					}
+
+          &.signout {
+            border-top: 1px solid @grey_e7;
+          }
+				}
+			}
+		}
+		em {
+			margin: 0 10px;
+			color: #fff;
+      *vertical-align: -3px;
+		}
+		a {
+			color: #fff;
+      vertical-align: middle;
+      *vertical-align: -3px;
+		}
+
+    a.user_news {
+      position: relative;
+      float: left;
+      width: 17px;
+      height: 13px;
+      margin-top: 6px;
+
+      i.n_envelope {
+        display: block;
+      }
+
+      span {
+        position: absolute;
+        top: -7px;
+        left: 13px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 12px;
+        color: #fff;
+        padding: 0 5px;
+        background-color: #e61e13;
+        border-radius: 30px;
+      }
+    }
+	}
+}
+
+ /*div#quick {
+ 	position: fixed;
+ 	bottom: 150px;
+  right: 10px;
+ 	width: 48px;
+ 	a {
+ 		display: block;
+ 		font-size: 0;
+ 		line-height: 0;
+ 		width: 48px;
+ 		height: 48px;
+ 		background-image: url(../images/backimgs_03.png);
+ 		background-repeat: no-repeat;
+
+ 		&.back {
+ 			float: left;
+ 			background-position: center top;
+			display: none;
+ 			&:hover {
+ 				background-position: center bottom;
+ 			}
+ 		}
+
+ 		&.suggestions {
+      position: relative;
+ 			float: left;
+ 			background-position: center -68px;
+			clear: both;
+
+      i.weixin {
+        display: none;
+        position: absolute;
+        right: 48px;
+        bottom: -10px;
+        width: 170px;
+        height: 170px;
+
+        img {
+          width: 170px;
+          height: 170px;
+        }
+      }
+ 			&:hover {
+ 			  i {
+          display: block;
+        }
+ 			}
+ 		}
+
+ 	}
+ }*/
+
+
+div.declares {
+  width: 100%;
+  background-color: @grey_e7;
+  padding: 15px 0;
+  margin-top: 40px;
+  margin-bottom: -40px;
+
+  p {
+    width: 990px;
+    margin: 0 auto;
+    text-align: center;
+    color: @grey_99;
+  }
+}

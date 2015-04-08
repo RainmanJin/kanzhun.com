@@ -1,0 +1,192 @@
+section.l_con {
+  float: left;
+  width: 640px;
+  margin-right: 7px;
+  padding-bottom: 70px;
+  background: #354257 url(../images/l_con_bg.jpg) no-repeat left top;
+}
+section.r_con {
+  float: left;
+  width: 313px;
+  padding: 15px 15px 20px 15px;
+  background-color: #f3f3f3;
+  box-shadow: 1px 1px 2px #d8dad9;
+}
+section.ugcl_con {
+  float: left;
+  width: 317px;
+  min-height: 1000px;
+  _height: 1000px;
+  margin-right: 7px;
+  padding: 0 13px;
+  background: #354257 url(../images/ugc_img_01.jpg) no-repeat left top;
+}
+section.ugcr_con {
+  float: left;
+  width: 640px;
+  min-height: 1000px;
+  _height: 1000px;
+  background-color: #f3f3f3;
+}
+section.ugc_cons {
+  width: 590px;
+  padding: 40px 25px 0 25px;
+  min-height: 960px;
+}
+div.title {
+  padding: 41px 49px 45px 28px;
+  overflow: hidden;
+  zoom: 1;
+}
+div.title dl {
+  float: left;
+  padding-top: 50px;
+}
+div.title dl dd {
+  font-size: 18px;
+}
+div.title h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+div.title h1 em {
+  color: #019875;
+}
+div.t_ugc {
+  height: 178px;
+  background: url(../images/l_con_bg.jpg) no-repeat left top;
+}
+/*头像*/
+.modifyhead {
+  position: relative;
+  float: right;
+  width: 180px;
+  height: 180px;
+}
+.modifyhead img {
+  width: 180px;
+  height: 180px;
+}
+.modifyhead em {
+  display: block;
+  width: 180px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  z-index: 2;
+  height: 50px;
+  line-height: 0;
+  background-color: #000;
+  opacity: .35;
+}
+.modifyhead span {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 0;
+  left: 0;
+  background: url(../images/img_07.png) no-repeat center;
+  z-index: 3;
+}
+.modifyhead a {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 4;
+}
+.modifyhead a:hover {
+  text-decoration: none;
+}
+.ugc_m {
+  width: 115px;
+  height: 115px;
+  margin: 36px auto 20px auto;
+  float: none;
+}
+.ugc_m img {
+  width: 115px;
+  height: 115px;
+}
+.ugc_m span {
+  width: 115px;
+  height: 115px;
+  background: url(../images/ugc_img_02.png) no-repeat center;
+}
+.sidenav {
+  padding-top: 45px;
+}
+.sidenav p {
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.sidenav p a {
+  display: block;
+  color: #343434;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #848b97;
+}
+.sidenav p a:hover,
+.sidenav p a.current,
+.sidenav p a.current:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #019875;
+  border: 1px solid #206461;
+}
+p.step {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0;
+}
+p.step i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: #343434;
+  background: url(../images/icons.png) no-repeat -58px top;
+  font-size: 18px;
+  text-align: center;
+  line-height: 20px;
+  overflow: hidden;
+  vertical-align: -3px;
+  *vertical-align: 0;
+}
+.temptation {
+  overflow: hidden;
+  zoom: 1;
+}
+.temptation span {
+  clear: both;
+  display: block;
+  text-align: right;
+  color: #bbbbbb;
+  padding-right: 15px;
+}
+.keywords {
+  overflow: hidden;
+  zoom: 1;
+}
+.keywords li {
+  float: left;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  background-color: #e1e3e2;
+  margin: 0 7px 7px 0;
+}
+.keywords li span {
+  float: left;
+  width: 118px;
+  color: #999999;
+  cursor: pointer;
+}

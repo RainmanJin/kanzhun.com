@@ -1,0 +1,210 @@
+section.content {
+  width: 990px;
+  margin: 10px auto 0;
+  background-color: #fff;
+  min-height: 900px;
+}
+section.content .content_inner {
+  padding: 20px;
+}
+section.content .content_inner h2.ct {
+  font-size: 20px;
+}
+section.content .content_inner h2.ct i {
+  margin-right: 5px;
+}
+section.content .content_inner h2.ct .b_line {
+  margin-top: 5px;
+  height: 2px;
+  font-size: 0;
+  background-color: #08c093;
+}
+section.content .content_inner .table {
+  margin-top: 25px;
+}
+section.content .content_inner .table h3 {
+  font-size: 14px;
+  color: #888;
+}
+section.content .content_inner .table table {
+  margin-top: 5px;
+}
+section.content .content_inner .table table tr {
+  height: 40px;
+  text-align: center;
+}
+section.content .content_inner .table table tr th {
+  font-weight: normal;
+  background-color: #333434;
+  border: 1px solid #333434;
+  color: #fff;
+}
+section.content .content_inner .table table tr td {
+  border: 1px solid #b3b3b3;
+}
+section.content .content_inner .table table tr.current td {
+  background-color: #e7fff9;
+}
+section.content .content_inner .hint {
+  margin-top: 25px;
+}
+section.content .content_inner .hint ul {
+  margin-top: 5px;
+}
+section.content .content_inner .hint ul li {
+  margin-bottom: 10px;
+}
+section.content .content_inner .hint ul li i {
+  margin-right: 8px;
+}
+section.content .content_inner .hintCc h3 {
+  font-size: 20px;
+}
+section.content .content_inner .hintCc dl dd {
+  margin-top: 5px;
+}
+section.content .content_inner .hintCc dl dd span {
+  font-size: 18px;
+  color: #08c093;
+}
+section.content .content_inner .hintCc dl dd em {
+  font-size: 30px;
+  color: #d6d6d6;
+  font-weight: lighter;
+  line-height: 1;
+  vertical-align: -2px;
+}
+section.content .content_inner ul.questList {
+  background-color: #f6f6f6;
+  border: 1px solid #e7e7e7;
+  padding: 15px 15px 0;
+}
+section.content .content_inner ul.questList .ql_li {
+  margin-bottom: 20px;
+}
+section.content .content_inner ul.questList .ql_li label {
+  font-size: 16px;
+  font-weight: bold;
+}
+section.content .content_inner ul.questList .ql_li ul.short {
+  margin-top: 10px;
+}
+section.content .content_inner ul.questList .ql_li ul.short li {
+  display: inline-block;
+  width: 130px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  float: left;
+}
+section.content .content_inner ul.questList .ql_li ul.short li a {
+  display: block;
+  color: #343434;
+}
+section.content .content_inner ul.questList .ql_li ul.short li a:hover {
+  text-decoration: none;
+}
+section.content .content_inner ul.questList .ql_li ul.short li.current {
+  background-color: #08c093;
+  border: 1px solid #08c093;
+}
+section.content .content_inner ul.questList .ql_li ul.short li.current a {
+  color: #fff;
+}
+section.content .content_inner ul.questList .ql_li ul.long {
+  margin-top: 5px;
+}
+section.content .content_inner ul.questList .ql_li ul.long li {
+  margin-top: 5px;
+  display: block;
+  text-align: left;
+  border: 1px solid #e7e7e7;
+  padding: 7px 10px;
+}
+section.content .content_inner ul.questList .ql_li ul.long li a {
+  display: block;
+  color: #343434;
+}
+section.content .content_inner ul.questList .ql_li ul.long li a:hover {
+  text-decoration: none;
+}
+section.content .content_inner ul.questList .ql_li ul.long li.current {
+  background-color: #08c093;
+  border: 1px solid #08c093;
+}
+section.content .content_inner ul.questList .ql_li ul.long li.current a {
+  color: #fff;
+}
+section.content .content_inner .infoForm ul.fieldList {
+  padding-left: 70px;
+}
+section.content .content_inner .infoForm ul.fieldList li.fl_li {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+section.content .content_inner .infoForm ul.fieldList li.fl_li .select {
+  float: left;
+}
+section.content .content_inner .infoForm ul.fieldList li.fl_li label {
+  float: left;
+  margin-top: 10px;
+  width: 5em;
+  text-align: right;
+  padding-right: 20px;
+  line-height: 1;
+}
+section.content .content_inner .infoForm ul.fieldList li.fl_li .sp {
+  margin-top: 10px;
+  float: left;
+  line-height: 1;
+}
+section.content .content_inner .infoForm ul.fieldList li.fl_li p.err {
+  position: absolute;
+  top: 35px;
+  color: #e60e0e;
+  margin-left: 7em;
+}
+.progressBar {
+  margin-top: 40px;
+}
+.progressBar .outer {
+  vertical-align: middle;
+  display: inline-block;
+  width: 570px;
+  height: 22px;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  position: relative;
+  margin: 0 5px;
+}
+.progressBar .outer .inner {
+  margin: 1px;
+  display: inline-block;
+  background-color: #08c093;
+  height: 20px;
+  border-radius: 3px;
+}
+.progressBar .outer i {
+  position: absolute;
+  top: -32px;
+  margin-left: -22px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 12px;
+}
+.timeBar {
+  vertical-align: -4px;
+  font-weight: bold;
+  font-size: 26px;
+}
+.timeBar em {
+  display: inline-block;
+  background: url("../images/icons.png") no-repeat -160px 0;
+  width: 24px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+}

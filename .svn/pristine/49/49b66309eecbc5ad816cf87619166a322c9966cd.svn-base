@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>DEMO</title>
+  <link rel="stylesheet" href="css/baobao-download.css">
+</head>
+<body>
+<img src="images/baobao.jpg" width="100%" class="dl-img">
+<p class="dl-txt">
+  800万用户匿名“曝”了138万家公司的 <br/>工资数据、企业内幕以及……
+</p>
+
+<p class="dl-bb">求“曝曝”</p>
+
+<a class="download" href="javascript:;">立即下载</a>
+
+<div class="dl-mask none">
+  <img src="images/dl-mask.png" >
+</div>
+<script>
+  (function(){
+    var mask = document.querySelector('div.dl-mask');
+    document.querySelector('a.download').addEventListener('click', function(){
+      mask.style.display = 'block';
+    }, false);
+
+    mask.addEventListener('click', function(){
+      mask.style.display = 'none';
+    }, false);
+  })();
+</script>
+</body>
+</html>
+
+

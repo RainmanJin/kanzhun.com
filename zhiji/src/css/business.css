@@ -1,0 +1,457 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #ebebed;
+}
+header.business_header {
+  background-color: #08c093;
+  height: 60px;
+}
+header.business_header .inner_r {
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+  font-size: 16px;
+  color: #fff;
+}
+header.business_header .inner_r i {
+  vertical-align: middle;
+}
+header.business_header .inner_r em {
+  color: #6de0c3;
+  margin: 0 10px;
+}
+header.business_header .inner_r a {
+  color: #fff;
+}
+nav.nav_l {
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  background-color: #333434;
+}
+nav.nav_l dd {
+  height: 55px;
+  line-height: 55px;
+  border-top: 1px solid #414141;
+  border-bottom: 1px solid #252626;
+}
+nav.nav_l dd a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #888;
+  padding-left: 35px;
+}
+nav.nav_l dd a em {
+  display: inline-block;
+  width: 21px;
+  text-align: center;
+  margin-right: 10px;
+}
+nav.nav_l dd a em i {
+  vertical-align: -2px;
+}
+nav.nav_l dd a:hover,
+nav.nav_l dd a.current {
+  text-decoration: none;
+  background: url("../images/nav_bg.png") no-repeat #ebebed;
+  color: #08c093;
+}
+nav.nav_l dd a:hover .i_home,
+nav.nav_l dd a.current .i_home {
+  background-position: -40px -20px;
+}
+nav.nav_l dd a:hover .i_account,
+nav.nav_l dd a.current .i_account {
+  background-position: -40px -40px;
+}
+nav.nav_l dd a:hover .i_report,
+nav.nav_l dd a.current .i_report {
+  background-position: -40px -60px;
+}
+nav.nav_l dd a:hover .i_data,
+nav.nav_l dd a.current .i_data {
+  background-position: -40px -80px;
+}
+nav.nav_l dd a:hover .i_temp,
+nav.nav_l dd a.current .i_temp {
+  background-position: -40px -100px;
+}
+nav.nav_l dd a:hover .i_set,
+nav.nav_l dd a.current .i_set {
+  background-position: -40px -140px;
+}
+.body_r {
+  margin-left: 214px;
+  min-width: 1080px;
+}
+section.content .content_inner {
+  padding-left: 50px;
+}
+section.content .content_inner ul.addList {
+  margin-top: 30px;
+}
+section.content .content_inner ul.addList li {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #d4d4d4;
+  background-color: #f2f2f2;
+  float: left;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+section.content .content_inner ul.addList li a {
+  display: block;
+  padding-top: 20px;
+  color: #666;
+}
+section.content .content_inner ul.addList li a p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+section.content .content_inner ul.addList li a:hover {
+  text-decoration: none;
+}
+section.content .content_inner ul.onGoingList {
+  margin-top: 25px;
+}
+section.content .content_inner ul.onGoingList li {
+  float: left;
+  width: 390px;
+  margin: 0 30px 30px 0;
+}
+section.content .content_inner ul.onGoingList li h4 {
+  background-color: #08c093;
+  height: 34px;
+  line-height: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 10px;
+}
+section.content .content_inner ul.onGoingList li dl {
+  background-color: #fff;
+  border: 1px solid #90dac9;
+  height: 150px;
+  padding-left: 20px;
+}
+section.content .content_inner ul.onGoingList li dl dd {
+  float: left;
+  margin-top: 20px;
+  width: 180px;
+}
+section.content .content_inner ul.onGoingList li dl dd a {
+  text-decoration: underline;
+}
+section.content .content_inner ul.onGoingList li dl dd em {
+  text-decoration: underline;
+  color: #e60e0e;
+}
+section.content .content_inner ul.cNav {
+  border-bottom: 2px solid #08c093;
+  margin-top: 30px;
+}
+section.content .content_inner ul.cNav li {
+  float: left;
+  width: 120px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid #cfcfcf;
+  border-bottom: 0;
+  font-size: 18px;
+  background-color: #f7f7f7;
+}
+section.content .content_inner ul.cNav li a {
+  color: #343434;
+  display: block;
+  width: 100%;
+}
+section.content .content_inner ul.cNav li a:hover {
+  text-decoration: none;
+}
+section.content .content_inner ul.cNav li.current {
+  background-color: #08c093;
+  border: 1px solid #08c093;
+  border-bottom: 0;
+}
+section.content .content_inner ul.cNav li.current a {
+  color: #fff;
+}
+h2.ct {
+  font-size: 18px;
+}
+h2.ct i {
+  margin-right: 5px;
+}
+h2.ct .b_line {
+  margin-top: 5px;
+  height: 2px;
+  font-size: 0;
+  background-color: #08c093;
+}
+.account_step {
+  width: 736px;
+}
+.account_step .step_h2 {
+  font-size: 16px;
+}
+.account_step .step_h3 .i_round {
+  font-size: 26px;
+  text-align: center;
+  color: #08c093;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.account_step ul.accountList {
+  margin-top: 15px;
+  margin-right: -9px;
+}
+.account_step ul.accountList li {
+  float: left;
+  width: 138px;
+  height: 138px;
+  border: 1px solid #08c093;
+  background-color: #fff;
+  text-align: center;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  position: relative;
+}
+.account_step ul.accountList li a {
+  display: block;
+  height: 100%;
+  color: #595959;
+  position: relative;
+}
+.account_step ul.accountList li a h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.account_step ul.accountList li a .detail {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 12px;
+  height: 0;
+  background-color: #defaf3;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.account_step ul.accountList li a .detail .detailInner {
+  text-align: left;
+  padding: 8px 3px;
+}
+.account_step ul.accountList li a:hover {
+  text-decoration: none;
+}
+.account_step ul.accountList li a:hover .detail {
+  display: block;
+  height: 90px;
+}
+.account_step ul.accountList li.custom {
+  border: 1px solid #f5c863;
+  position: relative;
+}
+.account_step ul.accountList li.custom .i_corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.account_step ul.accountList li.check_on .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/check_on.png") no-repeat;
+  width: 138px;
+  height: 138px;
+  z-index: 1;
+}
+.accountForm {
+  margin-top: 20px;
+}
+.accountForm .select {
+  width: 200px;
+  float: left;
+}
+table.accountTable {
+  margin-top: 25px;
+}
+table.accountTable tr {
+  height: 40px;
+  text-align: center;
+}
+table.accountTable tr th {
+  font-weight: normal;
+  background-color: #333434;
+  border: 1px solid #333434;
+  color: #fff;
+}
+table.accountTable tr td {
+  border: 1px solid #b3b3b3;
+}
+table.accountTable tr td .tbBar {
+  width: 198px;
+  height: 20px;
+  border: 1px solid #b3b3b3;
+  display: inline-block;
+  background-color: #fff;
+  vertical-align: middle;
+}
+table.accountTable tr td .tbBar em {
+  display: block;
+  background-color: #08c093;
+  height: 100%;
+}
+table.accountTable tr.current td {
+  background-color: #e7fff9;
+}
+div.account_set {
+  margin-top: 20px;
+  width: 774px;
+}
+div.account_set .count {
+  float: right;
+  font-size: 14px;
+  margin-top: 10px;
+}
+div.tempField {
+  margin-bottom: 20px;
+}
+div.tempField label {
+  float: left;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+div.tempField .select {
+  float: left;
+  width: 200px;
+}
+div.tempField .ipt {
+  width: 180px;
+}
+div.tempField h3 {
+  font-size: 14px;
+}
+div.tempField h3 em {
+  font-weight: bold;
+  color: #08c093;
+}
+div.tempField h3 span {
+  color: #08c093;
+}
+div.tempField .tempUl {
+  border: 1px solid #b3b3b3;
+  background-color: #fff;
+  width: 610px;
+  margin-top: 5px;
+  padding-top: 25px;
+  padding-left: 40px;
+}
+div.tempField .tempUl li {
+  width: 150px;
+  margin-bottom: 25px;
+  float: left;
+  z-index: 1;
+}
+div.tempField .tempUl li input {
+  vertical-align: -2px;
+  margin-right: 5px;
+}
+div.tempField .tempUl li a.hover {
+  position: relative;
+}
+div.tempField .tempUl li a.hover:hover {
+  z-index: 1;
+  text-decoration: none;
+}
+div.tempField .tempUl li a.hover:hover .tips {
+  display: block;
+  z-index: 2;
+}
+div.tempField .tempUl li .tips {
+  display: none;
+  position: absolute;
+  left: -140px;
+  top: 30px;
+  width: 180px;
+  padding: 7px 10px;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  color: #343434;
+  background-color: #fff;
+  cursor: default;
+  -webkit-box-shadow: 0 0 5px #cdcdcd;
+  -moz-box-shadow: 0 0 5px #cdcdcd;
+  -ms-box-shadow: 0 0 5px #cdcdcd;
+  box-shadow: 0 0 5px #cdcdcd;
+}
+div.tempField .tempUl li .tips .h1 {
+  font-weight: bold;
+}
+div.tempField .tempUl li .tips .p1 {
+  color: #666;
+  font-size: 12px;
+}
+div.tempField .tempUl li .tips .i_tipsUp {
+  position: absolute;
+  top: -13px;
+  left: 135px;
+}
+ul.systemForm {
+  margin-top: 30px;
+}
+ul.systemForm li {
+  margin-bottom: 20px;
+  position: relative;
+}
+ul.systemForm li label {
+  width: 4em;
+  text-align: right;
+  margin-right: 10px;
+  display: inline-block;
+}
+ul.systemForm li .ipt {
+  width: 200px;
+}
+ul.systemForm li .err {
+  position: absolute;
+  top: 34px;
+  left: 4em;
+  margin-left: 10px;
+  color: #e60e0e;
+  display: none;
+}
+div.toolPage {
+  text-align: right;
+}
+div.toolPage a {
+  display: inline-block;
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 2px;
+}
+div.toolPage span {
+  display: inline-block;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  background-color: #08c093;
+  color: #fff;
+  border-radius: 2px;
+}

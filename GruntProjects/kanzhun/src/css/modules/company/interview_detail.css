@@ -1,0 +1,228 @@
+dl.interview_detail {
+  overflow: hidden;
+  *zoom: 0;
+}
+dl.interview_detail > dt {
+  float: left;
+  position: relative;
+  margin-top: 10px;
+}
+dl.interview_detail > dt img {
+  width: 56px;
+  height: 56px;
+}
+dl.interview_detail > dt span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 56px;
+  height: 56px;
+  background: url(../images/positionimgs/po_imgs1.png) no-repeat left top;
+}
+dl.interview_detail > dd {
+  margin-left: 70px;
+}
+dl.interview_detail > dd.i_tt {
+  overflow: hidden;
+  *zoom: 1;
+}
+dl.interview_detail > dd.i_tt em {
+  display: block;
+  float: left;
+}
+dl.interview_detail > dd.i_tt h3 {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+dl.interview_detail > dd.i_con {
+  position: relative;
+  padding: 15px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+}
+dl.interview_detail > dd.i_con > span.doubletriangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+dl.interview_detail > dd.i_con > span.triangleEdge {
+  left: -10px;
+  top: 10px;
+  border-width: 10px 10px 10px 0;
+  border-style: dashed solid;
+  border-color: transparent #e7e7e7 transparent transparent;
+}
+dl.interview_detail > dd.i_con > span.triangleCon {
+  left: -9px;
+  top: 10px;
+  border-width: 10px 10px 10px 0;
+  border-style: dashed solid;
+  border-color: transparent #fff transparent  transparent;
+}
+dl.interview_detail > dd.i_con h2 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: normal;
+}
+dl.interview_detail > dd.i_con h2 a.cmp_logos {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 1px solid #E7E7E7;
+  font-size: 0;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+dl.interview_detail > dd.i_con h2 a.cmp_logos img {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+dl.interview_detail > dd.i_con h2 a.cmp_logos span {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+dl.interview_detail > dd.i_con strong {
+  display: block;
+  padding-bottom: 5px;
+}
+dl.interview_detail > dd.i_con dl.i_questions {
+  overflow: hidden;
+  *zoom: 1;
+}
+dl.interview_detail > dd.i_con dl.i_questions dt {
+  float: left;
+}
+dl.interview_detail > dd.i_con dl.i_questions dd {
+  margin-left: 55px;
+}
+dl.interview_detail > dd.i_con p.comments em.line {
+  color: #e7e7e7;
+}
+dl.interview_detail > dd.i_con div.i_filterblur {
+  height: 200px;
+  background: url(../images/positionimgs/po_imgs3.jpg) no-repeat left center;
+  padding-top: 1px;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.nologin {
+  margin-top: 25px;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.send_info {
+  width: 260px;
+  margin: 0 auto;
+  padding: 20px 0 20px 120px;
+  text-align: center;
+  border: 1px solid #cfcfcf;
+  background: #ffffff url(../images/ugc_interrupt.jpg) no-repeat 15px bottom;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.send_info p.tt {
+  padding-bottom: 5px;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register {
+  width: 350px;
+  margin: -6px auto 0 auto;
+  padding: 20px 0 0 0;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register h5 {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register ul {
+  padding-left: 16px;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register li.l_other {
+  height: 90px;
+  margin: 15px 0 5px 0;
+  background: url(../images/ugc_interuptline.jpg) no-repeat right center;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register li.l_other a {
+  display: inline-block;
+  position: relative;
+  width: 46px;
+  font-size: 0;
+  height: 46px;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-right: 10px;
+  -webkit-transition: top 0.3s ease;
+  -moz-transition: top 0.3s ease;
+  -ms-transition: top 0.3s ease;
+  -o-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register li.l_other a i {
+  display: inline-block;
+  height: 23px;
+  margin-top: 11px;
+  background-image: url(../images/auth.png);
+  background-repeat: no-repeat;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register li.l_other a i.qq {
+  background-position: -63px 0;
+  width: 22px;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register li.l_other a i.rr {
+  background-position: -87px 0;
+  width: 23px;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register li.l_other a i.wb {
+  background-position: -114px 0;
+  width: 29px;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register li.l_other a:hover {
+  top: -2px;
+}
+dl.interview_detail > dd.i_con div.i_filterblur div.login_register li.options {
+  padding-top: 45px;
+}
+div.bind_email {
+  width: 408px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid #cfcfcf;
+  background-color: #fff;
+}
+div.bind_email h3 {
+  font-size: 22px;
+  font-weight: normal;
+}
+.auth_btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 322px;
+  height: 42px;
+  border: 0;
+  background-color: #7cb228;
+  color: #fff;
+  line-height: 42px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.auth_btn:hover {
+  background-color: #96ca46;
+  text-decoration: none;
+}

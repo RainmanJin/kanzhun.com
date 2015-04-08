@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta  charset="utf-8" />
+  <title>FullScreen</title>
+  <link rel="stylesheet" href="../css/fullpage/boss-fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="../css/fullpage/jquery.fullPage.css" />
+</head>
+<body>
+
+
+<div id="header"><img src="../images/fullpage/logo.jpg" /></div>
+
+<div id="fullpage">
+  <div class="section " id="section1">
+    <div class="li">
+      <div class="s1">
+        <div class="entrance_top">
+          <img src="../images/fullpage/s1_banner_1_1.png" class="s1_banner flipInX animated hinge" />
+          <p>
+            <span>
+              <a href="#" class="download download_i mb30"><i></i>iPhone 下载&nbsp;</a><br>
+              <a href="#" class="download download_a"><i></i>Android 下载</a>
+            </span>
+            <img src="../images/fullpage/s1_banner_02.png" />
+          </p>
+        </div>
+      </div>
+      <div class="s1_w">
+        <img src="../images/fullpage/s1_word.jpg"  />
+      </div>
+      <img src="../images/fullpage/ss_1_1.png" alt="" class="s1_ss"/>
+    </div>
+
+    <div class="li" style="display:none">
+      <div class="s1" style="background-image:url(../images/fullpage/s1_2.jpg);">
+        <div class="entrance_top">
+          <img src="../images/fullpage/s1_banner_1_2.png" class="s1_banner flipInX animated hinge" />
+          <p>
+            <span>
+              <a href="#" class="download download_i mb30"><i></i>iPhone 下载&nbsp;</a><br>
+              <a href="#" class="download download_a"><i></i>Android 下载</a>
+            </span>
+            <img src="../images/fullpage/s1_banner_02.png" />
+          </p>
+        </div>
+      </div> 
+      <div class="s1_w">
+        <img src="../images/fullpage/s1_word.jpg"  />
+      </div>
+      <img src="../images/fullpage/ss_1_2.png" alt="" class="s1_ss"/>   
+    </div>
+
+    <div class="li" style="display:none">
+      <div class="s1" style="background-image:url(../images/fullpage/s1_3.jpg);">
+        <div class="entrance_top">
+          <img src="../images/fullpage/s1_banner_1_3.png" class="s1_banner flipInX animated hinge" />
+          <p>
+            <span>
+              <a href="#" class="download download_i mb30"><i></i>iPhone 下载&nbsp;</a><br>
+              <a href="#" class="download download_a"><i></i>Android 下载</a>
+            </span>
+            <img src="../images/fullpage/s1_banner_02.png" />
+          </p>
+        </div>
+      </div>
+      <div class="s1_w">
+        <img src="../images/fullpage/s1_word.jpg"  />
+      </div>
+      <img src="../images/fullpage/ss_1_3.png" alt="" class="s1_ss"/>
+    </div>
+
+  </div>
+
+  <div class="section" id="section2"  style="z-index: 10;">
+    <div class="s2">
+      <img class="s2_ss_l" src="../images/fullpage/s2_ss.jpg" alt=""/>
+      <img class="s2_ss_r" src="../images/fullpage/s2_ss_02.jpg" alt=""/>
+    </div>
+    <div class="s2_w">
+      <img src="../images/fullpage/s2_word.jpg"  />
+    </div>
+  </div>
+
+  <div class="section" id="section3">
+    <div class="s3">
+      <img class="s3_ss_l" src="../images/fullpage/s3_ss.jpg" alt=""/>
+      <img class="s3_ss_r" src="../images/fullpage/s3_ss_02.jpg" alt=""/>
+    </div>
+    <div class="s3_w">
+      <img src="../images/fullpage/s3_word.jpg"  />
+    </div>
+  </div>
+
+  <div class="section" id="section4">
+    <div class="s4"></div>
+    <div class="s4_w">
+      <p class="s4_bd"></p>
+      <p class="s4_img"><img src="../images/fullpage/s4_swing.png"  width="300" /></p>
+      <img src="../images/fullpage/s4_word.jpg" height="40"  />
+      <div>
+        <a href="#" class="download download_i2"><i></i>iPhone 下载&nbsp;</a>
+        <a href="#" class="download download_a2"><i></i>Android 下载</a>
+      </div>
+      <img src="../images/fullpage/s1_banner_02.png"  height="25%"  />
+      <p class="links">
+        友情链接：<a target="_blank" href="http://www.7xz.com">七匣子</a>
+        <a target="_blank" href="http://www.155.cn">手游天下</a>
+        <a target="_blank" href="http://www.gpxz.com">谷普下载</a>
+        <a target="_blank" href="http://www.52z.com">飞翔下载</a>
+        <a href="http://www.haote.com" target="_blank">好特下载</a>
+        <a href="http://www.33lc.com" target="_blank">绿茶软件</a>
+        <a href="www.xpgod.com" target="_blank">系统天堂</a>
+        <a href="http://www.xiazaizhijia.com" target="_blank">下载之家</a>
+        <a href="http://www.gezila.com" target="_blank">格子啦</a>
+        <a href="http://www.9553.com" target="_blank">9553软件</a>
+        <a href="http://www.ddooo.com" target="_blank">多多软件</a>
+        <a href="http://www.uzzf.com" target="_blank">东坡下载</a>
+        <a href="http://www.5577.com" target="_blank">5577下载</a>
+        <a href="http://www.qqtn.com" target="_blank">腾牛网</a>
+        <a href="http://www.cr173.com" target="_blank">西西软件</a>
+        <a href="http://www.vipcn.com" target="_blank">清风网络</a>
+        <a href="http://www.yqdown.com" target="_blank">友情下载</a>
+        <a href="http://www.hackhome.com" target="_blank">网侠软件</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="../js/lib/jquery-1.11.0.min.js"></script>
+<script src="../js/utils/jquery.slimscroll.min.js"></script>
+<script src="../js/utils/jquery.easings.min.js"></script>
+<script src="../js/utils/jquery.fullPage.min.js"></script>
+<script src="../js/site/index.js"></script>
+</body>
+</html>

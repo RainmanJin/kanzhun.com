@@ -1,0 +1,40 @@
+1、清空消息
+请求：/usercenter/message/clear.json
+输入：无
+输出：
+{
+"resmsg": "请求成功",
+"rescode": 1
+}
+
+{
+"resmsg": "请求失败",
+"rescode": 0
+}
+
+2、删除指定消息
+请求：/usercenter/message/remove.json?removeId=删除消息id&messageType=删除消息类型
+输入：
+removeId 删除消息id
+messageType 删除消息类型
+输出：
+{
+"resmsg": "请求成功",
+"rescode": 1
+}
+
+{
+"resmsg": "请求失败",
+"rescode": 0
+}
+
+3、wap更多消息
+请求：//usercenter/message/more.json?page=页码
+输入：
+page 页码
+输出：
+{
+"page": 1,
+"html": "",
+"more": true
+}

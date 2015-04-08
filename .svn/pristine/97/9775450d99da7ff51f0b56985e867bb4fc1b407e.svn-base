@@ -1,0 +1,6 @@
+.something .a {
+  value: a;
+}
+.something .b {
+  value: a;
+}

@@ -1,0 +1,10 @@
+.cube{-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0)}
+.display-flex{display:-webkit-flex;display:flex}
+.box-sizing{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+input[type=text]{outline:none}input[type=text].def{width:146px;height:22px;line-height:22px;padding:0 2px;border:1px solid #d1d1d1;border-top:2px solid #999}
+.btn_grey{-webkit-box-shadow:0 1px 2px #ccc;-moz-box-shadow:0 1px 2px #ccc;box-shadow:0 1px 2px #ccc;display:inline-block;height:30px;line-height:30px;text-align:center;padding:0 35px;border:1px solid #a8a8a8;background-color:#e7e7e7;background:linear-gradient(0deg, #e7e7e7 0, #f9f9f9 100%);font-size:13px;border-radius:2px;cursor:pointer}.btn_grey:hover{background-color:#f5f5f5;background:linear-gradient(0deg, #f5f5f5 0, #fff 100%);text-decoration:none}
+select.def{height:22px;line-height:22px}
+.tip{cursor:pointer}
+.tooltip{display:none;position:absolute}.tooltip dt{height:13px;position:relative}.tooltip dt a.close{position:absolute;width:20px;height:20px;background:url(../images/overlay-icons.png) no-repeat 0 -18px;display:block;right:3px;top:17px;-webkit-transition:all .2s linear;-moz-transition:all .2s linear;-ms-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}.tooltip dt a.close:hover{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
+.tooltip dt span.arrow{width:21px;height:13px;background:url(../images/overlay-icons.png) no-repeat 0 0;display:block;margin:0 0 0 30px}
+.tooltip dd{width:240px;border-radius:4px;background-color:rgba(231,231,231,0.9);padding:10px;-webkit-box-shadow:1px 2px 8px #ccc;-moz-box-shadow:1px 2px 8px #ccc;box-shadow:1px 2px 8px #ccc}

@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8" />
+<title>简历</title>
+<style>
+  html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,pre,form,p,blockquote,input,abbr,article,aside,figcaption,fieldset,figure,footer,header,mark,meter,menu,nav,output,progress,section,summary,time{margin:0;padding:0;vertical-align:baseline;}
+  ul,ol{list-style:none;}
+  iframe,a,img,button{border:0;}
+  img{vertical-align:middle;}
+  i,em{font-style: normal;}
+  p{word-wrap:break-word;}
+  a{text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .clear{clear:both;}
+  .fleft{float:left;}
+  .fright{float:right;}
+  .clearfix:before,.clearfix:after{content:"";display:table;}
+  .clearfix:after{clear:both;overflow:hidden;}
+  .clearfix{zoom:1;}
+  .t-center{text-align: center;}
+  .t-right{text-align: right;}
+  .t-left{text-align: left;}
+  .middle{vertical-align: middle;}
+  .hand{cursor: pointer;}
+  body{
+    font: normal 14px/1.5 ;
+    font-family:"造字工房悦黑（非商用）","MF YueHei (Noncommercial),???","makefont yuehei","MF YueHei","MFYueHei";
+    color: #393939;
+  }
+
+  div.wrap {
+    width: 640px;
+    margin: 0 auto;
+    padding-top: 55px;
+    background: url(images/resume8.jpg) repeat-y center top;
+  }
+
+  div.content {
+    width: 506px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  dl.baseinfo {
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  dl.baseinfo dt {
+    float: right;
+  }
+
+  dl.baseinfo dd {
+    margin-right: 200px;
+    font-size: 18px;
+  }
+
+  dl.baseinfo p {
+    padding: 0 0 10px 20px;
+  }
+
+  dl.baseinfo p em {
+    font-size: 20px;
+  }
+
+  p.temptation {
+    padding: 0 0 30px 10px;
+    text-indent: 1em;
+    font-size: 18px;
+  }
+
+  div.btn a {
+    display: inline-block;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    padding: 0 0 0 10px;
+    background-color: #53cac4;
+    color: #fff;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+
+  div.btn a:hover {
+    text-decoration: none;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+          transform: scale(1.1);
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+          transition: all .2s ease;
+  }
+
+  dl.cons {
+    width: 462px;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 2px solid #e3e4e8;
+    border-radius: 5px;
+    color: #a0a6ad;
+  }
+
+  dl.cons dt {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+
+  dl.cons dt a {
+    color: #53cac4;
+  }
+
+  dl.cons dd {
+    work-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="content">
+      <h2><img src="images/resume1.png" alt="" height="40"/></h2>
+      <dl class="baseinfo">
+        <dt><img src="images/resume2.jpg" alt="" width="136" height="160"/></dt>
+        <dd>
+          <p><em>罗永浩</em>（10年互联网老兵）</p>
+          <p>男&nbsp;&nbsp;|&nbsp;&nbsp;1982-6-19&nbsp;&nbsp;|&nbsp;&nbsp;北京&nbsp;&nbsp;|&nbsp;&nbsp;本科</p>
+          <p>电话：13429879915</p>
+          <p>邮箱：yf_aaron@126.com</p>
+          <p>求职状态：正在找工作</p>
+          <p>期望工作：产品经理</p>
+          <p>期望薪资：12K - 30K</p>
+        </dd>
+      </dl>
+      <h2><img src="images/resume3.png" alt="" height="43"/></h2>
+      <p class="temptation">本人热爱互联网，并有强烈的兴趣投身其中，喜欢发现挖 掘一些好玩儿的有意思的app。</p>
+      <div class="btn"><a href="">App客户端</a><a href="">App客户端</a><a href="">App客户端</a></div>
+      <h2><img src="images/resume4.png" alt="" height="40"/></h2>
+      <dl class="cons">
+        <dt><a class="fright" href="">http://www.kanzhun.com</a><a href="">看准网</a></dt>
+        <dd>是中国最好的职场交流网站,专注于公司评论,晒工资,工资待遇,面试,公司福利等。你可以在看准网上匿名分享您的职业信息</dd>
+      </dl>
+      <h2><img src="images/resume5.png" alt="" height="43"/></h2>
+      <dl class="cons">
+        <dt><a href="">看准网&nbsp;-&nbsp;产品经理</a></dt>
+        <dd>产品部&nbsp;|&nbsp;2013-06&nbsp;至&nbsp;2016-06</dd>
+        <dd>移动端产品设计与推进产品进度。移动端产品设计与推进产品进度。移动端产品设计与推进产品进度。移动端产品设计与推进产品进度。</dd>
+      </dl>
+      <h2><img src="images/resume6.png" alt="" height="40"/></h2>
+      <dl class="cons">
+        <dt><a href="">湖北经济学院 - 国际金融</a></dt>
+        <dd>本科&nbsp;|&nbsp;2013-06&nbsp;至&nbsp;2016-06</dd>
+      </dl>
+      <p class="t-center"><img src="images/resume7.png" alt="" width="154" height="22"/></p>
+    </div>
+  </div>
+</body>
+</html>

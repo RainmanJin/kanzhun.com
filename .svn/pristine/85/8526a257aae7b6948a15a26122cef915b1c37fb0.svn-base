@@ -1,0 +1,89 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+p.v_s_m_tt {
+  height: 59px;
+  line-height: 59px;
+  font-size: 16px;
+  color: @grey_33;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.co-left-compentlist {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  zoom:1;
+  border-bottom: 1px solid @grey_e7;
+  dt {
+    float: left;
+    width: 97px;
+    height: 97px;
+    /*h3 {
+      font-size: 14px;
+      color: #2472b4;
+      text-align:center;
+      padding-top: 5px;
+      font-weight: normal;
+    }*/
+    a {
+      text-decoration: none;
+      display: block;
+      width: 96px;
+      height: 96px;
+      border: 1px solid @grey_e7;
+      overflow: hidden;
+      font-size: 0;
+    }
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 96px;
+    }
+
+    span {
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+  dd {
+    //padding:0 0 0 20px;
+    margin-left: 115px;
+    overflow: hidden;
+    zoom:1;
+
+    h2 {
+      padding-bottom: 5px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+    p {
+      color: @grey_66;
+      strong{
+        color: @grey_33;
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+    p.c_s_result_text {
+      line-height: 2em;
+    }
+
+    p.view_address {
+      color: @grey_99;
+
+      i.cmp_address {
+        vertical-align: -2px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+}

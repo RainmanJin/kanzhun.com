@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>期望工作</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/ugc_page.css">
+</head>	
+<body id="js_qwgz">
+<div class="wrapper">
+<div class="content">
+	<header class="page_hd">		
+		<a class="js_back top_back" href="javascript:;" node-type="qwgz"><i></i>返回</a>
+		<strong>期望工作</strong>	
+	</header>
+	<form name="qwgzForm" action="/resume/intension/store">
+	<section class="field">		
+		<div class="splitInput_2">
+			<em class="red">*</em>
+			<p class="divCommonInput bdefault ml10">
+				<input name="cityName" type="text" placeholder="期望城市">
+				<em class="js_error error" style="display:none">城市不能为空</em>	
+			</p>
+		</div>
+		<div class="splitInput_2">
+			<em class="red">*</em>
+			<p class="divCommonInput bdefault ml10">
+				<input name="jobTitle" type="text" placeholder="期望职位">
+				<em class="js_error error" style="display:none">职位不能为空</em>					
+			</p>
+		</div>				
+		<div class="mt20">
+			<em class="red">*</em>
+			<input type="radio" name="jobNature" checked> 全职
+			<input type="radio" name="jobNature"> 兼职
+			<input type="radio" name="jobNature"> 实习
+		</div>
+		<div class="splitInput_2">
+			<em class="red">*</em>
+            <p class="defSelect_2 bdefault ml10 mb10">
+                <select name="salary">
+                	<option value="0">期望月薪</option>
+                    <option value="1">今天</option>
+                    <option value="2">最近3天</option>
+                    <option value="3">最近一周</option>
+                    <option value="4">最近一月</option>
+                </select>
+                <em class="js_error error" style="display:none">请选择期望月薪</em>	
+            </p>
+        </div>
+	</section>
+	<div class="ml10 mr10 mt10 mb10"><button class="js_submit btn_submit_1" type="button">保存</button></div>	
+	</form>	
+</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/resume.js"></script>
+</html>

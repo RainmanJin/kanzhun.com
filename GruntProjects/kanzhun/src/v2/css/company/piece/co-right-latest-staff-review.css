@@ -1,0 +1,51 @@
+div.latest_staff_review h2.title {
+  height: 59px;
+  line-height: 59px;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+div.latest_staff_review ul.co_r_reviewlist li {
+  margin-bottom: 20px;
+}
+div.latest_staff_review ul.co_r_reviewlist li span.crr_l {
+  float: left;
+}
+div.latest_staff_review ul.co_r_reviewlist li div.crr_r {
+  position: relative;
+  margin-left: 40px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 2px;
+  line-height: 1.8em;
+}
+div.latest_staff_review ul.co_r_reviewlist li div.crr_r i.tangle_init {
+  position: absolute;
+  left: -16px;
+  top: 7px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+div.latest_staff_review ul.co_r_reviewlist li div.crr_r a:hover {
+  text-decoration: none;
+}
+div.latest_staff_review ul.co_r_reviewlist li div.crr_r a {
+  color: #333333;
+}
+div.latest_staff_review ul.co_r_reviewlist li div.crr_r a:hover {
+  text-decoration: none;
+}
+div.latest_staff_review ul.co_r_reviewlist li div.crr_r a span {
+  color: #007ead;
+}
+div.latest_staff_review a.btn_o_l {
+  font-size: 16px;
+  padding: 0;
+  display: block;
+}

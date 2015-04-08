@@ -1,0 +1,18 @@
+@import "../common/var";
+//上传按钮
+.webuploader-container{
+  position:relative;
+}
+.webuploader-pick{
+  position:relative;
+  display: inline-block;
+  width: 100%;
+  z-index: 0;
+}
+.webuploader-element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px,1px,1px,1px);
+  width: 100%;
+  height: 100%;
+}

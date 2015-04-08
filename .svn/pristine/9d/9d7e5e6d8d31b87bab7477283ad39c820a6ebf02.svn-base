@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>面经—000</title>
+		<!--[if lte IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!--[if gt IE 9]><!-->
+		<script src="../js/jquery-2.1.0.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="../css/homepage.css" />
+		<script src="../js/require.js" data-main="../js/site/ugc.js"></script>
+	</head>
+
+	<body>
+		
+		<header class="global">
+			<div class="header np_c_header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<nav>
+					<a href="#">招聘</a>
+					<a href="#">公司</a>
+					<a href="#">工资</a>
+					<a href="#" class="current">面试</a>
+					<a href="#" class="mycomment">我要点评</a>
+				</nav>
+				<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+			</div>
+		</header>
+
+		<section class="banner clearfix">
+			<h1>查看其他公司</h1>
+			<dl class="banner_dl">
+				<dt><a href="">找工作</a><em>|</em><a href="">查公司</a><em>|</em><a href="">比工资</a><em>|</em><a href="" class="current">学面试</a></dt>
+				<dd>
+					<input type="text" placeholder="职位/公司/关键词" class="c_ipt"/><input type="text" placeholder="城市" class="c_ipt"/><input type="button" value="搜索" class="btn_o_l"/>
+				</dd>
+			</dl>
+			<p>超过250000家公司的员工匿名评论，工资和更多</p>
+		</section>
+
+		<div class="container ps_con clearfix">
+			<section class="l_con clearfix">
+				<h3 class="tt np_a1"><img src="../images/np_a_img_01.jpg"  alt="内部员工点评" /></h3>
+				<ul class="command">
+					<li>
+						<a href="" class="logo"><img src="../images/np_a_img_02.jpg" alt="" /><span></span></a>
+						<div class="np_bishi">
+							<h3 class="mb10"><a href="">“笔试都是答题”</a></h3>
+							<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等...&nbsp;<a href="" class="underline">查看更多</a></p>
+							<p class="laizi"><em class="grey_99">华为工程师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布于今天</em></p>
+						</div>
+						<dl class="np_a" style="">
+							<dt class="mb10">
+								<h3>面试问题:</h3>
+							</dt>
+							<dd>笔试都是大题，比较开放式，涉及比较广有线程度比</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="" class="logo"><img src="../images/np_a_img_03.jpg" alt="" /><span></span></a>
+						<div class="np_bishi">
+							<h3 class="mb10"><a href="">“笔试都是答题”</a></h3>
+							<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等...&nbsp;<a href="" class="underline">查看更多</a></p>
+							<p class="laizi"><em class="grey_99">华为工程师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布于今天</em></p>
+						</div>
+						<dl class="np_a" style="padding-top: 6px;">
+							<dt class="mb10">
+								<h3>面试问题:</h3>
+							</dt>
+							<dd>笔试都是大题，比较开放式，涉及比较广有线程度比</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="" class="logo"><img src="../images/np_a_img_04.jpg" alt="" /><span></span></a>
+						<div class="np_bishi">
+							<h3 class="mb10"><a href="">“笔试都是答题”</a></h3>
+							<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等...&nbsp;<a href="" class="underline">查看更多</a></p>
+							<p class="laizi"><em class="grey_99">华为工程师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布于今天</em></p>
+						</div>
+						<dl class="np_a" style="padding-top: 6px;">
+							<dt class="mb10">
+								<h3>面试问题:</h3>
+							</dt>
+							<dd>笔试都是大题，比较开放式，涉及比较广有线程度比</dd>
+						</dl>
+					</li>
+				</ul>
+				<p class="t-right mt10"><a href="">查看全部面试</a></p>
+				<h3 class="tt tt_environmena np_a2"><img src="../images/np_a_img_05.jpg"  alt="公司环境" /></h3>
+				<div class="clearfix">
+					<ul class="search_hangye">
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">政府公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">消费服务公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">施工\维修公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">商业服务公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">生物技术与制药公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">艺术\休闲娱乐公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">金融服务</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">计算机服务</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">信息技术公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">保健公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">农业和林业公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">航空航天和防务公司</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">零售业</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">金融服务</a><em>（IT行业）</em></li>
+						<li><a href="" title="计算机服务">计算机服务</a><em>（IT行业）</em></li>
+					</ul>
+				</div>
+				<p class="p_search">
+					<input type="text" placeholder="职位名称" class="zhiwei_search mr10" /><input type="button" value="搜索更多面试职位" class="btn_grey_s"/>
+				</p>
+			</section>
+
+			<section class="r_con clearfix">
+				<h3 class="r_tt">热门职位</h3>
+				<ul class="jobs_show">
+					<li><a href="#">系统部_PHP研发工程师<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">广州分公司_高级销售经理<br /><span>百度在线网络技术有限公司 – 广州</span></a></li>
+					<li><a href="#">基础架构部_云安全研发工程师（上海）<br /><span>百度在线网络技术 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发师师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">系统部_PHP研发工程师<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">广州分公司_高级销售经理<br /><span>百度在线网络技术有限公司 – 广州</span></a></li>
+					<li><a href="#">基础架构部_云安全研发工程师（上海）<br /><span>百度在线网络技术 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+				</ul>
+				<p><a href="">查看更多</a></p>
+				<h3 class="r_tt mt20">热门公司面试</h3>
+				<ul class="salary_show">
+					<li><em>2496条工资</em><i class="hot">1</i><a href="">百度</a>- 4.0</li>
+					<li><em>2496条工资</em><i class="hot">2</i><a href="">腾讯</a>- 4.0</li>
+					<li><em>2496条工资</em><i class="hot">3</i><a href="">阿里巴巴</a>- 4.0</li>
+					<li><em>2496条工资</em><i>4</i><a href="">盛大集团</a>- 4.0</li>
+					<li><em>2496条工资</em><i>5</i><a href="">新浪</a>- 4.0</li>
+					<li><em>2496条工资</em><i>6</i><a href="">360安全卫士</a>- 4.0</li>
+					<li><em>2496条工资</em><i>7</i><a href="">唯美购</a>- 4.0</li>
+					<li><em>2496条工资</em><i>8</i><a href="">IBM</a>- 4.0</li>
+					<li><em>2496条工资</em><i>9</i><a href="">Google</a>- 4.0</li>
+					<li><em>2496条工资</em><i>10</i><a href=""n>搜狐畅游</a>- 4.0</li>
+				</ul>
+				<p class="mt15"><a href="">查看更多</a></p>
+			</section>
+		</div>
+
+	</body>
+</html>

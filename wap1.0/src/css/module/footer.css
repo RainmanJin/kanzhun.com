@@ -1,0 +1,95 @@
+.floatFooter {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  background: #7cb228;
+  text-align: center;
+  color: #fff;
+}
+.floatFooter em {
+  margin-top: 15px;
+  padding-left: 20px;
+  display: inline-block;
+  background: url(../images/icon_1.png) no-repeat left;
+  -webkit-background-size: 15px;
+  -moz-background-size: 15px;
+  -o-background-size: 15px;
+  background-size: 15px;
+}
+a.send_manages {
+  position: fixed;
+  display: block;
+  right: 10px;
+  bottom: 80px;
+  z-index: 20;
+}
+a.send_manages i {
+  position: relative;
+  display: block;
+  width: 46.5px;
+  height: 58px;
+  background: url(../images/barrage_img2.png) no-repeat 0 0;
+  -webkit-background-size: 46.5px 58px;
+  -moz-background-size: 46.5px 58px;
+  -o-background-size: 46.5px 58px;
+  background-size: 46.5px 58px;
+}
+a.send_manages span {
+  position: absolute;
+  right: 60px;
+  top: 19px;
+  width: 64px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(102, 102, 102, 0.9);
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+a.send_manages span em {
+  position: absolute;
+  z-index: 22px;
+  right: -5px;
+  top: 12px;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(102, 102, 102, 0.9);
+  border-style: dashed solid;
+}
+footer.page_ft {
+  background-color: #6f6e6e;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  line-height: 18px;
+  width: 100%;
+  height: 36px;
+  margin-top: -46px;
+  position: relative;
+  clear: both;
+}
+footer.page_ft a {
+  color: #fff;
+}
+footer.page_ft p {
+  color: #7d7d7d;
+}
+aside.backToTop {
+  width: 40px;
+  height: 40px;
+  background: url(../images/icons_2.png) no-repeat -60px -117.5px;
+  -webkit-background-size: 100px;
+  -moz-background-size: 100px;
+  -o-background-size: 100px;
+  background-size: 100px;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  display: none;
+}

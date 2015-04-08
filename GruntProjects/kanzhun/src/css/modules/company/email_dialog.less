@@ -1,0 +1,106 @@
+@import "../../common/var";
+//立体ugc所需的邮件弹框
+.maskui_dialog{
+  &.email_dialog{
+    width: 480px;
+    h3{
+      span{
+        font-weight: normal;
+        font-size: 14px;
+      }
+    }
+    .ifd{
+      border-width: 2px 2px 1px 1px;
+      border-color: #ebebeb #d6d6d6 #e7e7e7 #e7e7e7;
+      height: 14px;
+    }
+    a{
+      color: @grey_99;
+    }
+    .field_div{
+      position: relative;
+      p.err {
+        position: absolute;
+        color: @red;
+        top: 35px;
+        left: 0;
+      }
+    }
+    .btn_grey_b{
+      padding: 0;
+      width: 118px;
+    }
+  }
+}
+
+.maskui_dialog.recommend_cmp {
+  h3 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dadada;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  
+  p.that_word {
+    padding-top: 15px;
+  }
+
+  li {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #e7e7e7;
+
+    & > a {
+      &.cmp_logo {
+        float: left;
+        width: 44px;
+        height: 44px;
+        padding: 2px;
+        border: 1px solid @grey_e7;
+        background-color: #fff;
+
+        img {
+          width: 44px;
+          height: 44px;
+        }
+      }
+
+      &.follow {
+        position: absolute;
+        right: 0;
+        top: 34px;
+        height: 21px;
+        line-height: 21px;
+        padding: 0 15px;
+        color: @def;
+      }
+    }
+
+    div {
+      margin-left: 60px;
+
+      p {
+        padding-top: 4px;
+      }
+
+      a {
+        color: @grey_66;
+
+        &:hover {
+          color: @blue;
+          text-decoration: none;
+        }
+      }
+
+      span {
+        vertical-align: -3px;
+      }
+    }
+
+    &.border_none {
+      border-bottom: none;
+    }
+  }
+}

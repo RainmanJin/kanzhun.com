@@ -1,0 +1,8 @@
+.float_wrap {
+  position: relative;
+}
+.float_wrap b {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}

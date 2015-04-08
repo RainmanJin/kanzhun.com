@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>小人儿</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/child.css" />
+</head>
+<body>
+<header>
+  <div class="fleft">
+    <a href="#"><img src="images/three-top-l.jpg" width="147.5"></a>
+  </div>
+  <div class="fright">
+    <a class="mr10" href="#"><img src="images/three-top-s.jpg" width="38"></a>
+    <a href="#"><img src="images/three-top-pk.jpg" width="38"></a>
+  </div>
+</header>
+<div class="img">
+  <img src="images/img_1.jpg" width="100%">
+</div>
+<div class="enter">
+  <a class="bt_enter" href="#">我也要曝曝</a>
+</div>
+<h2 class="tt clearfix">网友热议</h2>
+<ul class="comment">
+  <li>
+    <div class="comment_l">
+      <img src="images/c-portrait-def.png">
+      <p class="floor">1楼</p>
+    </div>
+    <div class="comment_r">
+      <p>
+        看准用户
+        <span class="fright good " data-commentid="527189">
+          <i class="hand"></i> 0
+        </span>
+        <a href="javascript:;" class="reply" data-parentid="527189" data-parentfloor="4">回复</a>
+      </p>
+      <p>2014-09-11  17:30</p>
+      <div>看准网友看准网友看准网友看准网友</div>
+    </div>
+  </li>
+</ul>
+<p style="height: 56px"></p>
+<div class="commentTool">
+  <p>
+    <input type="text" placeholder="我来说两句...">
+  </p>
+  <a class="bt_comment" href="javascript:;">发表</a>
+</div>
+</body>
+</html>

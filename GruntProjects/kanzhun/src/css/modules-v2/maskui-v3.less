@@ -1,0 +1,48 @@
+@import "../common/var";
+.maskui_dialog.deliver_resume_pop {
+    min-width: 300px;
+    background-color: #f2f2f2;
+    padding: 0;
+    border-top: 3px solid #68a703;
+    border-radius: 0;
+    .box-shadow(0,0,0, transparent);
+    display: none;
+
+    h3{
+      font-size: 22px;
+      color: @def;
+      font-weight: 400;
+      padding-bottom: 10px;
+    }
+
+    .dialog_con {
+      position: relative;
+      min-height: 100px;
+      _height: 100px;
+      background-color: #f2f2f2;
+      padding: 30px 50px;
+      border-radius: 0;
+      border: none;
+    }
+
+    //dialog 默认关闭按钮样式
+    .dialog_close{
+      right: 10px;
+      top: 10px;
+      position: absolute;
+      background-image: url("@{img}/auth.png");
+      background-position: -145px -1px;
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      display: block;
+      cursor: pointer;
+      .transition(background-color, .2s, ease);
+
+      &:hover{
+        background-color: #e0e0e0;
+      }
+    }
+}
+
+

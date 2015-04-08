@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>就业趋势</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<!-- <script type="text/javascript">
+	window.CONTEXTPATH=location.host;
+</script> -->
+<link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/position.css" />
+<script src="../js/require.js" data-main="../js/site/job/position.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+
+	<section class="co_header po_header clearfix">
+		<div class="po_name clearfix" style="z-index: 2;"><h1>产品经理</h1>
+			<dl class="po_other"><dt>[互联网行业]<i class="op_triangle"></i></dt>
+				<dd class="none">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<ul>
+						<li><a href="">医疗设备</a></li>
+						<li><a href="">电气/电力/水利</a></li>
+						<li><a href="">检测</a></li>
+						<li><a href="">矿业</a></li>
+						<li><a href="">工业自动化</a></li>
+						<li><a href="">生物化工</a></li>
+						<li><a href="">运输</a></li>
+						<li><a href="">重工业</a></li>
+						<li><a href="">食品</a></li>
+						<li><a href="">养殖业</a></li>
+						<li><a href="">医药/医院</a></li>
+						<li><a href="">政府</a></li>
+						<li><a href="">美容保健</a></li>
+						<li><a href="">环保</a></li>
+						<li><a href="">卫生保健</a></li>
+						<li><a href="">农业</a></li>
+						<li><a href="">休闲/体育/娱乐</a></li>
+						<li><a href="">跨领域经营</a></li>
+						<li><a href="">航空</a></li>
+						<li><a href="">石化/能源</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div> 
+		<p class="params">22条工资<em>|</em>332条面试<em>|</em>232条招聘</p>
+		<nav class="clearfix" style="z-index: 1;">
+			<a href="#">职位概况</a><a href="#">工资</a><a href="#" class="current">就业趋势</a><a href="#">面试</a><a href="#">招聘</a>
+		</nav>
+	</section>
+
+	<div class="container clearfix">
+		<section class="l_con clearfix">
+			<h2 class="po_tt">产品经理就业前景分析</h2>
+			<dl class="trend">
+				<dt>
+					<div id="js-trendchart" style="width: 500px;height: 260px;" class="mt20"></div>
+				</dt>
+				<dd>
+					这个数据对你 有帮助吗？
+					<p class="options comments mt10"><a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="403302" ka="comreview-blocker3-up1"><span class="img helpful"></span>有用（<i>0</i>）</a></p>
+				</dd>
+			</dl>
+			<ul class="trend_selects clearfix">
+				<li class="mr25"><i class="box blue_box"></i>全国产品经理</li>
+				<li class="mr25 none">
+					<dl class="po_select" id="minisearchS">
+						<dt><span class="box grey_box"></span>北京产品经理<i class="op_triangle"></i></dt>
+						<dd class="none">
+							<span class="doubletriangle triangleEdge"></span>
+							<span class="doubletriangle triangleCon"></span>
+							<a href="/jobl/p/">上海产品经理</a>
+							<a href="/companyl/search/">深圳产品经理</a>
+							<a href="/companyl/search/">广州产品经理</a>
+							<a href="/salaryl/search/">沈阳产品经理</a>
+							<a href="/interviewl/search/">大连产品经理</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="none"><i class="warning"></i>北京产品经理样本数据不足，无法对比</li>
+			</ul>
+			<dl class="data_explain mb30">
+				<dt>数据说明：</dt>
+				<dd><i></i>图表中根据地区企业近一年发布的职位招聘信息统计所得，纵轴为职位需求量（单位：万个），横轴
+   			为招聘时间，曲线峰值越高代表需求量越大。反之，需求量较少。</dd>
+   			<dd><i></i>以上结果由看准网整理，仅供参考。</dd>
+			</dl>
+			<h2 class="po_tt">招怎样的人</h2>
+			<ul class="howfind">
+				<li>
+					<p>学历</p>
+					<div id="js-c-pie" style="width: 210px;height: 210px;border-right: 1px solid #e7e7e7;"></div>
+				</li>
+				<li>
+					<p>工作经验</p>
+					<div id="js-c-piejob" style="width: 210px;height: 210px;border-right: 1px solid #e7e7e7;"></div>
+				</li>
+				<li>
+					<p>工资</p>
+					<div id="js-c-piesalary" style="width: 210px;height: 210px;"></div>
+				</li>
+			</ul>
+			<h2 class="po_tt">随工作经验工资变化趋势</h2>
+			<div class="salaryLevel mb20 clearfix">
+				<div class="fleft c_box mr25">
+					<div id="js-LevelChart" style="width: 430px;height: 220px;background-color: #ccc" class="mt20">
+						
+					</div>
+				</div>
+				<aside class="s_account">
+					<dl>
+						<dt>数据说明：</dt>
+						<dd><i></i>图表中根据看准网企业员工发布的职位薪酬数据统计所得，工资数据受地域、工作年限，用户分享数量等多种因素影响，仅供参考。</dd>
+						<dd><i></i>本数据取自<em class="def">887</em>份样本，最新更新时间：2014-08-22</dd>
+					</dl>
+					<p class="s_average mt15"><i></i>该职位平均税前月薪</p>
+				</aside>
+			</div>
+			<div class="hot_ranking">
+				<dl class="mr25">
+					<dt><h2 class="po_tt">招聘需求量地区排名&nbsp;&nbsp;<em class="green">TOP10</em></h2></dt>
+					<dd>
+						<i class="green">1</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">2496个职位</em>
+					</dd>
+					<dd>
+						<i class="green">2</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">2496个职位</em>
+					</dd>
+					<dd>
+						<i class="green">3</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">2496个职位</em>
+					</dd>
+					<dd>
+						<i>4</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">2496个职位</em>
+					</dd>
+					<dd>
+						<i>5</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">2496个职位</em>
+					</dd>
+					<dd>
+						<i>6</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">2496个职位</em>
+					</dd>
+					<dd>
+						<i>7</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">2496个职位</em>
+					</dd>
+					<dd>
+						<i>8</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">2496个职位</em>
+					</dd>
+					<dd>
+						<i>9</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">2496个职位</em>
+					</dd>
+					<dd>
+						<i>10</i><span>上海上海上海</span><ul><li style="width: 140px;"></li></ul><em class="fright grey_99">243333333396个职位</em>
+					</dd>
+				</dl>
+				<dl>
+					<dt><h2 class="po_tt">招聘需求量地区排名&nbsp;&nbsp;<em class="yellow">TOP10</em></h2></dt>
+					<dd>
+						<i class="yellow">1</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+					<dd>
+						<i class="yellow">2</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+					<dd>
+						<i class="yellow">3</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+					<dd>
+						<i>4</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+					<dd>
+						<i>5</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+					<dd>
+						<i>6</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+					<dd>
+						<i>7</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+					<dd>
+						<i>8</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+					<dd>
+						<i>9</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+					<dd>
+						<i>10</i><span>上海</span><ul><li class="yellow" style="width: 90px;"></li></ul><em class="fright grey_99">10-15K</em>
+					</dd>
+				</dl>
+			</div>
+			<h2 class="po_tt">相关职位就业趋势</h2>
+			<ul class="relevant_trend">
+				<li><a href="">后端业务服务架构师后端业务服务架构师后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师后端业务服务架构师后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师后端业务服务架构师后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师</a></li>
+				<li><a href="">后端业务服务架构师</a></li>
+			</ul>
+		</section>
+		<section class="r_con">
+			<h2 class="por_tt">产品经理最新招聘</h2>
+			<ul class="jobs_show positions">
+				<li><em>4k-6k</em><a ka="remenzhaopin-1" href="/job/27505717.html" title="百度客服">百度客服</a><span>北京百思特捷迅科技有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京<br></span></li>
+				<li><em>4k-10k</em><a ka="remenzhaopin-2" href="/job/27544471.html" title="百度销售">百度销售</a><span>北京艾尚智美科技有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京-石景山区<br></span></li>
+				<li><em>5k-8k</em><a ka="remenzhaopin-3" href="/job/27741630.html" title="Web前端开发工程师">Web前端开发工程师</a><span>中公教育&nbsp;&nbsp;-&nbsp;&nbsp;北京<br></span></li>
+				<li><em>面议</em><a ka="remenzhaopin-4" href="/job/27521055.html" title="JAVA工程师-百度文学">JAVA工程师-百度文学</a><span>北京幻想纵横网络技术有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京<br></span></li>
+				<li><em>4k-5k</em><a ka="remenzhaopin-5" href="/job/27669731.html" title="百度竞价专员">百度竞价专员</a><span>北京八方纳海网络科技有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京-丰台区<br></span></li>
+				<li><em>6k-8k</em><a ka="remenzhaopin-6" href="/job/27568310.html" title="Web前端工程师">Web前端工程师</a><span>智云凌飞(北京)科技有限公司&nbsp;&nbsp;-&nbsp;&nbsp;北京-海淀区<br></span></li>
+			</ul>
+			<p class="mb20"><a href="">更多产品经理招聘</a></p>
+
+			<h2 class="por_tt">产品经理热门招聘公司</h2>
+			<ul class="salary_show mb10">
+				<li><em>45条招聘</em><i class="hot">1</i><p><a ka="blocker3-item1" href="/job/g3189.html" target="_blank">淘宝网</a>&nbsp;&nbsp;4.2分</p></li>
+				<li><em>667条招聘</em><i class="hot">2</i><p><a ka="blocker3-item2" href="/job/g3418.html" target="_blank">京东商城</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>84条招聘</em><i class="hot">3</i><p><a ka="blocker3-item3" href="/job/g10329.html" target="_blank">58同城</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>23条招聘</em><i>4</i><p><a ka="blocker3-item4" href="/job/g15868.html" target="_blank">支付宝</a>&nbsp;&nbsp;4.2分</p></li>
+				<li><em>262条招聘</em><i>5</i><p><a ka="blocker3-item5" href="/job/g25007.html" target="_blank">赶集网</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>861条招聘</em><i>6</i><p><a ka="blocker3-item6" href="/job/g4119.html" target="_blank">新浪（sina）</a>&nbsp;&nbsp;3.7分</p></li>
+				<li><em>2390条招聘</em><i>7</i><p><a ka="blocker3-item7" href="/job/g9012.html" target="_blank">阿里巴巴</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>1614条招聘</em><i>8</i><p><a ka="blocker3-item8" href="/job/g5855.html" target="_blank">腾讯</a>&nbsp;&nbsp;3.9分</p></li>
+				<li><em>600条招聘</em><i>9</i><p><a ka="blocker3-item9" href="/job/g8144.html" target="_blank">搜狐</a>&nbsp;&nbsp;3.6分</p></li>
+				<li><em>147条招聘</em><i>10</i><p><a ka="blocker3-item10" href="/job/g32261.html" target="_blank">凤凰网</a>&nbsp;&nbsp;3.4分</p></li>
+			</ul>
+			<p class="mb20"><a href="">更多产品经理热门招聘公司</a></p>
+
+			<h2 class="por_tt">关于产品经理的问答</h2>
+			<ul class="questions">
+				<li><i class="greendot"></i><a href="">【热】支付产品经理是什么水平？</a></li>
+				<li><i class="greendot"></i><a href="">【热】支付产品经理是什么水平？</a></li>
+				<li><i class="greendot"></i><a href="">什么样的人才算合格的合格的产品？</a></li>
+				<li><i class="greendot"></i><a href="">如何向领导提出涨工资？</a></li>
+				<li><i class="greendot"></i><a href="">如何向领导提出涨工资？</a></li>
+			</ul>
+			<p class="mb10"><a href="">更多产品经理的话题</a></p>
+			<p class="mb20"><a ka="ugc-salary2" rel="nofollow" href="/salaryugc3178/" class="btn_o_l iwant" target="_blank">+&nbsp;我要提问</a></p>
+
+		</section>
+	</div>
+</body>
+</html>

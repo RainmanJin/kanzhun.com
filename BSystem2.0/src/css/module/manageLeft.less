@@ -1,0 +1,48 @@
+@import "../common/var";
+aside.manageLeft{
+	width: 204px;
+
+	a.send_jobs {
+		background-color: #f38100;
+
+		&:hover {
+			background-color: #fa8712;
+		}
+	}
+
+	dl{
+		border: 1px solid #e7e7e7;
+		dt{
+			height: 40px;
+			line-height: 40px;		
+			color: @grey_99;
+			padding-left: 15px;
+			span {
+				font-size: 14px;
+				vertical-align: -2px;
+				margin-left: 5px;
+			}
+		} 
+		dd{
+			height: 40px;
+			line-height: 40px;
+			border-top: 1px solid #e7e7e7;
+
+			a{
+				color: #000;
+				display: block;
+				padding-left: 50px;
+			}
+
+			&.current{
+				background-color: #ededed;
+				a{
+					color: @green;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

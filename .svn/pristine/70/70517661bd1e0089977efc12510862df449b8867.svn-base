@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <title>谈框</title>
+    <script type="text/javascript">
+        var CONTEXTPATH = '';
+        var STATICURL = 'http://img.kanzhun.com';
+        var require = {
+            baseUrl:'/',
+            urlArgs :'v=1.0.7'
+        };
+    </script>
+    <!--[if lte IE 9]>
+       <script src="http://s.kanzhun.com/js/html5shiv.js"></script>
+       <script src="http://s.kanzhun.com/js/jquery-1.11.0.min.js"></script>
+       <!--[if gt IE 9]><!-->
+    <link rel="stylesheet" href=/v2/css/widget.css />
+    <script src="http://s.kanzhun.com/js/jquery-2.1.0.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/v2/css/activity/jinping/mask.css"/>
+    <script src="/js/require.js" data-main="/v2/js/activity/jinping/mask.js"></script>
+</head>
+<body>
+    <div class="mask-wrap">
+    <div class="popup">
+        <p class="title">为企业曝名:</p>
+        <input type="text"  class="t_name" placeholder="请输入公司名称" name="name" id="companyNameSuggest" autocomplete="off"/>
+        <input type="hidden" name="encryptCompId"/>
+        <div class="company">
+            <div class="info">
+                <img class="company_logo" src="/images/activity/jinping/c_logo.jpg" alt=""/>
+                <div class="info_word">
+                    <p class="c_name">
+                        <span id="c_name">搜狐搜狐搜狐</span>
+                    </p>
+                    <ul>
+                        <li>行业：<span id="c_industry">门户网站/搜索引擎</span></li>
+                        <li>总部：<span id="c_addr">北京</span></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="ad">
+                <p class="h2">
+                    第<label class="count">2</label>次被点名
+                </p>
+                <div class="detail">
+                    <img src="/images/activity/jinping/detail.jpg" alt=""/>
+                    <p>
+                        你是第<label class="count" for="">2</label>个发现该贼船的人.<br>
+                        快快为他曝名，让他现形。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--<div class="friendtip">
+            请你为心仪的企业曝名<br>
+            全程匿名，不用担心跨省查水表<br>
+        </div>-->
+        <div class="button_wrap">
+            <button class="quit">我不玩了</button>
+        </div>
+
+        <div class="autocomplete-suggestions cmp_select">
+            <div class="autocomplete-suggestion"></div>
+        </div>
+    </div>
+    <div class="reason">
+
+        <!--左边的三角-->
+        <div class="l_trangle"></div>
+
+        <p class="title">曝名理由:<span class="tip">* 请选择曝名理由！</span> </p>
+        <ul class="items">
+            <li data-type="1" data-value="1">
+                <img src="/images/activity/jinping/reason1.png" alt=""/>
+                永不加薪
+            </li>
+            <li data-type="1" data-value="2"> <img src="/images/activity/jinping/reason2.png" alt=""/>
+                压力山大榜
+            </li>
+            <li  data-type="1" data-value="3"> <img src="/images/activity/jinping/reason3.png" alt=""/>
+                宫斗内耗榜</li>
+            <li  data-type="1" data-value="4"> <img src="/images/activity/jinping/reason4.png" alt=""/>
+                员工过劳榜</li>
+            <li  data-type="1" data-value="5"> <img src="/images/activity/jinping/reason5.png" alt=""/>
+                福利扣出翔榜</li>
+        </ul>
+        <div class="reason_item active">
+            <div class="up_trangle"></div>
+            请选择至少一条上榜理由
+            <span class="tip">* 请选择上榜理由！</span>
+            <br>
+            <ul class="cause cause1">
+                <li data-type="2" data-value="1"> <label for="tag1">没到加薪日，老板就出差</label></li>
+                <li data-type="2" data-value="2"> <label for="tag2">入职1年零加薪</label></li>
+                <li data-type="2" data-value="3"><label for="tag3">职位随便升，工资不见涨</label></li>
+                <li data-type="2" data-value="4"><label for="tag4">呆满12个月0涨薪</label></li>
+            </ul>
+            <ul class="cause cause2">
+                <li data-type="2" data-value="1"> <label for="tag1">老板开会就开骂，心脏一直吊吊着</label></li>
+                <li data-type="2" data-value="2"> <label for="tag2">办公室太安静，电话都得嘘嘘声</label></li>
+                <li data-type="2" data-value="3"><label for="tag3">待办事项一箩筐，没人帮忙心慌慌</label></li>
+                <li data-type="2" data-value="4"><label for="tag4">呆满12个月0涨薪</label></li>
+            </ul>
+            <ul class="cause cause3">
+                <li data-type="2" data-value="1"> <label for="tag1">都是我在做，都是我在错！</label></li>
+                <li data-type="2" data-value="2"> <label for="tag2">皮球踢来又踢走，想要推进真难受</label></li>
+                <li data-type="2" data-value="3"><label for="tag3">今天穿小鞋，明天挨飞刀！</label></li>
+                <li data-type="2" data-value="4"><label for="tag4">呆满12个月0涨薪</label></li>
+            </ul>
+            <ul class="cause cause4">
+                <li data-type="2" data-value="1"> <label for="tag1">加班加到1点半，月亮知道我在干。</label></li>
+                <li data-type="2" data-value="2"> <label for="tag2">工作一整天，没空拉便便......</label></li>
+                <li data-type="2" data-value="3"><label for="tag3">领导好几个，会议无穷多！</label></li>
+                <li data-type="2" data-value="4"><label for="tag4">呆满12个月0涨薪</label></li>
+            </ul>
+            <ul class="cause cause5">
+                <li data-type="2" data-value="1"> <label for="tag1">领导话费1800，我连一毛都木有</label></li>
+                <li data-type="2" data-value="2"> <label for="tag2">闺蜜3.8晒好礼，只能眼馋好捉急</label></li>
+                <li data-type="2" data-value="3"><label for="tag3">呆满一年0涨薪</label></li>
+                <li data-type="2" data-value="4"><label for="tag4">没有年终奖，回乡泪两行！</label></li>
+            </ul>
+            <textarea name="" id="view" cols="30" rows="2" placeholder="输入你对该公司的看法(10-15字)"></textarea>
+            <p ><span class="tip">* 对填写对该公司的看法！</span></p>
+        </div>
+        <div class="relation">
+            <p class="h2">你是该公司的什么人？(单选)
+                <span class="tip">* 请选择你和该公司的关系！</span>
+            </p>
+                <span class="role" data-type="3" data-value="1">
+                    A.已经分手的前</span>
+                <span class="role" data-type="3" data-value="2">
+                    B.貌合神离的现任</span>
+                <span class="role" data-type="3" data-value="3">
+                    C.就不告诉你
+                </span>
+        </div>
+        <div class="protocol">
+            <input type="checkbox" checked="true"/>
+            <p>
+                我承诺，我对该公司的点评是诚信、客观的，经得住该公司的申辩
+                和网友检验。参与活动即表明我认同并遵守<a href="">《游戏规则》</a>。
+            </p>
+            <button type="button" id="submit">为他曝名</button>
+        </div>
+    </div>
+    </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+/**
+ * Created by zcy on 2015/3/26.
+ */
+$(function(){
+    var height = $(".popup").height();
+    var  wh= $("#popup-wrap").height();
+    var speed = height/50;
+    $.keyframe.define([
+        {
+            name  :  'up',
+            "0%" :  {"top":wh+"px"},
+            "100%":  {"top":-(height-wh)+"px"}
+        }]);
+
+    $(".popup").playKeyframe({
+            name: 'up',
+            duration: speed+"s",
+            timingFunction: 'linear',
+            iterationCount: "infinite",
+            direction:"alternate",
+            complete:function(){}
+        });
+});

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>站内消息</title>
+<link rel="stylesheet" href="../css/public.css" />
+<link rel="stylesheet" href="../css/profiles.css" />
+<script src="../js/zepto.js"></script>
+<script src="../js/slide-menu.js"></script>
+</head>	
+<body>
+<div class="kanzhun">
+	<aside class="slide_menu">
+		<span><img src="../images/kanzhun.jpg" width="189" /></span>
+		<a href="">首页</a>
+		<a href="">我要点评<i class="i i_edit_g ml10"></i></a>
+		<a href="">我发布的内容</a>
+		<a href="">职位订阅</a>
+		<a href="">我关注的公司</a>
+		<a href="">我的职位</a>
+		<a href="#" class="mynews">我的消息<i>3</i></a>
+		<a href="">我收藏的职位</a>
+		<a href="">修改密码</a>
+		<a href="">意见反馈</a>
+		<a href="">登录/注册</a>
+	</aside>
+	<div id="container">
+		<div class="wrapper profile_grey">
+			<div class="content">	
+				<header class="page_hd">
+					<a ka="map" class="menu" href="javascript:;"><img src="../images/menu.jpg" width="14"><i class="news_counts">10</i></a>
+					<strong>看准网</strong>
+					<a ka="city" href="/city/" class="fright">清空</a>
+				</header>
+				<div class="news_wrap">
+					<h4 class="w_n_tt">今天</h4>
+					<dl>
+						<dt><i class="i_w_n n_anonymous"></i></dt>
+						<dd>
+							<p><em class="grey">匿名用户</em>&nbsp;&nbsp;评论了你的<a href="#">＂应聘淘宝客服面试问题＂</a></p>
+							<p class="grey"><em class="e7_line">—</em>＂不错啊。淘宝待遇很好吧＂</p>
+							<i class="i_w_n n_closenews"></i>
+						</dd>
+					</dl>
+					<dl class="last_noborder">
+						<dt><i class="i_w_n n_praise"></i></dt>
+						<dd> 
+							<p><em class="grey">有人赞了你的</em><a href="">＂综合面试过程所提问题较广，主要看面试官心情"</a></p>
+							<i class="i_w_n n_closenews"></i>
+						</dd>
+					</dl>
+					<h4 class="w_n_tt">2014年12月17日</h4>
+					<dl>
+						<dt><i class="i_w_n n_anonymous"></i></dt>
+						<dd>
+							<p><em class="grey">匿名用户</em>&nbsp;&nbsp;评论了你的<a href="">＂应聘淘宝客服面试问题＂</a></p><i class="i_w_n n_closenews"></i>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i class="i_w_n n_praise"></i></dt>
+						<dd> 
+							<p><em class="grey">有人赞了你的</em><a href="">＂综合面试过程所提问题较广，主要看面试官心情"</a></p><i class="i_w_n n_closenews"></i>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i class="i_w_n n_system"></i></dt>
+						<dd class="grey">系统消息<i class="i_w_n n_closenews"></i></dd>
+					</dl>
+					<dl class="last_noborder">
+						<dt><i class="i_w_n n_attention"></i></dt>
+						<dd> 
+							<p>你关注的<a href="">"阿里巴巴"</a>有<strong class="red">2</strong>条新点评，<strong class="red">1</strong>条新面试，<a href="">快去看看吧&gt;&gt;</a></p><i class="n_closenews"></i>
+						</dd>
+					</dl>
+				</div>
+				<a class="btn_grey" id="hotmore" href="javascript:;" data-page="2">更多</a>
+			</div>
+		</div>
+		<footer class="page_ft">
+			<p>电脑版  |  移动版</p>
+			<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+		</footer>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>公司首页</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/company.css" />
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="co_header clearfix">
+		<a href="#"><img src="../images/img-04.jpg" width="150" height="150" alt="" class="co_logo" /></a>
+		<div class="co_info">
+			<h1>易宝支付</h1>
+			<p class="msg"><span class="grade_star_b"><i style="width:56px;"></i></span><strong>2.2</strong>分<em>|</em><a href=""><b>235条</b></a>信息</p>
+			<p class="params">互联网<em>|</em>www.yeepay.com<em>|</em>北京<em>|</em>500-100人</p>
+		</div>
+		<nav class="clearfix">
+			<a href="#" class="current">简介</a><a href="#">薪酬</a><a href="#">评论</a><a href="#">面试</a><a href="#">照片</a><a href="#">员工</a>
+		</nav>
+		<aside>
+			<a href="#" class="follow"></a>
+			<a href="#" class="publish"></a>
+		</aside>
+	</section>
+
+	<div class="container clearfix">
+		<section class="l_con clearfix">
+			<dl class="co_tb">
+				<dt><img src="../images/img-01.jpg" alt="" /><p><a href="#">查看更多</a></p></dt>
+				<dd>
+					<p><a href="#" class="edit"><i></i>编辑</a><strong>官方主页</strong><a href="" target="_blank">http://www.baidu.com/</a></p>
+					<p><strong>行业</strong>互联网</p>
+					<p><strong>地址</strong>北京</p>
+					<p><strong>规模</strong>大型(1000人以上)</p>
+					<p><strong>CEO</strong>李彦宏</p>
+					<p><strong>统计</strong>关注度：1259103   排名趋势：4</p>
+					<p class="competitors"><strong>竞争对手</strong><a href="#" target="_blank">网易有道</a><a href="#" target="_blank">奇虎360</a><a href="#" target="_blank">Google（谷歌中国）</a></p>
+				</dd>
+			</dl>
+
+
+			<h3 class="tt"><img src="../images/tt_intro.jpg"  alt="公司介绍" /></h3>
+			<article class="co_intro">
+				<p>易宝支付(北京通融通信息技术有限公司)是国内领先的独立第三方支付公司，于2011年5月26日获得央行发放的首批第三方支付业务许可证。</p><br>
+				<p>公司自2003年8月成立以来一直致力于为广大商家和消费者提供“安全、简单、快乐”的专业电子支付解决方案和服务。并以随需应变，量身定制为原则，陆续推出了航旅，游戏、网上购物、教育考试等行业的专用支付解决方案。易宝支付在电子支付领域创新而务实的风格、领先的技术和负责任的爱心企业公民形象，深得银行等合作伙伴认同。易宝支付的卓越服务得到了业界的广泛认... <a href="#" class="more ml20">展开</a></p>
+			</article>
+			<p class="grey_99">公司介绍来自看准用户的整理和编辑</p>
+
+			<h3 class="tt"><img src="../images/tt_review.jpg"  alt="评论" /></h3>
+			
+			<div class="co_grade co_grade_i">
+				<dl class="total">
+					<dt>员工对公司的总体评分</dt>
+					<dd class="total_chart_w">
+						<p><span class="grade_star_b mr10"><i style="width:56px;"></i></span>2.2分<em>|</em>来自235条信息</p>
+						<p class="mt15">互联网行业排名第42位，<a href="#">查看行业内公司排名</a></p>
+					</dd>
+					<dd class="circle_chart"></dd>
+				</dl>
+				<dl class="ceo">
+					<dt>CEO支持率</dt>
+					<dd>
+						<img src="../images/img-02.jpg" alt="" />
+						<p>李彦宏 <br>首席执行官</p>
+					</dd>
+				</dl>
+			</div>
+			<p class="line"></p>
+			<p class="grey_99">
+				产品经理 在易宝支付工作过1年 发布于 1月20日
+			</p>
+			<dl class="detail_v review_detail">
+				<dt>“我经历过的最难的面试，不好忽悠啊”</dt>
+				<dd>
+					<p><i class="succ"></i><span class="grey_99 mr10">面试通过</span>点评来自在易宝支付工作过1年的产品经理 <span class="grey_99 ml10">- 发布于 1月20日 北京</span></p>
+					<p class="mt10">我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历... <a href="" class="more">展开</a></p>
+					<p class="mt10"><span class="grey_99 mr10">面试官提出的问题：</span>如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？　<a href="#">查看答案</a></p>
+				</dd>
+			</dl>
+			<p class="line"></p>
+			<p><a href="#">查看全部评论（294）</a></p>
+
+			
+			<h3 class="tt"><img src="../images/tt_salary.jpg"  alt="薪酬" /></h3>
+			<p class="salary_sort"><span>最后更新 七天内（2013-12-24）</span><a href="" class="current">默认排序</a><a href="">从高到低</a><a href="">从低到高</a></p>
+			<table class="salary_chart" cellspacing="0" cellspacing="0">
+				<tr>
+					<th>职位</th>
+					<th>平均工资/月</th>
+					<th>￥0</th>
+					<th>￥10K</th>
+					<th>￥20K</th>
+					<th>￥30K</th>
+					<th>￥40K</th>
+					<th>￥50K</th>
+				</tr>
+				<tr>
+					<td class="blue">java工程师(8条)</td>
+					<td width="100">￥18000</td>
+					<td colspan="6" class="chart">1</td>
+				</tr>
+				<tr>
+					<td class="blue">产品经理(6条)</td>
+					<td>￥12000</td>
+					<td colspan="6" class="chart">1</td>
+				</tr>
+				<tr>
+					<td class="blue">技术工程师(18条)</td>
+					<td>￥11000</td>
+					<td colspan="6" class="chart">1</td>
+				</tr>
+			</table>
+
+			<h3 class="tt"><img src="../images/tt_interview.jpg"  alt="面试经历" /></h3>
+			<p class="grey_99 mt10">面试产品经理 发布于 1月20日</p>
+
+			<dl class="detail itv_detail">
+				<dt>
+					<p>获得职位</p>
+					<p class="blue">困难的面试 <br>感受很好的面试</p>
+					<p><a href="#">查看更多面试经历&gt;&gt;</a></p>
+				</dt>
+				<dd>
+					<h4>华为，一个锻炼技能的绝佳之地</h4>
+					<div>笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。 <br>1面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向... <a href="#" class="more">查看全部</a>
+					</div>
+					<p class="mt15"><a href="#">有用（9）</a>  <a href="">没用（2）</a></p>
+
+					<ul class="quora">
+						<li>
+							<i class="pros"></i>印象深刻的问题印象深刻的问题印象深刻的问题印象深刻的问题印象深刻的刻的问题印象深问题？
+							<p><a href="" class="fright">进入题库</a><a href="" class="mr15">查看3个答案</a><a href="">+我擅长这个问题 </a></p>
+						</li>
+						<li>
+							<i class="pros"></i>印象深刻的问题印象深刻的问题印象深刻的问题印象深刻的问题印象深刻的刻的问题印象深问题象深刻的问题印象深刻的刻的问题印象深问题象深刻的问题印象深刻的刻的问题印象深问题？
+							<p><a href="" class="fright">进入题库</a><a href="" class="mr15">查看3个答案</a><a href="">+我擅长这个问题 </a></p>
+						</li>
+						<li>
+							<i class="pros"></i>印象深刻的问题印象深刻的问题印象深刻的问题印象深问题？
+							<p><a href="" class="fright">进入题库</a><a href="" class="mr15">查看3个答案</a><a href="">+我擅长这个问题 </a></p>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			<p class="line"></p>
+			<p class="f_16 mt20"><strong>我（曾）在这家公司工作...</strong></p>
+			<p class="grey_99 mt10">用户匿名发布的信息正在帮助广大的求职者。</p>
+			<div class="itv_action">
+				<a href="" class="btn_grey_b">发布评论</a><a href="" class="btn_grey_b">发布薪酬信息</a><a href="" class="btn_grey_b">发布面试经历</a><a href="" class="btn_grey_b">上传照片</a>
+			</div>
+
+			<h3 class="tt"><img src="../images/tt_chat.jpg"  alt="随便聊聊" /></h3>
+			<div class="chat_field">
+				<textarea name="" placeholder="对这家公司印象如何？" ></textarea>
+			</div>
+			<p class="t-right"><input type="button" value="发布" class="btn_grey_s" /></p>
+
+			<ul class="reviews">
+				<li>
+					<i class="r"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+				<li>
+					<i class="i"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作.
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+				<li>
+					<i class="c"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”.
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+			</ul>
+
+			<div class="pager">
+				<a href="">&lt;</a><a href="" class="current">1</a><a href="">2</a><a href="">3</a><a href="">4</a><span>... </span><a href="">&gt;</a> 共90页&nbsp;&nbsp;&nbsp;&nbsp;去<input type="text">页
+			</div>
+		</section>
+		<section class="r_con">
+			<h3 class="r_tt">互联网行业产品经理薪酬</h3>
+			<ul class="salary_show">
+				<li><em>2496条薪酬数据</em><i class="hot">1</i><a href="">百度</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">2</i><a href="">腾讯</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">3</i><a href="">阿里巴巴</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>4</i><a href="">盛大集团</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>5</i><a href="">新浪</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>6</i><a href="">360安全卫士</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>7</i><a href="">唯美购</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>8</i><a href="">IBM</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>9</i><a href="">Google</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>10</i><a href=""n>搜狐畅游</a>-产品经理</li>
+			</ul>
+
+			<h3 class="r_tt mt20">热门职位</h3>
+			<ul class="jobs_show">
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度在线网络技术有限公司 – 广州</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />基础架构部_云安全研发工程师（上海）<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+			</ul>
+
+			<p class="fright"><a href="">查看更多</a></p>
+		</section>
+	</div>
+</body>
+</html>

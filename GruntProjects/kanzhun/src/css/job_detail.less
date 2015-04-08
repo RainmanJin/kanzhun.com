@@ -1,0 +1,1014 @@
+@import "common/var";
+@import "modules/company/common";
+@import "modules/dialog";
+@import "modules/comment";
+@import "modules/share";
+@import "modules/company/salary_desc"; //工资图表
+@import "modules-v2/maskui-v3";  //第三种弹窗样式
+@import "../components/fav/css/collection";  //收藏
+
+.job_con {
+	position: relative;
+}
+
+aside.c_collection {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	/* i {
+		margin-right: 4px;
+		vertical-align: -2px;
+	} */
+	/* a.hadcollection {
+		color: @grey_99;
+		cursor: default;
+		&:hover {
+			text-decoration: none;
+		}
+	} */
+
+  p.options{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 10px;
+
+    a.share{
+      color: @grey_99;
+
+      span.share{
+          background-position: -221px 0;
+      }
+
+      &:hover {
+      	color: @blue;
+      	text-decoration: none;
+      	span.share{
+      	    background-position: -235px 0;
+      	}
+      }
+    }
+  }
+}
+
+h1 {
+	&.name_address {
+		padding-right: 150px;
+		margin-bottom: 5px;
+		font-size: 22px;
+		font-weight: normal;
+
+		i.directsup {
+			//vertical-align: 13px;
+			//margin-left: -5px;
+		}
+	}
+}
+
+p {
+	&.request {
+		em {
+			margin: 0 10px;
+			color: @grey_99;
+		}
+		b {
+			font-size: 17px;
+			color: #eb7676;
+		}
+	}
+}
+
+dl.content {
+	dt {
+		margin-top: 30px;
+		font-size: 15px;
+		vertical-align: middle;		
+	}
+	dd {
+		margin-top: 18px;
+		color: #000;
+	}
+}
+
+div{
+	&.see{
+		padding: 66px 0;
+		input{
+			padding: 0 50px;
+			margin-right: 12px;
+		}
+	}
+
+	&.position-info{
+		position: relative;
+		z-index: 3;
+		background-color: #f0f0f0;
+		margin: -20px -21px 0 -20px;
+		padding: 20px;
+
+		p.request {
+			position: relative;
+
+			a {
+				padding: 0 20px;
+				position: absolute;
+				top: -6px;
+				right: 0;
+			}
+
+			a.had_deliver {
+				position: absolute;
+				top: -6px;
+				right: 0;
+				width: 166px;
+				text-align: center;
+				background-color: #ccc;
+				height: 35px;
+				line-height: 35px;
+				color: #fff;
+				cursor: default;
+				padding: 0;
+				border-radius: 3px;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		&.fixed_info {
+			width: 645px;
+			position: fixed;
+			top: 20px;
+		}
+/* 职位过期不用的*/
+		div.overdue {
+			background-color: #fff7ed;
+			border: 1px dashed @grey_99;
+			padding: 15px;
+			i {
+				display: inline-block;
+				overflow: hidden;
+				font-size: 0;
+				line-height: 0;
+				width: 20px;
+				height: 17px;
+				background: url("@{img}/overdue.png") no-repeat center;
+				vertical-align: -3px;
+				margin-right: 5px;
+			}
+
+			dl {
+				padding-top: 5px;
+				overflow: hidden;
+				dt {
+					width: 7em;
+					float: left;
+					padding-left: 25px;
+				}
+
+				dd {
+					margin-left: 130px;
+
+					a {
+						display: inline-block;
+						margin-right: 12px;
+						white-space: nowrap;
+					}
+				}
+			}
+		} 
+/*结束*/
+	}
+
+	&.position-infoshadow {
+		.box-shadow(0 1px 5px #d5d5d5);
+	}
+
+	&.temptation{
+		h3{
+			font-size: 17px;
+			font-weight: normal;
+		}
+
+		em{
+			display: inline-block;
+			height: 25px;
+			line-height: 25px;
+			padding: 0 10px;
+			margin-right: 10px;
+			background-color: #f6f6f6;
+			color: @grey_99;
+		}
+	}
+
+	&.description{
+		margin-left: -25px;
+	}
+
+	&.relevant-src{
+		background-color: #fff7ed;
+		margin: 10px -20px 0 -20px;
+		padding: 20px;
+
+		input.field_b{
+			width: 200px;
+			vertical-align: middle;
+		}
+
+		input.btn_grey_l{
+			padding: 0;
+			text-align: center;
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+	}
+}
+
+h3 {
+	&.allposition {
+		border-bottom: 1px solid #e7e7e7;
+		font-weight: normal;
+		padding-bottom: 5px;
+	}
+}
+
+ul{
+	&.hangye {
+		overflow: hidden;
+		zoom: 1;
+		padding-top: 18px;
+		li {
+			float: left;
+			width: 200px;
+			line-height: 1.8em;
+			padding-right: 10px;
+			a {
+				color: @def;
+				&:hover {
+					color: @blue;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	&.detaile{
+		padding: 15px 0 0 0;
+		li{
+			overflow: hidden;
+			zoom: 1;
+			line-height: 2em;
+			a{
+				color: @def;
+			}
+		}
+		span{
+			float: right;
+		}
+	}
+}
+
+section{
+	&.dialog_collection {
+		width: 267px;
+		border: 7px solid #e7e7e7;
+		border-radius: 6px;
+		p{
+			height: 133px;
+			line-height: 133px;
+			text-align: center;
+			background-color: #fff;
+			border: 1px solid #c2c2c2;
+			i {
+				vertical-align: -6px;
+			}
+		}
+	}
+
+	&.cmpinfo{
+		div.panel{
+			padding: 20px 0;
+		}
+		nav.cmpinfonav{
+			border-top: 1px solid @grey_e7;
+			border-bottom: 1px solid @grey_e7;
+			overflow: visible;
+			*height: 35px;
+
+			p{
+				height: 41px;
+				background: url("@{img}/tab_line.jpg") no-repeat left 35px;
+				margin-bottom: -6px;
+				transition: all .2s ease;
+				position: relative;
+				overflow: visible;
+			}
+			
+			a{
+				display: inline-block;
+				width: 160px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				border-left: 1px solid @grey_e7;
+				color: @def;
+				vertical-align: middle;
+
+				&:hover{
+					font-size: 15px;
+					text-decoration: none;
+				}
+
+				&.nav-first{
+					border-left: 1px solid #fff;
+				}
+
+				&.a_disabled{
+					cursor: default;
+					&:hover {
+						font-size: 14px;
+					}
+				}
+
+			}
+
+			em{
+				color: @grey_99;
+			}
+		}
+
+		dl.cmpinto{
+			overflow: hidden;
+			zoom: 1;
+
+			dt{
+				float: right;
+				border: 1px solid @grey_e7;
+				padding: 6px;
+				background-color: #fff;
+
+				img{
+					max-width: 212px;
+					height: 144px;
+					vertical-align: middle; 
+				}
+			}
+
+			dd{
+				h4{
+					font-size: 17px;
+					font-weight: normal;
+					width: 400px;
+				}
+
+				p.cmpinto-con{
+					width: 400px;
+				}
+
+				p.cmpstar{
+					margin: 5px 0;
+				}
+			}
+		}
+
+		p{
+			&.comments{
+				em{
+					float: right;
+				}
+
+				a{
+					display: inline-block;
+					width: 550px;
+				}
+			}
+		}
+
+		table.salary_chart{
+			float: left;
+		}
+
+		div{
+			&.slide_con{
+				width: 1300px;
+				overflow: hidden;
+        .transition(margin .3s ease);
+        padding-bottom: 15px;
+				zoom: 1;
+			}
+			
+
+      &.comments{
+        margin: 10px 0;
+        padding: 0;
+        border: 0;
+      }
+
+      &.selectshow {
+				padding-top: 0;
+			}
+		}
+
+		
+
+	}
+	
+	&.r_con {
+		dl {
+			overflow: hidden;
+			zoom: 1;
+			margin-bottom: 18px;
+			dt{
+				float: left;
+				a {
+					display: block;
+					font-size: 0;
+					overflow: hidden;
+					width: 79px;
+					height: 79px;
+					padding: 4px;
+					background-color: #fff;
+					border: 1px solid #e7e7e7;
+					line-height: 79px;
+					img {
+						width: 79px;
+						display: inline-block;
+						line-height: 79px;
+					}
+					span {
+						display: inline-block;
+						width: 0;
+						height: 100%;
+						vertical-align: middle;
+					}
+				}
+			}
+			dd {
+				margin-left: 103px; 
+				line-height: 1.8em;
+				&.taobao {
+					padding-top: 10px;
+				}
+				em {
+					margin: 0 6px;
+				}
+			}
+		}
+		p.information {
+			line-height: 2em;
+			color: @grey_99;
+			line-height: 1.5em;
+			strong {
+				display: inline-block;
+				width: 4em;
+				color: #000;
+			}
+		}
+		/* 职位过期不用的*/
+	  ul.company_show {
+			width: 284px;
+			margin: 0 -10px 20px 0;
+			//_width: 260px;
+			li {
+				float: left;
+				margin-right: 11px;
+				//_margin-right: 4px;
+				a {
+					display: block;
+					font-size: 0;
+					overflow: hidden;
+					width: 70px;
+					height: 70px;
+					padding: 4px;
+					background-color: #fff;
+					border: 1px solid #e7e7e7;
+					img {
+						width: 70px;
+						display: inline-block;
+						vertical-align: middle;
+					}
+					span {
+						display: inline-block;
+						width: 0;
+						height: 100%;
+						vertical-align: middle;
+					}
+				}
+		
+			}
+		} 
+		/*结束*/
+		
+		div.jb_create {
+			margin: 15px 0 25px 0;
+			text-align: center;
+		}
+
+		a.seeinfo{
+			padding: 0 88px;
+		}
+
+		ul{
+			&.positions{
+				li{
+					a{
+						display: block;
+						width: 12em;
+						overflow: hidden;
+						white-space: nowrap;
+					}
+
+					em{
+						float: right;
+						color: #eb7676;
+					}
+				}
+			}
+
+			&.salary-info{
+				li.salaryimg{
+					padding-top: 10px;
+					overflow: hidden;
+					zoom: 1;
+
+					img{
+						float: left;
+						width: 94px;
+						height: 42px;
+					}
+
+					p{
+						float: left;
+						height: 30px;
+						margin-left: 10px;
+						background-color: #fff;
+						background: url("@{img}/left-line.jpg") no-repeat left center;
+
+						span{
+							display: inline-block;
+							margin-left: 7px;
+							padding: 0 10px;
+							height: 28px;
+							line-height: 28px;
+							border: 1px solid @grey_e7;
+							border-left: none;
+							color: #eb7676;
+							font-size: 17px;
+						}
+					}
+				}
+			}
+
+			&.inter-experience{
+				li{
+					margin-bottom: 15px;
+				}
+
+				p{
+					&.inter-info{
+						.ellipsis(ellipsis);
+						width: 18em;
+					}
+
+					&.options{
+						em.cmpname{
+							color: @grey_99;
+							display: inline-block;
+							.ellipsis(ellipsis);
+							width: 5em;
+							vertical-align: middle;
+							margin-left: 0;
+						}
+					}
+				}
+			}
+
+			&.hot_recruitment{
+				li{
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+
+.job_desc{
+	line-height: 1.8em;
+
+	img{
+		max-width: 646px;
+	}
+}
+
+/* .resume {
+	overflow: hidden;
+	position: relative;
+	background-color: #f3f3f3;
+	padding: 30px 0  30px 50px;
+	margin: 50px 0 30px 0;
+	p {
+		padding-left: 42px;
+		width: 242px;
+		background: url(../images/write_04.png) no-repeat left center;
+	}
+	a {
+		&.btn {
+			position: absolute;
+			left: 397px;
+			top: 50%;
+			margin-top: -17.5px;
+			display: inline-block;
+			color: #fff;
+			font-size: 15px;
+			padding: 0 76px;
+			border-radius: 3px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&.disable {
+			height: 35px;
+			line-height: 35px;
+			background-color: #cccccc;
+			cursor: default;
+		}
+
+		&.hadsend {
+			padding: 0 84px;
+		}
+	}
+} */
+
+.salary_sort{
+  overflow: hidden;
+  zoom: 1;
+}
+
+//弹窗
+strong.suctt {
+	display: block;
+	font-size: 18px;
+	text-align: left;
+	font-weight: normal;
+	margin: 0px 0 20px 0;
+}
+
+/* 职位过期不用的*/
+ul.list_detail {
+		overflow: hidden;
+	li {
+		position: relative;
+		border-bottom: 1px solid #e7e7e7;
+		padding: 15px 0;
+		min-height: 60px;
+		margin-bottom: -1px;
+
+		p {
+			width: 540px;
+			line-height: 2em;
+			strong {
+				font-weight: normal;
+				font-size: 15px;
+				color: #000;
+			}
+		}
+		aside {
+			position: absolute;
+			left: 549px;
+			top: 19px;
+			a{
+				&.favorite{
+					display: block;
+					margin-top: 15px;
+					text-align: center;
+					color: @def;
+					&:hover {
+						color: @blue;
+					}
+				}
+
+				&.favorited{
+					color: @grey_99;
+					cursor: default;
+					&:hover{
+						color: @grey_99;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+} 
+
+div.morejobinfo {
+	position: relative;
+	z-index: 1;
+	//background-color: #e7e7e7;
+	text-align: right;
+	margin-bottom: -25px;
+	a {
+		display: inline-block;
+		padding: 15px 15px 10px 15px;
+		background-color: #f0f0f0;
+		border-radius: 5px;
+		color: @grey_99;
+		margin-top: -5px;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		i {
+			display: inline-block;
+			width: 14px;
+			height: 13px;
+			overflow: hidden;
+			font-size: 0;
+			line-height: 0;
+			margin-left: 5px;
+			vertical-align: -2px;
+			background: url("@{img}/job_detail_imgs.png") left top;
+			.transition(all .2s ease);
+
+			&.more {
+				background-position: -19px top;
+			}
+		}
+	}
+}  
+/*结束*/
+
+//推荐职位
+table.recommendation {
+	border-collapse:collapse;
+	width: 645px;
+	table-layout: fixed;
+
+	tr {
+		background-color: #f7f7f7;
+		height: 30px;
+		&:nth-child(even) {
+			background-color: #fff;
+		}
+	}
+
+	td {
+		padding: 0 10px;
+
+		a, span {
+			display: block;
+			.ellipsis(ellipsis);
+		}
+	}
+}
+
+ul.static_links {
+	overflow: hidden;
+	*zoom: 1;
+	*position: relative;
+	margin-right: -20px;
+	
+
+	li {
+		float: left;
+		width: 8em;
+		margin-right: 20px;
+		line-height: 1.3em;
+
+		a {
+			display: inline-block;
+			.ellipsis(ellipsis);
+			width: 8em;
+		}
+	}
+}
+
+//投递简历的弹窗
+div.deliver_dialog_con {
+	input.resume_ipt {
+		width: 178px;
+		margin-right: 10px;
+		background-color: transparent;
+		border: none;
+	}
+
+	input[type=radio] {
+		vertical-align: -3px;
+		margin-right: 5px;
+	}
+
+	p.err {
+		display: none;
+		width: 122px;
+		height: 28px;
+		position: absolute;
+		font-size: 12px;
+		top: -15px;
+		right: 0;
+		color: #d60000;
+		padding-left: 32px;
+		line-height: 22px;
+		overflow: hidden;
+		background: url("@{img}/auth.png") no-repeat 0 -28px;
+		z-index: 2;
+	}
+		
+	div.line_wrap {
+		position: relative;
+		padding-bottom: 5px;
+	}
+	li {
+		div {
+			border-width: 1px;
+			border-style: solid;
+			border-color: #d5d5d5 #d8d8d8;
+			height: 26px;
+			border-radius: 4px;
+			padding: 8px 0;
+			background-color: #fff;
+			margin-bottom: 15px;
+			position: relative;
+			-webkit-transition: all .2s ease;
+			-moz-transition: all .2s ease;
+			-ms-transition: all .2s ease;
+			-o-transition: all .2s ease;
+			.transition(all, .2s, ease);
+
+			&.error {
+				border-width: 1px;
+				border-style: solid;
+				border-color: #d60000;
+			}
+
+			&.focus {
+				border-width: 1px;
+				border-style: solid;
+				border-color: #7cb228;
+			}
+
+			label {
+				width: 21px;
+				padding-right: 10px;
+				padding-left: 12px;
+				padding-bottom: 5px;
+				border-right: 1px solid #e1e1e1;
+				float: left;
+				font-size: 0;
+
+				&.user_wap {
+					height: 17px;
+					padding-top: 5px;
+				} 
+
+				&.emial_wrap {
+					height: 15px;
+					padding-top: 7px;
+				}
+
+				i {
+					background-repeat: no-repeat;
+					display: inline-block;
+				}
+
+				i.user {
+					background-image: url("@{img}/auth.png");
+					width: 19px;
+					height: 17px;
+					background-position: 0 0;
+				}
+
+				i.emial {
+					background-image: url("@{img}/profiles.png");
+					width: 21px;
+					height: 15px;
+					background-position: -151px -44px;
+				}
+			}
+
+			input.ifd {
+				border: 0;
+				background-color: transparent;
+				font-size: 14px;
+				color: #999;
+				width: 258px;
+				padding: 5px 10px;
+				margin-left: 42px;
+				display: block;
+			}
+
+			/* p.err {
+				display: none;
+				width: 122px;
+				height: 28px;
+				position: absolute;
+				font-size: 12px;
+				top: -15px;
+				right: 0;
+				color: #d60000;
+				padding-left: 32px;
+				line-height: 22px;
+				overflow: hidden;
+				background: url("@{img}/auth.png") no-repeat 0 -28px;
+				z-index: 2;
+			} */
+		}
+	}
+
+	div.deliver_resume_option {
+		//overflow: hidden;
+		padding-bottom: 15px;
+
+		input.meile {
+			opacity: 0;
+			margin-left: -13px;
+		}
+		
+		p.err {
+			display: none;
+			color: #d60000;
+		}
+		em {
+			color: #d7d7d7;
+			margin: 0 8px;
+		}
+
+		div.webuploader-container {
+			position: relative;
+			cursor: pointer;
+			input.webuploader-element-invisible {
+				opacity: 0;
+				width: 4em;
+				margin-right: 0;
+				cursor: pointer;
+			}
+
+			label {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		div.webuploader-pick {
+			color: @blue;
+		}
+	}
+
+	div.uploaders {
+		div.webuploader-pick {
+			width: 96px;
+			height: 33px;
+			line-height: 33px;
+			cursor: pointer;
+			background: url("@{img}/icons.png") repeat-x 0 -162px;
+			overflow: visible;
+			color: #343434;
+			text-align: center;
+			border: 1px solid #dfdfdf;
+			border-radius: 3px;
+
+			&:hover {
+				border: 1px solid #d3d3d3;
+				background: #f6f6f6 url('');
+				text-decoration: none;
+			}
+		}
+	}
+
+	input {
+		&.deliver_btn {
+			width: 332px;
+			height: 42px;
+			line-height: 42px;
+			border: 0;
+			background-color: #7cb228;
+			color: #fff;
+			font-size: 20px;
+			cursor: pointer;
+			border-radius: 2px;
+			.transition(background-color, .2s, ease);
+
+			&:hover {
+			  background-color: #96ca46;
+			}
+		}
+
+		&.nologin_deliver_btn {
+			width: 230px;
+			margin-right: 30px;
+		}
+	}
+
+	//投递成功
+	h3.deliver_suc {
+		text-align: center;
+
+		i {
+			vertical-align: -5px;
+		}
+	}
+}
+	
+

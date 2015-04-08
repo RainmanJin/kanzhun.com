@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>DEMO</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="qa">
+
+<header>CCTV对话马云</header>
+
+<div class="kz-tip">
+  关注看准网公共账号 <br/>实时查看提问马云的票选情况 <img src="images/close.png" >
+</div>
+
+<div class="wrapper">
+  <table class="qa-tt" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><p>&nbsp;</p></td>
+      <td style="width: 6em">我的提问</td>
+      <td><p>&nbsp;</p></td>
+    </tr>
+  </table>
+
+  <div class="panel">
+    <a href="#">
+    <div class="panel-txt">
+      <p><strong class="tt">提问:</strong></p>
+      <p><a href="q-view.html">请问马总我有生之年有可能成为合伙人么？我应该怎样努力才能达成？</a></p>
+      <p class="f12 grey-l mt5">支付宝产品经理-目前在职</p>
+    </div>
+
+    <div class="panel-digit">
+      <p>
+        <span><img src="images/i-share.png">215</span>
+        <span><img src="images/i-comment.png">215</span>
+      </p>
+      2小时前
+    </div>
+
+    <div class="vote voted">
+      <p>15692</p>
+      <button class="">投 票</button>
+    </div>
+
+    <div class="rank">
+      <p class="rank-1">NO.1</p>
+    </div>
+    </a>
+  </div>
+
+
+  <table class="qa-tt" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><p>&nbsp;</p></td>
+      <td>最火提问排行榜 <br/>今日投票机会<em>3</em>次</td>
+      <td><p>&nbsp;</p></td>
+    </tr>
+  </table>
+
+  <div class="panel">
+    <div class="panel-txt">
+      <p><strong class="tt">提问:</strong></p>
+      <p><a href="q-view.html">请问马总我有生之年有可能成为合伙人么？我应该怎样努力才能达成？</a></p>
+      <p class="f12 grey-l mt5">支付宝产品经理-目前在职</p>
+    </div>
+
+    <div class="panel-digit">
+      <p>
+        <a href="#"><img src="images/i-share.png">215</a>
+        <a href="#"><img src="images/i-comment.png">215</a>
+      </p>
+      2小时前
+    </div>
+
+    <div class="vote voted">
+      <p>15692</p>
+      <button class="">投 票</button>
+    </div>
+
+    <div class="rank">
+      <p class="rank-1">NO.1</p>
+    </div>
+  </div>
+
+
+  <div class="panel">
+    <div class="panel-txt">
+      <p><strong class="tt">提问:</strong></p>
+      <p><a href="q-view.html">请问马总我有生之年有可能成为合伙人么？我应该怎样努力才能达成？</a></p>
+      <p class="f12 grey-l mt5">支付宝产品经理-目前在职</p>
+    </div>
+
+    <div class="panel-digit">
+      <p>
+        <a href="#"><img src="images/i-share.png">215</a>
+        <a href="#"><img src="images/i-comment.png">215</a>
+      </p>
+      2小时前
+    </div>
+
+    <div class="vote">
+      <p>15692</p>
+      <button class="">投 票</button>
+    </div>
+
+    <div class="rank">
+      <p class="rank-2">NO.2</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-txt">
+      <p><strong class="tt">提问:</strong></p>
+      <p><a href="q-view.html">请问马总我有生之年有可能成为合伙人么？我应该怎样努力才能达成？</a></p>
+      <p class="f12 grey-l mt5">支付宝产品经理-目前在职</p>
+    </div>
+
+    <div class="panel-digit">
+      <p>
+        <a href="#"><img src="images/i-share.png">215</a>
+        <a href="#"><img src="images/i-comment.png">215</a>
+      </p>
+      2小时前
+    </div>
+
+    <div class="vote">
+      <p>15692</p>
+      <button class="">投 票</button>
+    </div>
+
+    <div class="rank">
+      <p class="rank-3">NO.3</p>
+    </div>
+  </div>
+
+
+  <div class="panel">
+    <div class="panel-txt">
+      <p><strong class="tt">提问:</strong></p>
+      <p>请问马总我有生之年有可能成为合伙人么？我应该怎样努力才能达成？</p>
+      <p class="f12 grey-l mt5">支付宝产品经理-目前在职</p>
+    </div>
+
+    <div class="panel-digit">
+      <p>
+        <a href="#"><img src="images/i-share.png">215</a>
+        <a href="#"><img src="images/i-comment.png">215</a>
+      </p>
+      2小时前
+    </div>
+
+    <div class="vote">
+      <p><em>15692</em></p>
+      <button class="">投 票</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-txt">
+      <p><strong class="tt">提问:</strong></p>
+      <p>请问马总我有生之年有可能成为合伙人么？我应该怎样努力才能达成？</p>
+      <p class="f12 grey-l mt5">支付宝产品经理-目前在职</p>
+    </div>
+
+    <div class="panel-digit">
+      <p>
+        <a href="#"><img src="images/i-share.png">215</a>
+        <a href="#"><img src="images/i-comment.png">215</a>
+      </p>
+      2小时前
+    </div>
+
+    <div class="vote">
+      <p><em>15692</em></p>
+      <button class="">投 票</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-txt">
+      <p><strong class="tt">提问:</strong></p>
+      <p>请问马总我有生之年有可能成为合伙人么？我应该怎样努力才能达成？</p>
+      <p class="f12 grey-l mt5">支付宝产品经理-目前在职</p>
+    </div>
+
+    <div class="panel-digit">
+      <p>
+        <a href="#"><img src="images/i-share.png">215</a>
+        <a href="#"><img src="images/i-comment.png">215</a>
+      </p>
+      2小时前
+    </div>
+
+    <div class="vote">
+      <p><em>15692</em></p>
+      <button class="">投 票</button>
+    </div>
+  </div>
+</div>
+
+
+<a class="ask" href="#">我是阿里人，我也要提问马云</a>
+
+
+
+
+
+<script src="js/lib/jquery-2.1.1.min.js"></script>
+<script>
+  var require = {
+    urlArgs : "v=2.0",
+    baseUrl: 'js/site/'
+  };
+</script>
+<script src="js/lib/require.js" data-main="q.js"></script>
+</body>
+</html>
+
+

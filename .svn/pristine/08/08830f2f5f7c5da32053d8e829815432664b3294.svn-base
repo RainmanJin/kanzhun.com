@@ -1,0 +1,81 @@
+@import "../common/var";
+//自定义大的下拉框
+.select_big{
+	height: 36px;
+	border: 1px solid #cfcfcf;
+	border-width: 2px 1px 1px 2px;
+	position: relative;
+
+	dt{
+		text-align: center;
+		vertical-align: middle;
+		height: 36px;
+		background-color: #fff;
+		padding: 0 40px 0 0;
+
+		input{
+			height: 36px;
+			line-height: 36px;
+			float: left;
+			border: 0;
+			width: 100%;
+			color: @def;
+			padding-left: 15px;
+			background-color: transparent;
+			text-align: left;
+			&.red{
+				color: @red;
+			}
+		}
+
+		span{
+			width: 36px;
+			height: 20px;
+			padding-top: 16px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: block;
+			border-left: 1px solid #e6e6e6;
+			font-size: 0;
+			background-color: #f6f6f6 ;
+			text-align: center;
+			cursor: pointer;
+			zoom: 1;
+
+			i{
+				display: inline-block;
+				font-size: 0;
+				zoom: 1;
+				width: 9px;
+				height: 5px;
+				overflow: hidden;
+				.transition(all .2s linear);
+				.transform(rotate(0deg));
+				background: transparent url("@{img}/trangle.png") no-repeat;
+			}
+
+			&.on{
+				i{
+					.transform(rotate(180deg));
+				}
+			}
+		}
+	}
+
+	dd{
+		background-color: #fff;
+		border: 1px solid #e7e7e7;
+		padding: 10px;
+		width: 270px;
+		display: none;
+		a{
+			height: 26px;
+			line-height: 26px;
+		}
+		em{
+			color: #f1f1f1;
+			padding: 0 5px;
+		}
+	}
+}

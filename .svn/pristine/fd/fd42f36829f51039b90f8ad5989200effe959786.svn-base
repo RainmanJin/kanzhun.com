@@ -1,0 +1,30 @@
+@import "../common/var";
+
+div.prompt_box {
+  position: absolute; 
+  padding: 10px 25px 10px 20px;
+  border: 1px solid #cccccc;
+  background-color: #fefefe;
+  border-radius: 5px;
+
+  a {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 11px;
+    height: 11px;
+    background: @icons no-repeat -207px -558px;
+  }
+
+  span.triangle_edge {
+    position: absolute;
+    left: 30px;
+    top: -12px;
+    width: 12px;
+    height: 13px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    background: url('@{img}/prompt_boximg.png') no-repeat left top;
+  }
+}

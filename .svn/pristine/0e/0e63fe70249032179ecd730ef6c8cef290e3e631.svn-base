@@ -1,0 +1,153 @@
+@import "common/var";
+@import "module/reset";
+@import "common/common";
+@import "module/swiper";
+
+body,html{
+  height: 100%;
+  color: #fff;
+}
+.swiper-container{
+  height: 100%;
+}
+.swiper-wrapper{
+  height: 100%;
+}
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+#page1{
+  background: url("../images/page1.jpg") no-repeat;
+  .background-size(100%);
+}
+
+#page2{
+  background: url("../images/page2.jpg") no-repeat;
+  .background-size(100%);
+}
+
+#page3{
+  background: url("../images/page3.jpg") no-repeat;
+  .background-size(100%);
+}
+
+#page4{
+  background: url("../images/page4.jpg") no-repeat;
+  .background-size(100%);
+}
+
+#page5{
+  background-color: pink;
+}
+
+div.barrage{
+  position: fixed;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  color: #ffffff;
+
+  a{
+    color: #fff;
+  }
+
+  p{
+    width: 3000px;
+    white-space: nowrap;
+    line-height: 3em;
+    
+    span{
+      margin: 0 10px;
+    }
+
+    &:nth-of-type(1){
+      font-size: 16px;
+
+      span{
+        &:nth-child(3n){
+          color: #ffffff;
+          font-weight: bold;
+        }
+
+        &:nth-child(4n){
+          font-size: 16px;
+        }
+
+        &:nth-child(5n){
+          color: orange;
+          font-size: 26px;
+          font-weight: bold;
+          .text-shadow(0 0 3px #fff);
+        }
+        &:nth-child(7n){
+          color: blue;
+          font-size: 20px;
+        }
+
+        &:nth-child(11n){
+          color: red;
+          font-size: 30px;
+        }
+      }
+    }
+
+    &:nth-of-type(2){
+      font-size: 15px;
+
+      span{
+        &:nth-child(4n){
+          color: green;
+        }
+
+        &:nth-child(6n){
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        &:nth-child(8n){
+          color: blue;
+          font-weight: bold;
+          font-size: 30px;
+          .text-shadow(0 0 3px #fff);
+        }
+        &:nth-child(11n){
+          font-size: 24px;
+        }
+      }
+    }
+
+    &:nth-of-type(3){
+      font-size: 15px;
+      span{
+        &:nth-child(3n){
+          color: #ffff00;
+        }
+
+        &:nth-child(7n){
+          font-size: 33px;
+          color: purple;
+          font-weight: bold;
+        }
+
+        &:nth-child(9n){
+          color: red;
+          font-size: 19px;
+          .text-shadow(0 0 3px #fff);
+        }
+        &:nth-child(11n){
+          font-size: 45px;
+        }
+
+        &:nth-child(12n){
+          font-weight: bold;
+          color: orange;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

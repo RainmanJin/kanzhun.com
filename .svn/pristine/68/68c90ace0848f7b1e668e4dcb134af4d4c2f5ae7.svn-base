@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>大五测评页面</title>
+	<!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+	<link rel="stylesheet" href="../../css/base.css" />
+	<link rel="stylesheet" href="../../css/evaluation.css" />
+</head>
+<body>
+    <header class="global">
+        <div class="header">
+            <img class="logo" src="../../images/logo.jpg"/>
+            <span class="title">企业用户专区</span  >
+            <!--<div class="user"><a href="#" class="mr15">登录</a><a href="#">注册</a></div>-->
+            <div class="user hello">
+                <dl>
+                    <dt>你好，117064092@qq.com&nbsp;<i></i></dt>
+                    <dd style="display: none;">
+                        <a ka="h_change_password" id="js_changePwd" href="javascript:;">修改密码</a>
+                    </dd>
+                </dl>
+                <em>|</em><a ka="logout" href="/logout/" class="logout"><i class="base logout"></i>退出</a>
+            </div>
+        </div>
+    </header>
+    <section class="co_header clearfix">
+        <a rel="nofollow" href="/gso36459.html" class="co_logo">
+            <img src="http://img.kanzhun.com/images/logo/20140704/96d2f08e5fe2e075d8fcdf2bf7054334.jpg" width="150" title="北汽福田汽车" alt="北汽福田汽车logo">
+            <span></span>
+        </a>
+        <div class="co_info">
+            <h2 id="companyName">北汽福田汽车</h2>
+            <p class="msg">
+                <strong>4.8</strong><span class="grey_66">分</span>&nbsp;&nbsp;<span class="grade_star_b"> <i style="width:80px;"></i>
+                        </span>946人评价
+            </p>
+            <p class="params">
+                互联网<em>|</em>杭州<em>|</em>1000-9999人
+            </p>
+        </div>
+        <nav class="clearfix">
+            <a href="">招聘管理</a><a href="">简历库</a><a href="" class="current">测评管理</a><a href="">公司管理</a><a href="">个人设置</a>
+        </nav>
+    </section>
+	<section class="resumeContent">
+        <aside class="resumeLeft">
+            <dl class="l_nav mb20">
+                <dt> <i class="base evaluation"></i>
+                    <span href="#">测评管理</span>
+                </dt>
+                <dd class="current">
+                    <a href="#">大五测评</a>
+                </dd>
+                <dd>
+                    <a href="#">职业匹配</a>
+                </dd>
+                <dd>
+                    <a href="#">申请测评账号</a>
+                </dd>
+            </dl>
+            <p class="grey_99 f_12 pl15 pr15">使用过程中有任何问题，请发送邮件到：<span class="grey_33">liuna@kanzhun.com</span></p>
+        </aside>
+		<div class="resumeRight">
+			<h3 class="p_tt mt15 mb20">大五测评</h3>
+			<table class="tb_evaluation" cellspacing="0" width="708">
+				<tr class="evaluation_tt">
+					<th width="140">账号名称</th>
+					<th width="140">密码</th>
+                    <th width="140">生成时间</th>
+                    <th width="140">完成测评时间</th>
+					<th class="status">状态</th>
+				</tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p><a href="" class="links">查看报告</a></p></td>
+                </tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p><a href="" class="links">未使用</a></p></td>
+                </tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p><a href="" class="links">查看报告</a></p></td>
+                </tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>未使用</p></td>
+                </tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p><a href="" class="links">查看报告</a></p></td>
+                </tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>未使用</p></td>
+                </tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p><a href="" class="links">查看报告</a></p></td>
+                </tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>未使用</p></td>
+                </tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p><a href="" class="links">查看报告</a></p></td>
+                </tr>
+                <tr>
+                    <td><p>DW000123</p></td>
+                    <td><p>sfsdf32W</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>未使用</p></td>
+                </tr>
+			</table>
+            <div class="page_wrap">
+                <div class="f_pager t-right fright">
+                    <a ka="paging1" href="/interviewl/search/?q=客服&amp;cityCode=0&amp;stype=0&amp;pagenum=1" data-page="1" class="p_first"><i class="p_first">|&lt;</i></a>
+                    <a ka="paging3" href="/interviewl/search/?q=客服&amp;cityCode=0&amp;stype=0&amp;pagenum=3" data-page="3" class="p_prev"><i class="p_prev">&lt;</i></a>
+                    <a ka="paging2" href="/interviewl/search/?q=客服&amp;cityCode=0&amp;stype=0&amp;pagenum=2">2</a>
+                    <a ka="paging3" href="/interviewl/search/?q=客服&amp;cityCode=0&amp;stype=0&amp;pagenum=3">3</a>
+                    <a ka="paging4" href="/interviewl/search/?q=客服&amp;cityCode=0&amp;stype=0&amp;pagenum=4" class="current">4</a>
+                    <a ka="paging5" href="/interviewl/search/?q=客服&amp;cityCode=0&amp;stype=0&amp;pagenum=5">5</a>
+                    <a ka="paging6" href="/interviewl/search/?q=客服&amp;cityCode=0&amp;stype=0&amp;pagenum=6">6</a>
+                    <a ka="paging5" href="/interviewl/search/?q=客服&amp;cityCode=0&amp;stype=0&amp;pagenum=5" data-page="5" class="p_next"><i class="p_next">&gt;</i></a>
+                </div>
+            </div>
+		</div>
+	</section>
+</body>
+</html>

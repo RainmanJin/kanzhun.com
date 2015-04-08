@@ -1,0 +1,47 @@
+@import "../common/var";
+header.page_hd{
+	padding: 9px 10px;
+	text-align: center;
+	background-color: @green;
+	position: relative;
+
+	strong{
+		font-size: 18px;
+		color: #fff;
+		font-weight: normal;
+	}
+
+	a{
+		color: #fff;
+		position: absolute;
+
+		&.submission{
+			width: 28px;
+			height: 22px;
+			padding-top: 6px;
+			right: 10px;
+			top: 8px;
+			border: 1px solid #96c153;
+			text-align: center;
+		}
+
+		&.top_back{
+			height: 22px;
+			left: 10px;
+			top: 13px;
+			font-size: 15px;
+
+			i{
+				width: 12px;
+				height: 22px;
+				line-height: 0;
+				vertical-align: -5px;
+				display: inline-block;
+				background: url('@{img_path}icon_3.png') no-repeat;
+				background-size: 12px;
+				margin-right: 5px;
+				//vertical-align: -6px;
+			}
+		}
+	}
+}

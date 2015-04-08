@@ -1,0 +1,295 @@
+@import "../common/var";
+
+i {
+  &.base {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+
+  &.problem {
+    width:14px;
+    height: 14px;
+    background: @icons no-repeat left top;
+  }
+
+  &.errormsg {
+    width: 13px;
+    height: 13px;
+    background: @icons no-repeat -20px top;
+  }
+
+  &.email {
+    width: 55px;
+    height: 54px;
+    background: @icons no-repeat left -20px;
+  }
+
+  &.useremail {
+    width: 22px;
+    height: 16px;
+    background: @icons no-repeat -64px top;
+  }
+  //新版更改登录账号小人
+  &.logout {
+    width: 14px;
+    height: 15px;
+    background: @icons_v2 no-repeat -22px top;
+  }
+
+  &.useraccount {
+    width: 17px;
+    height: 17px;
+    background: @icons_v2 no-repeat 0 top;
+  }
+
+  &.pwd {
+    width: 16px;
+    height: 22px;
+    background: @icons no-repeat -92px top;
+  }
+
+  &.uploadsuss {
+    width: 20px;
+    height: 16px;
+    background: @icons no-repeat -114px top;
+  }
+
+  &.letter {
+    width: 26px;
+    height: 25px;
+    background: @manage_icons no-repeat 0 -60px;
+  }
+  //新版简历库图标
+  &.resume_lib {
+    width: 23px;
+    height: 23px;
+    background: @manage_icons no-repeat -135px -100px;
+  }
+
+  //新版大五测评图标
+  &.evaluation {
+    width: 23px;
+    height: 23px;
+    background: @manage_icons no-repeat -74px -140px;
+  }
+
+  //新版大五测评个人设置图标
+  &.set_up {
+    width: 23px;
+    height: 23px;
+    background: @manage_icons no-repeat -116px -139px;
+  }
+
+  //新版公司管理图标
+  &.cmp_manage {
+    width: 23px;
+    height: 23px;
+    background: @manage_icons no-repeat -144px -140px;
+  }
+
+  //新版性别图标（女）
+  &.female {
+    width: 12px;
+    height: 12px;
+    background: @manage_icons no-repeat -163px -100px;
+  }
+
+  //新版性别图标（男）
+  &.male {
+    width: 12px;
+    height: 12px;
+    background: @manage_icons no-repeat -180px -100px;
+  }
+
+  //新版公司简介下产品图片上的关闭小叉
+  &.close_one {
+    width: 20px;
+    height: 20px;
+    background: @manage_icons no-repeat -172px -140px;
+  }
+
+  //新版公司营业执照审核提示关闭小叉
+  &.close_two {
+    width: 12px;
+    height: 12px;
+    background: @manage_icons no-repeat -188px -60px;
+  }
+
+  //新版三级联动关闭小叉
+  &.close_three {
+    width: 20px;
+    height: 20px;
+    background: @manage_icons no-repeat 0 -173px;
+  }
+
+  //新版公司所在地（用在面试页面）
+  &.cmp_address {
+    width: 11px;
+    height: 16px;
+    background: @manage_icons no-repeat -25px -173px;
+  }
+
+  //新版公司评论回复icons
+  &.cmp_replay {
+    width: 14px;
+    height: 13px;
+    background: @manage_icons no-repeat -58px -173px;
+  }
+
+  &.flag {
+    width: 26px;
+    height: 25px;
+    background: @manage_icons no-repeat -40px -60px;
+  }  
+
+  &.round_add{
+    width: 63px;
+    height: 63px;
+    background: @manage_icons no-repeat 0 -100px;
+  } 
+
+  &.ok{
+    width: 34px;
+    height: 26px;
+    background: @manage_icons no-repeat -160px 0;
+  }  
+
+  &.print{
+    width: 34px;
+    height: 26px;
+    background: @manage_icons no-repeat -80px -60px;
+  } 
+
+  &.download{
+    width: 24px;
+    height: 26px;
+    background: @manage_icons no-repeat -120px -60px;
+  }  
+  &.pwdok {
+    width: 14px;
+    height: 11px;
+    background: @manage_icons no-repeat -166px -32px;
+  }
+  &.close{
+    width: 16px;
+    height: 17px;
+    background: @manage_icons no-repeat -160px -60px;
+  }  
+  &.noresult {
+    width: 44px;
+    height: 38px;
+    background: @icons no-repeat 0 -33px;
+  }
+  //简历展示页面icons
+  &.r_users {
+    width: 13px;
+    height: 18px;
+    background: @icons no-repeat -49px -33px;
+  }  
+  &.r_experience {
+    width: 14px;
+    height: 18px;
+    background: @icons no-repeat -67px -33px;
+  }  
+  &.r_dot {
+    width: 10px;
+    height: 10px;
+    background: @icons no-repeat -86px -33px;
+  }  
+  &.r_education {
+    width: 21px;
+    height: 14px;
+    background: @icons no-repeat -101px -33px;
+  }
+  &.r_j_education {
+    width: 19px;
+    height: 19px;
+    background: @icons no-repeat -127px -33px;
+  }  
+  &.r_j_project {
+    width: 19px;
+    height: 19px;
+    background: @icons no-repeat -151px -33px;
+  }  
+  &.r_j_d_education {
+    width: 19px;
+    height: 19px;
+    background: @icons no-repeat -175px -33px;
+  } 
+  &.r_phone {
+    width: 14px;
+    height: 17px;
+    background: @icons no-repeat -199px -33px;
+  }  
+  &.r_email {
+    width: 15px;
+    height: 11px;
+    background: @icons no-repeat -218px -33px;
+  }    
+}
+
+.grade_star_b{
+  width: 118px;
+  height: 22px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  background: @icons_v2 no-repeat 0 -26px;
+  vertical-align: middle;
+  line-height: 0;
+
+  i{
+    display: inline-block;
+    width: 118px;
+    height: 22px;
+    overflow: hidden;
+    font-size: 0;
+    background: @icons_v2 no-repeat 0 -50px;
+  }
+}
+
+//不是一种绿的星星（15*15） 公司点评页用到
+.green_s_star_2{
+  width: 83px;
+  height: 15px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  background: @manage_icons no-repeat 0 -253px;
+  line-height: 0;
+  vertical-align: middle;
+  i{
+    display: inline-block;
+    width: 83px;
+    height: 15px;
+    overflow: hidden;
+    font-size: 0;
+    background: @manage_icons no-repeat 0 -233px;
+  }
+}
+
+//小一点的方块（15*15）
+.grade_rect_fifteen {
+  width: 68px;
+  height: 12px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  background: @manage_icons no-repeat 0 -214px;
+  vertical-align: middle;
+  margin-right: 10px;
+  line-height: 0;
+
+  i {
+    width: 68px;
+    height: 12px;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0;
+    background: @manage_icons no-repeat 0 -198px;
+    line-height: 0;
+  }
+}

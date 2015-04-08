@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>面试详情</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>	
+<body>
+<dl class="co_info detail_head">
+	<dt>
+		<img src="images/img_1.jpg">
+	</dt>
+	<dd>
+		<h1>非常正规的一个公司，有笔试</h1>
+		<p class="f12">4月19日 深圳</p>
+	</dd>
+</dl>
+<ul class="detail_nav">
+	<li>
+		<label>面试公司</label>
+		<span>百度</span>
+		<a href="javascript:;">更多</a>
+	</li>
+	<li>
+		<label>面试职位</label>
+		<span>业务支持专员</span>
+		<a href="javascript:;">更多</a>
+	</li>
+	<li>
+		<label>面试结果</label>
+		<img src="images/pass.png" width="14" height="14">
+		<span>面试通过</span>
+	</li>
+	<li>
+		<label>面试难度</label>
+		<i class="i_rect"><em class="em_2"></em></i>
+		<span>一般</span>
+	</li>
+</ul>
+<dl class="iv_detail detail">
+	<dd>
+		<div class="ct">
+			<p>一开始在招聘网站上投了简历，当天就收到HR通知我隔天去面试。去了公司，第一印象就是：怎么长得跟工厂差不多？一层整个大办公区，少说几百人吧，就这么一排排的。销售都在打电话，感觉就是嗡嗡很吵。等了HR好久，然后HR直接带我去部门主管那里面试，也是等了好久。面试完就是做一些Excel表格的基本操作，就这么在部门工作的地方找了台电脑，挤在旁边把测试做完了。然后过了两天，通知我去面试部门高经和总监。跟总监谈话挺愉快，高经因为不在公司，还是电话+视频面的。谁知隔了一个期，HR给电话我谈工资，并要求能否马上入职。于是我就入职了。
+
+			面试的时间有点久，细节记不太清。
+			但从一开始我对这个公司的印象就不太好。管理很乱、环境很乱、很没文化、最重要是不尊重人。
+			后来在里面工作也验证了这几点
+			</p>
+
+      <p class="mt10 mb5"><span class="green">问题</span>：如果每天加班到九点，一周能接受多少天加班一周能接受多少天加班一周能接受多少天加班一周能接受多少天加班一周能接受多少天加班？</p>
+      <p><span class="green">答案</span>：因为太紧张我也忘了</p>
+      <p class="mt10 mb5"><span class="green">问题</span>：如果每天加班到九点，一受多少天加班？</p>
+      <p><span class="green">答案</span>：因为太紧张我也忘了</p>
+
+      <div class="operation">
+        <a href="javascript:;" class="js_useful">
+          <i class="i i_hand"></i> 有用(<em>10</em>)
+        </a>
+        <a href="javascript:;">
+          <i class="i i_edit"></i> 发一条面经
+        </a>
+      </div>
+		</div>
+	</dd>
+</dl>
+
+
+<div style="height: 45px;"></div>
+<footer class="footer_nav" id="footer_nav">
+	<div class="back">
+		<a href="javascript:;">
+			<i class="i i_back"></i>
+		</a>
+	</div>
+	<div class="f_nav_r">
+		<ul>
+			<li>
+				<div class="comboBox">
+					<dl>
+						<dd><a href="#">评论公司</a></dd>
+						<dd><a href="#">评论公司</a></dd>
+						<dd><a href="#">评论公司</a></dd>
+						<dt><i class="i i_tdown"></i></dt>
+					</dl>
+				</div>
+				<a class="js_interview_bt" href="javascript:;"><i class="i i_eq"></i> 面试经历</a>
+			</li>
+			<li>
+				<a href="javascript:;"><i class="i i_eq"></i> 面试技巧</a>
+			</li>
+		</ul>
+	</div>
+</footer>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/help.js"></script>
+<script type="text/javascript" src="js/share.js"></script>
+</html>
+
+

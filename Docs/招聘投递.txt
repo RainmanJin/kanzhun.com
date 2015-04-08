@@ -1,0 +1,67 @@
+1、投递
+请求：/resume/adduserjl.json
+输入：无
+输出：
+流程1：未登录 投递邮箱未被注册
+{
+"resmsg": "成功",
+"rescode": 1,
+"resumeData": {
+"jobType": 0,
+"resumeId": "183|doc",
+"jobId": 1000002605,
+"email": "qa@kanzhun.com",
+"name": "QA",
+"cId": 1800002,
+"type": "verifyEmail"
+}
+}
+
+流程2：未登录 投递邮箱已被注册
+{
+"resmsg": "成功",
+"rescode": 1,
+"resumeData": {
+"jobType": 0,
+"resumeId": "183|doc",
+"jobId": 1000002605,
+"email": "qiaoweibo@techwolf.cn",
+"name": "QA",
+"cId": 1800002,
+"type": "emailLogin",
+"docData": ""
+}
+}
+
+流程3：已登录 未绑定邮箱
+{
+"resmsg": "成功",
+"rescode": 1,
+"resumeData": {
+"jobType": 0,
+"resumeId": "10011293|sys",
+"jobId": 1000002605,
+"email": "qiaoweibo@techwolf.cn",
+"name": "ff",
+"cId": 1800002,
+"type": "bindEmail",
+"docData": ""
+}
+}
+
+流程4：已登录 已绑定邮箱
+{
+"resmsg": "投递成功",
+"rescode": 1,
+"html": "<h3 class=\"deliver_suc\" style=\"margin-top: 18px;\"><i class=\"suc_p\"></i>提交成功！</h3>\n<p class=\"t-center grey_66\">请保持联系通畅，静候佳音~</p>\n"
+}
+
+2、验证邮箱
+请求：/resume/verifydeliver.json
+输入：无
+输出：
+
+3、绑定并验证邮箱（用户中心原绑定邮箱接口）
+请求：/account/bindEmail.json
+输入：无
+输出：

@@ -1,0 +1,474 @@
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+pre,
+form,
+p,
+blockquote,
+input,
+textarea,
+abbr,
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+mark,
+meter,
+menu,
+nav,
+output,
+progress,
+section,
+summary,
+time {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+ul,
+ol {
+  list-style: none;
+}
+iframe,
+a,
+img,
+button {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figure,
+figcaption {
+  display: block;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.none {
+  display: none;
+}
+.t-left {
+  text-align: left;
+}
+.t-center {
+  text-align: center;
+}
+.t-right {
+  text-align: right;
+}
+.inline-block {
+  display: inline-block;
+}
+.middle {
+  vertical-align: middle;
+}
+em,
+i,
+s {
+  font-style: normal;
+}
+body {
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+}
+input[type=submit],
+input[type=button],
+input[type=text],
+textarea,
+button,
+select {
+  font-size: 1em;
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pt15 {
+  padding-top: 15px;
+}
+.p20 {
+  padding: 20px;
+}
+.p10 {
+  padding: 10px;
+}
+.f_12 {
+  font-size: 12px;
+}
+.f_15 {
+  font-size: 15px;
+}
+.f_16 {
+  font-size: 16px;
+}
+.f_18 {
+  font-size: 18px;
+}
+.orange {
+  color: #f49600;
+}
+.red {
+  color: #e85253;
+}
+::-webkit-input-placeholder {
+  color: #999999;
+}
+:-moz-placeholder {
+  color: #999999;
+}
+::-moz-placeholder {
+  color: #999999;
+}
+:-ms-input-placeholder {
+  color: #999999;
+}
+.cube {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+html {
+  height: 100%;
+}
+body {
+  font: normal 14px/1.5 Arial, Helvetica, "Microsoft YaHei", STHeiti, "Droid Sans Fallback", sans-serif;
+  color: #343434;
+  height: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: normal 14px/1.5 Arial, Helvetica, "Microsoft YaHei", STHeiti, "Droid Sans Fallback", sans-serif;
+}
+a {
+  color: #343434;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a.a_ul {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  line-height: 1;
+}
+.mask {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.transmitDialog {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 150px;
+  min-height: 150px;
+  left: 50%;
+  margin-left: -128px;
+  margin-top: -61px;
+  background: url(http://m.kanzhun.com/images/oval_bg.png) no-repeat;
+  background-size: 257px;
+  width: 257px;
+}
+.transmitDialog i.arrows {
+  display: inline-block;
+  background: url(http://m.kanzhun.com/images/arrows.png) no-repeat;
+  background-size: 63px;
+  width: 63px;
+  height: 65px;
+  position: absolute;
+  top: -70px;
+  right: -5px;
+  -webkit-animation: arrowsUp 1s infinite linear;
+}
+.transmitDialog p {
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+}
+@-webkit-keyframes arrowsUp {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(10px, -10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+html {
+  font-size: 14px;
+}
+body {
+  background: url("/images/activity/jinpingmei/rank_bg.jpg") #06488e no-repeat top center;
+  background-size: 100% auto;
+  position: absolute;
+  overflow: hidden;
+}
+.nav {
+  height: 30px;
+  line-height: 30px;
+  background-color: #fefefe;
+  width: 100%;
+}
+.nav .home {
+  margin-left: 15px;
+}
+.nav .home img {
+  width: 50px;
+  vertical-align: top;
+}
+.nav .l_trangle {
+  width: 0;
+  height: 0;
+  border: 5px dashed transparent;
+  border-right: 5px dashed #333333;
+  display: inline-block;
+  margin-right: 5px;
+}
+.nav .tip {
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+.content {
+  position: relative;
+}
+.content .title {
+  margin-top: 50px;
+  text-align: center;
+}
+.content .title .mark {
+  width: 80%;
+}
+.content .title .vertical {
+  margin-top: -20px;
+  width: 75%;
+}
+.content .title .word {
+  position: relative;
+  top: -1.7em;
+  font-size: 1.5rem;
+  color: red;
+  font-weight: bold;
+}
+.content .reasons {
+  padding-bottom: 40px;
+  position: relative;
+}
+.content .reasons ul li {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.content .reasons ul li img {
+  vertical-align: top;
+  width: 66px;
+  float: left;
+  padding: 10px;
+}
+.content .reasons ul li div {
+  padding-right: 30px;
+}
+.content .reasons ul li .arrow {
+  position: absolute;
+  right: 5px;
+  height: 30px;
+  width: 20px;
+  top: 50%;
+  margin-top: -25px;
+}
+.content .reasons ul li .h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.foot {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.foot a {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 0px;
+  margin: 0px;
+  border: 0px;
+  width: 50%;
+}
+.foot .share {
+  background-color: #4564ba;
+}
+.foot .company {
+  background-color: #3d3d8b;
+}
+.popup-wrap {
+  position: fixed;
+  overflow: hidden;
+  bottom: 51px;
+  right: 10px;
+  width: 65%;
+  height: 180px;
+}
+.popup-wrap .popup {
+  position: relative;
+  top: 180px;
+}
+.popup-wrap .popup p {
+  border-radius: 6px;
+  background-color: #333333;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  padding: 5px 0px;
+  color: #ffffff;
+  overflow: hidden;
+}
+.popup-wrap .popup p img {
+  float: left;
+  width: 40px;
+  margin: 10px;
+  opacity: 1;
+}
+.popup-wrap .popup p .text {
+  margin-top: 5px;
+  display: inline-block;
+  float: left;
+  width: 70%;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 3px solid  #000;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 240px;
+  right: 10px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.circle img {
+  height: 36px;
+  width: 36px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.circle img.none {
+  display: none;
+}
+/*三角  上 up   下down 左left 右right */

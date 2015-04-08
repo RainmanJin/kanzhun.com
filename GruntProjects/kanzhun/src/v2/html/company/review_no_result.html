@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>公司面试详情页</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../../../v2/css/widget-v2.css"/>
+  <link rel="stylesheet" href="../../../v2/css/company/review.css"/>
+  <script>
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/company/salary.js"></script>
+</head>
+
+<body class="field_bg">
+<header class="global">
+  <div class="header">
+    <a ka="head-index" href="/" class="logo"><img src="/images/logo.png" width="136" height="40"></a>
+    <nav>
+      <a ka="head-com" href="/gs.html">公司</a>
+      <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+      <a ka="head-recruit" href="/job/">招聘</a>
+      <a ka="head-interview" href="/msh/">面试</a>
+      <a ka="head-news" target="_blank" href="/news/">资讯</a>
+      <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+    </nav>
+    <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+  </div>
+</header>
+<section class="ps_header field_mini_bg clearfix">
+  <div class="clearfix">
+    <form action="/companyl/search/" method="get" id="minisearchForm">
+      <input id="MSSQType" value="2" type="hidden">
+      <input name="stype" id="MSSSType" value="" type="hidden">
+      <dl class="select ps_salary_slt" id="minisearchS">
+        <dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly"><div></div><span class="btn"><i></i></span></dt>
+        <dd>
+          <a href="/jobl/p/">职位</a>
+          <a href="/companyl/search/">公司</a>
+          <a href="/salaryl/search/">工资</a>
+          <a href="/interviewl/search/">面试</a>
+        </dd>
+      </dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value=""><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" autocomplete="off"><input type="hidden" id="cityCode" name="cityCode" value=""><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索"></span>
+    </form>
+  </div>
+</section>
+<!--公司模块-公司头部-->
+
+<section class="co_header clearfix" style="z-index: 4;">
+    <input id="shareTextHid" type="hidden" value="">
+    <input id="shareCoTextHid" type="hidden" value="">
+    <input type="hidden" id="shareImgHid" value="">
+    <a href="" class="co_logo">
+        <i class="tag cubeugc_icon_my"></i><img src="http://img.kanzhun.com/images/logo/20140925/3aaa7746fa42066c1dfd3912c0afb025.jpg" width="150" title="华为" alt="华为logo" data-bd-imgshare-binded="1"><span></span>
+    </a>
+    <div class="co_info">
+        <p class="cmpname" id="companyName">华为 <a href="" class="share_pk">公司PK</a></p>
+        <div class="msgs"><strong>3.5</strong><span class="grade_star_b"><i style="width:83px;"></i></span><a href="" class="grey_99">19556人评价</a></div>
+        <p class="grey_99">通讯<em>|</em>西安<em>|</em>10000人以上<em>|</em>民营</p>
+    </div>
+    <nav class="clearfix">
+        <p id="fixedCoNav">
+            <span class="f_n_name" id="fixedcmpname"><em>华为</em></span>
+            <a href="" title="">简介</a>
+            <a href="" title="">工资</a>
+            <a href="" title="">点评</a>
+            <a href="" title="">招聘</a>
+            <a href="" class="current" title="">面试</a>
+            <a href="" title="">照片</a>
+            <a href="" title="">员工</a>
+        </p>
+    </nav>
+    <aside>
+        <div><a href="" id="headerfollow" class="fright" data-hadattention="no" data-cid="3131" data-mtype="follow.json" class="follow attention_collection">+&nbsp;关注<span class="tangle_init"></span></a><em>233333912人浏览</em></div>
+    </aside>
+</section>
+
+<div class="container_v2 clearfix">
+
+  <section class="f_l_con clearfix">
+    <div class="wrap_style mb15">
+      <div class="cmp_tt clearfix">
+        <span class="grey_99 fright">最后更新七天内（2015-01-29）</span>
+        <h1>易宝支付怎么样</h1>
+        <p class="ml10">互联网行业雇主综合排名<em>NO.1</em>，<a href="#">查看排名</a></p>
+      </div>
+      <p class="line"></p>
+      <div class="co_grade clearfix">
+        <div class="cg_t clearfix">
+          <ul class="cgt_l clearfix">
+            <li class="cgtl_l">
+              <div class="font_h2">--<em>%</em></div>
+              <p class="mt5">员工满意度</p>
+            </li>
+            <li class="cgtl_r">
+              <p><span class="grade_star_b mr10"><i style="width:92px;"></i></span><strong>4.8</strong>分</p>
+              <p>暂无公司点评</p>
+              <p class="mt5"><a class="yellow_btn" href="#">+ 写一条点评</a></p>
+            </li>
+          </ul>
+          <div class="cgt_r">
+            <div class="ceo">
+              <img src="http://img.kanzhun.com/image/9595.gif">
+              <p class="f_14">田国立<br><em class="grey_99 f_12">首席执行官</em></p>
+              <a class="fright grey_99 mt10 js_correctionceo_bt" href="javascript:;" data-coid="9595" ka="review-ceo-edit"><i class="i_correction"></i>纠错</a>
+            </div>
+            <span class="tangle_init"></span>
+          </div>
+        </div>
+        <ul class="cg_b">
+          <li class="circle_chart">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>--%的员工<br>愿意推荐朋友来<br>这里工作</h5>
+          </li>
+          <li class="circle_chart">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>--%的员工<br>看好公司<br>未来发展</h5>
+          </li>
+          <li class="circle_chart li_last">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>--%的员工<br>支持CEO马化腾</h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--点评-->
+    <div class="sy_comment wrap_style">
+      <h3>更多互联网行业公司点评</h3>
+    </div>
+    <!--点评-->
+
+    <!--点评list-->
+    <!--点评列表-->
+
+<div class="view_see_more wrap_style mb15">
+    <p class="v_s_m_tt"><a href="" class="fright f_14 links">查看全部&gt;</a>更多互联网公司点评</p>
+    <dl class="co-left-compentlist">
+        <dt>
+            <a href=""><img src="http://img.kanzhun.com/images/logo/20140925/3aaa7746fa42066c1dfd3912c0afb025.jpg" alt=""><span></span></a>
+        </dt>
+        <dd class="c_s_result_detail">
+
+            <h2>
+                <a href=""><span>“易宝支付是锻炼行业产品经理的好地方”</span></a>
+            </h2>
+
+            <p class="f_12 grey_99 view_address">北京大学 程序员 在职员工 -&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+
+            <p class="c_s_result_text"><strong>公司优点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度。</p>
+
+            <p class="c_s_result_text"><strong>公司缺点：</strong>笔试都是大题，涉及比较广有线程调度。</p>
+
+        </dd>
+    </dl>
+
+    <dl class="co-left-compentlist">
+        <dt>
+            <a href=""><img src="http://img.kanzhun.com/images/logo/20140925/3aaa7746fa42066c1dfd3912c0afb025.jpg" alt=""><span></span></a>
+        </dt>
+        <dd class="c_s_result_detail">
+
+            <h2>
+                <a href=""><span>“易宝支付是锻炼行业产品经理的好地方”</span></a>
+            </h2>
+
+            <p class="f_12 grey_99 view_address">北京大学 程序员 在职员工 -&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+
+            <p class="c_s_result_text"><strong>公司优点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度。</p>
+
+            <p class="c_s_result_text"><strong>公司缺点：</strong>笔试都是大题，涉及比较广有线程调度。</p>
+
+        </dd>
+    </dl>
+
+    <dl class="co-left-compentlist">
+        <dt>
+            <a href=""><img src="http://img.kanzhun.com/images/logo/20140925/3aaa7746fa42066c1dfd3912c0afb025.jpg" alt=""><span></span></a>
+        </dt>
+        <dd class="c_s_result_detail">
+
+            <h2>
+                <a href=""><span>“易宝支付是锻炼行业产品经理的好地方”</span></a>
+            </h2>
+
+            <p class="f_12 grey_99 view_address">北京大学 程序员 在职员工 -&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+
+            <p class="c_s_result_text"><strong>公司优点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度。</p>
+
+            <p class="c_s_result_text"><strong>公司缺点：</strong>笔试都是大题，涉及比较广有线程调度。</p>
+
+        </dd>
+    </dl>
+</div>
+    <!--点评list-->
+
+    <!--点评link-->
+    <div class="sy_comment wrap_style mt15 t-center">
+      <a href="">更多互联网行业公司点评</a>
+    </div>
+    <!--点评link-->
+
+
+    <!--打分-->
+    <!--点评打分-->
+
+<div class="wrap_style co-review-grade mt15">
+  <h2><b>“你在这里工作过？”</b>分享你的经验，帮助求职者看得更准！</h2>
+
+  <dl>
+    <dt><img src="http://img.kanzhun.com/image/l55255.gif" alt=""></dt>
+    <dd>
+      <div class="form">
+        <h3>易宝支付</h3>
+        <div>
+          <a href="#">
+            <img src="../../../../images/v2/large_start.jpg" alt=""/><br/>
+          </a>
+          <p class="grey_99 mt5">点击星星为公司打分</p>
+        </div>
+        <textarea class="js_textarea_enter" data-url="/test" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="link">
+        <a href="#">+晒晒你的工资</a>
+        <a href="#">+发一条面经</a>
+        <a href="#">+发一张公司靓照</a>
+      </div>
+    </dd>
+  </dl>
+</div>
+    <!--打分-->
+
+  </section>
+
+
+
+  <section class="f_r_con clearfix">
+    <!--公司模块-右侧-写一条评论/面经-->
+
+<div class="wrap_style send_interview mb15">
+  <p class="t-center mb15"><a href="" class="yellow_btn">写一条面经</a></p>
+  <p><img src="/images/view_v2-img/send_message.jpg"></p>
+</div>
+
+
+    <!--公司模块-右侧-平均工资入口/点评-->
+
+<div class="wrap_style average mb15">
+    <h2 class="title" title="百度">百度平均工资</h2>
+    <div class="item">
+        <a href="">
+            <p class="t grey_33"><span><em class="f_14">￥</em><strong>12398</strong></span>&nbsp;/月</p>
+            <div>比同行业水平<span><i class="tangle_init"></i>高16%</span></div>
+        </a>
+        <p class="employee_share grey_99 mt10"><a href="" class="fright links">查看更多&gt;</a>来自4292名员工分享</p>
+
+    </div>
+</div>
+
+    <!--公司模块-右侧带星星的公司列表-->
+
+<div class="wrap_style">
+  <h2 class="f_tt mt20 mb15">汽车信息领域热门公司</h2>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+</div>
+
+    <!--公司模块-右侧-热门职位/点评-->
+
+<div class="wrap_style sy_hotpost mb15">
+    <h2 class="title">热门职位</h2>
+
+    <ul class="item">
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+    </ul>
+
+</div>
+
+  </section>
+</div>
+
+</body>
+</html>

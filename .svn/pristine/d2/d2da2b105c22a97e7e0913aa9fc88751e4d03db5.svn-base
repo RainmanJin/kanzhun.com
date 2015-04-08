@@ -1,0 +1,36 @@
+<section class="top-search" id="topSearchOriginal">
+  <div class="top-search-form clearfix">
+    <form action="">
+      <fieldset>
+        <input type="text" name="key" data-placeholder="看准">
+        <input type="submit" value="搜索">
+      </fieldset>
+      <p>
+        热搜词：
+        <a href="#">百度</a>
+        <a href="#">产品经理</a>
+        <a href="#">设计师</a>
+        <a href="#">程序员</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+<section class="top-search top-search-fixed" id="topSearchFixed">
+  <div class="top-search-form clearfix">
+    <a href="#"><img src="/images/logo-g.jpg" class="logo-g"></a>
+    <form action="">
+      <fieldset>
+        <input type="text" name="" placeholder="搜索公司/职位">
+        <input type="submit" value="搜索">
+      </fieldset>
+      <p>
+        热搜词：
+        <a href="#">百度</a>
+        <a href="#">产品经理</a>
+        <a href="#">设计师</a>
+        <a href="#">程序员</a>
+      </p>
+    </form>
+  </div>
+</section>

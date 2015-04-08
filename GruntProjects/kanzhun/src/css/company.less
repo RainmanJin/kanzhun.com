@@ -1,0 +1,619 @@
+@import "common/var";
+@import "modules/company/common";
+@import "modules/company/cmp_titles";
+@import "modules/company/bottomlinks";
+@import "modules/company/cmp_news";  //公司新闻
+@import "noresult";
+//@import "modules/dialog";
+@import "modules-v2/dialog-v2";
+@import "modules/comment";
+@import "modules/share";
+@import "modules/company/comment_detail";   //点评详情模块；
+@import "modules/company/interview_detail";  //面试详情模块；
+@import "modules/ugc/company_correction";  //公司纠错
+@import "modules/company/financing";  //公司融资信息
+@import "modules/company/salary_desc"; //工资图表
+@import "modules-v2/field/field_tags";   //领域标签
+@import '../v2/css/company/piece/co-header';  //公司级页面头部样式
+
+@import "modules/company/co-right-reviewlist";   //右侧点评列表（用在公司招聘页）
+
+.co_tb{
+	background-color: #efefef;
+	padding: 12px 12px 4px;
+	overflow: hidden;
+	zoom:1;
+
+	dt{
+		float: left;
+		overflow: hidden;
+		zoom: 1;
+		div {
+			&.cmphoto {
+				position: relative;
+				margin-bottom: 5px;
+				width: 208px;
+				padding: 6px;
+				border: 1px solid #dddddd;
+				text-align: center;
+
+				img{
+					background-color: #fff;
+					height: 142px;
+					max-width: 208px;
+				}
+				
+				.sendphoto {
+					position: absolute;
+					left: 9px;
+					top: 6px;
+					display: none;
+					background: url(../images/sendphoto.png) repeat left top;
+					width: 202px;
+					height: 142px;
+					//opacity: 0.5;
+
+					p {
+						text-align: center;
+						font-size: 17px;
+						color: #fff;
+						padding: 40px 0 20px 0;
+						font-weight: normal;
+						//opacity: 1;
+					}
+
+					a {
+						position: relative;
+						display: inline-block;
+						color: #fff;
+						padding: 7px 30px;
+						background-color: #6e6e6e;
+						border-radius: 2px;
+						//opacity: 1;
+					}
+				}
+
+			}
+		}
+
+		p{
+			overflow: hidden;
+			zoom: 1;
+			img{
+				background-color: #fff;
+				width: 48px;
+				height: 32px;
+				padding: 1px;
+				border: 1px solid #dddddd;
+				float: left;
+				margin-right: 5px;
+				cursor: pointer;
+			}
+
+			a.addimg{
+				display: block;
+				float: left;
+				width: 50px;
+				height: 34px;
+				border: 1px dashed #dddddd;
+				text-align: center;
+				margin-right: 5px;
+				background: url(../images/cmpimg.png) no-repeat center;
+			}
+		}
+	}
+
+	dd{
+		margin-left: 242px;
+		//padding-top: 5px;
+		strong{
+			color: @grey_99;
+			font-weight: normal;
+			width: 6em;
+			display: inline-block;
+		}
+
+		span.urlinfo {
+			display: inline-block;
+			.ellipsis(ellipsis);
+			width: 12em;
+		}
+
+		color: @grey_99;
+
+		.edit{
+			float: right;
+			&:hover{
+				.i_correction{
+					background-position: -16px -560px;
+				}
+			}
+		}
+		p{
+			line-height: 1.9em;
+
+			/* &.competitors{
+				display: block;
+				a{
+					display: inline-block;
+					white-space: nowrap;
+					margin-right: 10px;
+				}
+			} */
+		}
+
+		div.competitors {
+			overflow: hidden;
+			zoom: 1;
+
+			strong {
+				display: block;
+				float: left;
+			}
+
+			div {
+				float: left;
+				width: 260px;
+		
+				a{
+					display: inline-block;
+					white-space: nowrap;
+					margin-right: 10px;
+				}
+			}
+		}
+
+	}
+}
+
+
+
+article{
+	&.co_intro{
+		line-height: 1.6em;
+		padding: 10px 0;
+		p{
+			text-indent: 2em;
+		}
+	}
+}
+
+
+
+.itv_action{
+	padding: 15px 0 20px;
+	border-bottom: 1px solid @grey_e7;
+	a{
+		margin-right: 22px;
+	}
+}
+
+
+//list 
+section.recruitment_list {
+	margin-top: 15px;
+}
+
+aside.attention {
+	margin-top: 48px;
+}
+
+ul.list_detail {
+	li {
+		position: relative;
+		border-bottom: 1px solid #e7e7e7;
+		padding: 15px 0;
+		min-height: 60px;
+
+		div.position_name {
+			h2 {
+				float: left;
+				font-size: 14px;
+				font-weight: normal;
+			}
+
+			i.directsup {
+				vertical-align: -3px;
+				//margin-top: -15px;
+			}
+		} 
+
+		p {
+			width: 540px;
+			line-height: 2em;
+			strong {
+				font-weight: normal;
+				font-size: 15px;
+				color: #000;
+			}
+		}
+		aside {
+			position: absolute;
+			left: 560px;
+			top: 19px;
+			a{
+				&.favorite{
+					display: block;
+					margin-top: 15px;
+					text-align: center;
+					color: @def;
+					&:hover {
+						color: @blue;
+					}
+				}
+
+				&.favorited{
+					color: @grey_99;
+					cursor: default;
+					&:hover{
+						color: @grey_99;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		p.request {
+			em {
+				margin: 0 10px;
+				color: @grey_e7;
+			}
+			b {
+				font-size: 17px;
+				color: #eb7676;
+			}
+		}
+	}
+}
+
+.salary_search{
+	padding: 10px 20px;
+	background-color: #f3f3f3;
+	width: 645px;
+	position: relative;
+	left: -20px;
+	top: -1px;
+	margin: 0 0 10px;
+
+	.field_b{
+		float: left;
+		width: 230px;
+		margin-right: 15px;
+	}
+
+	.select{
+		float: left;
+		width: 180px;
+		margin-right: 15px;
+	}
+	
+	.btn_grey_l{
+		float: left;
+		width: 120px;
+		padding: 0;
+
+		input{
+			padding: 0;
+			width: 120px;
+			text-align: center;
+		}
+	}
+
+	.search_close{
+		float: right;
+		margin-top: 12px;
+		color: @blue;
+		cursor: pointer;
+	}
+
+	.search_cancel{
+		display: block;
+		width:4em;
+		float: right;
+		margin-top: 12px;
+	}
+}
+
+
+//右侧新加
+ul {
+	&.newest {
+		li {
+			border-bottom: 1px dashed @grey_e7;
+			padding: 10px 0;
+
+			a {
+				display: block;
+				cursor: pointer;
+			}
+
+			em {
+				margin: 0 5px;
+				vertical-align: 1px;
+				color: @grey_e7;
+			}
+		}
+
+		span {
+			float: right;
+			color: #eb7676;
+		}
+	}
+
+	&.workin {
+		li {
+			padding: 10px 0;
+			overflow: hidden;
+
+			a.imgshow {
+				display: block;
+				float: left;
+				width: 58px;
+				height: 58px;
+				position: relative;
+				margin-right: 10px;
+
+				img {
+					width: 58px;
+					height: 58px;
+				}
+
+				span {
+					display: inline-block;
+					width: 58px;
+					height: 58px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: url(../images/workin_imgs.png) no-repeat left top;
+				}
+
+				&:hover {
+					span {
+						background-position: -63px top;
+					}
+				}
+			}
+
+			div {
+				float: left;
+				width: 195px;
+				padding-top: 10px;
+
+				p {
+					.ellipsis(ellipsis);
+
+					i {
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	&.interestcmp {
+		overflow: hidden;
+		zoom: 1;
+		li {
+			_position: relative;
+			float: left;
+			width: 320px;
+			padding: 15px 0;
+			border-bottom: 1px solid @grey_e7;
+			margin-bottom: -1px;
+			overflow: hidden;
+			zoom: 1;
+
+			a.logo {
+				text-decoration: none;
+				display: block;
+				float: left;
+				width: 94px;
+				height: 94px;
+				border: 1px solid #E7E7E7;
+				margin-right: 15px;
+				overflow: hidden;
+				font-size: 0;
+
+				img {
+					width: 94px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+
+				span {
+					display: inline-block;
+					width: 0;
+					height: 100%;
+					vertical-align: middle;
+				}
+			}
+
+			p {
+				line-height: 1em;
+				padding-bottom: 5px;
+				white-space: nowrap;
+				overflow: hidden;
+
+				&.scores {
+					padding-bottom: 15px;
+					color: @grey_99;
+
+					strong {
+						color: @def;
+					}
+
+					span,i {
+						vertical-align: -4px;
+					}
+				}
+
+				em {
+					display: inline-block;
+					.ellipsis(ellipsis);
+					width: 100px;
+
+					&.leftem {
+						padding-right: 9px;
+					}
+
+					a {
+						padding-right: 5px;
+					}
+				}
+			}
+
+			h3.cmpname {
+				padding: 5px 0 5px 0 ;
+				line-height: 1em;
+				white-space: nowrap;
+				overflow: hidden;
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+		
+	}
+}
+
+div{
+	&.interestcmp {
+		overflow: hidden;
+		*zoom: 1;
+		padding-bottom: 10px;
+		border-bottom: 1px solid @grey_e7;
+
+		h2 {
+			float: left;
+			font-size: 16px;
+			font-weight: normal;
+		}
+
+		a {
+			float: right;
+			font-size: 14px;
+		}
+	}
+}
+	//职位推荐
+h2 {
+	&.recommended_tt {
+		font-size: 16px;
+		font-weight: normal;
+		border-bottom: 1px solid @grey_e7;
+		height: 35px;
+		line-height: 35px;
+
+		span {
+			display: inline-block;
+			border-bottom: 1px solid @green;
+			height: 35px;
+			line-height: 35px;
+			margin: 0 20px -1px 0;
+			position: relative;
+			zoom: 1;
+		}
+	}
+}
+
+table.recommendation {
+	border-collapse:collapse;
+	width: 645px;
+	table-layout: fixed;
+
+	tr {
+		background-color: #f7f7f7;
+		height: 30px;
+		&:nth-child(odd) {
+			background-color: #fff;
+		}
+	}
+
+	th {
+		font-size: 14px;
+		font-weight: normal;
+		text-align: left;
+		height: 35px;
+
+		span {
+			padding-left: 15px;
+		}
+
+		&.positions {
+			span {
+				padding-left: 10px;
+			}
+		}
+	}
+
+	td {
+		padding: 0 10px;
+
+		a {
+			display: block;
+			.ellipsis(ellipsis);
+		}
+	}
+}
+
+ul.cmprecommended {
+	overflow: hidden;
+	zoom: 1;
+	padding-top: 10px;
+
+	li {
+		width: 190px;
+		float: left;
+		margin-right: 20px;
+
+		a {
+			display: block;
+			.ellipsis(ellipsis);
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+}
+
+//增加加班，年薪，奖金什么的
+div.overtime {
+	position: relative;
+	height: 39px;
+	overflow: hidden;
+	border-bottom: 1px solid @grey_e7;
+	.transition(all .2s ease);
+
+	a {
+		position: absolute;
+		bottom: 8px;
+		right: 20px;
+
+		i {
+			margin-left: 5px;
+		}
+	}
+	table {
+		width: 645px;
+
+		th, td {
+			height: 38px;
+			line-height: 38px;
+			border-top: 1px solid @grey_e7;
+		}
+
+		th {
+			width: 85px;
+			border-right: 1px solid @grey_e7;
+			text-align: center;
+		}
+
+		td {
+			text-align: left;
+
+			p {
+				padding-left: 15px;
+			}
+		}
+	}
+}
+

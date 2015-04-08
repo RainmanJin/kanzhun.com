@@ -1,0 +1,53 @@
+
+
+//转发提示
+.mask{
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+}
+.transmitDialog{
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 150px;
+  min-height: 150px;
+  left: 50%;
+  margin-left: -128px;
+  margin-top: -61px;
+  background: url(http://m.kanzhun.com/images/oval_bg.png) no-repeat;
+  background-size: 257px;
+  width: 257px;
+  i.arrows{
+    display: inline-block;
+    background: url(http://m.kanzhun.com/images/arrows.png) no-repeat;
+    background-size: 63px;
+    width: 63px;
+    height: 65px;
+    position: absolute;
+    top: -70px;
+    right: -5px;
+    -webkit-animation: arrowsUp 1s infinite linear;
+  }
+  p{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+  }
+}
+@-webkit-keyframes arrowsUp{
+  0%{
+    -webkit-transform: translate(0,0);
+  }
+  50%{
+    -webkit-transform: translate(10px,-10px);
+  }
+  100%{
+    -webkit-transform: translate(0,0);
+  }
+}

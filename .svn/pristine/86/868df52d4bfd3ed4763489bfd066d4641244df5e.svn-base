@@ -1,0 +1,432 @@
+@import "../../common/var";
+
+/* //发布工资表单
+p {
+  &.bask {
+    padding: 10px 0;
+
+    i {
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      width: 29px;
+      height: 29px;
+      background: @icons no-repeat -99px -558px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  &.radios {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+
+    input {
+      vertical-align: -2px;
+    }
+  }
+
+  &.thanks {
+    text-align: center;
+    padding: 20px 0;
+    i {
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      width: 26px;
+      height: 20px;
+      background: @icons no-repeat -214px top;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+
+  &.err {
+    clear: both;
+    color: #d60000;
+    padding-top: 2px;
+    position: absolute;
+    top: 37px;
+    left: 6em;
+  }
+}
+ul.sendsalarycon {
+  background-color: #eff9ef;
+  padding: 25px 0 10px 15px;
+
+  li {
+    position: relative;
+    margin-bottom: 20px;
+
+    label.tt {
+      display: block;
+      float: left;
+      width: 5em;
+      margin-right: 10px;
+      height: 39px;
+      line-height: 39px;
+    }
+
+    div.space {
+      float: left;
+
+      span.zhi {
+        display: block;
+        float: left;
+        height: 39px;
+        line-height: 39px;
+        padding: 0 10px;
+      }
+
+      dl {
+        float: left;
+      }
+    }
+
+    input.salaryipt {
+      width: 180px;
+    }
+
+    label em {
+      margin-right: 3px;
+    }
+
+    input.btn_o_l {
+      padding: 0;
+      width: 190px;
+    }
+
+
+    span.unit{
+      position: absolute;
+      right: 25px;
+      top: 10px;
+    }
+
+    &.addincome {
+      padding-left: 5.7em;
+      margin-bottom: 10px;
+      *margin-bottom: 0;
+
+      a.salaryDetaile{
+        margin-right: 85px;
+
+        i{
+          margin-left: 10px;
+        }
+      }
+
+      span{
+        color: #d60000;
+      }
+    }
+
+    p.iptpay {
+      left: 300px;
+      top: 8px;
+    }
+
+    &.adddetail {
+      padding-left: 80px;
+      margin: 0;
+    }
+  }
+
+  dl.experience {
+    width: 190px;
+  }
+} */
+
+//发布工资表单
+p {
+ &.bask {
+   padding: 10px 0;
+   font-weight: bold;
+   font-size: 16px;
+
+   i {
+     display: inline-block;
+     font-size: 0;
+     line-height: 0;
+     overflow: hidden;
+     width: 29px;
+     height: 29px;
+     background: url(../images/positionimgs/icons.png) no-repeat 0 -56px;
+     vertical-align: middle;
+     margin-right: 5px;
+   }
+
+   span {
+     margin-left: 10px;
+     font-size: 14px;
+     font-weight: normal;
+   }
+ }
+
+ &.radios {
+   float: left;
+   height: 39px;
+   line-height: 39px;
+
+   input {
+     vertical-align: -2px;
+   }
+ }
+
+ &.thanks {
+   text-align: center;
+   padding: 20px 0;
+   i {
+     display: inline-block;
+     font-size: 0;
+     line-height: 0;
+     overflow: hidden;
+     width: 26px;
+     height: 20px;
+     background: @icons no-repeat -214px top;
+     vertical-align: middle;
+     margin-right: 5px;
+   }
+ }
+
+ &.err {
+   clear: both;
+   color: #d60000;
+   padding-top: 2px;
+   position: absolute;
+   top: 37px;
+   left: 6em;
+ }
+}
+
+ul {
+ &.sendsalarycon {
+   background-color: #eff9ef;
+   padding: 25px 0 10px 15px;
+
+   li {
+     position: relative;
+     margin-bottom: 20px;
+
+     label.tt {
+       display: block;
+       float: left;
+       width: 5em;
+       margin-right: 10px;
+       height: 39px;
+       line-height: 39px;
+     }
+
+     div.space {
+       float: left;
+
+       span.zhi {
+         display: block;
+         float: left;
+         height: 39px;
+         line-height: 39px;
+         padding: 0 10px;
+       }
+
+       dl {
+         float: left;
+       }
+     }
+
+     input.salaryipt {
+       width: 180px;
+       background-color: #fff;
+     }
+
+     label em {
+       margin-right: 3px;
+     }
+
+     input.btn_o_l {
+       padding: 0;
+       width: 190px;
+     }
+
+
+     span.unit{
+       position: absolute;
+       right: 25px;
+       top: 10px;
+     }
+
+     &.addincome {
+       padding-left: 5.7em;
+       margin-bottom: 10px;
+       *margin-bottom: 0;
+
+       a.salaryDetaile{
+         margin-right: 85px;
+
+         i{
+           margin-left: 10px;
+         }
+       }
+
+       span{
+         color: #d60000;
+       }
+     }
+
+     p.iptpay {
+       left: 300px;
+       top: 8px;
+     }
+
+     &.adddetail {
+       padding-left: 80px;
+       margin: 0;
+     }
+   }
+ }
+
+ &.add_salary_detail{
+   background-color: #fff;
+   border: 1px solid #d7d8d7;
+   width: 310px;
+   padding: 20px 20px 10px 20px;
+   margin: 0 0 15px 0;
+   background-color: #f5fbf6;
+
+   input {
+     width: 180px; 
+     padding-right: 30px;
+
+     &.onlyready {
+       background-color: #e5e5e5;
+     }
+   }
+ }
+
+ &.salary-info{
+   li.salaryimg{
+     padding-top: 10px;
+     overflow: hidden;
+     zoom: 1;
+
+     img{
+       float: left;
+       width: 94px;
+       height: 42px;
+     }
+
+     p{
+       float: left;
+       height: 30px;
+       margin-left: 10px;
+       background-color: #fff;
+       background: url(../images/left-line.jpg) no-repeat left center;
+
+       span{
+         display: inline-block;
+         margin-left: 7px;
+         padding: 0 10px;
+         height: 28px;
+         line-height: 28px;
+         border: 1px solid @grey_e7;
+         border-left: none;
+         color: #eb7676;
+         font-size: 17px;
+       }
+     }
+   }
+
+   a.seeinfo{
+     padding: 0 88px;
+   }
+ }
+
+ &.othersalary {
+   overflow: hidden;
+   zoom: 1;
+   margin-right: -20px;
+   li {
+     overflow: hidden;
+     zoom: 1;
+     float: left;
+     width: 310px;
+     margin: 0 20px 5px 0; 
+     
+     p {
+       float: left;
+       width: 200px;
+
+       span {
+         display: inline-block;
+         .ellipsis(ellipsis);
+         width: 10em;
+       }
+
+       em {
+         float: right;
+         color: @grey_99;
+       }
+     } 
+
+     div {
+       float: left;
+       height: 12px;
+       margin-top: 4px;
+       background-color: @green;
+     }
+   }
+ }
+
+ &.similar {
+   em {
+     float: right;
+     color: @grey_99;
+   }
+
+   span {
+     display: inline-block;
+     .ellipsis(ellipsis);
+     width: 12em;
+   }
+ }
+}
+
+dl {
+ &.selecttime {
+   width: 120px;
+ }
+
+ &.experience {
+   width: 190px;
+ }
+}
+
+h3 {
+ &.allposition {
+   border-bottom: 1px solid #e7e7e7;
+   font-weight: normal;
+   padding-bottom: 5px;
+ }
+}
+
+//离开时间提示框
+div.prompt_wrap {
+ position: absolute;
+ right: 115px;
+ top: 10px;
+ width: 16px;
+ height: 16px;
+
+ div {
+   width: 13em;
+   top: 30px;
+   left: -25px;
+   color: @grey_99;
+ }
+}

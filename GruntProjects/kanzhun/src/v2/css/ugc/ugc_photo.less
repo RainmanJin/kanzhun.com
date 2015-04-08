@@ -1,0 +1,125 @@
+@import "../../../css/common/var";
+@import "../var";
+
+@ugc_icons_v2: url("@{img}/v2/ugc_icons.png");
+.photo_h3{
+  color: @grey_99;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: #f6f6f6;
+  padding: 10px 15px;
+  margin: 0 -15px;
+}
+.photo_content{
+}
+.pc_list{
+  position: relative;
+  padding-top:15px;
+  ul{
+    margin-right: -15px;
+    height: 325px;
+    li{
+      float: left;
+      margin-right: 15px;
+      .photo_show{
+        .ps_img{
+          position: relative;
+          cursor: pointer;
+          img{
+            display: block;
+            width: 214px;
+            height: 214px;
+            border: 1px solid #e2e2e2;
+          }
+          a.bt_close{
+            display: none;
+            position: absolute;
+            top:5px;
+            right: 5px;
+            width: 20px;
+            height: 20px;
+            background: @ugc_icons_v2 no-repeat -180px -20px;
+          }
+          &:hover{
+            a.bt_close{
+              display: inline-block;
+            }
+            .bg{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0,0,0,.3);
+            }
+          }
+        }
+        textarea{
+          margin-top: 10px;
+          display: block;
+          padding: 5px;
+          border-width: 2px 1px 1px 1px;
+          border-style: solid;
+          border-color: #ccc;
+          width: 204px;
+          height: 47px;
+        }
+      }
+      .photo_add{
+        background-color: #f3f3f3;
+        width: 214px;
+        height: 214px;
+        border: 1px solid #e2e2e2;
+        cursor: pointer;
+        .p1{
+          font-size: 16px;
+          color: @grey_99;
+        }
+      }
+      .uploading{
+        display: none;
+        margin-top: 100px;
+        width: 216px;
+      }
+    }
+  }
+  .form_set{
+    margin-bottom: 40px;
+  }
+  p.err{
+    position: absolute;
+    top: 235px;
+    left: 0;
+  }
+}
+.pc_add{
+  display: none;
+  min-height: 350px;
+  .btn_o_g{
+    width: 145px;
+    font-size: 18px;
+    padding: 0;
+    margin-top: 150px;
+  }
+  i.i_addPhoto{
+    display: inline-block;
+    width: 24px;
+    height: 21px;
+    background: @ugc_icons_v2 no-repeat -120px -40px;
+    vertical-align: -3px;
+  }
+}
+
+//上传按钮
+.webuploader-container{
+  position:relative;
+}
+.webuploader-pick{
+  position:relative;
+  display: inline-block;
+}
+.webuploader-element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px,1px,1px,1px);
+}

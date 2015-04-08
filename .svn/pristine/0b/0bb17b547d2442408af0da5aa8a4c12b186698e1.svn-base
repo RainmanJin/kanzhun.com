@@ -1,0 +1,161 @@
+@import "../../common/var";
+
+//面试
+.iv_grade{
+  padding-top: 15px;
+  overflow: hidden;
+  zoom:1;
+
+  dl{
+    float: left;
+
+    &.total{
+      width: 220px;
+    }
+
+    &.level{
+      width: 165px;
+      padding-left: 20px;
+      border-left: 1px solid @grey_e7;
+      border-right: 1px solid @grey_e7;
+      padding-bottom: 25px;
+    }
+    &.from{
+      padding-left: 20px;
+
+      p{
+        line-height: 1.7em;
+        white-space: nowrap;
+      }
+      span{
+        margin: 0 5px;
+      }
+    }
+
+  }
+  dt{
+    h3 {
+      color: @black;
+      padding-bottom: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
+
+.pie_chart{
+  canvas{
+    float: left;
+  }
+
+  .pie_bar{
+    margin-left: 90px;
+  }
+
+  p{
+    line-height: 1.7em;
+  }
+  
+  span{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+
+    &.easy{
+      background-color: @green;
+    }
+    &.normal{
+      background-color: #abd667;
+    }
+    &.hard{
+      background-color: #ededed;
+    }
+    &.wlzp{
+      background-color: #a7dbff;
+    }
+    &.xyzp{
+      background-color: #16b6cc;
+    }
+    &.nbtj{
+      background-color: #05c1f1;
+    }
+    &.lttj{
+      background-color: #0ca6f0;
+    }
+    &.shzp{
+      background-color: #147cde;
+    }
+    &.qt{
+      background-color: #0870c9;
+    }
+  }
+
+  .pie-bar-toggle{
+    padding-left: 22px;
+    em{
+      cursor: pointer;
+    }
+
+    i{
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      border-width: 4px 4px 0 4px;
+      border-style: solid dashed;
+      border-color: #6f6e6e transparent transparent transparent;
+      vertical-align: 2px;
+    }
+
+    em.active{
+      i{
+        border-width: 0 4px 4px 4px;
+        border-color: transparent transparent #6f6e6e transparent;
+      }
+    }
+  }
+}
+
+.circle_chart{
+  overflow: hidden;
+  zoom:1;
+
+  .doughnua_chart{
+    float: left;
+
+    span {
+      z-index: 7;
+    }
+  }
+  canvas{
+    vertical-align: middle;
+  }
+
+  h5{
+    padding: 22px 0 0 8px;
+    margin-left: 60px;
+    font-weight: normal;
+    font-size: 14px;
+  }
+}
+
+//需求量
+.highcharts-tooltip {
+  
+}
+
+.highcharts-tooltip  {
+  padding: 0;
+ 
+  p {
+    margin: -7px -8px -8px -7px;
+    padding: 8px;
+    background: url(../images/positionimgs/po_imgs6.png) no-repeat left top;
+    /* border: 1px solid #78b3ec; */
+  }
+}

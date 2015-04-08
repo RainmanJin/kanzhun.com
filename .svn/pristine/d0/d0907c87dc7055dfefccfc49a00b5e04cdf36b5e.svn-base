@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>kanzhun</title>
+  <link rel="stylesheet" href="../css/lottery.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <p class="banner"><img src="../images/banner.jpg" ></p>
+
+  <div class="content">
+    <div class="t-center mb10">
+      你的朋友正在参与#看世界杯，免费抢彩票#活动，立即关注【看准网】，即可帮TA抢彩票！
+      <p class="grey">关注成功后，自己也能抢彩票哟！</p>
+    </div>
+
+
+    <p class="pointing"><i></i></p>
+
+    <p><a href="#" class="orange_btn" id="bt_transmit">立即邀请，抢免费彩票</a></p>
+
+    <h4 class="mt20 mb10">活动详情：</h4>
+    <section class="info">
+      <h1 class="mb10">拉上小伙伴一起为你加油，冲击1000万大奖：</h1>
+      <p><strong>1.</strong> 邀请小伙伴们来为你加油；</p>
+      <p><strong>2.</strong> 小伙伴们打开活动页面并关注看准网微信账号，即为一次加油；</p>
+      <p><strong>3.</strong> 集齐三次加油，彩票就归你了！</p>
+    </section>
+
+    <h4 class="mt15 mb10">活动时间：即日起--2014年7月8日18:00</h4>
+    <h4>活动规则：</h4>
+    <p>① 凡到期未集齐3次加油者，将无法获得彩票参与抽奖。 <br/>
+      ② 每个微信号只可以领取一张彩票邀请小伙伴加油。<br/>
+      ③ 集齐三个小伙伴加油就可以参与百万抽奖。<br/>
+      ④ 中奖用户可发送信息【我要领奖】+手机号码（如：我要领奖+13212345678）到看准网订阅号即可。</p>
+
+  </div>
+</div>
+
+<script>
+  (function(){
+    var el=document.createElement("div");
+    var h=''+
+      '<div>'+
+      '<div class="mask" id="mask" style="display:none"></div>'+
+      '<div class="transmitDialog" id="transmitDialog" style="display:none">'+
+      '<p>'+
+      '点击右上角的【发送给朋友】<br>或【分享到朋友圈】<br>'+
+      '拉上小伙伴帮忙抢彩票'+
+      '</p>'+
+      '<i class="arrows"></i>'+
+      '</div>'+
+      '</div>';
+    el.innerHTML=h;
+    document.body.appendChild(el);
+    document.getElementById("bt_transmit").addEventListener("click",function(){
+      document.getElementById("mask").style.display="block";
+      document.getElementById("transmitDialog").style.display="block";
+    });
+    document.body.addEventListener("click",function(e){
+      if(e.target.id!="bt_transmit"){
+        document.getElementById("mask").style.display="none";
+        document.getElementById("transmitDialog").style.display="none";
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
+
+

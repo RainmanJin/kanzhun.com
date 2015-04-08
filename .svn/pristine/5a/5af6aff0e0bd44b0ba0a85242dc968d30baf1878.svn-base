@@ -1,0 +1,244 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+dl {
+  &.plr_twenty {
+    padding: 0 20px 15px;
+
+    dt {
+      margin-top: 15px;
+      padding: 15px 0 0;
+      font-size: 16px;
+      color: @grey_33;
+      font-weight: bold;
+      border-top: 1px dashed #e3e3e3;
+
+      span{
+        .ellipsis(ellipsis);
+        font-weight: normal;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 8em;
+        font-size: 14px;
+        color: #666666;
+      }
+
+      div.C-toggler{
+        font-size: 16px;
+        color: @grey_33;
+      }
+
+      &:first-child{
+        border-top: 0;
+        margin-top: 0;
+      }
+    }
+
+    dd{
+      padding-top: 10px;
+    }
+  }
+}
+
+.hot_cmp {
+  overflow: hidden;
+  margin-right: -15px;
+
+  a {
+
+    float: left;
+    margin-right: 20px;
+    line-height: 2em;
+    color: @grey_66;
+    white-space: nowrap;
+
+    span {
+      color: @grey_99;
+    }
+
+    &:hover {
+      color: #2472b4;
+      text-decoration: none;
+
+      span {
+        color: #2472b4;
+      }
+    }
+  }
+}
+
+.block-items{
+  a{
+    display: block;
+    float: none;
+  }
+}
+
+.host_city {
+  overflow: hidden;
+  margin-right: -15px;
+
+  a {
+    white-space: nowrap;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: @grey_66;
+  }
+
+  p.tt {
+    height: 36px;
+    line-height: 36px;
+    color: @grey_33;
+    background-color: #f6f6f6;
+    text-align: center;
+    margin-right: 15px;
+  }
+
+  ul.first_letter {
+    overflow: hidden;
+    margin-right: -5px;
+    padding-bottom: 5px;
+
+    li {
+      float: left;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      background-color: #f6f6f6;
+      color: @grey_33;
+      margin: 0 11px 10px 0;
+      cursor: pointer;
+      border-radius: 2px;
+
+      &:hover, &.current {
+        background-color: @green;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .search-opts-cities{
+    li{
+      display: none;
+    }
+  }
+}
+
+.see_more {
+  width: 222px;
+
+  &.no-bd{
+    border-bottom: 0;
+  }
+}
+
+.s-opts-more{
+  clear: both;
+  display: none;
+}
+
+ul {
+  &.industry_field {
+    li {
+      position: relative;
+      z-index: 3;
+
+      a.default {
+        color: @grey_33;
+        position: relative;
+        cursor: pointer;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 -20px;
+        padding-left: 20px;
+
+        i.i_right {
+          background: url("@{img}/icons_v2.png") no-repeat -220px 0;
+          width: 5px;
+          height: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          position: absolute;
+          right: 21px;
+          top: 50%;
+          margin-top: -5px;
+        }
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+
+      div.more_list {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 232px;
+        padding-top: 15px;
+        padding-left: 20px;
+        width: 480px;
+        min-height: 10em;
+        background: #fafafa;
+        border: 1px solid #e7e7e7;
+        .box-shadow(0 0 4px #d5d4d4);
+
+        s {
+          position: absolute;
+          left: -5px;
+          top: 0;
+          width: 10px;
+          height: 28px;
+          background: #fafafa;
+          //display: none;
+        }
+
+        span {
+          display: inline-block;
+          width: 160px;
+          float: left;
+          padding-bottom: 20px;
+          line-height: 1;
+
+          a {
+            display: inline-block;
+            width: 11em;
+            height: 1em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            &:hover {
+              color: #2472b4;
+            }
+          }
+        }
+      }
+    }
+
+    li.current{
+      div.more_list{
+        display: block;
+      }
+
+      a.default{
+          height: 28px;
+          line-height: 28px;
+          border-width: 1px 0 1px 1px;
+          border-style: solid;
+          border-color: #e7e7e7;
+          background-color: #fafafa;
+          .box-shadow(0 0 4px #d5d4d4);
+          text-decoration: none;
+          margin: 0 -21px;
+
+          i.i_right {
+            display: none;
+          }
+      }
+    }
+  }
+}

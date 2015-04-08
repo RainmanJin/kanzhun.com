@@ -1,0 +1,57 @@
+.maskui_dialog {
+  width: 100%;
+  display: none;
+}
+.maskui_dialog .dialog_con {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #666;
+  -moz-box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px #666;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.maskui_dialog .dialog_close {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  position: absolute;
+  background: transparent url("../images/maskui-close.png") no-repeat;
+  right: 10px;
+  top: 10px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.maskui_dialog .dialog_close:hover {
+  background-color: #eee;
+}
+.maskui_dialog .dialog_ac {
+  padding: 10px 0 10px;
+  text-align: center;
+}
+.maskui_dialog .dialog_ac p {
+  margin-top: 20px;
+}
+.maskui_dialog .dialog_btn {
+  border: 0;
+  height: 33px;
+  line-height: 33px;
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: #85c15d;
+  width: 100%;
+}
+.maskui_dialog .dialog_btn:hover {
+  text-decoration: none;
+}
+.maskui_dialog .confirm_ok {
+  margin-right: 10px;
+}

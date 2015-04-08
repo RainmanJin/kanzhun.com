@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>知己-答题页</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/zhiji.css" />
+<script src="../js/site/zhiji.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<p class="loginfo"><a href="#">我的看准</a><i>|</i><a href="#">退出</a></p>
+		</div>
+	</header>
+  <div class="title">
+    <h1>大五性格测试答题卡</h1>
+  </div>
+  <div class="quest_content">
+    <div class="quest_nav">
+      <ul>
+        <!--
+        <li><i class="i_round"></i><p></p><em class="prompt">40%</em></li>
+        -->
+        <li class="current">
+          <i class="start"></i>
+          <i class="end"></i>
+          <p style="width:2%">
+            <i class="center"></i>
+            <em class="prompt">90%</em>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <section class="zhiji_quest">
+      <em class="header">1/107</em>
+      <li id="userInfoDom" class="user_infodom" style="top:120px;left:100%;width:20%;height:240px;display:none">
+        <div>
+          <div class="head">
+            <h3 style="display:none">填写信息</h3>
+            <div class="side"></div>
+          </div>
+          <div class="content" style="display:none">
+            <div>
+              <label class="def">姓名</label> 
+              <input type="text" class="ifd" name="name" maxlength="10" value="">
+            </div>
+            <div>
+              <label class="def"><em>*</em> 性別</label> 
+              <p class="sex">
+                <span>男</span>
+                <span class="current ml10">女</span>
+              </p>
+            </div>       
+            <div>
+              <label class="def"><em>*</em> 工作时间</label>      
+              <dl class="select select_s">
+                <dt>
+                  <input type="hidden" name="experience" value="0" class="v" data-necessary="1">
+                  <input type="button" name="experienceDes" value="请选择" readonly="readonly"><span class="btn"><i></i></span>
+                </dt>
+                <dd style="display: none;">
+                  <a href="javascript:;" rel="nofollow" data-val="1">1年以下</a>
+                  <a href="javascript:;" rel="nofollow" data-val="2">1-3年</a>
+                </dd>
+              </dl>
+            </div>
+            <div>
+              <label class="def"><em>*</em> 职位名称</label>
+              <dl class="select select_s">
+                <dt>
+                  <input type="hidden" name="experience" value="0" class="v" data-necessary="1">
+                  <input type="button" name="experienceDes" value="请选择" readonly="readonly"><span class="btn"><i></i></span>
+                </dt>
+                <dd style="display: none;">
+                  <a href="javascript:;" rel="nofollow" data-val="1">1年以下</a>
+                  <a href="javascript:;" rel="nofollow" data-val="2">1-3年</a>
+                </dd>
+              </dl>
+            </div> 
+            <div>
+              <label class="def"><em>*</em> 教育程度</label> 
+              <dl class="select select_s">
+                <dt>
+                  <input type="hidden" name="experience" value="0" class="v" data-necessary="1">
+                  <input type="button" name="experienceDes" value="请选择" readonly="readonly"><span class="btn"><i></i></span>
+                </dt>
+                <dd style="display: none;">
+                  <a href="javascript:;" rel="nofollow" data-val="1">1年以下</a>
+                  <a href="javascript:;" rel="nofollow" data-val="2">1-3年</a>
+                </dd>
+              </dl>
+            </div> 
+            <div>
+              <label class="def"><em>*</em> 公司行业</label>
+              <dl class="select select_s">
+                <dt>
+                  <input type="hidden" name="experience" value="0" class="v" data-necessary="1">
+                  <input type="button" name="experienceDes" value="请选择" readonly="readonly"><span class="btn"><i></i></span>
+                </dt>
+                <dd style="display: none;">
+                  <a href="javascript:;" rel="nofollow" data-val="1">1年以下</a>
+                  <a href="javascript:;" rel="nofollow" data-val="2">1-3年</a>
+                </dd>
+              </dl>
+            </div>                                 
+          </div>
+          <div class="button" style="display:none">
+          <a class="center" href="javascript:;">下一步</a>
+          </div>
+        </div>
+        <div class="mask"></div>
+      </li>
+    </section>
+    <div class="help" style="display:none">
+      <section>
+        <a class="close" href="javascript:;"></a>
+        <div class="l_content">
+          <div class="head">
+            <div class="side"></div>
+          </div>
+          <div class="content"></div>
+        </div>
+        <div class="l"></div>
+        <div class="c"></div>
+        <div class="button"></div>
+      </section>
+      <div class="mask"></div>
+    </div>
+  </div>
+  <footer class="footbottom">
+  <nav>
+  <a ka="footer-about" href="/about.html" rel="nofollow">关于我们</a><a ka="footer-feedback" href="/contact_us.html" rel="nofollow">意见反馈</a><a ka="footer-help" href="/help.html" rel="nofollow">使用帮助</a><a ka="footer-user" href="/term.html" rel="nofollow">用户协议</a><a ka="footer-weixin" href="javascript:;" class="micro_message" rel="nofollow">看准网微信<i></i></a><a ka="footer-weibo" href="http://www.weibo.com/fenzhi" target="_blank" rel="nofollow">看准网微博</a><a ka="footer-mobile" href="http://m.kanzhun.com/" target="_blank" rel="nofollow" id="toMobile" class="a_green" style="color: #7cb228;">移动版</a>
+  </nav>
+  <p>Copyright© 2014 kanzhun.com京ICP备14013441号-1 , kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+  </footer>  
+</body>
+</html>

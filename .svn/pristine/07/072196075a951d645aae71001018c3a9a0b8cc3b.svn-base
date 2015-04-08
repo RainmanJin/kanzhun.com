@@ -1,0 +1,211 @@
+define(['c/assist/barrage'],function () {
+  $(function () {
+    //body 有属性data-ab 才加载侧边栏
+    if(!$('body').data('ab')){
+      return;
+    }
+
+    var companyId = $('#companyId').val();
+    setTimeout(function(){
+      $.ajax({
+        url: '/miniugc/sidebar.json',
+        type: 'get',
+        cache: false,
+        dataType: 'html',
+        success: function(data){
+          if(!data){
+            return;
+          }
+
+          $('body').append(data);
+
+          var asideBar = $('#asideBar');
+          asideBar.css({'height': $(window).height(), 'right': '0'});
+
+
+          var abItemTop = $('div.ab-item-top');
+          var co_timer;
+
+          //有tip需要展示的item 加上ab-activing
+          abItemTop.on('click', 'div.ab-activing', function () {
+            var item = $(this).parent();
+            $('ul.ab-item-inner', abItemTop).hide();
+            item.siblings('div.ab-item').removeClass('ab-item-active');
+
+            //关闭
+            if (item.hasClass('ab-item-active')) {
+              item.removeClass('ab-item-active');
+
+            //展开
+            } else {
+              item.addClass('ab-item-active');
+              $('ul.ab-item-inner', item).show();
+            }
+
+          //公司PK
+          }).on('click', '#abComanpyPk', function(){
+            var $this = $(this);
+            var tip = $this.next('div.ab-item-tip');
+            var pk = tip.find('dl');
+            if(pk.length){
+              if(pk.is(':hidden')){
+                tip.show();
+              }else{
+                tip.hide();
+              }
+              return;
+            }
+            $.ajax({
+              type: 'get',
+              url: '/company/querypkdata.json',
+              data: {
+                companyId: companyId
+              },
+              beforeSend: function(){
+                tip.show().append('<p class="loading" ><img src="http://www.kanzhun.com/images/loading.gif"></p>');
+              },
+              success: function(ret){
+                if(ret){
+                  //添加hover事件
+//                  $this.addClass('ab-item-hover');
+                  tip.find('p.loading').remove();
+                  tip.show().append(ret);
+                }
+              }
+            });
+
+          //需要hover出现tip的 添加.ab-item-hover
+          }).on('mouseover', '.ab-item-hover', function () {
+            $('div.ab-item-tip', abItemTop).not('div.ab-com-cookie').hide();
+            $(this).find('div.ab-item-tip').show();
+
+          }).on('mouseout', '.ab-item-hover', function () {
+            $(this).find('div.ab-item-tip').hide();
+
+          //关闭tip
+          }).on('click', 'i.close', function () {
+            var tip = $(this).parent();
+
+            //需要记录cookie的
+            if(tip.hasClass('ab-com-cookie')){
+              $.get('/miniugc/close.json?status=1');
+            }else if(tip.hasClass('ab-reg-cookie')){
+              $.get('/miniugc/close.json?status=2');
+            }
+
+            //默认出现的tip没有hover效果，点击关闭后加上hover，并且去掉绑定cookie的class： ab-com-cookie
+            if(tip.hasClass('ab-com-cookie')){
+              tip.parent().addClass('ab-item-hover')
+            }
+            tip.removeClass('ab-com-cookie').hide();
+
+          //添加logo
+          }).on('click', 'a.ab-create-logo', function(){
+            var _t=$(this);
+            $.maskUI.open({
+              elem: 'abComPortrait'
+            });
+            companyId=_t.data('cid');
+
+          //换一组
+          }).on('click', '#abPkChange', function(){
+            var $this = $(this),
+              start = parseInt($this.data('c')),
+              end = 0;
+
+            var co = $('dl.ab-pk-vs dd');
+
+            start = start === 9 ? 0 : start;
+            end = start + 3
+
+            $this.data('c', end)
+            co.hide().slice(start, end).show();
+          });
+
+
+          //================显示Pk的条件===============
+          //浏览一个公司的同级页面只显示一次
+          var pkCookie = $.readCookie('__pk')||'';
+          if($.trim(companyId) !== ''){
+            //(!pkCookie || pkCookie != companyId)
+            var aPkCookie=[];
+            if(pkCookie){
+              aPkCookie=pkCookie.split('|');
+            }
+            if(aPkCookie.length<2){
+              var bAlready=false;
+              $.each(aPkCookie,function(k,v){
+                if(v==companyId){
+                  bAlready=true;
+                  return false;
+                }
+              });
+              if(!bAlready){
+                $('#abComanpyPk').delay(1500).trigger('click');
+                aPkCookie.push(companyId);
+                var __pk=aPkCookie.join('|');
+                $.writeCookie('__pk', __pk);
+
+                //初始化时，滚动隐藏公司pk
+                var sTop=$(window).scrollTop();
+
+                $(window).on('scroll.abPKScroll',function(){
+                  var sTop_now=$(window).scrollTop();
+                  if(Math.abs(sTop_now-sTop)==100){
+                    $('#abComanpyPk').next('div.ab-item-tip').hide();
+                    $(window).off('scroll.abPKScroll');
+                  }
+                });
+              }
+            }
+          }
+
+
+          var r_timer;
+          $('#abItemRegister').on('mouseover', function () {
+            $(this).find('div.ab-item-tip').show();
+            clearTimeout(r_timer);
+          }).on('mouseout', function () {
+            var _this = $(this);
+            r_timer = setTimeout(function () {
+              _this.find('div.ab-item-tip').hide();
+            }, 300);
+          });
+
+          $(window).on('resize', function(){
+            asideBar.css('height', $(window).height());
+          });
+
+          //添加公司logo
+          window.uploadOk = function (info) {
+            var ret = typeof info === 'string' ? $.parseJSON(info) : info;
+            if (ret && ret.result == 1) {
+              $.maskUI.alert('上传成功，图片正在审核，感谢您的分享！');
+              var picurls = ret.picurls || [];
+              $.get('/companyugc/propertysave.json?field=logo&fvalue='+picurls[0]+'&companyId='+companyId);
+            }
+          };
+
+          $('#abWeixin').hover(function(){
+            $(this).find('img').show();
+          },function(){
+            $(this).find('img').hide();
+          });
+
+
+          //弹幕
+          if($('body').data('barrage')){
+            $('#barrageFlag').parent().show();
+            var barrage = require('c/assist/barrage');
+            barrage();
+            $('.js_bt_showBarrageDialog').show();
+          }
+
+
+        }
+      });
+    }, 1000);
+  });
+});
+
+

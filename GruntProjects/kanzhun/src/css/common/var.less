@@ -1,0 +1,106 @@
+@img: '../images';
+
+//colors
+@def: #343434;
+@grey_e5: #e5e5e5;
+@grey_e7: #e7e7e7;
+@grey_99: #999999;
+@grey_6e: #6e6e6e;
+@black: #000000;
+@blue: #007ead;
+@blue_v2: #2c84cc;
+@blue_v2_hover: #2472b4;
+@orange: #f38100;
+@green: #7cb228;
+@cyan: #67bf58;
+@placeholder: #999999;
+@red: #d60000;
+@grey_33: #333333;
+@grey_66: #666666;
+@grey_dc: #dcdcdc;
+@grey_cc: #cccccc;
+
+
+@icons: url("@{img}/icons.png");
+@invitation_icons: url("@{img}/invitation_img.png");
+
+//css3 
+.transform(...){
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-ms-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
+}
+
+.animation(...){
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	-ms-animation: @arguments;
+	-o-animation: @arguments;
+	animation: @arguments;
+}
+
+.transition(...){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-ms-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.box-shadow(...){
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-ms-box-shadow: @arguments;
+	box-shadow: @arguments;
+}
+
+.text-shadow(...){
+	-webkit-text-shadow: @arguments;
+	-moz-text-shadow: @arguments;
+	-ms-text-shadow: @arguments;
+	text-shadow: @arguments;
+}
+
+.ellipsis(...){
+  text-overflow: @arguments;
+  -o-text-overflow: @arguments;
+  -ms-text-overflow: @arguments;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}
+.linear-gradient(@direction, @color-stop...) {
+  @dir: ~`"@{direction}".replace(/[\[\],]/g, "")`;
+  @is-old-side-or-corner: ~`/^(?:top|right|bottom|left)(?:\s+(?:top|right|bottom|left))?$/.test("@{dir}") ? "true" : "false"`;
+  @is-standard-side-or-corner: ~`/^to\s+(?:top|right|bottom|left)(?:\s+(?:top|right|bottom|left))?$/.test("@{dir}") ? "true" : "false"`;
+  @color-stops: ~`"@{color-stop}".replace(/[\[\]]/g, "")`;
+  .output() when (@is-old-side-or-corner) {
+    @standard-direction: ~`"to @{dir}".replace("top", "b#ottom").replace("right", "l#eft").replace("bottom", "t#op").replace("left", "r#ight").replace(/#/g, "")`;
+    background-image: -webkit-linear-gradient(@dir, @color-stops); // Chrome 10+
+    background-image: -moz-linear-gradient(@dir, @color-stops); // Firefox 3.6+
+    background-image: -moz-linear-gradient(@standard-direction, @color-stops); // Firefox 10+
+    background-image: -o-linear-gradient(@standard-direction, @color-stops); // Opera 11.10+
+    background-image: linear-gradient(@standard-direction, @color-stops); // Chrome 26+, Firefox 16+, Opera 12.10+, IE 10+
+  }
+  .output() when (@is-standard-side-or-corner) {
+    @old-direction: ~`"@{dir}".replace(/^to\s+/, "").replace("top", "b#ottom").replace("right", "l#eft").replace("bottom", "t#op").replace("left", "r#ight").replace(/#/g, "")`;
+    background-image: -webkit-linear-gradient(@old-direction, @color-stops); // Chrome 10+
+    background-image: -moz-linear-gradient(@old-direction, @color-stops); // Firefox 3.6+
+    background-image: -moz-linear-gradient(@dir, @color-stops); // Firefox 10+
+    background-image: -o-linear-gradient(@dir, @color-stops); // Opera 11.10+
+    background-image: linear-gradient(@dir, @color-stops); // Chrome 26+, Firefox 16+, Opera 12.10+, IE 10+
+  }
+  .output() when not (@is-old-side-or-corner) and not (@is-standard-side-or-corner) {
+    background-image: -webkit-linear-gradient(mod(abs(convert(@direction, deg) - 450), 360), @color-stops); // Chrome 10+
+    background-image: -moz-linear-gradient(mod(abs(convert(@direction, deg) - 450), 360), @color-stops); // Firefox 3.6+
+    background-image: -o-linear-gradient(mod(abs(convert(@direction, deg) - 450), 360), @color-stops); // Opera 11.10+
+    background-image: linear-gradient(@direction, @color-stops); // Chrome 26+, Firefox 16+, Opera 12.10+, IE 10+
+  }
+  .output();
+  background-repeat: repeat;
+}
+
+

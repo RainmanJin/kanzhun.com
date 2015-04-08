@@ -1,0 +1,64 @@
+//colors
+@black: #303030;  //文字默认颜色
+@grey_79: #797979;  //灰色
+@grey_99: #999999;
+@grey_af: #afafaf; //浅灰色
+@green: #62bb6a;  //看准资讯绿
+@blue: #007ead; //蓝色
+@yellow: #f38100;  //黄色
+@red: red;
+
+@img-path: '../images';
+@icons: url("@{img-path}/icons.png");
+
+
+//css3
+.transform(...){
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-ms-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
+}
+
+.animation(...){
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	-ms-animation: @arguments;
+	-o-animation: @arguments;
+	animation: @arguments;
+}
+
+.transition(...){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-ms-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.box-shadow(...){
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-ms-box-shadow: @arguments;
+	box-shadow: @arguments;
+}
+
+.text-shadow(...){
+	-webkit-text-shadow: @arguments;
+	-moz-text-shadow: @arguments;
+	-ms-text-shadow: @arguments;
+	text-shadow: @arguments;
+}
+
+.ellipsis(...){
+  text-overflow: @arguments;
+  -o-text-overflow: @arguments;
+  -ms-text-overflow: @arguments;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}
+
+

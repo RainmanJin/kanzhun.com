@@ -1,0 +1,54 @@
+@import "var";
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+
+//shine
+@-webkit-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-moz-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-ms-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+.shine{
+  .animation(twinkle .6s ease none);
+}
+
+

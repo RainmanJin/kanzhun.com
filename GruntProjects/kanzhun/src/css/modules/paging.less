@@ -1,0 +1,59 @@
+@import "../common/var";
+//分页
+.pager{
+	padding: 10px 0;
+
+	a{
+		font-size: 14px;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		text-align: center;
+		line-height: 30px;
+		margin-right: 10px;
+		border: 1px solid @grey_e7;
+		border-radius: 2px;
+		background-color: #fff;
+		color: @def;
+		border-radius: 5px;
+
+		&:hover{
+			text-decoration: none;
+			background-color: #6c9b23;
+			color: #fff;
+		}
+		
+		&.current{
+			background-color: @green;
+			color: #fff;
+		}
+
+		&.forbidden{
+			color: @grey_99;
+			cursor: default;
+
+			&:hover{
+				color: @grey_99;
+				background-color: #fff;
+			}
+		}
+	}
+
+	input{
+		width: 30px;
+		height: 14px;
+		padding: 8px 0;
+		display: inline-block;
+		text-align: center;
+		line-height: 14px;
+		border: 1px solid @grey_e7;
+		border-radius: 2px;
+		margin: 0 5px;
+		font-size: 14px;
+		*vertical-align: -7px;
+		border-radius: 5px;
+	}
+	span{
+		margin: 0 5px;
+	}
+}

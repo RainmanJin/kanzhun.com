@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta http-equiv="Cache-Control" content="no-transform ">
+  <meta name="viewport" content="width=device-width">
+  <script type="text/javascript">
+    var CONTEXTPATH='';
+    var STATICURL='http://img.kanzhun.com';
+    var require = {
+      urlArgs : "v=v1.1.31"
+    };
+  </script>
+  <!--[if lte IE 9]>
+      <script src="http://s.kanzhun.com/js/html5shiv.js"></script>
+      <script src="http://s.kanzhun.com/js/jquery-1.11.0.min.js"></script>
+      <!--[if gt IE 9]><!-->
+  <![endif]-->
+  <link rel="stylesheet" href="/css/widget.css?tv=v1.1.31" />
+  <title>登录</title>
+  <link rel="stylesheet" href="/css/auth-fresh.css?tv=v1.1.31">
+  <link rel="stylesheet" href="/components/auth/embed-auth.css">
+</head>
+</head>
+<body>
+<p style="color: #ff0000;padding: 10px;font-size: 16px;font-weight: bold;text-decoration: underline;">
+  这里是内嵌的登录注册的用法： <br/>
+  1. 外层加入 &lt;div class="embed-auth"&gt;&lt;/div&gt;  <br/>
+  2. html引用 /components/auth/login(register).ejs  <br/>
+  3. css引用  /css/auth-fresh.css 和 /components/auth/embed-auth.less
+</p>
+
+<div class="embed-auth">
+  <% include login %>
+
+  <p>&nbsp;</p>
+
+  <% include register %>
+</div>
+
+
+<script src="/js/jquery-1.11.0.min.js"></script>
+<script src="/js/require.js"></script>
+<script>
+  require.config({
+    baseUrl: "/",
+
+    paths: {
+      u: 'js/utils',
+      c: 'js/site',
+      comp: '../../components',
+      highcharts: 'http://s.kanzhun.com/js/utils/highcharts'
+    }
+  });
+
+  require(['comp/auth/auth'], function(){});
+</script>
+</body>
+</html>

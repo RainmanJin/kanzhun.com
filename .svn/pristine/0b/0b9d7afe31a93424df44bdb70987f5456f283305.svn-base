@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>飘1</title>
+  <link rel="stylesheet" href="../../css/widget.css" />
+  <link rel="stylesheet" href="floatword.css" />
+</head>
+
+<body style="text-align: center;padding: 100px;">
+
+
+<a class="float_wrap" href="javascript:;" title="点赞">点赞</a>
+
+
+
+  <!--  案例  begin-->
+
+  <script src="/js/jquery-1.11.0.min.js"></script>
+  <script src="/js/require.js"></script>
+  <script>
+    require.config({
+      baseUrl: "/"
+    });
+    require(['components/floatword/floatword'], function(){
+      var floatword = require('components/floatword/floatword');
+
+        floatword({
+            cfw: $('a.float_wrap')
+        });
+    });
+  </script>
+
+  <!--  案例  end-->
+</body>
+</html>

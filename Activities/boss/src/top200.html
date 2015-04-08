@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>马桶上的招聘节</title>
+  <link rel="stylesheet" href="css/jobs.css">
+</head>
+<body class="blue">
+  
+
+ <img src="images/jobs-top.jpg" class="block" width="100%">
+ <p class="p10"><a href="#"><img src="images/top-100.jpg" width="100%" class="block"></a></p>
+
+  <div class="mars-content">
+
+    <ul class="mars-list">
+      <li>
+        <img src="images/portrait.jpg" >
+        <div>
+          <p>看准网 · 张磊</p>
+          <p>排名 1 | 热度 112 </p>
+          <p><em>￥15k-20k</em> <img src="images/m-t.png">3-5年 <img src="images/m-d.png">本科</p>
+        </div>
+        <strong>产品经理</strong>
+      </li>
+
+      <li>
+        <img src="images/portrait.jpg" >
+        <div>
+          <p>欢否 · 黄欢</p>
+          <p>排名 2 | 热度 23</p>
+          <p><em>￥15k-20k</em> <img src="images/m-t.png">3-5年 <img src="images/m-d.png">本科</p>
+        </div>
+        <strong>产品经理</strong>
+      </li>
+
+      <li class="more">
+        <a href="#">显示更多</a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="js/lib/zepto.js"></script>
+  <script>
+    $(function(){
+      $('ul.mars-list').on('click', 'p.more>a', function(){
+        var _this = $(this);
+        $.ajax({
+          type: 'get',
+          url: '/xxxx.json',
+          data: {
+            jid: _this.data('jid')
+          },
+          success: function(ret){
+            if(ret){
+              var li = _this.closest('li');
+              li.hide().after(ret);
+              li.remove();
+            }
+          },
+          error: function(){
+            _this.html('请求失败，请重新点击！');
+          }
+        });
+      });
+    })
+  </script>
+</body>
+</html>

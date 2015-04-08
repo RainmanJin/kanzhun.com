@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>我的排行榜页面</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<link rel="stylesheet" href="../css/widget.css">
+<link rel="stylesheet" href="../css/ali/myQuestions.css">
+<![endif]-->
+</head>
+
+<body>
+  <header class="global">
+    <div class="header">
+      <a href="" class="logo"><img src="/images/logo.jpg" width="136" height="40" /></a>
+      <nav>
+        <a href="/gs.html">公司</a>
+        <a class="head_salary " href="/xs/">工资<i></i></a>
+        <a href="/job/">招聘</a>
+        <a href="/msh/">面试</a>
+        <a target="_blank" href="">资讯</a>
+        <a class="mycomment" href="">我要点评</a>
+      </nav>
+      <div class="hello">
+        <dl>
+          <dt><em class="username"><i class="villain"></i>626364837&nbsp;</em><i></i></dt>
+          <dd>
+            <a href="">我的看准</a>
+            <a href="">我的简历</a>
+            <a href="">职位订阅</a>
+            <a href="">投递的职位</a>
+            <a href="">收藏的职位</a>
+            <a href="">关注的公司</a>
+            <a href="">发布的内容</a>
+            <a href="">账号设置</a>
+            <a href="">个人信息</a>
+            <a href="" class="signout">退出</a>
+          </dd>
+        </dl>
+        <em>|</em><a href="http://boss.kanzhun.com">企业客户入口</a>
+      </div>
+    </div>
+  </header>
+  <div class="main_top">
+    <div>
+      <img src="../images/ali/ali_img3.png" alt="对话马云">
+    </div>
+  </div>
+  <div class="main_con_wrap">
+    <div class="main_con">
+      <section class="m_l">
+        <div class="l_tt">最火提问排行榜&nbsp;-&nbsp;<span>今日投票机会&nbsp;<em>3</em>&nbsp;次</span></div>
+        <div class="l_question mb10">
+          <span class="ranking r_red">NO.1</span>
+          <dl class="noborder">
+            <dt>
+              <a href=""><span>2293</span><p>已投票</p></a>
+            </dt>
+            <dd>
+              <div><p>支付宝产品经理，目前在职&nbsp;&nbsp;&nbsp;&nbsp;2小时前</p><span>提问：</span></div>
+              <p class="q_con"><a href="">那个啥，我是哈萨克族，我能谈一下我的看法吗。从party角度说，国家现在的教育政策对新疆的少数民族真的是福利，起码让很多哈萨克牧民的孩子上得了学，出门涨见识，无论从哪个角度说都要比无论从哪个角度说都要比一辈子放羊或者小小年纪出来打拼要好。但是就像另一位知友说的，如bel...</a></p>
+              <p class="share_c"><a class="share" href="">22</a><em>|</em><a class="comment" href="">33</a></p>
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </div>
+        <div class="l_question mb10">
+          <span class="ranking r_red">NO.1</span>
+          <dl class="noborder">
+            <dt>
+              <a href=""><span>2293</span><p>已投票</p></a>
+            </dt>
+            <dd>
+              <div><p>支付宝产品经理，目前在职&nbsp;&nbsp;&nbsp;&nbsp;2小时前</p><span>提问：</span></div>
+              <p class="q_con"><a href="">那个啥，我是哈萨克族，我能谈一下我的看法吗。从party角度说，国家现在的教育政策对新疆的少数民族真的是福利，起码让很多哈萨克牧民的孩子上得了学，出门涨见识，无论从哪个角度说都要比无论从哪个角度说都要比一辈子放羊或者小小年纪出来打拼要好。但是就像另一位知友说的，如bel...</a></p>
+              <p class="share_c"><a class="share" href="">22</a><em>|</em><a class="comment" href="">33</a></p>
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </div>
+        <div class="l_question mb10">
+          <span class="ranking r_red">NO.1</span>
+          <dl class="noborder">
+            <dt>
+              <a href=""><span>2293</span><p>已投票</p></a>
+            </dt>
+            <dd>
+              <div><p>支付宝产品经理，目前在职&nbsp;&nbsp;&nbsp;&nbsp;2小时前</p><span>提问：</span></div>
+              <p class="q_con"><a href="">那个都要比一辈子放羊或者小小年纪出来打拼要好。但是就像另一位知友说的，如bel...</a></p>
+              <p class="share_c"><a class="share" href="">22</a><em>|</em><a class="comment" href="">33</a></p>
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </div>
+        <div class="l_question mb10">
+          <span class="ranking r_red">NO.1</span>
+          <dl class="noborder">
+            <dt>
+              <a href=""><span>2293</span><p>已投票</p></a>
+            </dt>
+            <dd>
+              <div><p>支付宝产品经理，目前在职&nbsp;&nbsp;&nbsp;&nbsp;2小时前</p><span>提问：</span></div>
+              <p class="q_con"><a href="">那个啥，我是哈萨克族，我能谈一下我的看法吗。从party角度说，国家现在的教育政策对新疆的少数民族真的是福利，起码让很多哈萨克牧民的孩子上得了学，出门涨见识，无论从哪个角度说都要比无论从哪个角度说都要比一辈子放羊或者小小年纪出来打拼要好。但是就像另一位知友说的，如bel...</a></p>
+              <p class="share_c"><a class="share" href="">22</a><em>|</em><a class="comment" href="">33</a></p>
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </div>
+        <div class="l_question mb10">
+          <span class="ranking r_red">NO.1</span>
+          <dl class="noborder">
+            <dt>
+              <a href=""><span>2293</span><p>已投票</p></a>
+            </dt>
+            <dd>
+              <div><p>支付宝产品经理，目前在职&nbsp;&nbsp;&nbsp;&nbsp;2小时前</p><span>提问：</span></div>
+              <p class="q_con"><a href="">那个啥，我是哈萨克族，我能谈一下我的看法吗。从party角度说，国家现在的教育政策对新疆的少数民族真的是福利，起码让很多哈萨克牧民的孩子上得了学，出门涨见识，无论从哪个角度说都要比无论从哪个角度说都要比一辈子放羊或者小小年纪出来打拼要好。但是就像另一位知友说的，如bel...</a></p>
+              <p class="share_c"><a class="share" href="">22</a><em>|</em><a class="comment" href="">33</a></p>
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </div>
+        <div class="pager np_pager">
+          <a href="">&lt;</a><a href="" class="current">1</a><a href="">2</a><a href="">3</a><a href="">4</a><span>... </span><a href="">&gt;</a> 共50页&nbsp;&nbsp;&nbsp;&nbsp;去<input type="text" />页
+        </div>
+      </section>
+      <section class="m_r">
+        <div class="l_tt l_tt_detail">我的提问</div>
+        <div class="r_wrap mb10">
+          <div class="con mrk_con">
+            <p class="mrk_tt">排名：<em>NO.2</em>票数：<span>15692</span></p>
+            <div class="text"><a href="">那个啥，我是哈萨克族，我能谈一下我的看法吗。从party角度说，国家现在的教育政策对新疆的少数民族真的是福利，起码让很多哈萨克牧民的孩子上得了学，出门涨见识，无论从哪个角度说无论从哪个角度说都要比一辈子放羊或者小小年纪出来打拼要好。但是就像另一位知友说的，如bel</a></div>
+            <p class="share_c"><a class="comment" href="">33</a></p>
+            <div class="btn_send"><a class="send" href="">投票</a><a class="sharesend" href="">分享拉票</a></div>
+          </div>
+          <div class="bg"></div>
+        </div>
+        <div class="r_wrap code mb10">
+          <div class="con">
+            <p>关注<span>看准网</span>公众账号</p>
+            <p>实时查看提问马云的票选现况！</p>
+            <img src="../images/ali/ali_img13.jpg" alt="">
+          </div>
+          <div class="bg"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

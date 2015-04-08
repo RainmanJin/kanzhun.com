@@ -1,0 +1,180 @@
+@green: #7ab12d;
+@def-c: #343434;
+@def-a: #007ead;
+@grey: #dddddd;
+@d-grey: #9a9a9a;
+@blue: #007ead;
+@red: #ff0000;
+@hightlight: #ffbcbc;
+
+.w_990{
+	width: 990px;
+}
+
+body{
+	font: normal 12px/1.5 Arial,Microsoft Yahei,simsun;
+	background-color: #fff;
+	color: @def-c;
+}
+
+.f_blue{
+	color: @blue;
+}
+.f_red{
+	color: @red;
+}
+
+a{
+	color: @def-c;
+
+	&.blue{
+		color: @blue;
+	}
+
+	&.red{
+		color: @red;
+	}
+
+	&.green{
+		color: @green;
+	}
+}
+
+//placeholder
+
+.onholder{
+	color: #666;
+}
+
+
+
+//header
+
+header{
+	border-bottom: 6px solid @green;
+	position: relative;
+	height: 70px;
+	padding: 15px 15px 0;
+	min-width: 990px;
+
+	.logo{
+		float: left;
+	}
+
+	.u{
+		float: right;
+		span{
+			margin: 0 10px;
+			color: #cdcdcd;
+		}
+		a{
+			color: @def-a;
+		}
+	}
+
+	nav{
+		position: absolute;
+		bottom: 0;
+		right: 20px;
+		overflow: hidden;
+		padding-left: 2px;
+
+		a{
+			height: 32px;
+			line-height: 32px;
+			text-align: center;
+			padding: 0 25px;
+			border: 1px solid #9a9a9a;
+			border-bottom: 0;
+			float: left;
+			border-top-left-radius: 5px; 
+			border-top-right-radius: 5px;
+			margin-left: -1px;
+			background-color: #f5f5f5;
+			background: linear-gradient(0deg, #f5f5f5 0%, #ffffff 100%);
+
+			&.current{
+				color: #fff;
+				background-color: @green;
+				background: linear-gradient(0deg, @green 0%, #8fcb32 100%);
+				text-decoration: none;
+				border-color: #70a61b;
+			}
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+section{
+	&.container{
+		padding: 15px;
+	}
+}
+
+div.pager{
+	padding: 15px 0;
+	a{
+		height: 22px;
+		line-height: 22px;
+		padding: 0 8px;
+		display: inline-block;
+		margin: 0 5px;
+		border: 1px solid @grey;
+		color: @blue;
+
+		&.next{
+			margin-right: 20px;
+		}
+
+		&.current{
+			background-color: @green;
+			text-align: center;
+			line-height: 22px;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+
+table{
+	&.tb_grey{
+		border-top: 1px solid #9a9a9a;
+		border-left: 1px solid #9a9a9a;
+
+		th,td{
+			height: 30px;
+			vertical-align: middle;
+			text-align: center;
+			border-bottom: 1px solid #9a9a9a;
+			border-right: 1px solid #9a9a9a;
+		}
+		th{
+			background-color: #dedede;
+		}
+	}
+}
+
+.new{
+	width: 16px;
+	height: 19px;
+	background: url(../images/new.jpg) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+

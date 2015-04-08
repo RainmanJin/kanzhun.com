@@ -1,0 +1,99 @@
+header.index_header {
+  background-color: #08c093;
+  height: 80px;
+}
+header.index_header .inner {
+  width: 990px;
+  margin: 0 auto;
+  color: #fff;
+}
+header.index_header .inner .logo {
+  margin-top: 15px;
+}
+header.index_header .inner .inner_r {
+  float: right;
+  margin-top: 30px;
+  font-size: 16px;
+}
+header.index_header .inner .inner_r i {
+  vertical-align: middle;
+}
+header.index_header .inner .inner_r em {
+  color: #6de0c3;
+  margin: 0 10px;
+}
+header.index_header .inner .inner_r a {
+  color: #fff;
+}
+section.index_banner {
+  background: url("../images/index_banner.jpg") no-repeat center;
+  height: 500px;
+  text-align: center;
+}
+section.index_banner h2 {
+  padding-top: 150px;
+  font-weight: bold;
+  font-size: 60px;
+}
+section.index_banner h3 {
+  font-size: 18px;
+}
+section.index_content {
+  width: 990px;
+  margin: 0 auto;
+}
+section.index_content ul.cInfo {
+  margin-top: 55px;
+  padding-left: 105px;
+}
+section.index_content ul.cInfo > li {
+  float: left;
+  width: 440px;
+  margin-bottom: 55px;
+}
+section.index_content ul.cInfo > li h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+section.index_content ul.cInfo > li i {
+  display: inline-block;
+  background: url("../images/index_icons.png") no-repeat;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-right: 20px;
+}
+section.index_content ul.cInfo > li i.icon_1 {
+  background-position: 0 0;
+}
+section.index_content ul.cInfo > li i.icon_2 {
+  background-position: -100px 0;
+}
+section.index_content ul.cInfo > li i.icon_3 {
+  background-position: 0 -100px;
+}
+section.index_content ul.cInfo > li i.icon_4 {
+  background-position: -100px -100px;
+}
+.orange_enter {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f38100;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+}
+body {
+  height: 100%;
+  background-color: #ebebed;
+}
+/*
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}*/

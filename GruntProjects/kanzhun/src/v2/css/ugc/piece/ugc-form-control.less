@@ -1,0 +1,179 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+.u-m-form-control{
+  li{
+    padding-bottom: 25px;
+    position: relative;
+    zoom:1;
+
+    &:before, &:after{content: ""; display:table;}
+    &:after{clear: both; overflow: hidden;}
+
+    //clearfix 上边距重叠bug
+    &:first-child{
+      display: inline-block;
+    }
+
+    label{
+      float: left;
+      margin-top: 9px;
+      white-space: nowrap;
+
+      em{
+        color: #fb0d1b;
+        margin-right: 2px;
+        vertical-align: middle;
+      }
+    }
+
+    //label4个文字样式
+    &.col-label-4{
+      label{
+        width: 5em;
+      }
+
+      p.err{
+        padding-left: 6em;
+      }
+    }
+
+    //label5个文字样式
+    &.col-label-5{
+      label{
+        width: 6em;
+      }
+
+      p.err{
+        padding-left: 7em;
+      }
+    }
+
+    &.col-label-6{
+      label{
+        width: 7em;
+      }
+    }
+
+    //3个radio字样式
+    &.col-btn-3{
+      button.radio{
+        width: 85px;
+        margin-right: 16px;
+      }
+    }
+
+    input.ifd{
+      border-color: #cccccc;
+      border-width: 2px 1px 1px 2px;
+      border-radius: 3px;
+      padding: 9px 12px;
+      float: left;
+      background-color: #fbfbfb;
+      
+      &:hover{
+        background-color: #fff;
+      }
+
+      &.active{
+        background-color: #fff;
+        border-color: @green;
+      }
+    }
+
+    input.err{
+      border-color: #e85253;
+    }
+
+    .select{
+      width: 284px;
+      float: left;
+      border-radius: 3px;
+
+      dt{
+        background-color: #fbfbfb;
+      }
+
+      &.err{
+        border-color: #e85253;
+      }
+
+      &:hover{
+        dt{
+          background-color: #fff;
+        }
+      }
+    }
+
+    p.err{
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      color: #fb0d1b;
+      font-size: 12px;
+      display: none;
+
+      i{
+        background: url("@{img}/v2/ugc-v2.png") no-repeat -236px -72px;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: -2px;
+      }
+    }
+
+
+    //单位 元
+    .ifd-unit{
+      float: left;
+      margin: 0.7em 0 0 -2em;
+    }
+  }
+
+  button{
+    &.radio{
+      height: 34px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      text-align: center;
+      width: 132px;
+      margin-right: 22px;
+      background: url("@{img}/icons.png") repeat-x 0 -162px;
+      cursor: pointer;
+      outline: none;
+      &:hover{
+        background: #fff url('');
+      }
+    }
+
+    &.radio-checked{
+      background: #fff;
+      border: 1px solid #7cb228;
+      position: relative;
+
+      i{
+        width: 34px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: url("@{img}/v2/ugc-v2.png") no-repeat 0 -85px;
+      }
+    }
+  }
+
+  .ugc-orange-btn{
+    border: 0;
+    background-color: #fb7200;
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 5px;
+    width: 287px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+}

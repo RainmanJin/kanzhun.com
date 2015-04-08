@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>领域排行榜页面</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget-v2.css" />
+  <link rel="stylesheet" href="../css/field/field.css" />
+</head>
+
+<body>
+<header class="global">
+  <div class="header">
+    <a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+    <nav>
+      <a href="#">招聘</a>
+      <a href="#" class="current">公司</a>
+      <a href="#">工资</a>
+      <a href="#">面试</a>
+      <a href="#" class="mycomment">我要点评</a>
+    </nav>
+    <p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+  </div>
+</header>
+
+<section class="ps_header clearfix">
+  <div class="clearfix">
+    <form action="/companyl/search/" method="get" id="minisearchForm">
+      <input id="MSSQType" value="2" type="hidden">
+      <input name="stype" id="MSSSType" value="" type="hidden">
+      <dl class="select ps_salary_slt" id="minisearchS">
+        <dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly" /><div></div><span class="btn"><i></i></span></dt>
+        <dd>
+          <a href="/jobl/p/">职位</a>
+          <a href="/companyl/search/">公司</a>
+          <a href="/salaryl/search/">工资</a>
+          <a href="/interviewl/search/">面试</a>
+        </dd>
+      </dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value="" /><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" /><input type="hidden" id="cityCode" name="cityCode" value="" /><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索" /></span>
+    </form>
+  </div>
+</section>
+
+<div class="f_container clearfix">
+<section class="f_l_con clearfix">
+<div class="secondary_nav mb15">
+  <h1>互联网金融领域</h1>
+  <ul class="fright">
+    <li><i class="big_dot"></i><a href="">领域概况</a></li>
+    <li><i class="big_dot"></i><a href="">排行榜</a></li>
+    <li><i class="big_dot"></i><a href="">公司列表</a></li>
+  </ul>
+  <p>所属行业：互联网<em>|</em>公司：共221家</p>
+</div>
+<div class="wrap_style mb15">
+  <div class="ranking_nav mb20 clearfix">
+    <h2>排行榜</h2>
+    <p><a href="" class="current">员工推荐排行</a><a href="">综合评分排行</a><a href="">CEO支持率排行</a></p>
+    <a href="" class="fright"><i class="share_to_all"></i>分享</a>
+  </div>
+  <!-- 员工推荐排行 -->
+  <div class="box_con clearfix">
+    <dl class="left_explain">
+      <dt>
+        <i class="recommend"></i>
+      </dt>
+      <dd>
+        <h3 class="f_16">员工推荐排行榜</h3>
+        <p class="mb15 grey_66">按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+        <p><a href="" class="links">查看完整排行榜</a></p>
+      </dd>
+    </dl>
+    <ul class="right_main">
+      <li>
+        <p class="mb15"><i class="s_serial_num serial_num_red">1</i><a href="">阿里巴巴</a></p>
+        <div class="doughnua_chart ml20" style="background-color: #c00;">
+          <span>2.9</span>
+          <canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+        </div>
+        <p class="ml15 grey_66 rate">员工推荐率</p>
+      </li>
+      <li>
+        <p class="mb15"><i class="s_serial_num serial_num_blue">2</i><a href="">阿里巴巴</a></p>
+        <div class="doughnua_chart ml20" style="background-color: #c00;">
+          <span>2.9</span>
+          <canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+        </div>
+        <p class="ml15 grey_66 rate">员工推荐率</p>
+      </li>
+      <li>
+        <p class="mb15"><i class="s_serial_num serial_num_green">3</i><a href="">阿里巴巴阿里巴巴阿里巴巴</a></p>
+        <div class="doughnua_chart ml20" style="background-color: #c00;">
+          <span>2.9</span>
+          <canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+        </div>
+        <p class="ml15 grey_66 rate">员工推荐率</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 综合评分排行 -->
+  <div class="box_con clearfix">
+    <dl class="left_explain">
+      <dt>
+        <i class="total_ranking"></i>
+      </dt>
+      <dd>
+        <h3 class="f_16">综合评分排行</h3>
+        <p class="mb15 grey_66">按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+        <p><a href="" class="links">查看完整排行榜</a></p>
+      </dd>
+    </dl>
+    <ul class="right_main">
+      <li>
+        <p class="mb15"><i class="s_serial_num serial_num_red">1</i><a href="">阿里巴巴</a></p>
+        <div class="start_score">
+          <span class="green_b_star"><i style="width: 45px;"></i></span>
+          <p class="t-center"><strong class="score">4.0</strong></p>
+        </div>
+        <p class="ml15 grey_66 total_score">综合评分</p>
+      </li>
+      <li>
+        <p class="mb15"><i class="s_serial_num serial_num_blue">2</i><a href="">阿里巴巴</a></p>
+        <div class="start_score">
+          <span class="green_b_star"><i style="width: 45px;"></i></span>
+          <p class="t-center"><strong class="score">4.0</strong></p>
+        </div>
+        <p class="ml15 grey_66 total_score">综合评分</p>
+      </li>
+      <li>
+        <p class="mb15"><i class="s_serial_num serial_num_green">3</i><a href="">阿里巴巴</a></p>
+        <div class="start_score">
+          <span class="green_b_star"><i style="width: 45px;"></i></span>
+          <p class="t-center"><strong class="score">4.0</strong></p>
+        </div>
+        <p class="ml15 grey_66 total_score">综合评分</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- CEO支持率排行 -->
+  <div class="box_con clearfix">
+    <dl class="left_explain">
+      <dt>
+        <i class="surpport"></i>
+      </dt>
+      <dd>
+        <h3 class="f_16">综合评分排行</h3>
+        <p class="mb15 grey_66">按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+        <p><a href="" class="links">查看完整排行榜</a></p>
+      </dd>
+    </dl>
+    <ul class="right_main">
+      <li>
+        <p class="mb15"><i class="s_serial_num serial_num_red">1</i><a href="">阿里巴巴</a></p>
+        <div class="doughnua_chart ml20" style="background-color: #c00;">
+          <span>2.9</span>
+          <canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+        </div>
+        <p class="ml15 grey_66 rate">CEO支持率</p>
+      </li>
+      <li>
+        <p class="mb15"><i class="s_serial_num serial_num_blue">2</i><a href="">阿里巴巴</a></p>
+        <div class="doughnua_chart ml20" style="background-color: #c00;">
+          <span>2.9</span>
+          <canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+        </div>
+        <p class="ml15 grey_66 rate">CEO支持率</p>
+      </li>
+      <li>
+        <p class="mb15"><i class="s_serial_num serial_num_green">3</i><a href="">阿里巴巴阿里巴巴阿里巴巴</a></p>
+        <div class="doughnua_chart ml20" style="background-color: #c00;">
+          <span>2.9</span>
+          <canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+        </div>
+        <p class="ml15 grey_66 rate">CEO支持率</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="wrap_style co_pk_wrap">
+  <h2 class="f_tt mt20">公司待遇PK<a href="javascript:;" class="share_to_all fright"><i class="default_share"></i>分享</a></h2>
+    <div class="co_pk_tip_p"><a href="javascript:;"></a></div>
+    <div class="co_pk_tip">
+      <i></i>
+      <p><strong>公司待遇PK</strong>，可以将同一领域内不同公司拥有的相同职位进行工资对比，通过图表方式可更直观的展现公司之间同一职位的待遇差异。</p>
+      <p class="mt10">图表中，横坐标代表工资的区间段； <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纵坐标表示各区段工资占比。</p>
+    </div>
+  <!--<a href="javascript:;" class="co_pk_share"><i class="default_share"></i>分享</a>-->
+
+  <div class="co_pk">
+    <p class="co_pk_tt">北京大学 <span>VS</span> 中国移动 产品经理的工资对比</p>
+
+    <div class="co_pk_chart">
+
+    </div>
+  </div>
+
+  <div class="co_pk_items clearfix">
+    <ul class="clearfix">
+      <li>
+        <div>
+          <img src="http://img.kanzhun.com/images/logo/20140707/8f0e5918bfc6db40eaadefb31853faea.jpg">
+          <em>换一个</em>
+          <i class="co_pk_close"></i>
+        </div>
+        <p>
+          <i class="item_1"></i>北京大学
+        </p>
+      </li>
+
+      <li>
+        <div>
+          <img src="http://img.kanzhun.com/images/logo/20140707/8f0e5918bfc6db40eaadefb31853faea.jpg">
+          <em>换一个</em>
+          <i class="co_pk_close"></i>
+        </div>
+        <p>
+          <i class="item_1"></i>北京大学
+        </p>
+      </li>
+
+      <li class="co_pk_i_def">
+        <a href="javascript:;">
+          <span></span>
+        </a>
+        <p>添加对比公司</p>
+      </li>
+
+      <li class="co_pk_i_def">
+        <a href="javascript:;">
+          <span></span>
+        </a>
+        <p>添加对比公司</p>
+      </li>
+    </ul>
+
+    <div class="co_pk_select">
+      <p class="mb10 mt20">选择对比职位</p>
+      <dl class="select_green">
+        <dt>
+          <input type="button" name="" value="请选择" readonly="readonly">
+          <input type="hidden" name="" value="0"><span class="btn"><i></i></span></dt>
+        <dd>
+          <a href="#" rel="nofollow" data-val="4">互联网</a>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="f_r_con">
+  <div class="advertis_area mb15">
+    <a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+  </div>
+  <div class="wrap_style mb15">
+    <h2 class="f_tt mt20 mb15">热门领域</h2>
+    <ul class="hot_field_list mb10">
+      <li><i class="small_dot"></i><a href="" class="links">互联网</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+      <li><i class="small_dot"></i><a href="" class="links">排行榜</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+      <li><i class="small_dot"></i><a href="" class="links">公司列表</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+      <li><i class="small_dot"></i><a href="" class="links">排行榜</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+      <li><i class="small_dot"></i><a href="" class="links">公司列表</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+    </ul>
+  </div>
+  <div class="wrap_style">
+    <h2 class="f_tt mt20 mb15"><a href="" class="fright links seemore">查看所有</a>B2C领域热门公司</h2>
+    <dl class="hot_cmp mb10">
+      <dt>
+        <a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+      </dt>
+      <dd>
+        <p><a href="" class="links grey_33">华为</a></p>
+        <span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="grey_99">400条点评</em>
+      </dd>
+    </dl>
+    <dl class="hot_cmp">
+      <dt>
+        <a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+      </dt>
+      <dd>
+        <p><a href="" class="links grey_33">华为</a></p>
+        <span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="grey_99">400条点评</em>
+      </dd>
+    </dl>
+    <dl class="hot_cmp">
+      <dt>
+        <a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+      </dt>
+      <dd>
+        <p><a href="" class="links grey_33">华为</a></p>
+        <span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="grey_99">400条点评</em>
+      </dd>
+    </dl>
+    <dl class="hot_cmp">
+      <dt>
+        <a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+      </dt>
+      <dd>
+        <p><a href="" class="links grey_33">华为</a></p>
+        <span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="grey_99">400条点评</em>
+      </dd>
+    </dl>
+    <dl class="hot_cmp">
+      <dt>
+        <a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+      </dt>
+      <dd>
+        <p><a href="" class="links grey_33">华为</a></p>
+        <span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="grey_99">400条点评</em>
+      </dd>
+    </dl>
+  </div>
+</section>
+</div>
+
+<section class="maskui_dialog coPk_dialog" style="display:block;width: 600px">
+  <div class="dialog_con">
+    <a href="javascript:;" class="dialog_close maskuiclose"></a>
+    <h3>请选择对比公司<span class="little">（最多可选4家公司）</span></h3>
+    <div class="co_show">
+      <ul class="clearfix">
+        <li><img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="22" height="22"></li>
+        <li><img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="22" height="22"></li>
+        <li><img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="22" height="22"></li>
+        <li><img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="22" height="22"></li>
+      </ul>
+      <a class="btn_green disable" href="javascript:;">开始对比</a>
+    </div>
+    <div class="co_list" data-action-type="scrollLR">
+      <a class="cl_l" style="display: none" href="javascript:;"></a>
+      <div class="co_list_c">
+        <div class="clc_inner">
+          <ul class="clearfix">
+            <li class="current">
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网淘宝网淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li class="current">
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;">
+                  <i class="i_corner"></i>
+                  <img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" width="86" height="86">
+                </a>
+              </div>
+              <p>淘宝网</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="cl_r" href="javascript:;"></a>
+    </div>
+  </div>
+</section>
+</body>
+</html>

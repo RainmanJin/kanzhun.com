@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>公司面经搜索</title>
+  <link rel="stylesheet" type="text/css" href="../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../css/map-search.css">
+</head>
+<body style="background-color:#fff;">
+<section class="search search-g">
+  <div>
+    <input type="text" placeholder="按热门职位搜索面经">
+    <input type="submit" value>
+  </div>
+</section>
+
+<div class="map-search">
+  <div id="allmap"></div>
+</div>
+
+
+
+<dl class="map-dialog">
+  <dt>
+    <span>产品经理产品经理产品经理</span> - 10-12K
+  </dt>
+  <dd>
+
+    <figure>
+      <img src="http://img.kanzhun.com/image/l11514.gif" alt=""/>
+      <p>2800m</p>
+    </figure>
+
+    <div>
+      <strong>北京百度网络技术有限公司</strong>
+      <p>
+        <span class="grade_star"><i class="s_4"></i></span>3.8分
+      </p>
+      <p>123条点评 | 24个职位</p>
+      <p>北京市朝阳区西坝河西坝河168号恒川公寓寓L01</p>
+    </div>
+  </dd>
+</dl>
+
+<div class="map-err hidden"></div>
+<aside class="origin">
+  <img src="../images/origin.png" width="35" >
+</aside>
+<aside class="new-pointer">
+  <img src="../images/newpointer.png" width="35" >
+  <p>将当前地图中心点设为搜索位置 <span><i></i></span></p>
+</aside>
+</body>
+<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../js/help.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=N90N1ex3Nu71fh6vCi6FjNM3"></script>
+<!--<script src="../js/site/map-search.js"></script>-->
+</html>
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>看准雇主品牌沙龙邀请函</title>
+
+    <link rel="stylesheet" href="css/common/idangerous.swiper.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide page" id="page1">
+                    <img class="page" src="images/page1.jpg"/>
+                    <span class="slide_up"><i class="up"></i></span>
+                </div>
+                <div class="swiper-slide page" id="page2">
+                    <img class="page" src="images/page2.jpg"/>
+                    <span class="slide_up"><i class="up"></i></span>
+                </div>
+
+                <div class="swiper-slide page" id="page3">
+                    <img class="page" src="images/page3.jpg"/>
+                    <span class="slide_up"><i class="up"></i></span>
+                </div>
+                <div class="swiper-slide page" id="page4">
+                    <img class="bg" src="images/sign_bg.jpg" />
+                    <div class="sign_wrap">
+                        <div class="wrap">
+                            <a class="sign" href="form.html">
+                                我要报名
+                            </a>
+                        </div>
+                        <img src="images/url.png"/>
+                    </div>
+                    <span class="slide_up"><i class="up"></i></span>
+                </div>
+                <div class="swiper-slide page" id="page5">
+                    <div id="link">
+                        <div class="a_wrap">
+                            <a class="img" href="#">
+                                <img src="images/kanzhun1.png"/>
+                            </a>
+                            <a class="img" href="#">
+                                <img src="images/boss.png" />
+                            </a>
+                            <a class="img" href="#">
+                                <img src="images/snail.png"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="cooperation">
+                        合作咨询：13466679084(wilson)
+                    </div>
+                    <div id="url">
+                        <img src="images/url.png" alt="www.kanzhun.com"/>
+                    </div>
+                    <span class="slide_up"><i class="up"></i></span>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="js/lib/jquery-2.1.1.min.js"></script>
+<script src="js/utils/idangerous.swiper.js"></script>
+<script src="js/site/invite.js"></script>
+</html>
+
+

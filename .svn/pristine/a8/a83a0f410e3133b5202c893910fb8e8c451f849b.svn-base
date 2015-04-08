@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>牛人详情页</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/weixin.css" />
+</head>	
+<body>
+<header class="boss_header">
+  <a class="go_back"><i class="i i_left"></i></a>
+  <h1>大罗永浩 <span class="green">@锤子科技伟业</span><h1>
+  <p>移动事业部大产品运营总监</p>
+  <span class="pic_header_large">
+    <img src="images/img_1.jpg" width=90 height=90>
+  </span>
+  <a class="share">
+    <i class="i i_share"></i><br>
+    <em>分享</em>
+  </a>
+</header>
+<section class="detail_content">
+  <h2><i class="i i_horn"></i> 您的朋友＂李鹏＂为张磊站台</h2>
+  <a>
+    <div class="l mt5">
+      <span class="pic_header_small">
+        <img src="images/img_1.jpg" width=52 height=52>
+      </span>
+    </div>
+    <div class="c mt10 ml10">
+      <p><span class="name">李鹏</span> 亲密朋友</p>
+      <p><span class="green">@创业公司</span> 创始人CEO</p>
+    </div> 
+    <div class="r">
+      <i class="i i_right"></i>
+    </div>  
+  </a>
+</section>
+<section class="detail_content mt20">
+  <h2><i class="i i_heart"></i> 为什么选择我</h2> 
+  <ul class="label mt10">  
+    <li><span class="span_green">有美女</span></li>
+    <li><span class="span_green">股票期权优待</span></li>
+  </ul>
+  <p class="mb10">
+锤子科技长期招聘 Android 工程师，来试试吧，你可以薪酬待遇无损失地参与一个从明星公司到伟大公司的创业，看到满大街的人都在使用你开发的产品，领到一份足以中年之前腰杆很硬地带着老婆退休并沦为一对废物的期权和股份，一把 Herman Miller 的 Embody 传奇办公椅和每天两顿让你再也不想去饭馆的美味工作餐……
+  </p>
+</section>
+<section class="detail_content mt20">
+  <h2><i class="i i_origin"></i> 工作经历</h2>
+  <h3 class="mt10">公元2014</h3>
+  <dl class="exp">
+    <dt><i class="i_2 i_circle_1"></i></dt>
+    <dd></dd>
+    <dt><i class="i_2 i_circle_2">1年</i></dt>
+    <dd>
+      <i class="i i_triangle_greyL"></i>
+      <p>海科融通 | 支付 | 产品运营总监</p>
+    </dd>
+    <dt><i class="i_2 i_circle_2">1年</i></dt>
+    <dd>
+      <i class="i i_triangle_greyL"></i>      
+      <p>海科融通 | 支付 | 产品运营总监</p>
+    </dd>
+    <dt><i class="i_2 i_circle_2">1年</i></dt>
+    <dd>
+      <i class="i i_triangle_greyL"></i>
+      <p>海科融通 | 支付 | 产品运营总监</p>
+    </dd>
+    <dt><i class="i_2 i_circle_3"></i></dt>
+    <dd>
+      <i class="i i_triangle_greyL"></i>
+      <p>河北农业大学 | 计算机科学与技术专业 | 本科</p>
+    </dd>                    
+  </dl> 
+</section>
+
+<div class="bottom_download">
+  <p>
+    投简历？过时啦！下载“<span class="green">Boss直聘</span>”<br>
+    找工作直接和Boss开谈！
+  </p>
+  <div class="mt10 mr10 mb10 ml10"><a class="btn_green">下载Boss直聘</a></div>
+</div>
+</body>
+</html>
+
+

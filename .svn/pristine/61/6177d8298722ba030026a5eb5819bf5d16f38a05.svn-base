@@ -1,0 +1,63 @@
+//colors
+@def: #343434;
+@placeholder: #999999;
+@green: #7cb228;
+@grey: #555;
+@blue: #26abbe;
+@bgc: #e5e5e5;
+@grey_s: #ebebeb;
+@grey_border:#d1d1d1;
+@white:#fff;
+@red:#d02d48;
+@orange:#fd9f25;
+@err_color:#ff0000;
+
+//css3 
+.transform(...){
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-ms-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
+}
+
+.animation(...){
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	-ms-animation: @arguments;
+	-o-animation: @arguments;
+	animation: @arguments;
+}
+
+.transition(...){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-ms-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.box-shadow(...){
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-ms-box-shadow: @arguments;
+	box-shadow: @arguments;
+}
+
+.flex(...){
+	-webkit-flex: @arguments;
+	flex: @arguments;
+}
+
+.background-size(...){
+	-webkit-background-size: @arguments;
+	-moz-background-size: @arguments;
+	-o-background-size: @arguments;
+	background-size: @arguments;
+}
+.box-sizing(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="../../css/site/download.css"/>
+  <title>蜗牛</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="tt">
+      <img src="../../images/download/tt.png" class="block">
+      <a class="download" href="#">立即下载</a>
+    </div>
+
+    <div class="phone">
+    <img src="../../images/download/wap-phone.png">
+    </div>
+  </div>
+
+<!--  <div class="mask" id="wxMask">
+    <div class="transmitDialog" id="transmitDialog">
+      <p>
+        分享到朋友圈 <br/>
+        啦啦啦啦啦~
+      </p><i class="arrows"></i>
+    </div>
+  </div>-->
+</body>
+</html>
+
+

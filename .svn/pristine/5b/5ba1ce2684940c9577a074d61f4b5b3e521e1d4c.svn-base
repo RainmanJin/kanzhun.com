@@ -1,0 +1,101 @@
+@import "common/var";
+@import "module/wx";
+//公司级别下的工资列表和详情页
+
+div.company{
+  padding: 15px 10px;
+  margin: 10px 10px 0;
+  color: #ffffff;
+  .linear-gradient(top, #69c057, #22ac38);
+
+  p{
+    strong{
+      margin-right: 5px;
+      font-size: 40px;
+      font-weight: normal;
+      vertical-align: bottom;
+      line-height: 1em;
+      .text-shadow(0 1px 1px #0e5e18, 0 0 0 #000000, 0 1px 0 rgba(255, 255, 255, 0.8));
+    }
+    a.openDetail{
+      color: #fff;
+      background-color: @orange;
+      display: inline-block;
+      padding: 5px;
+      border-radius: 5px;
+      float: right;
+      width: 70px;
+      text-align: center;
+      margin-top: -5px;
+    }
+  }
+}
+
+div.co-chart-wrap{
+  margin: 0 10px;
+  .tt{
+    background-color: #fff;
+    padding: 10px;
+  }
+  .co-chart{
+    background-color: #fff;
+    height: 150px;
+  }
+}
+
+div.set{
+  background-color: #efefef;
+  padding: 10px 5px;
+  height: 65px;
+  width: 100%;
+  .box-sizing();
+  border: 1px solid #d2d2d2;
+  >div{
+    .box-sizing();
+    float: left;
+    width: 50%;
+    padding:0 5px;
+  }
+}
+.bt_orange{
+  display: block;
+  color: #f49600;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #f49600;
+  border-radius: 4px;
+  background-color: #fff;
+  &.green{
+    color: #67bf58;
+    border: 1px solid #67bf58;
+  }
+}
+.btn-orange{
+  border: 0;
+  width: 100%;
+  .box-sizing();
+  display: block;
+  background-color: #f49600;
+  padding: 12px 0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 0;
+  line-height: 1em;
+}
+
+i.i_open{
+  display: inline-block;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  border-width: 4px 4px 0 4px;
+  border-style: solid dashed;
+  border-color: #fff transparent transparent transparent;
+  overflow: hidden;
+  vertical-align: 2px;
+  .transition(all .2s linear);
+  &.i_close {
+    .transform(rotate(180deg));
+  }
+}

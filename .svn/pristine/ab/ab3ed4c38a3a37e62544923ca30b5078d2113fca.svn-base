@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>展开收起</title>
+  <link rel="stylesheet" href="/v2/css/widget.css" />
+  <link rel="stylesheet" href="select.css" />
+</head>
+
+<body style="padding: 100px;">
+<p>普通一级select</p>
+<dl class="select select_u static s_suc" style="z-index:4">
+  <dt ka="createcom1-industry"><input type="button" name="selectflag_i" value="计算机软件" class="v" readonly="readonly"><input type="hidden" name="industryCode" value="2"><span class="btn"><i></i></span></dt>
+  <dd style="display: none;">
+
+    <a href="#" rel="nofollow" data-val="4">互联网</a>
+
+    <a href="#" rel="nofollow" data-val="2">计算机软件</a>
+
+    <a href="#" rel="nofollow" data-val="3">IT服务</a>
+
+    <a href="#" rel="nofollow" data-val="1">计算机硬件</a>
+
+    <a href="#" rel="nofollow" data-val="6">通讯</a>
+
+    <a href="#" rel="nofollow" data-val="7">电子</a>
+
+    <a href="#" rel="nofollow" data-val="5">网络游戏</a>
+
+    <a href="#" rel="nofollow" data-val="9">金融</a>
+
+    <a href="#" rel="nofollow" data-val="10">保险</a>
+
+    <a href="#" rel="nofollow" data-val="11">房地产</a>
+
+    <a href="#" rel="nofollow" data-val="51">家居/室内设计/装潢</a>
+
+    <a href="#" rel="nofollow" data-val="13">物业</a>
+
+    <a href="#" rel="nofollow" data-val="17">咨询</a>
+
+    <a href="#" rel="nofollow" data-val="20">中介</a>
+
+    <a href="#" rel="nofollow" data-val="14">广告公关</a>
+
+    <a href="#" rel="nofollow" data-val="15">传媒/艺术</a>
+
+    <a href="#" rel="nofollow" data-val="48">快速消费品</a>
+
+    <a href="#" rel="nofollow" data-val="12">餐饮</a>
+
+    <a href="#" rel="nofollow" data-val="26">家具/家电</a>
+
+    <a href="#" rel="nofollow" data-val="21">贸易</a>
+
+    <a href="#" rel="nofollow" data-val="22">零售</a>
+
+    <a href="#" rel="nofollow" data-val="18">教育</a>
+
+    <a href="#" rel="nofollow" data-val="50">礼品/玩具</a>
+
+    <a href="#" rel="nofollow" data-val="28">工业制造</a>
+
+    <a href="#" rel="nofollow" data-val="29">汽车/摩托车</a>
+
+    <a href="#" rel="nofollow" data-val="16">印刷</a>
+
+    <a href="#" rel="nofollow" data-val="33">医疗设备</a>
+
+    <a href="#" rel="nofollow" data-val="19">检测</a>
+
+    <a href="#" rel="nofollow" data-val="8">工业自动化</a>
+
+    <a href="#" rel="nofollow" data-val="30">运输</a>
+
+    <a href="#" rel="nofollow" data-val="23">食品/饮料/烟酒/化妆品</a>
+
+    <a href="#" rel="nofollow" data-val="31">医药/医院</a>
+
+    <a href="#" rel="nofollow" data-val="24">美容保健</a>
+
+    <a href="#" rel="nofollow" data-val="32">卫生保健</a>
+
+    <a href="#" rel="nofollow" data-val="34">休闲/体育/娱乐</a>
+
+    <a href="#" rel="nofollow" data-val="40">航空</a>
+
+    <a href="#" rel="nofollow" data-val="36">旅游/度假/住宿</a>
+
+    <a href="#" rel="nofollow" data-val="41">纺织服装</a>
+
+    <a href="#" rel="nofollow" data-val="37">石化/能源</a>
+
+    <a href="#" rel="nofollow" data-val="39">电气/电力/水利</a>
+
+    <a href="#" rel="nofollow" data-val="38">矿业/金属</a>
+
+    <a href="#" rel="nofollow" data-val="25">生物化工</a>
+
+    <a href="#" rel="nofollow" data-val="27">重工业</a>
+
+    <a href="#" rel="nofollow" data-val="49">养殖业</a>
+
+    <a href="#" rel="nofollow" data-val="42">政府</a>
+
+    <a href="#" rel="nofollow" data-val="43">环保</a>
+
+    <a href="#" rel="nofollow" data-val="44">农业</a>
+
+    <a href="#" rel="nofollow" data-val="45">跨领域经营</a>
+
+    <a href="#" rel="nofollow" data-val="46">其它</a>
+
+  </dd>
+</dl>
+
+
+<p style="padding: 50px 0 10px;">
+  二级select <br/>
+  二级的select没有纵向滚动条 <br/>
+  1. 需要给dl增加class: select-tree
+  2. 目录结构有变化
+</p>
+<dl class="select select_u select-tree static" style="z-index:3; width: 200px;">
+  <dt ka="createcom1-industry">
+    <input type="button" name="selectflag_i" value="" class="v" readonly="readonly">
+    <input type="hidden" name="industryCode" value="0">
+    <span class="btn"><i></i></span>
+  </dt>
+  <dd>
+    <div class="select-second-item on">
+      <a href="#" rel="nofollow" class="select-opts-tt"><span>互联网</span></a>
+      <p class="select-second">
+        <a href="#" rel="nofollow" data-val="2">计算机软件</a>
+        <a href="#" rel="nofollow" data-val="3">IT服务</a>
+        <a href="#" rel="nofollow" data-val="1">计算机硬件</a>
+        <a href="#" rel="nofollow" data-val="6">通讯</a>
+        <a href="#" rel="nofollow" data-val="7">电子</a>
+        <a href="#" rel="nofollow" data-val="5">网络游戏</a>
+        <a href="#" rel="nofollow" data-val="9">金融</a>
+        <a href="#" rel="nofollow" data-val="10">保险</a>
+      </p>
+    </div>
+    <div class="select-second-item">
+      <a href="#" rel="nofollow" data-val="2" class="select-opts-tt"><span>计算机软件</span></a>
+      <p class="select-second">
+        <a href="#" rel="nofollow" data-val="2">计算机软件</a>
+        <a href="#" rel="nofollow" data-val="3">IT服务</a>
+        <a href="#" rel="nofollow" data-val="1">计算机硬件</a>
+        <a href="#" rel="nofollow" data-val="6">通讯</a>
+        <a href="#" rel="nofollow" data-val="7">电子</a>
+        <a href="#" rel="nofollow" data-val="5">网络游戏</a>
+        <a href="#" rel="nofollow" data-val="9">金融</a>
+        <a href="#" rel="nofollow" data-val="10">保险</a>
+      </p>
+    </div>
+    <div class="select-second-item">
+      <a href="#" rel="nofollow" data-val="2" class="select-opts-tt"><span>保险</span></a>
+      <p class="select-second">
+        <a href="#" rel="nofollow" data-val="2">计算机软件</a>
+        <a href="#" rel="nofollow" data-val="3">IT服务</a>
+        <a href="#" rel="nofollow" data-val="1">计算机硬件</a>
+        <a href="#" rel="nofollow" data-val="6">通讯</a>
+        <a href="#" rel="nofollow" data-val="7">电子</a>
+        <a href="#" rel="nofollow" data-val="5">网络游戏</a>
+        <a href="#" rel="nofollow" data-val="9">金融</a>
+        <a href="#" rel="nofollow" data-val="10">保险</a>
+      </p>
+    </div>
+    <div class="select-second-item">
+      <a href="#" rel="nofollow" data-val="2" class="select-opts-tt"><span>通讯</span></a>
+      <p class="select-second">
+        <a href="#" rel="nofollow" data-val="2">计算机软件</a>
+        <a href="#" rel="nofollow" data-val="3">IT服务</a>
+        <a href="#" rel="nofollow" data-val="1">计算机硬件</a>
+        <a href="#" rel="nofollow" data-val="6">通讯</a>
+        <a href="#" rel="nofollow" data-val="7">电子</a>
+        <a href="#" rel="nofollow" data-val="5">网络游戏</a>
+        <a href="#" rel="nofollow" data-val="9">金融</a>
+        <a href="#" rel="nofollow" data-val="10">保险</a>
+      </p>
+    </div>
+    <div class="select-second-item">
+      <a href="#" rel="nofollow" data-val="2" class="select-opts-tt">网络游戏</a>
+      <p class="select-second">
+        <a href="#" rel="nofollow" data-val="2">计算机软件</a>
+        <a href="#" rel="nofollow" data-val="3">IT服务</a>
+        <a href="#" rel="nofollow" data-val="1">计算机硬件</a>
+        <a href="#" rel="nofollow" data-val="6">通讯</a>
+        <a href="#" rel="nofollow" data-val="7">电子</a>
+        <a href="#" rel="nofollow" data-val="5">网络游戏</a>
+        <a href="#" rel="nofollow" data-val="9">金融</a>
+        <a href="#" rel="nofollow" data-val="10">保险</a>
+      </p>
+    </div>
+    <div class="select-second-item">
+      <a href="#" rel="nofollow" data-val="2" class="select-opts-tt">计算机硬件</a>
+      <p class="select-second">
+        <a href="#" rel="nofollow" data-val="2">计算机软件</a>
+        <a href="#" rel="nofollow" data-val="3">IT服务</a>
+        <a href="#" rel="nofollow" data-val="1">计算机硬件</a>
+        <a href="#" rel="nofollow" data-val="7">电子</a>
+        <a href="#" rel="nofollow" data-val="9">金融</a>
+      </p>
+    </div>
+    <div class="select-second-item">
+      <a href="#" rel="nofollow" data-val="2" class="select-opts-tt">计算机软件</a>
+      <p class="select-second">
+        <a href="#" rel="nofollow" data-val="3">IT服务</a>
+        <a href="#" rel="nofollow" data-val="6">通讯</a>
+        <a href="#" rel="nofollow" data-val="7">电子</a>
+        <a href="#" rel="nofollow" data-val="5">网络游戏</a>
+        <a href="#" rel="nofollow" data-val="9">金融</a>
+        <a href="#" rel="nofollow" data-val="10">保险</a>
+      </p>
+    </div>
+  </dd>
+</dl>
+
+
+
+<!--  案例  begin-->
+
+<script src="/js/jquery-1.11.0.min.js"></script>
+<script src="/js/require.js"></script>
+<script>
+  require.config({
+    baseUrl: "/"
+  });
+  require(['js/utils/select'], function(){
+    $('dl.select').DIYSelect();
+  });
+</script>
+
+<!--  案例  end-->
+</body>
+</html>

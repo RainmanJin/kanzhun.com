@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>筛选结果页</title>
+		<!--[if lte IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!--[if gt IE 9]><!-->
+		<script src="../js/jquery-2.1.0.min.js"></script>
+		<![endif]-->
+    <link rel="stylesheet" href="../css/widget.css" />
+    <link rel="stylesheet" href="../css/screening_result.css" />
+		<script src="../js/require.js" data-main="../js/site/ugc.js"></script>
+	</head>
+
+	<body>
+		
+		<header class="global">
+			<div class="header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<nav>
+					<a href="#">招聘</a>
+					<a href="#">公司</a>
+					<a href="#" class="current">工资</a>
+					<a href="#">面试</a>
+					<a href="#" class="mycomment">我要点评</a>
+				</nav>
+				<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+			</div>
+		</header>
+
+		<section class="ps_header clearfix">
+			<div class="clearfix">
+				<dl class="select select-tile">
+					<dt>
+						<input type="text" name="" value="全部行业" readonly /><span class="btn"><i></i></span>
+					</dt>
+					<dd style="display: block;">
+            <div>
+              <p>
+                <a href="#"><strong>全部行业</strong></a>
+                <a href="#">计算机软件</a>
+                <a href="#">IT服务</a>
+                <a href="#">计算机硬件</a>
+                <a href="#">通讯</a>
+                <a href="#">电子</a>
+              </p>
+
+              <p>
+                <a href="#">互联网 </a>
+                <a href="#">中介  </a>
+                <a href="#">广告公关 </a>
+                <a href="#">传媒/艺术</a>
+                <a href="#">快速消费品</a>
+                <a href="#">餐饮</a>
+              </p>
+
+              <p>
+                <a href="#">汽车/摩托车</a>
+                <a href="#">印刷</a>
+                <a href="#">医疗设备</a>
+                <a href="#">检测</a>
+                <a href="#">工业自动化</a>
+                <a href="#">运输</a>
+              </p>
+
+              <p>
+                <a href="#">旅游/度假/住宿 </a>
+                <a href="#">纺织服装 </a>
+                <a href="#">石化/能源 </a>
+                <a href="#">电气/电力/水利</a>
+                <a href="#">矿业 </a>
+                <a href="#">生物化工 </a>
+              </p>
+
+              <p>
+                <a href="#">网络游戏 </a>
+                <a href="#">金融 </a>
+                <a href="#">保险 </a>
+                <a href="#">房地产 </a>
+                <a href="#">家居/室内设计/装潢</a>
+                <a href="#">物业 </a>
+              </p>
+
+              <p>
+                <a href="#">家具/家电 </a>
+                <a href="#">贸易 </a>
+                <a href="#">零售 </a>
+                <a href="#">教育 </a>
+                <a href="#">礼品/玩具 </a>
+                <a href="#">工业制造 </a>
+              </p>
+
+              <p>
+                <a href="#">食品 </a>
+                <a href="#">医药/医院 </a>
+                <a href="#">美容保健 </a>
+                <a href="#">卫生保健 </a>
+                <a href="#">休闲/体育/娱乐 </a>
+                <a href="#">航空 </a>
+              </p>
+
+              <p>
+                <a href="#">重工业 </a>
+                <a href="#">养殖业</a>
+                <a href="#">政府</a>
+                <a href="#">环保 </a>
+                <a href="#">农业</a>
+                <a href="#">咨询 </a>
+              </p>
+
+              <p style="background: url('');">
+                <a href="#">跨领域经营</a>
+                <a href="#">其它</a>
+              </p>
+            </div>
+					</dd>
+				</dl><input type="text" class="ps_ipt yibao" placeholder="全部职位"/><input type="text" class="ps_ipt city" placeholder="全部城市"/><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索"></span>
+			</div>
+		</section>
+
+		<div class="container ps_con clearfix">
+			<section class="np_l clearfix">
+				<h3 class="r_tt">搜索条件:</h3>
+				<p class="sr_conditions"><i class="err_gv"></i>工资范围：<b>5k - 10k</b></p>
+				<p class="sr_conditions"><i class="err_gv"></i>学历要求：<b>本科</b></p>
+				<p class="sr_conditions"><i class="err_gv"></i>工作经验：<b>3年或者以上</b></p>
+				<p class="create"><a href="" class="btn_o_s">创建职位搜索器</a></p>
+				<div class="menu">
+					<dl class="havemore clickmore mb10">
+						<dt>行业类别<i></i></dt>
+						<dd>
+							<ul class="mt10">
+								<li><a href="" class="def">互联网</a><em class="grey_99">(50)</em></li>
+								<li><a href="" class="def">计算机软件</a><em class="grey_99">(150)</em></li>
+								<li><a href="" class="def">IT服务</a><em class="grey_99">(5000)</em></li>
+								<li><a href="" class="def">计算机硬件</a><em class="grey_99">(150)</em></li>
+								<li><a href="" class="def">通讯</a><em class="grey_99">(5000)</em></li>
+								<li><a href="">更多&gt;&gt;</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<ul class="allmenu">
+						<li><a href="">互联网</a><em>（50）</em></li>
+						<li><a href="">中介</a><em>（50）</em></li>
+						<li><a href="">医疗设备</a><em>（50）</em></li>
+						<li><a href="">电气/电力/水利</a><em>（50）</em></li>
+
+						<li><a href="">计算机软件</a><em>（50）</em></li>
+						<li><a href="">广告公关</a><em>（50）</em></li>
+						<li><a href="">检测</a><em>（50）</em></li>
+						<li><a href="">矿业</a><em>（50）</em></li>
+
+						<li><a href="">IT服务</a><em>（50）</em></li>
+						<li><a href="">传媒/艺术</a><em>（50）</em></li>
+						<li><a href="">工业自动化</a><em>（50）</em></li>
+						<li><a href="">生物化工</a><em>（50）</em></li>
+
+						<li><a href="">计算机硬件</a><em>（50）</em></li>
+						<li><a href="">快速消费品</a><em>（50）</em></li>
+						<li><a href="">运输</a><em>（50）</em></li>
+						<li><a href="">重工业</a><em>（50）</em></li>
+
+						<li><a href="">通讯</a><em>（50）</em></li>
+						<li><a href="">餐饮</a><em>（50）</em></li>
+						<li><a href="">食品</a><em>（50）</em></li>
+						<li><a href="">养殖业</a><em>（50）</em></li>
+
+						<li><a href="">电子</a><em>（50）</em></li>
+						<li><a href="">家具/家电</a><em>（50）</em></li>
+						<li><a href="">医药/医院</a><em>（50）</em></li>
+						<li><a href="">政府</a><em>（50）</em></li>
+
+						<li><a href="">网络游戏</a><em>（50）</em></li>
+						<li><a href="">贸易</a><em>（50）</em></li>
+						<li><a href="">美容保健</a><em>（50）</em></li>
+						<li><a href="">环保</a><em>（50）</em></li>
+
+						<li><a href="">金融</a><em>（50）</em></li>
+						<li><a href="">零售</a><em>（50）</em></li>
+						<li><a href="">卫生保健</a><em>（50）</em></li>
+						<li><a href="">农业</a><em>（50）</em></li>
+
+						<li><a href="">保险</a><em>（50）</em></li>
+						<li><a href="">教育</a><em>（50）</em></li>
+						<li><a href="">休闲/体育/娱乐</a><em>（50）</em></li>
+						<li><a href="">跨领域经营</a><em>（50）</em></li>
+
+						<li><a href="">房地产</a><em>（50）</em></li>
+						<li><a href="">礼品/玩具</a><em>（50）</em></li>
+						<li><a href="">航空</a><em>（50）</em></li>
+						<li><a href="">其它</a><em>（50）</em></li>
+
+						<li><a href="">家居/室内设计/装潢</a><em>（50）</em></li>
+						<li><a href="">工业制造</a><em>（50）</em></li>
+						<li><a href="">旅游/度假/住宿</a><em>（50）</em></li>
+						<li><a href=""></a><em></em></li>
+
+						<li><a href="">物业</a><em>（50）</em></li>
+						<li><a href="">汽车/摩托车</a><em>（50）</em></li>
+						<li><a href="">纺织服装</a><em>（50）</em></li>
+						<li><a href=""></a><em></em></li>
+
+						<li><a href="">咨询</a><em>（50）</em></li>
+						<li><a href="">印刷</a><em>（50）</em></li>
+						<li><a href="">石化/能源</a><em>（50）</em></li>
+						<li><a href=""></a><em></em></li>
+					</ul>
+				</div>
+				<dl class="mb10">
+					<dt>发布时间<i></i></dt>
+					<dd>
+						<ul class="mt10">
+							<li><a href="" class="def">今天</a><em class="grey_99">(5800)</em></li>
+							<li><a href="" class="def">最近三天</a><em class="grey_99">(58)</em></li>
+							<li><a href="" class="def">最近一周</a><em class="grey_99">(5000)</em></li>
+							<li><a href="" class="def">最近一个月</a><em class="grey_99">(58)</em></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="mb10">
+					<dt>工作经验<i></i></dt>
+					<dd>
+						<ul class="mt10">
+							<li><a href="" class="def">不限</a><em class="grey_99">(50)</em></li>
+							<li><a href="" class="def">应届毕业生</a><em class="grey_99">(150)</em></li>
+							<li><a href="" class="def">1-3年</a><em class="grey_99">(5000)</em></li>
+							<li><a href="" class="def">3-5年</a><em class="grey_99">(150)</em></li>
+							<li><a href="" class="def">5-10年</a><em class="grey_99">(5000)</em></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="mb10">
+					<dt>月薪范围<i></i></dt>
+					<dd>
+						<ul class="mt10">
+							<li><a href="" class="def">不限</a><em class="grey_99">(50)</em></li>
+							<li><a href="" class="def">面议</a><em class="grey_99">(150)</em></li>
+							<li><a href="" class="def">1001-2000</a><em class="grey_99">(5000)</em></li>
+							<li><a href="" class="def">2001-3000</a><em class="grey_99">(50)</em></li>
+							<li><a href="" class="def">3001-4000</a><em class="grey_99">(150)</em></li>
+							<li><a href="" class="def">4001-6000</a><em class="grey_99">(5000)</em></li>
+							<li><a href="" class="def">6001-8000</a><em class="grey_99">(50)</em></li>
+							<li><a href="" class="def">8001-10000</a><em class="grey_99">(150)</em></li>
+							<li><a href="" class="def">10001-15000</a><em class="grey_99">(5000)</em></li>
+							<li><a href="" class="def">15001-20000</a><em class="grey_99">(5000)</em></li>
+							<li><a href="" class="def">20001-25000</a><em class="grey_99">(5000)</em></li>
+							<li><a href="" class="def">25001以上</a><em class="grey_99">(5000)</em></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="mb10">
+					<dt>学历要求<i></i></dt>
+					<dd>
+						<ul class="mt10">
+							<li><a href="" class="def">不限</a><em class="grey_99">(50)</em></li>
+							<li><a href="" class="def">高中</a><em class="grey_99">(150)</em></li>
+							<li><a href="" class="def">中专</a><em class="grey_99">(5000)</em></li>
+							<li><a href="" class="def">大专</a><em class="grey_99">(50)</em></li>
+							<li><a href="" class="def">本科</a><em class="grey_99">(150)</em></li>
+							<li><a href="" class="def">硕士</a><em class="grey_99">(5000)</em></li>
+							<li><a href="" class="def">博士</a><em class="grey_99">(150)</em></li>
+							<li><a href="" class="def">其他</a><em class="grey_99">(5000)</em></li>
+						</ul>
+					</dd>
+				</dl>
+			</section>
+
+			<section class="np_r clearfix">
+				<dl class="top nobg clearfix">
+					<dt>
+						<a href=""><img src="../images/np_sr_img_03.jpg" alt="" width="65" /><span></span></a><i class="grey_99">今天</i>
+					</dt>
+					<dd>
+						<h3 class="r_tt">产品经理</h3>
+						<p class="jieshao">红孩子<em></em><span class="np_sr_grade_start vh"><i style="width:63px;"></i></span><em></em><a href="">235条信息</a><em class="grey_f3">|</em><i class="grey_99">北京</i></p>
+						<p class="company_advantage">六险一金 + 发展前景 + 成长型 + 弹性上下班时间</p>
+						<p class="sr_nav"><a href="">公司</a><em class="grey_f3">|</em><a href="">点评</a><em class="grey_f3">|</em><a href="">工资</a></p>
+					</dd>
+			 		<aside><a href="" class="btn_grey_s">查看</a><a class="t-center collection">收藏</a></aside> 
+				</dl>
+				<p class="line"></p>
+				<div class="sr_info">
+					<dl class="top clearfix">
+						<dt>
+							<a href=""><img src="../images/np_sr_img_03.jpg" alt="" width="65" /><span></span></a><i class="grey_99">今天</i>
+						</dt>
+						<dd>
+							<h3 class="r_tt">产品经理</h3>
+							<p class="jieshao">红孩子<em></em><span class="np_sr_grade_start vh"><i style="width:63px;"></i></span><em></em><a href="">235条信息</a><em class="grey_f3">|</em><i class="grey_99">北京</i></p>
+							<p class="company_advantage">公司的优点：1、公司待遇不错，至少在成都还是很有竞争力的。公司够大，转岗机会还是比较多。公司够大，转岗机会还是比较多。3、公司整体上升趋势<span class="more">...<i>展开</i></span></p>
+							<p class="sr_nav mt15"><a href="" class="current">公司</a><a href="">点评</a><a href="">工资</a><a href="">面试</a><a href="">照片</a></p>
+						</dd>
+				 		<aside><a href="" class="btn_grey_s">查看</a><br /><a class="t-center collection">收藏</a></aside> 
+					</dl>
+					<div class="evaluation_info">
+						<a href="" class="close"></a>
+						<h3 class="r_tt nobttom">红孩子公司概述</h3>
+						<dl class="co_tb">
+							<dt>
+								
+								<div><img src="../images/sr_img_01.jpg" alt="" /></div>
+								<a href="" class="jiange"><img src="../images/sr_img_02.jpg"/></a><a href="" class="jiange"><img src="../images/sr_img_03.jpg" /></a><a href="" class="jiange"><img src="../images/sr_img_04.jpg" /></a><a href="" class="jiange"><img src="../images/sr_img_05.jpg" /></a>
+							</dt>
+							<dd>
+								<p><strong>官方主页</strong><a href="">www.baidu.com</a><a href="#" class="edit"><i></i>信息有误？编辑</a></p>
+								<p><strong>行业</strong>互联网</p>
+								<p><strong>城市</strong>北京</p>
+								<p><strong>规模</strong>大型(1000人以上)</p>
+								<p><strong>CEO</strong>李彦宏</p>
+								<p class="competitors"><strong>竞争对手</strong><a href="#" target="_blank">网易有道</a>&nbsp;&nbsp;&nbsp;<a href="#" target="_blank">奇虎360</a>&nbsp;&nbsp;&nbsp;<a href="#" target="_blank">Google（谷歌中国）</a></p>
+								<ul>
+									<li>
+										<em>职业成长</em><span class="grade_rect"><i style="width:58px;"></i></span>
+									</li>
+									<li>
+										<em>个人技能成长</em><span class="grade_rect"><i style="width:58px;"></i></span>
+									</li>
+									<li>
+										<em>环境氛围</em><span class="grade_rect"><i style="width:58px;"></i></span>
+									</li>
+									<li>
+										<em>工作压力</em><span class="grade_rect"><i style="width:58px;"></i></span>
+									</li>
+									<li>
+										<em>公司前景</em><span class="grade_rect"><i style="width:58px;"></i></span>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+
+				<div class="sr_info evaluation">
+					<dl class="top clearfix">
+						<dt>
+							<a href=""><img src="../images/np_sr_img_03.jpg" alt="" width="65" /><span></span></a><i class="grey_99">今天</i>
+						</dt>
+						<dd>
+							<h3 class="r_tt">产品经理</h3>
+							<p class="jieshao">红孩子<em></em><span class="np_sr_grade_start vh"><i style="width:63px;"></i></span><em></em><a href="">235条信息</a><em class="grey_f3">|</em><i class="grey_99">北京</i></p>
+							<p class="company_advantage">公司的优点：1、公司待遇不错，至少在成都还是很有竞争力的。公司够大，转岗机会还是比较多。公司够大，转岗机会还是比较多。3、公司整体上升趋势<span class="more">...<i>展开</i></span></p>
+							<p class="sr_nav mt15"><a href="">公司</a><a href="" class="current">点评</a><a href="">工资</a><a href="">面试</a><a href="">照片</a></p>
+						</dd>
+				 		<aside><a href="" class="btn_grey_s">查看</a><a class="t-center collection">收藏</a></aside> 
+					</dl>
+					<div class="evaluation_info">
+						<a href="" class="close"></a>
+						<h3 class="r_tt nobttom">红孩子公司的点评</h3>
+						<div class="co_grade">
+							<dl class="total">
+								<dt>员工对公司的总体评分</dt>
+								<dd class="total_chart_w">
+									<p><span class="grade_star_b mr10"><i style="width:56px;"></i></span>2.2分<em>|</em>来自235条信息</p>
+									<p class="mt15">互联网行业排名第42位，<a href="#">查看行业内公司排名</a></p>
+								</dd>
+								<dd class="circle_chart"></dd>
+							</dl>
+							<dl class="ceo">
+								<dt>CEO支持率</dt>
+								<dd>
+									<img src="../images/img-02.jpg" alt="" />
+									<p>李彦宏 <br>首席执行官</p>
+								</dd>
+							</dl>
+						</div>
+					
+						<p class="line"></p>
+						<dl class="detail_v notop">
+							<dt>“易宝支付是锻炼行业产品经理的好地方”</dt>
+							<dd>
+								<p><span class="grade_star"><i style="width:40px;"></i></span><span class="mr10"> 4.0分</span>点评来自在易宝支付工作过1年的产品经理 <span class="grey_99 ml10">- 发布于 1月20日 北京</span></p>
+								<p class="company_advantage mt10">公司的优点：1、公司待遇不错，至少在成都还是很有竞争力的。2、公司够大，转岗机会还是比较多。3、公司整体上升趋势，一般还是没有裁员或者倒闭的风险。4、比较透明，付出有收获。年终奖和股票都不错... <a href="" class="more">展开</a></p>
+							</dd>
+						</dl>
+						<dl class="detail_v">
+							<dt>“易宝支付是锻炼行业产品经理的好地方”</dt>
+							<dd>
+								<p><span class="grade_star"><i style="width:40px;"></i></span><span class="mr10"> 4.0分</span>点评来自在易宝支付工作过1年的产品经理 <span class="grey_99 ml10">- 发布于 1月20日 北京</span></p>
+								<p class="company_advantage mt10">公司的优点：1、公司待遇不错，至少在成都还是很有竞争力的。2、公司够大，转岗机会还是比较多。3、公司整体上升趋势，一般还是没有裁员或者倒闭的风险。4、比较透明，付出有收获。年终奖和股票都不错... <a href="" class="more">展开</a></p>
+							</dd>
+						</dl>
+						<p class="more"><a href="">更多点评</a></p>
+					</div>
+				</div>
+
+				<div class="sr_info evaluation">
+					<dl class="top clearfix">
+						<dt>
+							<a href=""><img src="../images/np_sr_img_03.jpg" alt="" width="65" /><span></span></a><i class="grey_99">今天</i>
+						</dt>
+						<dd>
+							<h3 class="r_tt">产品经理</h3>
+							<p class="jieshao">红孩子<em></em><span class="np_sr_grade_start vh"><i style="width:63px;"></i></span><em></em><a href="">235条信息</a><em class="grey_f3">|</em><i class="grey_99">北京</i></p>
+							<p class="company_advantage">公司的优点：1、公司待遇不错，至少在成都还是很有竞争力的。公司够大，转岗机会还是比较多。公司够大，转岗机会还是比较多。3、公司整体上升趋势<span class="more">...<i>展开</i></span></p>
+							<p class="sr_nav mt15"><a href="">公司</a><a href="">点评</a><a href="" class="current">工资</a><a href="">面试</a><a href="">照片</a></p>
+						</dd>
+				 		<aside><a href="" class="btn_grey_s">查看</a><a class="t-center collection">收藏</a></aside> 
+					</dl>
+					<div class="evaluation_info">
+						<a href="" class="close"></a>
+						<h3 class="r_tt nobttom">红孩子公司的工资</h3>
+						<div class="salary_sort">
+							<ul id="salarySort">
+								<li><i class="sort_t"></i>文字</li>
+								<li class="current"><i class="sort_p"></i>图表</li>
+							</ul>
+							<em class="blue">易宝支付各职位的员工工资</em> <span class="grey_99">最后更新 七天内</span>
+						</div>
+						<div class="salary_slide">
+							<div class="slide_con" id="salarySlide">
+								<table class="salary_chart salary_chart_p" cellspacing="0" cellspacing="0">
+									<tr>
+										<th width="132" class="t_align">职位</th>
+										<th width="80">平均工资/月</th>
+										<th width="10">&nbsp;</th>
+										<th width="63">工资范围</th>
+										<th width="63">￥10K</th>
+										<th width="63">￥20K</th>
+										<th width="63">￥30K</th>
+										<th width="63">￥40K</th>
+										<th width="63">￥50K</th>
+										<th>&nbsp;</th>
+									</tr>
+									<tr>
+										<td class="blue t_align">java工程师(8条)</td>
+										<td>￥18000</td>
+										<td colspan="8" class="chart">
+											<figure>
+												<div style="margin-left: 65px;width: 129px;" id="aaaa"></div>
+											</figure>
+										</td>
+									</tr>
+									<tr>
+										<td class="blue t_align">产品经理(6条)</td>
+										<td>￥12000</td>
+										<td colspan="8" class="chart">
+											<figure>
+												<div style="margin-left: 65px;width: 129px;">
+													<dl>
+														<dt></dt>
+														<dd>技术工程师工资 <br><span class="grey_99">工资范围：</span>￥2,000-￥20,000 <br><span class="grey_99">平均工资：</span>￥9,000 <br><span class="blue">靠谱（123）</span></dd>
+													</dl>
+												</div>
+											</figure>
+										</td>
+									</tr>
+									<tr>
+										<td class="blue t_align">技术工程师(18条)</td>
+										<td>￥11000</td>
+										<td colspan="8" class="chart">
+											<figure>
+												<div style="margin-left: 65px;width: 129px;">
+													<dl>
+														<dt></dt>
+														<dd>技术工程师工资 <br><span class="grey_99">工资范围：</span>￥2,000-￥20,000 <br><span class="grey_99">平均工资：</span>￥9,000 <br><span class="blue">靠谱（123）</span></dd>
+													</dl>
+												</div>
+											</figure>
+										</td>
+									</tr>
+								</table>
+								<p class="more"><a href="">更多薪酬</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sr_info evaluation">
+					<dl class="top clearfix">
+						<dt>
+							<a href=""><img src="../images/np_sr_img_03.jpg" alt="" width="65" /><span></span></a><i class="grey_99">今天</i>
+						</dt>
+						<dd>
+							<h3 class="r_tt">产品经理</h3>
+							<p class="jieshao">红孩子<em></em><span class="np_sr_grade_start vh"><i style="width:63px;"></i></span><em></em><a href="">235条信息</a><em class="grey_f3">|</em><i class="grey_99">北京</i></p>
+							<p class="company_advantage">公司的优点：1、公司待遇不错，至少在成都还是很有竞争力的。公司够大，转岗机会还是比较多。公司够大，转岗机会还是比较多。3、公司整体上升趋势<span class="more">...<i>展开</i></span></p>
+							<p class="sr_nav mt15"><a href="">公司</a><a href="">点评</a><a href="">工资</a><a href="" class="current">面试</a><a href="">照片</a></p>
+						</dd>
+				 		<aside><a href="" class="btn_grey_s">查看</a><a class="t-center collection">收藏</a></aside> 
+					</dl>
+					<div class="evaluation_info">
+						<a href="" class="close"></a>
+						<h3 class="r_tt nobttom">红孩子公司的面试</h3>
+						<dl class="detail_v">
+							<dt>“我经历过的最难的面试，不好忽悠啊”</dt>
+							<dd>
+								<p><i class="succ"></i><span class="grey_99 mr10">面试通过</span>点评来自在易宝支付工作过1年的产品经理 <span class="grey_99 ml10">- 发布于 1月20日 北京</span></p>
+								<p class="mt10">我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历... <a href="" class="more">展开</a></p>
+								<p class="mt10"><span class="grey_99 mr10">面试官提出的问题：</span>如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？　<a href="#">查看答案</a></p>
+							</dd>
+						</dl>
+						<dl class="detail_v">
+							<dt>“我经历过的最难的面试，不好忽悠啊”</dt>
+							<dd>
+								<p><i class="fail"></i><span class="grey_99 mr10">面试未通过</span>点评来自在易宝支付工作过1年的产品经理 <span class="grey_99 ml10">- 发布于 1月20日 北京</span></p>
+								<p class="mt10">我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历... <a href="" class="more">展开</a></p>
+								<p class="mt10"><span class="grey_99 mr10">面试官提出的问题：</span>如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？　<a href="#">查看答案</a></p>
+							</dd>
+						</dl>
+						<p class="more"><a href="">更多面试经历</a></p>
+					</div>
+				</div>
+
+				<div class="sr_info evaluation">
+					<dl class="top clearfix">
+						<dt>
+							<a href=""><img src="../images/np_sr_img_03.jpg" alt="" width="65" /><span></span></a><i class="grey_99">今天</i>
+						</dt>
+						<dd>
+							<h3 class="r_tt">产品经理</h3>
+							<p class="jieshao">红孩子<em></em><span class="np_sr_grade_start vh"><i style="width:63px;"></i></span><em></em><a href="">235条信息</a><em class="grey_f3">|</em><i class="grey_99">北京</i></p>
+							<p class="company_advantage">公司的优点：1、公司待遇不错，至少在成都还是很有竞争力的。公司够大，转岗机会还是比较多。公司够大，转岗机会还是比较多。3、公司整体上升趋势<span class="more">...<i>展开</i></span></p>
+							<p class="sr_nav mt15"><a href="">公司</a><a href="">点评</a><a href="">工资</a><a href="">面试</a><a href="" class="current">照片</a></p>
+						</dd>
+				 		<aside><a href="" class="btn_grey_s">查看</a><a class="t-center collection">收藏</a></aside> 
+					</dl>
+					<div class="evaluation_info">
+						<a href="" class="close"></a>
+						<h3 class="r_tt nobttom">红孩子公司环境照片</h3>
+						<ul class="show clearfix">
+							<li><a href=""><img src="../images/sr_img_06.jpg" alt=""/></a></li>
+							<li><a href=""><img src="../images/sr_img_07.jpg" alt=""/></a></li>
+							<li><a href=""><img src="../images/sr_img_08.jpg" alt=""/></a></li>
+							<li><a href=""><img src="../images/sr_img_09.jpg" alt=""/></a></li>
+						</ul>
+						<p class="more"><a href="">更多照片</a></p>
+					</div>
+				</div>
+				<div class="pager np_pager">
+					<a href="">&lt;</a><a href="" class="current">1</a><a href="">2</a><a href="">3</a><a href="">4</a><span>... </span><a href="">&gt;</a> 共50页&nbsp;&nbsp;&nbsp;&nbsp;去<input type="text" />页
+				</div>
+			</section>
+		</div>
+
+	</body>
+</html>

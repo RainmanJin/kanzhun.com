@@ -1,0 +1,76 @@
+//@img-path: '../images'; //fe
+@img-path: '../../images/news'; //rd
+
+//colors
+@def: #343434;
+@a-def: #fff;
+@placeholder: #999999;
+@green: #62bb6a;
+
+@green-d: #7aba0c; //深绿
+@cyan: #0eb668; //青色
+@blue-l: #0fd2d9; //淡蓝
+@blue: #277fdb;
+@purple: #7953d8; //紫色
+@orange: #ff905a;
+@pink: #d052cb; //粉色
+@red: #ee4c31;
+
+//css3 
+.transform(...){
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-ms-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
+}
+
+.animation(...){
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	-ms-animation: @arguments;
+	-o-animation: @arguments;
+	animation: @arguments;
+}
+
+.transition(...){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-ms-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.box-shadow(...){
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-ms-box-shadow: @arguments;
+	box-shadow: @arguments;
+}
+
+.flex(...){
+	-webkit-flex: @arguments;
+	flex: @arguments;
+}
+
+.background-size(...){
+	-webkit-background-size: @arguments;
+	-moz-background-size: @arguments;
+	-o-background-size: @arguments;
+	background-size: @arguments;
+}
+.box-sizing(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ellipsis(...){
+  text-overflow: @arguments;
+  -o-text-overflow: @arguments;
+  -ms-text-overflow: @arguments;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+}

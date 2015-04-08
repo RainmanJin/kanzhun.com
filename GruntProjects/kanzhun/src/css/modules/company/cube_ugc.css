@@ -1,0 +1,252 @@
+.maskui_dialog.email_dialog {
+  width: 480px;
+}
+.maskui_dialog.email_dialog h3 span {
+  font-weight: normal;
+  font-size: 14px;
+}
+.maskui_dialog.email_dialog .ifd {
+  border-width: 2px 2px 1px 1px;
+  border-color: #ebebeb #d6d6d6 #e7e7e7 #e7e7e7;
+  height: 14px;
+}
+.maskui_dialog.email_dialog a {
+  color: #999999;
+}
+.maskui_dialog.email_dialog .field_div {
+  position: relative;
+}
+.maskui_dialog.email_dialog .field_div p.err {
+  position: absolute;
+  color: #d60000;
+  top: 35px;
+  left: 0;
+}
+.maskui_dialog.email_dialog .btn_grey_b {
+  padding: 0;
+  width: 118px;
+}
+.maskui_dialog.recommend_cmp h3 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dadada;
+  font-weight: normal;
+  font-size: 20px;
+}
+.maskui_dialog.recommend_cmp p.that_word {
+  padding-top: 15px;
+}
+.maskui_dialog.recommend_cmp li {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.maskui_dialog.recommend_cmp li > a.cmp_logo {
+  float: left;
+  width: 44px;
+  height: 44px;
+  padding: 2px;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+}
+.maskui_dialog.recommend_cmp li > a.cmp_logo img {
+  width: 44px;
+  height: 44px;
+}
+.maskui_dialog.recommend_cmp li > a.follow {
+  position: absolute;
+  right: 0;
+  top: 34px;
+  height: 21px;
+  line-height: 21px;
+  padding: 0 15px;
+  color: #343434;
+}
+.maskui_dialog.recommend_cmp li div {
+  margin-left: 60px;
+}
+.maskui_dialog.recommend_cmp li div p {
+  padding-top: 4px;
+}
+.maskui_dialog.recommend_cmp li div a {
+  color: #666666;
+}
+.maskui_dialog.recommend_cmp li div a:hover {
+  color: #007ead;
+  text-decoration: none;
+}
+.maskui_dialog.recommend_cmp li div span {
+  vertical-align: -3px;
+}
+.maskui_dialog.recommend_cmp li.border_none {
+  border-bottom: none;
+}
+section.l_con {
+  position: relative;
+}
+section.f_l_con {
+  position: relative;
+}
+.cube_ugcEnter {
+  display: none;
+  position: absolute;
+  left: -30px;
+}
+.cube_ugcEnter i.icon_cubeugc {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../images/icon_cubeugc.png") no-repeat;
+}
+div.cube_ugc {
+  display: none;
+  background-color: #2670ad;
+  margin-bottom: 15px;
+  padding: 30px 20px 40px 40px;
+  position: relative;
+}
+div.cube_ugc p.h {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+div.cube_ugc div.p {
+  margin-top: 20px;
+  position: relative;
+}
+div.cube_ugc div.p > a {
+  margin-right: 10px;
+}
+div.cube_ugc div.p a.skip {
+  color: #fff;
+}
+div.cube_ugc div.p .select {
+  width: 110px;
+  float: left;
+  margin-right: 10px;
+}
+div.cube_ugc div.p .select.month {
+  width: 90px;
+}
+div.cube_ugc div.p .sbm {
+  width: 90px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #ffe50a;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #343434;
+  cursor: pointer;
+}
+div.cube_ugc div.p p.err {
+  display: none;
+  color: red;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+div.cube_ugc ul.salarycon {
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+div.cube_ugc ul.salarycon li {
+  margin-bottom: 20px;
+  position: relative;
+}
+div.cube_ugc ul.salarycon li .space {
+  float: left;
+  position: relative;
+}
+div.cube_ugc ul.salarycon li .space dl {
+  float: left;
+  width: 180px;
+}
+div.cube_ugc ul.salarycon li label.tt {
+  display: block;
+  float: left;
+  width: 4em;
+  margin-right: 10px;
+  height: 39px;
+  line-height: 39px;
+  text-align: right;
+}
+div.cube_ugc ul.salarycon li .salaryipt {
+  width: 170px;
+}
+div.cube_ugc ul.salarycon li p.err {
+  clear: both;
+  color: red;
+  padding-top: 2px;
+  position: absolute;
+  top: 37px;
+  left: 65px;
+}
+div.cube_ugc ul.salarycon li span.unit {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  color: #000;
+}
+div.cube_ugc ul.salarycon li.addincome {
+  padding-left: 65px;
+}
+div.cube_ugc ul.salarycon li.addincome a {
+  color: #fff;
+}
+div.cube_ugc ul.salarycon li.addincome span {
+  color: red;
+}
+div.cube_ugc ul.salarycon li.adddetail {
+  padding-left: 65px;
+}
+div.cube_ugc ul.salarycon li.adddetail ul.adddetail {
+  color: #000;
+  border: 1px solid #d7d8d7;
+  width: 310px;
+  padding: 20px 20px 10px;
+  margin: 0 0 15px;
+  background-color: #fff;
+}
+div.cube_ugc ul.salarycon li.adddetail ul.adddetail li label.tt {
+  display: block;
+  float: left;
+  width: 5em;
+  margin-right: 10px;
+  height: 39px;
+  line-height: 39px;
+}
+div.cube_ugc ul.salarycon li.adddetail ul.adddetail li input {
+  width: 180px;
+  padding-right: 30px;
+}
+div.cube_ugc ul.salarycon li.adddetail ul.adddetail li input.onlyready {
+  background-color: #e5e5e5;
+}
+div.cube_ugc .a_close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+}
+div.cube_ugc .a_close .close {
+  vertical-align: -2px;
+  margin-right: 5px;
+}
+#portrait {
+  width: 550px;
+}
+#portrait .dialog_con {
+  padding: 0;
+  border: 0;
+}
+#portrait object {
+  float: left;
+}
+#portrait h3 {
+  border-bottom: 1px solid #ccc;
+  margin: 0 15px;
+  padding: 15px 0 5px;
+}

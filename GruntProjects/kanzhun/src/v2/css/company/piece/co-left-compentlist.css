@@ -1,0 +1,77 @@
+p.v_s_m_tt {
+  height: 59px;
+  line-height: 59px;
+  font-size: 16px;
+  color: #333333;
+  border-bottom: 1px solid #e2e2e2;
+}
+.co-left-compentlist {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  zoom: 1;
+  border-bottom: 1px solid #e7e7e7;
+}
+.co-left-compentlist dt {
+  float: left;
+  width: 97px;
+  height: 97px;
+  /*h3 {
+      font-size: 14px;
+      color: #2472b4;
+      text-align:center;
+      padding-top: 5px;
+      font-weight: normal;
+    }*/
+}
+.co-left-compentlist dt a {
+  text-decoration: none;
+  display: block;
+  width: 96px;
+  height: 96px;
+  border: 1px solid #e7e7e7;
+  overflow: hidden;
+  font-size: 0;
+}
+.co-left-compentlist dt img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 96px;
+}
+.co-left-compentlist dt span {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+.co-left-compentlist dd {
+  margin-left: 115px;
+  overflow: hidden;
+  zoom: 1;
+}
+.co-left-compentlist dd h2 {
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.co-left-compentlist dd p {
+  color: #666666;
+}
+.co-left-compentlist dd p strong {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+}
+.co-left-compentlist dd p.c_s_result_text {
+  line-height: 2em;
+}
+.co-left-compentlist dd p.view_address {
+  color: #999999;
+}
+.co-left-compentlist dd p.view_address i.cmp_address {
+  vertical-align: -2px;
+  margin-right: 5px;
+}
+.co-left-compentlist:last-child {
+  border-bottom: none;
+}

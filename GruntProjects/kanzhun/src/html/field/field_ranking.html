@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>领域排行榜页面</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"> </script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/widget-v2.css" />
+<link rel="stylesheet" href="../css/field/field.css" />
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">招聘</a>
+				<a href="#" class="current">公司</a>
+				<a href="#">工资</a>
+				<a href="#">面试</a>
+				<a href="#" class="mycomment">我要点评</a>
+			</nav>
+			<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="ps_header clearfix">
+		<div class="clearfix">
+			<form action="/companyl/search/" method="get" id="minisearchForm">
+				<input id="MSSQType" value="2" type="hidden">
+				<input name="stype" id="MSSSType" value="" type="hidden">
+				<dl class="select ps_salary_slt" id="minisearchS">
+					<dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly" /><div></div><span class="btn"><i></i></span></dt>
+				<dd>
+					<a href="/jobl/p/">职位</a>
+					<a href="/companyl/search/">公司</a>
+					<a href="/salaryl/search/">工资</a>
+					<a href="/interviewl/search/">面试</a>
+				</dd>
+				</dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value="" /><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" /><input type="hidden" id="cityCode" name="cityCode" value="" /><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索" /></span>
+			</form>
+		</div>
+	</section>
+
+	<div class="f_container clearfix">
+		<section class="f_l_con clearfix">
+			<div class="secondary_nav mb15">
+				<h1>互联网金融领域</h1>
+				<ul class="fright">
+					<li><i class="big_dot"></i><a href="">领域概况</a></li>
+					<li><i class="big_dot"></i><a href="">排行榜</a></li>
+					<li><i class="big_dot"></i><a href="">公司列表</a></li>
+				</ul>
+				<p>所属行业：互联网<em>|</em>公司：共221家</p>
+			</div>
+			<div class="wrap_style mb15">
+				<div class="ranking_nav mb20 clearfix">
+					<h2>排行榜</h2>
+					<p><a href="" class="current">员工推荐排行</a><a href="">综合评分排行</a><a href="">CEO支持率排行</a></p>
+					<a href="" class="fright share_to_all"><i class="default_share"></i>分享</a>
+				</div>
+				<!-- 员工推荐排行 -->
+				<div class="box_con clearfix">
+					<dl class="left_explain">
+						<dt>
+							<i class="recommend"></i>
+						</dt>
+						<dd>
+							<h3 class="f_16">员工推荐排行榜</h3>
+							<p class="mb15 grey_66">按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+							<p><a href="" class="links">查看完整排行榜</a></p>
+						</dd>
+					</dl>
+					<ul class="right_main">
+						<li>
+							<p class="mb15"><i class="s_serial_num serial_num_red">1</i><a href="">阿里巴巴</a></p>
+							<div class="doughnua_chart ml20" style="background-color: #c00;">
+								<span>2.9</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+							</div>
+							<p class="ml15 grey_66 rate">员工推荐率</p>
+						</li>
+						<li>
+							<p class="mb15"><i class="s_serial_num serial_num_blue">2</i><a href="">阿里巴巴</a></p>
+							<div class="doughnua_chart ml20" style="background-color: #c00;">
+								<span>2.9</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+							</div>
+							<p class="ml15 grey_66 rate">员工推荐率</p>
+						</li>
+						<li>
+							<p class="mb15"><i class="s_serial_num serial_num_green">3</i><a href="">阿里巴巴阿里巴巴阿里巴巴</a></p>
+							<div class="doughnua_chart ml20" style="background-color: #c00;">
+								<span>2.9</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+							</div>
+							<p class="ml15 grey_66 rate">员工推荐率</p>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 综合评分排行 -->
+				<div class="box_con clearfix">
+					<dl class="left_explain">
+						<dt>
+							<i class="total_ranking"></i>
+						</dt>
+						<dd>
+							<h3 class="f_16">综合评分排行</h3>
+							<p class="mb15 grey_66">按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+							<p><a href="" class="links">查看完整排行榜</a></p>
+						</dd>
+					</dl>
+					<ul class="right_main">
+						<li>
+							<p class="mb15"><i class="s_serial_num serial_num_red">1</i><a href="">阿里巴巴</a></p>
+							<div class="start_score">
+								<span class="green_b_star"><i style="width: 45px;"></i></span>
+								<p class="t-center"><strong class="score">4.0</strong></p>
+							</div>
+							<p class="ml15 grey_66 total_score">综合评分</p>
+						</li>
+						<li>
+							<p class="mb15"><i class="s_serial_num serial_num_blue">2</i><a href="">阿里巴巴</a></p>
+							<div class="start_score">
+								<span class="green_b_star"><i style="width: 45px;"></i></span>
+								<p class="t-center"><strong class="score">4.0</strong></p>
+							</div>
+							<p class="ml15 grey_66 total_score">综合评分</p>
+						</li>
+						<li>
+							<p class="mb15"><i class="s_serial_num serial_num_green">3</i><a href="">阿里巴巴</a></p>
+							<div class="start_score">
+								<span class="green_b_star"><i style="width: 45px;"></i></span>
+								<p class="t-center"><strong class="score">4.0</strong></p>
+							</div>
+							<p class="ml15 grey_66 total_score">综合评分</p>
+						</li>
+					</ul>
+				</div>
+
+				<!-- CEO支持率排行 -->
+				<div class="box_con clearfix">
+					<dl class="left_explain">
+						<dt>
+							<i class="surpport"></i>
+						</dt>
+						<dd>
+							<h3 class="f_16">综合评分排行</h3>
+							<p class="mb15 grey_66">按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+							<p><a href="" class="links">查看完整排行榜</a></p>
+						</dd>
+					</dl>
+					<ul class="right_main">
+						<li>
+							<p class="mb15"><i class="s_serial_num serial_num_red">1</i><a href="">阿里巴巴</a></p>
+							<div class="doughnua_chart ml20" style="background-color: #c00;">
+								<span>2.9</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+							</div>
+							<p class="ml15 grey_66 rate">CEO支持率</p>
+						</li>
+						<li>
+							<p class="mb15"><i class="s_serial_num serial_num_blue">2</i><a href="">阿里巴巴</a></p>
+							<div class="doughnua_chart ml20" style="background-color: #c00;">
+								<span>2.9</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+							</div>
+							<p class="ml15 grey_66 rate">CEO支持率</p>
+						</li>
+						<li>
+							<p class="mb15"><i class="s_serial_num serial_num_green">3</i><a href="">阿里巴巴阿里巴巴阿里巴巴</a></p>
+							<div class="doughnua_chart ml20" style="background-color: #c00;">
+								<span>2.9</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+							</div>
+							<p class="ml15 grey_66 rate">CEO支持率</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrap_style">
+				<h2 class="f_tt mt20">员工推荐排行榜TOP 10</h2>
+				<ul class="recommend_ranking">
+					<li>
+						<i class="fleft b_serial_num serial_num_red">1</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft doughnua_chart mr10">
+								<span>2.9</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+							</dt>
+							<dd class="iwant">
+								<p>员工愿意推荐朋友</p>
+								<p class="comehere">来这里工作</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<i class="fleft b_serial_num serial_num_blue">2</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft doughnua_chart mr10">
+								<span>2.9</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.58_0.42000000000000004"></canvas>
+							</dt>
+							<dd class="good">
+								<p>员工赞同CEO</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<i class="fleft b_serial_num serial_num_green">3</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft mr10">
+								<span class="green_s_star mt10"><i style="width: 45px;"></i></span>
+								<p class="t-right"><strong class="score">4.0</strong></p>
+							</dt>
+							<dd class="total_score">
+								<p>公司综合评分</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<i class="fleft b_serial_num">4</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft mr10">
+								<span class="green_s_star mt10"><i style="width: 45px;"></i></span>
+								<p class="t-right"><strong class="score">4.0</strong></p>
+							</dt>
+							<dd class="total_score">
+								<p>公司综合评分</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<i class="fleft b_serial_num">5</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft mr10">
+								<span class="green_s_star mt10"><i style="width: 45px;"></i></span>
+								<p class="t-right"><strong class="score">4.0</strong></p>
+							</dt>
+							<dd class="total_score">
+								<p>公司综合评分</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<i class="fleft b_serial_num">6</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft mr10">
+								<span class="green_s_star mt10"><i style="width: 45px;"></i></span>
+								<p class="t-right"><strong class="score">4.0</strong></p>
+							</dt>
+							<dd class="total_score">
+								<p>公司综合评分</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<i class="fleft b_serial_num">7</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft mr10">
+								<span class="green_s_star mt10"><i style="width: 45px;"></i></span>
+								<p class="t-right"><strong class="score">4.0</strong></p>
+							</dt>
+							<dd class="total_score">
+								<p>公司综合评分</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<i class="fleft b_serial_num">8</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft mr10">
+								<span class="green_s_star mt10"><i style="width: 45px;"></i></span>
+								<p class="t-right"><strong class="score">4.0</strong></p>
+							</dt>
+							<dd class="total_score">
+								<p>公司综合评分</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<i class="fleft b_serial_num">9</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft mr10">
+								<span class="green_s_star mt10"><i style="width: 45px;"></i></span>
+								<p class="t-right"><strong class="score">4.0</strong></p>
+							</dt>
+							<dd class="total_score">
+								<p>公司综合评分</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<i class="fleft b_serial_num">10</i>
+						<dl class="fleft ranking_info">
+							<dt><a href=""><img src="../images/field/f_img4.jpg" alt=""><span></span></a></dt>
+							<dd>
+								<p class="r_i_tt"><a href="" class="links grey_33 f_16">北京大学</a></p>
+								<p class="grey_66">北京<em>|</em>10000人以上<em>|</em>互联网</p>
+								<p class="grey_66"><a href="" class="hover_green mr15">B2C</a><a href="" class="hover_green mr15">互联网</a><a href="" class="hover_green mr15">教育</a></p>
+							</dd>
+						</dl>
+						<dl class="fright recommend_friend">
+							<dt class="fleft mr10">
+								<span class="green_s_star mt10"><i style="width: 45px;"></i></span>
+								<p class="t-right"><strong class="score">4.0</strong></p>
+							</dt>
+							<dd class="total_score">
+								<p>公司综合评分</p>
+								<em class="grey_99 f_12">120人参与评价</em>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="f_r_con">
+			<div class="advertis_area mb15">
+				<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+			</div>
+			<div class="wrap_style mb15">
+				<h2 class="f_tt mt20 mb15">热门领域</h2>
+				<ul class="hot_field_list mb10">
+					<li><i class="small_dot"></i><a href="" class="links">互联网</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+					<li><i class="small_dot"></i><a href="" class="links">排行榜</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+					<li><i class="small_dot"></i><a href="" class="links">公司列表</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+					<li><i class="small_dot"></i><a href="" class="links">排行榜</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+					<li><i class="small_dot"></i><a href="" class="links">公司列表</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+				</ul>
+			</div>
+			<div class="wrap_style">
+				<h2 class="f_tt mt20 mb15"><a href="" class="fright links seemore">查看所有</a>B2C领域热门公司</h2>
+				<dl class="hot_cmp mb10">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

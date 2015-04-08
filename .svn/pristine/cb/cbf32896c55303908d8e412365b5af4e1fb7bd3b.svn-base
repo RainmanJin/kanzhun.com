@@ -1,0 +1,65 @@
+//image 目录
+@img_path:"../../images/ugc/"; //fe目录
+//@img_path:"/images/news/"; //工程目录
+
+//colors
+@red: #ed5565;
+@green: #53cac4;
+@grey_79: #797979;
+
+//css3
+.transform(...){
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-ms-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
+}
+
+.animation(...){
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	-ms-animation: @arguments;
+	-o-animation: @arguments;
+	animation: @arguments;
+}
+
+.transition(...){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-ms-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.box-shadow(...){
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-ms-box-shadow: @arguments;
+	box-shadow: @arguments;
+}
+
+.text-shadow(...){
+	-webkit-text-shadow: @arguments;
+	-moz-text-shadow: @arguments;
+	-ms-text-shadow: @arguments;
+	text-shadow: @arguments;
+}
+
+.ellipsis(...){
+  text-overflow: @arguments;
+  -o-text-overflow: @arguments;
+  -ms-text-overflow: @arguments;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}
+.background-size(...){
+  -webkit-background-size: @arguments;
+  -moz-background-size: @arguments;
+  -o-background-size: @arguments;
+  background-size: @arguments;
+}
+
+

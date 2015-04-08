@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>搜索无结果页面</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../../../v2/css/widget.css">
+  <link rel="stylesheet" href="../../../v2/css/search/search-jobs.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <!--<script src="/js/require.js" data-main="/v2/js/company/view.js"></script>-->
+</head>
+
+<body class="grey-bg">
+<header class="global">
+  <div class="header">
+    <a ka="head-index" href="/" class="logo"><img src="/images/logo.png" width="136" height="40"></a>
+    <nav>
+      <a ka="head-com" href="/gs.html">公司</a>
+      <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+      <a ka="head-recruit" href="/job/">招聘</a>
+      <a ka="head-interview" href="/msh/">面试</a>
+      <a ka="head-news" target="_blank" href="/news/">资讯</a>
+      <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+    </nav>
+    <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+  </div>
+</header>
+<section class="top-search">
+  <div class="top-search-form">
+    <form action="">
+      <fieldset>
+        <input type="text" name="" placeholder="搜索公司/职位">
+        <input type="submit" value="搜索">
+      </fieldset>
+      <p>
+        热搜词：
+        <a href="#">百度</a>
+        <a href="#">产品经理</a>
+        <a href="#">设计师</a>
+        <a href="#">程序员</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+<nav class="top-search-nav">
+  <a href="#" class="current">公司</a>
+  <a href="#">工资</a>
+  <a href="#">招聘</a>
+  <a href="#">面试</a>
+</nav>
+
+<div class="container-search clearfix">
+  <div class="wrap_style search-noresult">
+    <img src="/images/no_result_user.jpg" >
+    <div>
+      <p class="f_16 mb15">没找到与“<strong class="red">中华人民共和国</strong>”相关的招聘信息</p>
+      <p class="grey_99">看准君建议您：</p>
+      <p class="grey_66">1、检查输入的关键字是否有误 <br/>
+        2、缩短或更换关键字，重新搜索</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

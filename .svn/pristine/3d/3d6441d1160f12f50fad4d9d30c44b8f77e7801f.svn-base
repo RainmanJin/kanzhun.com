@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>DEMO</title>
+  <link rel="stylesheet" href="css/jpm.css?q=12312">
+</head>
+<body class="rank-co">
+<header class="rank-co">
+  <i></i>点击关注看准公众号
+  <img src="http://img.kanzhun.com/images/logo/20150215/bc36e52be88e925f53b169bf3bdbd799.jpg">
+</header>
+
+<div class="content">
+  <dl class="rank-succ">
+    <dt>
+      <p><strong>投票成功</strong></p>
+      <p class="rank-tip">“么么哒，求拉票让我下榜，愿肉偿” <i></i></p>
+    </dt>
+    <dd>
+      <img src="http://img.kanzhun.com/images/logo/20150215/bc36e52be88e925f53b169bf3bdbd799.jpg">
+      <p>北京三快科技有限公司</p>
+      <p>目前排名<em>NO.123</em>，拥有<em>200</em>人气 <br/>在您的帮助下，离下榜又近了一步</p>
+    </dd>
+  </dl>
+  <p class="rank-both">
+    <a class="btn-orange" href="#">我要分享</a><a class="btn-yellow" href="#">更多排行榜</a>
+  </p>
+</div>
+</body>
+</html>
+
+

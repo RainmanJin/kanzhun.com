@@ -1,0 +1,675 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "../modules/top-search";
+@import 'piece/co-header';  //公司级页面头部样式
+@import 'piece/common-v2';  //公司级页面公布部分（目前只是面试和点评页面）
+@import "../../../css/modules-v2/dialog-v2";
+//左侧
+@import "piece/co_left_hr_enter_part"; //b端入口样式
+@import "piece/co_left_review_co_grade"; //点评公司等级
+@import "../../../css/modules/company/salary_desc"; //工资图表
+@import 'piece/interview_detail';  //面试
+@import "piece/co_left_review_item"; //点评
+@import "../../../css/modules/comment";
+@import 'piece/co-review-grade';  //左侧点评打分
+@import 'piece/co_left_viewpager';  //轮播图
+@import 'piece/co_left_process_part'; //发展历程
+//右侧
+@import 'piece/right_con';  //右侧看了该公司的还看了
+@import 'piece/co-right-want-part';  //右侧想去调查
+@import 'piece/co-right-report-part';  //右侧媒体报道
+@import "../../../css/modules/company/financing";  //公司融资信息
+
+//底部
+@import '../../../css/modules/company/bottomlinks'; //底部友情推荐
+//弹框
+@import "../../../css/modules/ugc/company_correction";  //公司纠错
+//其他
+@import '../../../components/toggler/toggler';   //展开的样式
+@import "../../../components/floatword/floatword";   //飘字
+
+
+//公司各页无结果页面
+div.add_cmp_info {
+  border-left: 4px solid #ffc962;
+  background-color: #fffedf;
+
+  & > div {
+    padding: 10px 0 10px 20px;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #fef6df;
+  }
+
+  p {
+    color: #797979;
+    overflow: hidden;
+
+    i.point {
+      float: left;
+      width: 4px;
+      height: 4px;
+      margin-top: 8px;
+      margin-right: 8px;
+      border-radius: 4px;
+      background-color: #666666;
+      line-height: 0;
+    }
+
+    a.follow {
+      padding-left: 30px;
+    }
+  }
+}
+.co_tb{
+  background-color: #fff;
+  padding: 20px 15px 15px;
+  overflow: hidden;
+  zoom:1;
+
+  dt{
+    float: left;
+    overflow: hidden;
+    zoom: 1;
+    div {
+      &.cmphoto {
+        position: relative;
+        margin-bottom: 5px;
+        width: 292px;
+        text-align: center;
+
+        img{
+          background-color: #fff;
+          height: 150px;
+          width: 290px;
+        }
+
+        .sendphoto {
+          position: absolute;
+          left: 9px;
+          top: 6px;
+          display: none;
+          background: url('@{img}/sendphoto.png') repeat left top;
+          width: 274px;
+          height: 140px;
+          //opacity: 0.5;
+
+          p {
+            text-align: center;
+            font-size: 17px;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            font-weight: normal;
+            //opacity: 1;
+          }
+
+          a {
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            padding: 7px 30px;
+            background-color: #6e6e6e;
+            border-radius: 2px;
+            //opacity: 1;
+          }
+        }
+
+      }
+      &.default{
+        width: 292px;
+        height: 147px;
+        line-height: 147px;
+        text-align: center;
+        background-color: #f3f3f3;
+        border: 1px solid #dddddd;
+      }
+    }
+
+    p{
+      overflow: hidden;
+      zoom: 1;
+      img{
+        background-color: #fff;
+        width: 69px;
+        height: 37px;
+        float: left;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      a.addimg{
+        display: block;
+        float: left;
+        width: 69px;
+        height: 35px;
+        border: 1px solid #dddddd;
+        text-align: center;
+        margin-right: 5px;
+        background: url("@{img}/cmpimg.png") no-repeat center #f3f3f3;
+      }
+      a.p_addimg{
+        display: block;
+        height: 35px;
+        line-height: 35px;
+        border: 1px solid #e2e2e2;
+        text-align: center;
+        background-color: #f3f3f3;
+        color: @grey_99;
+        &:hover{
+          text-decoration: none;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  dd{
+    margin-left: 322px;
+    //padding-top: 5px;
+    strong{
+      color: @grey_99;
+      font-weight: normal;
+      width: 6em;
+      display: inline-block;
+    }
+
+    span.urlinfo {
+      display: inline-block;
+      .ellipsis(ellipsis);
+      width: 12em;
+    }
+
+    color: @grey_99;
+
+    .edit{
+      float: right;
+      top: auto;
+      bottom: 0;
+      font-size: 14px;
+      &:hover{
+        .i_correction{
+          background-position: -16px -560px;
+        }
+      }
+    }
+    p{
+      line-height: 1.9em;
+
+      /* &.competitors{
+        display: block;
+        a{
+          display: inline-block;
+          white-space: nowrap;
+          margin-right: 10px;
+        }
+      } */
+    }
+
+    div.competitors {
+      overflow: hidden;
+      zoom: 1;
+
+      strong {
+        display: block;
+        float: left;
+      }
+
+      div {
+        float: left;
+        width: 260px;
+
+        a{
+          display: inline-block;
+          white-space: nowrap;
+          margin-right: 10px;
+        }
+      }
+    }
+
+  }
+}
+
+div.tt {
+  position: relative;
+  border-bottom: 1px solid @grey_e7;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  h1,h2 {
+    float: left;
+    padding-bottom: 5px;
+    *padding-bottom: 10px;
+    margin-bottom: -1px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    vertical-align: bottom;
+    //border-bottom: 1px solid @green;
+  }
+
+  em {
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 12px;
+    color: @grey_e7;
+    font-weight: 400;
+  }
+
+  a {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: normal;
+    margin-top: -5px;
+    font-size: 14px;
+    &.def{
+      text-decoration: none;
+      color: @grey_66;
+    }
+  }
+}
+
+article{
+  &.co_intro{
+    line-height: 1.6em;
+    padding: 15px 0;
+    p{
+      text-indent: 2em;
+    }
+    .more_details{
+      display: none;
+    }
+    .more{
+      i{
+        margin-left: 10px;
+        white-space: nowrap;
+        color: @blue;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+//点评相关--start
+.dash_tb{
+  border-top: 1px dashed #e3e3e3;
+}
+dl.c_s_result{
+  overflow: visible;
+}
+//点评相关--end
+
+table.salary-desc {
+  border: 0;
+  td{
+    cursor: default;
+  }
+}
+//面试相关--start
+//面试总体感觉
+div.iv_grade {
+  padding-bottom: 20px;
+  overflow: hidden;
+  zoom:1;
+
+  dl {
+    float: left;
+
+    &.total {
+      width: 220px;
+    }
+
+    &.level {
+      width: 165px;
+      padding-left: 20px;
+      border-left: 1px solid @grey_e7;
+      border-right: 1px solid @grey_e7;
+      padding-bottom: 25px;
+    }
+
+    &.from {
+      padding-left: 20px;
+
+      p {
+        line-height: 1.8em;
+      }
+
+      span {
+        margin: 0 5px;
+      }
+    }
+
+  }
+
+  dt {
+    height: 32px;
+    line-height: 32px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+}
+.pie_chart {
+  canvas {
+    float: left;
+  }
+
+  .pie_bar {
+    margin-left: 90px;
+  }
+
+  p {
+    line-height: 1.7em;
+    white-space: nowrap;
+    color: @grey_66;
+  }
+
+  span {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+
+    &.easy {
+      background-color: @green;
+    }
+    &.normal {
+      background-color: #abd667;
+    }
+    &.hard {
+      background-color: #ededed;
+    }
+    &.wlzp {
+      background-color: #a7dbff;
+    }
+    &.xyzp {
+      background-color: #16b6cc;
+    }
+    &.nbtj {
+      background-color: #05c1f1;
+    }
+    &.lttj {
+      background-color: #0ca6f0;
+    }
+    &.shzp {
+      background-color: #147cde;
+    }
+    &.qt {
+      background-color: #0870c9;
+    }
+  }
+
+  .pie-bar-toggle{
+    padding-left: 22px;
+  }
+}
+
+.total {
+  padding-bottom: 10px;
+}
+
+
+
+.circle_chart{
+  overflow: hidden;
+  zoom:1;
+
+  .doughnua_chart{
+    float: left;
+
+    span {
+      z-index: 2;
+    }
+  }
+  canvas{
+    vertical-align: middle;
+  }
+
+  h5{
+    padding: 12px 0 0 8px;
+    margin-left: 60px;
+    font-weight: normal;
+    font-size: 14px;
+    color: @grey_66;
+  }
+  .js_correctionceo_bt{
+    &:hover{
+      .i_correction{
+        background-position: -16px -560px;
+      }
+    }
+  }
+}
+div.iv_grade{
+  padding-bottom: 10px;
+}
+//面试相关--end
+
+
+//随便说说--start
+.chat_field{
+  border-radius: 2px;
+  border: 3px solid @grey_e7;
+  margin: 10px 0;
+  overflow: hidden;
+  _width: 618px;
+  zoom:1;
+
+  textarea{
+    width: 661px;
+    height: 72px;
+    color: @def;
+    padding: 5px;
+    resize:none;
+    outline: none;
+    border: 1px solid #ddd;
+    float: left;
+    margin: 0;
+  }
+}
+
+#shortViewPrompt{
+  margin-right: 15px;
+
+  strong{
+    font-size: 15px;
+
+    &.ok{
+      color: @green;
+    }
+
+    &.err{
+      color: #ff0000;
+    }
+  }
+}
+.reviews{
+  padding-top: 20px;
+
+  li{
+    padding: 10px 0;
+    border-bottom: 1px solid @grey_e7;
+
+    i{
+      margin-top: 3px;
+      //评
+      &.r{
+        width: 20px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat -98px -580px;
+      }
+
+      //聊
+      &.c{
+        width: 20px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat -48px -580px;
+      }
+
+      //面
+      &.i{
+        width: 20px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat -23px -580px;
+      }
+
+      //￥
+      &.m{
+        width: 20px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat 0 -580px;
+      }
+
+      //图
+      &.p{
+        width: 20px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat -74px -580px;
+      }
+
+      &.topic_0{
+        width: 20px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: url('@{img}/topic_0.png') no-repeat;
+      }
+    }
+
+    div{
+      margin-left: 35px;
+      line-height: 1.8em;
+      overflow: hidden;
+    }
+
+    .panel{
+      padding-top: 10px;
+      color: @grey_99;
+
+      span{
+        margin: 0 10px;
+        color: @grey_e7;
+      }
+    }
+    .color_y{
+      color: #ffcd00;
+    }
+  }
+}
+//shine
+@-webkit-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-moz-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-ms-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+.shine{
+  .animation(twinkle .6s ease none);
+}
+//随便说说--end
+
+//职位推荐
+table.recommendation {
+  border-collapse:collapse;
+  width: 680px;
+  table-layout: fixed;
+
+  tr {
+    background-color: #f7f7f7;
+    height: 30px;
+    &:nth-child(odd) {
+      background-color: #fff;
+    }
+  }
+
+  th {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    height: 35px;
+
+    span {
+      padding-left: 15px;
+    }
+
+    &.positions {
+      span {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  td {
+    padding: 0 10px;
+
+    a {
+      display: block;
+      .ellipsis(ellipsis);
+    }
+  }
+}
+
+//右侧招聘信息
+ul {
+  &.newest {
+    margin-top: -10px;
+    li {
+      border-bottom: 1px dashed @grey_e7;
+      padding: 10px 0;
+
+      a {
+        display: block;
+        cursor: pointer;
+      }
+
+      em {
+        margin: 0 5px;
+        vertical-align: 1px;
+        color: @grey_e7;
+      }
+    }
+
+    span {
+      float: right;
+      color: #eb7676;
+    }
+  }
+}

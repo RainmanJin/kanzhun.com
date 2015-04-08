@@ -1,0 +1,32 @@
+<!--面试详情页面最新招聘-->
+<div class="newest_job wrap_style mb15">
+    <h2 class="f_tt mt20 mb15">产品经理最新招聘</h2>
+    <dl class="job_info">
+        <dt>
+            <a href=""><img src="http://img.kanzhun.com/image/l11514.gif" alt=""/></a>
+        </dt>
+        <dd>
+            <a href="">产品经理</a>
+            <p><strong class="red fright">30-20K</strong><span>东莞-南城区</span></p>
+        </dd>
+    </dl>
+    <dl class="job_info">
+        <dt>
+            <a href=""><img src="http://img.kanzhun.com/image/l11514.gif" alt=""/></a>
+        </dt>
+        <dd>
+            <a href="">产品经理</a>
+            <p><strong class="red fright">30-20K</strong><span>东莞-南城区南城区南城区南城区</span></p>
+        </dd>
+    </dl>
+    <dl class="job_info">
+        <dt>
+            <a href=""><img src="http://img.kanzhun.com/image/l11514.gif" alt=""/></a>
+        </dt>
+        <dd>
+            <a href="">产品经理</a>
+            <p><strong class="red fright">30-20K</strong><span>东莞-南城区</span></p>
+        </dd>
+    </dl>
+    <p class="links_more"><a href="" class="links">更多热招公司&nbsp;&gt;</a></p>
+</div>

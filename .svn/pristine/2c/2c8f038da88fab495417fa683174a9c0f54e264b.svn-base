@@ -1,0 +1,32 @@
+div.C-toggler {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  color: #999999;
+}
+div.C-toggler i {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-width: 4px 4px 0 4px;
+  border-style: solid dashed;
+  border-color: #999999 transparent transparent transparent;
+  vertical-align: 2px;
+}
+div.C-toggler.active i {
+  border-width: 0 4px 4px 4px;
+  border-color: transparent transparent #999999 transparent;
+}
+div.C-toggler.active:hover i {
+  border-bottom-color: #7cb228;
+}
+div.C-toggler:hover {
+  color: #7cb228;
+}
+div.C-toggler:hover i {
+  border-top-color: #7cb228;
+}

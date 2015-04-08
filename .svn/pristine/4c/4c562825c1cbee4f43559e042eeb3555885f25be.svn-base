@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanzhun-BI System</title>
+  <link rel="stylesheet" href="../less/bootstrap.css"/>
+  <link rel="stylesheet" href="../less/custom/main.css"/>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <script src="../js/index.js"></script>
+</head>
+
+<body class="bisys">
+<nav class="navbar-default navbar-static-top navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <img src="../images/bi-logo.png" class="pull-left mr20"/>
+    <ul class="nav navbar-nav h4">
+      <li class="active">
+        <a href="#">全站</a>
+      </li>
+      <li>
+        <a href="#">模块</a>
+      </li>
+      <li>
+        <a href="#">渠道</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="pv10 bg-info mb10">
+  <div class="container-fluid">
+    <span class="mr20">【当前】&gt; 全站日报</span>
+    <span class="mr20">【链接】 <a href="#">小时数据</a> <a href="">深度数据</a> <a href="">业务数据</a></span>
+    <span>【操作】 <a href="#">修改密码</a> <a href="#">退出</a></span>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="well">
+  <span class="pull-right">
+    【 <a href="#">选择字段</a>】
+    【 <a href="#">保存Excel</a>】
+  </span>
+
+    <form class="form-inline" action="">
+      【数据范围】 从
+      <input class="form-control" type="text"/>
+      到
+      <input class="form-control mr20" type="text"/>
+      近30日 近3个月
+      <button type="submit" class="btn btn-primary btn-sm ml20">&nbsp;&nbsp;&nbsp;&nbsp;查 询&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    </form>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <table class="mb20" width="100%">
+    <tr>
+      <td rowspan="2">
+        <div class="chart">
+        </div>
+      </td>
+
+      <td class="chart-control">
+        <p>
+          <button class="btn btn-default btn-sm">PV</button>
+          <button class="btn btn-default btn-sm">UV</button>
+          <button class="btn btn-default btn-sm">步长</button>
+          <button class="btn btn-default btn-sm">新访客</button>
+          <button class="btn btn-success btn-sm">二跳率</button>
+          <button class="btn btn-default btn-sm">会话</button>
+          <button class="btn btn-default btn-sm">在线用户</button>
+        </p>
+      </td>
+    </tr>
+    <tr>
+
+
+      <td class="chart-control chart-control-b">
+        <div>
+          <p class="form-inline">选择周
+            <select class="form-control">
+              <option>0519-0525</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </p>
+
+          <p class="form-inline">对比周
+            <select class="form-control">
+              <option>0519-0525</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </p>
+          <button class="btn btn-sm btn-primary btn-block" type="submit">对比</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="container-fluid">
+<table class="table table-bordered table-hover bi-table" id="mainTable">
+  <thead>
+    <tr>
+      <th>日期</th>
+      <th>PV</th>
+      <th>UV</th>
+      <th>新访客</th>
+      <th>步长</th>
+      <th>二跳率</th>
+      <th>在线用户数</th>
+      <th>新注册用户数</th>
+      <th>UGC转化率</th>
+      <th>UGC用户数</th>
+      <th>UGC条数</th>
+      <th>公司总数</th>
+      <th>公司曝光率</th>
+      <th>公司有效曝光(UV&gt;10)</th>
+      <th>UGC公司数</th>
+    </tr>
+  </thead>
+
+<tbody>
+  <tr>
+    <td><div>2014-06-27</div><p class="percent"><i></i></p></td>
+    <td><div>631,453</div><p class="percent"><i></i></p></td>
+    <td><div>246,586</div><p class="percent"><i></i></p></td>
+    <td><div>214,636</div><p class="percent"><i></i></p></td>
+    <td><div>2.56</div><p class="percent"><i></i></p></td>
+    <td><div>37.85%</div><p class="percent"><i></i></p></td>
+    <td><div>7,440</div><p class="percent"><i></i></p></td>
+    <td><div>2,943</div><p class="percent"><i></i></p></td>
+    <td><div>0.14%</div><p class="percent"><i></i></p></td>
+    <td><div>226</div><p class="percent"><i></i></p></td>
+    <td><div>344</div><p class="percent"><i></i></p></td>
+    <td><div>1,197,252</div><p class="percent"><i></i></p></td>
+    <td><div>7.60%</div><p class="percent"><i></i></p></td>
+    <td><div>1,364</div><p class="percent"><i></i></p></td>
+    <td><div>232</div><p class="percent"><i></i></p></td>
+  </tr>
+  <tr>
+    <td><div>2014-06-26</div><p class="percent"><i></i></p></td>
+    <td><div>731,688</div><p class="percent"><i></i></p></td>
+    <td><div>278,805</div><p class="percent"><i></i></p></td>
+    <td><div>244,157</div><p class="percent"><i></i></p></td>
+    <td><div>2.62</div><p class="percent"><i></i></p></td>
+    <td><div>38.61%</div><p class="percent"><i></i></p></td>
+    <td><div>8,827</div><p class="percent"><i></i></p></td>
+    <td><div>3,584</div><p class="percent"><i></i></p></td>
+    <td><div>0.15%</div><p class="percent"><i></i></p></td>
+    <td><div>281</div><p class="percent"><i></i></p></td>
+    <td><div>409</div><p class="percent"><i></i></p></td>
+    <td><div>1,197,226</div><p class="percent"><i></i></p></td>
+    <td><div>8.34%</div><p class="percent"><i></i></p></td>
+    <td><div>1,644</div><p class="percent"><i></i></p></td>
+    <td><div>291</div><p class="percent"><i></i></p></td>
+  </tr>
+
+  <tr>
+    <td><div>2014-06-25</div><p class="percent"><i></i></p></td>
+    <td><div>706,046</div><p class="percent"><i></i></p></td>
+    <td><div>268,799</div><p class="percent"><i></i></p></td>
+    <td><div>236,612</div><p class="percent"><i></i></p></td>
+    <td><div>2.63</div><p class="percent"><i></i></p></td>
+    <td><div>37.48%</div><p class="percent"><i></i></p></td>
+    <td><div>8,876</div><p class="percent"><i></i></p></td>
+    <td><div>3,550</div><p class="percent"><i></i></p></td>
+    <td><div>0.11%</div><p class="percent"><i></i></p></td>
+    <td><div>203</div><p class="percent"><i></i></p></td>
+    <td><div>302</div><p class="percent"><i></i></p></td>
+    <td><div>1,197,201</div><p class="percent"><i></i></p></td>
+    <td><div>7.98%</div><p class="percent"><i></i></p></td>
+    <td><div>1,653</div><p class="percent"><i></i></p></td>
+    <td><div>206</div><p class="percent"><i></i></p></td>
+  </tr>
+
+  <tr>
+    <td><div>2014-06-24</div><p class="percent"><i></i></p></td>
+    <td><div>696,273</div><p class="percent"><i></i></p></td>
+    <td><div>263,324</div><p class="percent"><i></i></p></td>
+    <td><div>233,009</div><p class="percent"><i></i></p></td>
+    <td><div>2.64</div><p class="percent"><i></i></p></td>
+    <td><div>37.87%</div><p class="percent"><i></i></p></td>
+    <td><div>8,777</div><p class="percent"><i></i></p></td>
+    <td><div>3,461</div><p class="percent"><i></i></p></td>
+    <td><div>0.11%</div><p class="percent"><i></i></p></td>
+    <td><div>210</div><p class="percent"><i></i></p></td>
+    <td><div>296</div><p class="percent"><i></i></p></td>
+    <td><div>1,197,144</div><p class="percent"><i></i></p></td>
+    <td><div>7.97%</div><p class="percent"><i></i></p></td>
+    <td><div>1,538</div><p class="percent"><i></i></p></td>
+    <td><div>208</div><p class="percent"><i></i></p></td>
+  </tr>
+
+  <tr>
+    <td><div>2014-06-23</div><p class="percent"><i></i></p></td>
+    <td><div>678,196</div><p class="percent"><i></i></p></td>
+    <td><div>264,280</div><p class="percent"><i></i></p></td>
+    <td><div>236,712</div><p class="percent"><i></i></p></td>
+    <td><div>2.57</div><p class="percent"><i></i></p></td>
+    <td><div>37.93%</div><p class="percent"><i></i></p></td>
+    <td><div>7,964</div><p class="percent"><i></i></p></td>
+    <td><div>3,121</div><p class="percent"><i></i></p></td>
+    <td><div>0.13%</div><p class="percent"><i></i></p></td>
+    <td><div>228</div><p class="percent"><i></i></p></td>
+    <td><div>340</div><p class="percent"><i></i></p></td>
+    <td><div>1,197,144</div><p class="percent"><i></i></p></td>
+    <td><div>7.99%</div><p class="percent"><i></i></p></td>
+    <td><div>1,491</div><p class="percent"><i></i></p></td>
+    <td><div>236</div><p class="percent"><i></i></p></td>
+  </tr>
+
+  <tr>
+    <td><div>2014-06-22</div><p class="percent"><i></i></p></td>
+    <td><div>415,394</div><p class="percent"><i></i></p></td>
+    <td><div>161,544</div><p class="percent"><i></i></p></td>
+    <td><div>146,727</div><p class="percent"><i></i></p></td>
+    <td><div>2.57</div><p class="percent"><i></i></p></td>
+    <td><div>37.51%</div><p class="percent"><i></i></p></td>
+    <td><div>4,340</div><p class="percent"><i></i></p></td>
+    <td><div>1,674</div><p class="percent"><i></i></p></td>
+    <td><div>0.11%</div><p class="percent"><i></i></p></td>
+    <td><div>130</div><p class="percent"><i></i></p></td>
+    <td><div>181</div><p class="percent"><i></i></p></td>
+    <td><div>1,197,144</div><p class="percent"><i></i></p></td>
+    <td><div>5.25%</div><p class="percent"><i></i></p></td>
+    <td><div>737</div><p class="percent"><i></i></p></td>
+    <td><div>130</div><p class="percent"><i></i></p></td>
+  </tr>
+
+  <tr>
+    <td><div>2014-06-21</div><p class="percent"><i></i></p></td>
+    <td><div>424,796</div><p class="percent"><i></i></p></td>
+    <td><div>167,402</div><p class="percent"><i></i></p></td>
+    <td><div>153,020</div><p class="percent"><i></i></p></td>
+    <td><div>2.54</div><p class="percent"><i></i></p></td>
+    <td><div>36.78%</div><p class="percent"><i></i></p></td>
+    <td><div>4,155</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div>0.13%</div><p class="percent"><i></i></p></td>
+    <td><div>143</div><p class="percent"><i></i></p></td>
+    <td><div>216</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div></div><p class="percent"><i></i></p></td>
+    <td><div>735</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+  </tr>
+
+  <tr>
+    <td><div>2014-06-20</div><p class="percent"><i></i></p></td>
+    <td><div>607,317</div><p class="percent"><i></i></p></td>
+    <td><div>240,789</div><p class="percent"><i></i></p></td>
+    <td><div>218,260</div><p class="percent"><i></i></p></td>
+    <td><div>2.52</div><p class="percent"><i></i></p></td>
+    <td><div>37.01%</div><p class="percent"><i></i></p></td>
+    <td><div>6,907</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div>0.17%</div><p class="percent"><i></i></p></td>
+    <td><div>220</div><p class="percent"><i></i></p></td>
+    <td><div>416</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div></div><p class="percent"><i></i></p></td>
+    <td><div>1,157</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+  </tr>
+
+  <tr>
+    <td><div>2014-06-19</div><p class="percent"><i></i></p></td>
+    <td><div>724,176</div><p class="percent"><i></i></p></td>
+    <td><div>276,017</div><p class="percent"><i></i></p></td>
+    <td><div>253,583</div><p class="percent"><i></i></p></td>
+    <td><div>2.62</div><p class="percent"><i></i></p></td>
+    <td><div>38.09%</div><p class="percent"><i></i></p></td>
+    <td><div>8,699</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div>0.11%</div><p class="percent"><i></i></p></td>
+    <td><div>213</div><p class="percent"><i></i></p></td>
+    <td><div>308</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div></div><p class="percent"><i></i></p></td>
+    <td><div>1,390</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+  </tr>
+
+  <tr>
+    <td><div>2014-06-18</div><p class="percent"><i></i></p></td>
+    <td><div>758,625</div><p class="percent"><i></i></p></td>
+    <td><div>289,607</div><p class="percent"><i></i></p></td>
+    <td><div>271,776</div><p class="percent"><i></i></p></td>
+    <td><div>2.62</div><p class="percent"><i></i></p></td>
+    <td><div>38.18%</div><p class="percent"><i></i></p></td>
+    <td><div>8,654</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div>0.10%</div><p class="percent"><i></i></p></td>
+    <td><div>188</div><p class="percent"><i></i></p></td>
+    <td><div>281</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div></div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+  </tr>
+
+  <tr>
+    <td><div>2014-06-17</div><p class="percent"><i></i></p></td>
+    <td><div>806,331</div><p class="percent"><i></i></p></td>
+    <td><div>305,779</div><p class="percent"><i></i></p></td>
+    <td><div>296,576</div><p class="percent"><i></i></p></td>
+    <td><div>2.64</div><p class="percent"><i></i></p></td>
+    <td><div>38.40%</div><p class="percent"><i></i></p></td>
+    <td><div>8,664</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div>0.06%</div><p class="percent"><i></i></p></td>
+    <td><div>145</div><p class="percent"><i></i></p></td>
+    <td><div>194</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div></div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+    <td><div>0</div><p class="percent"><i></i></p></td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+<div class="container-fluid text-center">
+  <ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ul>
+
+  <ul class="pagination form-inline bi-pa">
+    <li>共90页</li>
+    <li>去第</li>
+    <li><input class="form-control" type="text"/></li>
+    <li>页</li>
+  </ul>
+</div>
+</body>
+</html>

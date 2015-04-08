@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>DEMO</title>
+  <link rel="stylesheet" href="css/secret.css">
+</head>
+<body class="grey-body">
+  <!--<div class="fav" style="display: block">
+    <a href="#">
+      <img src="images/logo.png" width="42" height="30"><img src="images/follow.jpg" width="94">小编发福利！
+    </a>
+  </div>-->
+  <div style="background-color: #fff;width: 100%;padding: 5px 10px;-webkit-box-sizing: border-box;box-sizing: border-box;overflow: hidden;">
+    <a href="#"><img src="images/three-top-l.jpg" width="147.5" style="float:left;"></a>
+    <a href="http://m.kanzhun.com/activity/bcompany/index/"><img src="images/three-top-pk.jpg" width="38" style="float:right;"></a>
+    <span style="float:right;height: 40px;border-right: 1px solid #e7e7e7;width: 0;margin: 0 10px;"></span>
+    <a href="http://m.kanzhun.com/activity/bsalary/home/"><img src="images/three-top-s.jpg" width="35" style="float:right;"></a>
+  </div>
+  <div class="index-header">
+   <!-- <p><a href="http://m.kanzhun.com/"><img src="images/kz-logo.png" class="ka-logo"></a></p>-->
+    <p class="s-logo"><img src="images/s-logo.png"></p>
+    <dl id="searchTabs" class="searcher">
+      <dt>
+        <a ka="bsalary-home-company" href="javascript:;" class="current">查公司 <i></i></a> <a ka="bsalary-home-job" href="javascript:;">查职位 <i></i></a>
+      </dt>
+      <dd>
+        <a ka="bsalary-city" href="/city/">全国 <i></i></a>
+        <input type="text" placeholder="请输入公司名称" readonly="">
+        <input type="submit" value="" ka="submit">
+      </dd>
+    </dl>
+  </div>
+
+  <div class="index-jump">
+    <a href="#" class="fright">我要曝工资</a>
+    <div class="fleft mt5">
+      <strong class="red">2</strong> 次查询机会
+      <img src="images/i-8.png" width="12" class="middle ml5">
+      <a href="#">获取机会</a>
+    </div>
+  </div>
+
+  <div class="index-hot">
+    <div class="index-marquee">
+      <ul>
+        <li>百度员工刚刚分享了工资</li>
+      </ul>
+    </div>
+    <h2>热门公司平均工资</h2>
+    <p>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140707/d387a7983f96f38d38c992dad4c4dfaa.jpg" ><strong>￥17,400</strong></a>
+      <a href="#"><img src="http://img.kanzhun.com/image/l11514.gif" ><strong>￥17,400</strong></a>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140924/dbc35d721b298f53cd8bcda0ad036e60.jpg" ><strong>￥17,400</strong></a>
+      <a href="#"><img src="http://img.kanzhun.com/image/l7693.gif" ><strong>￥17,400</strong></a>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140707/d387a7983f96f38d38c992dad4c4dfaa.jpg" ><strong>￥17,400</strong></a>
+      <a href="#"><img src="http://img.kanzhun.com/image/l11514.gif" ><strong>￥17,400</strong></a>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140924/dbc35d721b298f53cd8bcda0ad036e60.jpg" ><strong>￥17,400</strong></a>
+      <a href="#"><img src="http://img.kanzhun.com/image/l7693.gif" ><strong>￥17,400</strong></a>
+    </p>
+  </div>
+  <a class="baobao_down" href="#">
+    <img src="images/baobao_download.jpg">
+  </a>
+  <section class="floating none" style="height:800px;">
+    <img src="images/close.png" class="floating-c">
+    <dl class="searcher">
+      <dt>
+        <a href="#" class="current">查公司 <i></i></a>
+        <a href="#">查职位</a>
+      </dt>
+      <dd>
+        <input type="text" placeholder="请输入公司名称">
+        <input type="text" placeholder="请输入职位名称" class="none">
+      </dd>
+    </dl>
+
+    <div class="f-suggestions">
+
+      <div class="hot-suggestions">
+        <p><strong>大家都在看：</strong></p>
+        <a href="#"><span>百度百度百度百度</span></a><a href="#"><span>新浪</span></a><a href="#"><span>阿里巴巴</span></a><a href="#"><span>中国银行</span></a>
+        <a href="#"><span>百度百度百度百度</span></a><a href="#"><span>新浪</span></a><a href="#"><span>阿里巴巴</span></a><a href="#"><span>中国银行</span></a>
+      </div>
+      <div class="hot-suggestions none">
+        <p><strong>大家都在看：</strong></p>
+        <a href="#"><span>百度百度百度百度</span></a><a href="#"><span>新浪</span></a><a href="#"><span>阿里巴巴</span></a><a href="#"><span>中国银行</span></a>
+        <a href="#"><span>百度百度百度百度</span></a><a href="#"><span>新浪</span></a><a href="#"><span>阿里巴巴</span></a><a href="#"><span>中国银行</span></a>
+      </div>
+      <div class="autocomplete-suggestions none" style="position: absolute; width: 100%; z-index: 9999;"><div class="autocomplete-suggestion" data-index="0"><a href="/activity/bsalary/companyindex/?companyId=9013"><span>共1165条工资</span>学大教育</a></div><div class="autocomplete-suggestion" data-index="1"><a href="/activity/bsalary/companyindex/?companyId=3505"><span>共664条工资</span>21世纪不动产</a></div><div class="autocomplete-suggestion" data-index="2"><a href="/activity/bsalary/companyindex/?companyId=44164"><span>共37条工资</span>21世纪经济报道</a></div><div class="autocomplete-suggestion" data-index="3"><a href="/activity/bsalary/companyindex/?companyId=18811"><span>共52条工资</span>263网络通信</a></div><div class="autocomplete-suggestion" data-index="4"><a href="/activity/bsalary/companyindex/?companyId=740191"><span>共4条工资</span>北京拓优顾问有限公司</a></div><div class="autocomplete-suggestion" data-index="5"><a href="/activity/bsalary/companyindex/?companyId=599798"><span>共67条工资</span>24券</a></div><div class="autocomplete-suggestion" data-index="6"><a href="/activity/bsalary/companyindex/?companyId=11470"><span>共33条工资</span>21cn</a></div></div>
+    </div>
+  </section>
+</body>
+</html>
+
+

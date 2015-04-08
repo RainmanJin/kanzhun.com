@@ -1,0 +1,753 @@
+.grade_star_b {
+  width: 118px;
+  height: 22px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  background: url(../images/manage_icons.png) no-repeat 0 0;
+  vertical-align: middle;
+  line-height: 0;
+}
+.grade_star_b i {
+  display: inline-block;
+  width: 118px;
+  height: 22px;
+  overflow: hidden;
+  font-size: 0;
+  background: url(../images/manage_icons.png) no-repeat 0 -24px;
+}
+section.co_header {
+  position: relative;
+  width: 990px;
+  background-color: #fff;
+  margin: 0 auto 0 auto;
+}
+section.co_header .co_logo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 1px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  top: 20px;
+  left: 20px;
+  overflow: hidden;
+  font-size: 0;
+}
+section.co_header .co_logo:after {
+  content: '';
+}
+section.co_header .co_logo:after,
+section.co_header .co_logo span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+section.co_header .co_logo img {
+  width: 150px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+section.co_header .co_info {
+  padding: 40px 0 25px 195px;
+}
+section.co_header .co_info h2 {
+  font: bold 24px/1.5 Arial, STHeiti, Microsoft YaHei, simhei, simsun;
+}
+section.co_header .co_info em {
+  margin: 0 8px;
+  color: #e7e7e7;
+}
+section.co_header .msg {
+  font-size: 14px;
+  height: 22px;
+  line-height: 22px;
+  padding: 5px 0;
+  color: #999999;
+}
+section.co_header .msg strong {
+  font-size: 18px;
+  color: #666666;
+}
+section.co_header .msg .grade_star_b {
+  vertical-align: -5px;
+  *vertical-align: middle;
+  margin-right: 10px;
+}
+section.co_header .params {
+  color: #999999;
+  font-size: 14px;
+}
+section.co_header nav {
+  height: 40px;
+  line-height: 40px;
+  background-color: #6e6e6e;
+  padding-left: 200px;
+}
+section.co_header nav a {
+  font-size: 16px;
+  padding: 0 35px;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid #999999;
+  white-space: nowrap;
+}
+section.co_header nav a:hover {
+  text-decoration: none;
+}
+section.co_header nav a.current {
+  background-color: #7cb228;
+  border: 1px solid #7cb228;
+  border-radius: 2px;
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+aside.manageLeft {
+  width: 204px;
+}
+aside.manageLeft a.send_jobs {
+  background-color: #f38100;
+}
+aside.manageLeft a.send_jobs:hover {
+  background-color: #fa8712;
+}
+aside.manageLeft dl {
+  border: 1px solid #e7e7e7;
+}
+aside.manageLeft dl dt {
+  height: 40px;
+  line-height: 40px;
+  color: #999999;
+  padding-left: 15px;
+}
+aside.manageLeft dl dt span {
+  font-size: 14px;
+  vertical-align: -2px;
+  margin-left: 5px;
+}
+aside.manageLeft dl dd {
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #e7e7e7;
+}
+aside.manageLeft dl dd a {
+  color: #000;
+  display: block;
+  padding-left: 50px;
+}
+aside.manageLeft dl dd.current {
+  background-color: #ededed;
+}
+aside.manageLeft dl dd.current a {
+  color: #7cb228;
+}
+aside.manageLeft dl dd.current a:hover {
+  text-decoration: none;
+}
+section.bottomFix {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+}
+section.bottomFix .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: .7;
+  filter: alpha(opacity=70);
+  z-index: 1;
+}
+section.bottomFix .content {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  width: 990px;
+}
+section.bottomFix .content .l_a {
+  float: left;
+  padding-left: 250px;
+}
+section.bottomFix .content .l_a a {
+  margin-right: 5px;
+}
+section.bottomFix .content .r_a {
+  float: right;
+}
+section.bottomFix .content .r_a a {
+  margin-right: 5px;
+}
+section.bottomFix .content .choose {
+  padding-left: 275px;
+  position: relative;
+}
+section.bottomFix .content .choose .h {
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+}
+section.bottomFix .content .choose ul {
+  margin-top: 10px;
+  float: left;
+  width: 550px;
+}
+section.bottomFix .content .choose ul li {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+section.bottomFix .content .choose .p {
+  clear: both;
+  text-align: left;
+  color: #fff;
+}
+section.bottomFix .content .choose .skip {
+  position: absolute;
+  top: 5px;
+  right: 90px;
+  color: #fff;
+}
+section.bottomFix .reasons {
+  width: 740px;
+  padding-left: 250px;
+  display: none;
+}
+section.bottomFix .reasons p.reasons_tt {
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 0;
+}
+section.bottomFix .reasons p.reasons_tt a.skip {
+  float: right;
+  padding: 7px 100px 0 0;
+  font-size: 12px;
+  color: #fff;
+}
+section.bottomFix .reasons p .otherrson {
+  color: #fff;
+}
+section.bottomFix .reasons .select_point a {
+  display: inline-block;
+  zoom: 1;
+  width: 8em;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  margin: 0 10px 10px 0;
+  background-color: #ededed;
+  text-align: center;
+  color: #999999;
+  cursor: pointer;
+}
+section.bottomFix .reasons .select_point a:hover {
+  background-color: #7cb228;
+  color: #ffffff;
+  text-decoration: none;
+}
+.pager {
+  padding: 10px 0;
+}
+.pager a {
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #343434;
+}
+.pager a:hover {
+  text-decoration: none;
+  background-color: #6c9b23;
+  color: #fff;
+}
+.pager a.current {
+  background-color: #7cb228;
+  color: #fff;
+}
+.pager a.forbidden {
+  color: #999999;
+  cursor: default;
+}
+.pager a.forbidden:hover {
+  color: #999999;
+  background-color: #fff;
+}
+.pager input {
+  width: 30px;
+  height: 14px;
+  padding: 8px 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 14px;
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  margin: 0 5px;
+  font-size: 14px;
+  *vertical-align: -7px;
+}
+.pager span {
+  margin: 0 5px;
+}
+.np_pager ul li.current a {
+  background-color: #7cb228;
+  color: #fff;
+}
+h3.p_tt {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 8px;
+  border-left: 4px solid #7cb228;
+  height: 1em;
+  line-height: 1em;
+  font-size: 16px;
+  zoom: 1;
+  /*.p1{
+    	font-size: 12px;
+    	font-weight: normal;
+    	color: @grey_99;
+    }*/
+}
+h3.p_tt p {
+  float: right;
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999;
+}
+h3.p_tt p span {
+  color: #7cb228;
+}
+h3.p_tt a.btn_yellow_b {
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+i.round_orange_s {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: #fff;
+  background-color: #f38100;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+section.manageContent {
+  width: 950px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 351px;
+  overflow: hidden;
+}
+section.manageContent .manageLeft {
+  float: left;
+}
+section.manageContent .manageRight {
+  float: left;
+  width: 705px;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #e7e7e7;
+  min-height: 600px;
+}
+section.manageContent .manageRight ul.joblist li {
+  background-color: #f0f0f0;
+  margin-top: 10px;
+  padding: 20px 30px;
+  position: relative;
+}
+section.manageContent .manageRight ul.joblist li .h {
+  font-size: 18px;
+  /*a{
+						color: #007ead;
+					}*/
+}
+section.manageContent .manageRight ul.joblist li .p1 {
+  margin-top: 8px;
+}
+section.manageContent .manageRight ul.joblist li .p1 em {
+  margin: 0 5px;
+  color: #999999;
+}
+section.manageContent .manageRight ul.joblist li .p2 {
+  margin-top: 8px;
+  color: #999999;
+}
+section.manageContent .manageRight ul.joblist li .rSet {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  text-align: right;
+}
+section.manageContent .manageRight ul.joblist li .rSet .pB {
+  margin-top: 43px;
+}
+section.manageContent .manageRight ul.joblist li .rSet .pB em {
+  color: #999999;
+  margin: 0 5px;
+}
+section.manageContent .manageRight ul.joblist.resume {
+  border-top: 0;
+}
+section.manageContent .manageRight ul.joblist.resume .rSet p {
+  color: #999999;
+}
+section.manageContent .manageRight ul.joblist.resume .rSet p.pB {
+  margin-top: 60px;
+}
+section.manageContent .manageRight .add {
+  margin-top: 10px;
+  height: 120px;
+  background-color: #f0f0f0;
+}
+section.manageContent .manageRight .add .a_add {
+  display: inline-block;
+  margin: 30px 0 0 95px;
+}
+section.manageContent .manageRight .add span {
+  color: #999999;
+  margin-left: 10px;
+}
+section.manageContent .manageRight .add p {
+  float: right;
+  padding: 50px 20px 0 0;
+}
+section.manageContent .manageRight .add p em {
+  color: #7cb228;
+}
+section.manageContent .manageRight .job_header {
+  background-color: #f0f0f0;
+  padding: 20px 30px;
+  position: relative;
+}
+section.manageContent .manageRight .job_header .h {
+  font-size: 18px;
+}
+section.manageContent .manageRight .job_header .p1 {
+  margin-top: 8px;
+}
+section.manageContent .manageRight .job_header .p1 em,
+section.manageContent .manageRight .job_header .p1 span {
+  margin: 0 5px;
+  color: #999999;
+}
+section.manageContent .manageRight .job_header .rSet {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  text-align: right;
+}
+section.manageContent .manageRight .job_header .rSet .pB {
+  margin-top: 30px;
+}
+section.manageContent .manageRight .job_header .rSet .pB a {
+  color: #999999;
+}
+section.manageContent .manageRight .job_header .rSet .pB em {
+  color: #999999;
+  margin: 0 5px;
+}
+section.manageContent .manageRight .job_detail {
+  padding: 15px 30px;
+}
+section.manageContent .manageRight .job_detail .job_request {
+  font-size: 16px;
+}
+section.manageContent .manageRight .job_detail .job_request span {
+  color: #eb7676;
+}
+section.manageContent .manageRight .job_detail .job_request em {
+  margin: 0 5px;
+}
+section.manageContent .manageRight .job_detail p.good {
+  font-size: 16px;
+  margin-top: 10px;
+}
+section.manageContent .manageRight .job_detail ul.good {
+  margin-top: 10px;
+}
+section.manageContent .manageRight .job_detail ul.good li {
+  float: left;
+  border: 1px solid #e7e7e7;
+  background-color: #f0f0f0;
+  margin-right: 10px;
+  padding: 2px 5px;
+}
+section.manageContent .manageRight .job_detail h4.title {
+  clear: both;
+  padding-top: 40px;
+}
+section.manageContent .manageRight .job_detail h4.title i {
+  display: inline-block;
+  width: 98px;
+  height: 31px;
+  line-height: 31px;
+  background: url(../images/btn_bgs.png) no-repeat;
+  background-position: 0 -120px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+section.manageContent .manageRight .job_detail p.addr {
+  margin: 40px 0 0;
+}
+section.manageContent .manageRight .job_edit {
+  margin-top: 10px;
+}
+section.manageContent .manageRight .job_edit > ul {
+  margin-top: 25px;
+}
+section.manageContent .manageRight .job_edit > ul > li {
+  margin-bottom: 25px;
+}
+section.manageContent .manageRight .job_edit > ul > li label {
+  display: inline-block;
+  margin-right: 15px;
+  width: 5em;
+  text-align: right;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+}
+section.manageContent .manageRight .job_edit > ul > li label em {
+  color: #d60000;
+}
+section.manageContent .manageRight .job_edit > ul > li input.m {
+  width: 100px;
+}
+section.manageContent .manageRight .job_edit > ul > li.radio span {
+  position: relative;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  text-align: center;
+  width: 88px;
+  background: url(../images/icons_v2.png) repeat-x -160px -26px;
+  display: inline-block;
+  margin-right: 16px;
+  cursor: pointer;
+}
+section.manageContent .manageRight .job_edit > ul > li.radio span.current {
+  background: #ffffff url('');
+  border: 1px solid #7cb228;
+}
+section.manageContent .manageRight .job_edit > ul > li.radio span.current i {
+  position: absolute;
+  width: 26px;
+  height: 23px;
+  top: 0;
+  right: 0;
+  background: url(../images/manage_icons.png) no-repeat -74px -100px;
+}
+section.manageContent .manageRight .job_edit > ul > li.radio span:hover {
+  background: #ffffff url('');
+}
+section.manageContent .manageRight .job_edit > ul > li.good {
+  overflow: hidden;
+}
+section.manageContent .manageRight .job_edit > ul > li.good label {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood {
+  float: left;
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood dl {
+  width: 620px;
+  /*&.hot{
+									dd{
+										text-align: center;
+										cursor: pointer;
+									}
+								}*/
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood dl dt {
+  margin: 10px 0;
+  color: #999999;
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood dl dd {
+  margin-bottom: 10px;
+  float: left;
+  background-color: #ffffff;
+  margin-right: 10px;
+  padding: 5px 10px;
+  color: #666666;
+  font-size: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood dl dd:hover {
+  background-color: #f9fff5;
+  border-color: #d8eeb7;
+  color: #659226;
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood dl.self {
+  height: 28px;
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood dl.self dd {
+  position: relative;
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood dl.self dd a {
+  display: inline-block;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  background: url(../images/manage_icons.png) no-repeat -115px -100px;
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood .input {
+  clear: both;
+}
+section.manageContent .manageRight .job_edit > ul > li.good .rGood .input input {
+  margin-right: 10px;
+}
+section.manageContent .manageRight .job_edit > ul > li.tLine {
+  padding-top: 25px;
+  border-top: 1px dashed #e7e7e7;
+}
+section.manageContent .manageRight .job_edit > ul > li.textarea {
+  overflow: hidden;
+}
+section.manageContent .manageRight .job_edit > ul > li.textarea label {
+  float: left;
+  height: 18px;
+  line-height: 18px;
+}
+section.manageContent .manageRight .job_edit > ul > li.textarea .tR {
+  float: left;
+}
+section.manageContent .manageRight .job_edit > ul > li.textarea .tR .p1 {
+  color: #999999;
+}
+section.manageContent .manageRight .job_edit > ul > li.textarea .tR textarea {
+  margin-top: 10px;
+  width: 517px;
+}
+section.manageContent .manageRight .job_edit > ul > li.textarea .tR .red {
+  display: inline-block;
+  width: 100px;
+}
+section.manageContent .manageRight .job_edit > ul > li.textarea span.red {
+  display: block;
+  padding-left: 85px;
+}
+section.manageContent .manageRight .job_edit > ul > li.sel {
+  height: 35px;
+}
+section.manageContent .manageRight .job_edit > ul > li.sel dl {
+  width: 300px;
+  float: left;
+}
+section.manageContent .manageRight .job_edit > ul > li.sel .red {
+  height: 35px;
+  line-height: 35px;
+}
+section.manageContent .manageRight .job_edit > ul > li.code input[type=text] {
+  width: 180px;
+  margin-right: 10px;
+}
+section.manageContent .manageRight .job_edit > ul > li.code img {
+  height: 36px;
+  width: 90px;
+  border-radius: 4px;
+}
+section.manageContent .manageRight .job_edit > ul > li.sbm {
+  padding-left: 85px;
+}
+section.manageContent .manageRight .job_edit > ul > li.sbm span {
+  padding: 0 45px;
+}
+section.manageContent .manageRight .job_success {
+  margin-top: 10px;
+  border-top: 1px solid #e7e7e7;
+}
+section.manageContent .manageRight .job_success h4.title {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 40px 0 20px 70px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e7e7;
+  float: left;
+  height: 37px;
+}
+section.manageContent .manageRight .job_success p {
+  clear: both;
+  margin-left: 110px;
+  line-height: 2;
+}
+section.manageContent .manageRight dl.nav {
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 0 0 0 30px;
+  border-bottom: 1px solid #e7e7e7;
+}
+section.manageContent .manageRight dl.nav dt {
+  float: left;
+  margin-left: -8px;
+  padding: 5px 8px;
+}
+section.manageContent .manageRight dl.nav dd {
+  float: left;
+  margin-right: 20px;
+  padding: 5px 8px;
+}
+section.manageContent .manageRight dl.nav dd.current {
+  background-color: #f0f0f0;
+}
+section.manageContent .manageRight .resume_detail h4.title {
+  margin: 40px 0 0 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
+}
+section.manageContent .manageRight .resume_detail .content {
+  position: relative;
+  color: #343434;
+  margin-left: 10px;
+  padding-bottom: 25px;
+  font-size: 14px;
+}
+section.manageContent .manageRight .resume_detail .content p {
+  line-height: 2;
+}
+section.manageContent .manageRight .resume_detail .content .rHeadpic {
+  position: absolute;
+  right: 100px;
+  top: 15px;
+  border: 1px solid #e7e7e7;
+  padding: 2px;
+  height: 115px;
+  width: 115px;
+}
+section.manageContent .manageRight .resume_detail .content .rHeadpic img {
+  height: 115px;
+  width: 115px;
+}
+section.manageContent .manageRight dl.promppt_info {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+section.manageContent .manageRight dl.promppt_info dt,
+section.manageContent .manageRight dl.promppt_info dd {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}

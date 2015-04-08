@@ -1,0 +1,323 @@
+@import "common/var";
+@import "common/reset";
+@import "common/common";
+@import "module/company_info";
+@import "module/bottom";
+@import "module/icons";
+@import "module/right_slide";
+@import "module/share";
+@img_path:"../../images/weixin"; //project目录
+
+section.container{
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+ul.hd_select{
+	line-height: 40px;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	background-color: #fff;
+	>li{
+		float: left;
+		.box-sizing();
+		width: 50%;
+		a{
+			display: block;
+			padding-left: 10px;
+			position: relative;
+		}
+		.i{
+			position: absolute;
+			top: 18px;
+			right: 10px;
+		}
+		&:first-of-type{
+			border-right: 1px solid #c0c0c0;
+		}
+	}
+}
+
+dl.iv_detail{
+	margin: 10px 5px;
+	>dd{
+		margin-bottom: 10px;
+		padding: 10px;
+		background-color: #fff;
+		border-radius: 3px;
+		.tt{
+			border-bottom: 1px solid #dfdfdd;
+			padding: 0 10px 5px;
+			margin: 0 -10px;
+			h2{
+				color: @blue;
+				font-size: 16px;
+			}
+			p.intr{
+				margin-top: 10px;
+				font-size: 12px;
+				color: @grey;
+				img{
+					vertical-align: -2px;
+				}
+			}
+		}
+		.ct{
+			padding-top: 10px;
+			p.set{
+				text-align: right;
+				i{
+					vertical-align: -2px;
+				}
+			}
+		}
+		.tt_line{
+			font-size: 16px;
+			color: @blue;
+			border-bottom: 1px solid #dfdfdd;
+			margin: 0 -10px; 
+			padding: 0 10px 10px;
+		}
+	}
+	>dt{
+		color: @grey;
+		margin: 20px 5px 5px; 
+	}
+	&.detail{
+		margin: 0;
+	}
+}
+
+ul.detail_nav{
+	border-top: 1px solid #c0c0c0; 
+	border-bottom: 1px solid #c0c0c0;
+	>li{
+		padding: 10px;
+		border-bottom: 1px solid #c0c0c0; 
+		label{
+			color: @grey;
+			margin-right: 15px;
+		}
+		a{
+			float: right;
+			color: @blue;
+		}
+		img{
+			vertical-align: -1px;
+		}
+		&:last-of-type{
+			border-bottom:0;
+		}
+	}
+}
+
+//搜索
+section.search{
+	padding: 10px;
+	border-bottom: 1px solid #dfdfdd;
+	>div{
+		background-color: #ececec;
+		border-radius: 5px;
+		padding:5px 35px 5px 10px;
+		position: relative;
+		input[type=text]{
+			border: 0;
+			width: 100%;
+			background-color: #ececec;
+			color: @grey;
+			border-right: 1px solid #c0c0c0;
+			padding-right: 5px;
+		}
+		input[type=submit],input[type=button]{
+			position: absolute;
+			top: 0;
+			right: 0px;
+			border: 0;
+			background: url("@{img_path}/icons.png") no-repeat -74px 10px;
+			.background-size(100px);
+			width: 30px;
+			height: 30px;
+		}
+
+    &.no-bd{
+      padding:5px 10px;
+
+      input[type=text]{
+        border: 0;
+      }
+
+      img{
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        display: none;
+      }
+    }
+	}
+}
+
+section.search-g{
+  background-color: #daecce;
+  .box-shadow(0 -3px 3px #aaaaaa);
+
+  >div{
+    background-color: #85c15d;
+
+    input[type=text]{
+      background-color: #85c15d;
+      border-right: 1px solid #c2e0ae;
+      border-radius: 0;
+      color: #ffffff;
+
+      &::-webkit-input-placeholder { /* WebKit browsers */
+        color: #ffffff;
+      }
+    }
+  }
+}
+h2.sr_tt{
+	background-color: @bgc;
+	color: @grey;
+	padding: 20px 10px 10px;
+}
+ul.sr_list{
+	margin-bottom: 10px;
+	li{
+		a{
+			display: block;
+			padding: 10px;
+			border-bottom: 1px solid #dfdfdd;
+			position: relative;
+			overflow: hidden;
+			img{
+				width: 46px;
+				height: 46px;
+				border: 1px solid #ebebeb;
+				border-radius: 5px;
+				vertical-align: middle;
+				float: left;
+			}
+			.co_n{
+				margin-left: 55px;
+				margin-top: 10px;
+				font-size: 16px;
+				color: #111;
+				display: block;
+			}
+			.ct_r{
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				margin-top: -7px;
+				color: @grey;
+			}
+			p{
+				&.tt{
+					font-size: 16px;
+					color: @blue;
+				}
+				&.ct{
+					color: @grey;
+				}
+			}
+		}
+	}
+}
+.sr_more{
+	text-align: center;
+	font-size: 16px;
+	margin: 10px 0;
+}
+p.s_noresult{
+	background-color: @bgc;
+	color: #f07675;
+	padding: 5px 10px 0; 
+}
+
+//热门公司
+ul.cologo_list{
+  border-top: 1px solid #e7e7e7;
+	li{
+		float: left;
+		width: 25%;
+		height: 80px;
+		border-right: 1px solid #e7e7e7;
+		border-bottom: 1px solid #e7e7e7;
+		text-align: center; 
+		.box-sizing();
+		a{
+			display: block;
+			img{
+				margin-top: 10px;
+			}
+		}
+	}
+	margin-bottom: 10px;
+}
+
+//面试技巧详情
+section.skill_detail{
+	margin: 10px;
+	.tt_line{
+		font-size: 16px;
+		color: #111;
+		border-bottom: 1px solid #dfdfdd;
+		padding: 0 0 10px;
+	}
+	.ct{
+		padding-top: 10px;
+		p.set{
+			text-align: right;
+			i{
+				vertical-align: -2px;
+			}
+		}
+	}
+}
+
+div.operation{
+  overflow: hidden;
+  padding: 25px 20px 10px;
+  a{
+    i{
+      vertical-align: -2px;
+    }
+    &:first-child{
+      padding: 8px 0;
+      color: @green;
+      cursor: pointer;
+      border: 1px solid @green;
+      text-decoration: none;
+      border-radius: 4px;
+      background-color: transparent;
+      width: 45%;
+      text-align: center;
+      float: left;
+      
+      &.grey{
+        border: 1px solid @grey;
+        color: @grey;
+        a{
+          color: @grey;
+        }
+      }
+    }
+
+    &:last-child{
+      text-align: center;
+      padding: 8px 0;
+      color: #f38100;
+      cursor: pointer;
+      border: 1px solid #f38100;
+      text-decoration: none;
+      border-radius: 4px;
+      background-color: transparent;
+      float: right;
+      width: 45%;
+    }
+  }
+}

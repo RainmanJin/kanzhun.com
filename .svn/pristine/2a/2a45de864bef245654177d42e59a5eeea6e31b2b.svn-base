@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/subway.css"/>
+<title>DEMO</title>
+</head>
+
+<body>
+  <header class="sw">
+    <img src="images/banner.jpg">
+  </header>
+
+  <div class="co clearfix">
+    <div>
+      <a href="#"><img src="http://img.kanzhun.com/images/logo/20140707/b2e45e8b1a313b9480c07c8a14d56150.jpg"></a>
+      <p>上海大众汽车</p>
+    </div>
+    <section>
+      <p class="f_18"><strong>18000</strong>人求地铁补助 &nbsp;&nbsp;排名 <strong>2</strong></p>
+      <div>
+        <i class="masked"></i>赞！赞！赞！赞给老板看！！！
+      </div>
+    </section>
+    <p class="clearfix"><a class="btn orange-btn" href="want.html">分享拉票</a><a class="btn green-btn" href="want.html">我的公司</a></p>
+  </div>
+
+  <p class="space"></p>
+  <h2>呼声排行榜</h2>
+  <dl class="rank">
+    <dt class="clearfix">
+    <span class="current">呼声最高 <i></i></span><span>已发补助 <i></i></span>
+    </dt>
+
+    <dd>
+      <ul class="has-rank">
+        <li>
+          <img src="http://img.kanzhun.com/images/logo/20140924/dbc35d721b298f53cd8bcda0ad036e60.jpg">
+          <div>
+            <p>北京百度网讯科技有限公司</p>
+            <p><strong>18000</strong>人想要补贴 每月补助<strong>200</strong>元</p>
+          </div>
+
+          <span>排名: <strong>2</strong></span>
+        </li>
+        <li>
+          <img src="http://img.kanzhun.com/images/logo/20140924/dbc35d721b298f53cd8bcda0ad036e60.jpg">
+          <div>
+            <p>北京百度网讯科技有限公司</p>
+            <p><strong>18000</strong>人想要补贴 每月补助<strong>200</strong>元</p>
+          </div>
+
+          <span>排名: <strong>2</strong></span>
+        </li>
+      </ul>
+      <ul class="none">
+        <li>
+          <img src="http://img.kanzhun.com/images/logo/20140924/dbc35d721b298f53cd8bcda0ad036e60.jpg">
+          <div>
+            <p>百度网讯科技有限公司</p>
+            <p><strong>18000</strong>人想要补贴 每月补助<strong>200</strong>元</p>
+          </div>
+        </li>
+        <li>
+          <img src="http://img.kanzhun.com/images/logo/20140924/dbc35d721b298f53cd8bcda0ad036e60.jpg">
+          <div>
+            <p>百度网讯科技有限公司</p>
+            <p><strong>18000</strong>人想要补贴 每月补助<strong>200</strong>元</p>
+          </div>
+        </li>
+      </ul>
+    </dd>
+  </dl>
+
+  <p class="thx"><span>看准网</span>携帝都屌丝求补助</p>
+
+
+  <section class="enter-co">
+    <div>
+      <input type="text" placeholder="输入您的公司名称">
+      <div class="co-suggestions"></div>
+      <p>
+        <a class="ok" href="#">确定</a><a href="#" class="cancel">取消</a>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    var require = {
+      baseUrl: 'js/site/',
+      urlArgs : "v=1.0.1"
+    };
+  </script>
+  <script src="js/lib/jquery-2.1.1.min.js"></script>
+  <script src="js/lib/require.js" data-main="subway.js"></script>
+</body>
+</html>
+
+

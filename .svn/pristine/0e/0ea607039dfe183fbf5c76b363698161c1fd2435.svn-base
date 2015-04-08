@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>登录</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/register.css" />
+</head>
+<body class="bg_color_ea">
+  <header class="global">
+    <div class="header">
+      <img class="logo" src="../images/logo.jpg"/>
+      <span class="title">企业用户专区</span>
+    </div>
+  </header>
+  <div class="auth_view">
+      <div class="pop_wrap">
+          <div class="auth_ipts">
+              <section class="auth a_login" id="loginDialog">
+                  <h3><a href="javascript:;" class="jump">免费注册</a>登录</h3>
+                  <form id="loginForm" action="" method="post">
+                      <input id="redirect" name="redirect" type="hidden" value="http://www.kanzhun.com/"/>
+                      <p class="sys_err"><span></span></p>
+                      <ul id="loginField">
+                          <li>
+                              <div class="focus">
+                                  <label class="emailaddress"><i class="base useraccount"></i></label><input id="account" name="account" placeholder="请输入账号" class="ifd emailipt" type="text" value=""/>
+                                  <p class="err" data-msg="请输入账号"></p>
+                              </div>
+                          </li>
+                          <li>
+                              <div>
+                                  <label><i class="base pwd"></i></label><input id="password" name="password" placeholder="请输入密码" class="ifd" type="password" value="" maxlength="14"/>
+                                  <p class="err" data-msg="请输入密码！"></p>
+                              </div>
+                          </li>
+                          <li class="code">
+                              <img src="/captcha?randomKey=a1u8JCMsMvoSFuhVcAKsAas5UGzfN984" onclick="changeAuthCode(this);" title="看不清？点击换一张">
+                              <div class="error">
+                                  <input type="text" name="captcha" placeholder="输入验证码" maxlength="4" class="ifd"><input type="hidden" name="randomKey" value="a1u8JCMsMvoSFuhVcAKsAas5UGzfN984">
+                                  <p class="err" data-msg="请输入验证码！" style="display: block;"><i></i>请输入验证码！</p>
+                              </div>
+                          </li>
+                      </ul>
+                      <p class="agree"><a class="fright" href="" target="_blank">忘记密码？</a><input id="remember" name="remember" type="checkbox" value="true" checked="checked"/><input type="hidden" name="_remember" value="on"/><label for="remember">记住我</label></p>
+                      <p><input type="submit" value="登 录" class="auth_btn"></p>
+                  </form>
+              </section>
+              <!--注册-->
+              <section class="auth a_register" id="registerDialog">
+                  <h3><a href="javascript:;" class="jump">登录</a>注册</h3>
+                  <form id="registerForm" action="/register/email.json" method="post">
+                      <p class="sys_err"><span></span></p>
+                      <ul>
+                          <li>
+                              <div class="focus">
+                                  <label class="emailaddress"><i class="base useraccount"></i></label><input id="account" name="account" placeholder="请输入企业邮箱" ka="register_account" class="ifd" type="text" value=""><input type="hidden" name="accountCheck" value="">
+                                  <p class="err" data-msg="请输入企业邮箱！"></p>
+                              </div>
+                          </li>
+                          <li>
+                              <div>
+                                  <label><i class="base pwd"></i></label><input id="password" name="password" placeholder="请输入密码" ka="register_password" class="ifd" type="password" value="" maxlength="14">
+                                  <p class="err" data-msg="请输入密码！"></p>
+                              </div>
+                          </li>
+                      </ul>
+                      <p class="agree"><input type="checkbox" name="" id="agreeCb" checked="" ka="register_agree"><label for="agreeCb">我已阅读并同意<a href="/term.html" target="_blank">《用户协议》</a></label></p>
+                      <p><input type="submit" value="注 册" class="auth_btn" ka="register_btn"></p>
+                  </form>
+              </section>
+          </div>
+      </div>
+
+  </div>
+  <footer class="auth_footer">
+  <nav>
+    <a ka="footer-about" href="/about.html" rel="nofollow">关于我们</a><em>|</em><a ka="footer-feedback" href="/contact_us.html" rel="nofollow">意见反馈</a><em>|</em><a ka="footer-help" href="/help.html" rel="nofollow">使用帮助</a><em>|</em><a ka="footer-user" href="/term.html" rel="nofollow">用户协议</a><em>|</em><a ka="footer-weixin" href="javascript:;" class="micro_message" rel="nofollow" class="micro_message">看准网微信<i></i></a><em>|</em><a ka="footer-weibo" href="http://www.weibo.com/fenzhi" target="_blank" rel="nofollow">看准网微博</a>
+  </nav>
+  <p>Copyright© 2014 kanzhun.com京ICP备14013441号-1 , kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+</footer>
+</body>
+</html>

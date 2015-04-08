@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/q1.css">
+</head>
+<body>
+    <header>
+        <h3>1/3</h3>
+        <img src="images/logo.png" class="logo"/>
+        <img src="images/q1/person.png" class="person"/>
+    </header>
+
+    <section id="page1" class="swiper-slide">
+        <h2>Q1.选择你的行业</h2>
+        <div class="indus-wrap">
+            <ul class="indus">
+                <li>
+                    <a href="qestion2.html">
+                        <div class="icon">
+                            <img src="images/q1/icons1.png" />
+                            <p>IT 互联网</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons2.png" alt=""/>
+                        <p>电子通信</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons3.png" alt=""/>
+                        <p>金融</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons4.png" alt=""/>
+                        <p>生活服务</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons5.png" alt=""/>
+                        <p>汽车</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons6.png" alt=""/>
+                        <p>交通物流</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons7.png" alt=""/>
+                        <p>专业服务</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons8.png" alt=""/>
+                        <p>广告传媒</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons9.png" alt=""/>
+                        <p>房地产建筑</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons10.png" alt=""/>
+                        <p>机械制造</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons11.png" alt=""/>
+                        <p>能源化工</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons12.png" alt=""/>
+                        <p>消费品</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons13.png" alt=""/>
+                        <p>制药医疗</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons14.png" alt=""/>
+                        <p>教育培训</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/q1/icons15.png" alt=""/>
+                        <p>政府非盈利</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/q1/icons16.png" alt=""/>
+                        <p>农林牧渔</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/lib/zepto.js"></script>
+    <script type="text/javascript" src="js/site/q1.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>boss-邀请函</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/idangerous.swiper.css" />
+  <link rel="stylesheet" href="css/invite.css"/>
+</head>
+
+<body>
+<div class="swiper-container" id='pages'>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide page" id="page1">
+      <h3><img src="images/txt.png" width="268"></h3>
+      <p id="one5">一票兄弟在东山寻大哥</p>
+      <p id="one6">一位大哥在西山找兄弟</p>
+      <p class="one-btn hidden" id="one7"><a href="#">Boss直聘企业邀请函</a></p>
+      <div class="stuff-1">
+        <img src="images/one-2.png" width="60" id="one1" />
+        <img src="images/one-3.png" width="55" id="one2" />
+        <img src="images/one-4.png" width="12" id="one3" />
+        <img src="images/one-5.png" width="12" id="one4" />
+        <img src="images/cloud.png" width="51"  class="fly infinite" />
+        <img src="images/cloud.png" width="30"  class="flySlowly infinite" />
+      </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+    <div class="swiper-slide page" id="page2">
+      <h3><img src="images/txt.png" width="268"></h3>
+      <p id="two5">我需要你时，你总是很忙</p>
+      <p id="two6">你需要我时，我没有时间</p>
+      <p id="two8">所以， <br/>让我们随时在一起</p>
+      <p class="two-btn hidden" id="two9"><a href="#">Boss直聘，随时上线招人</a></p>
+      <div class="stuff-2">
+        <img src="images/one-4.png" width="12" id="two1" />
+        <img src="images/one-5.png" width="12" id="two2" />
+        <span id="two3"><i></i></span>
+        <span id="two4"><i></i></span>
+        <img src="images/two-2.png" id="two7" >
+      </div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page" id="page3">
+      <h3><img src="images/txt.png" width="268"></h3>
+      <p id="three1">
+        不再高冷 <br/>
+        不再坐等 <br/>
+        越主动，越快乐
+      </p>
+      <p class="three-btn" id="three5"><a href="#">你需要做的是 ...</a></p>
+      <div class="stuff-3">
+        <img src="images/cloud.png" width="30"  class="fly infinite" />
+        <img src="images/three-2.png"  width="25" class="jumpSlowly infinite" />
+      </div>
+
+      <div class="step step1" id="three2">下载 <br/>Boss直聘</div>
+      <div class="step step2" id="three3">注册并 <br/>完善资料</div>
+      <div class="step step3" id="three4">积极 <br/>回复牛人</div>
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page" id="page4">
+      <h3><img src="images/txt.png" width="268"></h3>
+      <p id="four1">
+        我为你私人定制<br/>
+        你依然不得其门
+      </p>
+      <p>免费定制私人专属招聘会</p>
+      <a href="#"  class="four-btn" id="four2">&nbsp;</a>
+      <p><img src="images/four-1.jpg" width="100%" ></p>
+    </div>
+    <span class="slide_up"><i class="up"></i></span>
+  </div>
+</div>  
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/idangerous.swiper.js"></script>
+<script src="js/invite-3.0.js"></script>
+</html>

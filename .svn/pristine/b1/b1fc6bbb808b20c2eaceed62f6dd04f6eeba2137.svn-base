@@ -1,0 +1,119 @@
+@import "common/var";
+@import "common/reset";
+body{
+	background-color: #f6f6f6;
+	font-size: 14px;
+	line-height: 1.4;
+	font-family:"微软雅黑","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+.ml20{margin-left: 20px}
+.wj_wrapper{
+	width: 990px;
+	margin: 0 auto;
+	border: 1px solid #dbdbdb;
+	background-color: #fff;
+	.wj_inner{
+		padding: 30px 40px;
+		h1.title{
+			font-size: 18px;
+			text-align: center;
+		}
+		.intro{
+			margin-top: 20px;
+			color: #666;
+			font-size: 16px;
+		}
+		.wj_hr{
+			background-color: #3c9ccf;
+			height: 3px;
+			margin-top: 20px;
+			font-size: 0;
+		}
+		.question_box{
+			dl.ques{
+				margin-top: 20px;
+				dt{
+
+				}
+				dd{
+					padding-top:10px;
+					padding-left: 10px;
+					a{
+						&.radio{
+							display: inline-block;
+							width: 18px;
+							height: 16px;
+							background: url(../images/radio.png);
+							vertical-align: middle;
+							&.on{
+								background-position: center bottom;
+							}
+						}
+						&.checkbox{
+							display: inline-block;
+							width: 18px;
+							height: 16px;
+							background: url(../images/checkbox.png);
+							vertical-align: middle;
+							&.on{
+								background-position: center bottom;
+							}
+						}
+					}
+					label{
+
+					}
+				}
+			}
+		}
+		.user_box{
+			margin-top: 30px;
+			dl{
+				dt{
+					margin-top: 10px;
+				}
+				dd{
+					margin-top: 10px;
+				}
+			}
+		}
+		.sbm{
+			margin-top: 20px;
+			text-align: center;
+		}
+		.suc_box{
+			min-height: 200px;
+			.title{
+				margin-top: 50px;
+				font-size: 20px;
+				text-align: center;
+			}
+		}
+	}
+	.ipt{
+		border: 1px solid #dbdbdb;
+		height: 26px;
+		width: 150px;
+		padding: 0 5px; 
+	}
+	.tarea{
+		border: 1px solid #dbdbdb;
+		width: 500px;
+		padding: 5px; 
+	}
+	.btn_submit{
+		font-weight:bold;
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		font-size:16px;
+		color: #fff;
+		background-color: #3c9ccf;
+		padding: 5px 10px;
+		width: 100px;
+		border-radius: 5px;
+	}
+	span.err{
+		color: red;
+	}
+}

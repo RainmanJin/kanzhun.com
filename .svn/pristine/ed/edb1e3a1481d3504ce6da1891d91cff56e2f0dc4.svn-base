@@ -1,0 +1,115 @@
+/*这个JS包含网站最基本的功能，依次是：
+登录注册弹层方法，
+分页，
+登录后用户下拉菜单，
+移动版自适配cookie，
+顶部banner，
+判断是否登录接口*/
+
+define(['c/widgets'], function () {
+  var authOpen = function (type) {
+    if ($('#authFrame').length === 0) {
+      $('body').append('<iframe class="overlay" scrolling="no" allowtransparency="true" src="/loginasy/' + (typeof type === 'string' ? type : $(type).attr('href')) + '" frameborder="0" id="authFrame" ></iframe>');
+    }
+  };
+
+  var authBind = function (elems, type) {
+    elems.each(function (i, v) {
+      $(v).on('click', function (e) {
+        e.preventDefault();
+        authOpen(this);
+      });
+    });
+  };
+
+  $(function () {
+    //bind login & register event
+    authBind($('a.auth_dialog'));
+
+    //logged user info
+    $('div.hello dl', 'header').hover(function () {
+      if ($.support.css3Property('transition')) {
+        $(this).find('dt').find('i.drop_down').addClass('drop_down_h');
+      } else {
+        $(this).find('dt').find('i.drop_down').addClass('drop_down_nocss3');
+      }
+      $(this).find('dd').show();
+    }, function () {
+      $(this).find('dd').hide();
+      if ($.support.css3Property('transition')) {
+        $(this).find('dt').find('i.drop_down').removeClass('drop_down_h');
+      } else {
+        $(this).find('dt').find('i.drop_down').removeClass('drop_down_nocss3');
+      }
+    });
+
+    //paging
+    $('div.staticPager').paging({
+      staticUrl: true
+    });
+
+    //back to top
+//    $(window).scroll(function () {
+//      if (Math.max($("html,body").scrollTop(), $(document).scrollTop()) > 200) {
+//        $("#quick a.back").css('display','block').fadeIn(300);
+//      } else {
+//        $("#quick a.back").hide();
+//      }
+//    });
+
+
+//    $("#quick .back").click(function () {
+//      $("html,body").animate({scrollTop: 0}, 200);
+//    });
+
+    //移动版
+    $('#toMobile').click(function () {
+      $.delCookie('__m_2_wid');
+    });
+
+    //top banner
+    var tic = $('#t_i_c');
+    $(tic).click(function () {
+      $('div.top_img').slideUp(function(){
+        $(this).hide();
+        $.writeCookie(tic.data('ck'), 'reborn', 60);
+      });
+    });
+  });
+  
+  //比工资入口
+  //只能输入数字
+//  var oPKSalayEnter=$(".pk_salaryEnter");
+//  var oPkSalary=oPKSalayEnter.find('[name="salary"]');
+//  $('[name="salary"]',".pk_salaryEnter").on("keyup",function(){
+//    var val = this.value.replace(/^0(?=\d+)|\D/g, '');
+//    $(this).val(val);
+//  });
+//  oPkSalary.on("focus",function(){
+//    $(this).removeClass("err");
+//  })
+//  $('[type="submit"]',".pk_salaryEnter").on("click",function(){
+//    if(oPkSalary.val()==""){
+//      oPkSalary.addClass("err");
+//      return false;
+//    }
+//  });
+
+  //判断是否登录接口
+  //使用方法：直接判断window.isLogged === true
+  window.userXHR = window.userXHR || $.getJSON(CONTEXTPATH + '/islogin.json');
+  window.isLogged = false;
+  userXHR.done(function (ret) {
+    if (ret && ret.rescode == 1) {
+      window.isLogged = true;
+    }
+  });
+  return {
+    bind: authBind,
+    open: authOpen,
+    isLogged: function () {
+      return isLogged;
+    }
+  };
+
+});

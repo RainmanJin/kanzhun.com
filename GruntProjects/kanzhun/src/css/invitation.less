@@ -1,0 +1,205 @@
+@import "common/var";
+@import "modules/company/common";
+
+div{
+  &.container{
+    padding-bottom: 0;
+  }
+
+  &.in_con{
+    width: 984px;
+    border: 3px solid @grey_e7;
+  }
+  
+  &.content{
+    width: 961px;
+    margin: 0 auto;
+    padding: 10px;
+    background: url(../images/invitation_img_03.jpg) no-repeat center 10px;
+    min-height: 610px;
+  }
+
+  &.imgbutton{
+    margin-left: 11px;
+    padding-bottom: 10px;
+    height: 217px;
+    a{
+      display: inline-block;
+      margin-right: 10px;
+      width: 313px;
+      height: 217px;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      background-image: url(../images/invitation_img_05.png);
+      background-repeat: no-repeat;
+      border-radius: 5px;
+
+      &.salary{
+        background-color: #65d0d4;
+        background-position: left top;
+        &:hover{
+          background-color: #50c5c9;
+        }
+      }
+
+      &.archives{
+        background-color: #efcc60;
+        background-position: -325px top;
+        &:hover{
+          background-color: #e7c048;
+        }
+      }
+
+      &.view{
+        background-color: #f6918e;
+        background-position: -649px top;
+        &:hover{
+          background-color: #ed7f7c;
+        }
+      }
+    }
+  }
+}
+
+section{
+  &.i_left{
+    float: left;
+    width: 380px;
+    padding: 40px 110px 0 45px;
+  }
+
+  &.i_right{
+    position: relative;
+    float: left;
+    width: 310px;
+    margin-top: -50px;
+  }
+}
+
+
+h2.tt{
+  font-weight: normal;
+  font-size: 18px;
+  margin: 30px 0  0 45px;
+  padding-right: 10px;
+  .ellipsis(ellipsis);
+  width: 900px;
+  span{
+    color: @green;
+  }
+}
+
+p{
+  &.userinfo{
+    margin-bottom: 34px;
+    font-size: 18px;
+    border-bottom: 1px solid @grey_e7;
+    line-height: 1.5em;
+    overflow: hidden;
+    .ellipsis(ellipsis);
+    height: 18px;
+    line-height: 18px;
+  }
+  &.to{
+    width: 330px;
+    padding: 20px 0 10px 60px;
+    background: url(../images/invitation_img_01.jpg) no-repeat left center;
+    margin-bottom: 20px;
+    *margin-bottom: 30px;
+  }
+
+  &.from{
+    width: 99px;
+    padding: 25px 0 10px 190px;
+    margin: 15px 0 30px 100px;
+    background: url(../images/invitation_img_02.jpg) no-repeat left top;
+  }
+
+  &.interview{
+    a{
+      display: inline-block;
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 60px;
+      background-color: #ffa200;
+      border-radius: 5px;
+      &:hover{
+        text-decoration: none;
+        background-color: #e39103;
+      }
+    }
+  }
+}
+
+p.maincon{
+  line-height: 45px;
+  color: #655D5A;
+  padding-left: 5px;
+  font-size: 16px;
+  height: 227px;
+}
+
+a.cmplogo{
+  display: block;
+  padding: 5px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 88px;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+  font-size: 0;
+  text-align: center;
+  background: @invitation_icons no-repeat left -40px;
+  img{
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 70px;
+  }
+  span{
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+i.stamp{
+  position: absolute;
+  top: 70px;
+  left: 250px;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  width: 163px;
+  height: 83px;
+  background: @invitation_icons no-repeat -102px -40px;
+}
+
+dl.count{
+  color: #655D5A;
+  padding-top: 189px;
+  font-size: 14px;
+  dt{
+    margin-bottom: 10px;
+  }
+  span{
+    display: inline-block;
+    margin-right: 5px;
+    width: 34px;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    border: 1px solid @green;
+    border-radius: 5px;
+    vertical-align: middle;
+    font-size: 18px;
+    text-align: center;
+    background: url(../images/invitation_img_04.png) no-repeat center;
+  }
+}

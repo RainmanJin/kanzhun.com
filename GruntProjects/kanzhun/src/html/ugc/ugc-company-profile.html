@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <title>UGC-创建公司档案</title>
+        <!--[if lte IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!--[if gt IE 9]><!-->
+		<script src="../js/jquery-2.1.0.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="../css/ugc.css" />
+		<script src="../js/require.js" data-main="../js/site/ugc.js"></script>
+	</head>
+	<body>
+		<header class="global">
+			<div class="header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<p class="loginfo"><a href="#">我的看准</a><i>|</i><a href="#">退出</a></p>
+			</div>
+	    </header>
+
+	    <div class="ugc clearfix">
+	    	<header>
+				<img src="../images/anonymous.jpg" /><img src="../images/ugc_cp_tt.jpg" />
+		    </header>
+
+		    <section class="ugc_l ugc_l_t">
+		    	<div class="c_progress"><p><span><em>75%</em></span><i class="point"></i><i class="point b_point"></i></p></div>
+		    	<p class="line_d"></p>
+
+		    	<fieldset class="ground g_rv_co">
+					<p class="mb15"><label>公司名称</label><input type="text" class="uf" placeholder="易宝支付"/> <i>*</i></p>
+					<ul class="mt15">
+						<li>
+							<label style="width: 4.3em;">公司Logo</label><label class="cphoto"><img src="../images/logo_def.jpg" alt="" style="width:65px;height:63px;"/></label><a href="" class="btn_grey_s update"><em class="ok"></em>上传</a>
+						</li>
+						<li>
+							<label>官方网站</label><input type="text" value="www.yeepay.com" class="uf" />
+						</li>
+						<li class="date clearfix">
+							<label>所属行业</label><dl class="select select_u cp_s" style="z-index:3">
+									<dt><input type="text" name="" value="全部行业" readonly="readonly" /><span class="btn"><i></i></span></dt>
+									<dd>
+										<a href="#">金融互联网</a>
+										<a href="#">互联网</a>
+										<a href="#">移动互联网</a>	
+									</dd>
+								</dl>
+						</li>
+						<li class="date clearfix">
+							<label>公司规模</label><dl class="select select_u" style="z-index:2">
+								<dt><input type="text" name="" value="" readonly="readonly" /><span class="btn"><i></i></span></dt>
+								<dd>
+									<a href="#"></a>
+									<a href="#"></a>
+									<a href="#"></a>	
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<label>总部城市</label><input type="text" value="" class="uf" />
+						</li>
+					</ul>
+			    </fieldset>
+
+			    <fieldset class="ground mt20">
+					<ul>
+						<li><label>CEO姓名</label><input type="text" class="uf" /></li>
+						<li><label>CEO照片</label><label class="cphoto"><img src="../images/img_cp.jpg" alt="" /></label><a href="" class="btn_grey_s update"><em class="ok"></em>上传</a></li>
+					</ul>
+			    </fieldset>
+
+			    <fieldset class="ground mt20">
+					<ul>
+					<li class="add_competitors"><label>竞争对手</label>
+						<div>
+							<p><span>支付宝<i class="err_v"></i></span><span>支付宝<i class="err_v"></i></span><span>支付宝<i class="err_v"></i></span><span>时间覅积分（jioe）<i class="err_v"></i></span><span>支付宝<i class="err_v"></i></span><span>支付宝<i class="err_v"></i></span><span>支付宝<i class="err_v"></i></span><span>支付宝<i class="err_v"></i></span></p>
+							<input type="text" class="uf mr10" placeholder="财付通" /><a href="#">添加</a>
+						</div>
+					</li>
+					<li class="date clearfix">
+                		<label>成立时间</label><dl class="select select_u short">
+                			<dt>
+                				<input type="text" name="" value="1998年" readyonly="readyonly" /><span class="btn"><i></i></span>
+                			</dt>
+                			<dd>
+                				<a href="#">2014年</a>
+                				<a href="#">2014年</a>
+                				<a href="#">2014年</a>
+                				<a href="#">2014年</a>
+                			</dd>
+                		</dl><dl class="select select_u short">
+                			<dt>
+                				<input type="text" name="" value="12月" readyonly="readyonly" class="year_color"/><span class="btn"><i></i></span>
+                			</dt>
+                			<dd>
+                				<a href="#">12月</a>
+                				<a href="#">12月</a>
+                				<a href="#">12月</a>
+                				<a href="#">12月</a>
+                			</dd>
+                		</dl>
+                	</li>
+                	<li><label>公司全称</label><input type="text" class="uf"/></li>
+                	<li class="co_desc">
+                		<label>公司描述</label><textarea name="" rows="5" class="uta" placeholder="当用户输入了系统不包含的公司简称，当前事件离开输入框时，弹出如下界面，引导用户临时建立公司档案..."></textarea>
+                	</li>
+
+                	</ul>
+			    </fieldset>
+			    <p class="line_d"></p>
+			    <p class="t-center mt20"><input type="submit" value="提交评价" class="btn_o_g"></p>
+		    </section>
+
+		    <section class="ugc_r"></section>
+	    </div>
+
+<section class="p_dialog cp_dialog" id="createCoDialog">
+	<div class="dialog_con">
+		<h3 class="mb25">创建成功</h3>
+		<p class="center_p"><i class="suc_p"></i>创建公司档案成功！</p>
+		<p class="center_p mb10" style="text-align:center;"><a href="">去公司页面 &gt;&gt;</a></p>
+		<p class="t-center create_co_s" >
+			<a href="" class="btn_grey_s">发一条评论</a><a href="" class="btn_grey_s">发一条工资</a><a href="" class="btn_grey_s">发一条面试经历</a><a href="" class="btn_grey_s">发照片</a>
+		</p>
+	</div>
+</section>
+
+	</body>
+</html>

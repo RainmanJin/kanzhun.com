@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>看准邀请函</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/idangerous.swiper.css" />
+  <link rel="stylesheet" href="css/invite.css"/>
+</head>
+
+<body>
+<div class="swiper-container" id='pages'>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide page" id="page1">
+      <img src="images/page_1.jpg" >
+      <span class="slide_up"><i class="up"></i><br><i class="up"></i><br><i class="up"></i></span>
+    </div>
+
+    <div class="swiper-slide page" id="page2">
+      <img src="images/page_2.jpg" >
+      <span class="slide_up"><i class="up"></i><br><i class="up"></i><br><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page" id="page3">
+      <img src="images/page_3.jpg" >
+      <span class="slide_up"><i class="up"></i><br><i class="up"></i><br><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page" id="page4">
+      <img src="images/page_4.jpg" >
+    </div>
+  </div>
+</div>
+<span class="logo"><img src="images/logo.png"></span>
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/idangerous.swiper.js"></script>
+<script src="js/invite.js"></script>
+</html>

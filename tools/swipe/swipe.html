@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>swipe</title>
+	<link rel="stylesheet" type="text/css" href="idangerous.swiper.css">
+	<style type="text/css">
+	body,html{
+		margin:0;
+		padding:0;
+		height: 100%;
+	}
+	.swiper-container{
+		height: 100%;
+	}
+	#pages .swiper-slide:nth-child(1) {
+	  background: -webkit-linear-gradient(135deg,#b0442b,#d07e47)
+	}
+
+	#pages .swiper-slide:nth-child(2){
+	  background: -webkit-linear-gradient(135deg,#34aa71,#7cc33d)
+	}
+
+	#pages .swiper-slide:nth-child(3){
+	  background: -webkit-linear-gradient(135deg,#299fad,#31bbb6)
+	}
+	.page{
+		width: 100%;
+	}
+	</style>
+</head>
+<body>
+<div class="swiper-container" id='pages'>
+  <div class="swiper-wrapper">
+	  <div class="swiper-slide page" id="page1">
+	  </div>
+	  <div class="swiper-slide page" id="page2">
+	  </div>
+	  <div class="swiper-slide page" id="page3">
+	  </div>	  	  
+  </div>   
+</div>      
+</body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="idangerous.swiper.js"></script>
+<script>
+var mySwiper = new Swiper('.swiper-container',{
+  paginationClickable: true,
+  mode: 'vertical',
+	moveStartThreshold: 80,
+	speed: 1e3,
+})
+</script>
+</html>

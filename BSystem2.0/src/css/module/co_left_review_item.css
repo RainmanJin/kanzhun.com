@@ -1,0 +1,188 @@
+dl.c_s_result {
+  position: relative;
+  padding-top: 20px;
+  zoom: 1;
+}
+dl.c_s_result aside.hadrepley {
+  position: absolute;
+  top: 24px;
+  right: -22px;
+  width: 84px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  background-color: #7cb228;
+  color: #fff;
+}
+dl.c_s_result aside.hadrepley i {
+  position: absolute;
+  top: 29px;
+  right: 0;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #7cb228 #ffffff #ffffff #7cb228;
+}
+dl.c_s_result aside.repley {
+  position: absolute;
+  top: 24px;
+  right: -1px;
+  width: 84px;
+  height: 29px;
+  line-height: 29px;
+  background-color: #f38c18;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+}
+dl.c_s_result aside.repley:hover {
+  text-decoration: none;
+  background-color: #e96b00;
+}
+dl.c_s_result aside.repley i {
+  margin: 0 7px 0 17px;
+}
+dl.c_s_result dt.anonymous_portrait {
+  float: left;
+  width: 57px;
+  height: 57px;
+}
+dl.c_s_result dt.anonymous_portrait img {
+  width: 57px;
+  height: 57px;
+}
+dl.c_s_result dd.c_s_result_detail {
+  margin-left: 75px;
+}
+dl.c_s_result dd.c_s_result_detail h2 {
+  padding-top: 5px;
+  padding-bottom: 4px;
+  font-size: 16px;
+  font-weight: normal;
+}
+dl.c_s_result dd.c_s_result_detail h2 span {
+  font-weight: bold;
+}
+dl.c_s_result dd.c_s_result_detail p.view_address {
+  padding-bottom: 20px;
+}
+dl.c_s_result dd.c_s_result_detail p.view_address i.cmp_address {
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+dl.c_s_result dd.c_s_result_detail .c_s_result_text {
+  line-height: 2em;
+  color: #666666;
+}
+dl.c_s_result dd.c_s_result_detail .c_s_result_text em {
+  color: #333333;
+}
+dl.c_s_result dd.c_s_result_detail > dt {
+  float: left;
+  width: 55px;
+  color: #333333;
+  font-weight: bold;
+}
+dl.c_s_result dd.c_s_result_detail > dd {
+  margin-left: 55px;
+}
+dl.c_s_result dd.c_s_result_detail div.u_c_s {
+  padding: 15px 0;
+}
+div.c_s_v_result {
+  padding: 8px 0 10px 20px;
+  margin-top: 22px;
+  background-color: #f6f6f6;
+  position: relative;
+}
+div.c_s_v_result em {
+  margin-right: 45px;
+}
+div.c_s_v_result span.green_s_star_2 {
+  vertical-align: -2px;
+}
+div.c_s_v_result i.i_rect {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+div.c_s_v_result i.i_rect.color_g {
+  background-color: #7cb228;
+}
+div.c_s_v_result i.i_rect.color_r {
+  background-color: #e85253;
+}
+div.c_s_v_result i.i_rect.color_y {
+  background-color: #ffcc00;
+}
+div.c_s_v_result i.tangle_init {
+  display: inline-block;
+  border-width: 5px 5px 0 5px;
+  border-style: dashed solid;
+  border-color: #999999 transparent transparent transparent;
+  margin: 0 5px;
+  vertical-align: 3px;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -ms-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+div.c_s_v_result i.fronts_a_hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+div.c_s_v_result div.grade_detail {
+  display: none;
+  border: 1px solid #e2e2e2;
+  width: 140px;
+  padding: 15px 15px 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: -27px;
+}
+div.c_s_v_result div.grade_detail .tangle_greyb_up {
+  position: absolute;
+  display: inline-block;
+  width: 12px;
+  height: 7px;
+  background: url(../images/manage_icons.png) no-repeat -41px -173px;
+  top: -7px;
+  right: 25px;
+}
+div.c_s_v_result div.grade_detail li {
+  margin-top: 5px;
+}
+dl.replay_to {
+  overflow: hidden;
+}
+dl.replay_to > dt {
+  float: left;
+  width: 57px;
+  height: 57px;
+  border: 1px solid #e7e7e7;
+  border-radius: 999px;
+}
+dl.replay_to > dt img {
+  display: block;
+  width: 57px;
+  height: 57px;
+  border-radius: 999px;
+}
+dl.replay_to > dd {
+  margin-left: 72px;
+}
+dl.replay_to > dd p {
+  color: #65892d;
+  line-height: 2em;
+}
+dl.replay_to > dd time {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}

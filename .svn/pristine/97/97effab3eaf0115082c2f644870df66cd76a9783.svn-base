@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <title>账号管理</title>
+  <!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/lib/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/business.css" />
+</head>
+<body>
+<nav class="nav_l">
+  <dl>
+    <dt>
+      <img src="../../images/b_logo.png">
+    </dt>
+    <dd><a href="#"><em><i class="i i_home"></i></em>首页</a></dd>
+    <dd><a class="current" href="#"><em><i class="i i_account"></i></em>账号管理</a></dd>
+    <dd><a href="#"><em><i class="i i_report"></i></em>报告管理</a></dd>
+    <dd><a href="#"><em><i class="i i_data"></i></em>数据统计</a></dd>
+    <dd><a href="#"><em><i class="i i_temp"></i></em>定制模版</a></dd>
+    <dd><a href="#"><em><i class="i i_set"></i></em>系统管理</a></dd>
+  </dl>
+</nav>
+<div class="body_r">
+  <header class="business_header">
+      <div class="inner_r">
+        <i class="i i_person"></i>
+        alicesu<em>|</em><a href="javascript:;"><i class="i i_quit"></i> 退出</a>
+      </div>
+  </header>
+  <section class="content">
+    <div  class="content_inner">
+      <h2 class="ct mt20">
+        <i class="i i_title"></i>账号管理</span>
+        <div class="b_line"></div>
+      </h2>
+      <div class="accountForm">
+        <dl class="select select_h">
+          <dt>
+            <input type="text" value="社会招聘-设计创意" readonly="readonly">
+            <input type="hidden" value="1"><div></div><span class="btn"><i></i></span>
+          </dt>
+          <dd>
+            <a href="javascript:;" data-val="1">社会招聘-设计创意1</a>
+            <a href="javascript:;" data-val="2">社会招聘-设计创意2</a>
+          </dd>
+        </dl>
+        <dl class="select select_h ml15">
+          <dt>
+            <input type="text" value="2014-10-15" readonly="readonly">
+            <input type="hidden" value="1"><div></div><span class="btn"><i></i></span>
+          </dt>
+        </dl>
+        <input class="ipt ml15" style="width: 180px;padding: 10px" name="login_name">
+        <input class="green_btn ml15" type="submit" value="查询">
+      </div>
+      <table class="accountTable">
+        <tr>
+          <th width="45"><input type="checkbox"></th>
+          <th width="160">账号</th>
+          <th width="160">密码</th>
+          <th width="130">生成时间</th>
+          <th width="130">到期时间</th>
+          <th width="130">账号状态</th>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>aa02655656</td>
+          <td>354222</td>
+          <td>2014-10-15</td>
+          <td>2014-10-31</td>
+          <td>已使用</td>
+        </tr>
+        <tr class="current">
+          <td><input type="checkbox"></td>
+          <td>aa02655656</td>
+          <td>354222</td>
+          <td>2014-10-15</td>
+          <td>2014-10-31</td>
+          <td>已使用</td>
+        </tr>
+      </table>
+      <div class="account_set">
+        <a class="green_btn" href="javascript:;">导出Excel</a>
+        <span class="count">共1项</span>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

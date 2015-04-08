@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>搜索无结果页面</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css">
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/search/search-jobs.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <!--<script src="/js/require.js" data-main="/v2/js/company/view.js"></script>-->
+</head>
+
+<body class="grey-bg">
+<% include ../modules/header %>
+<% include ../modules/top-search.ejs %>
+<% include piece/top-search-nav.ejs %>
+
+<div class="container-search clearfix">
+  <div class="wrap_style search-noresult">
+    <img src="/images/no_result_user.jpg" >
+    <div>
+      <p class="f_16 mb15">没找到与“<strong class="red">中华人民共和国</strong>”相关的招聘信息</p>
+      <p class="grey_99">看准君建议您：</p>
+      <p class="grey_66">1、检查输入的关键字是否有误 <br/>
+        2、缩短或更换关键字，重新搜索</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

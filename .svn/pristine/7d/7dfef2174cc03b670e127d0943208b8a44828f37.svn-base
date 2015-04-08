@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>职位信息</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/weixin.css" />
+</head>	
+<body>
+<header class="header">
+  <a class="fleft">
+    <i class="i i_left"></i> 返回
+  </a>
+  <strong>职位信息</strong>
+  <a class="fright">分享</a>
+</header>
+
+<section class="detail_content mt20">
+  <div class="c">
+    <p class="title">直聘移动产品经理</p>
+    <p>8-10K | 北京 | 经验3-5年 | 本科及以上</p>
+    <p><span class="black">职位诱惑：</span> 年度旅游、年终奖、多福利、欢乐的工作氛围</p>
+  </div> 
+</section>
+
+<h2 class="h">岗位职责</h2>
+<section class="detail_content">
+  <div class="c">
+    <p>1. 产品前期界面视觉、设计流行趋势分析（海外产品）；</p>
+    <p>2. 完成整套APP界面设计；</p>
+    <p>3. 在专业化领域提出有思想的设计方案；</p>
+    <p>4. 接受与思考收到的反馈和建议，持续修改和完善</p>
+  </div> 
+</section>
+
+<h2 class="h">任职要求</h2>
+<section class="detail_content">
+  <div class="c">
+    <p>1. 优秀的手机端界面设计和排版感觉；</p>
+    <p>2. 有完整移动平台相关的作品；</p>
+    <p>3. 优秀的沟通和协作能力，能在协作中准确传达设计意图；</p>
+    <p>4. 有激情和进取心，热爱UI设计</p>
+  </div> 
+</section>
+
+<div class="bottom_download">
+  <p>
+    投简历？过时啦！下载“<span class="green">Boss直聘</span>”<br>
+    找工作直接和Boss开谈！
+  </p>
+  <div class="mt10 mr10 mb10 ml10"><a class="btn_green">下载Boss直聘</a></div>
+</div>
+</body>
+</html>
+
+

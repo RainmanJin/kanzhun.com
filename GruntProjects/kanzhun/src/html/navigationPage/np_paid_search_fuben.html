@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>工资搜索页-副本</title>
+		<!--[if lte IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!--[if gt IE 9]><!-->
+		<script src="../js/jquery-2.1.0.min.js"></script>
+		<![endif]-->
+    <link rel="stylesheet" href="../css/widget.css" />
+    <link rel="stylesheet" href="../css/paid.css" />
+		<script src="../js/require.js" data-main="../js/site/ugc.js"></script>
+	</head>
+
+	<body>
+		
+		<header class="global">
+			<div class="header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<nav>
+					<a href="#">招聘</a>
+					<a href="#">公司</a>
+					<a href="#" class="current">工资</a>
+					<a href="#">面试</a>
+					<a href="#" class="mycomment">我要点评</a>
+				</nav>
+				<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+			</div>
+		</header>
+
+		<section class="ps_header clearfix">
+			<div class="clearfix">
+				<dl class="select">
+					<dt>
+						<input type="text" name="" value="工资" readyonly="readyonly" /><span class="btn"><i></i></span>
+					</dt>
+					<dd>
+						<a href="#">2014年</a>
+                		<a href="#">2014年</a>
+                		<a href="#">2014年</a>
+                		<a href="#">2014年</a>
+					</dd>
+				</dl><input type="text" class="ps_ipt yibao" placeholder="产品经理"/><input type="text" class="ps_ipt city" placeholder="北京"/><input type="submit" value="搜索" class="btn_grey_ps search" />
+			</div>
+		</section>
+
+		<div class="container ps_con clearfix">
+			<section class="l_con clearfix">
+				<h3 class="r_tt">北京产品经理工资</h3>
+				<p class="ps_time mb10">最后更新 七天内（2014年3月3日)</p>
+				<div class="ps_title clearfix">
+					<em>共124条工资，来自54家<i class="grey_99">（互联网行业）</i>公司，返回<a href="">查看全国</a></em><div><label>排序</label><dl class="select ps_select">
+                			<dt>
+                				<input type="text" name="" value="按职位相关度" readyonly="readyonly" /><span class="btn"><i></i></span>
+                			</dt>
+                			<dd style="z-index: 2;">
+                				<a href="#">按公司相关度</a>
+                				<a href="#">按职位相关度</a>
+                			</dd>
+                		</dl></div>
+				</div>
+
+				<div class="salary_sort mb20">
+					<ul id="salarySort">
+						<li class="current"><i class="sort_p"></i>图表</li>
+						<li><i class="sort_t"></i>文字</li>
+					</ul>
+				</div>
+
+				<div class="salary_slide">
+					<div class="slide_con" id="salarySlide">
+						<table class="salary_chart salary_chart_p" cellspacing="0" cellspacing="0">
+							<tr>
+								<th width="149">职位</th>
+								<th width="80">平均工资</th>
+								<th width="10">&nbsp;</th>
+								<th width="63">工资范围</th>
+								<th width="63">￥10K</th>
+								<th width="63">￥20K</th>
+								<th width="63">￥30K</th>
+								<th width="63">￥40K</th>
+								<th width="63">￥50K</th>
+								<th>&nbsp;</th>
+							</tr>
+							<tr class="ps_top">
+								<th colspan="5" class="salary"><p><a href="" class="logo"><img src="../images/img-03.jpg" alt="" width="30" /><span></span></a>红孩子&nbsp;&nbsp;<a href="">产品经理</a>&nbsp;&nbsp;的工资</p></th>
+								<th colspan="3"></th>
+								<th colspan="2"><a href="">更多的工资</a></th>
+							</tr>
+							<tr>
+								<td class="blue zhiwei_name">软件工程师实习生-月薪<br /><em class="grey_99">5条工资</em></td>
+								<td>￥18000</td>
+								<td colspan="8" class="chart">
+									<figure>
+										<div style="margin-left: 65px;width: 129px;" id="aaaa"></div>
+									</figure>
+								</td>
+							</tr>
+							<tr class="interval">
+								<th colspan="10"></th>
+							</tr>
+							<tr class="ps_top">
+								<th colspan="5" class="salary"><p><a href="" class="logo"><img src="../images/ps_fuben_img_01.jpg" alt="" width="30" /><span></span></a>支付宝&nbsp;&nbsp;<a href="">产品经理</a>&nbsp;&nbsp;的工资</p></th>
+								<th colspan="3"></th>
+								<th colspan="2"><a href="">更多的工资</a></th>
+							</tr>
+							<tr>
+								<td class="blue zhiwei_name">软件工程师实习生-月薪<br /><em class="grey_99">5条工资</em></td>
+								<td>￥18000</td>
+								<td colspan="8" class="chart">
+									<figure>
+										<div style="margin-left: 65px;width: 129px;" id="aaaa"></div>
+									</figure>
+								</td>
+							</tr>
+							<tr class="interval">
+								<th colspan="10"></th>
+							</tr>
+							<tr class="ps_top">
+								<th colspan="5" class="salary"><p><a href="" class="logo"><img src="../images/ps_fuben_img_02.jpg" alt="" width="30" /><span></span></a>支付宝&nbsp;&nbsp; <a href="">产品经理</a>&nbsp;&nbsp;的工资</p></th>
+								<th colspan="3"></th>
+								<th colspan="2"><a href="">更多的工资</a></th>
+							</tr>
+							<tr>
+								<td class="blue zhiwei_name">软件工程师实习生-月薪<br /><em class="grey_99">5条工资</em></td>
+								<td>-</td>
+								<td colspan="8" class="chart">
+									<p>请您<a href="">登录</a>或者<a href="">注册</a>以查看更多薪酬信息</p>
+								</td>
+							</tr>
+							<tr class="interval">
+								<th colspan="10"></th>
+							</tr>
+							<tr class="ps_top">
+								<th colspan="5" class="salary"><p><a href="" class="logo"><img src="../images/img-03.jpg" alt="" width="30" /><span></span></a>唯美购&nbsp;&nbsp;<a href="">产品经理</a>&nbsp;&nbsp;的工资</p></th>
+								<th colspan="3"></th>
+								<th colspan="2"><a href="">更多的工资</a></th>
+							</tr>
+							<tr>
+								<td class="blue zhiwei_name">软件工程师实习生-月薪<br /><em class="grey_99">5条工资</em></td>
+								<td>￥18000</td>
+								<td colspan="8" class="chart">
+									<figure>
+										<div style="margin-left: 65px;width: 129px;" id="aaaa"></div>
+									</figure>
+								</td>
+							</tr>
+							<tr>
+								<td class="blue zhiwei_name">软件工程师实习生-月薪<br /><em class="grey_99">5条工资</em></td>
+								<td>￥18000</td>
+								<td colspan="8" class="chart">
+									<figure>
+										<div style="margin-left: 65px;width: 129px;" id="aaaa"></div>
+									</figure>
+								</td>
+							</tr>
+							<tr>
+								<td class="blue zhiwei_name">软件工程师实习生-月薪<br /><em class="grey_99">5条工资</em></td>
+								<td>￥18000</td>
+								<td colspan="8" class="chart">
+									<figure>
+										<div style="margin-left: 65px;width: 129px;" id="aaaa"></div>
+									</figure>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="pager np_pager">
+					<a href="">&lt;</a><a href="" class="current">1</a><a href="">2</a><a href="">3</a><a href="">4</a><span>... </span><a href="">&gt;</a> 共50页&nbsp;&nbsp;&nbsp;&nbsp;去<input type="text" />页
+				</div>
+				<p class="mt15">图例： <img src="../images/salary_flag.jpg" class="mr10" />工资范围</p>
+			    <p class="mt10">说明： <span class="grey_99">所有工资数据来自用户匿名分享。工资水平受地域、工作年限等多种因素影响，仅供参考。</span></p>
+			</section>
+
+			<section class="r_con clearfix">
+				<h3 class="r_tt">热门职位</h3>
+				<ul class="jobs_show">
+					<li><a href="#">系统部_PHP研发工程师<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">广州分公司_高级销售经理<br /><span>百度在线网络技术有限公司 – 广州</span></a></li>
+					<li><a href="#">基础架构部_云安全研发工程师（上海）<br /><span>百度在线网络技术 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发师师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">系统部_PHP研发工程师<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">广州分公司_高级销售经理<br /><span>百度在线网络技术有限公司 – 广州</span></a></li>
+					<li><a href="#">基础架构部_云安全研发工程师（上海）<br /><span>百度在线网络技术 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+				</ul>
+				<p><a href="">查看更多</a></p>
+				<h3 class="r_tt mt20">职位工资</h3>
+				<ul>
+					<li>客户经理的薪酬</li>
+					<li>软件工程师的薪酬</li>
+					<li>客户经理薪酬</li>
+					<li>艺术总监的薪酬</li>
+					<li>高级软件工程师的薪酬</li>
+					<li>财务主管的薪酬</li>
+					<li>项目经理的薪酬</li>
+					<li>高级客户经理的薪酬</li>
+				</ul>
+				<p class="mt10"><a href="">查看更多</a></p>
+				<h3 class="r_tt mt20">公司招聘</h3>
+				<ul>
+					<li>德勤的招聘</li>
+					<li>普华永道的招聘</li>
+					<li>埃森哲招聘</li>
+					<li>厄恩斯特与青年招聘</li>
+					<li>毕马威的招聘</li>
+					<li>Booz艾伦汉密尔顿招聘</li>
+					<li>雅虎招聘</li>
+					<li>毕博管理咨询公司招聘</li>
+				</ul>
+				<p class="mt10"><a href="">查看更多</a></p>
+			</section>
+		</div>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

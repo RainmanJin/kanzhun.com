@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>面试列表页</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/view.css" />
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="co_header clearfix">
+		<a href="#"><img src="../images/img-04.jpg" width="150" height="150" alt="" class="co_logo" /></a>
+		<div class="co_info">
+			<h1>易宝支付</h1>
+			<p class="msg"><span class="grade_star_b"><i style="width:56px;"></i></span><strong>2.2</strong>分<em>|</em><a href=""><b>235条</b></a>信息</p>
+			<p class="params">互联网<em>|</em>www.yeepay.com<em>|</em>北京<em>|</em>500-100人</p>
+		</div>
+		<nav class="clearfix">
+			<a href="#" class="current">简介</a><a href="#">薪酬</a><a href="#">评论</a><a href="#">面试</a><a href="#">照片</a><a href="#">员工</a>
+		</nav>
+		<aside>
+			<a href="#" class="btn_o_l comment">我要点评公司</a>
+			<a href="" class="btn_grey_b follow"><b>+</b> 关注公司</a>
+		</aside>
+	</section>
+
+	<div class="container clearfix">
+		<section class="l_con clearfix">
+			<p><span class="grey_99 fright">最后更新 七天内</span><span class="f_16">易付宝面试经历</span></p>
+			<p class="line"></p>
+				
+			<div class="iv_grade">
+				<dl class="total">
+					<dt>面试整体感受</dt>
+					<dd class="pie_chart">
+						<div class="pie_bar">
+							<p><span class="easy"></span>容易的&nbsp;&nbsp;&nbsp;&nbsp;56%</p>
+							<p><span class="normal"></span>一般的&nbsp;&nbsp;&nbsp;&nbsp;25%</p>
+							<p><span class="hard"></span>困难的&nbsp;&nbsp;&nbsp;&nbsp;56%</p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="level">
+					<dt>面试难度</dt>
+					<dd></dd>
+				</dl>
+				<dl class="from">
+					<dt>如何获得面试机会率</dt>
+					<dd>
+						<p>在线投递 <span class="grade_line"><i style="width: 60px;"></i></span></p>
+						<p>员工推荐 <span class="grade_line"><i style="width: 40px;"></i></span></p>
+						<p>校园招聘 <span class="grade_line"><i style="width: 22px;"></i></span></p>
+					</dd>
+				</dl>
+			</div>	
+
+			<p class="line"></p>
+			<div class="select_conditions clearfix">
+				<p class="fright">共<b>38822</b>条职位面试<a href="" class="btn_o_l addsalary ml20">+&nbsp;我来写条面经</a></p>
+				<a href="">推荐面试</a><a class="current" href="">最新面试</a>
+				<dl class="po_select" id="minisearchS">
+					<dt>全部结果<i class="op_triangle"></i></dt>
+					<dd>
+						<span class="doubletriangle triangleEdge"></span>
+						<span class="doubletriangle triangleCon"></span>
+						<a href="/jobl/p/">全部通过</a>
+						<a href="/companyl/search/">感觉靠谱</a>
+						<a href="/salaryl/search/">感觉没戏</a>
+						<a href="/interviewl/search/">未通过</a>
+					</dd>
+				</dl>
+			</div>
+			<!-- 新加 -->
+			<!-- 按条件搜索 -->
+			<div class="view_search mb30 clearfix" id="salarySearch" style="z-index:2;">
+				<dl class="select" id="salaryCitySelect">
+					<dt ka="comsalary-selectcity">
+						<input type="text" value="全部城市(7741条)" readonly="readonly" autocomplete="off" /><div></div><span class="btn"><i></i></span>
+					</dt>
+					<dd>
+						<a href="/gsx3178.html">全部城市(7741条)</a>
+						<a href="/gsxs3178c7.html" data-cid="7">北京（1105条）</a>
+						<a href="/gsxs3178c34.html" data-cid="34">广州（560条）</a>
+						<a href="/gsxs3178c1.html" data-cid="1">上海（456条）</a>
+						<a href="/gsxs3178c49.html" data-cid="49">深圳（320条）</a>
+						<a href="/gsxs3178c2.html" data-cid="2">南京（306条）</a>
+						<a href="/gsxs3178c12.html" data-cid="12">成都（268条）</a>
+						<a href="/gsxs3178c53.html" data-cid="53">武汉（238条）</a>
+						<a href="/gsxs3178c9.html" data-cid="9">重庆（235条）</a>
+					</dd>
+				</dl>
+				<input type="text" name="job_name" autocomplete="off" value="" class="field_b" placeholder="全部职位" ka="comsalary-blocker1-inputjob" />
+				<input type="hidden" name="sortMethod" value="1" />
+				<span class="btn_grey_l"><input type="submit" value="按公司查询" id="salarySearchBtn" ka="comsalary-blocker1-search" /></span>
+				<div class="search_hot" id="hotjobs">
+					<a href="javascript:;" class="options" rel="nofollow">展开<i></i></a>
+					<span>热门公司：</span>
+					<ul id="searchHot">
+						<li><a ka="blocker2-hot-1" href="/msh/g11514-z2/">华为（73）</a></li>
+						<li><a ka="blocker2-hot-2" href="/msh/g11514-z489/">阿里巴巴（65）</a></li>
+						<li><a ka="blocker2-hot-3" href="/msh/g11514-z2832/">腾讯（54）</a></li>
+						<li><a ka="blocker2-hot-4" href="/msh/g11514-z25/">测试工程师（53）</a></li>
+						<li class="morejobs"><a ka="blocker2-hot-5" href="/msh/g11514-z130/">红星美凯龙（46）</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 按条件搜索 -->
+			<dl class="interview_detail mb30">
+				<dt>
+					<img src="../images/positionimgs/po_imgs2.jpg" alt="您的匿名头像"><span></span>
+				</dt>
+				<dd class="i_tt mb10"><em>匿名用户</em><h3>面试华为<a href="">产品经理</a></h3><em class="grey_99">&nbsp;-&nbsp;北京</em></dd>
+				<dd class="i_con">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<h4><a href="" class="cmp_logos"><img src="http://img.kanzhun.com/image/l11514.gif" alt="公司Logo"><span></span></a><a href="">"易宝支付是锻炼行业产品经理的好地方"</a></h4>
+					<p class="mb10"><i class="succ"></i>面试通过&nbsp;&nbsp;&nbsp;<em class="grey_99">面试感受：</em>一般&nbsp;&nbsp;&nbsp;<em class="grey_99">面试难度：</em><span class="grade_rect "><i></i></span></p>
+					<strong>面试经历：</strong>
+					<p class="mb10">笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;</p>
+					<dl class="i_questions">
+						<dt>问题1：</dt>
+						<dd>如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？</dd>
+					</dl>
+					<p class="line"></p>
+					<div>
+						<p class="fright options comments">
+							<a href="" class="helpful" data-mtype="" data-sid="" ka=""><span class="img helpful"></span>有用<em class="grey_99">(<i>28</i>)</em></a><em class="line">|</em>
+							<a ka="" href="" class="cmt"><span class="img cmt"></span>评论<em class="grey_99">(1)</em></a><em class="line">|</em>
+							<a ka=""  href="" class="share"><span class="img share"></span>分享</a>
+						</p>
+						<em class="grey_99">2014-06-15</em>
+					</div>
+				</dd>
+			</dl>
+			<dl class="send_views mb30">
+				<dt><img src="../images/positionimgs/po_img4.jpg" alt=""></dt>
+				<dd>
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					你在这里工作过吗？分享一条公司点评吧，为更多求职者提供帮助！&nbsp;&nbsp;<a href="" class="btn_grey_b">立即发条面试</a>
+				</dd>
+			</dl>
+			<dl class="interview_detail mb20">
+				<dt>
+					<img src="../images/positionimgs/po_imgs2.jpg" alt="您的匿名头像"><span></span>
+				</dt>
+				<dd class="i_tt mb10"><em>匿名用户</em><h3>面试华为<a href="">产品经理</a></h3><em class="grey_99">&nbsp;-&nbsp;北京</em></dd>
+				<dd class="i_con">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<h4><a href="" class="cmp_logos"><img src="http://img.kanzhun.com/image/l11514.gif" alt="公司Logo"><span></span></a><a href="">"易宝支付是锻炼行业产品经理的好地方"</a></h4>
+					<p class="mb10"><i class="succ"></i>面试通过&nbsp;&nbsp;&nbsp;<em class="grey_99">面试感受：</em>一般&nbsp;&nbsp;&nbsp;<em class="grey_99">面试难度：</em><span class="grade_rect "><i></i></span></p>
+					<strong>面试经历：</strong>
+					<p class="mb10">笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;</p>
+					<dl class="i_questions">
+						<dt>问题1：</dt>
+						<dd>如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？</dd>
+					</dl>
+					<p class="line"></p>
+					<div>
+						<p class="fright comments">
+							<a href="" class="" data-mtype="" data-sid="" ka="">有用<em class="grey_99">（<i>28</i>）</em></a><em class="line">|</em>
+							<a ka="" href="" class=""><span class="img cmt"></span>评论<em class="grey_99">（1）</em></a><em class="line">|</em>
+							<a ka=""  href="" class="share">分享</a>
+						</p>
+						<em class="grey_99">2014-06-15</em>
+					</div>
+				</dd>
+			</dl>
+			<dl class="interview_detail mb20">
+				<dt>
+					<img src="http://img4.duitang.com/uploads/item/201203/11/20120311085629_sZsze.jpeg" alt="您的匿名头像"><span></span>
+				</dt>
+				<dd class="i_tt mb10"><em>匿名用户</em><h3>面试华为<a href="">产品经理</a></h3><em class="grey_99">&nbsp;-&nbsp;北京</em></dd>
+				<dd class="i_con">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<h4><a href="" class="cmp_logos"><img src="http://img.kanzhun.com/image/l11514.gif" alt="公司Logo"><span></span></a><a href="">"易宝支付是锻炼行业产品经理的好地方"</a></h4>
+					<p class="mb10"><i class="succ"></i>面试通过&nbsp;&nbsp;&nbsp;<em class="grey_99">面试感受：</em>一般&nbsp;&nbsp;&nbsp;<em class="grey_99">面试难度：</em><span class="grade_rect "><i></i></span></p>
+					<strong>面试经历：</strong>
+					<p class="mb10">笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;</p>
+					<div class="i_filterblur">
+						<div class="nologin">
+							<p>发布一条面试经历才能查看完整信息</p>
+							<p class="grey_99">所有信息均为匿名，请放心填写</p>
+							<p class="mt20">
+							<a ka="pop-interviewugc" href="/interviewugc/">立即发一条曾经面试过的公司面经&gt;&gt;</a>
+							</p>
+						</div>
+					</div>
+					<p class="line"></p>
+					<div>
+						<p class="fright comments">
+							<a href="" class="" data-mtype="" data-sid="" ka="">有用<em class="grey_99">（<i>28</i>）</em></a><em class="line">|</em>
+							<a ka="" href="" class=""><span class="img cmt"></span>评论<em class="grey_99">（1）</em></a><em class="line">|</em>
+							<a ka=""  href="" class="share">分享</a>
+						</p>
+						<em class="grey_99">2014-06-15</em>
+					</div>
+				</dd>
+			</dl>
+			<!-- <div class="view_search clearfix" id="viewSearch">
+				<dl class="select" id="viewCitySelect">
+					<dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+					<dd>
+						<a href="#">全部城市(235条)</a>
+						<a href="#">北京（129条）</a>
+						<a href="#">上海（85条）</a>	
+						<a href="#">天津（111条）</a>
+					</dd>
+				</dl>
+				<input type="text" name="" class="field_b" placeholder="产品经理 共25条薪酬信息，9个城市" />
+				<input type="submit" value="按职位查询" class="btn_grey_l" />
+				<span class="search_close">关闭</span>
+			
+				<div class="search_hot">
+					<span>热门职位：</span>
+					<p><a href="javascript:;">产品经理（123）</a><i>|</i><a href="javascript:;">Java工程师（13）</a><i>|</i><a href="javascript:;">前端工程师（12）</a><i>|</i><a href="javascript:;">等产品经理等产品经理经理（123）</a><i>|</i><a href="javascript:;">产品的负担（123）</a></p>
+				</div>
+			</div> -->
+			<p class="line_only mt30"></p>
+			<div class="pager">
+				<a href="">&lt;</a><a href="" class="current">1</a><a href="">2</a><a href="">3</a><a href="">4</a><span>... </span><a href="">&gt;</a> 共90页&nbsp;&nbsp;&nbsp;&nbsp;去<input type="text">页
+			</div>
+		</section>
+		<section class="r_con">
+			<h3 class="r_tt">互联网行业产品经理薪酬</h3>
+			<ul class="salary_show">
+				<li><em>2496条薪酬数据</em><i class="hot">1</i><a href="">百度</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">2</i><a href="">腾讯</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">3</i><a href="">阿里巴巴</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>4</i><a href="">盛大集团</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>5</i><a href="">新浪</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>6</i><a href="">360安全卫士</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>7</i><a href="">唯美购</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>8</i><a href="">IBM</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>9</i><a href="">Google</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>10</i><a href=""n>搜狐畅游</a>-产品经理</li>
+			</ul>
+
+			<h3 class="r_tt mt20">热门职位</h3>
+			<ul class="jobs_show">
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度在线网络技术有限公司 – 广州</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />基础架构部_云安全研发工程师（上海）<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+			</ul>
+
+			<p class="fright"><a href="">查看更多</a></p>
+		</section>
+	</div>
+</body>
+</html>

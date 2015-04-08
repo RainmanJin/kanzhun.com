@@ -1,0 +1,50 @@
+/*seo需要用的样式*/
+h1.tt {
+  color: #999999;
+  border-bottom: 2px solid #d9d7d7;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 15px 10px 0;
+  height: 24px;
+}
+h1.tt span {
+  border-bottom: 2px solid #7cb228;
+  height: 24px;
+  position: relative;
+  bottom: 0px;
+  display: inline-block;
+  padding-right: 5px;
+  color: #7cb228;
+}
+h1.tt em {
+  color: #999999;
+}
+div.job_h1 {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 15px 20px;
+  font-weight: normal;
+  position: relative;
+  line-height: 1;
+}
+div.job_h1 h1 {
+  margin-right: 80px;
+  font-size: 16px;
+  display: block;
+}
+div.job_h1 span {
+  float: right;
+  color: #007ead;
+  font-size: 14px;
+  margin-top: 4px;
+}
+div.job_h1 p {
+  color: #999999;
+  font-size: 14px;
+  margin-top: 8px;
+}
+div.job_h1 a {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>公司点评页面</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css"/>
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/company/review.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/company/review.js"></script>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+<% include ../modules/mini-search %>
+<% include piece/co-header %>
+<div class="container_v2 clearfix">
+  <section class="f_l_con clearfix">
+    <div class="wrap_style mb15">
+      <div class="cmp_tt clearfix">
+        <span class="grey_99 fright">最后更新七天内（2015-01-29）</span>
+        <h1>易宝支付怎么样</h1>
+        <p class="ml10">互联网行业雇主综合排名<em>NO.1</em>，<a href="#">查看排名</a></p>
+      </div>
+      <p class="line"></p>
+      <div class="co_grade clearfix">
+        <div class="cg_t clearfix">
+          <ul class="cgt_l clearfix">
+            <li class="cgtl_l">
+              <div class="font_h2">10<em>%</em></div>
+            </li>
+            <li class="cgtl_r">
+              <p class="font_h3">员工认为公司靠谱<a class="ml10 js_bt_showCgd" href="javascript:;"><i class="i_question_blue"></i></a></p>
+              <p class="grey_99">来自1729人评价</p>
+              <div class="co_grade_detail none">
+                <i class="tangle_greyb_left"></i>
+                <ul class="cgd_t">
+                  <li class="font_h2">10<em>%</em></li>
+                  <li>
+                    <p class="font_h3">员工认为公司靠谱</p>
+                    <p class="grey_99">来自1729人评价</p>
+                  </li>
+                </ul>
+                <ul class="cgd_m">
+                  <li class="mb10"><span class="grade_star_b mr10"><i style="width:92px;"></i></span><strong>4.8</strong>分</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column"><em style="width: 50px"></em></span> 100%</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column" style="50px"></span> 50%</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column"></span> 100%</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column"></span> 100%</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column"></span> 100%</li>
+                </ul>
+                <ul class="cgd_b clearfix">
+                  <li>职业成长<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                  <li class="ml10">技能成长<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                  <li>环境氛围<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                  <li class="ml10">工作压力<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                  <li>公司前景<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="cgt_r">
+            <div class="ceo">
+              <img src="http://img.kanzhun.com/image/9595.gif">
+              <p class="f_14">田国立<br><em class="grey_99 f_12">首席执行官</em></p>
+              <a class="fright grey_99 mt10 js_correctionceo_bt" href="javascript:;" data-coid="9595" ka="review-ceo-edit"><i class="i_correction"></i>纠错</a>
+            </div>
+            <span class="tangle_init"></span>
+          </div>
+        </div>
+        <ul class="cg_b">
+          <li class="circle_chart">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>54%的员工<br>愿意推荐朋友来<br>这里工作</h5>
+          </li>
+          <li class="circle_chart">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>54%的员工<br>看好公司<br>未来发展</h5>
+          </li>
+          <li class="circle_chart li_last">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>54%的员工<br>支持CEO马化腾</h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <% include piece/co-left-interview-filter.ejs %>
+    <% include piece/co-left-review-item.ejs %>
+    <!--打分-->
+    <% include piece/co-review-grade.ejs %>
+    <!--打分-->
+  </section>
+  <!-- 右半部分 -->
+  <section class="f_r_con clearfix">
+    <% include piece/co-right-publish.ejs %>
+    <% include piece/co-right-average.ejs %>
+    <% include piece/co-right-companylist.ejs %>
+    <% include piece/co-right-hotpost.ejs %>
+  </section>
+  <!-- 右半部分 -->
+</div>
+
+</body>
+</html>

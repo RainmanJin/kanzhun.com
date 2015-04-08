@@ -1,0 +1,25 @@
+{
+  "name": "kanzhun",
+  "version": "1.0.0",
+  "description": "proud of yourself",
+  "author": "zs.lin",
+  "license": "ISC",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-requirejs": "*",
+    "express": "*",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "grunt-ejs": "^0.2.0"
+  }
+}

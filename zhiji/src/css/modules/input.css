@@ -1,0 +1,117 @@
+input.ipt {
+  height: 16px;
+  width: 240px;
+  border-width: 2px 1px 1px 2px;
+  border-style: solid;
+  border-color: #cfcfcf #cfcfcf #cfcfcf #bababa;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #999;
+}
+.select {
+  width: 260px;
+  height: 32px;
+  border: 1px solid #cfcfcf;
+  border-width: 2px 1px 1px 2px;
+  position: relative;
+}
+.select dt {
+  text-align: center;
+  vertical-align: middle;
+  height: 32px;
+  background-color: #fff;
+  padding: 0 40px 0 0;
+}
+.select dt input {
+  height: 32px;
+  line-height: 32px;
+  float: left;
+  border: 0;
+  width: 100%;
+  color: #999;
+  padding-left: 10px;
+  background-color: transparent;
+  text-align: left;
+}
+.select dt span {
+  width: 32px;
+  height: 18px;
+  padding-top: 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  border-left: 1px solid #e6e6e6;
+  font-size: 0;
+  background-color: #f6f6f6 ;
+  text-align: center;
+  cursor: pointer;
+  zoom: 1;
+}
+.select dt span i {
+  display: inline-block;
+  font-size: 0;
+  zoom: 1;
+  width: 9px;
+  height: 5px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: transparent url("../images/trangle.png") no-repeat;
+}
+.select dt span.on i {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.select dd {
+  position: absolute;
+  z-index: 100;
+  max-height: 260px;
+  overflow: auto;
+  -webkit-box-shadow: 0 2px 6px #cccccc;
+  -moz-box-shadow: 0 2px 6px #cccccc;
+  -ms-box-shadow: 0 2px 6px #cccccc;
+  box-shadow: 0 2px 6px #cccccc;
+  left: -1px;
+  top: 37px;
+  border: 1px solid #cfcfcf;
+  border-top: 0;
+  background-color: #fff;
+  width: 100%;
+  display: none;
+}
+.select dd a {
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 15px;
+}
+.select dd a:hover {
+  text-decoration: none;
+  background-color: #007ead;
+  color: #fff;
+}
+.select.select_h {
+  height: 37px;
+}
+.select.select_h dt {
+  height: 37px;
+}
+.select.select_h dt input {
+  height: 37px;
+}
+.select.select_h dt span {
+  height: 20px;
+  padding-top: 17px;
+}

@@ -1,0 +1,200 @@
+i.base {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  vertical-align: middle;
+}
+i.problem {
+  width: 14px;
+  height: 14px;
+  background: url(../images/icons.png) no-repeat left top;
+}
+i.errormsg {
+  width: 13px;
+  height: 13px;
+  background: url(../images/icons.png) no-repeat -20px top;
+}
+i.email {
+  width: 55px;
+  height: 54px;
+  background: url(../images/icons.png) no-repeat left -20px;
+}
+i.useremail {
+  width: 22px;
+  height: 16px;
+  background: url(../images/icons.png) no-repeat -64px top;
+}
+i.logout {
+  width: 14px;
+  height: 15px;
+  background: url(../images/icons_v2.png) no-repeat -22px top;
+}
+i.useraccount {
+  width: 17px;
+  height: 17px;
+  background: url(../images/icons_v2.png) no-repeat 0 top;
+}
+i.pwd {
+  width: 16px;
+  height: 22px;
+  background: url(../images/icons.png) no-repeat -92px top;
+}
+i.uploadsuss {
+  width: 20px;
+  height: 16px;
+  background: url(../images/icons.png) no-repeat -114px top;
+}
+i.letter {
+  width: 26px;
+  height: 25px;
+  background: url(../images/manage_icons.png) no-repeat 0 -60px;
+}
+i.resume_lib {
+  width: 23px;
+  height: 23px;
+  background: url(../images/manage_icons.png) no-repeat -135px -100px;
+}
+i.evaluation {
+  width: 23px;
+  height: 23px;
+  background: url(../images/manage_icons.png) no-repeat -74px -140px;
+}
+i.set_up {
+  width: 23px;
+  height: 23px;
+  background: url(../images/manage_icons.png) no-repeat -116px -139px;
+}
+i.cmp_manage {
+  width: 23px;
+  height: 23px;
+  background: url(../images/manage_icons.png) no-repeat -144px -140px;
+}
+i.female {
+  width: 12px;
+  height: 12px;
+  background: url(../images/manage_icons.png) no-repeat -163px -100px;
+}
+i.male {
+  width: 12px;
+  height: 12px;
+  background: url(../images/manage_icons.png) no-repeat -180px -100px;
+}
+i.close_one {
+  width: 20px;
+  height: 20px;
+  background: url(../images/manage_icons.png) no-repeat -172px -140px;
+}
+i.close_two {
+  width: 12px;
+  height: 12px;
+  background: url(../images/manage_icons.png) no-repeat -188px -60px;
+}
+i.close_three {
+  width: 20px;
+  height: 20px;
+  background: url(../images/manage_icons.png) no-repeat 0 -173px;
+}
+i.flag {
+  width: 26px;
+  height: 25px;
+  background: url(../images/manage_icons.png) no-repeat -40px -60px;
+}
+i.round_add {
+  width: 63px;
+  height: 63px;
+  background: url(../images/manage_icons.png) no-repeat 0 -100px;
+}
+i.ok {
+  width: 34px;
+  height: 26px;
+  background: url(../images/manage_icons.png) no-repeat -160px 0;
+}
+i.print {
+  width: 34px;
+  height: 26px;
+  background: url(../images/manage_icons.png) no-repeat -80px -60px;
+}
+i.download {
+  width: 24px;
+  height: 26px;
+  background: url(../images/manage_icons.png) no-repeat -120px -60px;
+}
+i.pwdok {
+  width: 14px;
+  height: 11px;
+  background: url(../images/manage_icons.png) no-repeat -166px -32px;
+}
+i.close {
+  width: 16px;
+  height: 17px;
+  background: url(../images/manage_icons.png) no-repeat -160px -60px;
+}
+i.noresult {
+  width: 44px;
+  height: 38px;
+  background: url(../images/icons.png) no-repeat 0 -33px;
+}
+i.r_users {
+  width: 13px;
+  height: 18px;
+  background: url(../images/icons.png) no-repeat -49px -33px;
+}
+i.r_experience {
+  width: 14px;
+  height: 18px;
+  background: url(../images/icons.png) no-repeat -67px -33px;
+}
+i.r_dot {
+  width: 10px;
+  height: 10px;
+  background: url(../images/icons.png) no-repeat -86px -33px;
+}
+i.r_education {
+  width: 21px;
+  height: 14px;
+  background: url(../images/icons.png) no-repeat -101px -33px;
+}
+i.r_j_education {
+  width: 19px;
+  height: 19px;
+  background: url(../images/icons.png) no-repeat -127px -33px;
+}
+i.r_j_project {
+  width: 19px;
+  height: 19px;
+  background: url(../images/icons.png) no-repeat -151px -33px;
+}
+i.r_j_d_education {
+  width: 19px;
+  height: 19px;
+  background: url(../images/icons.png) no-repeat -175px -33px;
+}
+i.r_phone {
+  width: 14px;
+  height: 17px;
+  background: url(../images/icons.png) no-repeat -199px -33px;
+}
+i.r_email {
+  width: 15px;
+  height: 11px;
+  background: url(../images/icons.png) no-repeat -218px -33px;
+}
+.grade_star_b {
+  width: 118px;
+  height: 22px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  background: url(../images/icons_v2.png) no-repeat 0 -26px;
+  vertical-align: middle;
+  line-height: 0;
+}
+.grade_star_b i {
+  display: inline-block;
+  width: 118px;
+  height: 22px;
+  overflow: hidden;
+  font-size: 0;
+  background: url(../images/icons_v2.png) no-repeat 0 -50px;
+}

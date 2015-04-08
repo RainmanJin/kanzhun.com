@@ -1,0 +1,619 @@
+@import "../../../css/common/var";
+@import "../var";
+@comment_icons: url("@{img}/comment.png");
+//分享有用评论
+p.u_options {
+  a {
+    color: @grey_66;
+    font-size: 12px;
+
+    &:hover {
+      color: #2c84cc;
+      text-decoration: none;
+
+      em, i {
+        color: #2c84cc;
+      }
+    }
+
+    &.marked {
+      color: @grey_66;
+
+      &:hover {
+        color: @grey_66;
+
+        em, i {
+          color: @grey_99;
+        }
+      }
+    }
+  }
+
+  span {
+    margin-right: 5px;
+    vertical-align: -2px;
+  }
+}
+
+a {
+  &.helpful {
+    &:hover {
+      span {
+        background-position: -110px -41px;
+      }
+    }
+  }
+
+  &.comment {
+    &:hover {
+      span {
+        background-position: -92px -41px;
+      }
+    }
+  }
+
+  &.share {
+    &:hover {
+      span {
+        background-position: -74px -41px;
+      }
+    }
+  }
+  //点击完之后的样式
+  &.helpful.marked {
+    cursor: default;
+
+    span.u_feel_helpful {
+      background-position: -110px -41px;
+    }
+
+    &:hover {
+      span {
+        background-position: -110px -41px;
+      }
+    }
+  }
+
+  &.comment.marked {
+    span {
+      background-position: -92px -41px;
+    }
+
+    &:hover {
+      span {
+        background-position: -92px -41px;
+      }
+    }
+  }
+
+  &.share.marked {
+    span {
+      background-position: -74px -41px;
+    }
+
+    &:hover {
+      span {
+        background-position: -74px -41px;
+      }
+    }
+  }
+}
+
+
+div{
+  &.comments {
+    padding-left: 160px;
+    overflow: hidden;
+    border-bottom: 1px solid #e7e7e7;
+    zoom: 1
+  }
+
+  &.comments_con {
+    p.c_tt {
+      padding: 5px 0 10px 0;
+      border-bottom: 1px solid #e7e7e7;
+      font-size: 16px;
+
+      i {
+        display: inline-block;
+        overflow: hidden;
+        line-height: 0;
+        font-size: 0;
+        width: 22px;
+        height: 18px;
+        background: @icons no-repeat -80px -39px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+    i{
+      &.horn{
+        width: 14px;
+        height: 17px;
+        background-position: -92px 0;
+      }
+
+      &.page{
+        width: 29px;
+        height: 19px;
+        background-position: -111px 0;
+        position: absolute;
+        bottom: -1px;
+        right: -1px;
+        margin: 0;
+      }
+    }
+
+    em{
+      &.sub{
+        padding: 0;
+        vertical-align: middle;
+      }
+    }
+
+   strong{
+     &.ok{
+       color: @green;
+     }
+
+     &.err{
+       color: red;
+     }
+   } 
+
+  dl.ipt_comments {
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    dt {
+      float: left;
+      position: relative;
+
+      img {
+        width: 57px;
+        height: 57px;
+      }
+
+      /*span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 56px;
+        height: 56px;
+        background: url("@{img}/positionimgs/po_imgs1.png") no-repeat left top;
+      }*/
+    }
+
+    dd {
+      position: relative;
+      margin-left: 75px;
+      padding-top: 10px;
+
+      span.angle_wrap {
+        position: absolute;
+        top: 21px;
+        left: -6px;
+        border-width: 7px 7px 7px 0;
+        border-style: dashed solid;
+        border-color: transparent #cccccc transparent transparent;
+        z-index: 3;
+      }
+
+      span.angle_inner {
+        position: absolute;
+        top: 21px;
+        left: -5px;
+        border-width: 7px 7px 7px 0;
+        border-style: dashed solid;
+        border-color: transparent #fafafa transparent transparent;
+        z-index: 3;
+      }
+    }
+  }
+
+  .pub_cmt {
+    input[type="button"] {
+      padding: 0 20px;
+    }
+  }
+}
+
+&.hrstatement{
+    position: relative;
+    margin: 15px 0;
+    border: 1px solid #f9f0d0;
+    background-color: #fffed6;
+    padding-bottom: 5px;
+
+    h3{
+      height: 32px;
+      line-height: 32px;
+      color: #f6600e;
+      font-size: 14px;
+      font-weight: normal;
+      border-bottom: 1px solid #fdf4d4;
+      padding-left: 15px;
+    }
+
+    p{
+      padding:5px 15px 0 15px;
+      &.time{
+        color: @grey_99;
+      }
+    }
+  }
+
+  //textarea输入框
+  &.content_ipt {
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-color: #c1c1c1 #d9d9d9 #d9d9d9 #cccccc;
+    border-radius: 3px;
+    background-color: #fafafa;
+    min-height: 16px;
+    padding: 8px 10px;
+    outline: none;
+    .transition(height .2s ease);
+    z-index: 2;
+    cursor: text;
+
+    /*& > p {
+      position: absolute;
+    }*/
+  }
+
+}
+
+span.splaceholder {
+  position: absolute;
+  top: 19px;
+  left: 10px;
+  width: 580px;
+  height: 20px;
+  z-index: 3;
+  background-color: #fafafa;
+  color: @grey_99;
+  cursor: text;
+  //visibility: hidden;
+
+  &.myhide {
+    display: none;
+  }
+}
+
+ul.comment_list{
+  li{
+    border-bottom: 1px solid @grey_e7;
+    padding: 15px 0 15px 8px;
+
+    div.con{
+      & > span{
+        display: block;
+        float: left;
+        width: 41px;
+        height: 41px;
+        background-color: #fdd6d6;
+
+        &.avatar0{
+          background: url("@{img}/view_v2-img/xiaoren_41.jpg") no-repeat center;
+
+          i {
+            background: url('');
+          }
+        }
+
+        &.avatar1{
+          background-color: #ffc6c6;
+        }
+
+        &.avatar2{
+          background-color: #ead1d1;
+        }
+
+        &.avatar3{
+          background-color: #ffb3b3;
+        }
+
+        &.avatar4{
+          background-color: #edb2b2;
+        }
+
+        &.avatar5{
+          background-color: #e2b3c8;
+        }
+
+        &.avatar6{
+          background-color: #aff1f9;
+        }
+
+        &.avatar7{
+          background-color: #8decf8;
+        }
+
+        &.avatar8{
+          background-color: #badef5;
+        }
+
+        &.avatar9{
+          background-color: #9ed7e3;
+        }
+
+        &.avatar10{
+          background-color: #b1e5e2;
+        }
+
+        &.avatar11{
+          background-color: #a4f5e7;
+        }
+
+        &.avatar12{
+          background-color: #ebc9f9;
+        }
+
+        &.avatar13{
+          background-color: #f6b2ea;
+        }
+
+        &.avatar14{
+          background-color: #f699f6;
+        }
+
+        &.avatar15{
+          background-color: #ddc6e8;
+        }
+
+        &.avatarg16{
+          background-color: #c8a7d8;
+        }
+
+        &.avatar17{
+          background-color: #b68ec9;
+        }
+
+        &.avatar18{
+          background-color: #cfeba4;
+        }
+
+        &.avatar19{
+          background-color: #b2f0ab;
+        }
+
+        &.avatar20{
+          background-color: #9ee595;
+        }
+
+        &.avatar21{
+          background-color: #fdd6d6;
+        }
+
+        &.avatar22{
+          background-color: #c6ddc8;
+        }
+
+        &.avatar23{
+          background-color: #c2d2a9;
+        }
+
+        &.avatar24{
+          background-color: #92cb93;
+        }
+
+        &.avatar25{
+          background-color: #fdddc0;
+        }
+
+        &.avatar26{
+          background-color: #f1ceab;
+        }
+
+        &.avatar27{
+          background-color: #ffd996;
+        }
+
+        &.avatar28{
+          background-color: #fccd9e;
+        }
+
+        &.avatar29{
+          background-color: #e6b391;
+        }
+
+        &.avatar30{
+          background-color: #f9a974;
+        }
+
+        i{
+          display: inline-block;
+          width: 41px;
+          height: 41px;
+          background: url("@{img}/comment_user.png") no-repeat left top;
+        }
+      }
+
+      p{
+        float: left;
+        width: 475px;
+        padding: 3px 0 0 26px;
+
+        em{
+          display: block;
+          color: @grey_99;
+        }
+      }
+
+      aside{
+        padding-top: 3px;
+        white-space: nowrap;
+        float: right;
+        text-align: right;
+
+        em{
+          display: block;
+          color: @grey_33;
+          clear: both;
+        }
+
+        a {
+          display: inline-block;
+          margin-left: 20px;
+          *padding-left: 20px;
+          color: @grey_33;
+
+          &:hover{
+            color: @blue;
+          }
+
+          span {
+            display: inline-block;
+            font-size: 0;
+            line-height: 0;
+            overflow: hidden;
+            background: transparent url("@{img}/comment.png") no-repeat -145px 0;
+            vertical-align: middle;
+            margin-right: 5px;
+            padding-top: 3px;
+            *padding-top: 0;
+            width: 13px;
+            height: 12px;
+          }
+
+          &.helpful{
+            position: relative;
+
+            b {
+              position: absolute;
+              color: #62bb6a;
+              font-size: 12px;
+              left: 0px;
+              top: 2px;
+            }
+
+            &:hover {
+              color: @grey_99;
+              text-decoration: none;
+
+              span {
+                background-position: -162px -19px;
+              }
+            }
+          }
+          
+          &.marked{
+            span {
+               background-position: -162px -19px;
+            }
+
+            &:hover {
+              color: @grey_99;
+              span {
+                 background-position: -162px -19px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+    div.reply{
+      position: relative;
+      clear: both;
+      overflow: hidden;
+      zoom: 1;
+      border-top: 1px solid @grey_e7;
+      margin: 15px 0 10px 75px;
+      padding-top: 15px;
+
+     span.splaceholder {
+        top: 24px;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+//评论的标题
+.l_tt_16 {
+  padding-top: 18px;
+  padding-bottom: 2px;
+}
+
+//评论框没有内容提示
+//shine
+@-webkit-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-moz-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-ms-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+
+@-webkit-keyframes angle_twinkle{
+  0%{border-right-color: #fff;}
+  20%{border-right-color: #eaacac;}
+  40%{border-right-color: #fff;}
+  60%{border-right-color: #eaacac;}
+  80%{border-right-color: #fff;}
+  100%{border-right-color: #eaacac;}
+}
+@-moz-keyframes angle_twinkle{
+  0%{border-right-color: #fff;}
+  20%{border-right-color: #eaacac;}
+  40%{border-right-color: #fff;}
+  60%{border-right-color: #eaacac;}
+  80%{border-right-color: #fff;}
+  100%{border-right-color: #eaacac;}
+}
+@-ms-keyframes angle_twinkle{
+  0%{border-right-color: #fff;}
+  20%{border-right-color: #eaacac;}
+  40%{border-right-color: #fff;}
+  60%{border-right-color: #eaacac;}
+  80%{border-right-color: #fff;}
+  100%{border-right-color: #eaacac;}
+}
+@keyframes angle_twinkle{
+  0%{border-right-color: #fff;}
+  20%{border-right-color: #eaacac;}
+  40%{border-right-color: #fff;}
+  60%{border-right-color: #eaacac;}
+  80%{border-right-color: #fff;}
+  100%{border-right-color: #eaacac;}
+}
+.shine{
+  .animation(twinkle .6s ease none);
+}
+
+.angle_shine{
+  .animation(angle_twinkle .6s ease none);
+}

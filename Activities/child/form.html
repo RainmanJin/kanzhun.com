@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>小人儿</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/child.css?v=01041747" />
+  <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div class="content bg clear"></div>
+<div class="set">
+  <div class="set_inner">
+    <div>
+      <div class="set_l">
+        <textarea class="tarea" id="tool_0" maxlength="140"></textarea>
+        <ul class="round clearfix" id="tool_1">
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+          <li><a href="javascript:;"></a></li>
+        </ul>
+      </div>
+      <div class="set_r">
+        <a class="current" href="javascript:;"><i class="i i_font"></i> 文字</a>
+        <a href="javascript:;"><i class="i i_pen"></i> 背景</a>
+      </div>
+    </div>
+    <a class="bt_orange" id="bt_createPic" href="#">生成图片</a>
+  </div>
+</div>
+</body>
+<script src="js/child.js?v=01041729"></script>
+<script>
+  $(function(){
+    var winH=$(window).height();
+    //var h=winH-$('header').outerHeight()-$('.set').outerHeight();
+    $('.content').height(winH);
+  });
+</script>
+</html>

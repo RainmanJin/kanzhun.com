@@ -1,0 +1,1 @@
+define(['u/validator', 'u/maskui', 'u/select', 'u/autocomplete','u/placeholder'], function(){});

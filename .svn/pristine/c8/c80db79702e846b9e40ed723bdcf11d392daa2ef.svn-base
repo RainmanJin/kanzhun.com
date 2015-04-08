@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>马桶节-普通版</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/toilet.css">
+</head> 
+<body>
+  <div class="wrapper">
+    <header class="normal">
+        <ul>
+            <li>
+                <a href=""><img src="../images/toilet/toilet4.jpg" alt=""/></a>
+            </li>
+            <li class="explain_one">
+                <img src="../images/toilet/toilet5.jpg" alt=""/>
+            </li>
+            <li class="explain_two">
+                <img src="../images/toilet/toilet6.jpg" alt=""/>
+            </li>
+            <li class="explain_three">
+                <img src="../images/toilet/toilet7.jpg" alt=""/>
+            </li>
+        </ul>
+    </header>
+
+    <ul class="boss_tags">
+        <li>
+            <span class="zheng_trangle"></span>简单
+        </li>
+        <li>
+            <span class="zheng_trangle"></span>粗暴
+        </li>
+        <li>
+            <span class="xie_trangle"></span>直奔主题
+        </li>
+        <li>
+            <span class="xie_trangle"></span>聊一聊，Offer即刻拿到手
+        </li>
+    </ul>
+      
+      <dl class="main_con">
+          <dt>
+              <img src="../images/toilet/toilet8.jpg" alt="" width="57" height="67"/>
+          </dt>
+          <dd>
+              <p class="tt">马桶上“聘”<span>(找)</span> Boss<span>(工作)</span></p>
+              <p>节省面试时间，不用请假跑成狗，拉着带薪屎就把offer拿，够便捷</p>
+          </dd>
+      </dl>
+      <dl class="main_con main_two">
+          <dt>
+              <img src="../images/toilet/toilet9.jpg" alt="" width="105" height="71.5"/>
+          </dt>
+          <dd>
+              <p class="tt">跟未来的Boss直接“约”</p>
+              <p>拨开云（H）雾（R）见Boss，聊的不好拉黑你，聊的投机马上约！</p>
+          </dd>
+      </dl>
+      <dl class="main_con">
+          <dt>
+              <img src="../images/toilet/toilet10.jpg" alt="" width="96" height="68.5"/>
+          </dt>
+          <dd>
+              <p class="tt">知名公司随你挑</p>
+              <p>各种大神级Boss在线等，各大公司随你挑，想聊哪家聊哪家</p>
+          </dd>
+      </dl>
+      <dl class="main_con main_two three">
+          <dt>
+              <img src="../images/toilet/toilet11.jpg" alt="" width="62.5" height="63"/>
+          </dt>
+          <dd>
+              <p class="tt">跟未来的Boss直接“约”</p>
+              <p>拨开云（H）雾（R）见Boss，聊的不好拉黑你，聊的投机马上约！</p>
+          </dd>
+      </dl>
+
+      <p class="guide">
+          3月26日boss直聘马桶节等你来！迅速扫码参与
+      </p>
+      <dl class="download">
+          <dt>
+          <div>
+              <span></span>
+              <div>
+                  <img src="../images/toilet/toilet.jpg" alt=""/>
+                  <p class="down_btn"><a href="" class="iPhone">iPhone下载</a><a href="" class="android">Android下载</a></p></div>
+              <p class="clear f_12 mt10">下载Boss直聘</p>
+          </div>
+          </dt>
+          <dd>
+              <img src="../images/toilet/toilet.jpg" alt=""/><p class="f_12 mt10 t-center">扫码分享给其他程序牛人</p>
+          </dd>
+      </dl>
+  </div>
+</body>
+</html>

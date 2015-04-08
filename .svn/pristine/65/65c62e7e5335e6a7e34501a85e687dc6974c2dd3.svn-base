@@ -1,0 +1,57 @@
+.company_info {
+  width: 645px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  position: relative;
+}
+.company_info .l {
+  float: left;
+  padding: 15px;
+}
+.company_info .l .img {
+  display: inline-block;
+  width: 111px;
+  height: 111px;
+  border: 1px solid #e7e7e7;
+  overflow: hidden;
+  font-size: 0;
+  -webkit-box-shadow: 2px 2px 2px #e4e4e4;
+  -moz-box-shadow: 2px 2px 2px #e4e4e4;
+  -ms-box-shadow: 2px 2px 2px #e4e4e4;
+  box-shadow: 2px 2px 2px #e4e4e4;
+}
+.company_info .l .img img {
+  width: 111px;
+  display: inline-block;
+  border: 1px solid #e7e7e;
+  vertical-align: middle;
+}
+.company_info .l .img span {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+.company_info .r {
+  float: left;
+  padding-top: 40px;
+}
+.company_info .r p {
+  color: #999999;
+  font-size: 14px;
+}
+.company_info .r p em {
+  margin: 0 10px;
+  color: #e7e7e7;
+}
+.company_info .r p.h2 b {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-right: 10px;
+}
+.company_info .choose {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}

@@ -1,0 +1,130 @@
+require.config({
+    baseUrl: '/js/site',
+    paths: {
+        u: '../utils',
+        c: '.'
+    }
+});
+
+require(['c/widgets','u/validator','u/uploadPortrait_dialog'],function(){
+	$(function(){
+      $('input:text, input:password').placeholder();
+      $('.select').DIYSelect({
+          listCallback: function (list, field, select) {
+              select.removeClass('s_err').addClass('s_suc');
+              select.find('dt>input:hidden').val($(this).data('val'));
+          }
+      });
+      $('#uploadLogo').on('click',function(){
+          var _t=$(this);
+          $.initUploadPortrait({
+              title:"上传公司Logo",
+              url:"uploadURL=/file/uploadlogo.json?c=uploadPortrit&amp;jsCallback=uploadOk",
+              callback:function(picurls){
+                  $('img',_t).attr('src', STATICURL + picurls[1]);
+                  $('[name=logo]').val(picurls[0]);
+                  $('.dialog_close').trigger('click');
+              }
+          });
+      });
+
+      //选择城市
+      var newCompanyCitySuggest = $('#newCompanyCitySuggest'),
+        newCompanyCitySuggestHid = $('input[name=cityCode]');
+      newCompanyCitySuggest.autocomplete({
+          serviceUrl: '/autocomplete/city.json',
+          paramName: 'query',
+          dataType: 'json',
+          transformResult: function (response) {
+              return {
+                  suggestions: $.map(response.suggestions, function (dataItem) {
+                      return { value: dataItem.value, data: dataItem.data};
+                  })
+              };
+          },
+          onSelect: function (suggestion) {
+              newCompanyCitySuggestHid.val(suggestion.data);
+          },
+          onSearchStart: function () {
+              //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+              newCompanyCitySuggestHid.val('');
+          },
+          onInvalidateSelection: function () {
+              newCompanyCitySuggestHid.val('');
+          },
+          onSearchComplete: function (query, suggestions) {
+              if (suggestions.length === 0) {
+                  newCompanyCitySuggestHid.val('');
+                  return;
+              }
+              //auto select when only one result
+              if (suggestions.length === 1) {
+                  newCompanyCitySuggestHid.val(suggestions[0].data);
+              }
+          },
+          autoSelectFirst: true
+      });
+
+      $('#baseinfoForm').validatorAll({
+          elems: '.v',
+          prompt: {
+              succ: function (target) {
+                  if (target.attr('name').indexOf('selectflag') === -1) {
+                      target.parent().find('>span.err').hide();
+                  } else {
+                      //select的错误样式
+                      target.parent().parent().parent().find('span.red').hide();
+                  }
+              },
+              err: function (target, msg) {
+                  if (target.attr('name').indexOf('selectflag') === -1) {
+                      var prompt = target.parent().find('span.err');
+                  } else {
+                      var prompt = target.parent().parent().parent().find('span.red');
+                  }
+                  prompt.html('<i class="base errormsg"></i> '+(msg || prompt.data('msg'))).show();
+              },
+              normal: function (target) {
+                  if (target.attr('name').indexOf('selectflag') === -1) {
+                      target.parent().find('>span.err').hide();
+                  } else {
+                      //target.parent().parent().removeClass('s_err s_suc');
+                      target.parent().parent().parent().find('span.err').hide();
+                  }
+              }
+          },
+          more: {
+              city: function (_this, prompt, e) {
+                  var s = setTimeout(function () {
+                      clearTimeout(s);
+                      if (newCompanyCitySuggestHid.val() === '') {
+                          newCompanyCitySuggest.val('').trigger('blur');
+                      }
+                      return true;
+                  }, 300);
+                  return true;
+              },
+              url: {
+                  type: 'isUrl',
+                  msg: '链接格式错误'
+              }
+          },
+          ajaxSubmit: {
+              elems: 'input:text, input:hidden',
+              success: function (ret) {
+                  if (ret.rescode == 1) {
+                      $.maskUI.alert("基本资料保存成功！");
+                  }else{
+                      $.maskUI.alert(ret.resmsg);
+                  }
+              }
+          }
+      }).init().submit(function(){
+          if (newCompanyCitySuggestHid.val() === '') {
+              return false;
+          }else{
+              return true;
+          }
+      });
+	});
+});

@@ -1,0 +1,72 @@
+@import "../../../css/common/var";
+@import "../var";
+@import 'piece/search_common';  //搜索页面公共部分
+@import 'piece/search_conditions';  //搜索页面左半部分搜索条件筛选
+@import "../../../css/modules/company/salary_desc";
+
+
+
+.salary-desc{
+  margin-bottom: 15px;
+}
+
+dl.wage_c_explain {
+  padding: 10px 0 5px 0;
+  overflow: hidden;
+  *zoom: 1;
+
+  dt {
+    float: left;
+  }
+
+
+  dd {
+    margin-left: 360px;
+    padding-top: 5px;
+
+    li {
+      color: @grey_99;
+      font-size: 12px;
+      line-height: 1.7em;
+      overflow: hidden;
+      *zoom: 1;
+      padding-bottom: 5px;
+
+      i {
+        float: left;
+        overflow: hidden;
+        font-size: 0;
+        line-height: 0;
+        width: 5px;
+        height: 5px;
+        margin-top: 7px;
+        background-color: #999999;
+        border-radius: 5px;
+      }
+
+      p {
+        margin-left: 10px;
+      }
+
+      span {
+        color: @def;
+      }
+    }
+
+    p {
+      i {
+        display: inline-block;
+        font-size: 0;
+        line-height: 0;
+        width: 11px;
+        height: 11px;
+        margin-right: 10px;
+        background-color: #c5dcf2;
+      }
+
+      &.w_tt {
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '../../css/common/var';
+@img: '/images';
+.select-tree{
+  dd{
+    max-height: inherit;
+    overflow: visible;
+    padding-right: 0;
+
+    .select-second{
+      display: none;
+      position: absolute;
+      background-color: #fafafa;
+      left: 100%;
+      width: 310px;
+      border: 1px solid #cfcfcf;
+      padding: 15px 0;
+      top: 0;
+      margin-left: -1px;
+      overflow: hidden;
+
+      a{
+        width: 140px;
+        float: left;
+      }
+    }
+
+    .select-second-item{
+      position: relative;
+
+      a.select-opts-tt{
+        border-style: solid;
+        border-color: transparent;
+        border-width: 1px 0;
+
+        span{
+          background: url("@{img}/select-r.png") no-repeat right 6px;
+          overflow: hidden;
+          display: block;
+          margin-right: 10px;
+        }
+
+        &:hover{
+          background-color: transparent;
+          color: #007ead;
+        }
+      }
+
+      &.on{
+        a.select-opts-tt {
+          background: #fafafa;
+          border-color: #cfcfcf;
+          color: #007ead;
+          .box-shadow(-2px 0px 3px #ccc);
+          position: relative;
+          z-index: 2;
+
+          span{
+            background: transparent;
+          }
+        }
+
+        .select-second{
+          display: block;
+        }
+      }
+    }
+  }
+}

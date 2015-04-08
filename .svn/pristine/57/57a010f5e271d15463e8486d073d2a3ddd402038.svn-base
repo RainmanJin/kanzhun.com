@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>点评列表页</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../../css/widget.css" />
+<link rel="stylesheet" href="../../css/view.css" />
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="co_header clearfix">
+		<a href="#"><img src="../images/img-04.jpg" width="150" height="150" alt="" class="co_logo" /></a>
+		<div class="co_info">
+			<h1>易宝支付</h1>
+			<p class="msg"><span class="grade_star_b"><i style="width:56px;"></i></span><strong>2.2</strong>分<em>|</em><a href=""><b>235条</b></a>信息</p>
+			<p class="params">互联网<em>|</em>www.yeepay.com<em>|</em>北京<em>|</em>500-100人</p>
+		</div>
+		<nav class="clearfix">
+			<a href="#" class="current">简介</a><a href="#">薪酬</a><a href="#">评论</a><a href="#">面试</a><a href="#">照片</a><a href="#">员工</a>
+		</nav>
+		<aside>
+			<a href="#" class="btn_o_l comment">我要点评公司</a>
+			<a href="" class="btn_grey_b follow"><b>+</b> 关注公司</a>
+		</aside>
+	</section>
+
+	<div class="container clearfix">
+		<section class="l_con clearfix">
+			<p><span class="grey_99 fright">最后更新 七天内</span><span class="f_16">易付宝面试经历</span></p>
+			<p class="line"></p>
+				
+			<div class="co_grade co_grade_r">
+			<dl class="total reviewTotal">
+			<dt>员工对公司的总体评分</dt>
+			<dd class="total_chart_w">
+			<p><span class="grade_star_b mr10"><i style="width:92px;"></i></span>3.9分<em>|</em>来自34条信息</p>
+			<p class="mt15">互联网行业排名第<span class="red">15</span>位，<a ka="com-rank" title="互联网公司排名" target="_blank" href="/plc4p1.html">查看排名</a>&nbsp;</p>
+			</dd>
+			<dd class="circle_chart comehere">
+			<div class="doughnua_chart"><span>73%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.73_0.27"></canvas></div><h5>73%的员工愿意推荐朋友来这里工作</h5>
+			</dd>
+			</dl>
+			<dl class="category reviewCategory">
+			<dt>公司分项目评分</dt>
+			<dd>职业成长 <span class="grade_rect"><i style="width:54px;"></i></span></dd>
+			<dd>技能成长 <span class="grade_rect"><i style="width:56px;"></i></span></dd>
+			<dd>环境氛围 <span class="grade_rect"><i style="width:57px;"></i></span></dd>
+			<dd>工作压力 <span class="grade_rect"><i style="width:58px;"></i></span></dd>
+			<dd>公司前景 <span class="grade_rect"><i style="width:57px;"></i></span></dd>
+			</dl>
+			<dl class="ceo">
+			<dt>CEO支持率</dt>
+			<dd style="overflow:hidden;"><img src="http://img.kanzhun.com/images/ceophoto/20140705/91b397cca49afaf041f932729377ef44.jpg" alt="" /><p>庄辰超 <br>首席执行官</p></dd>
+			<dd class="circle_chart mt20 pt10">
+				<div class="doughnua_chart"><span>80%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.8_0.19999999999999996"></canvas></div><h5>80%赞同CEO</h5>
+				<!--
+				<a class="fright grey_99 mt10" href="javascript:;"><i class="i_correction"></i>纠错</a>
+				-->
+				<a class="fright mt10" href="javascript:;"><i class="i_edit"></i>添加ceo</a>
+			</dd>
+			</dl>
+			</div>
+
+			<p class="line"></p>
+			<div class="select_conditions clearfix">
+				<p class="fright">共<b>38822</b>条职位面试<a href="" class="btn_o_l addsalary ml20">+&nbsp;我来写条面经</a></p>
+				<a href="">推荐面试</a><a href="">最新面试</a>
+			</div>
+			<!-- 新加 -->
+			<!-- 按条件搜索 -->
+			<div class="view_search mb30 clearfix" id="salarySearch" style="z-index:2;">
+				<dl class="select" id="salaryCitySelect">
+					<dt ka="comsalary-selectcity">
+						<input type="text" value="全部城市(7741条)" readonly="readonly" autocomplete="off" /><div></div><span class="btn"><i></i></span>
+					</dt>
+					<dd>
+						<a href="/gsx3178.html">全部城市(7741条)</a>
+						<a href="/gsxs3178c7.html" data-cid="7">北京（1105条）</a>
+						<a href="/gsxs3178c34.html" data-cid="34">广州（560条）</a>
+						<a href="/gsxs3178c1.html" data-cid="1">上海（456条）</a>
+						<a href="/gsxs3178c49.html" data-cid="49">深圳（320条）</a>
+						<a href="/gsxs3178c2.html" data-cid="2">南京（306条）</a>
+						<a href="/gsxs3178c12.html" data-cid="12">成都（268条）</a>
+						<a href="/gsxs3178c53.html" data-cid="53">武汉（238条）</a>
+						<a href="/gsxs3178c9.html" data-cid="9">重庆（235条）</a>
+					</dd>
+				</dl>
+				<input type="text" name="job_name" autocomplete="off" value="" class="field_b" placeholder="全部职位" ka="comsalary-blocker1-inputjob" />
+				<input type="hidden" name="sortMethod" value="1" />
+				<span class="btn_grey_l"><input type="submit" value="按公司查询" id="salarySearchBtn" ka="comsalary-blocker1-search" /></span>
+			</div>
+			<!-- 按条件搜索 -->
+			<dl class="view_detail mb30">
+				<dt>
+					<img src="../images/positionimgs/po_imgs2.jpg" alt="您的匿名头像"><span></span>
+				</dt>
+				<dd class="i_tt mb10"><p>公司评分：<span class="grade_star"><i style="width:57px;"></i></span>CEO：<i class="hand nosupport"></i></p><em class="positoninfo">匿名用户&nbsp;&nbsp;&nbsp;来自该公司1年产品经理<em class="grey_99">&nbsp;-&nbsp;北京</em></em></dd>
+				<dd class="i_con">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<h2><a href="">"易宝支付是锻炼行业产品经理的好地方"</a></h2>
+					<p><strong>公司优点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;</p>
+					<p><strong>公司缺点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向...<a href="">查看更多</a></p>
+					<p class="line"></p>
+					<div>
+						<p class="fright options comments">
+							<a href="" class="helpful" data-mtype="" data-sid="" ka=""><span class="img helpful"></span>有用<em class="grey_99">(<i>28</i>)</em></a><em class="line">|</em>
+							<a ka="" href="" class="cmt"><span class="img cmt"></span>评论<em class="grey_99">(1)</em></a><em class="line">|</em>
+							<a ka=""  href="" class="share"><span class="img share"></span>分享</a>
+						</p>
+						<em class="grey_99">2014-06-15</em>
+					</div>
+				</dd>
+			</dl>
+			<dl class="send_views mb30">
+				<dt><img src="../images/positionimgs/po_img4.jpg" alt=""></dt>
+				<dd>
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					你在这里工作过吗？分享一条公司点评吧，为更多求职者提供帮助！&nbsp;&nbsp;<a href="" class="btn_grey_b">立即发条面试</a>
+				</dd>
+			</dl>
+			<dl class="view_detail mb30">
+				<dt>
+					<img src="../images/positionimgs/po_imgs2.jpg" alt="您的匿名头像"><span></span>
+				</dt>
+				<dd class="i_tt mb10"><p>公司评分：<span class="grade_star"><i style="width:57px;"></i></span>CEO：<i class="hand nosupport"></i></p><em class="positoninfo">匿名用户&nbsp;&nbsp;&nbsp;来自该公司1年产品经理<em class="grey_99">&nbsp;-&nbsp;北京</em></em></dd>
+				<dd class="i_con">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<h2><a href="">"易宝支付是锻炼行业产品经理的好地方"</a></h2>
+					<p><strong>公司优点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;</p>
+					<p><strong>公司缺点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向...<a href="">查看更多</a></p>
+					<p class="line"></p>
+					<div>
+						<p class="fright options comments">
+							<a href="" class="helpful" data-mtype="" data-sid="" ka=""><span class="img helpful"></span>有用<em class="grey_99">(<i>28</i>)</em></a><em class="line">|</em>
+							<a ka="" href="" class="cmt"><span class="img cmt"></span>评论<em class="grey_99">(1)</em></a><em class="line">|</em>
+							<a ka=""  href="" class="share"><span class="img share"></span>分享</a>
+						</p>
+						<em class="grey_99">2014-06-15</em>
+					</div>
+				</dd>
+			</dl>
+			<dl class="view_detail mb30">
+				<dt>
+					<img src="../images/positionimgs/po_imgs2.jpg" alt="您的匿名头像"><span></span>
+				</dt>
+				<dd class="i_tt mb10"><p>公司评分：<span class="grade_star"><i style="width:57px;"></i></span>CEO：<i class="hand nosupport"></i></p><em class="positoninfo">匿名用户&nbsp;&nbsp;&nbsp;来自该公司1年产品经理<em class="grey_99">&nbsp;-&nbsp;北京</em></em></dd>
+				<dd class="i_con">
+					<span class="doubletriangle triangleEdge"></span>
+					<span class="doubletriangle triangleCon"></span>
+					<h2><a href="">"易宝支付是锻炼行业产品经理的好地方"</a></h2>
+					<p><strong>公司优点：</strong>笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。1、面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;</p>
+					<div class="i_filterblur">
+						<div class="nologin">
+							<p>发布一条面试经历才能查看完整信息</p>
+							<p class="grey_99">所有信息均为匿名，请放心填写</p>
+							<p class="mt20">
+							<a ka="pop-interviewugc" href="/interviewugc/">立即发一条曾经面试过的公司面经&gt;&gt;</a>
+							</p>
+						</div>
+					</div>
+					<p class="line"></p>
+					<div>
+						<p class="fright options comments">
+							<a href="" class="helpful" data-mtype="" data-sid="" ka=""><span class="img helpful"></span>有用<em class="grey_99">(<i>28</i>)</em></a><em class="line">|</em>
+							<a ka="" href="" class="cmt"><span class="img cmt"></span>评论<em class="grey_99">(1)</em></a><em class="line">|</em>
+							<a ka=""  href="" class="share"><span class="img share"></span>分享</a>
+						</p>
+						<em class="grey_99">2014-06-15</em>
+					</div>
+				</dd>
+			</dl>
+			<p class="line_only mt30"></p>
+			<div class="pager">
+				<a href="">&lt;</a><a href="" class="current">1</a><a href="">2</a><a href="">3</a><a href="">4</a><span>... </span><a href="">&gt;</a> 共90页&nbsp;&nbsp;&nbsp;&nbsp;去<input type="text">页
+			</div>
+		</section>
+		<section class="r_con">
+			<h3 class="r_tt">互联网行业产品经理薪酬</h3>
+			<ul class="salary_show">
+				<li><em>2496条薪酬数据</em><i class="hot">1</i><a href="">百度</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">2</i><a href="">腾讯</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">3</i><a href="">阿里巴巴</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>4</i><a href="">盛大集团</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>5</i><a href="">新浪</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>6</i><a href="">360安全卫士</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>7</i><a href="">唯美购</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>8</i><a href="">IBM</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>9</i><a href="">Google</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>10</i><a href=""n>搜狐畅游</a>-产品经理</li>
+			</ul>
+
+			<h3 class="r_tt mt20">热门职位</h3>
+			<ul class="jobs_show">
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度在线网络技术有限公司 – 广州</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />基础架构部_云安全研发工程师（上海）<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+			</ul>
+
+			<!-- <p class="fright"><a href="">查看更多</a></p> -->
+			<!-- 关注了该公司的还关注了 -->
+			<h3 class="r_tt attention_tt">关注了该公司的人还关注了<div class="attention_option"><a href="" class="option_left fleft"></a><a href="" class="option_right fright current"></a></div></h3>
+			<div class="attention_content_box">
+				<div>
+					<ul>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+						<li>
+							<a href=""><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+							<div>
+								<p><a href="">小米</a></p>
+								<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 关注了该公司的还关注了 -->
+			<!-- 弹窗 -->
+				<section class="maskui_dialog email_dialog recommend_cmp" style="display:block">
+					<div class="dialog_con">
+						<a href="javascript:;" class="dialog_close maskuiclose" ka="ugc-email-result-close"></a>
+						<h3><i class="suc_p" style="vertical-align:middle;"></i>订阅成功！<em class="grey_66 f_14">一有公司动态马上通知您</em></h3>
+						<p class="that_word grey_33">根据您关注的公司，看准君还为您推荐以下公司：</p>
+						<ul>
+							<li>
+								<a href="" class="cmp_logo"><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+								<div>
+									<p><a href="">小米</a></p>
+									<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+								</div>
+								<a ka="com-blocker1-focus" id="headerfollow" href="#" rel="nofollow" data-cid="3131" data-mtype="follow.json" class="btn_grey_s follow"><i class="ok_s"></i>已关注</a>
+							</li>
+							<li>
+								<a href="" class="cmp_logo"><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+								<div>
+									<p><a href="">小米</a></p>
+									<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+								</div>
+								<a ka="com-blocker1-focus" id="headerfollow" href="#" rel="nofollow" data-cid="3131" data-mtype="follow.json" class="btn_grey_s follow"><i class="ok_s"></i>已关注</a>
+							</li>
+							<li>
+								<a href="" class="cmp_logo"><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+								<div>
+									<p><a href="">小米</a></p>
+									<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+								</div>
+								<a ka="com-blocker1-focus" id="headerfollow" href="#" rel="nofollow" data-cid="3131" data-mtype="follow.json" class="btn_grey_s follow"><i class="ok_s"></i>已关注</a>
+							</li>
+							<li>
+								<a href="" class="cmp_logo"><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+								<div>
+									<p><a href="">小米</a></p>
+									<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+								</div>
+								<a ka="com-blocker1-focus" id="headerfollow" href="#" rel="nofollow" data-cid="3131" data-mtype="follow.json" class="btn_grey_s follow"><i class="ok_s"></i>已关注</a>
+							</li>
+							<li class="border_none">
+								<a href="" class="cmp_logo"><img src="http://img.kanzhun.com/images/logo/20141128/57c38ef64fb7e766222276b316295ff2.jpg"></a>
+								<div>
+									<p><a href="">小米</a></p>
+									<span class="np_sr_grade_start"><i style="width:59px;"></i></span><em class="grey_99 f_12">400人关注</em>
+								</div>
+								<a ka="com-blocker1-focus" id="headerfollow" href="#" rel="nofollow" data-cid="3131" data-mtype="follow.json" class="btn_grey_s follow"><i class="ok_s"></i>已关注</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			<!-- 弹窗 -->
+		</section>
+	</div>
+</body>
+</html>

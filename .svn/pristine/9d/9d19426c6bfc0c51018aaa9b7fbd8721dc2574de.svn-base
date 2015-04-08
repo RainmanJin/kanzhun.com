@@ -1,0 +1,682 @@
+require.config({
+  baseUrl: '/js/site',
+  paths: {
+    u: '../utils',
+    c: '.'
+  }
+});
+
+require(['c/widgets', 'u/validator','u/uploadPortrait_dialog'], function () {
+	//基本信息
+	function initCoBasic(){
+		var dialog=$('.co_corr_dialog[data-type="basic"]');
+		$('#uploadLogo',dialog).on('click',function(){
+			$.initUploadPortrait({
+				title:"上传公司Logo",
+				url:"uploadURL=/companyugc/upload/logo.json?c=uploadPortrit&jsCallback=uploadOk",
+				callback:function(picurls){
+					$('img[data-type="c_portrait"]',dialog).attr('src', STATICURL + picurls[1]).parent().find('input:hidden').val(picurls[0]);
+					$.maskUI.open({
+				    elem: dialog,
+				    pos:"absolute",
+				    destroy: true
+				  });
+				  initCoBasic();
+				}
+			});
+		});
+
+		$(".time .select",dialog).DIYSelect();
+
+		//选择城市
+		var newCompanyCitySuggest = $('[name="addCityName"]',dialog),
+		  newCompanyCitySuggestHid = $('input[name=addEncryptCityCode]',dialog);
+		newCompanyCitySuggest.autocomplete({
+		  serviceUrl: CONTEXTPATH + '/autocomplete/city.json',
+		  paramName: 'query',
+		  dataType: 'json',
+		  transformResult: function (response) {
+		    return {
+		      suggestions: $.map(response.suggestions, function (dataItem) {
+		        return { value: dataItem.value, data: dataItem.data};
+		      })
+		    };
+		  },
+		  onSelect: function (suggestion) {
+		    newCompanyCitySuggestHid.val(suggestion.data);
+		  },
+		  onSearchStart: function () {
+		    //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+		    newCompanyCitySuggestHid.val('');
+		  },
+		  onInvalidateSelection: function () {
+		    newCompanyCitySuggestHid.val('');
+		  },
+		  onSearchComplete: function (query, suggestions) {
+		    if (suggestions.length === 0) {
+		      newCompanyCitySuggestHid.val('');
+		      return;
+		    }
+		    //auto select when only one result
+		    if (suggestions.length === 1) {
+		      newCompanyCitySuggestHid.val(suggestions[0].data);
+		    }
+		  },
+		  autoSelectFirst: true
+		});
+
+		$("form",dialog).validatorAll({
+			elems:".v",
+			prompt:{
+				succ:function(target){
+					target.siblings(".err").hide();
+				},
+				err:function(target,msg){
+					var prompt=target.siblings(".err");
+					prompt.html('<i class="i_err"></i> ' + (msg||prompt.data("msg")) ).show();
+				},
+				normal:function(target){
+					target.siblings(".err").hide();
+				}
+			},
+			more:{
+				addCityName: function (_this, prompt, e) {
+				  var s = setTimeout(function () {
+				    clearTimeout(s);
+				    if (newCompanyCitySuggestHid.val() === '') {
+				      newCompanyCitySuggest.val('').trigger('blur');
+				    }
+				    return true;
+				  }, 400);
+				  return true;
+				}
+			},
+			ajaxSubmit: {
+    	  elems: 'input:text, input:hidden',
+    	  dataType:"html",
+        beforeSend: function(){},
+     		success: function(result){
+     			$.maskUI.open({
+		    		elem: $(result),
+		    		destroy: true
+		  		});
+		  		valiResult();
+    		}
+    	}
+		}).init().submit();
+	}
+
+	//ceo信息
+	function initCeo(){
+		var dialog=$('.co_corr_dialog[data-type="ceo"]');
+		$('.js_change_portrait',dialog).on('click',function(){
+			$.initUploadPortrait({
+				title:"上传ceo头像",
+				url:"uploadURL=/companyugc/upload/ceophoto.json?c=uploadPortrit&jsCallback=uploadOk",
+				callback:function(picurls){
+					$('img[data-type="portrait"]',dialog).attr('src', STATICURL + picurls[1]).parent().find('input:hidden').val(picurls[0]);
+					$.maskUI.open({
+				    elem:dialog,
+				    pos:"absolute",
+				    destroy: true
+				  });
+				  initCeo();
+				}
+			});
+		});
+		$("form",dialog).validatorAll({
+			elems:".v",
+			prompt:{
+				succ:function(target){
+					target.siblings(".err").hide();
+				},
+				err:function(target,msg){
+					var prompt=target.siblings(".err");
+					prompt.html('<i class="i_err"></i> ' + (msg||prompt.data("msg")) ).show();
+				},
+				normal:function(target){
+					target.siblings(".err").hide();
+				}
+			},
+			ajaxSubmit: {
+		    elems: 'input:text, input:hidden',
+    	  dataType:"html",
+        beforeSend: function(){},
+     		success: function(result){
+     			$.maskUI.open({
+		    		elem: $(result),
+		    		destroy: true
+		  		});
+		  		valiResult();
+    		}
+    	}
+		}).init().submit();
+	}
+
+	//竞争对手
+	function initCorrection(){
+		var dialog=$('.co_corr_dialog[data-type="competitor"]');
+		//选择城市
+		var newCompanyCitySuggest = $('[name="addCityName"]',dialog),
+		  newCompanyCitySuggestHid = $('input[name=addEncryptCityCode]',dialog),
+		  competitorSuggest = $('[name="competitor"]',dialog),
+		  competitorSuggestHid = $('input[name=competitorHid]',dialog);
+		newCompanyCitySuggest.autocomplete({
+		  serviceUrl: CONTEXTPATH + '/autocomplete/city.json',
+		  paramName: 'query',
+		  dataType: 'json',
+		  transformResult: function (response) {
+		    return {
+		      suggestions: $.map(response.suggestions, function (dataItem) {
+		        return { value: dataItem.value, data: dataItem.data};
+		      })
+		    };
+		  },
+		  onSelect: function (suggestion) {
+		    newCompanyCitySuggestHid.val(suggestion.data);
+		  },
+		  onSearchStart: function () {
+		    //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+		    newCompanyCitySuggestHid.val('');
+		  },
+		  onInvalidateSelection: function () {
+		    newCompanyCitySuggestHid.val('');
+		  },
+		  onSearchComplete: function (query, suggestions) {
+		    if (suggestions.length === 0) {
+		      newCompanyCitySuggestHid.val('');
+		      return;
+		    }
+		    //auto select when only one result
+		    if (suggestions.length === 1) {
+		      newCompanyCitySuggestHid.val(suggestions[0].data);
+		    }
+		  },
+		  autoSelectFirst: true
+		});
+
+
+
+		//competitors autocomplete
+		competitorSuggest.autocomplete({
+		  serviceUrl: CONTEXTPATH + '/autocomplete/company.json',
+		  paramName: 'query',
+		  dataType: 'json',
+		  transformResult: function (response) {
+		    return {
+		      suggestions: $.map(response.suggestions, function (dataItem) {
+		        var arr = dataItem.data.split('|');
+		        return { value: arr[0], data: arr[1], num: arr[2]};
+		      })
+		    };
+		  },
+		  formatResult: function (suggestion, currentValue) {
+		    return suggestion.value + '（' + suggestion.num + '）';
+		  },
+		  onSelect: function (suggestion) {
+		    competitorSuggestHid.val(suggestion.data);
+		  },
+		  onSearchStart: function () {
+		    //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+		    competitorSuggestHid.val('');
+		  },
+		  onInvalidateSelection: function () {
+		    competitorSuggestHid.val('');
+		  },
+		  onSearchComplete: function (query, suggestions) {
+		    if (suggestions.length === 0) {
+		      competitorSuggestHid.val('');
+		      return;
+		    }
+		    //auto select when it has only one result
+		    if (suggestions.length === 1) {
+		      competitorSuggestHid.val(suggestions[0].data);
+		    }
+
+		    $('#cpNotfound').hide();
+		  },
+		  autoSelectFirst: true
+		});
+
+		//competitor control
+		competitorSuggest.on('focus', function(){
+		  competitorSuggestHid.val('');
+		  $('#cpNotfound').hide();
+		  addNewCompany.hide();                //.find('.v').val('');
+		}).on('blur', function(){
+
+		  var s = setTimeout(function () {
+		    clearTimeout(s);
+
+		    var val = $.trim(competitorSuggestHid.val());
+		    var sVal = $.trim(competitorSuggest.val());
+
+		    if(val !== ''){
+		      return;
+		    }
+
+		    if(sVal !== ''){
+		    	//$('#cpNotfound').html('抱歉，没有与“' + sVal + '”匹配的公司。').show();
+		      addNewCompany.show();                       //.find('.vv').val('');
+		      $('#newCompanyAlias').html(sVal);
+		      //$('#newCompanyAliasLink').attr('href', CONTEXTPATH + '/companyugc/?initname=' + encodeURIComponent(sVal));
+		    }/*else{
+		      addNewCompany.hide();
+		    }*/
+		  }, 300);
+		});
+		//add competitors
+		var competitorIds = $('input[name=competitorIds]',dialog),
+		  competitors = $('.add_competitors',dialog),
+		  addNewCompany = $('.add_co',dialog),
+		  addCompetitorBt = $('.js_addCompetitor_bt',dialog);
+
+		addCompetitorBt.on('click', function () {
+		  var val = $.trim(competitorSuggestHid.val());
+		  var sVal = $.trim(competitorSuggest.val());
+		  if (val === '') {
+		    return;
+		  }
+
+		  //$('#cpNotfound').html('').hide();
+		  var self = $(this),
+		    ids = competitorIds.val(),
+		    arr = ids ? ids.split(',') : [],
+		    err = competitors.parent().parent().find('p.red');
+
+		  if (arr.length >= 5) {
+		    err.html('最多只能添加5个竞争对手！').show().delay(3000).fadeOut();
+		    competitorSuggest.val('');
+		    return;
+		  }
+		  s = setTimeout(function () {
+		    clearTimeout(s);
+
+		    if ($.inArray(val, arr) > -1) {
+		      err.html('请勿重复添加！').show().delay(3000).fadeOut();
+		      return;
+		    }
+		    arr.push(val);
+		    competitors.find("dl").append('<dd>' + competitorSuggest.val() + '<i class="err_v" data-id="' + val + '" ka="createcom1-close"></i></dd>');
+		    competitorIds.val(arr.join(','));
+		    competitorSuggest.val('').focus();
+		    competitorSuggestHid.val('');
+		  }, 300);
+		});
+
+		//cancel
+		/*$('#addCompanyCancelBot').on('click', function() {
+		  competitorSuggest.val('');
+		  competitorSuggestHid.val('');
+		  addNewCompany.hide();
+		});*/
+
+		//delete competitors
+		competitors.on('click', 'i.err_v', function () {
+		  var val = competitorIds.val(),
+		    arr = val.split(','),
+		    index = $.inArray($(this).data('id') + '', arr);
+		  if (index == -1) {
+		    return;
+		  }
+		  $(this).parent().remove();
+		  arr.splice(index, 1);
+		  competitorIds.val(arr.join(','));
+		  competitors.parent().find('p.err').hide();
+		});
+
+		$(".select",dialog).DIYSelect({
+			listCallback: function (l, field, select) {
+        select.siblings('.err').hide();
+      }
+		});
+		//添加新公司校验
+		/*addNewCompany.validatorAll({
+		  //区分下 因为addNewCompany 套在外层的form里
+		  elems: '.vv',
+			prompt:{
+				succ:function(target){
+					target.siblings(".err").hide();
+				},
+				err:function(target,msg){
+					var prompt=target.siblings(".err");
+					if(target.attr("name")=="sflag"){
+						prompt=target.parent().parent().siblings(".err");
+					}
+					prompt.html('<i class="i_err"></i> ' + (msg||prompt.data("msg")) ).show();
+				},
+				normal:function(target){
+					target.siblings(".err").hide();
+				}
+			},
+		  more: {
+		    addCityName: function (_this, prompt, e) {
+		      var s = setTimeout(function () {
+		        clearTimeout(s);
+		        if (newCompanyCitySuggestHid.val() === '') {
+		          newCompanyCitySuggest.val('').trigger('blur');
+		        }
+		        return true;
+		      }, 400);
+		      return true;
+		    },
+
+		    url: {
+		      type: /^[^\u4e00-\u9fa5]+$/,
+		      msg: '网址里请不要包含中文！'
+		    }
+		  },
+		  ajaxSubmit: {
+		    elems: 'input:text, input:hidden',
+		    type: 'post',
+		    data: function () {
+		      return '&companyName=' + competitorSuggest.val();
+		    },
+		    url: CONTEXTPATH + '/companyugc/save.json',
+		    success: function (data) {
+		      if (data) {
+		        if (data.rescode == 1011) {
+		          auth_dialog.open('#login');
+		        } else if (data.rescode == -1) {
+		          $('input[name=companyName]').focus();
+		        } else {
+		          competitorSuggestHid.val(data.encryptId);
+		          addCompetitorBt.trigger('click');
+		        }
+		      }
+		    }
+		  }
+		}).init().submit(function () {
+		  //等ajax确认城市的结果
+		  if (newCompanyCitySuggestHid.val() === '') {
+		    return false;
+		  } else {
+		    return true;
+		  }
+		});*/
+		$('#addCompanySubmit').on('click', function () {
+		  addNewCompany.trigger('submit');
+		});
+
+		$("form",dialog).validatorAll({
+			elems:".v",
+			prompt:{
+				succ:function(target){
+					target.siblings(".err").hide();
+				},
+				err:function(target,msg){
+					var prompt=target.siblings(".err");
+					prompt.html('<i class="i_err"></i> ' + (msg||prompt.data("msg")) ).show();
+				},
+				normal:function(target){
+					target.siblings(".err").hide();
+				}
+			},
+			ajaxSubmit: {
+    	  elems: '.v',
+    	  dataType:"html",
+        beforeSend: function(){},
+     		success: function(result){
+     			$.maskUI.open({
+		    		elem: $(result),
+		    		destroy: true
+		  		});
+		  		valiResult();
+    		}
+    	}
+		}).init().submit();
+	}
+
+	//公司介绍
+	function initDesc(){
+		var dialog=$('.co_corr_dialog[data-type="desc"]');
+		$("form",dialog).validatorAll({
+			elems:".v",
+			prompt:{
+				succ:function(target){
+					target.siblings(".err").hide();
+				},
+				err:function(target,msg){
+					var prompt=target.siblings(".err");
+					prompt.html('<i class="i_err"></i> ' + (msg||prompt.data("msg")) ).show();
+				},
+				normal:function(target){
+					target.siblings(".err").hide();
+				}
+			},
+			ajaxSubmit: {
+		    elems: 'input:text, input:hidden, textarea',
+    	  dataType:"html",
+        beforeSend: function(){},
+     		success: function(result){
+     			$.maskUI.open({
+		    		elem: $(result),
+		    		destroy: true
+		  		});
+		  		valiResult();
+    		}
+    	}
+		}).init().submit();	
+	}
+
+	//带确认的提示框
+	function initConfirm(companyId,type,msg,ka_ok,ka_cancel){	
+		var h='';
+		h+='<section class="maskui_dialog co_corr_dialog form" data-type="confirm">'+
+			'<div class="dialog_con">'+
+				'<a href="javascript:;" class="dialog_close maskuiclose"></a>'+
+				'<h3>提示</h3>'+
+				'<p class="line_d"></p>'+
+				'<p class="t-center mt20 mb20">'+msg+'</p>'+
+				'<div class="sbm">'+
+					'<input class="btn_o_l" type="submit" value="提交修改" ka="'+ka_ok+'">'+
+					'<a class="btn_grey_b ml10 maskuiclose" href="javascript:;" ka="'+ka_cancel+'">取消</a>'+
+				'</div>'+
+			'</div>'+
+		'</section>';
+		$.maskUI.open({
+			elem: $(h),
+			destroy: true
+		});
+		var dialog=$('.co_corr_dialog[data-type="confirm"]');
+		$('[type="submit"]',dialog).on('click',function(){
+			$.ajax({
+				url:'/companyopo/correction.json',
+				type:'post',
+				data:{
+					companyId:companyId,
+					type:type
+				},
+				success:function(result){
+					//$('.maskuiclose',dialog).trigger('click');
+     			$.maskUI.open({
+		    		elem: $(result),
+		    		destroy: true
+		  		});
+		  		//valiResult();
+				}
+			});
+		});
+	}
+
+	//发送邮箱弹出框校验
+	function valiResult(){
+		var dialog=$('.co_corr_dialog[data-type="email"]');
+		$('form',dialog).validatorAll({
+			elems:'.v',
+			prompt:{
+				succ:function(target){
+					target.siblings(".err").hide();
+				},
+				err:function(target,msg){
+					var prompt=target.siblings(".err");
+					prompt.html('<i class="i_err"></i> ' + (msg||prompt.data("msg")) ).show();
+				},
+				normal:function(target){
+					target.siblings(".err").hide();
+				}
+			},
+			more:{
+	     	email: {
+	        type: 'isMail',
+	        msg: '邮箱格式不对！'
+	      }
+    	},
+			ajaxSubmit: {
+	  	  elems: '.v',
+	      beforeSend: function(){},
+	   		success: function(result){
+	   			var email=$.trim($('[name="email"]',dialog).val());
+	   			createEmailSuc(email);
+	  		}
+	  	}
+		}).init().submit(function(){
+			var email=$.trim($('[name="email"]',dialog).val());
+			if(email==""){
+				$('.maskuiclose').trigger('click');
+				return false;
+			}else{
+				return true;
+			}
+		});
+	}
+	//创建邮箱发送成功dialog
+	function createEmailSuc(email){
+		var h='';
+		h+='<section class="maskui_dialog co_corr_dialog form" style="width:420px;">'+
+			'<div class="dialog_con">'+
+				'<a href="javascript:;" class="dialog_close maskuiclose"></a>'+
+				'<h3>感谢您提供的信息！</h3>'+
+				'<p class="line_d"></p>'+
+				'<p>工作人员会尽快审核。您的信息一旦被采用，我们会将回复邮件发送至您填入的邮箱中</p>'+
+				'<ul class="fieldset mt10">'+
+					'<li>'+
+						'<p class="grey_99">'+
+							'<i class="suc_p" style="vertical-align:middle;"></i>'+email+' <a class="maskuiclose ml10" href="javascript:;">关闭</a>'+
+						'</p>'+
+					'</li>'+
+				'</ul>'+
+			'</div>'+
+		'</section>';
+		$.maskUI.open({
+	    elem: $(h),
+	    destroy: true
+	  });
+	}
+
+	$('.js_companyCorrection_bt').on('click',function(){
+		var _t=$(this),
+				companyId=_t.data('coid');
+		var h='';
+		h+='<section class="maskui_dialog co_corr_dialog" data-type="enter">'+
+			'<div class="dialog_con">'+
+				'<a href="javascript:;" class="dialog_close maskuiclose"></a>'+
+				'<h3>报错类型</h3>'+
+				'<p class="line_d"></p>'+
+				'<ul class="enterlist">'+
+					'<li><a href="javascript:;" data-typeid="1" data-ajax="1" ka="wrong-com">公司基本信息有误</a></li>'+
+					'<li><a href="javascript:;" data-typeid="2" data-ajax="1" ka="wrong-ceo">CEO信息有误</a></li>'+
+					'<li><a href="javascript:;" data-typeid="3" data-ajax="1" ka="wrong-opponent">公司竞争对手信息有误</a></li>'+
+					'<li><a href="javascript:;" data-typeid="2" ka="wrong-repeat">公司重复收录</a></li>'+
+					'<li><a href="javascript:;" data-typeid="1" ka="wrong-close">此公司已关闭</a></li>'+
+				'</ul>'+
+			'</div>'+	
+		'</section>';
+		$.maskUI.open({
+			elem: $(h),
+			destroy: true
+		});
+		var dialog=$('.co_corr_dialog[data-type="enter"]');
+		$('.enterlist a',dialog).on('click',function(){
+			var _t=$(this),
+					type=_t.data('typeid'),
+					isAjax=_t.data('ajax');
+			if(isAjax=='1'){
+				$.ajax({
+					url:'/companyopo'+companyId+"/",
+					data:{
+						type:type
+					},
+					beforeSend:function(){
+		        $.maskUI.open({
+		          content: '<p class="js-loading mt10 mb10 t-center"><img src="/images/loading.gif" /></p>',
+		        	destroy: true
+		        });
+					},
+					success:function(result){
+						$.maskUI.open({
+					    elem: $(result),
+					    pos:"absolute",
+					    destroy: true
+					  });
+					  if(type=="1"){
+							initCoBasic();
+						}else if(type=="2"){
+							initCeo();					
+					  }else if(type=="3"){
+					  	initCorrection();
+					  }
+					}
+				});			
+			}else{
+				if(type=='1'){
+					initConfirm(companyId,type,'确认该公司已经关闭？','wrong-close-ok','wrong-close-cancel');
+				}else if(type=='2'){
+					initConfirm(companyId,type,'确认该公司被重复收录？','wrong-repeat-ok','wrong-repeat-cancel');
+				}
+			}	
+		});
+
+	});
+
+	$('.js_change_coDesc').on('click',function(){
+		var _t=$(this),
+			companyId=_t.data('coid');
+		$.ajax({
+			url:'/companyopo'+companyId+"/",
+			data:{
+				type:"4"
+			},
+			beforeSend:function(){
+        $.maskUI.open({
+          content: '<p class="js-loading mt10 mb10 t-center"><img src="/images/loading.gif" /></p>',
+        	destroy: true
+        });
+			},
+			success:function(result){
+				$.maskUI.open({
+			    elem: $(result),
+			    pos:"absolute",
+			    destroy: true
+			  });
+			  initDesc();
+			}
+		});
+	})
+	
+	//点评页面修改ceo入口
+	$('.js_correctionceo_bt').on('click',function(){
+		var _t=$(this);
+		var companyId=_t.data('coid');
+		$.ajax({
+			url:'/companyopo'+companyId+"/",
+			data:{
+				type:'2'
+			},
+			beforeSend:function(){
+        $.maskUI.open({
+          content: '<p class="js-loading mt10 mb10 t-center"><img src="/images/loading.gif" /></p>',
+        	destroy: true
+        });
+			},
+			success:function(result){
+				$.maskUI.open({
+			    elem: $(result),
+			    pos:"absolute",
+			    destroy: true
+			  });
+			  initCeo();
+			}
+		});			
+	});
+});

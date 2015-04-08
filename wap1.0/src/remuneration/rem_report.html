@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <title>薪酬-个人信息</title>
+  <link rel="stylesheet" href="../css/public.css"/>
+  <link rel="stylesheet" href="../css/report/remuneration-wx.css"/>
+</head>
+<body>
+  <header class="page_hd">
+    <a class="top_back" href="javascript:;"><i></i>返回</a>
+    <strong>晒面经</strong>
+  </header>
+  <div class="rem_filter">
+    <span>职位：<em>软件开发工程师</em></span>
+    <span>行业：<em>互联网</em></span>
+    <a href="#"><i></i>修改</a>
+  </div>
+  <section class="rem_report">
+    <div class="rep_select clearfix">
+      <dl>
+        <dt><em>全部地区</em> <i class="arrow_g_up"></i></dt>
+        <dd>
+          <i class="s_arrow"></i>
+          <ul>
+            <li>北京</li>
+            <li>上海</li>
+            <li>广州</li>
+            <li>亚马逊</li>
+            <li>京东</li>
+            <li>新浪</li>
+            <li>搜狐</li>
+          </ul>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><em>不限公司</em> <i class="arrow_g_up"></i></dt>
+        <dd class="rep_select_co">
+          <i class="s_arrow"></i>
+          <strong>推荐公司</strong>
+          <ul>
+            <li>阿里巴巴</li>
+            <li>百度</li>
+            <li>淘宝</li>
+            <li>亚马逊</li>
+            <li>京东</li>
+            <li>新浪</li>
+            <li>搜狐</li>
+            <li>阿里巴巴</li>
+            <li>百度</li>
+            <li>淘宝</li>
+            <li>亚马逊</li>
+            <li>京东</li>
+            <li>新浪</li>
+            <li>搜狐</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="rep_err">
+      <i class="i_warn"></i>
+      <i class="i_close_thin"></i>
+      <div>
+        您所在公司数据样本不足。
+        <p>为您推荐： <a href="#" class="blue">智联招聘</a></p>
+      </div>
+    </div>
+
+    <div class="rem_chart">
+      <h4>我在北京互联网行业的职业坐标</h4>
+      <div class="r_chart_c"></div>
+
+      <div class="r_chart_title">
+        <span>平均工资￥ <b>6800</b></span>
+        <span>最低：￥1222 - 最高：￥23000</span>
+      </div>
+      <div class="r_chart_line">
+        <div class="line">
+          <div class="inner" style="width:80%;">
+            <i style="left:80%;">80%</i>
+          </div>
+        </div>
+        <p class="t-center mt10">你击败了 北京互联网行业 80% 的人</p>
+      </div>
+
+    </div>
+
+    <p class="p10"><input class="btn_green_b" type="button" id="sendReport" value="发送薪酬报告到我的邮箱"/></p>
+  </section>
+
+  <section class="maskui_dialog" id="reportDialog">
+    <div class="dialog_con"><a href="javascript:;" class="dialog_close"></a>
+      <p>确认以下信息，以生成完整薪酬报告：</p>
+      <form action="">
+        <div class="divInput_1 bdefault">
+          <label>姓名</label>
+          <input name="fullName" type="text" value="" placeholder="真实姓名" />
+        </div>
+        <div class="divInput_1 bdefault mt10">
+          <label>学历</label>
+          <p class="selectP">
+            <select name="degree" >
+              <option value="0" selected="selected">请选择</option>
+              <option value="1">1年以下</option>
+              <option value="2">1-2年</option>
+              <option value="3">3-5年</option>
+              <option value="4">6-9年</option>
+              <option value="5">10年以上</option>
+            </select>
+          </p>
+          <em class="js_error error hidden">请职位经验</em>
+        </div>
+        <div class="divInput_1 bdefault mt10">
+          <label>常用邮箱</label>
+          <input name="email" type="text" value="" placeholder="使用邮箱接收报告的请填写" />
+          <em class="js_error error hidden">常用邮箱不能为空</em>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/utils/maskui.js"></script>
+  <script src="../js/remuneration.js"></script>
+</body>
+</html>

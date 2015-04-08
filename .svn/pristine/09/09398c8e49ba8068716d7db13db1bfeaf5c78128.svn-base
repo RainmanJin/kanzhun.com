@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>登录</title>
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/profiles.css" />
+<script src="../js/zepto.js"></script>
+<script src="../js/slide-menu.js"></script>
+<script src="../js/mvalidator.js"></script>
+<script src="../js/login.js"></script>
+</head>	
+<body>
+<div class="kanzhun">
+	<aside class="slide_menu">
+		<span><img src="../images/kanzhun.jpg" width="189" /></span>
+		<a href="">首页</a>
+		<a href="">我要点评<i class="i i_edit_g ml10"></i></a>
+		<a href="">我发布的内容</a>
+		<a href="">职位订阅</a>
+		<a href="">我关注的公司</a>
+		<a href="">我收藏的职位</a>
+		<a href="">修改密码</a>
+		<a href="">意见反馈</a>
+		<a href="">登录/注册</a>
+	</aside>
+	<div id="container" class="ease">
+		<div class="wrapper profile">
+			<div class="content">
+				<header class="page_hd">		
+					<a class="menu" href="javascript:;"><img src="../images/menu.jpg" width="14" /></a>
+					<strong>登录</strong>
+					<a href="register.html" class="fright">注册</a>		
+				</header>
+				
+				<section class="p20">
+					<form action="/" method="post" id="loginForm" class="proflies_f">
+						<div class="divCommonInput bdefault"><input type="text" placeholder="邮箱" name="account" /></div>
+						<p class="err" data-msg="邮箱不能为空！"><i class="i i_err"></i></p>
+						<div class="divCommonInput bdefault mt15"><input type="password" placeholder="密码" name="password" /></div>
+						<p class="err" data-msg="密码不能为空！"><i class="i i_err"></i></p>
+						<p class="mt15"><a href="#" class="fright blue">忘记密码</a><input type="checkbox" name="" id="rembme" />&nbsp;<label for="rembme" class="grey">记住我</label></p>
+						<p class="mt15"><input type="submit" value="登 录" class="btn_submit_1" /></p>
+					</form>
+
+					<p class="grey mt20">使用以下账号直接登录：</p>
+					<p class="mt15"><a class="btn_grey_large" href=""><i class="i i_wb"></i> 微博登录</a></p>
+					<p class="mt15"><a class="btn_grey_large" href=""><i class="i i_rr"></i> 人人登录</a></p>
+					<p class="mt15"><a class="btn_grey_large" href=""><i class="i i_qq"></i> QQ登录</a></p>					
+				</section>
+			</div>
+		</div>
+		<footer class="page_ft">
+			<p>电脑版  |  移动版</p>
+			<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+		</footer>
+	</div>
+</div>
+</body>
+</html>

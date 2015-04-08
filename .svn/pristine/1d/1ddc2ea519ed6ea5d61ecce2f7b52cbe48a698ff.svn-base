@@ -1,0 +1,62 @@
+@import "../../../css/common/var";
+@import "../var";
+@import '../../../css/modules/mini_search';   //搜索
+@import "../../../css/modules/job_searcher";
+
+div {
+  &.declares {
+    margin-top: 0;
+  }
+
+  &.email_wrap {
+    height: 617px;
+    padding-top: 1px;
+    background: #84dbd7 url("@{img}/emailimgs/email_tuiding.jpg") no-repeat center top;
+  }
+
+  &.email_innder {
+    width: 990px;
+    margin: 30px auto 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    padding-bottom: 50px;
+  }
+
+  &.emial_con {
+    width: 496px;
+    margin: 0 auto;
+
+    h2 {
+      padding-top: 45px;
+      padding-bottom: 25px;
+      font-size: 24px;
+      text-align: center;
+      font-weight: normal;
+
+      i {
+        vertical-align: -3px;
+      }
+    }
+    
+    div {
+      padding-left: 105px;
+      margin-top: 30px;
+      background: url("@{img}/emailimgs/xiaoren.jpg") no-repeat 5px top;
+
+      span {
+        display: block;
+        font-size: 20px;
+        color: @grey_33;
+        padding-bottom: 5px;
+        font-weight: 500;
+      }
+
+      a.btn_o_s {
+        height: 40px;
+        padding: 0 50px;
+        font-size: 20px;
+        line-height: 40px;
+      }
+    }
+  }
+}

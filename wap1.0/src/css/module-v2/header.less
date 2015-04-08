@@ -1,0 +1,36 @@
+@import "../common/var";
+@f_img: "../images";
+
+header.f_h {
+	//height: 99.5px;
+	padding: 0 15px 10px 19px;
+	background: url("@{f_img}/field/f_img1.jpg") no-repeat left top;
+	//.background-size(100%);
+
+	div {
+		padding-top: 13px;
+		overflow: hidden;
+
+		a {
+			float: right;
+			width: 25px;
+			height: 25px;
+		}
+	}
+
+	& > h1 {
+		padding-bottom: 10px;
+		font-size: 18px;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	& > p {
+		color: #fff;
+
+		em {
+			color: #70cd99;
+			margin: 0 9px;
+		}
+	}
+}

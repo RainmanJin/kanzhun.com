@@ -1,0 +1,75 @@
+footer.footer_nav {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  height: 45px;
+  border-top: 1px solid #c0c0c0;
+  background-color: #fafafa;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+footer.footer_nav .back {
+  float: left;
+  text-align: center;
+}
+footer.footer_nav .back a {
+  width: 45px;
+  height: 45px;
+  padding-top: 14px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+footer.footer_nav .f_nav_r {
+  margin-left: 45px;
+}
+footer.footer_nav .f_nav_r ul li {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-left: 1px solid #c0c0c0;
+  float: left;
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  position: relative;
+}
+footer.footer_nav .f_nav_r ul li a {
+  display: block;
+}
+footer.footer_nav .f_nav_r ul li .comboBox {
+  display: none;
+  position: fixed;
+  bottom: 55px;
+}
+footer.footer_nav .f_nav_r ul li .comboBox dl {
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+footer.footer_nav .f_nav_r ul li .comboBox dl dd {
+  border-bottom: 1px solid #c0c0c0;
+}
+footer.footer_nav .f_nav_r ul li .comboBox dl dd a {
+  height: 43px;
+  line-height: 43px;
+  padding: 0 10px;
+}
+footer.footer_nav .f_nav_r ul li .comboBox dl dd:last-of-type {
+  border-bottom: 0;
+}
+footer.footer_nav .f_nav_r ul li .comboBox dl dt {
+  line-height: 1;
+}
+footer.footer_nav .f_nav_r ul li .comboBox dl dt i {
+  position: absolute;
+  bottom: -6px;
+}

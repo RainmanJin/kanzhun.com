@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Geek-设置-诱惑</title>
+  <!--[if lte IE 9]>
+  <script src="../js/utils/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+  <link rel="stylesheet" href="../css/ugc.css" />
+</head>
+<body>
+<header class="global">
+  <div class="header">
+    <a href="/"><img src="../images/logo.jpg" alt="Boss直聘" width="111" height="35" class="logo"></a>
+    <p class="name"><em>|</em>【Boss】罗永浩</p>
+    <p class="download"><a href="">立即下载Boss直聘</a></p>
+  </div>
+</header>
+<div class="container clearfix">
+  <section class="ugcl_con">
+    <div class="modifyhead ugc_m"><img src="../images/img_08.jpg" alt="大罗永浩"><span></span></div>
+    <h2 class="white f_20 t-center">独孤九剑</h2>
+    <p class="white t-center">移动产品经理3年，产品总监1年</p>
+    <div class="sidenav">
+      <p class="step">第 <i class="step">1</i> 步</p>
+      <p><a href="">基本信息</a></p>
+      <p class="step">第 <i class="step">2</i> 步</p>
+      <p><a href="">牛人诱惑</a></p>
+      <p class="step">第 <i class="step">3</i> 步</p>
+      <p><a href="" class="current">工作经历</a></p>
+    </div>
+  </section>
+  <section class="ugcr_con ugc_cons">
+    <div class="basicinfo mt30">
+      <form action="" class="def">
+        <ul>
+          <li>
+            <label class="label">公司</label>
+            <input type="text" placeholder="请填写公司简称" class="ifd ifd_f" >
+            <span class="err">1231231</span>
+          </li>
+          <li>
+            <label class="label">细分行业</label>
+            <input type="text" placeholder="请填写细分行业" class="ifd" >
+          </li>
+          <li>
+            <label class="label">职位类型</label>
+            <dl class="select">
+              <dt>
+                <input type="button" name="" value="学历要求" readyonly="readyonly" ><span class="btn"><i></i></span>
+              </dt>
+              <dd>
+                <a href="#">本科</a>
+                <a href="#">大专</a>
+                <a href="#">高中</a>
+                <a href="#">初中</a>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <label class="label">职位名称</label>
+            <input type="text" placeholder="请选择职位名称" class="ifd" >
+          </li>
+          <li>
+            <label class="label">任职年限</label>
+            <input type="text" placeholder="请填写任职年限" class="ifd" >
+          </li>
+          <li>我的信息对该公司不可见</li>
+          <li>
+            <label class="label "></label>
+            <input type="submit"  value="完成" class="green_btn save" >
+          </li>
+        </ul>
+
+      </form>
+    </div>
+  </section>
+</div>
+<footer>
+  <nav>
+    <a href="">关于我们</a><a href="">意见反馈</a><a href="">使用帮助</a><a href="">用户协议</a><a href="" class="micro_message">看准网微信<i></i></a><a href="">看准网微博</a>
+  </nav>
+  <p>Copyright@ 2010 kanzhun.com苏ICP备08022608号2009-2014, kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>简历搜索页面</title>
+	<!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+	<link rel="stylesheet" href="../../css/base.css" />
+	<link rel="stylesheet" href="../../css/dbresume.css" />
+	<script>
+	$(function(){
+		$('div.hello dl').hover(function(){
+			$(this).find('dd').show('2000');
+		},function(){
+			$(this).find('dd').hide();
+		})
+	})
+		
+	</script>
+</head>
+<body>
+	<header class="global">
+		<div class="header">
+			<img class="logo" src="../../images/logo.jpg"/>
+			<span class="title">企业用户专区</span>
+			<div class="user hello">
+				<dl>
+					<dt>你好，y3983298@qq.com&nbsp;<i></i></dt>
+					<dd>
+						<a ka="top-menu1" rel="nofollow" href="">修改密码</a>
+					</dd>
+				</dl>
+				<em>|</em><a ka="head-signout" href="/logout/">退出</a>
+			</div>
+		</div>
+	</header>
+	<section class="co_header clearfix">
+		<a rel="nofollow" href="/gso36459.html" class="co_logo">
+			<img src="http://img.kanzhun.com/images/logo/20140704/96d2f08e5fe2e075d8fcdf2bf7054334.jpg" width="150" title="北汽福田汽车" alt="北汽福田汽车logo">
+			<span></span>
+		</a>
+		<div class="co_info">
+			<h2 id="companyName">北汽福田汽车</h2>
+			<p class="msg">
+				<span class="grade_star_b"> <i style="width:80px;"></i>
+				</span> <strong>3.4</strong>
+				分 <em>|</em>
+				946条信息
+			</p>
+			<p class="params">
+				汽车/摩托车 <em>|</em>
+				www.foton.com.cn/
+				<em>|</em>
+				北京
+				<em>|</em>
+				1000-9999人
+			</p>
+		</div>
+		<nav class="clearfix">
+			<a href="">招聘管理</a>
+			<a href="" class="current">简历库</a>
+		</nav>
+	</section>
+	<section class="resumeContent">
+		<aside class="resumeLeft">
+			<dl class="l_nav mb20">
+				<dt> <i class="base letter"></i>
+					<span href="#">简历管理</span>
+				</dt>
+				<dd class="current">
+					<a href="#">搜索简历</a>
+				</dd>
+				<dd>
+					<a href="#">已查看简历</a>
+				</dd>
+			</dl>
+			<dl class="l_nav mb20">
+				<dd class="t-center">今天还可以查看<strong class="yellow">30</strong>份简历
+				</dd>
+				<dd class="t-center">昨天查看<span class="yellow">25</span>份简历
+				</dd>
+				<dd class="t-center grey_99">每天您最多能查看30份简历
+				</dd>
+			</dl>
+			<dl class="history_search">
+				<dt>历史搜索条件</dt>
+				<dd><a href="">产品经理+北京+互联网</a><a href="">网站编辑+天津+汽车+大专+互联网</a><a href="">产品经理+天津+金融</a></dd>
+			</dl>
+		</aside>
+		<div class="resumeRight">
+			<h3 class="p_tt mt15">搜索简历</h3>	
+			<p class="line"></p>
+			<ul class="job_edit clearfix">
+				<li>
+					<label class="lb_tt">关键词</label>
+					<input type="text" class="ipt" placeholder="请输入关键词">
+				</li>
+				<li>
+					<label class="lb_tt">期望城市</label>
+					<input type="text" class="ipt" placeholder="北京">
+				</li>
+				<li>
+					<label class="lb_tt">所在行业</label>
+					<div class="ipt_wrap">
+						<dl class="select po_select">
+					    <dt><input type="text" name="" placeholder="请选择行业" readonly="readonly" /><div></div><span class="btn"><i></i></span></dt>
+					    <dd>
+					      <a href="javascript:;">职位</a>
+					      <a href="javascript:;">公司</a>
+					      <a href="javascript:;">工资</a>
+					      <a href="javascript:;">面试</a>
+					    </dd>
+					  </dl>
+					</div>
+				</li>
+				<li>
+					<label class="lb_tt">学历</label>
+					<div class="ipt_wrap">
+						<dl class="select e_select">
+					    <dt><input type="text" name="" placeholder="不限" readonly="readonly" /><div></div><span class="btn"><i></i></span></dt>
+					    <dd>
+					      <a href="javascript:;">职位</a>
+					      <a href="javascript:;">公司</a>
+					      <a href="javascript:;">工资</a>
+					      <a href="javascript:;">面试</a>
+					    </dd>
+					  </dl>
+					  <p class="fleft center_line">--</p>
+					  <dl class="select e_select">
+					    <dt><input type="text" name="" placeholder="不限" readonly="readonly" /><div></div><span class="btn"><i></i></span></dt>
+					    <dd>
+					      <a href="javascript:;">职位</a>
+					      <a href="javascript:;">公司</a>
+					      <a href="javascript:;">工资</a>
+					      <a href="javascript:;">面试</a>
+					    </dd>
+					  </dl>
+					</div>
+				</li>		
+				<li>
+					<label class="lb_tt">工作年限</label>
+					<div class="ipt_wrap">
+						<input type="text" class="ipt w_ipt" placeholder="请输入" /><em>--</em><input type="text" class="ipt w_ipt" placeholder="不限" />
+					</div>
+				</li>
+				<li>
+					<label class="lb_tt">年龄</label>
+					<div class="ipt_wrap">
+						<input type="text" class="ipt w_ipt" placeholder="请输入" /><em>--</em><input type="text" class="ipt w_ipt" placeholder="不限" />
+					</div>
+				</li>
+				<li>
+					<input class="r_btn_green" type="submit" value="搜索" style="margin-left: 70px;">
+				</li>																			
+			</ul>
+		</div>
+	</section>
+</body>
+</html>

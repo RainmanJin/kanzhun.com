@@ -1,0 +1,37 @@
+define(['comp/toggler/toggler', 'u/jquery-menu-aim'], function(){
+  $(function(){
+    //左侧行业领域
+    //引用jquery-menu-aim
+    $('ul.industry_field').menuAim({
+      activate: function(row){
+        $(row).addClass('current');
+      },
+      deactivate: function(row){
+        $(row).removeClass('current');
+      },
+      rowSelector: '>li',
+      exitMenu: function(){
+        return true;
+      }
+    });
+
+    //左侧筛选列表的 展开收起
+    var toggler = require('comp/toggler/toggler');
+    var searchLeftOptions = $('#searchLeftOptions');
+    toggler({
+      el: $('div.C-toggler'),
+      on: function(){
+        this.parent().siblings('.s-opts-more').show();
+      },
+      off: function(){
+        this.parent().siblings('.s-opts-more').hide();
+      }
+    });
+
+    //按字母选城市
+    var searchOptsCities = $('ul.search-opts-cities');
+    $('ul.first_letter').on('click', 'li', function(){
+      searchOptsCities.find('li').eq($(this).addClass('current').siblings('li').removeClass('current').end().index()).show().siblings('li').hide();
+    });
+  });
+});

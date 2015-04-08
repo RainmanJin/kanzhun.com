@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BOSS-管理-站台</title>
+  <!--[if lte IE 9]>
+  <script src="../js/utils/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+  <link rel="stylesheet" href="../css/ugc.css" />
+</head>
+<body>
+<header class="global">
+  <div class="header">
+    <a href="/"><img src="../images/logo.jpg" alt="Boss直聘" width="111" height="35" class="logo"></a>
+    <p class="name"><em>|</em>【Boss】罗永浩</p>
+    <p class="download"><a href="">立即下载Boss直聘</a></p>
+  </div>
+</header>
+<div class="container clearfix">
+  <section class="ugcl_con">
+    <div class="modifyhead ugc_m"><img src="../images/img_08.jpg" alt="大罗永浩"><span></span></div>
+    <h2 class="white f_20 t-center">大罗永浩<em class="green">@锤子科技伟业</em></h2>
+    <p class="white t-center">移动事业部大产品运营总监</p>
+    <div class="sidenav">
+      <p><a href="">基本信息</a></p>
+      <p><a href="">公司诱惑</a></p>
+      <p><a href=""  class="current">管理职位（3）</a></p>
+      <p><a href="">站台管理</a></p>
+    </div>
+  </section>
+  <section class="ugcr_con">
+    <div class="basicinfo">
+      <figure class="add_job">
+        <p>
+          <img src="../images/add_job.jpg" alt=""/>准确填写期望工作可以大大提高求职率哦！
+        </p>
+      </figure>
+
+      <dl class="mark_list">
+        <dt>站台中 - 2个</dt>
+        <dd>
+          <div class="mark_list_p">
+            <p><strong>李开复</strong>为<b>罗永浩</b>站台</p>
+            <p class="f_16 mt10">@创新工场  创始人CEO</p>
+            <p class="control"><a href="#">删除</a></p>
+            <img src="../images/img_08.jpg" alt=""/>
+            <span class="mask"></span>
+          </div>
+          <p class="mark_list_m">
+            老罗用人文精神做科技产品，值得互联网各界关注。 <br/>
+            移动产品经理应该抓住这个机会，去与老罗分享这个梦想！
+          </p>
+        </dd>
+        <dd>
+          <div class="mark_list_p">
+            <p><strong>李开复</strong>为<b>罗永浩</b>站台</p>
+            <p class="f_16 mt10">@创新工场  创始人CEO</p>
+            <p class="control"><a href="#">上移</a><a href="#">删除</a></p>
+            <img src="../images/img_08.jpg" alt=""/>
+            <span class="mask"></span>
+          </div>
+          <p class="mark_list_m">
+            老罗用人文精神做科技产品，值得互联网各界关注。 <br/>
+            移动产品经理应该抓住这个机会，去与老罗分享这个梦想！
+          </p>
+        </dd>
+      </dl>
+
+      <dl class="mark_list">
+        <dt>邀请中 - 2个</dt>
+        <dd>
+          <div class="mark_list_p">
+            <p><strong>李开复</strong>为<b>罗永浩</b>站台</p>
+            <p class="f_16 mt10">@创新工场  创始人CEO</p>
+            <p class="control"><a href="#">删除</a></p>
+            <img src="../images/img_08.jpg" alt=""/>
+            <span class="mask"></span>
+          </div>
+          <p class="mark_list_m">
+            老罗用人文精神做科技产品，值得互联网各界关注。 <br/>
+            移动产品经理应该抓住这个机会，去与老罗分享这个梦想！
+          </p>
+        </dd>
+        <dd>
+          <div class="mark_list_p">
+            <p><strong>李开复</strong>为<b>罗永浩</b>站台</p>
+            <p class="f_16 mt10">@创新工场  创始人CEO</p>
+            <p class="control"><a href="#">再次邀请</a><a href="#">删除</a></p>
+            <img src="../images/img_08.jpg" alt=""/>
+            <span class="mask"></span>
+          </div>
+          <p class="mark_list_m">
+            老罗用人文精神做科技产品，值得互联网各界关注。 <br/>
+            移动产品经理应该抓住这个机会，去与老罗分享这个梦想！
+          </p>
+        </dd>
+      </dl>
+    </div>
+  </section>
+</div>
+<footer>
+  <nav>
+    <a href="">关于我们</a><a href="">意见反馈</a><a href="">使用帮助</a><a href="">用户协议</a><a href="" class="micro_message">看准网微信<i></i></a><a href="">看准网微博</a>
+  </nav>
+  <p>Copyright@ 2010 kanzhun.com苏ICP备08022608号2009-2014, kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+</footer>
+</body>
+</html>

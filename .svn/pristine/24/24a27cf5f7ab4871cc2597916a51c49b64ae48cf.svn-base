@@ -1,0 +1,600 @@
+@import "../../../css/common/var";
+@import "../var";
+@import 'piece/common';
+@import "piece/ugc-framework";
+@import "piece/left_co_header";
+@import "../../../components/toggler/toggler";
+@import "../../../css/modules/prompt_box";
+@ugc_icons_v2: url("@{img}/v2/ugc_icons.png");
+.ugc-con-l{
+  background-color: transparent;
+}
+
+//有边带阴影的盒子外形
+.wrap_style {
+  padding: 0 15px;
+  border: 1px solid @grey_dc;
+  background-color: #ffffff;
+  .box-shadow(0 1px 0 #e6e6e6);
+}
+//虚线
+.dashed_line{
+  border-bottom: 1px dashed #e7e7e7;
+  height: 0;
+  overflow: hidden;
+}
+.ugc_h3{
+  font-size: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid @grey_e5;
+  span{
+    font-size: 12px;
+    color: @grey_99;
+    font-weight: normal;
+  }
+}
+dl.ugc_tt{
+  dt{
+    label{
+      em{
+        color: @err_red;
+      }
+    }
+    .rating_star{
+      vertical-align: middle;
+    }
+  }
+  dd.detail_rating{
+    background-color: #fafafa;
+    padding: 20px;
+    position: relative;
+    .rating_rect{
+      vertical-align: middle;
+    }
+    i.tangle_init {
+      position: absolute;
+      top: -7px;
+      left: 160px;
+      margin-left: -7px;
+      border-width: 0 7px 7px 7px;
+      border-style: dashed solid;
+      border-color: transparent transparent #fafafa transparent;
+    }
+    .p_h{
+      border-bottom: 1px solid @grey_e5;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.form_field{
+  label{
+    em{
+      color: @err_red;
+    }
+  }
+}
+//单选的按钮
+a.bt_ffr{
+  width: 65px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  text-align: center;
+  color: @grey_66;
+  font-size: 12px;
+  .i_correct_green{
+    vertical-align: middle;
+  }
+  .i_fork_red{
+    vertical-align: middle;
+  }
+  .i_greenHand_up{
+    vertical-align: middle;
+  }
+  .i_redHand_down{
+    vertical-align: middle;
+  }
+  &.current,&:hover{
+    text-decoration: none;
+    background-color: @green;
+    border-color: @green;
+    color: #fff;
+    &.bg_red{
+      background-color: #e97778;
+      border-color: #e97778;
+    }
+    &.bg_orange{
+      background-color: @orange;
+      border-color: @orange;
+    }
+    .i_correct_green{
+      background-position: -40px 0;
+    }
+    .i_fork_red{
+      background-position: -60px 0;
+    }
+    .i_greenHand_up{
+      background-position: -120px 0;
+    }
+    .i_redHand_down{
+      background-position: -160px 0;
+    }
+    .i_mark_up{
+      background-position: -20px -20px;
+    }
+    .i_mark_flat{
+      background-position: -60px -20px;
+    }
+    .i_mark_down{
+      background-position: -100px -20px;
+    }
+  }
+}
+dl.ff_ta{
+  dt{
+    em{
+      color: @err_red;
+    }
+    .green{
+      color: @green;
+    }
+  }
+  dd{
+    textarea.ta{
+      width: 665px;
+      height: 42px;
+      padding: 5px;
+      display: inline;
+      border-width: 2px 1px 1px 2px;
+      border-style: solid;
+      border-color: #ccc;
+      max-height: 200px;
+    }
+    p.ta_hint{
+      font-size: 12px;
+      color: @grey_99;
+      .green{
+        color: @green;
+      }
+    }
+  }
+}
+dl.ff_more{
+  dt{
+    float: left;
+    em{
+      color: @red;
+    }
+  }
+  dd{
+    font-size: 12px;
+    color: @grey_99;
+    margin-left: 14em;
+    position: relative;
+    aside{
+      position: absolute;
+      width: 50px;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+    }
+    ul.tag{
+      overflow: hidden;
+      margin-right: 60px;
+      //height: 37px;
+      li{
+        float: left;
+        margin-right: 8px;
+        bottom-top: 15px;
+      }
+      &.show-all{
+        height: auto;
+        overflow: visible;
+        margin-bottom: 15px;
+      }
+      &#iv_tag{
+        li{
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    a.a_tag{
+      display: inline-block;
+      padding: 3px 10px;
+      border: 1px solid @grey_cc;
+      color: @grey_66;
+      border-radius: 2px;
+      i.i_close{
+        display: inline-block;
+        width: 9px;
+        height: 8px;
+        background: @ugc_icons_v2 no-repeat -140px -20px;
+      }
+      &.current,&:hover{
+        color: #649615;
+        background-color: #f9fff5;
+        border-color: #d8eeb7;
+        text-decoration: none;
+      }
+    }
+    .tag_ipt{
+      width: 102px;
+      font-size: 12px;
+      padding: 1px 8px;
+      border: 1px solid @grey_cc;
+      border-radius: 2px;
+      color: @grey_66;
+    }
+    .orange{
+      color: @orange;
+    }
+    &.check_radio{
+      a.a_tag {
+        &.current, &:hover {
+          text-decoration: none;
+          background-color: @green;
+          border-color: @green;
+          color: #fff;
+          &.bg_red {
+            background-color: #e97778;
+            border-color: #e97778;
+          }
+          &.bg_orange {
+            background-color: @orange;
+            border-color: @orange;
+          }
+        }
+      }
+    }
+  }
+  &.iv_ffm{
+    dd {
+      margin-left: 6.5em;
+      .tag_ipt{
+        width: 72px;
+      }
+    }
+  }
+}
+span.err,p.err{
+  font-size: 12px;
+  color: @err_red;
+  display: none;
+  i{
+    vertical-align: -1px;
+  }
+}
+
+//左边数字导航
+.container-ugc{
+  overflow: visible;
+}
+section.ugc_wrap{
+  position: relative;
+  //z-index: 1;
+  border-left: 1px dashed #c1c1c0;
+  padding-left: 25px;
+  //margin-top: 35px;
+  margin-left: -25px;
+  div.wrap_style {
+    position: relative;
+    .ugc_h3{
+
+      aside{
+        display: none;
+      }
+    }
+    //收起样式
+    &.retract{
+      background-color: #f6f6f6;
+      >aside.aside_nav{
+        i{
+          background: @ugc_icons_v2 no-repeat 0 -40px;
+        }
+      }
+      .ugc_h3{
+        border-bottom: 0;
+        cursor: pointer;
+        position: relative;
+        >i{
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          background: @ugc_icons_v2 no-repeat -180px 0;
+        }
+        aside{
+          display: block;
+          position: absolute;
+          top: 15px;
+          right: 0;
+        }
+      }
+      .step_content{
+        display: none;
+      }
+    }
+  }
+  i.arrow_down{
+    position: absolute;
+    left: -4px;
+    bottom: 0;
+    display: inline-block;
+    width: 7px;
+    height: 8px;
+    background: @ugc_icons_v2 no-repeat -120px -20px #f6f6f6;
+  }
+  i.arrow_end{
+    position: absolute;
+    left: -3px;
+    bottom: 0;
+    display: none;
+    width: 5px;
+    height: 5px;
+    background: @ugc_icons_v2 no-repeat -160px -20px #f6f6f6;
+  }
+}
+aside.aside_nav{
+  position: absolute;
+  height: 100%;
+  left: -38px;
+  width: 24px;
+  span{
+    position: absolute;
+    top: -1px;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 30px;
+  }
+  i{
+    position: absolute;
+    top: 13px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    background: @ugc_icons_v2 no-repeat -40px -40px;
+    text-align: center;
+  }
+}
+
+
+.ground{
+  label{
+    width: 6em;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    vertical-align: middle;
+    margin-right: 1em;
+    text-align: right;
+    em{
+      color: @err_red;
+    }
+  }
+  .date{
+    label{
+      float: left;
+    }
+    strong{
+      float: left;
+      margin-top: 10px;
+      font-weight: normal;
+    }
+  }
+  .select{
+    float: left;
+    width: 100px;
+    height: 32px;
+    margin-right: 10px;
+    dt{
+      height: 32px;
+      input{
+        height: 32px;
+        line-height: 32px;
+      }
+      span{
+        height: 18px;
+        padding-top: 14px;
+      }
+    }
+  }
+  a.btn_grey_b{
+    position: relative;
+    .i_cornerMark_ok{
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+    }
+    &.result, &.result:hover {
+      border: 1px solid @green;
+      background: #fff url('');
+      cursor: default;
+      .i_cornerMark_ok{
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+//离开时间提示框
+div.prompt_wrap {
+  position: absolute;
+  left: 190px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+
+  div {
+    width: 13em;
+    top: 30px;
+    left: -25px;
+    color: @grey_99;
+  }
+}
+a.impressive{
+  position: absolute;
+  bottom: -20px;
+}
+input.ifd{
+  border-color: #cccccc;
+  border-width: 2px 1px 1px 2px;
+  border-radius: 3px;
+  padding: 9px 12px;
+  float: left;
+  background-color: #fff;
+  //background-color: #fbfbfb;
+  &:hover{
+    background-color: #fff;
+  }
+
+  &.active{
+    background-color: #fff;
+    border-color: @green;
+  }
+}
+.ifd-unit {
+  float: left;
+  margin: 0.7em 0 0 -2em;
+}
+.basicwage{
+  position: relative;
+  span.unit{
+    position: absolute;
+    left: 280px;
+    top: 8px;
+  }
+}
+/* icon开始 */
+.rating_star{
+  display: inline-block;
+  font-size: 0;
+  height: 30px;
+  overflow: hidden;
+  background-image: url("@{img}/rating.png");
+  background-repeat:  no-repeat;
+  a{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+  }
+}
+.rating_s_1{
+  background-position: 0 -30px;
+}
+.rating_s_2{
+  background-position: 0 -60px;
+}
+.rating_s_3{
+  background-position: 0 -91px;
+}
+.rating_s_4{
+  background-position: 0 -121px;
+}
+.rating_s_5{
+  background-position: 0 -152px;
+}
+.rating_rect{
+  display: inline-block;
+  font-size: 0;
+  height: 21px;
+  overflow: hidden;
+  background-image: url("@{img}/rating.png");
+  background-repeat:  no-repeat;
+  background-position: 0 -212px;
+
+  a{
+    width: 20px;
+    height: 21px;
+    float: left;
+    margin-right: 4px;
+  }
+}
+.rating_r_1{
+  background-position: 0 -234px;
+}
+.rating_r_2{
+  background-position: 0 -256px;
+}
+.rating_r_3{
+  background-position: 0 -278px;
+}
+.rating_r_4{
+  background-position: 0 -300px;
+}
+.rating_r_5{
+  background-position: 0 -322px;
+}
+//绿色对勾
+.i_correct_green{
+  display: inline-block;
+  width: 12px;
+  height: 10px;
+  background: @ugc_icons_v2 no-repeat 0 0;
+}
+//红色叉
+.i_fork_red{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: @ugc_icons_v2 no-repeat -20px 0;
+}
+//红底小叹号
+.i_excl{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: @ugc_icons_v2 no-repeat -80px 0;
+}
+//绿色的向上小手
+.i_greenHand_up{
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  background: @ugc_icons_v2 no-repeat -100px 0;
+}
+//红色的向下小手
+.i_redHand_down{
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  background: @ugc_icons_v2 no-repeat -140px 0;
+}
+//斜向上的箭头
+.i_mark_up{
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: @ugc_icons_v2 no-repeat 0 -20px;
+}
+//平的箭头
+.i_mark_flat{
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  background: @ugc_icons_v2 no-repeat -40px -20px;
+}
+//斜向下的箭头
+.i_mark_down{
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: @ugc_icons_v2 no-repeat -80px -20px;
+}
+//button选中时右上的小对勾
+.i_cornerMark_ok{
+  display: inline-block;
+  width: 26px;
+  height: 23px;
+  background: @ugc_icons_v2 no-repeat -80px -40px;
+}
+/* icon结束 */

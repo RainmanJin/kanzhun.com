@@ -1,0 +1,134 @@
+@import "var";
+
+.news-comments{
+  padding: 10px;
+
+  textarea{
+    border: 1px solid #c4c4c7;
+    padding: 5px;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    .box-sizing();
+    height: 4.5em;
+    margin: 5px 0 10px;
+
+    &.current{
+      border: 1px solid @green;
+    }
+  }
+
+  input[type=button]{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: @green;
+    padding: 8px 15px;
+    border: 0;
+    margin-left: 10px;
+  }
+
+  p{
+    color: #999;
+
+    strong{
+      &.ok{
+        color: @green;
+      }
+
+      &.err{
+        color: @red;
+      }
+    }
+    &.tt{
+      font-size: 16px;
+      color: @def;
+    }
+  }
+
+  ul{
+    margin: 10px;
+  }
+
+  li{
+    padding: 15px 0;
+    border-bottom: 1px dotted #cfcfcf;
+
+    >img{
+      width: 33px;
+      float: left;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1px solid #cfcfcf;
+    }
+
+    >div{
+      margin-left: 45px;
+
+      p{
+        color: #999999;
+      }
+
+      .article{
+        color: @def;
+        font-size: 15px;
+        padding: 8px 0;
+      }
+      a{
+        color: #999;
+
+        &.cancel_reply{
+          color: @blue;
+          //margin: 0 10px;
+          float: left;
+          margin: 7px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.loading{
+  text-align: center;
+  display: none;
+
+  img{
+    vertical-align: middle;
+  }
+}
+
+//shine
+@-webkit-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-moz-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-ms-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+.shine{
+  .animation(twinkle .6s ease none);
+}

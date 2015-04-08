@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>UGC照片</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/v2/css/widget.css">
+  <link rel="stylesheet" href="/v2/css/ugc/ugc_view.css">
+  <link rel="stylesheet" href="/v2/css/ugc/ugc_photo.css">
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/utils/webuploader.js?tv=v1.2.1"></script>
+  <script src="/js/require.js" data-main="/v2/js/ugc/ugc_photo.js"></script>
+</head>
+
+<body>
+<% include ../modules/header %>
+
+<div class="container-ugc clearfix">
+  <div class="ugc-con-l">
+    <% include piece/left_co_header.ejs %>
+    <div class="wrap_style clearfix">
+      <h3 class="photo_h3">支持jpg/gif/jpeg格式，单张不超过20M，单次上传最多支持3张</h3>
+      <div class="photo_content">
+        <div class="pc_list">
+          <form id="ugcForm" name="ugcForm" action="/photougc/save" method="post" autocomplete="off">
+            <ul class="clearfix">
+              <li>
+                <div class="photo_show">
+                  <div class="ps_img">
+                    <div class="bg"></div>
+                    <img src="http://img.kanzhun.com/image/p1133.gif">
+                    <a class="bt_close"><i></i></a>
+                  </div>
+                  <textarea name="imgdesc" maxlength="128" class="v" data-unnecessary="1" placeholder="点击输入照片描述..."></textarea>
+                </div>
+                <div class="photo_add t-center filebtn">
+                  <img src="/images/v2/add_photo.jpg">
+                  <p class="p1 mt10">继续添加照片</p>
+                </div>
+                <div class="uploading t-center"><img src="/images/loading.gif" /></div>
+              </li>
+              <li>
+                <div class="photo_show">
+                  <div class="ps_img">
+                    <div class="bg"></div>
+                    <img src="http://img.kanzhun.com/image/p1133.gif">
+                    <a class="bt_close"><i></i></a>
+                  </div>
+                  <textarea name="imgdesc" maxlength="128" class="v" data-unnecessary="1" placeholder="点击输入照片描述..."></textarea>
+                </div>
+                <div class="photo_add t-center filebtn">
+                  <img src="/images/v2/add_photo.jpg">
+                  <p class="p1 mt10">继续添加照片</p>
+                </div>
+                <div class="uploading t-center"><img src="/images/loading.gif" /></div>
+              </li>
+              <li>
+                <div class="photo_show">
+                  <div class="ps_img">
+                    <div class="bg"></div>
+                    <img src="http://img.kanzhun.com/image/p1133.gif">
+                    <a class="bt_close"><i></i></a>
+                  </div>
+                  <textarea name="imgdesc" maxlength="128" class="v" data-unnecessary="1" placeholder="点击输入照片描述..."></textarea>
+                </div>
+                <div class="photo_add t-center filebtn">
+                  <img src="/images/v2/add_photo.jpg">
+                  <p class="p1 mt10">继续添加照片</p>
+                </div>
+                <div class="uploading t-center"><img src="/images/loading.gif" /></div>
+              </li>
+            </ul>
+            <div class="form_set t-center">
+              <input class="btn_o_g" type="submit" value="提交"><a class="links ml10 filebtn" href="javascript:;">继续添加</a>
+            </div>
+          </form>
+        </div>
+        <div class="pc_add none">
+          <p class="t-center">
+            <a class="btn_o_g filebtn" href="javascript:;"><i class="i_addPhoto"></i>选择照片</a>
+          </p>
+          <!--<div id="fileupload" ka="picture1-add"></div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <% include piece/ugc-right.ejs %>
+</div>
+</body>
+</html>

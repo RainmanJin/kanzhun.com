@@ -1,0 +1,12 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "../modules/top-search";
+@import 'piece/search_common';  //搜索页面公共部分
+@import 'piece/search_conditions';  //搜索页面左半部分搜索条件筛选
+@import "../../../css/modules/company/salary_desc";
+
+
+
+.salary-desc{
+  margin-bottom: 15px;
+}

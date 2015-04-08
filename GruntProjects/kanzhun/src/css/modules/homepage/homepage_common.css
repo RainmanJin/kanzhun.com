@@ -1,0 +1,362 @@
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    -ms-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    -ms-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    -ms-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    -ms-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+section.l_con {
+  width: 645px;
+  float: left;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+  border-right: 1px solid #e7e7e7;
+  min-height: 1100px;
+  _height: 1100px;
+}
+section.r_con {
+  width: 264px;
+  padding: 20px;
+  float: right;
+}
+section.banner {
+  width: 100%;
+  min-width: 990px;
+  height: 356px;
+  margin: -45px auto 0;
+  background-color: #282d31;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+section.banner h1 {
+  height: 78px;
+  padding-top: 79px;
+  font-weight: normal;
+  font-size: 40px;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 7px #282d31, -3px -3px 7px #282d31;
+}
+section.banner p {
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 5px #282d31, -3px -3px 5px #282d31;
+}
+header.global {
+  width: 100%;
+  filter: alpha(opacity=92);
+  opacity: 0.92;
+  z-index: 3;
+  *position: relative;
+}
+dl.banner_dl {
+  height: 107px;
+  text-align: center;
+  background: url(../images/np_c_bg_01.png) no-repeat center;
+}
+dl.banner_dl dt {
+  height: 52px;
+  line-height: 52px;
+}
+dl.banner_dl dt a {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 3px 3px 5px #282d31, -3px -3px 5px #282d31;
+}
+dl.banner_dl dt a.current {
+  font-weight: bold;
+  text-decoration: none;
+  color: #7cb228;
+}
+dl.banner_dl dt em {
+  font-size: 16px;
+  margin: 0 12px;
+  color: #f4eded;
+}
+dl.banner_dl .btn_o_l {
+  height: 39px;
+  line-height: 39px;
+  box-shadow: 2px 2px 3px #343434;
+  vertical-align: top;
+  font-size: 17px;
+  *overflow: visible;
+}
+input.c_ipt {
+  width: 350px;
+  height: 15px;
+  *line-height: 15px;
+  padding: 10px;
+  margin-right: 6px;
+  background: #fff;
+  border-width: 2px 1px 1px 2px;
+  border-color: #f4eded #f4eded #f4eded #e6e1e1;
+  box-shadow: 1px 1px 1px #b2ada6;
+  vertical-align: middle;
+}
+input.zhiwei_search {
+  height: 14px;
+  line-height: 14px;
+  width: 131px;
+  padding: 4px 12px 4px 12px;
+  border: 1px solid #CFCFCF;
+  border-width: 2px 1px 1px 2px;
+  vertical-align: top;
+}
+p.searchmore input.btn_grey_s {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 22px;
+}
+h3.tt {
+  margin-top: 30px;
+  border-bottom: 1px solid #e7e7e7;
+}
+h3.tt img {
+  height: 24px;
+  position: relative;
+  bottom: -1px;
+  left: 0;
+}
+h3.r_tt {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+ul.hangye {
+  padding-top: 15px;
+  overflow: hidden;
+  zoom: 1;
+}
+ul.hangye li {
+  float: left;
+  width: 10em;
+  padding-right: 1em;
+  line-height: 1.8em;
+}
+ul.hangye a {
+  color: #343434;
+  white-space: nowrap;
+}
+ul.hangye a:hover {
+  color: #007ead;
+  text-decoration: underline;
+}
+ul.search_hangye {
+  padding-top: 10px;
+  overflow: hidden;
+  zoom: 1;
+}
+ul.search_hangye li {
+  width: 14em;
+  float: left;
+  line-height: 1.8em;
+  padding-right: 10px;
+}
+ul.search_hangye li a {
+  color: #343434;
+}
+ul.search_hangye li a:hover {
+  color: #007ead;
+}
+ul.search_hangye li em {
+  color: #999999;
+}
+ul.jobs_show li {
+  margin-bottom: 10px;
+  zoom: 1;
+}
+ul.jobs_show li span {
+  color: #999999;
+}
+ul.jobs_show a {
+  color: #343434;
+}
+ul.jobs_show a:hover {
+  text-decoration: underline;
+}
+ul.jobs_show img {
+  padding: 2px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  float: left;
+  margin-right: 10px;
+}
+ul.salary_show li {
+  padding-left: 25px;
+  color: #999999;
+  line-height: 2.4em;
+  overflow: hidden;
+  zoom: 1;
+  position: relative;
+}
+ul.salary_show li i {
+  position: absolute;
+  left: 0;
+  top: 0.4em;
+  display: inline-block;
+  vertical-align: -5px;
+  *vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: #d7d7d7;
+  text-align: center;
+  line-height: 18px;
+  overflow: hidden;
+  color: #fff;
+}
+ul.salary_show li i.hot {
+  background-color: #7cb228;
+}
+ul.salary_show li p {
+  float: left;
+  padding-top: 5px;
+  width: 11em;
+  line-height: 1.5em;
+}
+ul.salary_show li p a {
+  color: #343434;
+  white-space: normal;
+}
+ul.salary_show li p a:hover {
+  text-decoration: underline;
+}
+ul.salary_show li em {
+  display: block;
+  float: right;
+}
+ul.companypaids {
+  padding-top: 2px;
+}
+ul.companypaids li {
+  height: 52px;
+  line-height: 52px;
+  border-bottom: 1px solid #E7E7E7;
+  overflow: hidden;
+  zoom: 1;
+}
+ul.companypaids li a.company_logo {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #E7E7E7;
+  padding: 2px;
+  background-color: #fff;
+  overflow: hidden;
+  line-height: 30px;
+  margin-top: 8px;
+  font-size: 0;
+}
+ul.companypaids li a.company_logo img {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.companypaids li a.company_logo span {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+ul.companypaids li p {
+  float: left;
+  padding-left: 15px;
+}
+ul.companypaids li p em {
+  color: #E7E7E7;
+}
+ul.companypaids li div {
+  float: right;
+}
+ul.show {
+  padding: 15px 0 0 0px;
+  width: 665px;
+  margin-left: -20px;
+}
+ul.show li {
+  position: relative;
+  float: left;
+  width: 134px;
+  height: 134px;
+  overflow: hidden;
+  margin-left: 22px;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #E7E7E7;
+  text-align: center;
+}
+ul.show li a.photo_name {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  height: 24px;
+  line-height: 24px;
+  width: 134px;
+  background-color: #333;
+  filter: alpha(opacity=82);
+  opacity: 0.82;
+  color: #fff;
+  -webkit-transition: bottom 0.2s ease;
+  -moz-transition: bottom 0.2s ease;
+  -ms-transition: bottom 0.2s ease;
+  -o-transition: bottom 0.2s ease;
+  transition: bottom 0.2s ease;
+}
+ul.show li.a_hover a.photo_name {
+  bottom: 4px;
+}

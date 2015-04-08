@@ -1,0 +1,37 @@
+@import "../../common/var";
+
+div.f_cmp_tags {
+  a {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px;
+    color: @grey_66;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    .box-shadow(1px 1px 3px #E4E4E4);
+    .transition(ease, all, .2s);
+
+    &:hover, &.current {
+      color: #ffffff;
+      border-color: #67bf58;
+      background-color: #67bf58;
+      text-decoration: none;
+
+      em {
+        color: #ffffff;
+      }
+    }
+  }
+  &.def_green{
+    a{
+      color: #fff;
+      border-color: #67bf58;
+      background-color: #67bf58;
+      &:hover{
+        border-color: #83d275;
+        background-color: #83d275;
+      }
+    }
+  }
+}

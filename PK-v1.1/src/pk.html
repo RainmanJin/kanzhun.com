@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/pk.css"/>
+  <title>DEMO</title>
+  <script src="js/lib/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header class="page_hd">
+    <a ka="back" class="top_back" href="javascript:;"><i></i>返回</a>
+    <strong>看准网·评公司</strong>
+    <a ka="city" href="/city/" class="fright">
+      城市
+    </a>
+  </header>
+  <div class="fav">
+    <a href="#">点此收藏&gt;&gt;</a><img src="images/logo.png" width="42" height="30">好玩就收藏下，以后随时查！
+  </div>
+
+  <div class="pk-choose pk-items">
+    <div class="co fleft" id="pkLeft">
+      <span>
+        <i><img src="images/corner.png" width="31" height="32"></i>
+        <img src="http://img.kanzhun.com/images/logo/20141122/25cbc5c63ab546e79f003f94a8374cb2.jpg">
+      </span>
+      <p>华为</p>
+      <i class="win"></i>
+    </div>
+    <div class="co fright">
+      <span>
+        <img src="images/def.jpg" class="def">
+      </span>
+      <p class="f-666">添加公司</p>
+      <i class="ping"></i>
+    </div>
+    <div class="scaleLine clear clearfix">
+      <ul class="coName clearfix">
+        <li>百度</li>
+        <li>新浪</li>
+      </ul>
+      <a class="i i_l" href="javascript:;"></a>
+      <a class="i i_r" href="javascript:;"></a>
+      <div class="line"><em style="width: 50%"></em></div>
+      <div class="tips">
+        <span class="fleft"><em>19992</em>人支持</span>
+        <span class="fright"><em>19992</em>人支持</span>
+      </div>
+    </div>
+    <a class="bt_share green clear mt10" href="javascript:;">查看更多公司PK</a>
+    <div class="set clear clearfix mt10">
+      <div><a class="bt_share mr5" href="javascript:;">分享为公司拉票</a></div>
+      <div><a class="bt_share green ml5" href="#">查看更多公司PK</a></div>
+    </div>
+  </div>
+  <h2 class="tt clearfix">PK结果<a href="#">查看更多公司PK</a></h2>
+  <dl class="pk_content">
+    <dt>
+    <ul class="tabs clearfix">
+      <li class="current">
+        <a href="javascript:;">
+          <p>第<em>1</em>轮</p>
+          <h3>工资PK</h3>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <p>第<em>2</em>轮</p>
+          <h3>CEO支持率</h3>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <p>第<em>3</em>轮</p>
+          <h3>综合评分</h3>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <p>第<em>4</em>轮</p>
+          <h3>看员工说</h3>
+        </a>
+      </li>
+    </ul>
+    </dt>
+    <dd  class="swiper-container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide salary clearfix">
+          <div>
+            <p><em>平均</em></p>
+            <p><strong><font class="f_12">￥</font>17,400</strong></p>
+            <p class="f_12">来自 2345 样本 <a href="#">查看全部</a></p>
+            <p class="mt20"><em>热门职位</em></p>
+            <div class="list">
+              <p>产品经理<span class="fright">￥17,600</span></p>
+              <p>产品经理<span class="fright">￥17,600</span></p>
+              <p>产品经理<span class="fright">￥17,600</span></p>
+              <p>产品经理<span class="fright">￥17,600</span></p>
+            </div>
+          </div>
+          <div>
+            <p><em>平均</em></p>
+            <p><strong><font class="f_12">￥</font>17,400</strong></p>
+            <p class="f_12">来自 2345 样本 <a href="#">查看全部</a></p>
+            <p class="mt20"><em>热门职位</em></p>
+            <div class="list">
+              <p>产品经理<span class="fright">￥17,600</span></p>
+              <p>产品经理<span class="fright">￥17,600</span></p>
+              <p>产品经理<span class="fright">￥17,600</span></p>
+              <p>产品经理<span class="fright">￥17,600</span></p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide ceo clearfix">
+          <div>
+            <div class="info clearfix">
+              <img src="http://img.kanzhun.com/images/logo/20140707/54155ed62a2b6bd63642c21371dc0ba0.jpg">
+              <p class="name">雷军</p>
+              <p>首席执行官</p>
+            </div>
+            <div class="from">
+              <span class="line"></span>
+              <em><i></i><span>来自 222 样本</span></em>
+            </div>
+            <div class="good">
+              <div class="chart">
+                <span>100%</span>
+                <canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="1.0_0.0"></canvas>
+              </div>
+              <p>63%的员工<br>赞同CEO</p>
+            </div>
+          </div>
+          <div>
+            <div class="info clearfix">
+              <img src="http://img.kanzhun.com/images/logo/20140707/54155ed62a2b6bd63642c21371dc0ba0.jpg">
+              <p class="name">雷军</p>
+              <p>首席执行官</p>
+            </div>
+            <div class="from">
+              <span class="line"></span>
+              <em><i></i><span>来自 222 样本</span></em>
+            </div>
+            <div class="good">
+              <div class="chart">
+                <span>100%</span>
+                <canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="1.0_0.0"></canvas>
+              </div>
+              <p>63%的员工<br>赞同CEO</p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide composite clearfix">
+          <div>
+            <div class="grade">
+              <p class="p1">综合评分: <strong>4.0</strong> </p>
+              <em class="i">
+                <span class="i" style="width: 80%"></span>
+              </em>
+              <p>来自 222 样本</p>
+            </div>
+            <div class="list clearfix">
+              <font class="l">职业成长</font>
+              <em>
+                <span style="width:30%;"></span>
+                <i class="i1">满意</i>
+                <i class="i2">不满意</i>
+              </em><font class="r">3.82</font>
+            </div>
+            <div class="list clearfix">
+              <font class="l">个人技能</font>
+              <em>
+                <span style="width:30%;"></span>
+                <i class="i1">满意</i>
+                <i class="i2">不满意</i>
+              </em><font class="r">3.82</font>
+            </div>
+            <div class="list clearfix">
+              <font class="l">公司发展</font>
+              <em>
+                <span style="width:30%;"></span>
+                <i class="i1">满意</i>
+                <i class="i2">不满意</i>
+              </em><font class="r">3.82</font>
+            </div>
+            <div class="list clearfix">
+              <font class="l">环境氛围</font>
+              <em>
+                <span style="width:30%;"></span>
+                <i class="i1">满意</i>
+                <i class="i2">不满意</i>
+              </em><font class="r">3.82</font>
+            </div>
+          </div>
+          <div>
+            <div class="grade">
+              <p class="p1">综合评分: <strong>4.0</strong> </p>
+              <em class="i">
+                <span class="i" style="width: 80%"></span>
+              </em>
+              <p>来自 222 样本</p>
+            </div>
+            <div class="list clearfix">
+              <font class="l">职业成长</font>
+              <em>
+                <span style="width:30%;"></span>
+                <i class="i1">满意</i>
+                <i class="i2">不满意</i>
+              </em><font class="r">3.82</font>
+            </div>
+            <div class="list clearfix">
+              <font class="l">个人技能</font>
+              <em>
+                <span style="width:30%;"></span>
+                <i class="i1">满意</i>
+                <i class="i2">不满意</i>
+              </em><font class="r">3.82</font>
+            </div>
+            <div class="list clearfix">
+              <font class="l">公司发展</font>
+              <em>
+                <span style="width:30%;"></span>
+                <i class="i1">满意</i>
+                <i class="i2">不满意</i>
+              </em><font class="r">3.82</font>
+            </div>
+            <div class="list clearfix">
+              <font class="l">环境氛围</font>
+              <em>
+                <span style="width:30%;"></span>
+                <i class="i1">满意</i>
+                <i class="i2">不满意</i>
+              </em><font class="r">3.82</font>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide review clearfix">
+          <div>
+            <i class="win"></i>
+            <div class="tagList">
+              <span class="current">全部( 212 )</span>
+              <span>加班多多( 212 )</span>
+            </div>
+            <div class="textList">
+              <div class="tt">
+                <p>产品经理</p>
+                2014-11-08
+              </div>
+              <div class="text">
+                <strong>优点：</strong>
+                <p>薪酬比较靠谱，但是团队能力要加强。</p>
+                <strong>缺点：</strong>
+                <p>工具性产品，应该过渡到更具粘性的产品。</p>
+              </div>
+            </div>
+            <a href="http://m.kanzhun.com/gsr48007.html" class="btn-orange">查看全部点评</a>
+          </div>
+          <div>
+            <div class="tagList">
+              <span class="current">全部( 212 )</span>
+              <span>加班多多( 212 )</span>
+            </div>
+            <div class="textList">
+              <div class="tt">
+                <p>产品经理</p>
+                2014-11-08
+              </div>
+              <div class="text">
+                <strong>优点：</strong>
+                <p>薪酬比较靠谱，但是团队能力要加强。</p>
+                <strong>缺点：</strong>
+                <p>工具性产品，应该过渡到更具粘性的产品。</p>
+              </div>
+            </div>
+            <a href="http://m.kanzhun.com/gsr48007.html" class="btn-orange">查看全部点评</a>
+          </div>
+        </li >
+      </ul>
+    </dd>
+  </dl>
+
+  <h2 class="tt clearfix">网友热议</h2>
+  <ul class="comment">
+    <li>
+      <div class="comment_l">
+        <img src="images/c-portrait-def.png">
+        <p class="floor">1楼</p>
+      </div>
+      <div class="comment_r">
+        <a href="#">回复</a>
+        <p>看准用户<span class="fright"><i class="hand"></i> 10</span></p>
+        <p>2014-09-11  17:30</p>
+        <div>【我支持了百度】看准网友看准网友看准网友看准网友</div>
+      </div>
+    </li>
+    <li>
+      <div class="comment_l">
+        <img src="images/c-portrait-def.png">
+        <p class="floor">1楼</p>
+      </div>
+      <div class="comment_r">
+        <a href="#">回复</a>
+        <p>看准用户<span class="fright"><i class="hand"></i> 10</span></p>
+        <p>2014-09-11  17:30</p>
+        <div>【我支持了百度】看准网友看准网友看准网友看准网友</div>
+      </div>
+    </li>
+  </ul>
+  <a href="javascript:;" class="btn_more more_details mt10" data-page="2">更多</a>
+  <p class="mt10 mb10"><img src="images/kz.jpg" width="100%"></p>
+  <p style="height: 56px"></p>
+  <div class="commentTool">
+    <p>
+      <input type="text" placeholder="我来说两句...">
+    </p>
+    <a class="bt_comment" href="javascript:;">发表</a>
+  </div>
+  <div class="slide-mask none"></div>
+</div>
+</body>
+<script src="js/utils/idangerous.swiper.js"></script>
+<script>
+  $(function(){
+    var mySwiper = new Swiper('.swiper-container', {
+      //pagination: '.pagination',
+      //loop: true,
+      //autoplay: 5000,
+      //paginationClickable: true,
+      calculateHeight: true,
+      //autoplayDisableOnInteraction: false,//手动滑动后继续自动滑动
+      onSlideChangeEnd: function (swipe) {
+        var _index=swipe.activeLoopIndex;
+        $('.pk_content dt li.current').removeClass('current');
+        $('.pk_content dt li:eq('+_index+')').addClass('current');
+      }
+    });
+    $(".pk_content .tabs li").on('touchstart mousedown',function(e){
+      e.preventDefault();
+      $('.pk_content dt li.current').removeClass('current');
+      $(this).addClass('current');
+      mySwiper.swipeTo( $(this).index() );
+    });
+  });
+
+  function initScaleLine() {
+    var scaleLineTop = $('.scaleLine').offset().top;
+    $(document).on('scroll', function () {
+      var sT = $(document).scrollTop();
+      if (sT > scaleLineTop) {
+        $('.scaleLine').addClass('fixTop');
+      } else {
+        $('.scaleLine').removeClass('fixTop');
+      }
+    });
+  }
+  initScaleLine();
+</script>
+</html>
+
+

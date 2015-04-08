@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Journey to the west</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="container">
+  <form action="xx.json" method="post" id="recursionForm">
+    <img src="images/top.jpg" width="100%" class="block">
+
+    <dl class="step">
+      <dt>第一步：填写一个吸引人的标题，该标题会显示在朋友圈，引TA上钩。</dt>
+      <dd>
+        <input type="text" name="title" placeholder="填写测试名字…" maxlength="20">
+      </dd>
+    </dl>
+
+    <dl class="step">
+      <dt>第二步：填写烦死TA又退不出来的弹出框文字（每一条对应一次弹出）。</dt>
+      <dd>
+        <input type="text" name="words" placeholder="弹出文字1" maxlength="20">
+        <p class="line"></p>
+        <input type="text" name="words" placeholder="弹出文字2" maxlength="20">
+        <p class="line"></p>
+        <input type="text" name="words" placeholder="弹出文字3" maxlength="20">
+        <p class="line"></p>
+        <button type="button" id="addText">点击增加更多字段</button>
+      </dd>
+    </dl>
+
+    <dl class="step">
+      <dt>第三步：选择重复弹出次数（以上弹出文字会重复弹出所选次数）。</dt>
+      <dd>
+        <div class="ml10 mr10">
+          <select name="loop" >
+            <option value="1">重复1次</option>
+            <option value="2">重复2次</option>
+          </select>
+        </div>
+      </dd>
+    </dl>
+
+    <p class="mt10 mb10">
+      <input type="submit" value="立即去整TA" class="btn green-btn">
+    </p>
+  </form>
+</div>
+
+<script src="js/lib/zepto.js"></script>
+<script src="js/site/form.js?v=1.1"></script>
+</body>
+</html>

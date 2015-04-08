@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>站台流程</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/weixin.css" />
+</head>	
+<body>
+<header class="header">
+  <a class="fleft">
+    <i class="i i_left"></i> 返回
+  </a>
+  <strong>填写站台语</strong>
+</header>
+<section class="process_content" style="margin-top:20px;">
+  <ul>
+    <li><label>被邀请人</label>  <input type="text" value="李开复"></li>
+    <li><label>公司</label>  <input type="text"></li>
+    <li><label>Title</label>  <input type="text"></li>
+  </ul>
+</section>
+<h2 class="mt5 ml10 grey">以上信息由罗永浩填写，您可以修改</h2>
+<h2 class="mt20 ml10 grey">站台语（140字）填写：</h2>
+<section class="process_content">
+  <textarea placeholder="填写你金灿灿的站台语...李鹏翘首期待中..." rows=6 maxlength=140></textarea>
+</section>
+<section class="process_content">
+    <a>
+      <p class="prompt">站台提示语</p>
+      <i class="i i_right"></i>
+    </a>
+</section>
+<div class="mt10 ml10 mr10"><a class="btn_green">完成</a></div>
+</body>
+</html>
+
+

@@ -1,0 +1,259 @@
+@import "common/var";
+@icons: url(../images/icons.png) no-repeat;
+
+.none {display: none;}
+//列表的图表1,2,3,4
+.i_base() {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	overflow: hidden;
+	line-height: 15px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	margin-right: 5px;
+	vertical-align: -2px;
+}
+
+i {
+	&.grey {
+		.i_base();
+		background-color: #cccccc;
+	}
+	
+	&.l_red {
+		.i_base();
+		background-color: #e85253;
+	}
+
+	&.l_blue {
+		.i_base();
+		background-color: #4a9ee2;
+	}
+
+	&.l_green {
+		.i_base();
+		background-color: #67bf58;
+	}
+}
+
+//buttons
+.btn_grey{
+	.box-shadow(0 1px 2px #ccc);
+	display: block;
+	text-align: center;
+	border: 1px solid #a8a8a8;
+	background-color: #e7e7e7;
+	background: linear-gradient(0deg, #e7e7e7 0%, #f9f9f9 100%);
+	font-size: 1em;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 0 10px;
+}
+
+div {
+	//大标题
+	&.u_p_tt {
+		padding: 15px 10px;
+		border-bottom: 1px solid #f1f1f1;
+		background-color: #fff;
+		overflow: hidden;
+
+		h1 {
+			float: left;
+			padding-right: 10px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		em {
+			float: left;
+			padding-top: 4px;
+			font-size: 12px;
+			color: @grey;
+			line-height: 1;
+		}
+	}
+
+	//每块的样式
+	&.wrap_style {
+		background-color: #fff;
+		padding-right: 10px;
+		padding-left: 10px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+	&.p_info_salary {
+		span {
+			display: block;
+			color: #ea5153;
+			font-size: 16px;
+		}
+
+		p {
+			color: @grey;
+		}
+	}
+}
+
+ul {
+	//导航
+	&.inner_nav {
+		background-color: #fff;
+		overflow: hidden;
+
+		li {
+			width: 25%;
+			float: left;
+
+			a {
+				display: block;
+				height: 28px;
+				padding-top: 12px;
+				color: @grey_66;
+				text-align: center;
+
+				span {
+					display: block;
+					height: 14px;
+					line-height: 14px;
+					border-right: 1px solid #d9d8d8;
+				}
+
+				&.current {
+					color: @green;
+				}
+			}
+
+			&:last-child {
+				span {
+					border-right: none;
+				}
+			}
+		}
+	}
+
+	//所属门类列表
+	&.p_list {
+		padding-bottom: 5px;
+
+		li {
+			padding-bottom: 5px;
+			a {
+				color: @grey_66;
+			}
+		}
+	}
+
+	//最好就业城市
+	&.p_best_jobcity {
+		li {
+			width: 100%;
+			padding-bottom: 10px;
+			overflow: hidden;
+
+			& > p {
+				width: 23%;
+				float: left;
+
+				i {
+					float: left;
+				}
+
+				span {
+					margin-left: 19px;
+					display: block;
+					padding-right: 2px;
+					line-height: 1em;
+
+					em {
+						display: block;
+						.ellipsis(ellipsis);
+					}
+				}
+			}
+
+			& > div.bar {
+				width: 45%;
+				float: left;
+				height: 10px;
+				padding-top: 2px;
+
+				div {
+					height: 10px;
+					background-color: @green;
+				}
+			}
+
+			/* & > div {
+				float: left;
+				width: 120px;
+				height: 10px;
+				background-color: #c00;
+			
+				span {
+					float: left;
+					height: 10px;
+					background-color: @green;
+				}
+			} */
+
+			& > div.position_count {
+				width: 32%;
+				float: left;
+
+				p {
+					padding-left: 2px;
+					line-height: 1em;
+
+					em {
+						display: block;
+						text-align: right;
+						.ellipsis(ellipsis);
+					}
+				}
+			}
+		}
+	}
+}
+
+//带绿色下划线的标题
+h2.tt{
+	color: @grey;
+	border-bottom: 2px solid #d9d7d7;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0 10px 10px 10px;
+	height: 24px;
+
+	span{
+		border-bottom: 2px solid @green;
+		padding-right: 5px;
+		color: @green;
+	}
+
+	em{
+		color: @grey;
+	}
+}
+
+i.see_more {
+	display: inline-block;
+	overflow: hidden;
+	line-height: 0;
+	width: 16px;
+	height: 16px;
+	background: url(../../images/professional/seemore.png) no-repeat 0 0;
+	.background-size(16px, 16px);
+	vertical-align: -3px;
+	margin-right: 5px;
+}
+
+
+
+
+
+

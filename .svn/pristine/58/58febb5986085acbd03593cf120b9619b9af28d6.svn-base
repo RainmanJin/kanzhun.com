@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>看准雇主品牌沙龙邀请函</title>
+    <link rel="stylesheet" href="css/end.css"/>
+</head>
+<body>
+    <section id="content">
+        <div id="link">
+            <div class="a_wrap">
+                <a class="img" href="#">
+                    <img src="images/kanzhun1.png"/>
+                </a>
+                <a class="img" href="#">
+                    <img src="images/boss.png" />
+                </a>
+                <a class="img" href="#">
+                    <img src="images/snail.png"/>
+                </a>
+            </div>
+        </div>
+        <div id="cooperation">
+            合作咨询：13466679084(wilson)
+        </div>
+        <div id="url">
+            <img src="images/url.png" alt="www.kanzhun.com"/>
+        </div>
+    </section>
+</body>
+</html>

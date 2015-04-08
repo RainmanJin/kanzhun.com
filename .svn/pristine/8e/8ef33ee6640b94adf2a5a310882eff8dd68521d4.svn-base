@@ -1,0 +1,91 @@
+@import "common/var";
+@import "module/company_header";
+@import "module/manageleft";
+@import "module/maskui-v2";
+
+h3.p_tt {
+  position: relative;
+  margin-bottom: 30px;
+    padding-left: 8px;
+    padding-left: 8px;
+    border-left: 4px solid @green;
+    height: 1em;
+    line-height: 1em;
+    font-size: 16px;
+    zoom: 1;
+}
+
+ul.job_edit{
+  li{
+    label{
+      display: inline-block;
+      margin-right: 10px;
+      width: 5em;
+      text-align: right;
+      float: left;
+      height: 35px;
+      line-height: 35px;
+      em{
+        color: @red;
+      }
+    }
+
+    &.sex_select {
+      height: 35px;
+      line-height: 35px;
+    }
+
+    &.code {
+      input[type=text] {
+        width: 170px;
+        margin-right: 8px;
+      }
+
+      input[type=button] {
+        padding: 0 15px;
+      }
+    }
+
+    &.resume_email {
+      span {
+        display: inline-block;
+        height: 35px;
+        line-height: 35px;
+
+        &.green {
+          color: #7cb228;
+        }
+      }
+
+      a.fright {
+        padding-right: 321px;
+        height: 35px;
+        line-height: 35px;
+      }
+    }
+
+    &.sbm{
+      padding-left: 80px;
+
+      span {
+        padding: 0 45px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 18px;
+
+        input {
+          height: 42px;
+          line-height: 42px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+ul.explain {
+  li {
+    padding-bottom: 5px;
+  }
+}
+

@@ -1,0 +1,7 @@
+.report_part dl dt {
+  float: left;
+  width: 10px;
+}
+.report_part dl dd {
+  margin: 15px;
+}

@@ -1,0 +1,29 @@
+<!--该公司最新员工点评-->
+<div class="latest_staff_review wrap_style mb15">
+    <h2 class="title">该公司最新员工点评</h2>
+    <ul class="co_r_reviewlist">
+        <li>
+                    <span class="crr_l">
+                    <img src="/images/xiaoren_30_30.png">
+                    </span>
+            <div class="crr_r">
+                <i class="tangle_init"></i>
+                <a href="" title="在新页面打开" target="_blank">
+                    <p>人都好土 电梯不好做...<span>查看详情</span></p>
+                </a>
+            </div>
+        </li>
+        <li>
+                    <span class="crr_l">
+                    <img src="/images/xiaoren_30_30.png" data-bd-imgshare-binded="1">
+                    </span>
+            <div class="crr_r">
+                <i class="tangle_init"></i>
+                <a href="" title="在新页面打开" target="_blank">
+                    <p>不好说，可能是待久了后不想动了...<span>查看详情</span></p>
+                </a>
+            </div>
+        </li>
+    </ul>
+    <a ka="comjob-blockr5-all" class="btn_o_l mb20" title="当当网" href="/gsr20124.html#review_filter" target="_blank">看看更多人如何吐槽该公司 &gt;</a>
+</div>

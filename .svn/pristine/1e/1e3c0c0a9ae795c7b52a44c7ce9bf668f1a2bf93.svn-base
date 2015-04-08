@@ -1,0 +1,169 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "../modules/top-search";
+@import "../modules/use_comment_share";
+@import "../company/piece/co-right-average";
+@import "../modules/right-co-alias";
+
+//有边带阴影的盒子外形
+.wrap_style {
+  padding: 15px;
+  margin: 15px auto 0;
+  border: 1px solid @grey_dc;
+  background-color: #ffffff;
+  .box-shadow(0 1px 0 #e6e6e6);
+}
+
+section {
+  &.jd-con-l {
+    float: left;
+    width: 711px;
+  }
+
+  &.jd-con-r {
+    float: right;
+    width: 264px;
+  }
+}
+
+
+.jd-tt{
+  width: 908px;
+  margin: 15px auto 0;
+  padding: 15px 40px;
+  position: relative;
+
+  h1{
+    font-weight: normal;
+    font-size: 30px;
+  }
+
+  >p{
+    em{
+      color: #ccc;
+      margin: 0 8px;
+    }
+
+    span.red{
+      font-size: 22px;
+    }
+  }
+
+  .jd-apply{
+    position: absolute;
+    top: 55px;
+    right: 40px;
+  }
+}
+
+.jd-apply{
+  width: 200px;
+  a{
+    display: block;
+    padding: 14px 0;
+    line-height: 1;
+    border-radius: 5px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    background-color: #fb7200;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  p{
+    color: #333;
+    text-align: center;
+    line-height: 2em;
+  }
+}
+
+.jd-container{
+  width: 990px;
+  margin: 0 auto 15px;
+}
+
+.job-desc{
+  padding: 15px 40px;
+  line-height: 2em;
+
+  .job-desc-tt{
+    font-size: 18px;
+    border-left: 7px solid @green;
+    padding-left: 10px;
+    line-height: 1;
+    margin: 20px 0;
+  }
+}
+
+.job-apply-bot{
+  margin-top: 25px;
+  padding: 25px 0;
+  border-top: 1px dashed #cccccc;
+  position: relative;
+
+  .c_collection{
+    position: absolute;
+    top: 45px;
+    right: 40px;
+  }
+}
+
+dl.jd-list{
+  dt{
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e7e7e7;
+    color: #000;
+  }
+  
+  dd{
+    padding: 15px 0;
+    overflow: hidden;
+    line-height: 1.8em;
+    a{
+      width: 50%;
+      float: left;
+      color: @def;
+      white-space: nowrap;
+      overflow: hidden;
+
+      em{
+        color: @red;
+      }
+    }
+  }
+}
+
+dl.jd-list-3{
+  dd a{
+    width: 33.33%;
+  }
+}
+
+.jd-list-more{
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+  margin-top: -1px;
+  
+  a{
+    color: @def;
+  }
+}
+
+dl.jd-list .jd-right-hot{
+  a{
+    width: auto;
+  }
+
+  p{
+    color: #999;
+  }
+
+  em{
+    float: right;
+    color: #999;
+  }
+}

@@ -1,0 +1,14 @@
+1、活动订阅
+请求：/activity/blacklist/sub.json?email=邮箱
+输入：email 订阅邮箱
+输出：
+{
+"resmsg": "请求成功",
+"rescode": 1
+}
+
+{
+"resmsg": "请求失败",
+"rescode": 0
+}
+

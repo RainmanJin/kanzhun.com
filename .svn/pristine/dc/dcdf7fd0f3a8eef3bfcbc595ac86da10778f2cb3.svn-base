@@ -1,0 +1,65 @@
+@import "../common/var";
+@import "../module/reset";
+@import "../common/common";
+@import "../module/wx";
+
+body{
+  background: #4c92c7;
+}
+
+.wrapper{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url("../../images/download/bg.jpg") no-repeat;
+  .background-size(100%);
+
+  .block{
+    display: block;
+    margin: 5% auto;
+    height: 60%;
+    max-width: 100%;
+  }
+}
+
+.phone{
+<<<<<<< .mine
+  bottom: 0;
+  height: 50%;
+  margin: 0 auto;
+  text-align: center;
+=======
+  width: 45%;
+  max-width: 343px;
+>>>>>>> .r12759
+  position: absolute;
+<<<<<<< .mine
+  left: 0;
+  width: 100%;
+
+  img{
+    height: 100%;
+  }
+=======
+  bottom: 0;
+  left: 27.5%;
+>>>>>>> .r12759
+}
+
+.download{
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  width: 48%;
+  background-color: #65afca;
+  border: 1px solid #ffffff;
+  display: block;
+  margin: 20px auto;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+}
+
+.tt{
+  height: 40%;
+}

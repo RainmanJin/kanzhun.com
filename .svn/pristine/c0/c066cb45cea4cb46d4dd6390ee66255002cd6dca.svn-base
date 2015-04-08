@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>关注的公司</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/profile.css" />
+<link rel="stylesheet" href="../css/resume.css" />
+<script src="../js/require.js" data-main="../js/site/usercenter/resume.js"></script>
+</head>
+
+<body>
+    <header class="global">
+        <div class="header">
+            <a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+            <nav>
+                <a href="#">招聘</a>
+                <a href="#" class="current">公司</a>
+                <a href="#">工资</a>
+                <a href="#">面试</a>
+                <a href="#" class="mycomment">我要点评</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container profiles clearfix">
+        <p><strong class="f_16">会员中心</strong> &gt; 我的看准</p>
+        <p class="line"></p>
+        <aside class="profiles_nav">
+            <figure>
+                <div><img src="../images/portrait.jpg" /><span></span></div>
+                <p class="t-center"><strong>Lionizing</strong></p>
+                <p class="auth"><i class="phone_auth"></i><span class="grey_99">手机已认证</span> &nbsp;&nbsp;&nbsp;&nbsp;<i class="mail"></i><a href="#">邮箱认证</a></p>
+            </figure>
+
+            <nav>
+                <p class="current"><a href="#">我的看准</a></p>
+                <p><a href="#">职位搜索器</a></p>
+                <p><a href="#">收藏的职位</a></p>
+                <p><a href="#">关注的公司</a></p>
+                <p><a href="#">发布的内容</a></p>
+                <p><a href="#">账号设置</a></p>
+                <p><a href="#">个人信息</a></p>
+            </nav>
+        </aside>
+
+        <section class="profiles_con">
+            <p><span class="grey_99 fright">最后更新日期：2014-04-12</span> <strong class="f_16">我的简历</strong></p>
+            <div class="rsm_progress">
+                <div class="doughnua_chart">
+                    <span>97%</span>
+                    <canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.97_0.030000000000000027"></canvas>
+                </div>
+                <p class="grey_99">
+                    准确填写期望工作可以大大提高求职率哦! <br> <a href="#" class="btn_o_l">立即去完善</a>
+                </p>
+            </div>
+
+            <h3 class="p_tt">基本资料</h3>
+            <p class="line_d"></p>
+
+            <!-- 没有信息状态  begin -->
+            <div class="rsm_ready none">
+                <i></i><p>填写您的个人信息以便企业可以联系到您。 <br> <span class="red">(必填项)</span></p>
+            </div>
+            <!-- 没有信息状态  end -->
+
+            <!-- 展示状态 begin -->
+            <div class="rsm_completed def_model none">
+                <a href="javascript:;" class="rsm_edit rsm_edit_p"></a>
+                <p>刘备 <em>|</em> 男 <em>|</em> 本科 <em>|</em> 3年工作经验 <em>|</em> 1988.09.12</p>
+                <p>13812345678 <em>|</em> winteriscoming@techwolf.cn</p>
+                <p>我目前在职， 正考虑换个新环境</p>
+                <p>&nbsp;</p>
+
+                <div class="rsm_portrait"><img src="../images/portrait.jpg" alt=""></div>
+            </div>
+            <!-- 展示状态 end -->
+
+            <!-- 编辑状态 begin  -->
+            <form action="">
+            <fieldset class="rsm_editing">
+                <p class="sys_err">这里填写服务器返回的错误信息！</p>
+                <ul>
+                    <li>
+                        <label class="def"><em>*</em> 真实姓名</label>
+                        <input type="text" class="ifd" />
+                        <p class="err" data-msg="请输入真实姓名！"></p>
+                    </li>
+                    <li>
+                        <label class="def"><em>*</em> 性别</label>
+                        <p class="space lh">
+                            <input type="radio" name="sex" id="male" class="mr10" /><label for="male">男</label>
+                            <input type="radio" name="sex" id="female" class="ml15 mr10"  /><label for="female">女</label>
+                        </p>
+                    </li>
+                    <li>
+                        <label class="def"><em>*</em> 工作年限</label>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                        <p class="err" data-msg="请输入真实姓名！"></p>
+                    </li>
+
+                    <li>
+                        <label class="def"><em>*</em> 最高学历</label>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                        <p class="err" data-msg="请输入真实姓名！"></p>
+
+                        <div class="space ml20">
+                            <label class="def"><em>*</em> 手机号码</label>
+                            <input type="text" class="ifd" />
+                            <p class="err" data-msg="请输入真实姓名！"></p>
+                        </div>
+                        
+                    </li>
+
+                    <li>
+                        <label class="def"><em>*</em> 目前状态</label>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+
+                        <div class="space ml20">
+                            <label class="def"><em>*</em> 邮箱地址</label>
+                            <input type="text" class="ifd" />
+                        </div>
+                    </li>
+
+                    <li class="date">
+                        <label class="def"><em>*</em> 出生日期</label>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <label class="def"></label>
+                        <input type="submit" value="保存" class="btn_grey_b" />  <input type="reset" value="取消" class="cancel" />
+                    </li>
+                </ul>
+                <div class="rsm_portrait"><img src="../images/portrait.jpg" alt=""><p></p><span>更换头像</span></div>     
+            </fieldset>
+            </form>
+            <!-- 编辑状态 end -->
+
+
+            <h3 class="p_tt">期望工作</h3>
+            <p class="line_d"></p>
+
+            <div class="rsm_ready none">
+                <i></i><p>填写准确的期望工作能大大提高求职成功率。 <br> <span class="red">(必填项)</span></p>
+            </div>
+            
+            <div class="rsm_completed none">
+                <a href="javascript:;" class="rsm_edit rsm_edit_p"></a>
+                <p>北京 <em>|</em> 全职 <em>|</em> 5k-10k</p>
+                <p>互联网/电子商务 <em>|</em> 产品经理</p>
+            </div>
+
+            <form action="">
+                <fieldset class="rsm_editing">
+                    <ul>
+                        <li>
+                            <label class="def"><em>*</em> 期望城市</label>
+                            <input type="text" class="ifd" />
+
+                            <div class="space ml20">
+                                <label class="def"><em>*</em> 工作性质</label>
+                                    <p class="lh">
+                                    <input type="radio" name="w" id="full" class="mr10" /><label for="full">全职</label>
+                                    <input type="radio" name="w" id="part" class="ml15 mr10"  /><label for="part">兼职</label>
+                                    <input type="radio" name="w" id="internships" class="ml15 mr10"  /><label for="internships">实习</label>
+                                    </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <label class="def"><em>*</em> 期望职位</label>
+                            <input type="text" class="ifd" placeholder="如：产品经理" />
+
+                            <div class="space ml20">
+                                <label class="def"><em>*</em> 期望月薪</label>
+                                <dl class="select select_s">
+                                    <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                                    <dd>
+                                        <a href="#">全部城市(235条)</a>
+                                        <a href="#">北京（129条）</a>
+                                        <a href="#">上海（85条）</a> 
+                                        <a href="#">天津（111条）</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="def"></label>
+                            <input type="submit" value="保存" class="btn_grey_b" />  <a href="#" class="ml20">取消</a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+
+
+            <h3 class="p_tt"><a href="javascript:;" class="rsm_add"><i></i>添加工作经历</a>工作经历</h3>
+            <p class="line_d"></p>
+            <div class="rsm_ready none">
+                <i></i><p>工作经历最能体现自己的工作能力。 <br> <span class="red">(必填项)</span></p>
+            </div>
+            
+            <div class="rsm_completed">
+                <dl class="def_model">
+                    <dt class="grey_99">
+                        <span class="rsm_tt"><a href="javascript:;" class="rsm_edit"></a><a href="javascript:;" class="rsm_del"></a></span>
+                        2012/10 <em>--</em> 至今
+                    </dt>
+                    <dd>
+                        <p>北京天宇朗通通信设备有限公司 <em>|</em> 电子商务部 <em>|</em> 产品专员</p>
+                        <p class="f_12 grey_99">互联网/电子商务</p>
+                        <p class="f_12">负责与用户沟通合作，了解用户需求，调动引导用户行为 <br/>
+                            针对不同用户群，对产品进行相应活动策划，提升用户黏性与重复访问率  <br/>
+                            针对新上线阶段产品，进行活动策划，以及活动执行  <br/>
+                            配合市场活动，带动网站人气扩展，提升网站品牌知名度  <br/>
+                            分析用户需求，根据需求调整及优化产品  <br/>
+                            官方微博互动 
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="rsm_exp">
+                    <dt class="grey_99">
+                        <span class="rsm_tt"><a href="javascript:;" class="rsm_edit"></a><a href="javascript:;" class="rsm_del"></a></span>
+                        2012/10 <em>--</em> 至今
+                    </dt>
+
+                    <dd>
+                        <p>北京天宇朗通通信设备有限公司 <em>|</em> 电子商务部 <em>|</em> 产品专员</p>
+                        <p class="f_12 grey_99">互联网/电子商务</p>
+                        <p class="f_12">负责与用户沟通合作，了解用户需求，调动引导用户行为 <br/>
+                            针对不同用户群，对产品进行相应活动策划，提升用户黏性与重复访问率  <br/>
+                            针对新上线阶段产品，进行活动策划，以及活动执行  <br/>
+                            配合市场活动，带动网站人气扩展，提升网站品牌知名度  <br/>
+                            分析用户需求，根据需求调整及优化产品  <br/>
+                            官方微博互动 
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+
+            <form action="">
+            <fieldset class="rsm_editing">
+                <ul>
+                    <li>
+                        <label class="def"><em>*</em> 公司名称</label>
+                        <input type="text" class="ifd" />
+
+                        <div class="space ml20">
+                            <label class="def"><em>*</em> 职位名称</label>
+                            <input type="text" class="ifd" />
+                        </div>
+                    </li>
+
+                    <li>
+                        <label class="def"><em>*</em> 公司行业</label>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li class="date">
+                        <label class="def"><em>*</em> 工作时间</label>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                        <span class="fleft mr10 mt10">至</span>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <label class="def"><em>*</em> 工作描述</label>
+                        <textarea name="" id="" cols="30" rows="6" placeholder="请详细描述您所负责的具体工作内容。"></textarea>
+                    </li>
+
+                     <li>
+                        <label class="def"></label>
+                        <input type="submit" value="保存" class="btn_grey_b" />  <a href="#" class="ml20">取消</a>
+                    </li>
+                </ul>
+            </fieldset>
+            </form>
+
+
+            <h3 class="p_tt">项目经验</h3>
+            <p class="line_d"></p>
+            <div class="rsm_ready none">
+                <i></i><p>项目经验是公司衡量人才能力的重要指标。</p>
+            </div>
+
+            <div class="rsm_completed none">
+                <a href="javascript:;" class="rsm_add"><i></i>添加项目经验</a>
+                <dl>
+                    <dt class="grey_99">
+                        <span class="rsm_tt"><a href="javascript:;" class="rsm_edit"></a><a href="javascript:;" class="rsm_del"></a></span>
+                        2012/10 <em>--</em> 至今
+                    </dt>
+
+                    <dd>
+                        <p>天语app <em>|</em> 产品经理</p>
+                        <p class="f_12">负责与用户沟通合作，了解用户需求，调动引导用户行为 <br/>
+                            针对不同用户群，对产品进行相应活动策划，提升用户黏性与重复访问率  <br/>
+                            针对新上线阶段产品，进行活动策划，以及活动执行  <br/>
+                            配合市场活动，带动网站人气扩展，提升网站品牌知名度  <br/>
+                            分析用户需求，根据需求调整及优化产品  <br/>
+                            官方微博互动 
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <form action="">
+            <fieldset class="rsm_editing">
+                <ul>
+                    <li>
+                        <label class="def">项目名称</label>
+                        <input type="text" class="ifd" />
+
+                        <div class="space ml20">
+                            <label class="def">担任职务</label>
+                            <input type="text" class="ifd" />
+                        </div>
+                    </li>
+
+                    <li class="date">
+                        <label class="def">项目时间</label>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                        <span class="fleft mr10 mt10">至</span>
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+
+                        <dl class="select select_s">
+                            <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="#">全部城市(235条)</a>
+                                <a href="#">北京（129条）</a>
+                                <a href="#">上海（85条）</a> 
+                                <a href="#">天津（111条）</a>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <label class="def">项目描述</label>
+                        <textarea name="" id="" cols="30" rows="6" placeholder="请详细描述您所负责的具体项目内容。"></textarea>
+                    </li>
+
+                     <li>
+                        <label class="def"></label>
+                        <input type="submit" value="保存" class="btn_grey_b" />  <a href="#" class="ml20">取消</a>
+                    </li>
+                </ul>
+            </fieldset>
+            </form>
+
+
+
+            <h3 class="p_tt">教育背景</h3>
+            <p class="line_d"></p>
+
+            <div class="rsm_ready none">
+                <i></i><p>教育背景可以充分体现你的学习和专业能力。 <br> <span class="red">(必填项)</span></p>
+            </div>
+
+            <div class="rsm_completed none">
+                <a href="javascript:;" class="rsm_add"><i></i>添加教育背景</a>
+                <dl>
+                    <dt class="grey_99">
+                        <span class="rsm_tt"><a href="javascript:;" class="rsm_edit"></a><a href="javascript:;" class="rsm_del"></a></span>
+                        2012/10 <em>--</em> 至今
+                    </dt>
+
+                    <dd>
+                        <p>北京大学 <em>|</em> 计算机科学与技术 <em>|</em> 本科  </p>
+                    </dd>
+                </dl>
+            </div>
+            <form action="">
+                <fieldset class="rsm_editing">
+                    <ul>
+                        <li>
+                            <label class="def"><em>*</em> 学校名称</label>
+                            <input type="text" class="ifd" placeholder="如：北京大学" />
+
+                            <div class="space ml20">
+                                <label class="def"><em>*</em> 学历</label>
+                                <dl class="select select_s">
+                                    <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                                    <dd>
+                                        <a href="#">全部城市(235条)</a>
+                                        <a href="#">北京（129条）</a>
+                                        <a href="#">上海（85条）</a> 
+                                        <a href="#">天津（111条）</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <label class="def"><em>*</em> 专业名称</label>
+                            <input type="text" class="ifd" />
+
+                            <div class="space ml20 date">
+                                <label class="def"><em>*</em> 时间</label>
+                                <dl class="select select_s">
+                                    <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                                    <dd>
+                                        <a href="#">全部城市(235条)</a>
+                                        <a href="#">北京（129条）</a>
+                                        <a href="#">上海（85条）</a> 
+                                        <a href="#">天津（111条）</a>
+                                    </dd>
+                                </dl>
+                                <span class="fleft mr10 mt10">至</span>
+                                <dl class="select select_s">
+                                    <dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+                                    <dd>
+                                        <a href="#">全部城市(235条)</a>
+                                        <a href="#">北京（129条）</a>
+                                        <a href="#">上海（85条）</a> 
+                                        <a href="#">天津（111条）</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="def"></label>
+                            <input type="submit" value="保存" class="btn_grey_b" />  <a href="#" class="ml20">取消</a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+
+
+
+            <h3 class="p_tt">自我描述</h3>
+            <p class="line_d"></p>
+
+            <div class="rsm_ready none">
+                <i></i><p>描述你的性格、爱好以及吸引人的经历等，让企业更加了解你！</p>
+            </div>
+
+            <div class="rsm_completed none">
+                <a href="javascript:;" class="rsm_edit rsm_edit_p"></a>
+                <p>本人工作认真负责，能吃苦耐劳，积极进取，能承受一定的压力。</p>
+            </div>
+
+            <form action="">
+                <fieldset class="rsm_editing">
+                    <ul>
+                        <li>
+                            <label class="def">自我描述</label>
+                            <textarea name="" id="" cols="30" rows="6" placeholder="请详细描述您所负责的具体项目内容。"></textarea>
+                        </li>
+                        <li>
+                            <label class="def"></label>
+                            <input type="submit" value="保存" class="btn_grey_b" />  <a href="#" class="ml20">取消</a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+
+
+            <h3 class="p_tt">作品展示</h3>
+            <p class="line_d"></p>
+
+            <div class="rsm_ready none">
+                <i></i><p>好的作品会加分！</p>
+            </div>
+
+            <div class="rsm_completed none">
+                <a href="javascript:;" class="rsm_add"><i></i>添加作品展示</a>
+                <dl>
+                    <dt class="grey_99">
+                        <span class="rsm_tt"><a href="javascript:;" class="rsm_edit"></a><a href="javascript:;" class="rsm_del"></a></span>
+                        http://www.baidu.com
+                    </dt>
+
+                    <dd>
+                        <p>描述描述，这里全TMD都是描述，描述个鸡毛~</p>
+                    </dd>
+                </dl>
+            </div>
+
+            <form action="">
+                <fieldset class="rsm_editing">
+                    <ul>
+                        <li>
+                            <label class="def">作品链接</label>
+                            <input type="text" class="ifd ifd_full"  />
+                        </li>
+                        <li>
+                            <label class="def">说明文字</label>
+                            <textarea name="" id="" cols="30" rows="6" placeholder=""></textarea>
+                        </li>
+                        <li>
+                            <label class="def"></label>
+                            <input type="submit" value="保存" class="btn_grey_b" />  <a href="#" class="ml20">取消</a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+
+    <aside class="resume_bar">
+        <strong>我的简历</strong>
+        <nav>
+            <a href="#">基本资料 <i></i></a>
+            <a href="#">期望工作 <i></i></a>
+            <a href="#">工作经历 <i></i></a>
+            <a href="#" class="current">项目经验 <i></i></a>
+            <a href="#">教育经历 <i></i></a>
+            <a href="#">自我描述 <i></i></a>
+            <a href="#">作品展示 <i></i></a>
+            <span><i class="last"></i></span>
+        </nav>
+    </aside>
+
+    <aside class="rsm_loading" id="rsmLoading">
+        <img src="../images/loading.gif"  />
+    </aside>
+</body>
+</html>

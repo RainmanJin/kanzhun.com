@@ -1,0 +1,30 @@
+@import '../../../css/common/var';
+
+a {
+	&.l_m_collection {
+		color: @grey_99;
+		i.collection {
+			margin-right: 5px;
+			vertical-align: -2px;
+		}
+
+		&:hover {
+			color: @blue;
+			text-decoration: none;
+		}
+	}
+
+	&.hadcollection {
+		color: @grey_99;
+		cursor: default;
+		i.hadcollection {
+			margin-right: 5px;
+			vertical-align: -2px;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+

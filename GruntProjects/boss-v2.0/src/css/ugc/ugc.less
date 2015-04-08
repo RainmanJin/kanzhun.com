@@ -1,0 +1,350 @@
+@import "../common/var";
+section.body{
+	width: 990px;
+	margin: 0 auto;
+	min-height: 1000px;
+	background-color: #32323a;
+	.body_l{
+		float: left;
+		height: 100%;
+		width: 315px;
+		background-color: #32323a;
+		color: #fff;
+		.header{
+			background-color: #32323a;
+			height: 260px;
+			.hTop{
+				height: 130px;
+				background-color: #28282e;
+				.logo{
+					padding-top: 20px;
+					text-align: center;
+				}
+			}
+			.hBottom{
+				position: relative;
+				.base{
+					position: absolute;
+					top: -61px;
+					width: 100%;
+				}
+				.p1{
+					text-align: center;
+					font-size: 24px;
+				}
+				.p2{
+					text-align: center;
+					font-size: 16px;
+				}
+			}
+		}
+		ul.nav{
+			border-top: 1px solid #3b3b43;
+			li{
+				height: 65px;
+				line-height: 65px;
+				border-bottom: 1px solid #3b3b43;
+				position: relative;
+				a{
+					padding: 0 20px 0 35px;
+					color: #95a0aa;
+					font-size: 20px;
+					display: block;
+					.transition(all .3s ease);
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					em{
+						vertical-align: middle;
+						display: inline-block;
+						width: 25px;
+						text-align: center;
+						margin-right: 10px;
+						line-height: 100%;
+					}
+					.i{
+						&.i_right{
+							position: absolute;
+							right: 20px;
+							top: 50%;
+							margin-top: -7px;
+						}
+					}
+					&:hover,&.current{
+						background-color: #53cac4;
+						text-decoration: none;
+						color: #fff;
+						.i{
+							&.i_right{
+								background-position: -180px -20px;
+							}
+							&.i_people{
+								background-position: -40px 0;
+							}
+							&.i_info{
+								background-position: -40px -40px;
+							}	
+							&.i_heart{
+								background-position: -40px -80px;	
+							}
+							&.i_opus{
+								background-position: -40px -120px;	
+							}
+							&.i_work{
+								background-position: -40px -160px;	
+							}
+							&.i_hat{
+								background-position: -40px -200px;	
+							}								
+							&.i_necktie{	
+								background-position: -40px -240px;
+							}	
+							&.i_necktieplus{
+								background-position: -40px -280px;		
+							}	
+						}
+					}
+					&.quit{
+						color: #ed5565;
+					}
+				}
+			}
+			&.fixed{
+				position: fixed;
+				width: 315px;
+				top: 0;
+			}
+		}
+	}
+	.body_r{
+		float: left;
+		height: 100%;
+		width: 675px;
+		background-color: #f1f1f1;
+		header{
+			height: 60px;
+			border-bottom: 1px solid #ccc;
+			background-color: #fff;
+			ul{
+				.hm{
+					float: left;
+					width: 70px;
+					line-height: 60px;
+					text-align: center;
+					border-right: 1px solid #ccc;	
+				}
+				.tt{
+					float: left;
+					color: #666;
+					padding: 13px 0 0 20px;
+					font-size: 18px;
+					span{
+						font-size: 24px;
+					}
+					em{
+						font-size: 24px;
+						padding: 0 8px;
+					}
+				}
+				.dl{
+					float: right;
+					width: 70px;
+					line-height: 60px;
+					text-align: center;
+				}
+			}
+		}
+		section.form{
+			margin: 17px; 
+			border-bottom: 2px solid #e3e4e8;
+			background-color: #fff;
+			h2.title{
+				height: 58px;
+				line-height: 58px;
+				color: @green;
+				font-size: 23px;
+				font-weight: normal;
+				background: #dbf3f3;
+				padding: 0 20px;
+			}
+			.content{
+				color: #768082;
+				padding: 20px 20px 40px;
+				ul.field{
+					margin-right: -40px;
+					.list{
+						float: left;
+						margin-right: 40px;
+						margin-bottom: 15px;
+						position: relative;
+						label{
+							display: block;
+							margin-bottom: 5px;
+						}	
+						.select{
+							float: left;
+						}
+						em.mline{
+							display: inline-block;
+							border-top: 2px solid #abadb3;
+							width: 17px;
+							vertical-align: middle;
+						}
+					}
+				}
+				ul.show{
+					.list{
+						border: 2px solid #e3e4e8;
+						border-radius: 5px;
+						padding: 30px 20px 20px;
+						position: relative;
+						margin-bottom: 15px;
+						ul.set{
+							position: absolute;
+							top: 10px;
+							right: 20px;
+							li{
+								float: left;
+								margin-left: 15px;
+								a{
+									color: #c3c3c3;
+								}
+							}
+						}
+						h3{
+							color: @green;
+							font-size: 20px;
+							font-weight: normal;
+							p{
+								float: right;
+							}
+						}
+						&.edit{
+							ul{
+								margin-right: -20px;
+								li{
+									float: left;
+									margin-right: 20px;
+									position: relative;
+									label{
+										display: block;
+										margin-bottom: 5px;
+									}
+									input{
+										width: 244px;
+									}
+									textarea{
+										width: 532px;
+									}
+									.select{
+										float: left;
+										width: 244px;
+									}
+									em.mline{
+										float: left;
+										display: inline-block;
+										border-top: 2px solid #abadb3;
+										width: 17px;
+										vertical-align: middle;
+										margin: 20px 10px 0;
+									}
+									margin-bottom: 20px;
+								}
+							}
+						}
+					}
+				}
+				.add{
+					background-color: #f6f8fa;
+					border: 2px dashed #e3e4e8;
+					text-align: center;
+					padding: 25px;
+					a{
+						display: block;
+						color: #acacac;
+						font-size: 16px;
+						i{
+							margin-top: 3px;
+						}
+						&:hover{
+							text-decoration: none;
+						}
+					}
+				}
+				.sbm{
+					margin-top: 20px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+p.err{
+	position: absolute;
+	color: @red;
+	top: 70px;
+}
+
+.protrait{
+	width: 122px;
+	height: 122px;
+	margin: 0 auto; 
+	text-align: center;
+	position: relative;
+	img{
+		position: absolute;
+		left:0;
+		z-index: 1;
+	}
+	em{
+		display: inline-block;
+		width: 122px;
+		height: 122px;
+		background: url("@{img_path}round.png") no-repeat;
+		position: absolute;
+		left:0;
+		z-index: 3;
+	}
+	span.bg{
+		display: inline-block;
+		width: 122px;
+		height: 122px;
+		position: absolute;
+		left:0;
+		background: #000;
+		opacity: 0.3;
+		z-index: 2;	
+	}
+	a{
+		font-size: 16px;
+		color: #fff;
+		position: relative;
+		z-index: 4;
+		top: 55px;
+		text-align: center;
+		display: inline-block;
+	}
+}
+
+.i_radio{
+	color: #abadb3;
+	i{
+		background: url("@{img_path}icons.png") no-repeat;
+		background-position: -80px -80px;
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+	&.current{
+		i{
+			background-position: -100px -80px;
+		}
+	}
+	&:hover{
+		text-decoration: none;
+	}
+}
+

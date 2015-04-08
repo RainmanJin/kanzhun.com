@@ -1,0 +1,48 @@
+section.basis_tags_search {
+  overflow: hidden;
+}
+section.basis_tags_search dl.b_t_s_nav {
+  line-height: 59px;
+  border-bottom: 1px solid #e7e7e7;
+}
+section.basis_tags_search dl.b_t_s_nav dt {
+  float: right;
+  width: 80px;
+  height: 59px;
+  text-align: right;
+}
+section.basis_tags_search dl.b_t_s_nav dd {
+  height: 60px;
+  margin-bottom: -1px;
+  background: url("/images/v2/hover_line.jpg") no-repeat left 58px;
+}
+section.basis_tags_search dl.b_t_s_nav dd a {
+  display: inline-block;
+  height: 59px;
+  color: #666666;
+}
+section.basis_tags_search dl.b_t_s_nav dd a:hover {
+  text-decoration: none;
+}
+section.basis_tags_search dl.b_t_s_nav dd em {
+  display: inline-block;
+  color: #e7e7e7;
+  margin: 0 15px;
+  height: 59px;
+}
+section.basis_tags_search div.con {
+  overflow: hidden;
+  margin-right: -25px;
+  padding-top: 20px;
+}
+section.basis_tags_search div.con a {
+  float: left;
+  color: #666666;
+  white-space: nowrap;
+  margin-right: 25px;
+  padding-bottom: 15px;
+}
+section.basis_tags_search div.con a:hover {
+  text-decoration: none;
+  color: #2472b4;
+}

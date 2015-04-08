@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>中秋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/moon.css" />
+</head>
+
+<body class="index_bg">
+	<section class="top">
+		<img class="bg" src="images/result_top.jpg">
+	</section>
+	<section class="bottom">
+		<img class="bg" src="images/result_bottom.jpg">	
+		<div class="result_content end">
+				<h1>活动已结束！</h1>
+				<p class="p1">
+					如果您已中奖，我们会在5个工作日之内联系您！
+				</p>
+				<p class="p1 mt5">看准网祝您中秋快乐！</p>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="js/zepto.js"></script>
+</html>

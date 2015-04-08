@@ -1,0 +1,50 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "piece/ugc-form-control";
+@import "../../../components/toggler/toggler";
+
+ul.salary-detail{
+  margin-left: 6em;
+  background-color: #fafafa;
+  padding: 20px 30px;
+  width: 320px;
+  display: none;
+
+  li:first-child{
+    display: block;
+  }
+
+  li{
+    padding-bottom: 15px;
+  }
+
+  .ifd{
+    width: 220px;
+  }
+}
+
+.salary-detail-tt{
+  padding-left: 6em;
+  padding-bottom: 10px;
+
+  .C-toggler{
+    color: #2c84cc;
+    font-size: 14px;
+    &:hover {
+      color: #2472b4;
+    }
+  }
+}
+
+.salary-done{
+  clear: both;
+  margin-left: 6em;
+  padding-left: 120px;
+
+  .ugc-orange-btn{
+    width: auto;
+    display: inline-block;
+    padding: 7px 45px;
+    margin: 30px 0 100px;
+  }
+}

@@ -1,0 +1,80 @@
+dl.co_info {
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+}
+dl.co_info dt {
+  width: 68px;
+  height: 68px;
+  border: 1px solid #ebebeb;
+  line-height: 68px;
+  float: left;
+  font-size: 0;
+}
+dl.co_info dt img {
+  width: 68px;
+  vertical-align: middle;
+}
+dl.co_info dd {
+  margin-left: 80px;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+dl.co_info h1 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-right: 70px;
+}
+dl.co_info p {
+  font-size: 12px;
+  color: #999999;
+}
+dl.co_info p a {
+  height: 18px;
+  display: inline-block;
+  float: right;
+  color: #228eba;
+}
+dl.co_info p a i {
+  margin-right: 2px;
+}
+dl.co_info p em {
+  color: #ccc;
+}
+/*跟icons.less重复了,先注释掉*/
+/*
+.grade_star{
+	width: 69px;
+	height: 13px;
+	display: inline-block;
+	font-size: 0;
+	vertical-align: middle;
+	overflow: hidden;
+	background: transparent url(../../images/m_grade.png) no-repeat -2px 0;
+	.background-size(100%);
+
+	i{
+		height: 13px;
+		float: left;
+		background: transparent url(../../images/m_grade.png) no-repeat 0 -13.5px;
+		.background-size(auto 26px);
+
+		&.s_1{
+			width: 13px;
+		}
+		&.s_2{
+			width: 27px;
+		}
+		&.s_3{
+			width: 41px;
+		}
+		&.s_4{
+			width: 54px;
+		}
+		&.s_5{
+			width: 69px;
+		}
+	}
+}
+*/

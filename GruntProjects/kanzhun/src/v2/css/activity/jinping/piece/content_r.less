@@ -1,0 +1,219 @@
+@import "../../../../../css/common/var";
+@import "../../../var";
+@yellow: #e7be00;
+@blue: #00c0ff;
+
+.cr_top{
+  height: 130px;
+  background-color: #5f4b90;
+  position: relative;
+  .i_face{
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+  }
+  .crt_r{
+    margin-left: 115px;
+    padding-top: 15px;
+    .font_p1{
+      background: url("@{img}/activity/jinping/fonts.png") no-repeat -200px -180px;
+      width: 193px;
+      height: 22px;
+      margin-bottom: 5px;
+    }
+    .p2{
+      text-align: center;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    a.bt_enter{
+      display: inline-block;
+      background: url("@{img}/activity/jinping/bgs.png") no-repeat;
+      width: 191px;
+      height: 45px;
+      line-height: 45px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    >ul{
+      margin-bottom: 5px;
+      li{
+        float: left;
+        color: #fff;
+        margin-right: 15px;
+        p{
+          font-size: 16px;
+          text-align: center;
+          margin-bottom: 5px;
+        }
+        a{
+          display: inline-block;
+          width: 44px;
+          height: 44px;
+          line-height: 44px;
+          border-radius: 5px;
+          background-color: #7668a4;
+          color: #fff;
+          font-size: 20px;
+          text-align: center;
+          &:hover,&.current{
+            text-decoration: none;
+            background-color: #ffe236;
+            color: #442d7b;
+          }
+        }
+      }
+    }
+  }
+  .bt_other{
+    color: #ffe236;
+  }
+  .i_triangle{
+    display: inline-block;
+    border-width: 5px 0 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffe236;
+  }
+  .crt_list{
+    position: absolute;
+    z-index: 1;
+    top: 144px;
+    width: 323px;
+    border: 1px solid #7c36bc;
+    background-color: #f6f5f9;
+    i.i_triangle_d{
+      display: inline-block;
+      background: url("@{img}/activity/jinping/icons.png") no-repeat -80px -280px;
+      width: 25px;
+      height: 13px;
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      margin-left: -13px;
+    }
+    .crtl_inner{
+      height: 415px;
+      padding-bottom: 15px;
+      overflow: auto;
+      ul{
+        margin: 15px 10px 0;
+        overflow: auto;
+        li{
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          h4{
+            font-size: 18px;
+          }
+          p{
+            font-size: 16px;
+            em{
+              display: inline-block;
+              font-size: 14px;
+              color: #680000;
+              background-color: #ffe236;
+              border-radius: 3px;
+              &.color_b{
+                background-color: @blue;
+                color: #fff;
+              }
+            }
+          }
+          border-bottom: 1px solid #574189;
+        }
+      }
+      .bt_more{
+        color: @grey_33;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  &.fixed{
+    position: fixed;
+    width: 325px;
+    top: 5px;
+    z-index: 2;
+  }
+}
+.cr_newList{
+  background-color: #4a2357;
+  padding: 0 10px 15px;
+  h2{
+    display: inline-block;
+    background: url("@{img}/activity/jinping/fonts.png") no-repeat -400px -180px;
+    width: 306px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #fff;
+  }
+  .crnl_c{
+    overflow: hidden;
+    height: 1080px;
+    ul{
+      position: relative;
+      li{
+        background-color: #5d3968;
+        padding: 15px 10px;
+        margin-bottom: 15px;
+        color: #fff;
+        h4{
+          font-weight: normal;
+          font-size: 16px;
+          span{
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffe236;
+            vertical-align: middle;
+            &.color_b{
+              color: @blue;
+            }
+          }
+          em{
+            display: inline-block;
+            background-color: #ffe236;
+            padding: 0 3px;
+            border-radius: 3px;
+            font-size: 14px;
+            color: #680000;
+            &.color_b{
+              background-color: @blue;
+              color: #fff;
+            }
+          }
+        }
+        div.t{
+          img{
+            display: inline-block;
+            width: 38px;
+            height: 38px;
+            border: 1px solid #dcdadf;
+            float: left;
+          }
+          p{
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 50px;
+            padding-top: 5px;
+          }
+        }
+        a{
+          color: #fff;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+        &.reason_new{
+          position: absolute;
+          top: 0;
+          width: 285px;
+        }
+      }
+    }
+  }
+}

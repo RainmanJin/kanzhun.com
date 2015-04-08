@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>注册第三版</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+  <header class="global">
+    <div class="header">
+      <img class="logo" src="../images/logo.jpg"/>
+      <span class="title">企业用户专区</span>
+      <div class="user"><a href="#">登录企业账户</a></div>
+    </div>
+  </header>
+  <div class="container clearfix">
+    <section class="mian_con">
+      <ul class="progress">
+        <li class="step onstep"></li>
+        <li class="words">
+          <em class="current">注册账号</em><em class="grey_99">确认公司名称</em><em class="grey_99">邮箱验证</em>
+        </li>
+      </ul>
+        <ul class="register_data mt20">
+            <li class="hasoverflow">
+                <label for="" class="ttlabel"><em>*</em> 注册邮箱</label><input type="text" name="account" class="ipt" placeholder="请输入您的邮箱"/>&nbsp;&nbsp;<span class="red" style="display:none" data-msg="请输入您的邮箱"><i class="base errormsg"></i></span>
+                <input type="hidden" name="accountCheck" />
+            </li>
+            <li class="hasoverflow">
+                <label class="ttlabel"><em>*</em> 真实姓名</label><input type="text"  class="ipt v" value="" maxlength="10" name="relname" placeholder="请输入真实姓名">&nbsp;&nbsp;<span class="red" data-msg="请输入真实姓名" style="display: none;"><i class="base errormsg"></i></span>
+            </li>
+            <li class="clearfix">
+                <label class="ttlabel"><em>*</em> 职位</label><input type="text" class="ipt v" maxlength="10" id="companyJobSuggest" name="job" value="" placeholder="请输入担任职务" autocomplete="off">&nbsp;&nbsp;<span class="red" data-msg="请输入担任职务" style="display: none;"><i class="base errormsg"></i></span>
+            </li>
+            <li class="hasoverflow">
+                <label class="ttlabel"><em>*</em> 手机号</label><input type="text" class="ipt v" maxlength="11" name="mobile" id="user_phone" placeholder="请输入您的手机号">&nbsp;&nbsp;<span class="red" data-msg="请输入您的手机号" style="display: none;"><i class="base errormsg"></i></span>
+            </li>
+            <li class="hasoverflow phone">
+                <label for="" class="ttlabel">固定电话</label
+                ><input name="officePhone1" data-type="onlyNum" data-unnecessary="1" type="text" class="v ipt" placeholder="区号"  style="width: 35px;" maxlength="4" /
+                ><span>-</span><input name="officePhone2" data-type="onlyNum" data-unnecessary="1" type="text" class="v ipt" placeholder="电话号码" style="width: 100px;" maxlength="8"/
+                ><span>-</span><input name="officePhone3" data-type="onlyNum" data-unnecessary="1" type="text" class="ipt"  placeholder="分机"  style="width: 49px;"  maxlength="5" /
+                ><span class="red" style="display:none" data-msg="请输入正确的固定电话"><i class="base errormsg"></i>&nbsp;</span>
+            </li>
+            <li class="sbm"><label class="ttlabel"></label><span class="btn_yellow_b disabledbtn" id="saveBtn"><input type="submit" value="下一步" disabled></span></li>
+        </ul>
+    </section>
+    <!--<section class="r_con">
+      <h2 class="r_tt">常见问题</h2>
+      <dl class="infolist">
+        <dt><i class="base problem"></i>什么是公司简称？</dt>
+        <dd>大众对贵公司最为熟悉的名称，可能是公司的简称，也可能是贵公司知名产品的名字。</dd>
+        <dt><i class="base problem"></i>为什么要认领公司？</dt>
+        <dd>看准网已有用户发起创建的公司127万余家，并已积累多条数据，选定已存在的您的公司，即可维护您的雇主品牌。</dd>
+        <dt><i class="base problem"></i>什么是公司简称？</dt>
+        <dd>大众对贵公司最为熟悉的名称，可能是公司的简称，也可能是贵公司知名产品的名字。</dd>
+        <dt><i class="base problem"></i>为什么要认领公司？</dt>
+        <dd>看准网已有用户发起创建的公司127万余家，并已积累多条数据，选定已存在的您的公司，即可维护您的雇主品牌。</dd>
+      </dl>
+    </section>-->
+  </div>
+</body>
+</html>

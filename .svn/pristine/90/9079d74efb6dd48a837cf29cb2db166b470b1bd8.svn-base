@@ -1,0 +1,337 @@
+@import "common/var";
+
+div.profiles{
+	margin-top: 15px;
+	padding: 20px;
+	width: 950px;
+	padding-bottom: 40px;
+}
+
+aside.profiles_nav{
+	width: 204px;
+	border: 1px solid @grey_e7;
+	float: left;
+
+	figure{
+		div{
+			position: relative;
+			text-align: center;
+			padding-top: 10px;
+			height: 80px;
+
+			a{
+				display: block;
+				width: 204px;
+				height: 36px;
+				padding-top: 50px;
+				background: transparent url(../images/portrait.png) no-repeat left top;
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: #fff;
+				text-decoration: none;
+				cursor: pointer;
+				text-indent: -999px;
+				overflow: hidden;
+
+				&:hover{
+					text-indent: 0;
+					background-position: -206px top;
+				}
+			}
+		}
+		
+		img{
+			width: 70px;
+			height: 70px;
+		}
+
+		strong{
+			font-size: 14px;
+		}
+
+		
+	}
+
+	nav{
+		clear: both;
+		margin-top: 15px;
+
+		p{
+			border-top: 1px solid @grey_e7;
+			height: 40px;
+			line-height: 40px;
+			padding-left: 20px;
+
+			&.current{
+				background-color: @green;
+				a{
+					color: #fff;
+					font-size: 14px;
+				}
+			}
+		}
+
+		a{
+			display: block;
+			color: @def;
+
+			&.mynews {
+				position: relative;
+				overflow: hidden;
+
+				i {
+					position: absolute;
+					height: 16px;
+					line-height: 16px;
+					text-align: center;
+					padding: 0 5px;
+					top: 12px;
+					left: 64px;
+					font-size: 12px;
+					background-color: #e61e13;
+					border-radius: 30px;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&.usehelp_nav {
+		nav {
+			margin-top: 0;
+		}
+		border-width: 0 1px 1px 1px;
+	}
+
+	dl {
+		dt {
+			p {
+				padding-right: 20px;
+				cursor: pointer;
+
+				span {
+					float: right;
+					margin-top: 13px;
+					width: 12px;
+					height: 12px;
+					border: 1px solid #cccccc;
+
+					i {
+						display: block;
+						margin: 4px auto 0 auto;
+						height: 0;
+						width: 0;
+						line-height: 0;
+						overflow: hidden;
+						border-width: 5px 4px 0 4px;
+						border-style: solid dashed;
+						border-color: @grey_99 transparent transparent transparent;
+						.transition(all, ease, .4s);
+
+						&.up {
+							border-width: 0 4px 5px 4px;
+							border-color: transparent transparent @grey_99 transparent;
+						}
+
+						&.upTranslate {
+							.transform(rotate(180deg));
+							//margin: 4px auto 0 auto;
+							transform-origin: 4px 2px;
+						}
+					}
+				}
+			}
+		}
+
+		dd {
+			a {
+				padding-left: 14px;
+			}
+		}
+	}
+}
+
+.profiles_con{
+	margin-left: 220px;
+	border-left: 1px solid @grey_e7;
+	min-height: 653px;
+	_height: 653px;
+	padding: 0 0 0 15px;
+	z-index: 11px;
+
+	p.all{
+		margin: 15px 0 50px 0;
+	}
+
+	dl.rule {
+		margin-bottom: 15px;
+		dt {
+			margin-bottom: 10px;
+		}
+		dd {
+			line-height: 2em;
+		}
+	}
+}
+
+
+h3.p_tt{
+	margin: 30px 0 10px 0;
+	padding-left: 8px;
+	border-left: 4px solid @green;
+	height: 16px;
+	font: bold 14px/1em Arial,STHeiti, Microsoft YaHei, simsun, Helvetica, sans-serif;
+	overflow: hidden;
+	line-height: 16px;
+	&.usehelp_tt {
+		margin: 0 0 20px 0;
+		font-size: 16px;
+		font-weight: normal;
+	}
+}
+
+//aboutkanzhun
+div.aboutkanzhun {
+	padding-bottom: 20px;
+	overflow: hidden;
+	zoom: 1;
+	a {
+		display: inline-block;
+		float: left;
+		width: 174px;
+		height: 118px;
+		padding: 3px;
+		background-color: #fff;
+		border: 1px solid #e7e7e7;
+	}
+	p {
+		margin: 30px 0 0 205px;
+		text-indent: 2em;
+	}
+}
+
+p.kanzhun_what {
+	text-indent: 2em;
+	margin-bottom: 25px;
+}
+
+//意见反馈
+div {
+	&.chat_field{
+		width: 480px;
+		margin: 0;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #e6e6e6;
+		border-radius: 0;
+		.transition(all ease .3s);
+		overflow: hidden;
+		zoom: 1;
+
+		textarea{
+			font: normal 14px/1.5 Arial,STHeiti, Microsoft YaHei, simsun, Helvetica, sans-serif;
+			width: 459px;
+			height: 108px;
+			padding: 10px;
+			border-width: 1px 0 0 1px;
+			border-style: solid;
+			border-color: #e6e6e6;
+			color: @def;
+			resize:none;
+			outline: none;
+			float: left;
+			overflow: auto;
+		}
+
+		&.focus {
+			border-color: @green;
+		}
+
+		&.err {
+			border-color: @red;
+		}	
+	}
+
+	&.remind {
+		padding: 0 130px 0 0;
+		overflow: hidden;
+
+		p.digita {
+			float: right;
+
+			strong {
+				&.ok {
+					color: #7cb228;
+				}
+
+				&.err {
+					color: red;
+				}
+				
+			}
+		}
+	}		
+
+	.commonly_email {
+		position: relative;
+
+		p {
+			position: absolute;
+			left: 0;
+			bottom: -23px;
+		}
+	}
+}
+
+form#basic p.digita span.feeds {
+	color: @grey_99;
+}
+
+p {
+	&.fk_line {
+		margin: 25px 0;
+		border-bottom: 1px dashed #e7e7e7;
+		width: 580px;
+	}
+
+	&.subbtn{
+		width: 580px;
+		text-align: center;
+	}
+
+	&.err {
+		margin-left: 100px;
+		padding-left: 20px;
+		color: @red;
+		background: url(../images/prompt.png) no-repeat left center;
+	}
+}
+
+label.f_l {
+	display: inline-block;
+	width: 100px;
+	text-align: left;
+	vertical-align: middle;
+
+	em {
+		color: @red;
+		margin-right: 2px;
+	}
+}
+
+.ipt_qq {
+	width: 220px;
+	height: 14px;
+	line-height: 14px;
+	padding: 9px 12px;
+	border: 1px solid #e6e6e6;
+	border-width: 2px 1px 1px 2px;
+	vertical-align: middle;
+}
+
+section.submit {
+	width: 290px;
+}
+
+//意见反馈结束

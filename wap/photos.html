@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>kanzhun</title>
+<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+<div class="wrapper detail">
+	<div class="content">
+	<header class="page_hd">
+		<a href="index.html" class="top_back"><i></i>返回</a>
+		<strong>公司详情</strong>
+		<a href="city.html" class="fright">主页</a>
+	</header>
+	
+	<dl class="co_info">
+		<dt><img src="../images/portrait.jpg" /></dt>
+		<dd>
+			<h1>易宝支付</h1>
+			<p><span class="grade_star"><i class="s_4"></i></span> 4.0分</p>
+			<p>www.yeepay.com | 北京</p>
+		</dd>
+	</dl>
+	
+	<section class="menu">
+		<div class="menu_wrap">
+			<div class="menu_con" id="companyMenu">
+			<p><a href="#">基本信息</a><a href="#">招聘</a><a href="#" class="current">工资</a><a href="job-details.html">点评</a><a href="interview-details.html">面试</a><a href="#">照片</a></p>
+			</div>
+		</div>
+		<a class="moving" href="javascript:;"><i class="arrow_green"></i></a>
+	</section>
+
+	<h2 class="tt"><span>环境照片</span> <em>共42张</em></h2>
+	
+	<img src="images/img-3.jpg" class="photo" />
+	<div class="desc">这是照片的描述，这是照片的描述，这是照片的描述，这是照片的描述，这是照片的描述
+		<p><span>1/42</span> - 7月4日 北京</p>
+	</div>
+	<img src="images/img-4.jpg" class="photo" />
+	<div class="desc">这是照片的描述，这是照片的描述，这是照片的描述，这是照片的描述，这是照片的描述
+		<p><span>1/42</span> - 7月4日 北京</p>
+	</div>
+	<img src="images/img-5.jpg" class="photo" />
+	<div class="desc">这是照片的描述，这是照片的描述，这是照片的描述，这是照片的描述，这是照片的描述
+		<p><span>1/42</span> - 7月4日 北京</p>
+	</div>
+	
+	
+	
+	<a href="#" class="btn_grey morePhotos">更多</a>
+	<ul class="v_menu">
+		<li><a href="#">查看“产品经理”招聘  <i class="arrow_g"></i></a></li>
+	</ul>
+	
+</div>
+</div>
+<footer class="page_ft">
+		<p>看准网移动版 m.kanzhun.com</p>
+		<p>电脑版  |  移动版</p>
+	</footer>
+
+<script src="js/iscroll-lite.js"></script>
+<script src="js/m-kanzhun.js"></script>
+<script>
+	//resize images
+	var allImgs = document.querySelectorAll('img.photo'),
+		wrapperH = document.querySelector('.wrapper').clientWidth;
+	window.resizeImg = function(imgs){
+		for(var i = 0, len = imgs.length; i < len; i++){
+			(function(j){
+				var target = imgs[j];
+				target.onload = function(){
+					if(target.clientWidth > wrapperH){
+						target.style.width = '100%';
+					}else{
+						target.style.width = 'auto';
+					}
+					target.style.opacity = '1';
+				}
+			})(i);
+			
+			
+		}
+	}
+	resizeImg(allImgs);
+
+	document.querySelector('.morePhotos').addEventListener('click', function(e){
+		e.preventDefault();
+		var frag = document.createElement('div');
+		frag.innerHTML = '<img src="images/img-5.jpg" class="photo" /><div class="desc">' +	
+						'这是照片的描述，这是照片的描述，这是照片的描述，这是照片的描述，这是照片的描述<p><span>1/42</span> - 7月4日 北京</p></div>'
+		this.parentNode.insertBefore(frag, this);
+		resizeImg(frag.querySelectorAll('img.photo'));
+	}, false);
+	
+</script>
+</body>
+</html>
+
+

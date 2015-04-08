@@ -1,0 +1,288 @@
+.mask-wrap {
+  overflow: hidden;
+}
+.popup {
+  position: relative;
+  float: left;
+  width: 320px;
+  height: 580px;
+  background-color: #44468f;
+  color: #fff;
+  padding: 10px 20px;
+}
+.popup .title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.popup .t_name {
+  width: 90%;
+  padding: 6px 8px;
+  color: #fff;
+  font-size: 18px;
+  background-color: rgba(45, 47, 121, 0.522);
+  opacity: 0.6;
+  box-shadow: 0.5px 0.866px 2px 0px #8e8572;
+}
+.popup .company {
+  visibility: visible;
+  margin-top: 20px;
+}
+.popup .company .info {
+  overflow: hidden;
+  width: 100%;
+  visibility: hidden;
+}
+.popup .company .info .company_logo {
+  float: left;
+}
+.popup .company .info .info_word {
+  float: left;
+  padding-left: 12px;
+}
+.popup .company .info .info_word .c_name {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 40px;
+  width: 200px;
+  /*对宽度的定义,根据情况修改*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.popup .company .info .info_word ul li {
+  font-size: 16px;
+  line-height: 30px;
+}
+.popup .ad {
+  margin-top: 30px;
+  position: relative;
+  visibility: hidden;
+  z-index: 3;
+}
+.popup .ad .count {
+  color: #fee441;
+}
+.popup .ad .h2 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.popup .ad .detail {
+  background-color: #32347d;
+}
+.popup .ad .detail p {
+  padding: 10px 30px 20px 30px;
+  font-size: 20px;
+}
+.popup .friendtip {
+  text-align: center;
+  font-size: 16px;
+  color: #999999;
+  position: absolute;
+  bottom: 90px;
+  width: 90%;
+}
+.popup .button_wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+.popup .button_wrap button {
+  background-color: #3e3f72;
+  color: #999999;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  outline: none;
+}
+.popup .sugesstion {
+  position: absolute;
+  bottom: 0px;
+}
+/*右侧 曝名理由*/
+.reason {
+  float: left;
+  position: relative;
+  height: 600px;
+  width: 590px;
+  background-color: #f8f3ea;
+  color: #000;
+  padding: 0px 25px;
+}
+.reason .title {
+  font-size: 26px;
+  color: #44468f;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.reason ul.items {
+  overflow: hidden;
+  width: 100%;
+}
+.reason ul.items li {
+  background-color: #fff;
+  float: left;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reason ul.items li:last-child {
+  margin-right: 0px;
+}
+.reason ul.items li.actived {
+  background-color: #44468f;
+  color: #fff;
+}
+.reason ul.items li img {
+  display: block;
+}
+.reason .reason_item {
+  border: 1px dashed #000000;
+  height: 185px;
+  margin-top: 15px;
+  padding: 20px;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+}
+.reason .reason_item * {
+  visibility: hidden;
+}
+.reason .reason_item .up_trangle {
+  width: 0;
+  height: 0;
+  border: 10px dashed transparent;
+  border-bottom: 10px dashed #44468f;
+  position: absolute;
+  top: -20px;
+  left: 50px;
+}
+.reason .reason_item.active {
+  background-color: #44468f;
+  border: 0;
+}
+.reason .reason_item.active * {
+  visibility: visible;
+}
+.reason .reason_item.active ul {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2c2f87;
+}
+.reason .reason_item.active ul li {
+  border: 1px solid #fff;
+  float: left;
+  padding: 4px 5px;
+  margin: 5px 5px 5px 0;
+  cursor: pointer;
+}
+.reason .reason_item.active ul li.actived {
+  color: #000000;
+  background-color: #fee441;
+}
+.reason .reason_item.active ul li label {
+  cursor: pointer;
+}
+.reason .reason_item.active ul li.selected {
+  background-color: #fee441;
+  color: #000000;
+}
+.reason .reason_item.active ul.cause {
+  display: none;
+}
+.reason .reason_item.active ul.cause1 {
+  display: block;
+}
+.reason .reason_item.active textarea {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #d8d9e8;
+}
+.reason .relation {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f3e7d3;
+  /*input[type=radio]{
+        visibility: hidden;
+        &:checked~label{
+          background-color: #fee441;
+        }
+
+    }*/
+}
+.reason .relation .h2 {
+  font-size: 20px;
+  color: #44468f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.reason .relation span.role {
+  background-color: #e7e4ee;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.reason .relation span.role.actived {
+  background-color: #fee441;
+}
+.reason .protocol {
+  padding: 20px 0px;
+  vertical-align: middle;
+}
+.reason .protocol input {
+  float: left;
+  margin-top: 0.5em;
+  margin-right: 5px;
+}
+.reason .protocol p {
+  width: 400px;
+  float: left;
+  line-height: 2em;
+}
+.reason .protocol button {
+  background-color: #ff8313;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px 15px;
+  margin: 10px 0px 0px 1em;
+  outline: none;
+}
+.reason span.tip {
+  color: #f00;
+  font-size: 16px;
+  display: none;
+  padding-left: 10px;
+}
+/*三角  上 up   下down 左left 右right */
+.l_trangle {
+  width: 0;
+  height: 0;
+  border: 15px dashed transparent;
+  border-right: 15px dashed #f8f3ea;
+  position: absolute;
+  top: 280px;
+  left: -30px;
+  z-index: 5;
+}
+.autocomplete-suggestions {
+  border: 1px solid #e7e7e7;
+  background: #FFF;
+  cursor: default;
+  overflow: auto;
+}
+.autocomplete-suggestions .autocomplete-suggestion {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
+  background-color: #007ead;
+  color: #fff;
+}

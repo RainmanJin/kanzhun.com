@@ -1,0 +1,41 @@
+/**
+ * Created by zcy on 2015/3/17.
+ */
+$(function(){
+    $("#submit1").on("click",function(){
+        var flag = false;
+       $("ul.data input").each(function(index,ele){
+
+          $("ul.data input").removeClass("error");
+
+           if($.trim($(ele).val()) == "" && (index == 0)){
+                $("#feedback").html("* 嘉宾姓名不能为空!");
+                $(ele).addClass("error");
+                flag = true;
+                return false;
+            }
+          if($.trim($(ele).val()) == "" && (index == 1)){
+               $("#feedback").html("* 企业名称不能为空!")
+               $(ele).addClass("error");
+               flag = true;
+                return  false;
+            }
+          if($.trim($(ele).val()) == "" && (index == 2)){
+              $(ele).addClass("error");
+              $("#feedback").html("* 嘉宾职位不能为空!");
+              flag = true;
+              return false;
+            }
+          if($.trim($(ele).val()) == "" && (index == 3)){
+              $(ele).addClass("error");
+              $("#feedback").html("* 联系方式不能为空!");
+              flag = true;
+              return false;
+            }
+      });
+        if(!flag){
+            $("#feedback").html("");
+            $("#form1").submit();
+        }
+    });
+});

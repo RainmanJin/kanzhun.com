@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BOSS</title>
+  <!--[if lte IE 9]>
+  <script src="../js/lib/html5shiv.js"></script>
+  <script src="../js/lib/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/lib/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/ugc/base.css" />
+  <link rel="stylesheet" href="../css/ugc/ugc.css" />
+  <script src="../js/lib/require.js" data-main="../js/site/ugc/boss.js"></script>
+</head>
+<body>
+  <section class="body clearfix">
+    <div class="body_l">
+      <div class="header">
+        <div class="hTop">
+          <div class="logo"><img src="/images/ugc/logo.png"/></div>
+        </div>
+        <div class="hBottom">
+          <div class="base">
+            <div class="protrait">
+              <img src="/images/ugc/temp/img_1.jpg" width="122" height="122">
+              <em></em>
+              <span class="bg"></span>
+              <a class="js_uploadPortrait_bt" href="javacript:;">修改头像</a>
+            </div>
+            <p class="p1">张磊</p>
+            <p class="p2">产品VP</p>
+          </div>
+        </div>
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#" class="current">
+            <em><i class="i i_people"></i></em>
+            基本资料<i class="i i_redpoint ml10"></i>
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_info"></i></em>
+            公司介绍
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_heart"></i></em>
+            公司诱惑
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_necktie"></i></em>
+            产品经理
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_necktie"></i></em>
+            产品经理
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_necktieplus"></i></em>
+            添加职位
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a class="quit" href="javascript:;" data-url="loginout">
+            <em><i class="i i_quit"></i></em>
+            退出登录
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="body_r">
+      <header>
+        <ul>
+          <li class="hm">
+            <a href="#"><img src="../images/ugc/icon_home.png" ></a>
+          </li>
+          <li class="tt"><span>BOSS直聘</span><em>|</em>BOSS版</li>
+          <li class="dl">
+            <a href="#">
+              <img src="../images/ugc/icon_dl.png">
+            </a>
+          </li>
+        </ul>
+      </header>
+      <section class="form">
+        <h2 class="title">基本资料</h2>
+        <div class="content">
+          <form id="basicForm" action="test">
+            <ul class="field clearfix">
+              <li class="list">
+                <label>姓名</label>
+                <input class="ipt v" type="text" placeholder="请输入(最多可输入4个字)" maxlength="4">
+                <p class="err" data-msg="请输入姓名！"></p>
+              </li>
+              <li class="list">
+                <label>经验</label>
+                <input class="ipt v" type="text" placeholder="请输入(最多可输入15个字)" maxlength="15">
+                <p class="err" data-msg="请输入经验！"></p>
+              </li>
+            </ul>
+            <div class="sbm">
+              <input class="btn_green" type="submit" value="保存">
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="form">
+        <h2 class="title">公司简介</h2>
+        <div class="content">
+          <form id="introForm">
+            <ul class="field clearfix">
+              <li class="list">
+                <label>公司简称</label>
+                <input class="ipt v" type="text" placeholder="请输入(最多可输入6个字)" maxlength="6">
+                <p class="err" data-msg="请输入公司名称！"></p>
+              </li>
+              <li class="list">
+                <label>公司全称</label>
+                <input class="ipt v" type="text" placeholder="请输入(最多可输入16个字)" maxlength="16">
+                <p class="err" data-msg="请输入公司名称！"></p>
+              </li>
+              <li class="list">
+                <label>公司所在地</label>
+                <input class="ipt v" type="text" placeholder="请输入(最多可输入10个字)" maxlength="10">
+                <p class="err" data-msg="请输入并选择公司所在地！"></p>
+              </li>
+              <li class="list">
+                <label>公司行业</label>
+                <dl class="select" style="z-index:9">
+                  <dt>
+                    <input type="button" name="entryDateYear" value="互联网/移动互联网/电子商务1" readonly="readonly">
+                    <input class="v" type="hidden" data-necessary="1">
+                    <span class="btn on"><i class="i i_greydown"></i></span>
+                  </dt>
+                  <dd>
+                    <div class="inner">
+                      <i class="i i_blackup"></i>     
+                      <a href="javascript:;" data-val="2014">互联网/移动互联网/电子商务1</a>  
+                      <a href="javascript:;" data-val="2013">互联网/移动互联网/电子商务2</a> 
+                    </div> 
+                  </dd>
+                </dl>
+                <p class="err" data-msg="请选择公司行业！"></p>
+              </li>
+              <li class="list">
+                <label>公司官网</label>
+                <input class="ipt v" type="text" placeholder="请输入(最多可输入140个字)" maxlength="140">
+                <p class="err" data-msg="请输入公司官网！"></p>
+              </li>
+              <li class="list">
+                <label>公司规模</label>
+                <dl class="select" style="z-index:8">
+                  <dt>
+                    <input type="button" name="entryDateYear" value="50 - 100人" readonly="readonly">
+                    <input class="v" type="hidden" data-necessary="1">
+                    <span class="btn on"><i class="i i_greydown"></i></span>
+                  </dt>
+                  <dd>
+                    <div class="inner">
+                      <i class="i i_blackup"></i>     
+                      <a href="javascript:;" data-val="1">50 - 100人</a>  
+                      <a href="javascript:;" data-val="2">500 - 1000人</a> 
+                    </div> 
+                  </dd>
+                </dl>
+                <p class="err" data-msg="请选择公司规模！"></p>
+              </li>
+              <li class="list clear">
+                <label>公司地址</label>
+                <input class="ipt v" style="width:576px" type="text" placeholder="请输入(最多可输入40个字)" maxlength="40">
+                <p class="err" data-msg="请输入公司地址！"></p>
+              </li>
+            </ul>
+            <div class="sbm">
+              <input class="btn_green" type="submit" value="保存">
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="form">
+        <h2 class="title">公司诱惑</h2>
+        <div class="content">
+          <form id="lureForm">
+            <ul class="field clearfix">
+              <li class="list">
+                <label>诱惑语</label>
+                <textarea class="tarea v" rows="3" placeholder="请输入(最多可输入140个字)" maxlength="140"></textarea>
+                <p class="err" style="top:112px;" data-msg="请输入诱惑语！"></p>
+              </li>
+            </ul>
+            <ul class="field clearfix">
+              <li class="list" style="margin-bottom:0">
+                <label>关键词（输入或选择最多5个关键词）</label>
+                <ul class="kword clearfix self">
+                  <li>
+                    App客户端 
+                    <a href="javascript:;" class="close"><i class="i i_sclose"></i></a>
+                    <input type="hidden" value="App客户端">
+                  </li>
+                </ul> 
+                <input class="ipt mr10" type="input" placeholder="请输入(最多可输入6个字)" maxlength="6"><a class="btn_green js_addJobLures" style="width:80px;" href="javascript:;">添加</a>
+                <ul class="kword grey clearfix mt10" action-type="addLures">
+                  <li>App客户端1</li>
+                  <li>App客户端2</li>
+                  <li>App客户端3</li>
+                  <li>App客户端4</li>
+                  <li>App客户端5</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="sbm">
+              <input class="btn_green" type="submit" value="保存">
+            </div>
+          </form>  
+        </div>
+      </section>
+
+      <section class="form">
+        <h2 class="title">产品经理</h2>
+        <div class="content">
+          <form class="js_jobForm">
+            <ul class="field clearfix">
+              <li class="list">
+                <label>职位名称</label>
+                <input class="ipt v" type="text" placeholder="请输入(最多可输入15个字)" maxlength="15">
+                <p class="err" data-msg="请输入职位名称"></p>
+              </li>
+              <li class="list">
+                <label>招聘状态</label>
+                <dl class="select" style="z-index:10">
+                  <dt>
+                    <input type="button" name="entryDateYear" value="职位招聘中" readonly="readonly">
+                    <input class="v" type="hidden" data-necessary="1">
+                    <span class="btn on"><i class="i i_greydown"></i></span>
+                  </dt>
+                  <dd>
+                    <div class="inner">
+                      <i class="i i_blackup"></i>   
+                      <a href="javascript:;" data-val="1">职位招聘中</a>  
+                      <a href="javascript:;" data-val="1">职位招聘中1</a> 
+                    </div> 
+                  </dd>
+                </dl>
+                <p class="err" data-msg="请选择招聘状态"></p>
+              </li>
+              <li class="list">
+                <label>职位类型</label>
+                <dl class="select" style="z-index:10" id="jobMenu">
+                  <dt>
+                    <input type="button" name="" value="职位类型" readyonly="readyonly" >
+                    <input class="v" type="hidden" data-necessary="1">
+                    <span class="btn on"><i class="i i_greydown"></i></span>
+                  </dt>
+                  <dd class="openmenu">
+                    <h2>技术</h2>
+                    <ul class="clearfix">
+                      <li><a href="javascript:;">后端开发<i></i></a></li>
+                      <li><a href="javascript:;">移动开发<i></i></a>
+                        <div> 
+                          <a href="javascript:;" data-val="1">设计经理/主管</a>
+                          <a href="javascript:;">设计总监</a>
+                          <a href="javascript:;">视觉设计经理/主管</a>
+                          <a href="javascript:;">视觉设计总监</a>
+                          <a href="javascript:;">交互设计经理/主管</a>
+                          <a href="javascript:;">交互设计总监</a>
+                          <a href="javascript:;">用户研究经理/主管</a>
+                          <a href="javascript:;">用户研究总监 </a>
+                        </div>
+                      </li>
+                      <li><a href="javascript:;">测试<i></i></a></li>
+                      <li><a href="javascript:;">运维<i></i></a></li>
+                      <li><a href="javascript:;">DBA<i></i></a></li>
+                      <li><a href="javascript:;">项目管理<i></i></a></li>
+                      <li><a href="javascript:;">高端技术职位<i></i></a></li>
+                    </ul>
+                    <h2>产品</h2>
+                    <ul class="clearfix">
+                      <li><a href="javascript:;">产品经理<i></i></a></li>
+                      <li><a href="javascript:;">产品设计师<i></i></a></li>
+                      <li><a href="javascript:;">高端产品职位<i></i></a></li>
+                    </ul>
+                    <h2>设计</h2>
+                    <ul class="clearfix">
+                      <li><a href="javascript:;">视觉设计<i></i></a></li>
+                      <li><a href="javascript:;">交互设计<i></i></a></li>
+                      <li><a href="javascript:;">用户研究<i></i></a></li>
+                      <li><a href="javascript:;">高端设计职位<i></i></a></li>
+                    </ul>
+                    <h2>运营</h2>
+                    <ul class="clearfix">
+                      <li><a href="javascript:;">运营<i></i></a></li>
+                      <li><a href="javascript:;">编辑<i></i></a></li>
+                      <li><a href="javascript:;">客服<i></i></a></li>
+                      <li><a href="javascript:;">高端运营职位<i></i></a></li>
+                    </ul>
+                    <h2>市场与销售</h2>
+                    <ul class="clearfix">
+                      <li><a href="javascript:;">市场/营销<i></i></a></li>
+                      <li><a href="javascript:;">公关<i></i></a></li>
+                      <li><a href="javascript:;">销售<i></i></a></li>
+                      <li><a href="javascript:;">高端市场职位<i></i></a></li>
+                      <li><a href="javascript:;">高端销售职位<i></i></a></li>
+                    </ul>
+                    <h2>职能</h2>
+                    <ul class="clearfix">
+                      <li><a href="javascript:;">人力资源<i></i></a></li>
+                      <li><a href="javascript:;">行政<i></i></a></li>
+                      <li><a href="javascript:;">财务<i></i></a></li>
+                      <li><a href="javascript:;">高端职能职位<i></i></a></li>
+                    </ul>
+                  </dd>
+                </dl>
+                <p class="err" data-msg="请选择职位类型"></p>
+              </li>
+              <li class="list">
+                <label>薪资范围</label>
+                <input class="ipt v" style="width:97px" type="text" placeholder="输入最低薪资"><em class="mline ml10 mr10 "></em><input class="ipt v" style="width:97px" type="text"placeholder="输入最高薪资">
+                <p class="err" data-msg="请输入薪资范围"></p>
+              </li>
+              <li class="list">
+                <label>经验要求</label>
+                <dl class="select" style="z-index:9">
+                  <dt>
+                    <input type="button" name="entryDateYear" value="1-3年" readonly="readonly">
+                    <input class="v" type="hidden" data-necessary="1">
+                    <span class="btn on"><i class="i i_greydown"></i></span>
+                  </dt>
+                  <dd>
+                    <div class="inner">
+                      <i class="i i_blackup"></i>     
+                      <a href="javascript:;" data-val="1">1-3年</a>  
+                      <a href="javascript:;" data-val="1">3-5年</a> 
+                    </div> 
+                  </dd>
+                </dl>
+                <p class="err" data-msg="请选择经验要求"></p>
+              </li>
+              <li class="list">
+                <label>学历要求</label>
+                <dl class="select" style="z-index:8">
+                  <dt>
+                    <input type="button" name="entryDateYear" value="本科" readonly="readonly">
+                    <input class="v" type="hidden" data-necessary="1">
+                    <span class="btn on"><i class="i i_greydown"></i></span>
+                  </dt>
+                  <dd>
+                    <div class="inner">
+                      <i class="i i_blackup"></i>     
+                      <a href="javascript:;" data-val="1">本科</a>  
+                      <a href="javascript:;" data-val="1">专科</a> 
+                    </div> 
+                  </dd>
+                </dl>
+                <p class="err" data-msg="请选择学历要求"></p>
+              </li>
+              <li class="list">
+                <label>工作性质</label>
+                <dl class="select" style="z-index:7">
+                  <dt>
+                    <input type="button" name="entryDateYear" value="全职" readonly="readonly">
+                    <input class="v" type="hidden" data-necessary="1">
+                    <span class="btn on"><i class="i i_greydown"></i></span>
+                  </dt>
+                  <dd>
+                    <div class="inner">
+                      <i class="i i_blackup"></i>     
+                      <a href="javascript:;" data-val="1">全职</a>  
+                      <a href="javascript:;" data-val="1">兼职</a> 
+                    </div> 
+                  </dd>
+                </dl>
+                <p class="err" data-msg="请选择工作性质"></p>
+              </li>
+              <li class="list">
+                <label>工作地点</label>
+                <input class="ipt v" type="text" placeholder="请输入(最多可输入10个字)" maxlength="10">
+                <p class="err" data-msg="请输入并选择公司所在地！"></p>
+              </li> 
+              <li class="list">
+                <label>职位描述</label>
+                <textarea class="tarea v" placeholder="请输入(最多可输入300个字)" maxlength="300" rows="3"></textarea>
+                <p class="err" style="top:112px;" data-msg="请输入职位描述"></p>
+              </li>
+              <li class="list">
+                <label>考题</label>
+                <textarea class="tarea" placeholder="请输入(最多可输入140个字)" maxlength="140" rows="3"></textarea>
+                <textarea class="tarea mt10" placeholder="请输入(最多可输入140个字)" maxlength="140" rows="3"></textarea>
+                <textarea class="tarea mt10" placeholder="请输入(最多可输入140个字)" maxlength="140" rows="3"></textarea>
+              </li>
+            </ul>
+            <div class="sbm">
+              <input class="btn_green" type="submit" value="保存">
+              <a class="btn_red ml10" href="javascript:;">删除</a>
+            </div>
+          </form>  
+        </div>     
+      </section>
+
+    </div>
+  </section>
+</body>
+</html>

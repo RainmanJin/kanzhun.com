@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>性格弱点</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/character.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <section class="content">
+    <div class="con">
+      <header class="ml10 mr10">职场中哪类人跟你<strong>最合不来</strong><b>?</b> </header>
+
+      <div class="intro ">
+        这年头，办公室暗战愈加厉害，保住位置已不容易。在办公室生活中你知道你会栽在什么地方吗？你知道自己在职场有何性格弱点，在office里面应该如何趋吉避凶吗？
+      </div>
+
+      <img class="imgs mb10" src="images/kids.jpg" >
+      <a class="btn" href="a.html">开始测验</a>
+    </div>
+  </section>
+</div>
+
+<script src="js/zepto.js"></script>
+<script src="js/wx.js"></script>
+</body>
+</html>

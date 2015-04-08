@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>工资页</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../../css/widget.css" />
+<link rel="stylesheet" href="../../css/salary.css" />
+<script src="../js/require.js" data-main="../js/site/salary.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="co_header clearfix">
+		<a href="#"><img src="../images/img-04.jpg" width="150" height="150" alt="" class="co_logo" /></a>
+		<div class="co_info">
+			<h1>易宝支付</h1>
+			<p class="msg"><span class="grade_star_b"><i style="width:56px;"></i></span><strong>2.2</strong>分<em>|</em><a href=""><b>235条</b></a>信息</p>
+			<p class="params">互联网<em>|</em>www.yeepay.com<em>|</em>北京<em>|</em>500-100人</p>
+		</div>
+		<nav class="clearfix">
+			<a href="#" class="current">简介</a><a href="#">薪酬</a><a href="#">评论</a><a href="#">面试</a><a href="#">照片</a><a href="#">员工</a>
+		</nav>
+		<aside>
+			<a href="#" class="btn_o_l comment">我要点评公司</a>
+			<a href="" class="btn_grey_b follow"><b>+</b> 关注公司</a>
+		</aside>
+	</section>
+
+	<div class="container clearfix">
+		<section class="l_con clearfix">
+			<p class="f_16 mb10">易宝支付工资</p>
+			<p><span class="fright grey_99">最后更新 七天内</span>12条工资（12个职位） <span id="showSalarySearch">按职位或城市查看工资</span></p>
+			<p class="line"></p>
+			<div class="salary_search clearfix none" id="salarySearch">
+				<dl class="select" id="salaryCitySelect">
+					<dt><input type="text" name="" value="全部城市" readonly="readonly" /><span class="btn"><i></i></span></dt>
+					<dd>
+						<a href="#">全部城市(235条)</a>
+						<a href="#">北京（129条）</a>
+						<a href="#">上海（85条）</a>	
+						<a href="#">天津（111条）</a>
+					</dd>
+				</dl>
+				<input type="text" name="" class="field_b" placeholder="产品经理 共25条薪酬信息，9个城市" />
+				<input type="submit" value="按职位查询" class="btn_grey_l" />
+				<span class="search_close">关闭</span>
+			</div>
+			<div class="salary_sort">
+				<ul>
+					<li class="current"><i class="sort_t"></i>文字</li>
+					<li><i class="sort_p"></i>图表</li>
+				</ul>
+				<a href="#" class="current" data-num="1">默认排序</a> <a href="#" data-num="2">从高到低</a> <a href="#" data-num="3">从低到高</a>
+			</div>
+			<table class="salary_chart" cellspacing="0" cellspacing="0">
+				<tr>
+					<th>职位</th>
+					<th>平均工资/月</th>
+					<th>￥0</th>
+					<th>￥10K</th>
+					<th>￥20K</th>
+					<th>￥30K</th>
+					<th>￥40K</th>
+					<th>￥50K</th>
+				</tr>
+				<tr>
+					<td class="blue">java工程师(8条)</td>
+					<td width="100">￥18000</td>
+					<td colspan="6" class="chart">
+						<figure>
+							<div style="margin-left: 39px;width: 78px;"></div>
+						</figure>
+					</td>
+				</tr>
+				<tr class="current">
+					<td class="blue">产品经理(6条)</td>
+					<td>￥12000</td>
+					<td colspan="6" class="chart">
+						<figure>
+							<div style="margin-left: 130px;width: 104px;">
+								<dl>
+									<dt></dt>
+									<dd>技术工程师工资 <br><span class="grey_99">工资范围：</span>￥2,000-￥20,000 <br><span class="grey_99">平均工资：</span>￥9,000 <br><span class="blue">靠谱（123）</span></dd>
+								</dl>
+							</div>
+						</figure>
+					</td>
+				</tr>
+				<tr>
+					<td class="blue">技术工程师(18条)</td>
+					<td>￥11000</td>
+					<td colspan="6" class="chart">
+						<figure>
+							<div style="margin-left: 78px;width: 130px;"></div>
+						</figure></td>
+				</tr>
+				<tr>
+					<td class="blue">技术工程师(18条)</td>
+					<td> - </td>
+					<td colspan="6" class="chart grey_99">为保护用户隐私，同一职位3条数据以上才会展示 <a href="">[为什么]</a></td>
+				</tr>
+				<tr>
+					<td class="blue">技术工程师(18条)</td>
+					<td> - </td>
+					<td colspan="6" class="chart grey_99">为保护用户隐私，同一职位3条数据以上才会展示 <a href="">[为什么]</a>
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="blue">技术工程师(18条)</td>
+					<td> - </td>
+					<td colspan="6" class="chart grey_99">为保护用户隐私，同一职位3条数据以上才会展示 <a href="">[为什么]</a></td>
+				</tr>
+			</table>
+
+			<section class="dialog salary_why" id="salaryWhy">
+				<div class="dialog_con">
+					<a href="#" class="direct direct_l"></a>
+					<a href="#" class="dialog_close"></a>
+					为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么
+				</div>
+			</section>
+			<p class="mt15">图例： <img src="../images/salary_flag.jpg" class="mr10" />工资范围</p>
+			<p class="mt10">说明： <span class="grey_99">所有工资数据来自用户匿名分享。工资水平受地域、工作年限等多种因素影响，仅供参考。</span></p>
+			<div class="send_salary">
+				<a href="" class="btn_grey_b mr20">+发一条工资（匿名）</a>
+				<p class="grey_99">如果您（曾）在易宝支付工作，请您匿名发一条工资，用户匿名提供的信息正在帮助广大求职者。</p>
+			</div>
+			
+			<h3 class="tt"><img src="../images/tt_chat.jpg"  alt="公司印象" /></h3>
+			<div class="chat_field">
+				<textarea name="" placeholder="对这家公司印象如何？" ></textarea>
+			</div>
+			<p class="t-right"><input type="button" value="发布" class="btn_grey_s" /></p>
+
+			<ul class="reviews">
+				<li>
+					<i class="r"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+				<li>
+					<i class="i"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作.
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+				<li>
+					<i class="c"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”.
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+			</ul>
+
+			<p class="mt20 t-center"><a href="#" class="btn_grey_b">&nbsp;&nbsp;&nbsp;&nbsp;更多......&nbsp;&nbsp;</a></p>
+		</section>
+		<section class="r_con">
+			<div class="pk_salaryEnter">
+				<p class="form">
+					<input class="ifd" type="text" placeholder="输入税前月薪"><input class="btn_o_l ml10" type="submit" value="PK工资">	
+				</p>
+			</div>
+			<h3 class="r_tt">互联网行业产品经理薪酬</h3>
+			<ul class="salary_show">
+				<li><em>2496条薪酬数据</em><i class="hot">1</i><a href="">百度</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">2</i><a href="">腾讯</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">3</i><a href="">阿里巴巴</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>4</i><a href="">盛大集团</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>5</i><a href="">新浪</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>6</i><a href="">360安全卫士</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>7</i><a href="">唯美购</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>8</i><a href="">IBM</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>9</i><a href="">Google</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>10</i><a href=""n>搜狐畅游</a>-产品经理</li>
+			</ul>
+
+			<h3 class="r_tt mt20">热门职位</h3>
+			<ul class="jobs_show">
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度在线网络技术有限公司 – 广州</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />基础架构部_云安全研发工程师（上海）<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+			</ul>
+
+			<p class="fright"><a href="">查看更多</a></p>
+		</section>
+	</div>
+</body>
+</html>

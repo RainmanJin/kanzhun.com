@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>中秋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/moon.css" />
+  <link rel="stylesheet" href="css/wx.css" />
+</head>
+
+<body class="index_bg">
+	<section class="top">
+		<img class="bg" src="images/result_top.jpg">
+	</section>
+	<section class="bottom">
+		<img class="bg" src="images/result_bottom.jpg">	
+		<div class="card_result">
+			<img class="img" src="images/big_card.png">
+			<div class="mt10 ml10 mr10">
+				<a class="btn bt_transmit" href="javascript:;">邀请朋友领取礼盒</a>
+			</div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/wx.js"></script>
+</html>

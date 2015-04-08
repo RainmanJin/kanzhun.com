@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>名企面试挑战赛</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/exam.css" />
+</head>
+<body class="quest">
+<div class="wrapper">
+  <div class="timing clearfix"  data-node-type="timing">
+    <em><span>0</span><i></i></em>
+    <em><span>0</span><i></i></em>
+    <span>:</span>
+    <em><span>0</span><i></i></em>
+    <em><span>0</span><i></i></em>
+    <span>:</span>
+    <em><span>0</span><i></i></em>
+    <em><span>0</span><i></i></em>
+  </div>
+  <div class="header">
+    <div class="line"></div>
+  </div>
+  <div class="c">
+    <div class="q" id="questions"><i>1/9</i>30之于月，相当于52之于?</div>
+    <div id="answersList">
+      <div class="q_img">
+        <img src="images/q_0.jpg">
+      </div>
+      <ul class="answers">
+        <li data-forward="2" data-score="2" class="on">
+          <a ka="thework-button-a" href="javascript:;">
+            <i></i>
+            <span>分</span>
+          </a>
+        </li>
+        <li data-forward="2" data-score="2">
+          <a ka="thework-button-a" href="javascript:;">
+            <i></i>
+            <span>周</span>
+          </a>
+        </li>
+        <li data-forward="2" data-score="2">
+          <a ka="thework-button-a" href="javascript:;">
+            <i></i>
+            <span>年</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <i class="i icon_1 b_l"></i>
+  <i class="i icon_1 b_r"></i>
+</div>
+<script src="js/zepto.js"></script>
+<script src="js/questions.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+div.cmp_pk_tt {
+  position: relative;
+}
+div.cmp_pk_tt div.co_pk_tip_p {
+  position: absolute;
+  top: 18px;
+  left: 100px;
+  width: 12px;
+  height: 12px;
+}
+div.cmp_pk_tt div.co_pk_tip_p i {
+  float: left;
+}
+div.cmp_pk_tt div.co_pk_tip {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 3;
+}
+div.cmp_pk_tt div.co_pk_tip i {
+  position: absolute;
+  top: -9px;
+  left: 95px;
+  width: 19px;
+  height: 11.5px;
+  background: url(../images/field/field_img6.png) no-repeat left top;
+  -webkit-background-size: 19px;
+  -moz-background-size: 19px;
+  -o-background-size: 19px;
+  background-size: 19px;
+  z-index: 4;
+}
+div.cmp_pk_tt div.co_pk_tip div {
+  padding: 15px;
+  color: #666666;
+}
+div.cmp_pk_tt div.co_pk_tip.none {
+  display: none;
+}
+p.charts_explain {
+  color: #666666;
+}
+p.charts_explain em {
+  margin: 0 5px;
+  color: #999999;
+}
+p.charts_explain span {
+  color: #f39800;
+}
+p.charts_explain i {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  line-height: 0;
+  margin-right: 5px;
+  vertical-align: -2px;
+  border-radius: 2px;
+}
+p.charts_explain i.item1 {
+  background-color: #7db2e6;
+}
+p.charts_explain i.item2 {
+  background-color: #f4a484;
+}
+p.charts_explain i.item3 {
+  background-color: #68bf57;
+}
+p.charts_explain i.item4 {
+  background-color: #f483b7;
+}
+ul.pk {
+  overflow: hidden;
+}
+ul.pk li {
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+}
+ul.pk li a {
+  display: block;
+  margin-right: 10px;
+  background-color: #f5f5f5;
+  color: #666666;
+}
+ul.pk li:last-child a {
+  margin-right: 0;
+}
+ul.pk li:nth-child(even) a {
+  margin-right: 0;
+}
+ul.pk_cmp a {
+  position: relative;
+  padding: 10px 25px 10px 10px;
+  line-height: 1.1;
+  color: #666666;
+}
+ul.pk_cmp a span {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  line-height: 0;
+  margin-right: 5px;
+  vertical-align: -2px;
+  border-radius: 2px;
+}
+ul.pk_cmp a span.item1 {
+  background-color: #7db2e6;
+}
+ul.pk_cmp a span.item2 {
+  background-color: #f4a484;
+}
+ul.pk_cmp a span.item3 {
+  background-color: #68bf57;
+}
+ul.pk_cmp a span.item4 {
+  background-color: #f483b7;
+}
+ul.pk_cmp a i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+ul.pk_cmp a p {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}
+ul.pk_cmp a.have_no_select {
+  height: 31px;
+  line-height: 31px;
+  color: #b3b3b3;
+  text-align: center;
+  border: 1px dashed #e5e5e5;
+  padding: 0;
+}
+a.pk_position {
+  position: relative;
+  display: block;
+  padding: 10px 25px 10px 0;
+  background-color: #f5f5f5;
+  line-height: 1.1;
+}
+a.pk_position p {
+  color: #666666;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}
+a.pk_position em {
+  padding: 0 10px 0 10px;
+  color: #999999;
+}
+a.pk_position i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

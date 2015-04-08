@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>公司大PK页面</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"> </script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/cmp_pk/cmp_pk.css" />
+</head>
+
+<body class="field_bg">
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">招聘</a>
+				<a href="#" class="current">公司</a>
+				<a href="#">工资</a>
+				<a href="#">面试</a>
+				<a href="#" class="mycomment">我要点评</a>
+			</nav>
+			<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="ps_header field_mini_bg clearfix">
+		<div class="clearfix">
+			<form action="/companyl/search/" method="get" id="minisearchForm">
+				<input id="MSSQType" value="2" type="hidden">
+				<input name="stype" id="MSSSType" value="" type="hidden">
+				<dl class="select ps_salary_slt" id="minisearchS">
+					<dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly" /><div></div><span class="btn"><i></i></span></dt>
+				<dd>
+					<a href="/jobl/p/">职位</a>
+					<a href="/companyl/search/">公司</a>
+					<a href="/salaryl/search/">工资</a>
+					<a href="/interviewl/search/">面试</a>
+				</dd>
+				</dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value="" /><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" /><input type="hidden" id="cityCode" name="cityCode" value="" /><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索" /></span>
+			</form>
+		</div>
+	</section>
+
+	<div class="f_container clearfix">
+		<section class="f_l_con clearfix">
+			<div class="wrap_style cmp_pk_select mb15">
+				<h1>公司大PK</h1>
+				<ul class="clearfix">
+					<li class="fleft">
+						<div class="cmp_logo">
+							<img src="../images/cmp_pk/cmp_pk_img6.jpg" alt="">
+						</div>
+						<div class="cmp_name_ipt">
+							<input type="text" placeholder="请输入公司名称" />
+						</div>
+					</li>
+					<li class="fright">
+						<div class="cmp_logo">
+							<img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg" alt="">
+						</div>
+						<p>
+							<strong class="f_16">华为华为华为</strong>
+							<a href="">换一个&nbsp;<span></span></a>
+						</p>
+					</li>
+				</ul>
+				<a href="" class="pk mb10"><input type="submit" value="PK一下"></a>
+				<div class="pk_proportion">
+					<a href="" class="fleft support_red mr15"><i class="support_left"></i></a>
+					<div>
+						<div><span></span></div>
+					</div>
+					<a href="" class="fright support_blue"><i  class="support_right"></i></a>
+				</div>
+				<p class="pk_count">
+					<span class="fleft"><em class="pk_red">237928</em>人支持</span><span class="fright"><em class="pk_blue">237928</em>人支持</span>
+				</p>
+			</div>
+			<div class="wrap_style cmp_pk_details clearfix mb15">
+				<section class="cmp_pk_d_left">
+					<h2>百度</h2>
+					<div class="cmp_pk_d_con cmp_pk_d_salary">
+						<h3>第1轮&nbsp;-&nbsp;工资</h3>
+						<span class="btn_style btn_red average">平均</span>
+						<p class="pk_red salary_data"><i>￥</i>17.444</p>
+						<p class="mb25"><span class="grey_99 mr10">来自&nbsp;<em class="grey_66">222</em>&nbsp;样本</span><a href="">查看全部</a></p>
+						<span class="btn_style btn_red hot mb10">热门职位</span>
+						<ul>
+							<li>
+								<em class="fright pk_red">￥17,600</em><p><span>产品经理产品经理产品经理产品经理产品经理</span></p>
+							</li>
+							<li>
+								<em class="fright pk_red">￥17,600</em><p><span>产品经理</span></p>
+							</li>
+							<li>
+								<em class="fright pk_red">￥17,600</em><p><span>产品经理</span></p>
+							</li>
+							<li>
+								<em class="fright pk_red">￥17,600</em><p><span>产品经理</span></p>
+							</li>
+							<li>
+								<em class="fright pk_red">￥17,600</em><p><span>产品经理</span></p>
+							</li>
+						</ul>
+					</div>
+					<div class="cmp_pk_d_con cmp_pk_d_ceo">
+						<h3>第2轮&nbsp;-&nbsp;CEO支持率</h3>
+						<ul>
+							<li class="doughnua_chart">
+								<span>3.1</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.62_0.38"></canvas>
+							</li>
+							<li class="ceo_text">
+								78%的员工赞同CEO
+								<img src="../images/cmp_pk/cmp_pk_img3.png" alt="">
+								<span class="grey_99 f_12 mr10">来自&nbsp;<em class="grey_66">222</em>&nbsp;样本</span>
+							</li>
+							<li class="ceo_img">
+								<img src="http://img.kanzhun.com/image/3275.gif" alt="">
+								<span></span>
+							</li>
+							<li>
+								<p>马云马云马云马云</p>首席执行官
+							</li>
+						</ul>
+					</div>
+					<div class="cmp_pk_d_con cmp_pk_d_all">
+						<h3>第3轮&nbsp;-&nbsp;综合评分</h3>
+						<p class="all_score">综合评分：<span><i style="width: 19px;"></i></span><strong class="pk_red">5.0</strong></p>
+						<p class="t-center mb10"><span class="grey_99 mr10">来自&nbsp;<em class="grey_66">222</em>&nbsp;样本</span></p>
+						<p class="ranking mb15"><i class="ranking_red"></i>行业雇主品牌综合排名：第<strong class="pk_red">33494</strong>位<a href="">查看排名</a></p>
+						<ul>
+							<li>
+								<span>职业成长：</span>
+								<div>
+									<div><span style="width: 40px;"><i></i></span></div>
+									<p><em class="fleft">满意</em><em class="fright">不满意</em></p>
+								</div>
+								<em>3.58</em>
+							</li>
+							<li>
+								<span>职业成长：</span>
+								<div>
+									<div><span style="width: 40px;"><i></i></span></div>
+									<p><em class="fleft">满意</em><em class="fright">不满意</em></p>
+								</div>
+								<em>3.58</em>
+							</li>
+							<li>
+								<span>职业成长：</span>
+								<div>
+									<div><span style="width: 40px;"><i></i></span></div>
+									<p><em class="fleft">满意</em><em class="fright">不满意</em></p>
+								</div>
+								<em>3.58</em>
+							</li>
+							<li>
+								<span>职业成长：</span>
+								<div>
+									<div><span style="width: 40px;"><i></i></span></div>
+									<p><em class="fleft">满意</em><em class="fright">不满意</em></p>
+								</div>
+								<em>3.58</em>
+							</li>
+						</ul>
+					</div>
+					<div class="cmp_pk_d_con cmp_pk_d_employees">
+						<h3>看看员工怎么说</h3>
+						<div class="tags tags_red">
+							<a href="" class="tag_tt btn_red">全部（21）</a><a href="">高成长<em>（32）</em></a><a href="">高成长<em>（32）</em></a><a href="">高成长<em>（32）</em></a><a href="">高成长<em>（32）</em></a>
+						</div>
+						<dl>
+							<dt>
+								<div>
+									<img src="../images/cmp_pk/cmp_pk_img10.png" alt="">
+								</div>
+								<p class="grey_33 mt10">该公司1年产品经理</p>
+								<p class="times">发布于11-12</p>
+							</dt>
+							<dd>
+								<img src="../images/cmp_pk/cmp_pk_img11.png" alt="" class="trangles">
+								<h4><a href="" class="f_16">是一家很有潜力的公司</a></h4>
+								<div class="mb15">
+									<p><span>公司有点：</span>是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司</p>
+									<p><span>公司有点：</span>是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司</p>
+								</div>
+								<p class="t-right options comments"><a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="203998" ka="blocker3-reviewup1"><span class="img helpful"></span>有用（<i>17</i>）</a><em class="line">|</em><a ka="blocker3-reviewcomment1" rel="nofollow" href="/pl203998.html" class="cmt"><span class="img cmt"></span>评论（1）</a></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<div>
+									<img src="../images/cmp_pk/cmp_pk_img10.png" alt="">
+								</div>
+								<p class="grey_33 mt10">该公司1年产品经理</p>
+								<p class="times">发布于11-12</p>
+							</dt>
+							<dd>
+								<img src="../images/cmp_pk/cmp_pk_img11.png" alt="" class="trangles">
+								<h4><a href="" class="f_16">是一家很有潜力的公司</a></h4>
+								<div class="mb15">
+									<p><span>公司有点：</span>是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司</p>
+									<p><span>公司有点：</span>是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司</p>
+								</div>
+								<p class="t-right options comments"><a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="203998" ka="blocker3-reviewup1"><span class="img helpful"></span>有用（<i>17</i>）</a><em class="line">|</em><a ka="blocker3-reviewcomment1" rel="nofollow" href="/pl203998.html" class="cmt"><span class="img cmt"></span>评论（1）</a></p>
+							</dd>
+						</dl>
+						<a href="" class="btn_grey_b see_all">查看全部点评</a>
+					</div>
+				</section>
+				<section class="cmp_pk_d_right">
+					<h2>腾讯</h2>
+					<div class="cmp_pk_d_con cmp_pk_d_salary">
+						<span class="btn_style btn_blue average">平均</span>
+						<p class="pk_blue salary_data"><i>￥</i>17.444</p>
+						<p class="mb25"><span class="grey_99 mr10">来自&nbsp;<em class="grey_66">222</em>&nbsp;样本</span><a href="">查看全部</a></p>
+						<span class="btn_style btn_blue hot mb10">热门职位</span>
+						<ul class="bg">
+							<li>
+								<em class="fright pk_blue">￥17,600</em><p><span>产品经理产品经理产品经理产品经理产品经理</span></p>
+							</li>
+							<li>
+								<em class="fright pk_blue">￥17,600</em><p><span>产品经理</span></p>
+							</li>
+							<li>
+								<em class="fright pk_blue">￥17,600</em><p><span>产品经理</span></p>
+							</li>
+							<li>
+								<em class="fright pk_blue">￥17,600</em><p><span>产品经理</span></p>
+							</li>
+							<li>
+								<em class="fright pk_blue">￥17,600</em><p><span>产品经理</span></p>
+							</li>
+						</ul>
+					</div>
+					<div class="cmp_pk_d_con cmp_pk_d_ceo">
+						<ul>
+							<li class="doughnua_chart">
+								<span>3.1</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.62_0.38"></canvas>
+							</li>
+							<li class="ceo_text">
+								太惨了<br>什么都没有
+								<img src="../images/cmp_pk/cmp_pk_img3.png" alt="">
+								<span class="grey_99 f_12 mr10">暂无数据</span>
+							</li>
+							<li class="ceo_img">
+								<img src="../images/cmp_pk/cmp_pk_img12.jpg" alt="">
+								<span class="no_img"></span>
+							</li>
+							<li>
+								<p>资料不完整</p><a href="">+&nbsp;我来补充</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cmp_pk_d_con cmp_pk_d_all">
+						<p class="all_score">综合评分：<span><i style="width: 19px;" class="satrt_blue"></i></span><strong class="pk_blue">5.0</strong></p>
+						<p class="t-center mb10"><span class="grey_99 mr10">来自&nbsp;<em class="grey_66">222</em>&nbsp;样本</span></p>
+						<p class="ranking mb15"><i class="ranking_blue"></i>行业雇主品牌综合排名：第<strong class="pk_blue">33494</strong>位<a href="">查看排名</a></p>
+						<ul>
+							<li>
+								<span>职业成长：</span>
+								<div>
+									<div><span style="width: 40px;"><i></i></span></div>
+									<p><em class="fleft">满意</em><em class="fright">不满意</em></p>
+								</div>
+								<em>3.58</em>
+							</li>
+							<li>
+								<span>职业成长：</span>
+								<div>
+									<div><span style="width: 40px;"><i></i></span></div>
+									<p><em class="fleft">满意</em><em class="fright">不满意</em></p>
+								</div>
+								<em>3.58</em>
+							</li>
+							<li>
+								<span>职业成长：</span>
+								<div>
+									<div><span style="width: 40px;"><i></i></span></div>
+									<p><em class="fleft">满意</em><em class="fright">不满意</em></p>
+								</div>
+								<em>3.58</em>
+							</li>
+							<li>
+								<span>职业成长：</span>
+								<div>
+									<div><span style="width: 40px;"><i></i></span></div>
+									<p><em class="fleft">满意</em><em class="fright">不满意</em></p>
+								</div>
+								<em>3.58</em>
+							</li>
+						</ul>
+					</div>
+					<div class="cmp_pk_d_con cmp_pk_d_employees">
+						<div class="tags tags_blue">
+							<a href="" class="tag_tt btn_blue">全部（21）</a><a href="">高成长<em>（32）</em></a><a href="">高成长<em>（32）</em></a><a href="">高成长<em>（32）</em></a><a href="">高成长<em>（32）</em></a>
+						</div>
+						<dl>
+							<dt>
+								<div>
+									<img src="../images/cmp_pk/cmp_pk_img10.png" alt="">
+								</div>
+								<p class="grey_33 mt10">该公司1年产品经理</p>
+								<p class="times">发布于11-12</p>
+							</dt>
+							<dd>
+								<img src="../images/cmp_pk/cmp_pk_img11.png" alt="" class="trangles">
+								<h4><a href="" class="f_16">是一家很有潜力的公司</a></h4>
+								<div class="mb15">
+									<p><span>公司有点：</span>是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司</p>
+									<p><span>公司有点：</span>是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司</p>
+								</div>
+								<p class="t-right options comments"><a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="203998" ka="blocker3-reviewup1"><span class="img helpful"></span>有用（<i>17</i>）</a><em class="line">|</em><a ka="blocker3-reviewcomment1" rel="nofollow" href="/pl203998.html" class="cmt"><span class="img cmt"></span>评论（1）</a></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<div>
+									<img src="../images/cmp_pk/cmp_pk_img10.png" alt="">
+								</div>
+								<p class="grey_33 mt10">该公司1年产品经理</p>
+								<p class="times">发布于11-12</p>
+							</dt>
+							<dd>
+								<img src="../images/cmp_pk/cmp_pk_img11.png" alt="" class="trangles">
+								<h4><a href="" class="f_16">是一家很有潜力的公司</a></h4>
+								<div class="mb15">
+									<p><span>公司有点：</span>是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司</p>
+									<p><span>公司有点：</span>是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司是一家很有潜力的公司</p>
+								</div>
+								<p class="t-right options comments"><a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="203998" ka="blocker3-reviewup1"><span class="img helpful"></span>有用（<i>17</i>）</a><em class="line">|</em><a ka="blocker3-reviewcomment1" rel="nofollow" href="/pl203998.html" class="cmt"><span class="img cmt"></span>评论（1）</a></p>
+							</dd>
+						</dl>
+						<a href="" class="btn_grey_b see_all">查看全部点评</a>
+					</div>
+				</section>
+			</div>
+
+			<!-- 评论 -->
+			<div class="wrap_style cmp_pk_comments mb15">
+				<h2><strong class="f_18 mr10">百度VS腾讯</strong><span class="f_16 mr15">你怎么看？</span><em class="grey_99">已有1200人参与评价</em></h2>
+				<p class="t-center f_16"><strong>支持哪个公司，就给TA点个赞吧！</strong></p>
+				<div class="pk_proportion mb25">
+					<a href="" class="fleft support_red mr15"><i class="support_left"></i></a>
+					<div>
+						<div><span></span></div>
+					</div>
+					<a href="" class="fright support_blue"><i  class="support_right"></i></a>
+				</div>
+				<div class="comments_con mb30">
+					<input type="hidden" name="companyId" value="10713">
+					<input type="hidden" name="originId" value="403249">
+					<input type="hidden" name="type" value="5">
+					<input type="hidden" name="parentId" value="403249">
+					<input type="hidden" name="parentFloor" value="0">
+					<dl class="ipt_comments mb10">
+						<dt><img src="../images/positionimgs/po_imgs2.jpg" alt="" data-bd-imgshare-binded="1"><span></span></dt>
+						<dd><textarea class="content_ipt" name="commentContent" placeholder="发布你的评论" style="height: 4.5em;"></textarea></dd>
+					</dl>
+					<div class="t-right pk_sub_comments">
+						<p class="fleft"><span class="cmt_w mr10">您还可以输入<strong class="ok">140</strong>字</span><b class="red mr20 none">发布失败:-(</b></p>
+						<p class="fright"><a href="">我要深度爆料</a><span class="btn_grey_b pub_cmt"><input type="button" value="提交评论"></span></p>
+					</div>
+					<ul class="mt15 comment_list">
+						<li>
+							<div class="con">
+								<span class="avatar19"><i></i></span>
+								<p><em>看准用户 [回复1楼]&nbsp;2014-10-25</em>加油</p>
+								<aside><em>3楼</em><a ka="review-re1" rel="nofollow" href="javascript:;" class="add_reply" data-pid="605626" data-pnum="3">回复</a></aside>
+							</div>
+						</li>
+						<li>
+							<div class="con">
+								<span class="avatar10"><i></i></span>
+								<p><em>看准用户 &nbsp;2014-08-12</em>芬兰好福利会让员工干好活；中国好福利会让员工得寸进尺。</p>
+								<aside><em>2楼</em><a ka="review-re2" rel="nofollow" href="javascript:;" class="add_reply" data-pid="527456" data-pnum="2">回复</a></aside>
+							</div>
+						</li>
+						<li>
+							<div class="con">
+								<span class="avatar5"><i></i></span>
+								<p><em>看准用户 &nbsp;2014-08-12</em>加油</p>
+								<aside><em>1楼</em><a ka="review-re3" rel="nofollow" href="javascript:;" class="add_reply" data-pid="527284" data-pnum="1">回复</a></aside>
+							</div>
+						</li>
+					</ul>
+					<p class="loading" id="cmtsLoading"><img src="/images/loading.gif" data-bd-imgshare-binded="1">加载中...</p>
+				</div>
+			</div>
+			<!-- 评论 -->
+			
+		</section>
+		<section class="f_r_con">
+			<div class="wrap_style pk_list mb15">
+				<h2 class="pk_right_tt">热门PK排行榜</h2>
+				<dl>
+					<dt class="red">1</dt>
+					<dd>
+						<p class="cmp_pk_name"><span>网易</span><strong><i class="pk_red">V</i><i class="pk_blue">S</i></strong><span>陌陌</span></p>
+						<p class="grey_99 f_12">234人参加过</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="green">2</dt>
+					<dd>
+						<p class="cmp_pk_name"><span>网易</span><strong><i class="pk_red">V</i><i class="pk_blue">S</i></strong><span>陌陌</span></p>
+						<p class="grey_99 f_12">234人参加过</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="blue">3</dt>
+					<dd>
+						<p class="cmp_pk_name"><span>网易</span><strong><i class="pk_red">V</i><i class="pk_blue">S</i></strong><span>陌陌</span></p>
+						<p class="grey_99 f_12">234人参加过</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>1</dt>
+					<dd>
+						<p class="cmp_pk_name"><span>网易</span><strong><i class="pk_red">V</i><i class="pk_blue">S</i></strong><span>陌陌</span></p>
+						<p class="grey_99 f_12">234人参加过</p>
+					</dd>
+				</dl>
+				<dl class="noborder">
+					<dt>1</dt>
+					<dd>
+						<p class="cmp_pk_name"><span>网易</span><strong><i class="pk_red">V</i><i class="pk_blue">S</i></strong><span>陌陌</span></p>
+						<p class="grey_99">234人参加过</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="wrap_style good_comments mb15">
+				<h2 class="pk_right_tt mb15"><em class="fright grey_99 f_14">200人正在参与讨论</em>精彩评论</h2>
+				<div class="scroll_wrap">
+					<div class="scroll_inner">
+						<dl>
+							<dt><a href="">学小假哦大家都覅假哦山东学小假哦大家都覅假哦山东学小假哦大家都覅假哦山东学小假哦大家都覅假哦山东</a><span></span></dt>
+							<dd class="grey_99">
+								来自<a href="">腾序VS百度</a>网友的评论
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="">学小假哦大家都覅假哦山东学小假哦大家都覅假哦山东学小假哦大家都覅假哦山东学小假哦大家都覅假哦山东</a></dt>
+							<dd class="grey_99">
+								来自<a href="">腾序VS百度</a>网友的评论
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="">学小假哦大家都覅假哦山东学小假哦大家都覅假哦山东学小假哦大家都覅假哦山东学小假哦大家都覅假哦山东</a></dt>
+							<dd class="grey_99">
+								来自<a href="">腾序VS百度</a>网友的评论
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="wrap_style pk_history mb15">
+				<h2 class="pk_right_tt">看过这组PK的还看过</h2>
+				<ul>
+					<li>
+						<div class="fleft">
+							<span><img src="http://img.kanzhun.com/image/l3275.gif" alt=""></span>
+							<p><em>网易网易网易网易</em></p>
+						</div>
+						<div class="fright">
+							<span><img src="http://img.kanzhun.com/image/l3275.gif" alt=""></span>
+							<p><em>网易</em></p>
+						</div>
+					</li>
+					<li>
+						<div class="fleft">
+							<span><img src="http://img.kanzhun.com/image/l3275.gif" alt=""></span>
+							<p><em>网易网易网易网易</em></p>
+						</div>
+						<div class="fright">
+							<span><img src="http://img.kanzhun.com/image/l3275.gif" alt=""></span>
+							<p><em>网易</em></p>
+						</div>
+					</li>
+					<li class="noborder">
+						<div class="fleft">
+							<span><img src="http://img.kanzhun.com/image/l3275.gif" alt=""></span>
+							<p><em>网易网易网易网易</em></p>
+						</div>
+						<div class="fright">
+							<span><img src="http://img.kanzhun.com/image/l3275.gif" alt=""></span>
+							<p><em>网易</em></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>所有icons</title>
+<link rel="stylesheet" href="css/base.css">
+</head> 
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <i class="iinit ihome"></i><br>
+      <p style="background-color: #53cac3;"><i class="iinit iandroid"></i></p>
+      <p style="background-color: #53cac3;"><i class="iinit iphone"></i></p>
+      <i class="iinit icmpprofile"></i><br>
+      <i class="iinit icmpurl"></i><br>
+      <i class="iinit icmpname"></i><br>
+      <i class="iinit iaddress"></i><br>
+      <i class="iinit iask"></i><br>
+      <i class="iinit ianswer"></i><br>
+      <p style="background-color: #53cac3;"><i class="iinit iforword"></i></p>
+      <p style="background-color: #53cac3;"><i class="iinit igospeak"></i></p>
+      <p style="background-color: #53cac3;"><i class="iinit iinvites"></i></p>
+      <p style="background-color: #53cac3;"><i class="iinit iset"></i></p>
+      <i class="iinit istroll"></i><br>
+      <i class="iinit ichat"></i><br>
+      <i class="iinit ime"></i><br>
+      <i class="iinit iworkshow"></i><br>
+      <p style="background-color: #53cac3;"><i class="iinit igoback"></i></p>
+      <a class="btn_white" href="">添加教育经历</a>
+      <!-- <footer class="nearme">
+        <a href=""><i class="iinit istroll"></i></a><a href=""><i class="iinit ichat"></i></a><a href=""><i class="iinit ime_h"></i></a>
+      </footer>
+      <footer class="nearme communication">
+        <a href=""><i class="iinit iforword"></i><br>转给朋友</a><a href=""><i class="iinit igospeak"></i><br>邀请答题</a><a href=""><i class="iinit iinvites"></i><br>立即开聊</a>
+      </footer> -->
+    </div>
+  </div>
+</body>
+</html>

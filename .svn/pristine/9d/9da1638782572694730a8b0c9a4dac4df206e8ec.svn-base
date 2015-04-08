@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>DEMO</title>
+  <link rel="stylesheet" href="css/secret.css">
+</head>
+<body class="grey-body">
+
+<div class="company">
+  <p><i class="co"></i><strong class="mr10">阿里巴巴</strong>产品经理</p>
+  <p><strong>15,000</strong> 平均工资</p>
+</div>
+
+<div class="co-chart-wrap">
+  <p class="f_16"><span class="orange">百度</span>公司 <span class="orange">产品经理</span>工资分布</p>
+
+  <div class="co-chart">
+
+  </div>
+</div>
+
+<dl class="you-can mb10">
+  <dt>该工资可以</dt>
+  <dd>
+    <img src="images/i-2.png">定期去健身房， <br/>瑜伽操
+  </dd>
+  <dd>
+    <img src="images/i-3.png">每年有3-5次的 <br/>国外旅游
+  </dd>
+  <dd>
+    <img src="images/i-4.png">买一些书来充实 <br/>业余生活
+  </dd>
+  <dd>
+    <img src="images/i-5.png">可以考虑资助偏 <br/>远地区儿童
+  </dd>
+</dl>
+  
+<p class="ml10 mr10"><a class="btn-orange" href="#">分享到朋友圈</a></p>
+
+<ul class="search-ret">
+  <li>
+    <a href="#">
+      <p>
+        <em>产品经理</em>
+      </p>
+      <strong>￥17,400 <i></i></strong>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <p>
+        <em>web前端开发工程师web前端开发工程师</em>
+      </p>
+      <strong>￥17,400 <i></i></strong>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <p>
+        <em>UI设计师</em>
+      </p>
+      <strong>￥17,400 <i></i></strong>
+    </a>
+  </li>
+</ul>
+<!--
+<a href="#" class="btn-again">再查一次</a>
+-->
+<div class="set">
+  <div><a class="bt_orange" href="javascript:;">再查一次</a></div>
+  <div><a class="bt_orange green" href="#">公司大PK</a></div>
+</div>
+</body>
+</html>
+
+

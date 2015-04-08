@@ -1,0 +1,43 @@
+div.viewpager .vp_img {
+  position: relative;
+  width: 680px;
+  height: 330px;
+  text-align: center;
+  overflow: hidden;
+}
+div.viewpager .vp_img img {
+  display: inline-block;
+  height: 300px;
+}
+div.viewpager ul.slidesjs-pagination {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+div.viewpager ul.slidesjs-pagination li {
+  float: left;
+  margin-left: 10px;
+}
+div.viewpager ul.slidesjs-pagination li a {
+  background: url("/images/v2/icon_viewpager.png") no-repeat;
+  background-position: -20px 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+div.viewpager ul.slidesjs-pagination li a:hover,
+div.viewpager ul.slidesjs-pagination li a.active {
+  background-position: 0 0;
+  text-decoration: none;
+}
+p .more {
+  color: #2c84cc;
+  cursor: pointer;
+}
+p .more:hover {
+  color: #2472b4;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>展开收起</title>
+  <link rel="stylesheet" href="../../css/widget.css" />
+  <link rel="stylesheet" href="toggler.css" />
+</head>
+
+<body style="text-align: center;padding: 100px;">
+
+
+  <div class="example">
+    <ul class="none u1">
+      <li>1</li>
+      <li>2</li>
+      <li>2</li>
+    </ul>
+  </div>
+  <div class="C-toggler c1">展开<i></i></div>
+
+
+
+  <!--  案例  begin-->
+
+  <script src="/js/jquery-1.11.0.min.js"></script>
+  <script src="/js/require.js"></script>
+  <script>
+    require.config({
+      baseUrl: "/"
+    });
+    require(['components/toggler/toggler'], function(){
+      var toggler = require('components/toggler/toggler');
+
+      toggler({
+        el: $('div.c1'),
+        on: function(){
+          $('.u1').show();
+        },
+        off: function(){
+          $('.u1').hide();
+        }
+      });
+    });
+  </script>
+
+  <!--  案例  end-->
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>公司面经页面</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"> </script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../../css/widget-v2.css" />
+<link rel="stylesheet" href="../../css/view_v2.css" />
+</head>
+
+<body class="field_bg">
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">招聘</a>
+				<a href="#" class="current">公司</a>
+				<a href="#">工资</a>
+				<a href="#">面试</a>
+				<a href="#" class="mycomment">我要点评</a>
+			</nav>
+			<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="ps_header field_mini_bg clearfix">
+		<div class="clearfix">
+			<form action="/companyl/search/" method="get" id="minisearchForm">
+				<input id="MSSQType" value="2" type="hidden">
+				<input name="stype" id="MSSSType" value="" type="hidden">
+				<dl class="select ps_salary_slt" id="minisearchS">
+					<dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly" /><div></div><span class="btn"><i></i></span></dt>
+				<dd>
+					<a href="/jobl/p/">职位</a>
+					<a href="/companyl/search/">公司</a>
+					<a href="/salaryl/search/">工资</a>
+					<a href="/interviewl/search/">面试</a>
+				</dd>
+				</dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value="" /><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" /><input type="hidden" id="cityCode" name="cityCode" value="" /><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索" /></span>
+			</form>
+		</div>
+	</section>
+	<!-- 公司头部 -->
+	<section class="co_header clearfix" style="z-index: 4;">
+		<input id="shareTextHid" type="hidden" value="">
+		<input id="shareCoTextHid" type="hidden" value="">
+		<input type="hidden" id="shareImgHid" value="">
+		<a href="" class="co_logo">
+			<i class="tag cubeugc_icon_my"></i><img src="http://img.kanzhun.com/images/logo/20140925/3aaa7746fa42066c1dfd3912c0afb025.jpg" width="150" title="华为" alt="华为logo" data-bd-imgshare-binded="1"><span></span>
+		</a>
+		<div class="co_info">
+			<p class="cmpname" id="companyName">华为 <a href="" class="share_pk">公司PK</a></p>
+			<div class="msg"><strong>3.5</strong><span class="grade_star_b"><i style="width:83px;"></i></span><a href="" class="grey_99">19556人评价</a></div>
+			<p class="grey_99">通讯<em>|</em>西安<em>|</em>10000人以上<em>|</em>民营</p>
+		</div>
+		<nav class="clearfix">
+			<p id="fixedCoNav">
+				<span class="f_n_name" id="fixedcmpname"><em>华为</em></span>
+				<a href="" title="">简介</a>
+        <a href="" title="">工资</a>
+        <a href="" title="">点评</a>
+        <a href="" title="">招聘</a>
+        <a href="" class="current" title="">面试</a>
+        <a href="" title="">照片</a>
+        <a href="" title="">员工</a>
+      </p>
+		</nav>
+		<aside>
+			<div><a href="" id="headerfollow" class="fright" data-hadattention="no" data-cid="3131" data-mtype="follow.json" class="follow attention_collection">+&nbsp;关注<span class="tangle_init"></span></a><em>233333912人浏览</em></div>
+			<p class="t-right"><a href="">HR？认领企业</a></p>
+		</aside>
+	</section>
+	<!-- 公司头部 -->
+
+	<div class="container_v2 clearfix">
+		<section class="f_l_con clearfix">
+			<!-- 面试整体感受 -->
+			<div class="wrap_style mb15">
+				<div class="cmp_tt">
+					<span class="grey_99 fright">最后更新七天内（2015-01-29）</span>
+					<h1>顺丰速运面试</h1>
+				</div>
+				<p class="line"></p>
+				<div class="iv_grade">
+					<dl class="total">
+						<dt>面试整体感受</dt>
+						<dd class="pie_chart">
+							<canvas width="62" height="62" class="reviewsPieChart" data-ratio="0.18_0.65_0.17"></canvas>
+							<div class="pie_bar">
+								<p><span class="easy"></span>容易的&nbsp;&nbsp;&nbsp;&nbsp;18%</p>
+								<p><span class="normal"></span>一般的&nbsp;&nbsp;&nbsp;&nbsp;65%</p>
+								<p><span class="hard"></span>困难的&nbsp;&nbsp;&nbsp;&nbsp;17%</p>
+							</div>
+						</dd>
+					</dl>
+					<dl class="level">
+						<dt>面试难度</dt>
+						<dd class="circle_chart">
+							<div class="doughnua_chart">
+								<span>2.8</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.5599999999999999_0.44000000000000006"></canvas>
+							</div>
+							<h5>难度一般</h5>
+						</dd>
+					</dl>
+					<dl class="from">
+						<dt>如何获得面试机会率</dt>
+						<dd class="pie_chart">
+							<canvas width="62" height="62" class="reviewsFromPieChart" data-ratio="0.31_0.55_0.07_0.03_0.01_0.03"></canvas>
+							<div class="pie_bar">
+								<p><span class="wlzp"></span>网络招聘 &nbsp;&nbsp;31%</p>
+								<p><span class="xyzp"></span>校园招聘 &nbsp;&nbsp;55%</p>
+								<p><span class="shzp"></span>社会招聘 &nbsp;&nbsp;7%</p>
+								<p class="none"><span class="nbtj"></span>内部推荐 &nbsp;&nbsp;3%</p>
+								<p class="none"><span class="lttj"></span>猎头推荐 &nbsp;&nbsp;1%</p>
+								<p class="none"><span class="qt"></span>其他 &nbsp;&nbsp;3%</p>
+								<div class="pie-bar-toggle"><em id="moreChartInfo">展开<i class="tangle_init t_grey_99"></i></em></div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- 面试整体感受 -->
+			<!-- 面试删选条件 -->
+			<div class="wrap_style mb15">
+				<dl class="conditional_search clearfix">
+					<dt>
+						<input type="text" name="q" autocomplete="off" value="" class="v_s_field" placeholder="全部职位"><span class="btn_grey_l"><input type="submit" value="按职位查询" id="viewSearchBtn"></span>
+					</dt>
+					<dd>
+						<a href="" class="current"><span>面试筛选</span></a><!-- <a href="" class="current"><span>面试印象</span></a> -->
+					</dd>
+				</dl>
+				<div class="panel">
+					<dl class="c_s_detail">
+						<dt>热门职位：</dt>
+						<dd class="has_spread">
+							<a href="" class="current">全部</a><a href="">客服<span class="grey_99">(54)</span></a><a href="">内勤<span class="grey_99">(504)</span></a><a href="">销售<span class="grey_99">(58)</span></a><a href="">产品经理<span class="grey_99">(54)</span></a><a href="">外勤业务<span class="grey_99">(4)</span></a>
+							<aside class="grey_99">展开<i class="tangle_init t_grey_99"></i></aside>
+						</dd>
+					</dl>
+					<dl class="c_s_detail">
+						<dt>城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市：</dt>
+						<dd class="has_spread">
+							<a href="" class="current">全部</a><a href="">北京<span class="grey_99">(54)</span></a><a href="">北京<span class="grey_99">(504)</span></a><a href="">北京<span class="grey_99">(58)</span></a><a href="">北京<span class="grey_99">(54)</span></a><a href="">北京<span class="grey_99">(4)</span></a>
+							<aside class="grey_99">展开<i class="tangle_init t_grey_99"></i></aside>
+						</dd>
+					</dl>
+					<dl class="c_s_detail boborder">
+						<dt>面试结果：</dt>
+						<dd>
+							<a href="" class="current">全部</a><a href="">面试通过<span class="grey_99">(54)</span></a><a href="">感觉靠谱<span class="grey_99">(504)</span></a><a href="">感觉没戏<span class="grey_99">(58)</span></a><a href="">未通过<span class="grey_99">(54)</span></a>
+						</dd>
+					</dl>
+				</div>
+				<div class="panel none">
+					<div class="cmp_images">
+						<span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span>
+						<aside class="grey_99">展开<i class="tangle_init t_grey_99"></i></aside>
+					</div>
+				</div>
+			</div>
+			<dl class="wrap_style c_s_show mb15"> 
+				<dt class="f_12 grey_99">排序：<a href="">推荐</a><em>|</em><a href="">最新</a></dt>
+				<dd>
+					<a href="">易宝支付</a>&nbsp;共有11090条面试属于：<span>客服<i class="close_conditions"></i></span><span>北京<i class="close_conditions"></i></span><span>面试通过<i class="close_conditions"></i></span>
+				</dd>
+			</dl>
+			<!-- 面试删选条件 -->
+			<!-- 面试 -->
+			<div class="wrap_style mb15">
+				<dl class="c_s_result">
+					<dt class="anonymous_portrait"><img src="../../images/view_v2-img/xiaoren.jpg" alt=""></dt>
+					<dd class="c_s_result_detail">
+						<h2><a href=""><span>“</span>易宝支付是锻炼行业产品经理的好地方<span>”</span></a></h2>
+						<p class="f_12 grey_99 view_address">匿名用户&nbsp;&nbsp;&nbsp;&nbsp;面试易宝支付的<a href="">产品经理</a>&nbsp;-&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+						<strong>面试经历：</strong>
+						<p class="c_s_result_text mb30">笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。
+							1面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;
+							2面是电面，主要问了些算法问题，让设计一个图片存储系统，并进行优化，问的很细，让把主要的数据结构和调度算法都设计出来，然后根据你设计的系统提一些更高的要求并进行优化;3面是部门经理的电面，就问我喜欢玩哪种类型的英雄(当然是根据团队需要，缺啥玩啥，哈哈)，技术主要以项目为主，问的很深，问了好多项目中涉及到细节的问题，而且问题一针见血，不得不佩服百度还是牛人多，参加的其他面试都没问过这么深入的... <a href="">查看全部&gt;</a></p>
+						<strong>面试官提出的问题</strong>
+						<dl class="mb20">
+							<dt class="c_s_result_text">问题1：</dt>
+							<dd class="c_s_result_text">如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？</dd>
+							<dt class="c_s_result_text">回&nbsp;&nbsp;答：</dt>
+							<dd class="c_s_result_text">如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？</dd>
+						</dl>
+						<div class="c_s_v_result mb20">
+							<i class="view_fail mr10"></i><em class="f_12">面试通过</em><span class="grade_rect_fifteen"><i style="width:68px;"></i></span><em class="grey_99 f_12">面试整体感受困难</em><span class="grade_rect_fifteen"><i style="width:14px;"></i></span><span class="grey_99 f_12">面试有难度</span>
+						</div>
+						<div class="view_feel_tags">
+							<span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span>
+						</div>
+						<p class="line_only"></p>
+						<div class="u_c_s">
+							<p class="fright u_options">
+								<a href="" class="helpful mr15 marked" data-mtype="useful.json" data-sid="753822"><span class="u_feel_helpful"></span>有用<em class="grey_99">（</em><i class="grey_99">0</i><em class="grey_99">）</em></a><a href="" class="comment mr15"><span class="u_comment"></span>评论<em class="grey_99">（0）</em></a><a href="" data-desc="" data-url="/gsmsh753822.html" class="share"><span class="u_share"></span>分享</a>
+							</p>
+							<timer class="grey_99 f_12">今天 21:22</timer>
+						</div>
+					</dd>
+				</dl>
+			</div>
+
+			<div class="wrap_style mb15">
+				<dl class="c_s_result">
+					<dt class="anonymous_portrait"><img src="../../images/view_v2-img/xiaoren.jpg" alt=""></dt>
+					<dd class="c_s_result_detail">
+						<h2><a href=""><span>“</span>易宝支付是锻炼行业产品经理的好地方<span>”</span></a></h2>
+						<p class="f_12 grey_99 view_address">匿名用户&nbsp;&nbsp;&nbsp;&nbsp;面试易宝支付的<a href="">产品经理</a>&nbsp;-&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+						
+						<!-- 没有登录不让看 -->
+							<div class="js-filterblur i_filterblur mb10 noevent">
+								<div class="nologin">
+									<div class="send_info">
+										<p class="t_center tt">发条面试经历并成为看准会员<br>即可查看完整信息</p>
+										<p class="grey_99 mb10" style="font-size: 12px;">所有信息均为匿名，请放心填写</p>
+										<p>
+											<a ka="pop-interviewugc" href="/interviewugc/" target="_blank">立即发一条面试经历&gt;&gt;</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						<!-- 没有登录不让看 -->
+						<div class="c_s_v_result mb20">
+							<i class="view_fail mr10"></i><em class="f_12">面试通过</em><span class="grade_rect_fifteen"><i style="width:68px;"></i></span><em class="grey_99 f_12">面试整体感受困难</em><span class="grade_rect_fifteen"><i style="width:14px;"></i></span><span class="grey_99 f_12">面试有难度</span>
+						</div>
+						<div class="view_feel_tags">
+							<span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span>
+						</div>
+						<p class="line_only"></p>
+						<div class="u_c_s">
+							<p class="fright u_options">
+								<a href="" class="helpful mr15 marked" data-mtype="useful.json" data-sid="753822"><span class="u_feel_helpful"></span>有用<em class="grey_99">（</em><i class="grey_99">0</i><em class="grey_99">）</em></a><a href="" class="comment mr15 marked"><span class="u_comment"></span>评论<em class="grey_99">（0）</em></a><a href="" data-desc="" data-url="/gsmsh753822.html" class="share marked"><span class="u_share"></span>分享</a>
+							</p>
+							<timer class="grey_99 f_12">今天 21:22</timer>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!-- 面试 -->
+		</section>
+
+		<!-- 右半部分 -->
+		<section class="f_r_con">
+			<div class="wrap_style send_interview mb15">
+				<p class="t-center mb15"><a href="" class="yellow_btn">写一条面经</a></p>
+				<p>分享你的经验，帮助求职者看得更准！已有超过26,000,000人获得了帮助</p>
+			</div>	
+			<a href="" class="advertis_area mb15" style="height: 58px;"><img src="../../images/view_v2-img/r_img.jpg" alt=""></a>
+			<div class="wrap_style">
+				<h2 class="f_tt mt20 mb15">汽车信息领域热门公司</h2>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href=""  class="links grey_33">易车网</a></p>
+						<span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href=""  class="links grey_33">易车网</a></p>
+						<span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href=""  class="links grey_33">易车网</a></p>
+						<span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href=""  class="links grey_33">易车网</a></p>
+						<span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href=""  class="links grey_33">易车网</a></p>
+						<span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+					</dd>
+				</dl>
+			</div>
+		</section>
+		<!-- 右半部分 -->
+	</div>
+</body>
+</html>

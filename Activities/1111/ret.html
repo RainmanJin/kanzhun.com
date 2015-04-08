@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DEMO</title>
+  <link rel="stylesheet" href="css/questionnaire-1111.css">
+  <script src="js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="css/widget.css">
+  <link rel="stylesheet" href="css/questionnaire-1111.css">
+  <script>
+    var investigationInfo ={
+      "id": 1,
+      "title": "双11",
+      "count": 0,
+      "realCount": 1,
+      "addUser": 0,
+      "addTime": "2014-11-07 10:04:11",
+      "investigationQuestionInfoList": [
+
+      {
+        "id": 1,
+        "investigationId": 1,
+        "name": "问题1",
+        "type": 1,
+        "answerNum": 0,
+        "addUser": 0,
+        "addTime": "2014-11-07 10:04:31",
+        "investigationAnswerInfoList": [
+
+          {
+            "id": 1,
+            "questionId": 1,
+            "name": "选项11",
+            "count": 0,
+            "realCount": 0,
+            "percentage": 0,
+            "addUser": 0,
+            "addTime": "2014-11-07 10:05:04",
+            "choose": false
+          },
+          {
+            "id": 2,
+            "questionId": 1,
+            "name": "选项12",
+            "count": 0,
+            "realCount": 0,
+            "percentage": 100,
+            "addUser": 0,
+            "addTime": "2014-11-07 10:05:40",
+            "choose": true
+          },
+          {
+            "id": 3,
+            "questionId": 1,
+            "name": "选项13",
+            "count": 0,
+            "realCount": 0,
+            "percentage": 0,
+            "addUser": 0,
+            "addTime": "2014-11-07 10:06:41",
+            "choose": false
+          }]
+      },
+      {
+        "id": 2,
+        "investigationId": 1,
+        "name": "问题2",
+        "type": 1,
+        "answerNum": 0,
+        "addUser": 0,
+        "addTime": "2014-11-07 10:04:51",
+        "investigationAnswerInfoList": [
+
+          {
+            "id": 4,
+            "questionId": 2,
+            "name": "选项21",
+            "count": 0,
+            "realCount": 0,
+            "percentage": 100,
+            "addUser": 0,
+            "addTime": "2014-11-07 10:06:50",
+            "choose": true
+          },
+          {
+            "id": 5,
+            "questionId": 2,
+            "name": "选项22",
+            "count": 0,
+            "realCount": 0,
+            "percentage": 0,
+            "addUser": 0,
+            "addTime": "2014-11-07 10:06:57",
+            "choose": false
+          }]
+      }]
+    }
+  </script>
+</head>
+
+<body>
+<section class="ques-banner">
+
+</section>
+
+<section class="ques-list">
+  <div class="ques-count">已有 <strong>39030</strong> 人参与</div>
+
+  <div class="ret-tt">
+    <h2>感谢你参与大调查！</h2>
+    <p>那么问题来了？你这么选，小米怎么看？你的TA怎么看？</p>
+    <p><a href="#">返回看准首页</a></p>
+  </div>
+
+  <div class="share">
+    <span class="fleft"><img src="images/share.jpg" >分享</span>
+  </div>
+
+  <div class="ret-con">
+    <p class="ret-h" id="retFlag"><img src="images/ret.jpg"></p>
+
+    <script type="text/tmpl" id="retTemplate">
+      {{~it.investigationQuestionInfoList: value:index}}
+      {{var qType = value.type;}}
+
+      <dl>
+        <dt><strong>{{=value.name}}</strong></dt>
+        {{var name = value.id;}}
+
+          {{~value.investigationAnswerInfoList: v:i}}
+            {{var id = v.id;}}
+
+            {{?qType == 1}}
+            <dd><input type="radio" disabled name="q_{{=name}}"><label>{{=v.name}}</label>
+
+            {{??qType == 2}}
+            <dd><input type="checkbox" disabled name="q_{{=name}}"><label>{{=v.name}}</label>
+            {{?}}
+
+			{{var color = parseInt(i) + 1;}}
+            <div class="ratio">
+              <p><span style="width: {{=v.percentage}}%;" class="ratio-{{=color}}"></span></p>
+              <strong>{{=v.percentage}}%</strong>
+            </div>
+            </dd>
+          {{~}}
+      </dl>
+      {{~}}
+    </script>
+
+    <!--<dl>
+      <dt><strong>1. 您最留情的网站？</strong></dt>
+      <dd>
+        <input type="radio" name="" ><label for=""> A. 想起故事中在老房子里静坐的味道</label>
+        <div class="ratio">
+          <p><span style="width: 40%;" class="ratio-1"></span></p>
+          <strong>20%</strong>
+        </div>
+      </dd>
+      <dd>
+        <input type="radio" name="" ><label for=""> A. 最近在用chicca的日晚霜 买的几包小样挤在分装的罐子里 一罐6g能用好久 因为有叠加所以用量很省 晚霜紧致的效果很明显 日霜除了保湿还有一咪咪的紧致 感觉还蛮好用 就是贵呀</label>
+        <div class="ratio">
+          <p><span style="width: 20%;" class="ratio-2"></span></p>
+          <strong>33%</strong>
+        </div>
+      </dd>
+      <dd>
+        <input type="radio" name="" ><label for=""> A. 淘宝</label>
+        <div class="ratio">
+          <p><span style="width: 50%;" class="ratio-3"></span></p>
+          <strong>18%</strong>
+        </div>
+      </dd>
+      <dd>
+        <input type="radio" name="" ><label for=""> A. 在城市中待久了，会突然想起记忆中那些个被时间落下好久的故事，想起故事中在老房子里静坐的味道。关于街边的小吃，修鞋的老人，蜷在阳光下的小狗，又或是爷爷用过的旧搪瓷杯……关于那些静在城市中待久了，会突然想起记忆中那些个被时间落下好久的故事，想起故事中在老房子里静坐的味道。关于街边的小吃，修鞋的老人，蜷在阳光下的小狗，又或是爷爷用过的旧搪瓷杯……关于那些静</label>
+        <div class="ratio">
+          <p><span style="width: 70%;" class="ratio-4"></span></p>
+          <strong>52%</strong>
+        </div>
+      </dd>
+
+      <dd>
+        <input type="radio" name="" ><label for=""> A. 淘宝</label>
+        <div class="ratio">
+          <p><span style="width: 14%;" class="ratio-5"></span></p>
+          <strong>52%</strong>
+        </div>
+      </dd>
+    </dl>-->
+  </div>
+
+</section>
+
+<script>
+  var require = {
+    baseUrl: 'js/',
+    urlArgs : "v=v1.1.6"
+  };
+</script>
+<script src="http://www.kanzhun.com/news/js/lib/require.js" data-main="ques-1111.js"></script>
+</body>
+</html>

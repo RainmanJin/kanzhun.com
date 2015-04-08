@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>链接失效页面</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+  <header class="global">
+    <div class="header">
+      <img class="logo" src="../images/logo.jpg"/>
+      <span class="title">企业用户专区</span>
+      <div class="user"><a href="#">登录企业账户</a></div>
+    </div>
+  </header>
+  <div class="container findpws clearfix">
+      <section class="links_con">
+        <div class="links_disabled"><img src="../images/v2/cmp_img6.jpg" alt=""/><p class="grey_99"><span class="grey_66 f_20">链接失效！</span><br/>你访问的页面已失效，请重新注册</p></div>
+        <p class="l_d_btn t-center"><a href="" class="a_yellow_btn">重新注册</a><a href="" class="btn_grey_b">返回首页</a></p>
+      </section>
+  </div>
+</body>
+</html>

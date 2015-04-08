@@ -1,0 +1,584 @@
+@import "common/var";
+@import "module/slide_menu";
+/*评公司*/
+section.comment_content{
+	margin: 0 10px;
+	padding:10px;
+	background: #fff;
+	.all_score{
+		span{
+			margin:0 5px;
+			display:inline-block;
+			position: relative;
+			vertical-align: -4px;
+			b{
+				display: inline-block;
+				width: 20%;
+				height: 19px;
+				position: absolute;
+			}
+		}
+		em{
+			color:@grey;
+		}
+		.error{
+			color:@err_color;
+		}
+	}
+	.all_scoreDetail{
+		position: relative;
+		border-bottom: 1px solid @green;
+		padding-bottom: 10px;
+		.close{
+			position: absolute;
+			top:25px;
+			right: 5px;
+		}
+		ul{
+			li{
+				clear:both;
+				margin-top:10px; 
+				span{
+					margin:0 5px;
+					display:inline-block;
+					position: relative;
+					b{
+						display: inline-block;
+						width: 20%;
+						height: 19px;
+						position: absolute;
+					}
+				}
+			}
+		}		
+		em{
+			color:@grey;
+		}
+	}
+	ul{
+		overflow: hidden;
+		li{
+			float: left;
+		}
+	}
+}
+h1.comment_title_2{
+	position: relative;
+	padding-bottom:20px;
+	span{
+		position: absolute;
+		display: inline-block;
+		top: 0px;
+		left:45px;
+		line-height: 1.2;
+	}
+
+}
+
+section.comment_status{
+	overflow: hidden;
+	label{
+		vertical-align:center;
+		float: left;
+		padding-top:3px;
+	}
+	.error{
+		float: left;
+		margin: 3px 0 0 5px;
+		color: @red;
+	}
+}
+
+/*发布公司信息*/
+section.entry_menu{
+	width: 320px;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+	overflow: hidden;
+	ul{
+		margin: 0 20px;
+		li{	
+			a{
+				display: block;
+				width:118px;
+				height: 118px;
+				border:1px solid @grey_border;
+				background: @white;
+				float: left;
+				margin:10px;
+				position: relative;
+				.i_1{
+					margin-top:20px; 
+				}
+				.i_2{
+					margin-top: 15px;
+				}
+				.i_3{
+					margin-top: 15px;
+				}
+				.i_4{
+					margin-top: 25px;
+				}
+				span{
+					display: block;
+					color:@green;
+					position: absolute;
+					bottom: 10px;
+					left: 40px;
+				}				
+			}
+		}
+	}
+}
+h1.publish_title{
+	text-align: center;
+	margin:30px auto;
+	font-size: 16px;
+	color: @grey;
+	em{
+		color:@blue;
+	}
+}
+h2.publish_title{
+	margin:15px 10px 0 10px;
+	em{
+		color:@blue;
+	}	
+}
+.no_search{
+	font-size: 16px;
+	padding: 1em 10px;
+	text-align: center;
+	color: #999;
+}
+
+/*晒面经*/
+section.interview_content{
+	margin: 10px 10px 0;
+	padding:10px 10px 20px;
+	background:@white;
+}	
+.interview_degree{
+	span{
+		display:inline-block;
+		position: relative;
+		b{
+			display: inline-block;
+			width: 20%;
+			height: 19px;
+			position: absolute;
+		}
+	}
+	em{
+		margin-left:5px;
+		color:@grey;
+	}
+}
+
+/*发照片*/
+section.photo_content{
+	margin: 0 10px;
+	background:@white;
+	position: relative;
+	height: 98px;
+	.upload_prompt{
+		padding-left:100px;
+		em{
+			display: inline-block;
+			width:98px;
+			height: 98px;
+			vertical-align: middle;
+			position: absolute;
+			top:0;
+			left: 0;
+			.loading{
+				margin:10px 0 0 10px
+			}
+		}
+		p{
+			padding:5px;
+			textarea{
+				width: 100%;
+				display: block;
+				border:0;
+			}
+		}
+		.error{
+			position:absolute;
+			top:98px;
+			left:0;
+			color:@red;
+		}			
+		.mask{
+			background: rgba(0, 0, 0, 0.4);
+			text-align: center;
+			.changeImg{
+				position: relative;
+				margin-top: 30px;
+				display: inline-block;
+				background: #000;
+				width: 145px;
+				height: 36px;
+				line-height: 36px;
+				text-align: center;
+				color: #fff;
+				input[type=file]{
+					position: absolute;
+					top: 0;
+					left:0;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+				}				
+			}
+		}
+	}
+	a.bt_upload{
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		line-height: 98px;
+		position: relative;
+		input{
+			position: absolute;
+			top: 0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+		}
+		em{
+			color:@grey;
+		}
+	}
+}	
+
+/*晒工资*/
+.salary_content{
+	margin: 0 10px;
+	padding:10px;
+	background:@white;
+	.work_status{
+		label{
+			vertical-align:center;
+			float: left;
+			padding-top:3px;
+			padding-bottom: 5px;
+		}
+	}	
+}
+.salary_detail{
+	position: relative;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #f6f6f6;
+	.i_triangle_greyT{
+		position: absolute;
+		top:-10px;
+		left:15px;
+		display: inline-block;
+		border: 9px solid #fff;
+		border-top: 0;
+		border-bottom: 10px solid #f6f6f6;
+	}
+	.close{
+		position: absolute;
+		top:10px;
+		right: 20px;
+	}
+	h3{
+		color: #343434;
+	}
+}
+
+/*搜索条件*/
+section.searchCondition_content{
+	ul{
+		font-size: 16px;
+		color:@grey;
+		li{
+			padding:0 20px;
+			height: 35px;
+			line-height: 35px;
+			border-bottom: 1px solid @grey_border;
+			background: #f6f6f6;
+			em{
+				color: @green;
+			}
+			a{
+				float: right;
+				font-size: 24px;
+				color: @grey;
+				width: 16px;
+				text-align: center;
+			}
+			&.ok{
+				background: #f1fdde;
+				em{
+					color:#000;
+				}
+			}
+			&.no_ok{
+				background: @white;
+				em{
+					color:#000;
+				}			
+			}			
+		}
+	}
+}
+
+//我的简历页
+nav.resume_nav{
+	height: 90px;
+	background: @white;
+	padding: 20px 10px 0;
+	position: relative;
+	.nav_l{
+		position: absolute;
+	}
+	.nav_r{
+		padding:10px 0 0 75px;
+		h1{
+			color:@grey;
+		}
+		p{
+			padding:10px 0 0 0;
+			text-align: center;
+		}
+	}
+}
+.doughnua_chart {
+	width: 69px;
+	height: 69px;
+	position: relative;
+	span{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: block;
+		width: 69px;
+		height: 69px;
+		line-height: 69px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 700;		
+	}
+}
+
+.field{
+	margin: 10px;
+	padding:15px 10px;
+	background: @white;
+}
+.headPic{
+	a{
+		display: inline-block;
+		position: relative;
+		img{
+			width: 76px;
+			height:76px;
+			padding:3px;
+			border:1px solid @grey_border;
+			background: @white;
+			vertical-align: middle;
+		}	
+		span{
+			display: inline-block;
+			position: absolute;
+			bottom: 3px;
+			left:4px;
+			width: 76px;
+			height: 24px;
+			background: rgba(0,0,0,0.3);
+			color: @white;
+			text-align: center;
+		}
+		[type="file"]{
+			position: absolute;
+			top: 0;
+			left:0;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			opacity:0;
+		}	
+	}
+}
+.resumeAdd{
+	height: 65px;
+	position: relative;
+	.icon{
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		top:10px;
+	}
+	h3{
+		padding:15px 0 0 60px;
+		color: @grey;
+	}
+}
+.resumeShow{
+	position: relative;
+	ul.set{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		li{
+			float: left;
+			margin-left: 10px;
+			a{
+				display: inline-block;
+			}
+		}
+	}
+	dt{
+		margin-top: 15px;
+		font-size: 16px;
+	}
+	dd{
+		em{
+			color: #e5e5e5;
+		}
+	}
+}
+
+//弹出框
+.mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	top:0;
+	left:0;
+	background: rgba(0, 0, 0, 0.5);
+}
+.dialog{
+	position: fixed;
+	z-index: 100;
+	top:50%;
+	left:50%;
+	margin-top:-75px;
+	margin-left:-150px;
+	padding:15px 10px;
+	width:280px;
+	background: @white;
+	border: 1px solid grey;
+	p{
+		text-align: center;
+	}
+	div.set{
+		text-align: center;
+	}
+}
+
+/*404和500页面*/
+body.err{
+	.wrapper{
+		background-color: @white;
+	}
+	section.err_content{
+		width: 280px;
+		margin: 0 auto;
+		padding:0 20px;
+		padding-top: 30px;
+		position: relative;
+		.l{
+			position: absolute;
+			padding-top: 20px;
+		}
+		.r{
+			margin-left: 50px;
+			h2{
+				font-size: 60px;
+			}
+			h3{
+				border-top: 1px solid @grey_border;
+				border-bottom: 1px solid @grey_border;
+				padding: 10px 0;
+			}
+			h4{
+				margin-top: 15px;
+				color: @grey;
+				font-weight: normal;
+			}
+			p{
+				margin-top: 10px;
+				.btn{
+					display: inline-block;
+					width: 150px;
+					padding: 5px 0;
+					background-color: @bgc;
+					border: 1px solid @green;
+					border-radius: 10px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+i.i_exclam{
+	display: inline-block;
+	background: url(../images/icon_err.png);
+	width: 38px;
+	height: 89px;
+}
+
+a.ugc_prompt {
+	display: block;
+	padding: 10px 5px 10px 10px;
+	margin: 0 10px 20px 10px;
+	border: 1px solid #fdd6ab;
+	border-radius: 5px;
+	background-color: #fff7ed;
+	.background-size(37px 36.5px);
+	overflow: hidden;
+	*zoom: 1;
+
+	p {
+		float: left;
+		width: 17em;
+	}
+
+	div {
+		float: right;
+		width: 22px;
+		height: 32px;
+		margin-top: 2px;
+		padding: 4px 0 0 14px;
+		border: 1px solid #ffe5c5;
+		background-color: #fff;
+		border-radius: 20px;
+
+		span {
+			width: 0;
+			height: 0;
+			overflow: hidden;
+			font-size: 0;
+			border-width: 10px 0 10px 15px;
+			border-style: dashed solid;
+
+			&.white_bg {
+				margin-left: -22px;
+				border-color: transparent transparent transparent #fff;
+			}
+
+			&.yellow_bg {
+				border-color: transparent transparent transparent #f7a74c;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

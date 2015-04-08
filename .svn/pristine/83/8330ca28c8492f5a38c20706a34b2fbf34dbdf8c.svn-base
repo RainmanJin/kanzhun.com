@@ -1,0 +1,128 @@
+require.config({
+  baseUrl: '/js/site',
+  paths: {
+    u: '../utils',
+    c: '.',
+    comp: '../../components',
+    highcharts: 'http://s.kanzhun.com/js/utils/highcharts'
+  }
+});
+
+require(['c/auth_dialog', 'c/user_response', 'c/general', 'c/company_common', 'c/company/salary_desc'], function(auth_dialog, user_response){
+	$(function(){
+		//发照片
+		$('div.cmphoto').hover(function(){
+			$(this).find('.sendphoto').css("display","block");
+		},function(){
+			$(this).find('.sendphoto').css("display","none");
+		});
+
+		$('span.more').showMore();
+
+    $('dl.co_tb').on('click', 'p>img', function(){
+      $(this).parent().parent().find('div>img').attr('src', $(this).data('orig'));
+    });
+
+    $('#reviewBrief').upOrDown({
+      url: CONTEXTPATH + '/review/',
+      delegate: 'a.mark',
+      data: function () {
+        return {
+          reviewId: this.data('sid')
+        };
+      },
+      callback: function(ret){
+        var mtype = this.data('mtype');
+        if(ret && ret.rescode == '1'){
+          var num = this.find('i');
+          this.addClass('marked');
+          num.html((parseInt(num.html(), 10) || 0) + 1);
+          this.data('mtype', null);
+          //判断是否有cookie
+          if( !$.readCookie('loginPop') ) {
+              if( !isLogged ){
+                $.maskUI.open({
+                  content: '<h3>提示</h3><div class="dialog_ac"><div>想知道你的评论内容反响如何？登录后即可收到反馈提醒！</div><p><a href="javascript:;" class="confirm_ok dialog_btn go_login">立即登录</a></p></div>'
+                });
+
+                $('a.go_login').click(function(){
+                  auth_dialog.open('#login?authcb=authCallback');
+                })
+              }
+            $.writeCookie('loginPop', '1');
+          }
+        }else{
+          this.data('mtype', mtype);
+        }
+      }
+    });
+
+    $('#interBrief').upOrDown({
+      url: CONTEXTPATH + '/interview/',
+      delegate: 'a.mark',
+      data: function () {
+        return {
+          interviewId: this.data('sid')
+        };
+      },
+      callback: function(ret){
+        var mtype = this.data('mtype');
+        if(ret && ret.rescode == '1'){
+          var num = this.find('i');
+          this.addClass('marked');
+          num.html((parseInt(num.html(), 10) || 0) + 1);
+          this.data('mtype', null);
+          //判断是否有cookie
+          if( !$.readCookie('loginPop') ) {
+              if( !isLogged ){
+                $.maskUI.open({
+                  content: '<h3>提示</h3><div class="dialog_ac"><div>想知道你的评论内容反响如何？登录后即可收到反馈提醒！</div><p><a href="javascript:;" class="confirm_ok dialog_btn go_login">立即登录</a></p></div>'
+                });
+
+                $('a.go_login').click(function(){
+                  auth_dialog.open('#login?authcb=authCallback');
+                })
+              }
+            $.writeCookie('loginPop', '1');
+          }
+        }else{
+          this.data('mtype', mtype);
+        }
+      }
+    });
+
+    //工资图表
+    var salaryDesc = require('c/company/salary_desc');
+    salaryDesc({
+      table: $('#salaryDescTable')
+    });
+
+
+    //share
+    var shareComments = user_response.share();
+
+    shareComments.build({
+      selectors: 'a.share_co'
+//      config: function(){
+//        $('#shareTextHid').val($('#shareCoTextHid').val()+ '点击查看'+ window.location.href +' #看准网# @看准');
+//      }
+    });
+
+    //增加加班，年薪，奖金什么的
+    var tovertime = $('#js_overtime'),
+        overtime = $('div.overtime');
+    if(tovertime.height() > 45) {
+      overtime.find('a').removeClass('none');
+    }
+
+    overtime.on('click', 'a', function(){
+      if(overtime.height() <= 45) {
+        $(this).html('收起<i class="putaway"></i>');
+        overtime.height(tovertime.height());
+      }else {
+        $(this).html('展开<i class="open"></i>');
+        overtime.height(39);
+      }
+    })
+	});
+});

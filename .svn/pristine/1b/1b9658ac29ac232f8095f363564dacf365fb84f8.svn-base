@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>名企面试挑战赛</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/exam.css" />
+</head>
+<body class="quest">
+<div class="wrapper">
+  <div class="timing clearfix" data-node-type="time_result">
+    <em><span>0</span><i></i></em>
+    <em><span>0</span><i></i></em>
+    <span>:</span>
+    <em><span>0</span><i></i></em>
+    <em><span>0</span><i></i></em>
+    <span>:</span>
+    <em><span>0</span><i></i></em>
+    <em><span>0</span><i></i></em>
+  </div>
+  <div class="header">
+    <div class="line"></div>
+  </div>
+  <div class="result">
+    <h2><img src="images/img_3.png" width="100%"></h2>
+    <table>
+      <tr>
+        <td>题号</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><img src="images/correct.png" width="14" height="15"></td>
+        <td><img src="images/correct.png" width="14" height="15"></td>
+        <td><img src="images/correct.png" width="14" height="15"></td>
+        <td><img src="images/correct.png" width="14" height="15"></td>
+        <td><img src="images/correct.png" width="14" height="15"></td>
+        <td><img src="images/correct.png" width="14" height="15"></td>
+        <td><img src="images/correct.png" width="14" height="15"></td>
+        <td><img src="images/correct.png" width="14" height="15"></td>
+        <td><img src="images/wrong.png" width="14" height="15"></td>
+      </tr>
+    </table>
+    <p class="p1">用时 <span>00:00:00</span>  得分  <em>30</em>分</p>
+    <p class="p2">别闹，你真的有认真答题吗？</p>
+    <p class="p3">邀请好友后即可查看解析或重新挑战</p>
+    <div class="t-center mt5">
+      <i class="i icon_2"></i>
+    </div>
+    <a class="btn_enter orange bt_transmit" href="javascript:;">邀请好友来挑战</a>
+  </div>
+  <i class="i icon_1 b_l"></i>
+  <i class="i icon_1 b_r"></i>
+</div>
+<script src="js/zepto.js"></script>
+<script src="js/questions.js"></script>
+</body>
+</html>

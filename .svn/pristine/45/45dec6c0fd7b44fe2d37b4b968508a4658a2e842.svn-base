@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>合并公司</title>
+	<!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+	<link rel="stylesheet" href="../../css/base.css" />
+	<link rel="stylesheet" href="../../css/cmp_management.css" />
+</head>
+<body>
+    <header class="global">
+        <div class="header">
+            <img class="logo" src="../../images/logo.jpg"/>
+            <span class="title">企业用户专区</span  >
+            <!--<div class="user"><a href="#" class="mr15">登录</a><a href="#">注册</a></div>-->
+            <div class="user hello">
+                <dl>
+                    <dt>你好，117064092@qq.com&nbsp;<i></i></dt>
+                    <dd style="display: none;">
+                        <a ka="h_change_password" id="js_changePwd" href="javascript:;">修改密码</a>
+                    </dd>
+                </dl>
+                <em>|</em><a ka="logout" href="/logout/" class="logout"><i class="base logout"></i>退出</a>
+            </div>
+        </div>
+    </header>
+    <section class="co_header clearfix">
+        <a rel="nofollow" href="/gso36459.html" class="co_logo">
+            <img src="http://img.kanzhun.com/images/logo/20140704/96d2f08e5fe2e075d8fcdf2bf7054334.jpg" width="150" title="北汽福田汽车" alt="北汽福田汽车logo">
+            <span></span>
+        </a>
+        <div class="co_info">
+            <h2 id="companyName">北汽福田汽车</h2>
+            <p class="msg">
+                <strong>4.8</strong><span class="grey_66">分</span>&nbsp;&nbsp;<span class="grade_star_b"> <i style="width:80px;"></i>
+                        </span>946人评价
+            </p>
+            <p class="params">
+                互联网<em>|</em>杭州<em>|</em>1000-9999人
+            </p>
+        </div>
+        <nav class="clearfix">
+            <a href="">招聘管理</a><a href="">简历库</a><a href="">测评管理</a><a href="" class="current">公司管理</a><a href="">个人设置</a>
+        </nav>
+    </section>
+	<section class="manageContent">
+        <aside class="manageLeft">
+            <dl class="l_nav mb20">
+                <dt> <i class="base cmp_manage"></i>
+                    <span href="#">公司管理</span>
+                </dt>
+                <dd>
+                    <a href="#">基本资料</a>
+                </dd>
+                <dd>
+                    <a href="#">营业执照</a>
+                </dd>
+                <dd>
+                    <a href="#">公司介绍</a>
+                </dd>
+                <dd>
+                    <a href="#">照片管理</a>
+                </dd>
+                <dd>
+                    <a href="#">评论管理</a>
+                </dd>
+                <dd class="current">
+                    <a href="#">合并公司</a>
+                </dd>
+            </dl>
+            <p class="grey_99 f_12 pl15 pr15">使用过程中有任何问题，请发送邮件到：<span class="grey_33">liuna@kanzhun.com</span></p>
+        </aside>
+		<div class="manageRight">
+            <h3 class="cmp_merge_tt mb20 mt10 clearfix">我的申请<a href="cmp_select_merged_companies.html" class="btn_yellow_b">申请合并公司</a></h3>
+            <table class="cmp_merge_tb" cellspacing="0" width="705">
+                <tr class="evaluation_tt">
+                    <th width="270">合并公司名</th>
+                    <th width="140">申请人</th>
+                    <th width="140">提交时间</th>
+                    <th class="status">状态</th>
+                </tr>
+                <tr>
+                    <td><p>华品博睿网络技术有限公司华品博睿网络技术有限公司华品博睿网络技术有限公司</p></td>
+                    <td><p>刘振刚刘振刚刘振刚刘振刚刘振刚刘振刚</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>待审核</p></td>
+                </tr>
+                <tr>
+                    <td><p>华品博睿</p></td>
+                    <td><p>刘振刚</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>审核通过</p></td>
+                </tr>
+                <tr>
+                    <td><p>看准</p></td>
+                    <td><p>刘振刚</p></td>
+                    <td><p>2015-02-03 13:30</p></td>
+                    <td><p>驳回未通过</p></td>
+                </tr>
+            </table>
+        </div>
+
+	</section>
+</body>
+</html>

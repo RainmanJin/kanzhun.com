@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>h5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/idangerous.swiper.css" />
+  <link rel="stylesheet" href="css/invite.css"/>
+</head>
+
+<body>
+<div class="swiper-container" id='pages'>
+
+    <div class="swiper-slide page" id="page7">
+
+      <div class="img-col">
+        <img src="images/page_07_logo.png" alt=""/>
+      </div>
+
+      <div class="link-list">
+        <input type="text" name="" placeholder="请输入您想查看的公司..." id="coSuggestBtn" name="name" autocomplete="off"/>
+
+        <h2><img src="images/page_07_text.png" alt=""/></h2>
+
+        <ul class="item">
+          <li><a href="#">百度</a></li>
+          <li><a href="#">百度</a></li>
+          <li><a href="#">百度</a></li>
+
+          <li><a href="#">百度</a></li>
+          <li><a href="#">百度</a></li>
+          <li><a href="#">百度</a></li>
+
+          <li><a href="#">百度</a></li>
+          <li><a href="#">百度</a></li>
+          <li><a href="#">百度</a></li>
+        </ul>
+
+      </div>
+
+      <a class="link-logo" href="#"></a>
+    </div>
+  </div>
+</div>
+
+<section class="enter-co">
+  <div>
+    <input type="text" placeholder="输入您的公司名称" id="coSuggest" name="name" autocomplete="off" class="">
+    <div class="co-suggestions"><div class="autocomplete-suggestions" style="position: absolute; width: 100%; z-index: 9999; display: none;"><div class="autocomplete-suggestion" data-index="0"><strong>看准</strong>网</div></div></div>
+  </div>
+</section>
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/autocomplete.js"></script>
+<script>
+  var dialog = $('section.enter-co');
+  $('#coSuggestBtn').on('click', function(){
+    dialog.show();
+  });
+  dialog.on('click', function(){
+    dialog.hide();
+  });
+  dialog.find('>div').on('click', function(e){
+    e.stopPropagation();
+  });
+  ///公司 autocomplete
+  $('#coSuggest').autocomplete({
+    serviceUrl: '/activity/bsalary/companyList.json',
+    paramName: 'query',
+    dataType: 'json',
+    //格式化修改返回的JSON
+    transformResult: function(response) {
+      return {
+        suggestions: $.map(response.companyJson||[], function (dataItem) {
+          return { value: dataItem.name, data: dataItem.salaryCount, id: dataItem.id};
+        })
+      };
+    },
+    preserveInput: true,
+    maxHeight: 'auto',
+    appendTo: $('div.co-suggestions'),
+    onSelect: function (suggestion) {
+      $('#coForm').submit();
+    }
+  });
+
+</script>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>公司简介页</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css"/>
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/company/company.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/company/"></script>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+<% include ../modules/top-search %>
+<% include piece/co-header %>
+
+	<div class="container_v2 clearfix">
+		<section class="f_l_con clearfix">
+			<% include piece/co-left-hr-enter.ejs %>
+			<dl class="wrap_style co_tb mb15">
+				<dt>
+					<div class="cmphoto"><img src="http://img.kanzhun.com/images/photo/20140927/7c31ab5c167b9a3760b6db27dc3fafc6.jpg" ka="blocker2-photo1" alt="北京看准网办公环境-20140927" data-bd-imgshare-binded="1"></div>
+					<p>
+						<img src="http://img.kanzhun.com/images/photo/20140927/7c31ab5c167b9a3760b6db27dc3fafc6_thumb.jpg" ka="blocker2-photo1" data-orig="http://img.kanzhun.com/images/photo/20140927/7c31ab5c167b9a3760b6db27dc3fafc6.jpg" alt="北京看准网办公环境-20140927" data-bd-imgshare-binded="1">
+						<img src="http://img.kanzhun.com/images/photo/20140927/18ee72d425473687cba9407ae0662006_thumb.jpg" ka="blocker2-photo2" data-orig="http://img.kanzhun.com/images/photo/20140927/18ee72d425473687cba9407ae0662006.jpg" alt="北京看准网办公环境-20140927" data-bd-imgshare-binded="1">
+						<img src="http://img.kanzhun.com/images/photo/20140927/ff6f153146eddc7a01df55d69acb54e1_thumb.jpg" ka="blocker2-photo3" data-orig="http://img.kanzhun.com/images/photo/20140927/ff6f153146eddc7a01df55d69acb54e1.jpg" alt="北京看准网办公环境-20140927" data-bd-imgshare-binded="1">
+						<img src="http://img.kanzhun.com/images/photo/20140927/9f54b2f129bc9e4fe0fbca9a3c628248_thumb.jpg" ka="blocker2-photo4" data-orig="http://img.kanzhun.com/images/photo/20140927/9f54b2f129bc9e4fe0fbca9a3c628248.jpg" alt="北京看准网办公环境-20140927" data-bd-imgshare-binded="1">
+					</p>
+					<p class="t-center pt10"><a class="links" href="/gsp1800002.html" title="看准网工作环境照片" target="_blank" rel="nofollow" ka="blocker2-seeallphoto">查看全部照片（18张）</a></p>
+					</dt>
+				<dd>
+					<p><strong>公司全称</strong><span class="def">北京华品博睿网络技术有限公司</span></p>
+					<p><strong class="midlle">公司网站</strong><span class="urlinfo middle def">www.kanzhun.com</span></p>
+					<p><strong>所属行业</strong><a href="/plc121p1.html" title="网络招聘公司排名" target="_blank" ka="com-industry">网络招聘</a></p>
+					<p><strong>公司性质</strong><span class="def">私有企业</span></p>
+					<p><strong>公司规模</strong><span class="def">20-99人</span></p>
+					<p><strong>CEO</strong><span class="def">赵鹏</span></p>
+					<p><strong>公司地点</strong><a href="/pla7p1.html" title="北京企业名录" target="_blank" ka="com-city">北京</a></p>
+					<div class="competitors"><strong>竞争对手</strong><div><a href="/gso1800001.html" target="_blank" ka="com-blocker2-com1">GlassDoor</a></div></div>
+					<a rel="nofollow" href="javascript:;" data-coid="1800002" class="edit js_companyCorrection_bt" ka="com-blocker2-editcom"><i class="i_correction"></i>纠错</a>
+				</dd>
+			</dl>
+			<div class="wrap_style mb15">
+				<div class="tt mt30 clearfix">
+					<h1>公司介绍</h1><em>Company introduction</em>
+					<a class="def js_change_coDesc" data-coid="1800002" href="javascript:;" ka="update-com"><i class="i_update mr5"></i>我来更新</a>
+				</div>
+				<article class="co_intro">
+					<p>
+						看准网（www.kanzhun.com）是中国最大的企业点评、雇主品牌展示和员工分享平台。建立于2008年11月，曾用名“分智网”（www.fenzhi.com）。截止至2014年10月，平台共积累138万家公司，拥有4800万注册用户，月均覆盖用户超过2600万。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看准网每一位小伙伴，身为上班族，<span class="more_details">心里装有上班族，崇尚“用户至上”。 看准网平台为用户提供雇主基本信息、雇主评价、薪酬资讯、面试经验、招聘职位等信息。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中，雇主基本信息可以由公司管理者认领并维护，也可以由雇员自主提供。 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中，雇主评价、薪酬资讯等，由企业员工或离职两年以内的老员工匿名提供。 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中，面试信息由参加面试的候选人提供。 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中，看准网以雇主自主发布、雇主官网发布或平台之间合作的方式，经严格筛选后提供最新职位给用户。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司愿景<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看准网倡导员工和雇主之间“参与”、“分享”、“尊重”。 我们坚信，成功的人生离不开高效的事业。高效的事业离不开高效的选择。高效的选择来自全面、真实、新鲜的资讯。 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在一个数亿人上班，数百万企业运营的国度： “人人为我，我为人人”的“参与”是唯一途径。 “有话就说，实话实说”的“分享”最值得崇尚。 雇主、雇员彼此尊重可以令这块国土每天美好多一点。 相信，有了大家的参与，必定会有更多公司重视员工感受，必定会有更多公司优化员工关系，必定会有更多公司提升招聘效率。 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们每天为此努力。</span><span class="more" ka="intro-more">... <i>展开</i></span>
+					</p>
+				</article>
+			</div>
+			<div class="wrap_style mb15">
+				<div class="tt mt30 clearfix">
+					<h2>公司点评</h2><em>Review</em>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey_99">所有点评由该公司员工匿名提交</span>
+					<a rel="nofollow" data-url="/reviewugc/pop.json?companyId=1800002" href="javascript:;" ka="blocker3-ugc-review2" class="links js_ugc_bt" data-type="comment"><i class="i_edit_pen mr5"></i>我要写点评</a>
+				</div>
+				<div class="co_grade mt20 clearfix">
+					<div class="cg_t clearfix">
+						<ul class="cgt_l clearfix">
+							<li class="cgtl_l">
+								<div class="font_h2">88<em>%</em></div>
+							</li>
+							<li class="cgtl_r">
+								<div class="font_h3 clearfix">
+									<a class="bt_showCgd js_bt_showCgd" href="javascript:;">
+										<i class="i_question_blue"></i>
+										<div class="co_grade_detail none">
+											<i class="tangle_greyb_left"></i>
+											<ul class="cgd_t">
+												<li class="font_h2">88<em>%</em></li>
+												<li>
+													<p class="font_h3">员工认为公司非常靠谱</p>
+													<p class="grey_99 f_12">来自16人中14人的评价</p>
+												</li>
+											</ul>
+											<ul class="cgd_m">
+												<li class="mb10"><span class="grade_star_b" style="margin-right: 47px;"><i style="width:113px;"></i></span><strong>4.8</strong><em class="counts">分</em></li>
+												<li><span class="green_s_star_2 mr10"><i style="width:83px;"></i></span><span class="start_text grey_99">非常靠谱</span><em class="column" style="width:88px"></em> <span class="grey_66">88% <em class="grey_99">(14人)</em></span></li>
+												<li><span class="green_s_star_2 mr10"><i style="width:64px;"></i></span><span class="start_text grey_99">值得加入</span><em class="column" style="width:6px"></em> <span class="grey_66">6% <em class="grey_99">(1人)</em></span></li>
+												<li><span class="green_s_star_2 mr10"><i style="width:48px;"></i></span><span class="start_text grey_99">一般般</span><em class="column" style="width:6px"></em> <span class="grey_66">6% <em class="grey_99">(1人)</em></span></li>
+												<li><span class="green_s_star_2 mr10"><i style="width:32px;"></i></span><span class="start_text grey_99">比较失望</span><em class="column" style="width:0px"></em> <span class="grey_66">0% <em class="grey_99">(0人)</em></span></li>
+												<li><span class="green_s_star_2 mr10"><i style="width:16px;"></i></span><span class="start_text grey_99">不满意</span><em class="column" style="width:0px"></em> <span class="grey_66">0% <em class="grey_99">(0人)</em></span></li>
+											</ul>
+											<ul class="cgd_b clearfix">
+												<li>职业成长<span class="grade_rect_fifteen ml5"><i style="width:63px;"></i></span>4.6分</li>
+												<li class="ml10">技能成长<span class="grade_rect_fifteen ml5"><i style="width:65px;"></i></span>4.8分</li>
+												<li>环境氛围<span class="grade_rect_fifteen ml5"><i style="width:65px;"></i></span>4.8分</li>
+												<li class="ml10">工作压力<span class="grade_rect_fifteen ml5"><i style="width:63px;"></i></span>4.6分</li>
+												<li>公司前景<span class="grade_rect_fifteen ml5"><i style="width:67px;"></i></span>4.9分</li>
+											</ul>
+										</div>
+									</a>
+									<p class="employee_comment">员工认为公司非常靠谱</p>
+								</div>
+								<p class="grey_99">来自16人中14人的评价</p>
+							</li>
+						</ul>
+						<div class="cgt_r">
+							<div class="ceo">
+								<img src="http://img.kanzhun.com/images/ceophoto/20150203/758f56eccd5cb54d1f1b32879746c268.jpg" data-bd-imgshare-binded="1">
+								<p class="f_14">赵鹏<br><em class="grey_99 f_12">首席执行官</em></p>
+								<a class="fright grey_99 mt10 js_correctionceo_bt" href="javascript:;" data-coid="1800002" ka="review-ceo-edit"><i class="i_correction"></i>纠错</a>
+							</div>
+							<span class="tangle_init"></span>
+						</div>
+					</div>
+					<ul class="cg_b">
+						<li class="circle_chart">
+							<div class="doughnua_chart"><span>100%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="1.0_0.0"></canvas></div>
+							<h5>100%的员工<br>愿意推荐朋友来<br>这里工作</h5>
+						</li>
+						<li class="circle_chart">
+							<div class="doughnua_chart"><span>100%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="1.0_0.0"></canvas></div>
+							<h5>100%的员工<br>看好公司<br>未来发展</h5>
+						</li>
+						<li class="circle_chart li_last">
+							<div class="doughnua_chart"><span>100%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="1.0_0.0"></canvas></div>
+							<h5>100%的员工<br>支持CEO赵鹏</h5>
+						</li>
+					</ul>
+				</div>
+				<dl class="c_s_result dash_tb">
+					<dt class="anonymous_portrait"><img src="/images/view_v2-img/xiaoren.jpg" alt="" data-bd-imgshare-binded="1"></dt>
+					<dd class="c_s_result_detail">
+						<h2><a class="links" href="/pl475194.html" ka="comreview-blocker3-reviewname2" target="_blank"><span>“</span>典型的疯子型创业公司。逗逼文化是主流。<span>”</span></a></h2>
+						<p class="f_12 grey_99 view_address">在职员工 - 1年运营 -&nbsp;&nbsp;<i class="cmp_address"></i>北京</p>
+						<p class="c_s_result_text">
+							<em>公司优点：</em>
+							操盘手们比较靠得住。基本上对公司自己，行业，友商动态的预测，一两个季度会浮现出来。
+						</p>
+						<p class="c_s_result_text">
+							<em>公司缺点：</em>
+							工作压力有点大，而且不是偶尔大。
+						</p>
+						<p class="c_s_result_text">
+							<em>意见和建议：</em>
+							平均20个人一个位置，厕所也太少了吧。搬出去找个写字楼吧，公司又不缺钱。
+							<a class="links" rel="nofollow" href="/pl475194.html" ka="comreview-blocker3-seeall2" target="_blank">查看全部&gt;&gt;</a>
+						</p>
+						<div class="c_s_v_result mb20" style="z-index: 2;">
+							<span class="green_s_star_2 js_hover_gd"><i style="width:83px;"></i></span>
+							<i class="tangle_init"></i><em>非常靠谱</em>
+							<i class="i_rect color_g mr5"></i><em class="grey_99 f_12">愿意推荐朋友</em>
+							<i class="i_rect color_g mr5"></i><em class="grey_99 f_12">支持CEO</em>
+							<i class="i_rect color_g mr5"></i><span class="grey_99 f_12">公司发展变好</span>
+							<div class="grade_detail" style="display: none;">
+								<i class="tangle_greyb_up"></i>
+								<ul>
+									<li>职业成长<span class="grade_rect_fifteen ml5"><i style="width:54px;"></i></span></li>
+									<li>技能成长<span class="grade_rect_fifteen ml5"><i style="width:68px;"></i></span></li>
+									<li>环境氛围<span class="grade_rect_fifteen ml5"><i style="width:68px;"></i></span></li>
+									<li>工作压力<span class="grade_rect_fifteen ml5"><i style="width:68px;"></i></span></li>
+									<li>公司前景<span class="grade_rect_fifteen ml5"><i style="width:54px;"></i></span></li>
+								</ul>
+							</div>
+						</div>
+						<p class="line_only"></p>
+						<div class="u_c_s clearfix">
+							<p class="fright"><a class="links" href="#">查看全部点评</a><span class="f_12 grey_99">(186条)</span></p>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="wrap_style mb15">
+				<div class="tt mt30 clearfix">
+					<h2>员工工资</h2><em>Salaries</em>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey_99">所有工资由该公司员工匿名提交</span>
+					<a rel="nofollow" href="/salaryugc1800002/" target="_blank" ka="blocker4-ugc-salary" class="links"><i class="i_edit_pen mr5"></i>我要晒工资</a>
+				</div>
+				<table class="salary-desc mt20" cellspacing="0" cellpadding="0" id="salaryDescTable">
+					<tbody><tr class="">
+						<th width="145">职位</th>
+						<th width="85">平均工资/月</th>
+						<th>
+							<p><span class="fleft">最低</span><span class="fright">最高</span></p>
+						</th>
+					</tr>
+					<tr id="SD_6151597" data-url="/xs/salary/1800002/barchart.json?job=%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86&amp;cityCode=0" class="show_flip">
+						<td><a href="/gzxs6151597.html" ka="comsalary-blocker2-jobname1" target="_blank">产品经理(10条)</a></td>
+						<td class="s-d-average">￥8000</td>
+						<td>
+							<div class="s-d-digit" ka="comsalary-blocker2-jobname1show">
+								<p>
+									<em class="s-d-l">￥5000</em>
+									<span style="margin-left: 40px;"></span>
+									<em class="s-d-r">￥20000</em>
+								</p>
+								<i class="s-d-show"></i>
+							</div>
+						</td>
+					</tr>
+					<tr id="SD_6151597_C" class="s-d-c">
+						<td colspan="3">
+							<div class="s-d-chart">
+								<ul>
+									<li class="s-d-low"><span class="grey_99">最高工资</span> ￥20,000</li>
+									<li class="s-d-high"><span class="grey_99">最低工资</span> ￥5,000</li>
+									<li class="s-d-mark">
+										<a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="6151597" ka="comsalary-blocker2-up1">
+											<i></i>靠谱 <em>7</em>
+										</a>
+									</li>
+								</ul>
+								<section id="salaryDescriptionChart" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 420px; height: 190px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="420" height="190"><desc>Created with Highcharts 4.0.3</desc><defs><clipPath id="highcharts-1"><rect x="0" y="0" width="362" height="139"></rect></clipPath></defs><rect x="0" y="0" width="420" height="190" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><path fill="rgba(124,181,236,0.25)" d="M 0 0"></path><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 48 9.5 L 410 9.5" stroke="#f2f2f2" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 48 80.5 L 410 80.5" stroke="#f2f2f2" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 48 149.5 L 410 149.5" stroke="#f2f2f2" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 150.5 149 L 150.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 202.5 149 L 202.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 254.5 149 L 254.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 306.5 149 L 306.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 357.5 149 L 357.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 410.5 149 L 410.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 99.5 149 L 99.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 47.5 149 L 47.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 48 149.5 L 410 149.5" stroke="#007ead" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 47.5 10 L 47.5 149" stroke="#007ead" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(48,10) scale(1 1)" clip-path="url(#highcharts-1)"><path fill="rgba(124,181,236,0.3)" d="M 25.857142857142858 104.25 L 77.57142857142857 34.75 L 129.28571428571428 69.5 L 181 104.25 L 232.71428571428572 139 L 284.4285714285714 69.5 L 336.1428571428571 104.25 L 336.1428571428571 139 L 25.857142857142858 139" zIndex="0"></path><path fill="none" d="M 25.857142857142858 104.25 L 77.57142857142857 34.75 L 129.28571428571428 69.5 L 181 104.25 L 232.71428571428572 139 L 284.4285714285714 69.5 L 336.1428571428571 104.25" stroke="#7cb5ec" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 15.857142857142858 104.25 L 25.857142857142858 104.25 L 77.57142857142857 34.75 L 129.28571428571428 69.5 L 181 104.25 L 232.71428571428572 139 L 284.4285714285714 69.5 L 336.1428571428571 104.25 L 346.1428571428571 104.25" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(48,10) scale(1 1)" clip-path="none" style=""><path fill="#7db2e6" d="M 336 99.25 C 342.66 99.25 342.66 109.25 336 109.25 C 329.34 109.25 329.34 99.25 336 99.25 Z" stroke="#fff" stroke-width="2"></path><path fill="#7db2e6" d="M 284 64.5 C 290.66 64.5 290.66 74.5 284 74.5 C 277.34 74.5 277.34 64.5 284 64.5 Z" stroke="#fff" stroke-width="2"></path><path fill="#7db2e6" d="M 232 134 C 238.66 134 238.66 144 232 144 C 225.34 144 225.34 134 232 134 Z" stroke="#fff" stroke-width="2"></path><path fill="#7db2e6" d="M 181 99.25 C 187.66 99.25 187.66 109.25 181 109.25 C 174.34 109.25 174.34 99.25 181 99.25 Z" stroke="#fff" stroke-width="2"></path><path fill="#7db2e6" d="M 129 64.5 C 135.66 64.5 135.66 74.5 129 74.5 C 122.34 74.5 122.34 64.5 129 64.5 Z" stroke="#fff" stroke-width="2"></path><path fill="#7db2e6" d="M 77 29.75 C 83.66 29.75 83.66 39.75 77 39.75 C 70.34 39.75 70.34 29.75 77 29.75 Z" stroke="#fff" stroke-width="2"></path><path fill="#7db2e6" d="M 25.857142857142858 99.25 C 32.51714285714286 99.25 32.51714285714286 109.25 25.857142857142858 109.25 C 19.197142857142858 109.25 19.197142857142858 99.25 25.857142857142858 99.25 Z" stroke="#fff" stroke-width="2"></path></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="73.85714285714286" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">0-5k</text><text x="125.57142857142858" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">5-8k</text><text x="177.28571428571428" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">8-10k</text><text x="229" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">10-12k</text><text x="280.7142857142857" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">12-15k</text><text x="332.42857142857144" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">15-20k</text><text x="384.14285714285717" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">&gt;20k</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="33" text-anchor="end" style="width:119px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="153" opacity="1">0%</text><text x="33" text-anchor="end" style="width:119px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="83.5" opacity="1">20%</text><text x="33" text-anchor="end" style="width:119px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="14" opacity="1">40%</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(54,64)" opacity="0" visibility="hidden"><path fill="none" d="M 3.5 0.5 L 36.5 0.5 C 39.5 0.5 39.5 0.5 39.5 3.5 L 39.5 31.5 C 39.5 34.5 39.5 34.5 36.5 34.5 L 26.5 34.5 20.5 40.5 14.5 34.5 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)" width="39" height="34"></path><path fill="none" d="M 3.5 0.5 L 36.5 0.5 C 39.5 0.5 39.5 0.5 39.5 3.5 L 39.5 31.5 C 39.5 34.5 39.5 34.5 36.5 34.5 L 26.5 34.5 20.5 40.5 14.5 34.5 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)" width="39" height="34"></path><path fill="none" d="M 3.5 0.5 L 36.5 0.5 C 39.5 0.5 39.5 0.5 39.5 3.5 L 39.5 31.5 C 39.5 34.5 39.5 34.5 36.5 34.5 L 26.5 34.5 20.5 40.5 14.5 34.5 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)" width="39" height="34"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 36.5 0.5 C 39.5 0.5 39.5 0.5 39.5 3.5 L 39.5 31.5 C 39.5 34.5 39.5 34.5 36.5 34.5 L 26.5 34.5 20.5 40.5 14.5 34.5 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#7cb5ec" stroke-width="1"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="21">10%</text></g></svg></div></section>
+							</div>
+						</td>
+					</tr>
+					<tr id="SD_7730949722734619" data-url="/xs/salary/1800002/barchart.json?job=%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="">
+						<td><a href="/gzxs7730949722734619.html" ka="comsalary-blocker2-jobname2" target="_blank">软件开发工程师(10条)</a></td>
+						<td class="s-d-average">￥10000</td>
+						<td>
+							<div class="s-d-digit" ka="comsalary-blocker2-jobname2show">
+								<p>
+									<em class="s-d-l">￥7000</em>
+									<span style="margin-left: 67px;"></span>
+									<em class="s-d-r">￥16000</em>
+								</p>
+								<i class="s-d-show"></i>
+							</div>
+						</td>
+					</tr>
+					<tr id="SD_7730949722734619_C" class="s-d-c none">
+						<td colspan="3">
+							<div class="s-d-chart">
+								<ul>
+									<li class="s-d-low"><span class="grey_99">最高工资</span> ￥16,000</li>
+									<li class="s-d-high"><span class="grey_99">最低工资</span> ￥7,000</li>
+									<li class="s-d-mark">
+										<a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="7730949722734619" ka="comsalary-blocker2-up2">
+											<i></i>靠谱 <em>0</em>
+										</a>
+									</li>
+								</ul>
+								<section id="salaryDescriptionChart">
+								</section>
+							</div>
+						</td>
+					</tr>
+					<tr id="SD_6208397" data-url="/xs/salary/1800002/barchart.json?job=ios%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0">
+						<td><a href="/gzxs6208397.html" ka="comsalary-blocker2-jobname3" target="_blank">ios开发工程师(4条)</a></td>
+						<td class="s-d-average">￥10500</td>
+						<td>
+							<div class="s-d-digit" ka="comsalary-blocker2-jobname3show">
+								<p>
+									<em class="s-d-l">￥10000</em>
+									<span style="margin-left: 50px;"></span>
+									<em class="s-d-r">￥12000</em>
+								</p>
+								<i class="s-d-show"></i>
+							</div>
+						</td>
+					</tr>
+					<tr id="SD_6208397_C" class="s-d-c none">
+						<td colspan="3">
+							<div class="s-d-chart">
+								<ul>
+									<li class="s-d-low"><span class="grey_99">最高工资</span> ￥12,000</li>
+									<li class="s-d-high"><span class="grey_99">最低工资</span> ￥10,000</li>
+									<li class="s-d-mark">
+										<a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="6208397" ka="comsalary-blocker2-up3">
+											<i></i>靠谱 <em>0</em>
+										</a>
+									</li>
+								</ul>
+								<section id="salaryDescriptionChart">
+								</section>
+							</div>
+						</td>
+					</tr>
+					<tr id="SD_6170482" data-url="/xs/salary/1800002/barchart.json?job=%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91&amp;cityCode=0">
+						<td><a href="/gzxs6170482.html" ka="comsalary-blocker2-jobname4" target="_blank">产品总监(3条)</a></td>
+						<td class="s-d-average">￥20000</td>
+						<td>
+							<div class="s-d-digit" ka="comsalary-blocker2-jobname4show">
+								<p>
+									<em class="s-d-l">￥20000</em>
+									<span style="margin-left: 200px;"></span>
+									<em class="s-d-r">￥20000</em>
+								</p>
+								<i class="s-d-show"></i>
+							</div>
+						</td>
+					</tr>
+					<tr id="SD_6170482_C" class="s-d-c none">
+						<td colspan="3">
+							<div class="s-d-chart">
+								<ul>
+									<li class="s-d-low"><span class="grey_99">最高工资</span> ￥20,000</li>
+									<li class="s-d-high"><span class="grey_99">最低工资</span> ￥20,000</li>
+									<li class="s-d-mark">
+										<a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="6170482" ka="comsalary-blocker2-up4">
+											<i></i>靠谱 <em>0</em>
+										</a>
+									</li>
+								</ul>
+								<section id="salaryDescriptionChart">
+								</section>
+							</div>
+						</td>
+					</tr>
+					<tr id="SD_7730949722735024" data-url="/xs/salary/1800002/barchart.json?job=%E6%96%87%E5%AD%97%E7%BC%96%E8%BE%91&amp;cityCode=0" class="">
+						<td><a href="/gzxs7730949722735024.html" ka="comsalary-blocker2-jobname5" target="_blank">文字编辑(2条)</a></td>
+						<td class="s-d-average">￥3500</td>
+						<td>
+							<div class="s-d-digit" ka="comsalary-blocker2-jobname5show">
+								<p>
+									<em class="s-d-l">￥3500</em>
+									<span style="margin-left: 200px;"></span>
+									<em class="s-d-r">￥3500</em>
+								</p>
+								<i class="s-d-show"></i>
+							</div>
+						</td>
+					</tr>
+					<tr id="SD_7730949722735024_C" class="s-d-c none">
+						<td colspan="3">
+							<div class="s-d-chart">
+								<ul>
+									<li class="s-d-low"><span class="grey_99">最高工资</span> ￥3,500</li>
+									<li class="s-d-high"><span class="grey_99">最低工资</span> ￥3,500</li>
+									<li class="s-d-mark">
+										<a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="7730949722735024" ka="comsalary-blocker2-up5">
+											<i></i>靠谱 <em>0</em>
+										</a>
+									</li>
+								</ul>
+								<section id="salaryDescriptionChart">
+								</section>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="pt15 pb15 clearfix">
+					<p class="fright"><a class="links" href="#">查看全部工资(</a><span class="f_12 grey_99">(186条)</span></p>
+				</div>
+			</div>
+			<div class="wrap_style mb15">
+				<div class="tt mt30 clearfix">
+					<h2>面试经历</h2><em>Interview</em>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey_99">所有面试经历由面试过该公司职位的用户匿名提交</span>
+					<a rel="nofollow" href="/interviewugc1800002/" target="_blank" ka="blocker5-ugc-interview" class="links"><i class="i_edit_pen mr5"></i>我要写面经</a>
+				</div>
+				<div class="iv_grade mt10">
+					<dl class="total">
+						<dt>面试整体感受</dt>
+						<dd class="pie_chart">
+							<canvas width="62" height="62" class="reviewsPieChart" data-ratio="0.5_0.5_0.0"></canvas>
+							<div class="pie_bar">
+								<p><span class="easy"></span>很好&nbsp;&nbsp;&nbsp;&nbsp;50%</p>
+								<p><span class="normal"></span>一般&nbsp;&nbsp;&nbsp;&nbsp;50%</p>
+								<p><span class="hard"></span>不好&nbsp;&nbsp;&nbsp;&nbsp;0%</p>
+							</div>
+						</dd>
+					</dl>
+					<dl class="level">
+						<dt>面试难度</dt>
+						<dd class="circle_chart">
+							<div class="doughnua_chart"><span>3.0</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.6_0.4"></canvas></div><h5>难度系数</h5>
+						</dd>
+					</dl>
+					<dl class="from">
+						<dt>获取面试机会来源</dt>
+						<dd class="pie_chart">
+							<canvas width="62" height="62" class="reviewsFromPieChart" data-ratio="0.0_0.0_0.25_0.25_0.0_0.5"></canvas>
+							<div class="pie_bar">
+								<p><span class="wlzp"></span>网络招聘 &nbsp;&nbsp;0%</p>
+								<p><span class="xyzp"></span>校园招聘 &nbsp;&nbsp;0%</p>
+								<p><span class="shzp"></span>社会招聘 &nbsp;&nbsp;25%</p>
+								<p class="none"><span class="nbtj"></span>内部推荐 &nbsp;&nbsp;25%</p>
+								<p class="none"><span class="lttj"></span>猎头推荐 &nbsp;&nbsp;0%</p>
+								<p class="none"><span class="qt"></span>其他 &nbsp;&nbsp;50%</p>
+								<div class="pie-bar-toggle">
+									<div class="C-toggler" id="moreChartInfo" ka="interview-source-open">展开<i></i></div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<dl class="c_s_result">
+					<dt class="anonymous_portrait"><img src="/images/view_v2-img/xiaoren.jpg" alt="" data-bd-imgshare-binded="1"></dt>
+					<dd class="c_s_result_detail">
+						<h2><a href="/gsmsh775538.html" class="links" ka="blocker3-interviewname1" target="_blank"><span>“</span>这个公司很尊敬设计师。<span>”</span></a></h2>
+						<p class="f_12 grey_99 view_address">
+							匿名用户&nbsp;&nbsp;&nbsp;&nbsp;面试看准网的
+							<a ka="interview-name1" href="/interview/18/" class="links" target="_blank">设计师</a>
+							&nbsp;-&nbsp;&nbsp;<i class="cmp_address"></i>北京
+						</p>
+						<strong>面试经历：</strong>
+						<p class="c_s_result_text">
+							我是在Boss直聘上发现这个公司招聘设计师。为什么下载这个招聘app要交待一下哈哈。因为这个app是所有招聘类app里面，皮肤最漂亮的。所以这个面试过程很特殊。我已经在boss直聘里面，和公司资深的设计师聊了，互相感兴趣。然后我又跟这个公司的ceo也聊天了，他还挺有耐心。因为有这样的基础，所以大家提前已经互相觉得还不错了。面试效率比较高，一天内谈了三个人。我带了作品集，他们三个人都认真地看了。我比较喜欢这个公司的地方，他们做事很认真，交流也很直接。设计师主要是交流专业的事情。产品经理举出了一些案例听我的观点。boss就是说了希望多几个设计师，每个人有点余地，别太紧绷，因为我们这个行业需要灵感。哈哈说的不错。
+							<a rel="nofollow" href="/gsmsh775538.html" class="links" ka="cominterview-blocker3-seeall1" target="_blank">查看全部&gt;&gt;</a>
+						</p>
+						<strong>面试官提出的问题</strong>
+						<dl class="mb20">
+							<dt class="c_s_result_text">问题1：</dt>
+							<dd class="c_s_result_text">你为什么每两年换一个工作。</dd>
+							<dt class="c_s_result_text">回&nbsp;&nbsp;答：</dt>
+							<dd class="c_s_result_text">嘿嘿，因为各种和我没有关系的原因了。你懂的。</dd>
+						</dl>
+						<div class="c_s_v_result mb20">
+							<i class="feelhappy"></i><em class="f_12">感觉靠谱</em><em class="grey_99 f_12">面试整体感受：一般</em><span class="grey_99 f_12">面试难度：<span class="grade_rect_fifteen"><i style="width:54px;"></i></span>困难</span>
+						</div>
+						<p class="line_only"></p>
+						<div class="u_c_s clearfix">
+							<p class="fright"><a class="links" href="#">查看全部面试</a><span class="f_12 grey_99">(186条)</span></p>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="wrap_style mb15">
+				<div class="tt mt30 clearfix"><h2>随便说说</h2><em>Feel free to talk</em></div>
+				<form action="/shortreview/publish.json" method="post" id="shortreviewForm">
+					<div class="chat_field">
+						<input type="hidden" name="companyId" value="1800002">
+						<input type="hidden" name="originId" value="">
+						<input type="hidden" name="type" value="0">
+						<textarea name="shortviewcontent" placeholder="对这家公司印象如何？" id="shortViewContent" ka="blocker6-input"></textarea>
+					</div>
+					<p class="t-right"><span id="shortViewPrompt">您还可以输入<strong class="ok">140</strong>字</span><input type="submit" value="发布" class="btn_grey_s" ka="blocker6-submit"></p>
+				</form>
+				<form action="/shortreview/list.json" method="get" id="moreReviewsForm">
+					<input type="hidden" name="companyId" value="1800002">
+					<input type="hidden" name="originId" value="">
+					<input type="hidden" name="type" value="0">
+					<input type="hidden" name="lastId" value="779037">
+					<ul class="reviews" id="reviewsWrapper">
+						<li>
+							<i class="r"></i>
+							<div class="clearfix">
+								<p class="grey_99">看准网员工的点评&nbsp;&nbsp;2015-03-10</p>
+								<a href="/pl475194.html" target="_blank" ka="blocker6-seeall1">典型的疯子型创业公司。逗逼文化是主流。</a>
+								<p class="options mt10">
+									<a href="#" rel="nofollow" data-pid="812036" data-mtype="useful.json" class="float_wrap mark helpful" ka="blocker6-up1"><span class="img helpful"></span>有用（<i>1</i>）</a><em class="grey_99">|</em><a href="/pl475194.html" target="_blank" class="cmt" rel="nofollow"><span class="img cmt"></span>评论（0）</a><em class="grey_99">|</em><a href="/pl475194.html" target="_blank" ka="blocker6-seeall1" rel="nofollow">查看完整点评</a></p>
+							</div>
+						</li>
+						<li>
+							<i class="i"></i>
+							<div class="clearfix">
+								<p class="grey_99">面试看准网的设计师&nbsp;&nbsp;2015-03-09</p>
+								<a href="/gsmsh775538.html" target="_blank" ka="blocker6-seeall2">这个公司很尊敬设计师。</a>
+								<p class="options mt10">
+									<a href="#" rel="nofollow" data-pid="808594" data-mtype="useful.json" class="float_wrap mark helpful" ka="blocker6-up2"><span class="img helpful"></span>有用（<i>0</i>）</a><em class="grey_99">|</em><a href="/gsmsh775538.html" target="_blank" class="cmt" rel="nofollow"><span class="img cmt"></span>评论（0）</a><em class="grey_99">|</em><a href="/gsmsh775538.html" target="_blank" ka="blocker6-seeall2" rel="nofollow">查看完整面试经历</a></p>
+							</div>
+						</li>
+						<li>
+							<i class="topic_0"></i>
+							<div class="clearfix">
+								<p class="grey_99">看准网小伙伴 &nbsp;&nbsp;2015-03-05</p>
+								<span class="color_y"># 晒晒你的年终奖 #</span>0
+								<p class="options mt10">
+									<a href="#" rel="nofollow" data-pid="804166" data-mtype="useful.json" class="float_wrap mark helpful" ka="blocker6-up3"><span class="img helpful"></span>有用（<i>0</i>）</a></p>
+							</div>
+						</li>
+						<li>
+							<i class="r"></i>
+							<div class="clearfix">
+								<p class="grey_99">看准网员工的点评&nbsp;&nbsp;2015-02-27</p>
+								<a href="/pl469655.html" target="_blank" ka="blocker6-seeall4">感觉公司萌萌哒，美女多，例如我。</a>
+								<p class="options mt10">
+									<a href="#" rel="nofollow" data-pid="791759" data-mtype="useful.json" class="float_wrap mark helpful" ka="blocker6-up4"><span class="img helpful"></span>有用（<i>0</i>）</a><em class="grey_99">|</em><a href="/pl469655.html" target="_blank" class="cmt" rel="nofollow"><span class="img cmt"></span>评论（0）</a><em class="grey_99">|</em><a href="/pl469655.html" target="_blank" ka="blocker6-seeall4" rel="nofollow">查看完整点评</a></p>
+							</div>
+						</li>
+						<li>
+							<i class="p"></i>
+							<div class="clearfix">
+								<p class="grey_99">网友对看准网环境照片的印象&nbsp;&nbsp;2015-02-09</p>
+								各种好吃的。。。。
+								<p class="options mt10">
+									<a href="#" rel="nofollow" data-pid="779037" data-mtype="useful.json" class="float_wrap mark helpful" ka="blocker6-up5"><span class="img helpful"></span>有用（<i>1</i>）</a><em class="grey_99">|</em><a href="/photo/1800002/16171/" target="_blank" ka="blocker6-seeall5">查看源照片</a></p>
+							</div>
+						</li>
+						<li style="border:0;" id="fetchMoreReviews">
+							<p class="mt20 t-center"><input type="submit" class="btn_grey_b" data-lid="779037" value="&nbsp;&nbsp;&nbsp;&nbsp;更多...&nbsp;&nbsp;" ka="blocker6-buttonmore"></p>
+						</li>
+					</ul>
+					<p class="loading"><img src="/images/loading.gif" data-bd-imgshare-binded="1">加载中...</p>
+				</form>
+			</div>
+			<% include piece/co-review-grade.ejs %>
+		</section>
+		<!-- 右半部分 -->
+		<section class="f_r_con">
+      		<a href="" class="advertis_area mb15" style="height: 58px;"><img src="/images/view_v2-img/r_img.jpg" alt=""></a>
+			<% include piece/co-right-want-part.ejs %>
+			<% include piece/co-right-report-part.ejs %>
+      		<% include piece/co-right-companylist.ejs %>
+		</section>
+		<!-- 右半部分 -->
+	</div>
+</body>
+</html>

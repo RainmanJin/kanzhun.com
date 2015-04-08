@@ -1,0 +1,49 @@
+@import "common/var";
+
+section.content{
+  text-align: center;
+  .login_logo{
+    margin-top: 90px;
+  }
+  >h2{
+    margin-top: 15px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #666;
+  }
+  >h3{
+    margin-top: 30px;
+    font-size: 24px;
+    color: #666;
+  }
+  ul.form{
+    padding-top: 10px;
+    width: 323px;
+    margin: 0 auto;
+    li{
+      margin-bottom: 20px;
+      .ipt{
+        width: 300px;
+      }
+      .green_btn{
+        width: 323px;
+      }
+      .err{
+        color: @red;
+        text-align: left;
+      }
+      &.code{
+        text-align: left;
+        img{
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

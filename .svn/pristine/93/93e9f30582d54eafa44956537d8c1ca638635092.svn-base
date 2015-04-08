@@ -1,0 +1,227 @@
+@import "common/var";
+@import "module/reset";
+@import "common/common";
+@import "module/wx";
+
+html{
+  font-size: 14px;
+}
+
+body{
+  background: url("@{img-path}/rank_bg.jpg") #06488e no-repeat top center;
+  background-size: 100% auto;
+  position: absolute;
+  overflow: hidden;
+}
+
+.nav{
+    height: 30px;
+    line-height: 30px;
+    background-color: #fefefe;
+    width: 100%;
+    .home{
+      margin-left: 15px;
+      img{
+        width: 50px;
+        vertical-align: top;
+      }
+    }
+
+    .l_trangle{
+      .trangle(left,rgb(51,51,51),5px);
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+   .tip{
+       font-size: 14px;
+       color: rgb(51,51,51);
+       font-weight: bold;
+   }
+}
+
+.content{
+  position: relative;
+  .title{
+    margin-top: 50px;
+    text-align: center;
+    .mark{
+      width:80%;
+    }
+    .vertical{
+      margin-top: -20px;
+      width:75%;
+    }
+    .word{
+      position: relative;
+      top: -1.7em;
+      font-size: 1.5rem;
+      color:red;
+      font-weight: bold;
+    }
+  }//title
+
+  .reasons{
+
+    padding-bottom: 40px;
+    position: relative;
+     ul li{
+        background-color: #ffffff;
+        border-radius: 10px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+       overflow: hidden;
+       position: relative;
+       img{
+         vertical-align: top;
+         width: 66px;
+         float: left;
+         padding: 10px;
+       }
+
+       div{
+         padding-right: 30px;
+       }
+
+       .arrow{
+          position: absolute;
+          right: 5px;
+          height:30px;
+          width: 20px;
+          top: 50%;
+         margin-top: -25px;
+       }
+       .h2{
+         font-size: 1.5rem;
+         font-weight: bolder;
+       }
+     }
+  }//reasons
+
+
+}
+
+.foot{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  a{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    color: #ffffff;
+    padding:10px 0px;
+    margin: 0px;
+    border: 0px;
+    width:50%;
+  }
+  .share{
+    background-color: #4564ba;
+  }
+  .company{
+    background-color: #3d3d8b;
+  }
+}
+
+
+.popup-wrap{
+
+  position: fixed;
+  overflow: hidden;
+  bottom: 51px;
+  right: 10px;
+  width: 65%;
+  height: 180px;
+
+  .popup{
+     position: relative;
+     top: 180px;
+
+    p{
+      border-radius: 6px;
+      background-color: rgb( 51, 51, 51 );
+      opacity: 0.8;
+      margin-bottom: 10px;
+      padding: 5px 0px;
+      color: #ffffff;
+      overflow: hidden;
+
+      img{
+        float: left;
+        width: 40px;
+        margin:10px;
+        opacity: 1;
+      }
+
+      .text{
+        margin-top: 5px;
+        display: inline-block;
+        float: left;
+        width: 70%;
+      }
+    }
+  }
+
+}
+
+
+.circle{
+  width: 40px;
+  height: 40px;
+  border: 3px solid  #000;
+  border-radius: 50%;
+  background-color: rgb( 255, 255, 255 );
+  position: fixed;
+  bottom: 240px;
+  right: 10px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+
+  img{
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    &.none{
+      display: none;
+    }
+  }
+
+}
+
+
+/*三角  上 up   下down 左left 右right */
+.trangle(up,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-bottom: @height dashed @c;
+}
+
+.trangle(down,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-top: @height dashed @c;
+}
+
+
+.trangle(left,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-right: @height dashed @c;
+}
+
+.trangle(right,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-left: @height dashed @c;
+}
+
+

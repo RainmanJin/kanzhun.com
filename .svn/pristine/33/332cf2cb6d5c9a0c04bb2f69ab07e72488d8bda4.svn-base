@@ -1,0 +1,13 @@
+<!--该公司最新招聘-->
+<div class="cmp_latest_recruit wrap_style mb15">
+    <h2 class="f_tt mt20 mb15">该公司最新招聘<a class="links" ka="com-boss-job" href="http://boss.kanzhun.com/" target="_blank" rel="nofollow"><i class="i_edit_pen mr5"></i>发布职位</a></h2>
+    <ul class="newest">
+        <li class="grey_99"><a ka="jobname1" href="/job/303025745.html" target="_blank" class="def">当当网招聘库房操作员</a><span>面议</span>北京市<em>|</em>工作经验不限
+        </li>
+        <li class="grey_99"><a ka="jobname2" href="/job/303369032.html" target="_blank" class="def">北京T当当网急招客服代表包住</a><span>3k-5k元/月</span>北京<em>|</em>工作经验不限
+        </li>
+        <li class="grey_99"><a ka="jobname3" href="/job/303369033.html" target="_blank" class="def">北京T当当网急招客服代表</a><span>3k-5k元/月</span>北京<em>|</em>工作经验不限
+        </li>
+    </ul>
+    <p class="mt15 mb20"><a ka="more-comjob" href="/job/g20124.html">更多热招中的职位</a></p>
+</div>

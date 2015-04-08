@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>找回密码-重置密码</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+  <header class="global">
+    <div class="header">
+      <img class="logo" src="../images/logo.jpg"/>
+      <span class="title">企业用户专区</span>
+      <div class="user"><a href="#">登录企业账户</a></div>
+    </div>
+  </header>
+  <div class="container findpws clearfix">
+      <section class="mian_con">
+        <ul class="progress">
+          <li class="step threestep"></li>
+          <li class="words">
+            <em class="grey_33">输入邮箱</em><em class="current">邮箱验证</em><em class="grey_99">重置密码</em>
+          </li>
+        </ul>
+        <p class="grey_33 f_20 t-center pb30">您将要修改 <strong>zhangyusheng@kanzhun.com</strong> 的登录密码</p>
+        <ul class="registerData resetpwd reset_pwd">
+          <li>
+              <label for="" class="mr10">新的密码</label><input type="text" class="ipt" placeholder="请输入您的密码"><span class="red"><i class="base errormsg"></i>&nbsp;密码不能为空</span>
+          </li>
+          <li>
+              <label for="" class="mr10">确认密码</label><input type="text" class="ipt" placeholder="请再次输入您的密码"><span class="red"><i class="base errormsg"></i>&nbsp;确认密码不能为空</span>
+          </li>
+        </ul>
+        <p class="mt15" style="padding-left: 194px;"><span class="btn_yellow_b"><input type="submit" value="修改密码"/></span></p>
+      </section>
+  </div>
+</body>
+</html>

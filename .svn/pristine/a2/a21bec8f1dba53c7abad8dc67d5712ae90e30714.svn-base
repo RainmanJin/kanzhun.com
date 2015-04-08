@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<title>UGC-发一条面试经历</title>
+	<!--[if lte IE 9]>
+        <script src="../js/html5shiv.js"></script>
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <!--[if gt IE 9]><!-->
+        <script src="../js/jquery-2.1.0.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="../css/ugc.css" />
+        <script src="../js/require.js" data-main="../js/site/ugc.js"></script>
+	</head>
+
+	<body>
+		<header class="global">
+			<div class="header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<p class="loginfo"><a href="#">我的看准</a><i>|</i><a href="#">退出</a></p>
+			</div>
+		</header>
+
+		<div class="ugc clearfix">
+			<header>
+				<img src="../images/anonymous.jpg" /><img src="../images/ugc-ie-tt.jpg" />
+			</header>
+
+			<section class="ugc_l">
+				<p class="line_d"></p>
+                <fieldset class="ground g_rv_co">
+                	<ul>
+                		<li>
+                			<label>公司名称</label>
+                			<input type="text" class="uf"/>
+                		</li>
+                		<li>
+                			<label>城市</label>
+                			<input type="text" class="uf"/>
+                		</li>
+                	</ul>
+                	<figure>
+                		<span class="s_score"><img src="../images/img-06.jpg" /></span><p>4.0分<br>来自345条信息</p>
+                	</figure>
+                </fieldset>
+                <fieldset class="ground">
+                	<p class="mb15"><label>面试职位</label><input type="text" class="uf" /></p>
+                	<div class="date clearfix mb15">
+                		<label class="timer">面试时间</label><dl class="select s_nofloat">
+                			<dt>
+                				<input type="text" name="" value="1998年" readyonly="readyonly" /><span class="btn"><i></i></span>
+                			</dt>
+                			<dd>
+                				<a href="#">2014年</a>
+                				<a href="#">2014年</a>
+                				<a href="#">2014年</a>
+                				<a href="#">2014年</a>
+                			</dd>
+                		</dl><dl class="select s_nofloat s_month mr10">
+                			<dt>
+                				<input type="text" name="" value="12月" readyonly="readyonly" class="year_color"/><span class="btn"><i></i></span>
+                			</dt>
+                			<dd>
+                				<a href="#">12月</a>
+                				<a href="#">12月</a>
+                				<a href="#">12月</a>
+                				<a href="#">12月</a>
+                			</dd>
+                		</dl>
+                	</div>
+                	<div class="clearfix mb15">
+                		<label>面试结果</label><a href="#" class="btn_grey_b result mr10">确定通过</a><a href="#" class="btn_grey_b result mr10">感觉靠谱</a><a href="#" class="btn_grey_b result mr10">感觉没戏</a><a href="#" class="btn_grey_b result mr10">确定未通过</a>
+                	</div>
+                </fieldset>
+                <p class="line_d"></p>
+                <p class="t-center mt20"><input type="submit" value="下一步" class="btn_o_g"/></p>
+			</section>
+
+			<section class="ugc_r"></section>
+		</div>
+	</body>
+</html>

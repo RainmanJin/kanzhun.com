@@ -1,0 +1,133 @@
+@import "../common/var";
+
+//分享有用评论
+.icons_v1_base(){
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-image: @manage_icons;
+  background-repeat: no-repeat;
+}
+
+span {
+  //有用
+  &.u_feel_helpful {
+    .icons_v1_base;
+    width: 14px;
+    height: 13px;
+    background-position : -110px -198px;
+  }
+
+  //评论
+  &.u_comment {
+    .icons_v1_base;
+    width: 16px;
+    height: 13px;
+    background-position: -92px -198px;
+  }
+
+  //分享
+  &.u_share {
+    .icons_v1_base;
+    width: 16px;
+    height: 13px;
+    background-position: -74px -198px;
+  }
+}
+
+p.u_options {
+  a {
+    color: @grey_66;
+    font-size: 12px;
+
+    &:hover {
+      color: #2c84cc;
+      text-decoration: none;
+
+      em, i {
+        color: #2c84cc;
+      }
+    }
+
+    &.marked {
+      color: @grey_66;
+
+      &:hover {
+        color: @grey_66;
+
+        em, i {
+          color: @grey_99;
+        }
+      }
+    }
+  }
+
+  span {
+    margin-right: 5px;
+    vertical-align: -2px;
+  }
+}
+
+a {
+  &.helpful {
+    &:hover {
+      span {
+        background-position: -110px -214px;
+      }
+    }
+  }
+
+  &.comment {
+    &:hover {
+      span {
+        background-position: -92px -214px;
+      }
+    }
+  }
+
+  &.share {
+    &:hover {
+      span {
+        background-position: -74px -214px;
+      }
+    }
+  }
+  //点击完之后的样式
+  &.helpful.marked {
+    cursor: default;
+
+    span.u_feel_helpful {
+      background-position: -110px -198px;
+    }
+
+    &:hover {
+      span {
+        background-position: -110px -198px;
+      }
+    }
+  }
+
+  &.comment.marked {
+    span {
+      background-position: -92px -198px;
+    }
+
+    &:hover {
+      span {
+        background-position: -92px -198px;
+      }
+    }
+  }
+
+  &.share.marked {
+    span {
+      background-position: -74px -198px;
+    }
+
+    &:hover {
+      span {
+        background-position: -74px -198px;
+      }
+    }
+  }
+}

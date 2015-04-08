@@ -1,0 +1,704 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "../modules/top-search";
+@import 'piece/search_common';  //搜索页面公共部分
+@import 'piece/search_conditions';  //搜索页面左半部分搜索条件筛选
+@import "../../../css/modules/company/salary_desc";
+@import "../../../css/modules/job_searcher";
+@import "../../../css/modules/autocomplete";
+@import "../../../components/select/select";
+
+.search-jobs-list{
+  padding: 15px;
+}
+
+dl{
+  &.spw{
+    position: relative;
+    .transition(background-color .2s ease);
+
+    dt{
+      float: left;
+      text-align: center;
+      a {
+        display: block;
+        font-size: 0;
+        overflow: hidden;
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        background-color: #fff;
+        border: 1px solid #E7E7E7;
+        margin-bottom: 7px;
+        img {
+          width: 65px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        span {
+          display: inline-block;
+          width: 0;
+          height: 100%;
+          vertical-align: middle;
+        }
+      }
+
+    }
+    dd {
+      //width: 37em;
+      h3 {
+        padding-bottom: 10px;
+
+        i.directsup {
+          vertical-align: -2px;
+          margin-left: 3px;
+        }
+      }
+      padding-left: 89px;
+      *padding-left: 10px;
+
+      em.grey_f3 {
+        color: #f3f3f3;
+      }
+      p {
+        &.jieshao {
+          line-height: 2em;
+          span.vh {
+            vertical-align: middle;
+          }
+          em {
+            margin: 0 5px;
+          }
+        }
+
+        &.sr_nav {
+          em {
+            margin: 0 10px;
+          }
+        }
+
+        &.company_advantage {
+          margin-top: 5px;
+        }
+
+        &.request {
+          em {
+            margin: 0 10px;
+            color: @grey_e7;
+          }
+          b {
+            font-size: 17px;
+            color: #eb7676;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  &.current{
+    background-color: #f7f7f7;
+  }
+
+  &.slidedown{
+    background: url("@{img}/sr_compoent_bg.jpg") repeat-x left bottom;
+  }
+}
+.loading{
+  text-align: center;
+  padding: 10px;
+}
+
+p.sr_nav {
+  padding-top: 10px;
+  margin-bottom: -1px;
+  margin-left: -15px;
+  a {
+    display: inline-block;
+    height: 25px;
+    width: 56px;
+    padding: 1px;
+    line-height: 25px;
+    text-align: center;
+    &.current {
+      padding: 0;
+      border: 1px solid #E7E7E7;
+      border-bottom: none;
+      background-color: #fff;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+p.sr_line {margin-top: 0;}
+
+dl.sr_select {
+  dd {
+    top: 32px;
+    a {
+      color: @def;
+    }
+  }
+}
+
+.sparrow aside {
+  position: absolute;
+  left: 609px;
+  top: 19px;
+  a{
+    &.favorite{
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      color: @def;
+
+      &:hover {
+        color: @blue;
+      }
+    }
+
+    &.favorited{
+      color: @grey_99;
+      cursor: default;
+      &:hover{
+        color: @grey_99;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+p.sr_nav {
+  padding-top: 10px;
+  margin-bottom: -1px;
+  margin-left: -15px;
+  a {
+    display: inline-block;
+    height: 25px;
+    width: 56px;
+    padding: 1px;
+    line-height: 25px;
+    text-align: center;
+    &.current {
+      padding: 0;
+      border: 1px solid #E7E7E7;
+      border-bottom: none;
+      background-color: #fff;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+dl.co_tb{
+  position: relative;
+  margin-top: 15px;
+  overflow: hidden;
+  zoom:1;
+  dt{
+    float: left;
+    overflow: hidden;
+    zoom: 1;
+
+    div {
+      margin-bottom: 5px;
+      width: 208px;
+      padding: 6px;
+      border: 1px solid #dddddd;
+      text-align: center;
+
+      img{
+        background-color: #fff;
+        height: 142px;
+        max-width: 208px;
+      }
+    }
+    p img{
+      background-color: #fff;
+      width: 48px;
+      height: 32px;
+      padding: 1px;
+      border: 1px solid #dddddd;
+      float: left;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  }
+  dd{
+    margin-left: 242px;
+    strong{
+      color: @grey_99;
+      font-weight: normal;
+      width: 6em;
+      display: inline-block;
+    }
+    color: @grey_99;
+    .edit{
+      position: absolute;
+      left: 500px;
+      top: 0;
+    }
+    p{
+      line-height: 1.7em;
+      color: @def;
+      //padding-bottom: 9px;
+    }
+    em.urlinfo {
+      display: inline-block;
+      .ellipsis(ellipsis);
+      width: 12em;
+    }
+    ul {
+      overflow: hidden;
+      zoom: 1;
+      li {
+        width: 190px;
+        float: left;
+        em {
+          color: @grey_99;
+          display: inline-block;
+          width: 6em;
+          &.growup{
+            width: 8em;
+          }
+        }
+        span {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+table.salary_chart{
+  width: 678px;
+  td.t_align, th.t_align {
+    text-align: left;
+    padding-left: 17px;
+  }
+}
+
+.evaluation {
+  dd.total_chart_w {
+    padding-bottom: 0;
+  }
+  dl.notop {
+    padding-top: 0;
+  }
+  p.more {
+    margin-top: 10px;
+  }
+}
+
+.evaluation_info {
+  position: relative;
+  padding: 0 12px 10px 12px;
+  border: 1px solid #E7E7E7;
+  border-top: 0;
+  overflow: hidden;
+  zoom: 1;
+  h3.nobttom {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  dl.total {
+    width: 352px;
+  }
+}
+
+.job_i {
+  dt {
+    padding-top: 0;
+  }
+  dl:nth-child(3) {
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 10px;
+  }
+}
+
+ul.show {
+  //width: 800px;
+  margin: 0 -12px;
+  padding: 15px 0 0 25px;
+  //_width: 645px;
+  overflow: hidden;
+  zoom: 1;
+
+  li {
+    float: left;
+    margin-right: 22px;
+    _margin-right: 12px;
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #E7E7E7;
+    text-align: center;
+
+    img{
+      width: 134px;
+      height: 134px;
+    }
+  }
+}
+
+div.np_pager {
+  color: @grey_99;
+  a {
+    color: @grey_99;
+  }
+}
+
+a.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: inline-block;
+  width: 10px;
+  height: 11px;
+  background: url("@{img}/profiles.png") no-repeat -403px 0;
+  &:hover {
+    background: url("@{img}/profiles.png") no-repeat -416px 0;
+  }
+}
+
+
+.salary_slide{
+  width: 678px;
+
+  .slide_con{
+    width: 1356px;
+    padding-bottom: 15px;
+  }
+}
+.salary_why{
+  position: absolute;
+  width: 200px;
+  .box-shadow(0 1px 6px #aaa);
+  z-index: 10;
+  display: none;
+
+  .dialog_con{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+}
+
+div{
+  &.date{
+    border-bottom: 1px solid #dfdfdf;
+  }
+  &.experience{
+    width: 230px;
+    float: left;
+    border-top: 1px solid #f6f5f5;
+  }
+}
+
+dl.select-tile{
+  dd{
+    overflow: hidden;
+    width: 740px;
+    max-height: none;
+
+    div{
+      width: 744px;
+    }
+
+    p{
+      width: 161px;
+      float: left;
+      background: url("@{img}/select-tile.jpg") no-repeat right 0;
+      padding: 10px 15px 10px 10px;
+    }
+
+    a{
+      line-height: 22px;
+      height: 22px;
+
+      &.select-b-item{
+        color: @blue;
+        text-decoration: underline;
+
+        &:hover{
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+
+//薪资图表
+.salary_sort{
+  padding: 10px 0;
+  line-height: 26px;
+
+  a{
+    margin-right: 8px;
+
+    &.current{
+      color: @grey_99;
+    }
+  }
+
+  ul{
+    float: right;
+  }
+
+  li{
+    width: 57px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 5px;
+    border: 1px solid #d5d5d5;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 5px;
+    .transition(border-color .3s ease);
+    cursor: pointer;
+
+    &:hover{
+      border: 1px solid @green;
+    }
+
+    i{
+      width: 15px;
+      height: 14px;
+      overflow: hidden;
+      background-image: @icons;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: -3px;
+
+      &.sort_t{
+        background-position: -176px -126px;
+      }
+
+      &.sort_p{
+        background-position: -196px -126px;
+      }
+    }
+
+    &.current{
+      border: 1px solid @green;
+      i{
+        &.sort_t{
+          background-position: -156px -126px;
+        }
+
+        &.sort_p{
+          background-position: -217px -126px;
+        }
+      }
+    }
+  }
+}
+
+//公司
+.co_grade{
+  padding-top: 15px;
+  overflow: hidden;
+  zoom:1;
+
+  dl{
+    float: left;
+
+    &.total{
+      width: 300px;
+      border-right: 1px solid #e7e7e7;
+      padding: 0;
+      margin: 0;
+    }
+
+    &.category{
+      width: 155px;
+      padding-left: 10px;
+      border-right: 1px solid #e7e7e7;
+      dd{
+        line-height: 2.5em;
+      }
+
+      span{
+        margin: -3px 0 0 10px;
+      }
+    }
+    &.ceo{
+      float: none;
+      overflow: hidden;
+      //margin-left: 300px;
+      img{
+        padding: 1px;
+        border: 1px solid @grey_e7;
+        background-color: #fff;
+        float: left;
+        width: 45px;
+        height: 45px;
+      }
+
+      p{
+        /* float: left; */
+        margin-left: 54px;
+        line-height: 1.4em;
+        padding-top: 10px;
+        /* overflow: hidden;
+        width: 8em;
+        white-space: nowrap; */
+
+        em {
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+
+      /* dd{
+        clear: both;
+      } */
+    }
+
+  }
+  dt{
+    color: @black;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .total_chart{
+    width: 275px;
+
+    td{
+      height: 22px;
+      border-right: 1px solid #fff;
+
+      &:hover{
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+      }
+    }
+  }
+
+
+
+  .total_chart_w{
+    //padding-bottom: 25px;
+
+    span.grade_star_b{
+      vertical-align: -6px;
+    }
+
+    em{
+      margin: 0 5px;
+      color: @grey_99;
+    }
+  }
+}
+
+.salary_show{
+  li{
+    padding-left: 25px;
+    color: @grey_99;
+    line-height: 2.4em;
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+
+    i{
+      position: absolute;
+      left: 0;
+      top: 0.4em;
+      display: inline-block;
+      vertical-align: -5px;
+      *vertical-align: middle;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      background-color: #d7d7d7;
+      text-align: center;
+      line-height: 18px;
+      overflow: hidden;
+      color: #fff;
+      &.hot{
+        background-color: @green;
+      }
+    }
+
+    p{
+      float: left;
+      padding-top: 5px;
+      width: 11em;
+      line-height: 1.5em;
+      a{
+        color: @def;
+        white-space: normal;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    em{
+      display: block;
+      float: right;
+    }
+  }
+}
+
+.jobs_show{
+  li{
+    margin-bottom: 10px;
+    zoom:1;
+    span{
+      color: @grey_99;
+    }
+  }
+
+  a{
+    color: @def;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  img{
+    padding: 2px;
+    background-color: #fff;
+    border: 1px solid @grey_e7;
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.detail_v{
+  padding-top: 10px;
+  dt{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  dd{
+    padding-top: 10px;
+    line-height: 1.6em;
+    span.grade_star{
+      vertical-align: -4px;
+    }
+  }
+
+  .comments{
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+p.create .btn_o_l{
+  padding: 0;
+  width: 100%;
+  margin-bottom: 15px;
+}

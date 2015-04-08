@@ -1,0 +1,55 @@
+@import "../common/var";
+h2.comment_title{
+	font-size:12px;
+	margin:10px 0 14px 0;
+
+	position: relative;
+	i{
+		color:@white;
+		line-height: 26.5px;
+		text-align: center;
+		position: absolute;
+		top:0;
+		left: 0;
+	}
+	p{
+		display: inline-block;
+		color:@grey;
+		font-weight: normal;
+		padding: 8px 0 0 60px;
+		line-height: 1.2;
+	}
+}
+h2.tt{
+	color: @grey;
+	border-bottom: 2px solid #d9d7d7;
+	font-size: 14px;
+	font-weight: normal;
+	height: 24px;
+
+	span{
+		border-bottom: 2px solid @green;
+		height: 24px;
+		position: relative;
+		bottom: 0px;
+		display: inline-block;
+		padding-right: 5px;
+		color: @green;
+	}
+
+	em{
+		color: @grey;
+	}
+}
+
+//职位模块的标题
+h1.p_tt {
+	height: 50px;
+	padding-left: 10px;
+	line-height: 50px;
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: #fff;
+	border-bottom: 1px solid #f0f0f0;
+}

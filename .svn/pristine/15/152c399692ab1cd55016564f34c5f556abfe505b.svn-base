@@ -1,0 +1,65 @@
+@import "var";
+
+i{
+  &.i-click{
+    background-image: url("@{img-path}/icons-v2.png");
+    background-repeat: no-repeat;
+    .background-size(18px);
+    width: 18px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &.i-marked{
+    height: 13px;
+    background-position: 0 -14.5px;
+  }
+
+  &.i-mark{
+    height: 13px;
+  }
+
+  &.i-commented{
+    height: 13px;
+    background-position: 0 -44.5px;
+  }
+
+  &.i-comment{
+    height: 13px;
+    background-position: 0 -29.5px;
+  }
+
+  &.i-shared{
+    width: 12px;
+    height: 14.5px;
+    background-position: 0 -77.5px;
+  }
+
+  &.i-share{
+    width: 12px;
+    height: 14.5px;
+    background-position: 0 -60.5px;
+  }
+}
+
+.big-btn{
+  border: 1px solid #cccccc;
+  padding: 8px 0;
+  text-align: center;
+  color: #999;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(top,#f9f9f9,#e7e7e7);
+  display: block;
+
+  img{
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  &.back-to-top{
+    img{
+      .transform(rotate(180deg));
+    }
+  }
+}

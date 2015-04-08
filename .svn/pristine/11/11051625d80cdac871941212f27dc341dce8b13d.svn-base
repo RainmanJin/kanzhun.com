@@ -1,0 +1,54 @@
+1、发布弹幕
+请求：/barrage/publish.json?content=弹幕内容&companyId=公司ID
+输入：
+    content 弹幕内容
+    companyId 公司ID
+    originId 话题ID 可以不传
+输出：
+    {
+    "resmsg": "请求失败",
+    "rescode": 0
+    }
+
+    {
+    "resmsg": "请求过快",
+    "rescode": 5002
+    }
+
+    {
+    "resmsg": "内容包含敏感词",
+    "rescode": 5004
+    }
+
+    {
+    "resmsg": "请求成功",
+    "rescode": 1,
+    "html": "<a ka=\"\" href=\"\" target=\"_blank\"><img src=\"\"><span>aaaaaaa</span><i>查看详情</i></a>"
+    }
+
+2、弹幕数据加载
+请求：/common/barrage.json?page=页码
+输入：
+    page 页码
+    type 弹幕类型 公司工资页面为4 其余页面不用
+输出：
+    弹幕html
+
+3、发射弹幕公司检查
+请求：/barrage/checkcompany.json
+输入：
+    无
+输出：
+    {
+    "resmsg": "请求失败",
+    "rescode": 0
+    }
+
+    {
+    "comdata": {
+    "id": 3131,
+    "name": "华为"
+    },
+    "resmsg": "请求成功",
+    "rescode": 1
+    }

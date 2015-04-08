@@ -1,0 +1,52 @@
+@import "common/var";
+@import "modules/company/common";
+@import "modules/company/interview_list";
+@import "modules/company/bottomlinks";
+//@import "modules/dialog";
+@import "modules-v2/dialog-v2";
+@import "modules/share";
+@import "modules/company/financing";  //公司融资信息
+@import '../v2/css/company/piece/co-header';  //公司级页面头部样式
+
+.noresult{
+	margin-top: 10px;
+	padding: 45px 0 45px 194px;
+	background: url(../images/search_none.jpg) no-repeat 80px center;
+	border-width: 1px 0 1px 0;
+	border-style: solid;
+	border-color: @grey_e7;
+	line-height: 1.8em;
+}
+
+.staff_noresult{
+	border-width: 0;
+}
+
+.current_noresult{
+	border-width: 0 0 1px 0;
+}
+
+aside.attention {
+	margin-top: 48px;
+}
+
+//员工无结果页面
+.cmp_list{
+	overflow: hidden;
+	zoom: 1;
+	padding-top: 5px;
+	li{
+		float: left;
+		width: 10em;
+		margin-right: 40px;
+		overflow: hidden;
+		a{
+			color: @def;
+			white-space: nowrap;
+			&:hover{
+				text-decoration: underline;
+				color: @blue;
+			}
+		}
+	}
+}

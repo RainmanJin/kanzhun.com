@@ -1,0 +1,68 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "../modules/top-search";
+@import 'piece/search_common';  //搜索页面公共部分
+@import 'piece/search_conditions';  //搜索页面左半部分搜索条件筛选
+@import "../company/piece/interview_detail";
+@import "../modules/use_comment_share";
+@import '../../../css/modules/share';   //分享
+@import "../../../components/floatword/floatword";   //飘字
+
+.company_result {
+  clear: both;
+  li{
+    //padding: 10px 0;
+    line-height: 2em;
+    border-bottom: 1px solid #E7E7E7;
+    overflow: hidden;
+    zoom: 1;
+    a.img {
+      display: block;
+      float: left;
+      width: 97px;
+      height: 97px;
+      margin: 10px 17px 0 0;
+      border: 1px solid #E7E7E7;
+      background: #fff;
+      line-height: 0;
+      font-size: 0;
+      overflow: hidden;
+      img {
+        width: 97px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span {
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+    div {
+      float: left;
+      padding-top: 18px;
+      width: 355px;
+
+      p {
+        line-height: 1.3em;
+        color: @grey_99;
+        .ellipsis(ellipsis);
+      }
+      em {
+        margin: 0 5px;
+        color: @grey_99;
+      }
+    }
+    dl {
+      height: 101px;
+      margin-left: 470px;
+      padding: 18px 0 0 22px;
+      background: url("@{img}/ps_line_img.png") no-repeat left top;
+    }
+
+    &:last-child{
+      border: 0;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "../../../css/modules/autocomplete";
+
+.top-search{
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  .box-shadow(0 1px 0 #e6e6e6);
+  width: 988px;
+  margin: 15px auto;
+
+  &.active{
+    background-color: #fff;
+  }
+
+  .top-search-form{
+    padding: 10px 15px;
+
+    fieldset{
+      border: 1px solid #cccccc;
+      height: 32px;
+      background-color: #fafafa;
+      float: left;
+
+      input[type=text]{
+        margin-left: -1px;
+        float: left;
+        border: 0;
+        padding: 8px 10px;
+        width: 380px;
+        height: 16px;
+        line-height: 16px;
+        background-color: transparent;
+      }
+
+      input[type=submit]{
+        border: 0;
+        background: transparent url("@{img}/v2/search_icon.png") no-repeat 0 6px;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 10px 0 25px;
+        float: left;
+        cursor: pointer;
+        color: #cccccc;
+      }
+    }
+
+    p{
+      float: left;
+      margin: 6px 0 0 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      
+      a{
+        color: #666;
+        margin: 0 6px;
+      }
+    }
+  }
+}
+
+.top-search-fixed{
+  display: none;
+  border: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  z-index: 6;
+  background-color: #fff;
+  .box-shadow(0 1px 0 #e6e6e6);
+  width: 100%;
+
+  .top-search-form{
+    width: 990px;
+    margin: 0 auto;
+
+    fieldset{
+      position: relative;
+    }
+  }
+
+  .logo-g{
+    float: left;
+    margin: -5px 30px 0 0;
+  }
+
+  p{
+    margin: 6px 0 0 20px;
+    a{
+      color: #666;
+      margin: 0 3px;
+      font-size: 12px;
+    }
+  }
+
+  .autocomplete-suggestions{
+    top: 32px;
+    left: -1px;
+  }
+}
+
+.top-search-nav{
+  overflow: hidden;
+  border-top: 1px solid #eaeaea;
+  background-color: #fafafa;
+  .box-shadow(0 1px 0 #e6e6e6);
+  width: 988px;
+  margin: -16px auto 15px;
+
+  a{
+    padding: 7px 30px 5px;
+    float: left;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 2px solid #fafafa;
+    color: #333;
+    font-size: 16px;
+
+    &.current{
+      font-weight: bold;
+      background-color: #fff;
+      border-bottom: 2px solid @green;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+    &.hrEnter{
+      float: right;
+      font-size: 14px;
+      color: #2c84cc;
+      padding-top: 9px;
+      padding-right: 15px;
+    }
+  }
+}

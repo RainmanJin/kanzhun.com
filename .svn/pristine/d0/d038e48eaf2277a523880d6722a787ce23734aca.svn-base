@@ -1,0 +1,14 @@
+require.config({
+    baseUrl: '/js/site',
+    paths: {
+        u: '../utils',
+        c: '.'
+    }
+});
+
+require(['c/widgets','u/validator'],function(){
+	$(function(){
+    $('input:text, input:password').placeholder();
+    
+	});
+});

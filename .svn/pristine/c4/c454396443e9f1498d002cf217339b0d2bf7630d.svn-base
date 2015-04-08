@@ -1,0 +1,126 @@
+@import "../../common/var";
+
+//面试页条件筛选
+div {
+  &.select_conditions {
+    & > a {
+      float: left;
+      display: block;
+      width: 80px;
+      height: 27px;
+      line-height: 27px;
+      margin-right: 10px;
+      background-color: #f7f7f7;
+      text-align: center;
+      color: @def;
+
+      &:hover {
+        background-color: @green;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      &.current {
+        background-color: @green;
+        color: #fff;
+      }
+    }
+
+    p {
+      padding-top: 1px;
+    }
+  }
+} 
+
+dl.po_select {
+  float: left;
+  position: relative;
+  z-index: 3;
+  width: 100px;
+
+  dt {
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    
+    i {
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      border-width: 6px 5px 0 5px;
+      border-style: solid dashed;
+      border-color: #6f6e6e transparent transparent transparent;
+      .transition(all .2s ease);
+      vertical-align: 2px;
+
+      &.rotate_jiao {
+        .transform(rotate(180deg));
+      }/* 
+      
+      &.nocss3 {
+        border-width: 7px 5px 0 5px;
+        border-color: transparent transparent #6f6e6e;
+      } */
+    }
+  }
+
+  dd {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    border: 1px solid @grey_e7;
+    background-color: #fff;
+
+    span {
+      &.doubletriangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        overflow: hidden;
+      }
+      
+      &.triangleEdge {
+        left: 35px;
+        top: -11px;
+        border-width: 0 10px 10px 10px;
+        border-style: solid dashed;
+        border-color: transparent transparent @grey_e7 transparent; 
+      }
+
+      &.triangleCon {
+        left: 35px;
+        top: -10px;
+        border-width: 0 10px 10px 10px;
+        border-style: solid dashed;
+        border-color: transparent transparent #fff transparent; 
+      }
+    }
+
+    a {
+      display: block;
+      width: 98px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      color: @def;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+  //我来发条工资按钮
+a.addsalary {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  font-weight: normal;
+}

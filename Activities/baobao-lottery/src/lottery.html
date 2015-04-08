@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/lottery.css"/>
+  <title>曝曝抽奖</title>
+</head>
+<body>
+<div class="lottery_content">
+  <img class="lc_bg" src="images/lottery.jpg">
+  <div class="tb">
+    <ul class="clearfix">
+      <li><img src="images/img_1.png"></li>
+      <li><img src="images/img_2.png"></li>
+      <li><img src="images/img_1.png"></li>
+      <li><img src="images/img_3.png"></li>
+      <li><img src="images/img_4.png"></li>
+      <li><a href="javascript:;"><img src="images/bt_start.png"></a><img src="images/img_0.png"></li>
+      <li><img src="images/img_0.png"></li>
+      <li><img src="images/img_2.png"></li>
+      <li><img src="images/img_5.png"></li>
+      <li><img src="images/img_6.png"></li>
+      <li><img src="images/img_1.png"></li>
+      <li><img src="images/img_7.png"></li>
+    </ul>
+  </div>
+</div>
+<div class="lottery_bbg">
+  <div class="lb_intro">
+    <h2>剩余抽奖次数 <em>1</em> 次</h2>
+    <a class="bt mt20" href="javascript:;">增加抽奖次数</a>
+    <div class="lb_info">
+      <h3>活动规则：</h3>
+      <p class="mt10">1、每天登录即可获得一次抽奖机会；</p>
+      <p>2、每天登录即可获得一次抽奖机会；</p>
+      <p>3、每天登录即可获得一次抽奖机会。</p>
+    </div>
+  </div>
+</div>
+<section class="maskui_dialog" style="display: block">
+  <div class="dialog_con s_form">
+    <h1>恭喜您<br>您获得了<em>多听.V电台</em> 1 个</h1>
+    <p class="p_info mt10">请留下您的姓名、电话和地址，<br>我们会在3个工作日内与您进行联系并发出奖品。</p>
+    <form action="" method="post">
+      <ul class="mt5">
+        <li>
+          <input type="text" placeholder="请输入您的姓名">
+          <p class="err" data-msg="请输入您的姓名"></p>
+        </li>
+        <li>
+          <input type="text" placeholder="请输入您的手机号">
+          <p class="err" data-msg="请输入您的手机号"></p>
+        </li>
+        <li>
+          <input type="text" placeholder="请输入您的详细地址">
+          <p class="err" data-msg="请输入您的详细地址"></p>
+        </li>
+      </ul>
+      <div class="md_bottom">
+        <input class="bt" type="submit" value="提交">
+      </div>
+    </form>
+  </div>
+</section>
+<section class="maskui_dialog" style="display: block">
+  <div class="dialog_con s_form">
+    <h1>恭喜您<br>您获得了<em>云家政优惠券 1</em> 张</h1>
+    <p class="p_info mt10">请输入您的手机号，我们会将优惠券发送到您的手机上。您也可以在【我的】-【红包】中查看</p>
+    <form action="" method="post">
+      <ul class="mt5">
+        <li>
+          <input type="text" placeholder="请输入您的手机号">
+          <p class="err" data-msg="请输入您的手机号"></p>
+        </li>
+      </ul>
+      <div class="md_bottom">
+        <input class="bt" type="submit" value="提交">
+      </div>
+    </form>
+  </div>
+</section>
+<section class="maskui_dialog dialog_share" style="display: block">
+  <div class="dialog_con">
+    <h1 class="mt20">恭喜您<br>您获得了 1 元红包</h1>
+  </div>
+</section>
+
+</body>
+<script>
+  var require = {
+    baseUrl: 'js/site/',
+    urlArgs : "v=1.0.0"
+  };
+</script>
+<script src="js/lib/jquery-2.1.1.min.js"></script>
+<script>
+
+</script>
+<script src="js/lib/require.js" data-main="lottery.js"></script>
+</html>
+
+

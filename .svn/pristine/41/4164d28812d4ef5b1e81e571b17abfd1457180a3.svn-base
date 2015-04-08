@@ -1,0 +1,213 @@
+.bdefault {
+  border: 1px solid #d1d1d1;
+}
+.berror {
+  border: 1px solid #ff0000;
+}
+.divCommonInput {
+  padding: 0 10px;
+  height: 40px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+.divCommonInput input {
+  width: 100%;
+  border: 0;
+  height: 40px;
+  font-size: 1em;
+}
+.divCommonInput .error {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  color: #ff0000;
+}
+.divInput_1 {
+  height: 40px;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+}
+.divInput_1 label {
+  padding: 0 0 0 5px;
+  line-height: 40px;
+  color: #999;
+  display: inline-block;
+  width: 65px;
+  float: left;
+}
+.divInput_1 input {
+  border: 0;
+  color: #343434;
+  width: 55%;
+  padding: 0 5px;
+  height: 40px;
+}
+.divInput_1 .selectP {
+  margin-left: 5em;
+}
+.divInput_1 .selectP select {
+  height: 40px;
+  border: 0;
+  color: #343434;
+  width: 100%;
+  background: #ffffff url(../images/select_2.png) no-repeat right 0;
+}
+.divInput_1 .error {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  color: #ff0000;
+}
+.divInput_1 strong {
+  float: right;
+  color: #999999;
+  line-height: 40px;
+  margin-right: 5px;
+}
+.divInput_1.disable {
+  background-color: #f6f6f6;
+}
+.divInput_1.disable input {
+  background: #f6f6f6;
+}
+.splitInput {
+  margin: 15px 10px;
+}
+.splitInput em {
+  color: #eb7676;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.splitInput label {
+  float: left;
+  margin-top: 8px;
+  text-align: right;
+  width: 5em;
+  color: grey;
+}
+.splitInput .divCommonInput {
+  margin-left: 5.5em;
+  height: 32px;
+}
+.splitInput input[type=text] {
+  height: 32px;
+}
+.splitInput p.err {
+  display: none;
+  clear: both;
+  color: #eb7676;
+  padding-left: 6.4em;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.splitInput_2 {
+  margin-top: 20px;
+}
+.splitInput_2 em {
+  float: left;
+  margin-top: 8px;
+}
+.splitInput_2 .divCommonInput {
+  height: 32px;
+  padding: 0 5px;
+}
+.splitInput_2 input[type=text] {
+  height: 32px;
+}
+.splitInput_2 em.error {
+  position: absolute;
+  top: 34px;
+  left: 0;
+  margin-top: 0;
+  color: #ff0000;
+  float: left;
+}
+.defSelect {
+  margin-left: 5.5em;
+  border: 1px solid #d1d1d1;
+  padding-left: 10px;
+  height: 32px;
+  background: #fff;
+  border-radius: 4px;
+}
+.defSelect select {
+  height: 32px;
+  width: 100%;
+  border: 0;
+  background: url(../images/select.jpg) no-repeat right 0;
+}
+.defSelect p.err {
+  clear: both;
+  color: #eb7676;
+  padding-left: 6.4em;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.defSelect_2 {
+  padding-left: 0px;
+  height: 32px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+.defSelect_2 select {
+  height: 32px;
+  width: 100%;
+  border: 0;
+  background: url(../images/select.jpg) no-repeat right 0;
+}
+.defSelect_3 {
+  height: 32px;
+  position: relative;
+}
+.defSelect_3 select {
+  background: #fff;
+  border-radius: 4px;
+  height: 32px;
+  width: 100px;
+  background: url(../images/select.jpg) no-repeat right 0;
+}
+.divTextarea_1 {
+  padding: 5px;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+}
+.divTextarea_1 textarea {
+  width: 100%;
+  /*height:100%;*/
+  border: 0;
+  display: block;
+}
+.divTextarea_1 .error {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  color: #ff0000;
+}
+.search {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #bfbfbf;
+  padding: 10px 40px 10px 0.5em;
+  position: relative;
+}
+.search input[type=text] {
+  display: block;
+  border: 0;
+  width: 100%;
+  font-size: 1em;
+}
+.search input[type=submit] {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background: transparent url(../images/icons_2.png) no-repeat;
+  background-size: 100px;
+  right: 1em;
+  top: 50%;
+  margin-top: -11px;
+}

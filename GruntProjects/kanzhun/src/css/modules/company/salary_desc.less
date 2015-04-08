@@ -1,0 +1,312 @@
+@import "../../common/var";
+
+@salary-i: url('@{img}/salary/salary-i.png');
+table {
+  width: 100%;
+
+  &.salary-desc {
+    table-layout: fixed;
+    border-top: 1px solid #f3f3f3;
+
+
+    th {
+      height: 34px;
+      font-weight: normal;
+      vertical-align: middle;
+      text-align: center;
+      border-bottom: 1px solid #f3f3f3;
+
+      &:nth-of-type(1){
+        text-align: center;
+      }
+
+
+      p{
+        padding-left: 5px;
+        padding-right: 25px;
+        overflow: hidden;
+      }
+
+      span{
+        width: 80px;
+        text-align: center;
+
+        &.fright {
+          width: 85px;
+        }
+      }
+
+      &:first-child{
+        padding: 0 5px;
+      }
+    }
+
+    tr.ps_top {
+      background-color: #f5f5f5;
+      th.salary {
+        text-align: left;
+        margin-top: 30px;
+      }
+
+      p {
+        position: relative;
+        padding-left: 60px;
+        margin-right: 100px;
+        overflow: visible;
+        margin-left: 0;
+        font-size: 14px;
+
+        a.logo {
+          display: block;
+          position: absolute;
+          left: 10px;
+          top: -18px;
+          width: 30px;
+          height: 30px;
+          padding: 2px;
+          background-color: #fff;
+          border: 1px solid #f3f3f3;
+          font-size: 0;
+          text-align: center;
+          overflow: hidden;
+          img {
+            width: 30px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          span {
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+
+    }
+
+    td {
+      border-bottom: 1px solid #f3f3f3;
+      cursor: pointer;
+      height: 50px;
+
+      &:first-child, &:last-child{
+        padding: 0 5px;
+      }
+
+      &.s-d-average {
+        border-left: 1px solid #f3f3f3;
+        border-right: 1px solid #f3f3f3;
+        text-align: center;
+      }
+    }
+    
+    tr{
+      //显示默认状态时 hover的背景色和向下箭头
+      &.on{
+        td{
+          background-color: #f3f3f3;
+
+          i.s-d-show{
+            display: block;
+          }
+        }
+      }
+
+      //显示展开状态时 的向下箭头
+      &.show{
+        td{
+          i.s-d-show{
+            display: block;
+          }
+        }
+      }
+
+      &.show_flip{
+        td{
+          i.s-d-show{
+            display: block;
+            .transform(rotate(180deg));
+          }
+        }
+      }
+
+      &.s-d-c{
+        td{
+          cursor: inherit;
+        }
+      }
+    }
+
+    div.s-d-digit {
+      height: 20px;
+      padding: 15px 30px 15px 80px;
+      position: relative;
+      width: 208px;
+
+      p {
+        width: 208px;
+        height: 18px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        position: relative;
+        background: url("@{img}/salary/salary-bar.png") no-repeat left center;
+
+        em{
+          position: absolute;
+          top: 0;
+          display: block;
+          text-align: center;
+
+          &.s-d-l {
+            width: 80px;
+            left: -80px;
+          }
+
+          &.s-d-r {
+            width: 85px;
+            right: -85px;
+          }
+        }
+      }
+
+      .loading{
+        position: absolute;
+        right: -85px;
+        top: -10px;
+        display: block;
+        width: 40px;
+      }
+
+      span {
+        width: 8px;
+        height: 12px;
+        margin-top: 4px;
+        display: block;
+        background: @salary-i no-repeat 0 -103px;
+      }
+
+      i.s-d-show {
+        width: 13px;
+        height: 7px;
+        background: @salary-i no-repeat 0 -84px;
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        right: -74px;
+        top: 21px;
+        .transition(all, ease, .2s);
+      }
+    }
+
+    .s-d-digit-min{
+      position: absolute;
+      left: 35px;
+      top: 15px;
+    }
+
+    .s-d-digit-max{
+      position: absolute;
+      right: -20px;
+      top: 15px;
+    }
+
+    .s-d-chart{
+      overflow: hidden;
+      padding: 10px;
+
+      ul{
+        width: 165px;
+        float: left;
+        margin-top: 20px;
+      }
+
+      li{
+        padding-left: 20px;
+
+        &.s-d-low{
+          background: @salary-i no-repeat 0 2px;
+          margin-bottom: 5px;
+        }
+
+        &.s-d-high{
+          background:  @salary-i no-repeat 0 -18px;
+          margin-bottom: 20px;
+        }
+
+        &.s-d-mark{
+          a{
+            display: inline-block;
+            padding: 5px 20px;
+            border: 1px solid #f3f3f3;
+            color: @grey_99;
+
+            i{
+              background: @salary-i no-repeat 0 -41px;
+              width: 13px;
+              display: inline-block;
+              vertical-align: middle;
+              height: 12px;
+              margin-right: 3px;
+            }
+
+            &:hover{
+              text-decoration: none;
+              border: 1px solid @green;
+              i{
+                background-position: 0 -61px;
+              }
+            }
+
+            &.marked{
+              i{
+                background-position: 0 -61px;
+              }
+
+              &:hover{
+                border: 1px solid #f3f3f3;
+                i{
+                  background-position: 0 -61px;
+                }
+              }
+            }
+          }
+
+
+        }
+      }
+
+      section{
+        float: right;
+        width: 420px;
+        height: 190px;
+        margin-right: 17px;
+        display: inline;
+      }
+    }
+
+  }
+
+  &.salary-desc-th{
+    td{
+      border: 0;
+    }
+    margin-bottom: 0;
+  }
+}
+
+span.s-c-flag{
+  display: inline-block;
+  width: 60px;
+  vertical-align: middle;
+  height: 16px;
+  background-color: #bcd891;
+  margin-right: 10px;
+}
+
+span.s-c-flag2{
+  width: 10px;
+  background-color: #81b924;
+  margin-left: 50px;
+}
+

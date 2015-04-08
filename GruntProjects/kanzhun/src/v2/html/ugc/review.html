@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>UGC点评</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/v2/css/widget.css">
+  <link rel="stylesheet" href="/v2/css/ugc/ugc_view.css">
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/ugc/ugc_review.js"></script>
+</head>
+
+<body>
+<header class="global">
+  <div class="header">
+    <a ka="head-index" href="/" class="logo"><img src="/images/logo.png" width="136" height="40"></a>
+    <nav>
+      <a ka="head-com" href="/gs.html">公司</a>
+      <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+      <a ka="head-recruit" href="/job/">招聘</a>
+      <a ka="head-interview" href="/msh/">面试</a>
+      <a ka="head-news" target="_blank" href="/news/">资讯</a>
+      <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+    </nav>
+    <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+  </div>
+</header>
+
+<div class="container-ugc clearfix">
+  <div class="ugc-con-l">
+    <div class="wrap_style co_header mb15">
+    <div class="ch_t">匿名点评公司<a class="links fright" href="#">< 返回上一步</a></div>
+    <dl class="ch_c">
+        <dt><img src="http://img.kanzhun.com/image/l55255.gif"></dt>
+        <dd>
+            <p class="f_h">易宝支付</p>
+            <p class="f_p">在职 产品经理 - <i class="cmp_address"></i> 北京</p>
+        </dd>
+    </dl>
+</div>
+    <section class="ugc_wrap">
+      <form action="/reviewugc/save/" method="post" id="ugcForm" name="ugcForm">
+      <div class="wrap_style mb15" id="step_1">
+        <aside class="aside_nav">
+          <i>1</i>
+        </aside>
+        <h3 class="ugc_h3">给公司打分<i class="ml5"></i><aside class="spread_option grey_99 fright"><div class="C-toggler">展开<i></i></div></aside></h3>
+        <div class="step_content">
+          <dl class="ugc_tt mt15 mb15">
+            <dt class="tt_rating">
+              <label><em>*</em> 总体评分:</label>
+              <span class="rating_star" id="totalRating" ka="review2-score">
+                <input type="hidden" name="rating"  class="v">
+                <a href="javascript:;" rel="nofollow" title="不满意"></a><a href="javascript:;" rel="nofollow" title="比较失望 "></a><a href="javascript:;" rel="nofollow" title="一般般"></a><a href="javascript:;" rel="nofollow" title="值得加入"></a><a href="javascript:;" rel="nofollow" title="非常靠谱"></a>
+              </span><em class="grey_99 middle ml10">点击星星，为公司打分</em>
+              <p class="err" data-msg="总体评分不能为空！"></p>
+            </dt>
+            <dd class="detail_rating mt10 none">
+              <i class="tangle_init"></i>
+              <p class="p_h">分项评分<span class="grey_99">（选填）</span></p>
+              <ul class="more_rating" id="moreRating">
+                <li><label class="mr10">职业成长:</label><span class="rating_rect" ka="review2-occupation"><input type="hidden" class="pi" name="ratingCareer" value="0"><a href="javascript:;" rel="nofollow" title="很不满意"></a><a href="javascript:;" rel="nofollow" title="不满意 "></a><a href="javascript:;" rel="nofollow" title="一般 "></a><a href="javascript:;" rel="nofollow" title="满意"></a><a href="javascript:;" rel="nofollow" title="非常满意"></a></span><em class="grey_99 middle ml10"></em></li>
+                <li class="mt5"><label class="mr10">技能成长:</label><span class="rating_rect" ka="review2-skill"><input type="hidden" class="pi" name="ratingSkill" value="0"><a href="javascript:;" rel="nofollow" title="很不满意"></a><a href="javascript:;" rel="nofollow" title="不满意 "></a><a href="javascript:;" rel="nofollow" title="一般 "></a><a href="javascript:;" rel="nofollow" title="满意"></a><a href="javascript:;" rel="nofollow" title="非常满意"></a></span><em class="grey_99 middle ml10"></em></li>
+                <li class="mt5"><label class="mr10">环境氛围:</label><span class="rating_rect" ka="review2-environment"><input type="hidden" class="pi" name="ratingAtmosphere" value="0"><a href="javascript:;" rel="nofollow" title="很不满意"></a><a href="javascript:;" rel="nofollow" title="不满意 "></a><a href="javascript:;" rel="nofollow" title="一般 "></a><a href="javascript:;" rel="nofollow" title="满意"></a><a href="javascript:;" rel="nofollow" title="非常满意"></a></span><em class="grey_99 middle ml10"></em></li>
+                <li class="mt5"><label class="mr10">工作压力:</label><span class="rating_rect" ka="review2-pressure"><input type="hidden" class="pi" name="ratingPressure" value="0"><a href="javascript:;" rel="nofollow" title="很轻松"></a><a href="javascript:;" rel="nofollow" title="不大"></a><a href="javascript:;" rel="nofollow" title="正常"></a><a href="javascript:;" rel="nofollow" title="偶尔大"></a><a href="javascript:;" rel="nofollow" title="非常大"></a></span><em class="grey_99 middle ml10"></em></li>
+                <li class="mt5"><label class="mr10">公司前景:</label><span class="rating_rect" ka="review2-prospect"><input type="hidden" class="pi" name="ratingProspect" value="0"><a href="javascript:;" rel="nofollow" title="不看好"></a><a href="javascript:;" rel="nofollow" title="不太看好"></a><a href="javascript:;" rel="nofollow" title="一般"></a><a href="javascript:;" rel="nofollow" title="看好"></a><a href="javascript:;" rel="nofollow" title="非常看好"></a></span><em class="grey_99 middle ml10"></em></li>
+              </ul>
+            </dd>
+          </dl>
+          <div class="none" id="step_1_2">
+            <div class="form_field mb15"  id="chooses" node-type="init_radio">
+              <label><em>*</em> 您是否会推荐朋友来这家公司：</label>
+              <input type="hidden" class="pi" name="recommendFriend" value="0">
+              <a class="bt_ffr mr10" href="javascript:;" data-vl="2"><i class="i_correct_green"></i> 推荐</a>
+              <a class="bt_ffr bg_red" href="javascript:;" data-vl="1"><i class="i_fork_red"></i> 不推荐</a>
+              <p class="err ml10" data-msg="请告诉我们您是否会推荐朋友？"><i class="i_excl"></i></p>
+            </div>
+            <dl class="ff_more mb15" node-type="init_radio">
+              <dt style="width:209px"><em>*</em> 对CEO的看法：</dt>
+              <dd class="js_radio">
+                <input type="hidden" class="pi" name="ratingCeo" value="0">
+                <a class="bt_ffr mr10" href="javascript:;" data-vl="1"><i class="i_greenHand_up"></i> 支持</a>
+                <a class="bt_ffr bg_red" href="javascript:;" data-vl="2"><i class="i_redHand_down"></i> 不支持</a>
+              </dd>
+            </dl>
+            <dl class="ff_more mb15">
+              <dt style="width:209px"><em>*</em> 对公司未来半年发展预测：</dt>
+              <dd class="js_radio step_1_last">
+                <input type="hidden" name="futureStatus" class="pi" value="0">
+                <a class="bt_ffr mr10" href="javascript:;" data-vl="1"><i class="i_mark_up"></i> 看好</a>
+                <a class="bt_ffr bg_orange mr10" href="javascript:;" data-vl="2"><i class="i_mark_flat"></i> 持平</a>
+                <a class="bt_ffr bg_red" href="javascript:;" data-vl="3"><i class="i_mark_down"></i> 不看好</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="wrap_style mb15 none" id="step_2">
+        <aside class="aside_nav">
+          <i class="current">2</i>
+        </aside>
+        <h3 class="ugc_h3">点评公司</h3>
+        <div class="step_content mt15">
+          <p>请根据下面问题评价你的公司</p>
+          <dl class="ff_ta mt15 clearfix">
+            <dt><em>*</em> 最吸引你在这里工作的原因？</dt>
+            <dd class="mt5">
+              <textarea class="ta autosizejs v" name="pros" maxlength="1000" data-type="countNum"></textarea>
+              <div>
+                <p class="err fleft" data-msg="评价的内容不能为空"><i class="i_excl"></i> <span></span></p>
+                <p class="ta_hint fright">已输入 <span class="green" node-type="num">0</span>/1000 个字（最少输入10个字）</p>
+              </div>
+            </dd>
+          </dl>
+          <dl class="ff_ta mt15 clearfix">
+            <dt><em>*</em> 这家公司最让你失望的地方是什么？</dt>
+            <dd class="mt5">
+              <textarea class="ta v" name="cons" maxlength="1000" data-type="countNum"></textarea>
+              <div>
+                <p class="err fleft" data-msg="评价的内容不能为空"><i class="i_excl"></i> <span></span></p>
+                <p class="ta_hint fright">已输入 <span class="green" node-type="num">0</span>/1000 个字（最少输入10个字）</p>
+              </div>
+            </dd>
+          </dl>
+          <p class="dashed_line mt20 mb20"></p>
+          <dl class="ff_ta mt15 mb15 clearfix">
+            <dt>一句话概括你的点评</dt>
+            <dd class="mt5">
+              <textarea class="ta v" style="height: 22px" name="title" maxlength="30" data-type="countNum" data-unnecessary="1"></textarea>
+              <div>
+                <p class="err fleft" data-msg="评价的内容不能为空"><i class="i_excl"></i> <span></span></p>
+                <p class="ta_hint fright">已输入 <span class="green" node-type="num">0</span>/30 个字（最少输入10个字）</p>
+              </div>
+            </dd>
+          </dl>
+          <p class="t-center mb30">
+            <input class="btn_o_g" type="submit" value="提交">
+          </p>
+        </div>
+      </div>
+      </form>
+      <i class="arrow_down"></i>
+      <i class="arrow_end"></i>
+    </section>
+
+  </div>
+  <div class="ugc-con-r"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>创建公司</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+  <header class="global">
+    <div class="header">
+      <img class="logo" src="../images/logo.jpg"/>
+      <span class="title">企业用户专区</span>
+      <div class="user"><a href="#">登录企业账户</a></div>
+    </div>
+  </header>
+  <div class="container clearfix">
+    <section class="l_con">
+      <h1>免费注册企业账户</h1>
+      <ul class="progress">
+        <li class="step onestep"></li>
+        <li class="words">
+          <em class="current">选定公司</em>
+          <em>注册</em>
+          <em>邮箱验证</em>
+        </li>
+      </ul>
+      <h2 class="creat_tt">创建公司<i></i></h2>
+      <ul class="registerData createcmp mt20">
+        <li>
+          <label for="" class="ttlabel">公司简称</label><input type="text" class="ipt">&nbsp;&nbsp;<span class="red"><i class="base errormsg"></i>&nbsp;请输入公司简称</span>
+        </li>
+        <li>
+          <label for="" class="ttlabel">官方网站</label><input type="text" class="ipt">&nbsp;&nbsp;<span class="red"><i class="base errormsg"></i>&nbsp;网址里请不要包含中文</span>
+        </li>
+        <li>
+          <label for="" class="ttlabel fleft">所属行业</label>
+          <dl class="select selectwrap" id="minisearchS">
+            <dt><input type="text" name="" value="" readonly /><div></div><span class="btn"><i></i></span></dt>
+            <dd>
+              <a href="/jobl/p/">职位</a>
+              <a href="/companyl/search/">公司</a>
+              <a href="/salaryl/search/">工资</a>
+              <a href="/interviewl/search/">面试</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <label for="" class="ttlabel fleft">公司规模</label>
+          <dl class="select selectwrap" id="minisearchS">
+            <dt><input type="text" name="" value="" readonly /><div></div><span class="btn"><i></i></span></dt>
+            <dd>
+              <a href="/jobl/p/">职位</a>
+              <a href="/companyl/search/">公司</a>
+              <a href="/salaryl/search/">工资</a>
+              <a href="/interviewl/search/">面试</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <label for="" class="ttlabel">总部城市</label><input type="text" class="ipt">
+        </li>
+        <li class="paddingleft">
+          <input class="btn_green" type="submit" value="确定"><a href="" class="grey_99 ml20 f_16">上一步</a>
+        </li>
+      </ul>
+    </section> 
+    <section class="r_con">
+      <h2 class="r_tt">常见问题</h2>
+      <dl class="infolist">
+        <dt><i class="base problem"></i>什么是公司简称？</dt>
+        <dd>大众对贵公司最为熟悉的名称，可能是公司的简称，也可能是贵公司知名产品的名字。</dd>
+        <dt><i class="base problem"></i>为什么要认领公司？</dt>
+        <dd>看准网已有用户发起创建的公司127万余家，并已积累多条数据，选定已存在的您的公司，即可维护您的雇主品牌。</dd>
+        <dt><i class="base problem"></i>什么是公司简称？</dt>
+        <dd>大众对贵公司最为熟悉的名称，可能是公司的简称，也可能是贵公司知名产品的名字。</dd>
+        <dt><i class="base problem"></i>为什么要认领公司？</dt>
+        <dd>看准网已有用户发起创建的公司127万余家，并已积累多条数据，选定已存在的您的公司，即可维护您的雇主品牌。</dd>
+      </dl>
+    </section>
+  </div>
+</body>
+</html>

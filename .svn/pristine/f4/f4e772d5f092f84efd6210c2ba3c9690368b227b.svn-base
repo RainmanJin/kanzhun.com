@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>写面经</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../css/interview.css">
+</head>	
+<body style="background-color:#fff;">
+<section class="container">
+  <div class="p10 grey-bg pt15 grey"><p class="pt15">再告诉我们一些信息</p></div>
+
+  <ul class="interview-form">
+    <li class="inline">
+      <div class="tt">
+        面试感受
+      </div>
+
+      <div class="edit i-feeling">
+        <button type="button" class="on">很好</button><button type="button" class="on">一般</button><button type="button" class="on">不好</button>
+      </div>
+      <p class="err">请选择您的面试感受！</p>
+    </li>
+
+    <li class="inline">
+      <div class="tt">
+        面试难度
+      </div>
+
+      <div class="edit i-level">
+        <button type="button" class="on"></button><button type="button"></button><button type="button"></button><button type="button"></button><button type="button"></button>
+        <span>非常容易</span>
+      </div>
+      <p class="err">请选择您的面试难度！</p>
+    </li>
+
+    <li class="inline">
+      <div class="tt">
+        如何获得面试机会 <span>（选填）</span>
+      </div>
+
+      <div class="edit i-chance">
+        <button type="button" class="on">网络招聘</button>
+        <button type="button">校园招聘</button>
+        <button type="button">内部推荐</button>
+        <button type="button">猎头推荐</button>
+        <button type="button">社会招聘</button>
+        <button type="button">其他</button>
+      </div>
+    </li>
+  </ul>
+
+
+  <p class="p10 grey-bg pt15"><a class="green-btn" href="">立即发布</a></p>
+  <div style="height: 45px;"></div>
+	<footer class="footer_nav" id="footer_nav">
+		<div class="back">
+			<a class="js_goBack" href="javascript:;">
+				<i class="i i_back"></i>
+			</a>
+		</div>
+		<div class="f_nav_r">
+			<ul>
+				<li>
+					<div class="comboBox">
+						<dl>
+							<dd><a href="#">评论公司</a></dd>
+							<dd><a href="#">评论公司</a></dd>
+							<dd><a href="#">评论公司</a></dd>
+							<dt><i class="i i_tdown"></i></dt>
+						</dl>
+					</div>
+					<a class="js_interview_bt" href="javascript:;"><i class="i i_eq"></i> 面试经历</a>
+				</li>
+				<li>
+					<a href="javascript:;"><i class="i i_eq"></i> 面试技巧</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</section>
+
+</body>
+</html>
+
+

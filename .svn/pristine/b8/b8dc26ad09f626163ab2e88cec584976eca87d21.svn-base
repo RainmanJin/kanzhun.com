@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>公共模块</title>
+<link rel="stylesheet" href="css/public.css" />
+</head>	
+<body>
+1.顶导航
+<header class="page_hd">		
+	<a class="top_back" href="javascript:;"><i></i>返回</a>
+	<strong>公司详情</strong>
+	<a href="/" class="fright">主页</a>
+</header>
+<br>
+<br>
+
+2.按钮<br>
+<button class="btn_submit_1" type="submit">下一步</button>
+<button class="btn_grey_large" type="submit">下一步</button>
+<br>
+<button class="btn_grey_small_1">确认通过</button>
+<button class="btn_green_small_1">确认通过</button>
+<button class="btn_grey_small_2">确认通过</button>
+<button class="btn_green_small_2">确认通过</button>
+<ul class="bt_change">
+	<li class="l on">在职</li>
+	<li class="r">曾经在职</li>
+</ul>
+<br>
+<br>
+
+3.输入框
+<br>
+<div class="divCommonInput bdefault"><input type="text" placeholder="请输入公司名字"></div>
+<br>
+<div class="divInput_1 bdefault">
+	<label>公司简称</label>
+	<input type="text"/>
+</div>
+<div class="divInput_1 berror">
+	<label>请选择行业</label>
+	<select>
+		<option>未选择</option>		
+		<option>互联网</option>
+	</select>	
+</div>
+<div class="divTextarea_1 bdefault">
+	<textarea  placeholder="一句话精辟概括你的面试感受"></textarea>	
+</div>
+<br>
+<br>
+
+4.标题
+<h2 class="comment_title">
+	<em>匿名</em>
+	<p>超过1000万用户在看准网匿名发布公司信息。加入我们，分享信息，点滴贡献，倾情回馈！！</p>
+</h2>
+<br>
+<h2 class="tt ml10 mr10 mt10"><span>11个搜索结果</span></h2>
+<br>
+<br>
+
+5.公司信息
+<dl class="co_info">
+	<dt>
+		<img src="http://img.kanzhun.com//images/logo/20140220/8158bbafd5b75c368d6b1c2bc8c3a3a0.jpg">
+	</dt>
+	<dd>
+		<h1>中国移动</h1>
+		<p>
+			<span class="grade_star">
+				<i class="s_4"></i>
+			</span>3.8分
+		</p>
+		<p>235 条点评<a href="#">点评其他公司</a></p>
+	</dd>
+</dl>
+<br>
+<br>
+
+6.公司列表
+<ul class="v_menu hot_jobs">
+	<li class="co">
+		<a href="/ms/1162973/">
+			<span class="l"><img src="http://img.kanzhun.com//images/logo/20140220/8158bbafd5b75c368d6b1c2bc8c3a3a0.jpg">
+			</span>				
+			<p>销售面试<span class="grey ml15">4.0分</span></p>
+			<p class="grey">23条点评<em>|</em>124条工资<em>|</em>43条面试</p>
+			<i class="arrow_g"></i>
+		</a>
+	</li>
+</ul>	
+<br>
+<br>
+
+7.底部
+<div class="floatFooter">
+	<em>我在这里工作过-我要点评</em>
+</div>
+<footer class="page_ft" style="margin:0">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>
+<br>
+<br>	
+</body>
+</html>
+
+

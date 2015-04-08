@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>公司面经详情页面</title>
+  <!--[if lte IE 9]>
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"> </script>
+    <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/css/widget-v2.css"/>
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/company/view.css"/>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+<% include ../modules/mini-search %>
+<% include piece/co-header %>
+
+	<div class="container_v2 clearfix">
+		<section class="f_l_con clearfix">
+			<div class="wrap_style position_enter mb15">
+					<h1 class="l_tt_16">百胜餐饮集团肯德基储备经理面试</h1>
+					<p class="po_counts"><a href="/gsm122656.html" ka="gsm">返回查看全部职位面试</a><em>|</em><a href="/msh/g122656-z754482/" ka="msh">返回查看全部储备经理面试</a></p>
+			</div>
+
+			<!-- 其他互联网公司面试 -->
+      <% include piece/co-left-interview-item.ejs %>
+			<!-- 其他互联网公司面试 -->
+
+
+      <!-- 评论 -->
+      <% include piece/co-left-comment.ejs %>
+			<!-- 评论 -->
+			<div class="wrap_style position_enter mt20">
+				<p class="l_tt_16">产品经理相关信息</p>
+				<p class="grey_99 po_counts mb10">3294条面试<em>|</em>10580条工资<em>|</em>28518条招聘</p>
+				<ul>
+					<li><a href="/salary/50/" target="_blank" ka="position-salary">产品经理待遇</a></li>
+					<li><a href="/interview/50/" target="_blank" ka="position-interview">产品经理面试</a></li>
+					<li><a href="/trends/50/" target="_blank" ka="position-trends">产品经理就业趋势</a></li>
+					<li><a href="/jobs/50/" target="_blank" ka="position-jobs">产品经理岗位职责</a></li>
+					<li><a href="/recruit/50/" target="_blank" ka="position-recruit">产品经理最新招聘</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- 右半部分 -->
+    <section class="f_r_con">
+      <% include piece/co-right-publish.ejs %>
+      <a href="" class="advertis_area mb15" style="height: 58px;"><img src="/images/view_v2-img/r_img.jpg" alt=""></a>
+      <% include piece/co-right-companylist.ejs %>
+    </section>
+		<!-- 右半部分 -->
+	</div>
+</body>
+</html>

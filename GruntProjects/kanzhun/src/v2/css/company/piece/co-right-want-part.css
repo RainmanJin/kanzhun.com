@@ -1,0 +1,15 @@
+.wart_part {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.wart_part .wp_r {
+  margin-left: 35px;
+}
+.wart_part .wp_r .btn_grey_s {
+  padding: 0 12px;
+}
+.wart_part .wp_ok {
+  font-size: 16px;
+  text-align: center;
+  padding: 27px 0;
+}

@@ -1,0 +1,85 @@
+@import "../common/var";
+@img_path:'../../images/ali/';
+@orange: #ff9503;
+a:hover{
+	text-decoration: none;
+}
+.orange{
+	color: @orange;
+}
+
+.index_banner{
+	background: url("@{img_path}index_banner.jpg") center no-repeat;
+	height: 467px;
+	position: relative;
+	a.enter{
+		display: inline-block;
+		width: 295px;
+		height: 56px;
+		line-height: 56px;
+		background: #ff9503;
+		border-radius: 25px;
+		color: #fff;
+		font-size: 25px;
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		margin-left: -147px;
+		text-align: center;
+		&:hover{
+			background: #f28d03; 
+		}
+	}
+}
+.index_content{
+	width: 990px;
+	margin: 0 auto;
+	ul{
+		background: url("@{img_path}index_c_bg.png") no-repeat;
+		height: 150px;
+		padding-left: 168px;
+		margin-top: 80px;
+		li{
+			float: left;
+			text-align: center;
+			//width: 
+			a{
+				display: inline-block;
+				width: 139px;
+				height: 139px;
+				&.round_l{
+					background: url("@{img_path}round_1.png") no-repeat;
+					&:hover{
+						background: url("@{img_path}round_1_1.png") no-repeat
+					}
+				}
+				&.round_c{
+					background: url("@{img_path}round_2.png") no-repeat;
+					&:hover{
+						background: url("@{img_path}round_2_1.png") no-repeat
+					}
+				}
+				&.round_r{
+					background: url("@{img_path}round_3.png") no-repeat;
+					&:hover{
+						background: url("@{img_path}round_3_1.png") no-repeat
+					}
+				}
+			}
+			&.li_c{
+				padding-left: 116px;
+			}
+			&.li_r{
+				padding-left: 120px;
+			}
+		}
+	}
+	.index_time{
+		text-align: center;
+		padding:40px 0 0;
+		border-top: 1px dashed #bdbdbd;
+		margin-top: 60px;
+	}
+}
+
+

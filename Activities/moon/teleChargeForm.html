@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>中秋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/moon.css" />
+</head>
+
+<body class="index_bg">
+	<section class="top">
+		<img class="bg" src="images/result_top.jpg">
+	</section>
+	<section class="bottom">
+		<img class="bg" src="images/result_bottom.jpg">	
+		<div class="result_content">
+			<div class="pic">
+				<img src="images/tele_charge.jpg">
+				<p>
+					恭喜您<br>
+					获得5元话费
+				</p>
+			</div>
+			<div class="form">
+				<form id="phoneForm" action="test">
+				<p class="label">请输入您的手机号：<span id="p_err" class="err">手机号格式有误！</span></p>
+				<p class="mt5">
+					<input class="ipt" type="text" name="phone">
+				</p>
+				<a id="phone_submit" class="btn mt10" href="javascript:;">确定</a>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/moon.js"></script>
+</html>

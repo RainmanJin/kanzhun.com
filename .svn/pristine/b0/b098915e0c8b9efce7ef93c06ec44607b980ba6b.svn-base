@@ -1,0 +1,207 @@
+@import "../common/var";
+
+//右侧
+//右侧广告
+a.advertising_r {
+  display: block;
+
+  img {
+    width: 272px;
+  }
+}
+
+//右侧标题
+h2.n_r_tt {
+  font-weight: normal;
+  font-size: 14px;
+  border-bottom: 1px solid @green;
+  height: 28px;
+  line-height: 28px;
+
+  span {
+    display: inline-block;
+    padding: 0 15px;
+    background-color: @green;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+//右侧提示性文字
+aside.bid {
+  padding: 5px 0 5px 0;
+  border: 1px solid #e7e7e7;
+  color: @yellow;
+  overflow: hidden;
+  *zoom: 1;
+  white-space: normal;
+
+  span {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  em {
+    float: left;
+    padding-top: 9px;
+
+    &.wantcmp {
+      padding-left: 25px;
+    }
+  }
+}
+
+div {
+  &.scroll_wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &.scroll_inner {
+    position: relative;
+    height: 500px;
+    left: 0;
+  }
+}
+
+//右侧员工聊公司列表
+dl.r_list {
+  dt {
+    overflow: hidden;
+    *zoom: 1;
+
+    div {
+      &.userimg {
+        position: relative;
+        width: 56px;
+        white-space: 56px;
+
+        span {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 56px;
+          height: 56px;
+          background: url(../images/news_img3.png) no-repeat center;
+        }
+      }
+
+      &.r_tt {
+        margin-left: 70px;
+        padding-top: 10px;
+        
+        h3 {
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  dd {
+    position: relative;
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #f5f5f5;
+    color: #444444;
+
+    & > span {
+      position: absolute;
+      left: 15px;
+      top: -8px;
+      *top: -7px;
+      overflow: hidden;
+      height: 0;
+      width: 0;
+      margin-left: 6px;
+      border-width: 0 8px 8px 8px;
+      border-style: solid dashed;
+      border-color: transparent transparent  #f5f5f5 transparent;
+    }
+
+    a.logo {
+      position: absolute;
+      right: 10px;
+      top: -26px;
+      width: 30px;
+      height: 30px;
+      padding: 2px;
+      background-color: #fff;
+      border: 1px solid #E7E7E7;
+      font-size: 0;
+      text-align: center;
+      overflow: hidden;
+
+      img {
+        width: 30px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      span {
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+//右侧热门文章列表
+ul {
+  &.hotarticles {
+    overflow: hidden;
+
+    li {
+      overflow: hidden;
+      *zoom: 1;
+      border-bottom: 1px dashed #e7e7e7;
+      padding: 15px 0;
+
+      a {
+        &.articleimg {
+          display: block;
+          float: left;
+          text-decoration: none;
+          margin-right: 10px;
+          overflow: hidden;
+          font-size: 0;
+          cursor: pointer;
+
+          img {
+            vertical-align: middle;
+            width: 112px;
+            height: 73px;
+          }
+        }
+
+        &.articlett {
+          display: block;
+          height: 55px;
+          color: @black;
+          font-size: 14px;
+          word-break: break-all;
+
+          &:hover {
+            color: @blue;
+            text-decoration: none;
+          }
+        }
+      }
+
+      p {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+//二维码
+img.two-dimensional {
+  display: block;
+  width: 162px;
+  height: 162px;
+  margin: 0 auto;
+}

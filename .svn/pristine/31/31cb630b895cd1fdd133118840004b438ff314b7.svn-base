@@ -1,0 +1,61 @@
+@import 'reset';
+@import 'general';
+
+body{
+	background-color: #7cb228;
+}
+section.login{
+	background: url(../images/login.jpg) no-repeat;
+	margin: 0 auto;
+	width: 1000px;
+	height: 442px;
+	padding: 326px 0 0 0;
+
+	div{
+		padding-left: 338px;
+	}
+
+	.copyright{
+		color: #fff;
+		padding: 55px 290px 0;
+		text-align: center;
+	}
+}
+
+#loginForm{
+	p{
+		width: 304px;
+		height: 32px;
+		line-height: 34px;
+		padding: 0 5px;
+		background-color: #fff;
+		margin-bottom: 15px;
+		.box-shadow(0 0 3px #c7d2b5);
+		border: 1px solid #809d4f;
+	}
+	label{
+		color: #457100;
+		width: 60px;
+		display: inline-block;
+		font-size: 16px;
+		padding-left: 15px;
+		font-weight: bold;
+	}
+	input[type=text],input[type=password]{
+		height: 16px;
+		line-height: 16px;
+		font-size: 14px;
+		border: 0;
+		width: 220px;
+		outline: none;
+	}
+
+	input[type=submit]{
+		outline: none;
+		width: 314px;
+		height: 38px;
+		background: url(../images/login-submit.jpg) no-repeat;
+		border: 0;
+		cursor: pointer;
+	}
+}

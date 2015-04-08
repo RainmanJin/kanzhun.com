@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://s.kanzhun.com/js/jquery-2.1.0.min.js"></script>
+    <script src="autocomplete.js"></script>
+    <script>
+        $(function(){
+
+            var companyNameSuggest = $("#companyNameSuggest"),
+                    companyNameSuggestHid = $('input[name=encryptCompId]'),
+                    isEmptyCoSuggestion = false; //保存公司suggestion搜索结果为空
+
+            companyNameSuggest.autocomplete({
+                containerClass: 'autocomplete-suggestions cmp_select',
+                serviceUrl: 'http://localhost:8080/activity/blacklist/company.json',
+                paramName: 'q',
+                dataType: 'json',
+                transformResult: function (response) {
+                    return {
+                        suggestions: $.map(response.suggestions, function (dataItem) {
+                            var arr = dataItem.data.split('|');
+                            return { value: arr[0], data: arr[1], num: arr[2], logo: dataItem.logo, industry:  dataItem.industry,city:dataItem.city};
+                        })
+                    };
+                },
+
+                /*formatResult: function (suggestion, currentValue) {
+                 return '<dl><dt><img src='+STATICURL + suggestion.logo + '></dt><dd><p>' + suggestion.value + '</p><p class="f_12 grey_99">' + suggestion.url + '</p></dd></dl>';
+                 },*/
+                onSelect: function (suggestion) {
+                    companyNameSuggestHid.val(suggestion.data);
+                },
+                onSearchStart: function () {
+                    //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+                    companyNameSuggestHid.val('');
+                },
+                onInvalidateSelection: function () {
+                    companyNameSuggestHid.val('');
+                },
+                onSearchComplete: function (query, suggestions) {
+                    if (suggestions.length === 0) {
+                        companyNameSuggestHid.val('');
+                        isEmptyCoSuggestion = true;
+                        return;
+                    }
+
+                    isEmptyCoSuggestion = false;
+                    if (suggestions.length === 1) {
+                        companyNameSuggestHid.val(suggestions[0].data);
+                    }
+                },
+                autoSelectFirst: true,
+                beforeRender: function(container){
+                    //再次搜索时滚动条回到最顶部
+                    container.scrollTop(0);
+                }
+            });
+
+
+
+        });
+
+    </script>
+</head>
+<body>
+<input type="text"  class="t_name" placeholder="请输入公司名称" name="name" id="companyNameSuggest" autocomplete="off"/>
+<input type="hidden" name="encryptCompId"/>
+</body>
+</html>

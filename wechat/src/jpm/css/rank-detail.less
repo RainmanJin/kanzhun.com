@@ -1,0 +1,358 @@
+@import "common/var";
+@import "module/reset";
+@import "common/common";
+
+html{
+  font-size: 14px;
+}
+
+body{
+  width:100%;
+  background-color: #fefefe;
+  position: absolute;
+}
+
+.nav{
+    height: 30px;
+    line-height: 30px;
+    background-color: #fefefe;
+    width: 100%;
+    .home{
+      margin-left: 15px;
+      img{
+        width: 50px;
+        vertical-align: top;
+      }
+    }
+
+    .l_trangle{
+      .trangle(left,rgb(51,51,51),5px);
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+   .tip{
+       font-size: 14px;
+       color: rgb(51,51,51);
+       font-weight: bold;
+   }
+}//nav
+
+.content{
+
+  /*@media screen and (max-width: 400px){
+    .rank-info {
+      background: url("@{img-path}/info_bg.jpg") center center no-repeat;
+      color: #fff;
+
+      .info-detail {
+        padding-top: 30px;
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+  }*/
+
+  .rank-info{
+     background: url("@{img-path}/info_bg.jpg") center center  no-repeat;
+     color:#fff;
+
+
+
+     .info-detail{
+        padding-top: 30px;
+        margin: 0 auto;
+        width: 90%;
+        overflow: hidden;
+
+        .c_logo{
+          width: 80px;
+          float: left;
+          clear: right;
+          border-radius: 10px;
+
+        }
+        .word{
+          margin-left: 90px;
+
+          .prize{
+            color: rgb( 254, 254, 254 );
+            font-weight: bold;
+            font-size: 1.3rem;
+
+            .ranking{
+              color: #e77200;
+              padding-left: 5px;
+            }
+          }
+
+          .industry .indu{
+            background: rgba( 255, 255, 255,0.2);
+            padding: 2px 10px;
+            font-size: 1.2rem;
+          }
+
+          .corporation{
+            font-size: 1.3rem;
+          }
+        }
+
+        .oper{
+          width: 100%;
+          overflow: hidden;
+          text-align: center;
+          padding: 30px 0px;
+
+          button{
+            background-color: #4564ba;
+            color: #fff;
+            padding: 10px 30px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 5px;
+          }
+
+          .up{
+            background-color: #e77200;
+            float: left;
+          }
+          .down{
+            float: right;
+          }
+        }
+      }
+
+
+    @media screen and (max-width: 320px){
+      .info-detail{
+        .word{
+          .prize{
+            font-size: 1.1rem;
+          }
+
+          .industry .indu{
+            font-size: 1rem;
+          }
+
+          .corporation{
+            font-size: 1rem;
+          }
+        }
+
+
+
+        .oper{
+          width: 100%;
+          overflow: hidden;
+          text-align: center;
+          padding: 30px 0px;
+
+          button{
+            background-color: #4564ba;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 5px;
+          }
+
+          .up{
+            background-color: #e77200;
+            float: left;
+          }
+          .down{
+            float: right;
+          }
+
+        }
+
+      }
+    }
+
+   }//rank-info
+
+
+  .rank-comment{
+
+    padding: 10px;
+
+     ul li{
+       margin-top: 15px;
+     }
+
+   .relation-wrap{
+
+      height: 100%;
+    }
+    .relation1{
+      background-color: #575097;
+     .relation();
+
+    }
+    .relation2{
+      background-color:#e77200;
+      .relation();
+    }
+    .relation3{
+      background-color: #999999;
+      .relation();
+    }
+
+    .comment{
+      background-color: #f3f3f3;
+      border-radius: 5px;
+      margin-left: 50px;
+      font-size: 1.3rem;
+      padding: 5px 10px;
+
+      .standard{
+          color: rgb( 153, 153, 153 );
+      }
+      .diy{
+          margin-top: 5px;
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: rgb( 102, 102, 102 );
+      }
+    }
+
+  }//rank-comment
+}//content
+
+
+.hide{
+  display: none;
+}
+
+.relation{
+  height: 40px;
+  width: 40px;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: rgb( 255, 255, 255 );
+
+}
+
+div.more-wrap{
+
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0px;
+
+  &.hide{
+    display: none;
+  }
+
+
+  a.more{
+    background-color: #007ead;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin:0 auto;
+    color: #fff;
+  }
+}
+
+
+
+
+/*三角  上 up   下down 左left 右right */
+.trangle(up,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-bottom: @height dashed @c;
+}
+
+.trangle(down,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-top: @height dashed @c;
+}
+
+
+.trangle(left,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-right: @height dashed @c;
+}
+
+.trangle(right,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-left: @height dashed @c;
+}
+
+
+
+
+//转发提示
+.mask{
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+}
+.transmitDialog{
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 150px;
+  min-height: 150px;
+  left: 50%;
+  margin-left: -128px;
+  margin-top: -61px;
+  background: url(http://m.kanzhun.com/images/oval_bg.png) no-repeat;
+  background-size: 257px;
+  width: 257px;
+  i.arrows{
+    display: inline-block;
+    background: url(http://m.kanzhun.com/images/arrows.png) no-repeat;
+    background-size: 63px;
+    width: 63px;
+    height: 65px;
+    position: absolute;
+    top: -70px;
+    right: -5px;
+    -webkit-animation: arrowsUp 1s infinite linear;
+  }
+  p{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@-webkit-keyframes arrowsUp{
+  0%{
+    -webkit-transform: translate(0,0);
+  }
+  50%{
+    -webkit-transform: translate(10px,-10px);
+  }
+  100%{
+    -webkit-transform: translate(0,0);
+  }
+}
+
+//特效+1 -1的css
+.float_wrap {
+  position: relative;
+
+  b {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}

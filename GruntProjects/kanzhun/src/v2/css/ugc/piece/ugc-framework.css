@@ -1,0 +1,41 @@
+.container-ugc {
+  width: 990px;
+  margin: 15px auto;
+  overflow: hidden;
+}
+.ugc-con-l {
+  float: left;
+  width: 711px;
+}
+.ugc-con-r {
+  width: 264px;
+  float: right;
+}
+.ugc-con-r .ugc-anonymous {
+  border: 1px solid #e2e2e2;
+}
+.ugc-con-r .ugc-anonymous img {
+  display: block;
+}
+.ugc-con-r .ugc-notice {
+  margin-top: 15px;
+  border: 1px solid #e2e2e2;
+  padding: 25px;
+  background-color: #fff;
+}
+.ugc-con-r .ugc-notice ul {
+  list-style-type: disc;
+  color: #666;
+  padding: 10px 0 0 15px;
+}
+.ugc-con-r .ugc-notice > p {
+  line-height: 1.8em;
+}
+.ugc-con-r .ugc-notice > p > i {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 5px;
+  background: url("/images/v2/ugc-v2.png") no-repeat -53px -77px;
+}

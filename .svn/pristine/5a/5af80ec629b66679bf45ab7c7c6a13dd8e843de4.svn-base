@@ -1,0 +1,452 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "../modules/top-search";
+@import "../modules/use_comment_share";
+@import "../../../components/fav/css/collection";
+@import "../company/piece/co-right-average";
+@import "../modules/right-co-alias";
+@import "../../../css/modules/share";
+
+//有边带阴影的盒子外形
+.wrap_style {
+  padding: 15px;
+  margin: 15px auto 0;
+  border: 1px solid @grey_dc;
+  background-color: #ffffff;
+  .box-shadow(0 1px 0 #e6e6e6);
+}
+
+section {
+  &.jd-con-l {
+    float: left;
+    width: 711px;
+  }
+
+  &.jd-con-r {
+    float: right;
+    width: 264px;
+  }
+}
+
+.jd-tt-wrap{
+  min-height: 166px;
+}
+
+
+.jd-tt{
+  width: 908px;
+  margin: 15px auto 0;
+  padding: 15px 40px;
+  position: relative;
+
+  h1{
+    font-weight: normal;
+    font-size: 30px;
+  }
+
+  >p{
+    em{
+      color: #ccc;
+      margin: 0 8px;
+      position: relative;
+    }
+
+    span.red{
+      font-size: 22px;
+    }
+  }
+
+  .jd-apply{
+    position: absolute;
+    top: 55px;
+    right: 40px;
+  }
+}
+
+.jd-tt-fixed{
+  position: fixed;
+  top: -15px;
+  left: 50%;
+  margin-left: -495px;
+  z-index: 4;
+}
+
+.jd-apply{
+  width: 200px;
+  a, input[type=submit]{
+    display: block;
+    padding: 14px 0;
+    line-height: 1;
+    border-radius: 5px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    background-color: #fb7200;
+    border: 0;
+    width: 100%;
+
+    &:hover{
+      text-decoration: none;
+    }
+
+    &.had_deliver{
+      background-color: #cccccc;
+    }
+  }
+
+  p{
+    color: #333;
+    text-align: center;
+    line-height: 2em;
+  }
+}
+
+.jd-container{
+  width: 990px;
+  margin: 0 auto 15px;
+}
+
+.job-desc{
+  padding: 15px 40px;
+  line-height: 2em;
+
+  .job-desc-tt{
+    font-size: 18px;
+    border-left: 7px solid @green;
+    padding-left: 10px;
+    line-height: 1;
+    margin: 20px 0;
+  }
+}
+
+.job-apply-bot{
+  margin-top: 25px;
+  padding: 30px 0;
+  border-top: 1px dashed #cccccc;
+  position: relative;
+
+  .c_collection{
+    position: absolute;
+    top: 45px;
+    right: 0;
+  }
+}
+
+dl.jd-list{
+  dt{
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e7e7e7;
+    color: #000;
+  }
+  
+  dd{
+    padding: 15px 0;
+    overflow: hidden;
+    line-height: 1.8em;
+    a{
+      width: 50%;
+      float: left;
+      color: @def;
+      white-space: nowrap;
+      overflow: hidden;
+
+      em{
+        color: @red;
+      }
+    }
+  }
+}
+
+dl.jd-list-3{
+  dd a{
+    width: 33.33%;
+  }
+}
+
+.jd-list-more{
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+  margin-top: -1px;
+  
+  a{
+    color: @def;
+  }
+}
+
+dl.jd-list .jd-right-hot{
+  a{
+    width: auto;
+  }
+
+  p{
+    color: #999;
+  }
+
+  em{
+    float: right;
+    color: #999;
+  }
+}
+
+//投递简历的弹窗
+div.deliver_dialog_con {
+  input.resume_ipt {
+    width: 178px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+  }
+
+  input[type=radio] {
+    vertical-align: -3px;
+    margin-right: 5px;
+  }
+
+  p.err {
+    display: none;
+    width: 122px;
+    height: 28px;
+    position: absolute;
+    font-size: 12px;
+    top: -15px;
+    right: 0;
+    color: #d60000;
+    padding-left: 32px;
+    line-height: 22px;
+    overflow: hidden;
+    background: url("@{img}/auth.png") no-repeat 0 -28px;
+    z-index: 2;
+  }
+
+  div.line_wrap {
+    position: relative;
+    padding-bottom: 5px;
+  }
+  li {
+    div {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #d5d5d5 #d8d8d8;
+      height: 26px;
+      border-radius: 4px;
+      padding: 8px 0;
+      background-color: #fff;
+      margin-bottom: 15px;
+      position: relative;
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      .transition(all, .2s, ease);
+
+      &.error {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #d60000;
+      }
+
+      &.focus {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #7cb228;
+      }
+
+      label {
+        width: 21px;
+        padding-right: 10px;
+        padding-left: 12px;
+        padding-bottom: 5px;
+        border-right: 1px solid #e1e1e1;
+        float: left;
+        font-size: 0;
+
+        &.user_wap {
+          height: 17px;
+          padding-top: 5px;
+        }
+
+        &.emial_wrap {
+          height: 15px;
+          padding-top: 7px;
+        }
+
+        i {
+          background-repeat: no-repeat;
+          display: inline-block;
+        }
+
+        i.user {
+          background-image: url("@{img}/auth.png");
+          width: 19px;
+          height: 17px;
+          background-position: 0 0;
+        }
+
+        i.emial {
+          background-image: url("@{img}/profiles.png");
+          width: 21px;
+          height: 15px;
+          background-position: -151px -44px;
+        }
+      }
+
+      input.ifd {
+        border: 0;
+        background-color: transparent;
+        font-size: 14px;
+        color: #999;
+        width: 258px;
+        padding: 5px 10px;
+        margin-left: 42px;
+        display: block;
+      }
+
+      /* p.err {
+        display: none;
+        width: 122px;
+        height: 28px;
+        position: absolute;
+        font-size: 12px;
+        top: -15px;
+        right: 0;
+        color: #d60000;
+        padding-left: 32px;
+        line-height: 22px;
+        overflow: hidden;
+        background: url("@{img}/auth.png") no-repeat 0 -28px;
+        z-index: 2;
+      } */
+    }
+  }
+
+  div.deliver_resume_option {
+    //overflow: hidden;
+    padding-bottom: 15px;
+
+    input.meile {
+      opacity: 0;
+      margin-left: -13px;
+    }
+
+    p.err {
+      display: none;
+      color: #d60000;
+    }
+    em {
+      color: #d7d7d7;
+      margin: 0 8px;
+    }
+
+    div.webuploader-container {
+      position: relative;
+      cursor: pointer;
+      input.webuploader-element-invisible {
+        opacity: 0;
+        width: 4em;
+        margin-right: 0;
+        cursor: pointer;
+      }
+
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    div.webuploader-pick {
+      color: @blue;
+    }
+  }
+
+  div.uploaders {
+    div.webuploader-pick {
+      width: 96px;
+      height: 33px;
+      line-height: 33px;
+      cursor: pointer;
+      background: url("@{img}/icons.png") repeat-x 0 -162px;
+      overflow: visible;
+      color: #343434;
+      text-align: center;
+      border: 1px solid #dfdfdf;
+      border-radius: 3px;
+
+      &:hover {
+        border: 1px solid #d3d3d3;
+        background: #f6f6f6 url('');
+        text-decoration: none;
+      }
+    }
+  }
+
+  //投递成功
+  h3.deliver_suc {
+    text-align: center;
+
+    i {
+      vertical-align: -5px;
+    }
+  }
+}
+
+.deliver_btn {
+  width: 100%;
+  height: 42px;
+  display: block;
+  text-align: center;
+  line-height: 42px;
+  border: 0;
+  background-color: #7cb228;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  .transition(background-color, .2s, ease);
+
+  &:hover {
+    background-color: #96ca46;
+  }
+}
+
+&.nologin_deliver_btn {
+  width: 230px;
+  margin-right: 30px;
+}
+
+.deliver_resume_way{
+  min-width: 400px;
+  *width: 500px;
+
+  h3{
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  .green-btn{
+    width: 45%;
+    height: 39px;
+    line-height: 39px;
+    border: 0;
+    background-color: #7cb228;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    .transition(background-color, .2s, ease);
+
+    &:hover {
+      background-color: #96ca46;
+      text-decoration: none;
+    }
+  }
+
+  .cancel-bind{
+    width: 45%;
+    padding: 0;
+    font-size: 20px;
+    float: right;
+  }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>写面经</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../css/interview.css">
+</head>	
+<body style="background-color:#fff;">
+<section class="container">
+  <form action="xxx.json" id="interviewUgcForm">
+  <div class="i-step-one">
+    <dl class="co_info">
+      <dt>
+          <img src="http:/img.kanzhun.com/image/l11514.gif">
+      </dt>
+      <dd>
+        <h1>民生银行</h1>
+      </dd>
+    </dl>
+
+    <ul class="interview-form">
+      <li class="inline">
+        <div class="tt">
+          面试职位
+        </div>
+        <div class="edit">
+          <input type="text" name=""  placeholder="请输入职位名称" />
+        </div>
+        <p class="err" data-msg="请输入职位名称！"></p>
+      </li>
+
+      <li class="inline">
+        <div class="tt">
+          面试城市
+        </div>
+        <div class="edit">
+          <input type="text" name="" placeholder="北京" />
+        </div>
+        <p class="err" data-msg="请输入城市！"></p>
+      </li>
+
+      <li class="inline">
+        <div class="tt">
+          面试结果
+        </div>
+        <div class="edit i-ret">
+          <input name="" value="" type="hidden"/>
+          <button type="button" class="on">确定通过</button>
+          <button type="button">感觉靠谱</button>
+          <button type="button">感觉没戏</button>
+          <button type="button">确定未通过</button>
+        </div>
+        <p class="err">请选择面试结果！</p>
+      </li>
+
+      <li>
+        <div class="tt">
+          面试过程描述 <span>（至少输入20个字）</span>
+        </div>
+
+        <div class="edit">
+          <textarea name=""  rows="4" placeholder="告诉朋友面试细节，比如几轮面试，流程环节，你面试过程中的感受等"></textarea>
+        </div>
+
+        <p class="err">您还没输入面试过程呢！</p>
+      </li>
+
+      <li>
+        <div class="tt">
+          面试问题 <span>（选填）</span>
+        </div>
+
+        <div class="edit grey">
+          面试过程中你被问到了哪些问题
+          <p><a href="#" class="blue">你的职业规划是什么？</a></p>
+        </div>
+      </li>
+    </ul>
+
+
+
+    <p class="p10"><a class="hollow-btn" href="javascript:;" id="addQuestion">+添加一个面试问题</a></p>
+
+    <!--<p class="p10 grey-bg"><a class="green-btn" href="">下一步</a></p>-->
+    <p class="p10 grey-bg"><input class="green-btn" type="submit" value="下一步"/></p>
+
+  </div>
+
+  <div class="i-step-two hidden">
+    <div class="p10 grey-bg pt15 grey"><p class="pt15">再告诉我们一些信息</p></div>
+
+    <ul class="interview-form">
+      <li class="inline">
+        <div class="tt">
+          面试感受
+        </div>
+
+        <div class="edit i-feeling">
+          <button type="button" class="on">很好</button><button type="button" class="on">一般</button><button type="button" class="on">不好</button>
+        </div>
+        <p class="err">请选择您的面试感受！</p>
+      </li>
+
+      <li class="inline">
+        <div class="tt">
+          面试难度
+        </div>
+
+        <div class="edit i-level">
+          <button type="button" class="on"></button><button type="button"></button><button type="button"></button><button type="button"></button><button type="button"></button>
+          <span>非常容易</span>
+        </div>
+        <p class="err">请选择您的面试难度！</p>
+      </li>
+
+      <li class="inline">
+        <div class="tt">
+          如何获得面试机会 <span>（选填）</span>
+        </div>
+
+        <div class="edit i-chance">
+          <button type="button" class="on">网络招聘</button>
+          <button type="button">校园招聘</button>
+          <button type="button">内部推荐</button>
+          <button type="button">猎头推荐</button>
+          <button type="button">社会招聘</button>
+          <button type="button">其他</button>
+        </div>
+      </li>
+    </ul>
+
+
+    <p class="p10 grey-bg pt15"><a class="green-btn" href="">立即发布</a></p>
+  </div>
+  </form>
+
+  <div style="height: 45px;"></div>
+	<footer class="footer_nav" id="footer_nav">
+		<div class="back">
+			<a class="js_goBack" href="javascript:;">
+				<i class="i i_back"></i>
+			</a>
+		</div>
+		<div class="f_nav_r">
+			<ul>
+				<li>
+					<div class="comboBox">
+						<dl>
+							<dd><a href="#">评论公司</a></dd>
+							<dd><a href="#">评论公司</a></dd>
+							<dd><a href="#">评论公司</a></dd>
+							<dt><i class="i i_tdown"></i></dt>
+						</dl>
+					</div>
+					<a class="js_interview_bt" href="javascript:;"><i class="i i_eq"></i> 面试经历</a>
+				</li>
+				<li>
+					<a href="javascript:;"><i class="i i_eq"></i> 面试技巧</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</section>
+
+<section class="maskui_dialog" id="interviewDialog">
+  <div class="dialog_con">
+    <a href="javascript:;" class="dialog_close"></a>
+
+    <p class="f16"><strong>填写面试问题1</strong></p>
+    <ul class="interview-form interview-form-d">
+      <li>
+        <div class="tt">
+          令你印象深刻的问题
+        </div>
+        <div class="edit">
+          <textarea name=""  rows="2" placeholder="描述下面试过程中令你印象深刻的问题"></textarea>
+        </div>
+      </li>
+
+      <li>
+        <div class="tt">
+          你的回答
+        </div>
+        <div class="edit">
+          <textarea name=""  rows="3" placeholder="告诉我们对于上述问题你的答案或者想法"></textarea>
+        </div>
+      </li>
+    </ul>
+
+    <p class="i-d-btn">
+      <input class="hollow-btn-g" type="submit" value="确定"/>
+      <a class="hollow-btn" href="#">+再添加一个问题</a>
+    </p>
+  </div>
+</section>
+<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../js/utils/maskui.js"></script>
+<script type="text/javascript" src="../js/utils/validator.js"></script>
+<script type="text/javascript" src="../js/site/interview-ugc.js"></script>
+</body>
+</html>
+
+
+
+

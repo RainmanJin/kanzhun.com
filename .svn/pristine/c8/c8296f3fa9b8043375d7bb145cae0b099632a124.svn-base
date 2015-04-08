@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>公司员工来自</title>
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/employee.css" />
+</head>	
+<body>
+<div class="wrapper">
+	<div class="content">	
+		<header class="page_hd">
+			<a class="top_back" href="javascript:;"><i></i>返回</a>		
+			<strong>公司员工</strong>	
+			<a href="" class="fright">主页</a>
+		</header>
+
+		<dl class="co_info">
+			<dt><img src="http://img.kanzhun.com//images/logo/20140220/41d47380c250d951be31d1b132d03e6e.jpg" alt=""></dt>
+			<dd>
+				<h1>易宝支付</h1>
+				<p><span class="grade_star"><i style="width:54px;"></i></span><em>4.0分</em></p>
+				<p>www.yeepay.com | 北京</p>
+			</dd>
+		</dl>
+		<section class="menu">
+			<div class="menu_wrap">
+				<div class="menu_con">
+					<a href="">工资</a>
+					<a href="">点评</a>
+					<a href="">面试</a>
+					<a href="" class="current">员工</a>
+				</div>
+			</div>
+			<a href="javascript:;" class="moving"><i class="arrow_green"></i></a>
+		</section>
+		<ul class="dynamic">
+			<li class="from"><em class="img_r imgGreyL"></em><a>来自</a></li>
+			<li class="companyname"><a href="employee_staff.html">易宝支付阿里...员工</a></li>
+			<li class="fate on"><em class="img_l imgGrey"></em><a href="">去向</a></li>
+		</ul>
+		<ul class="stall_from">
+			<li>
+				<a href="">
+					<img src="../images/img_05.jpg" alt="" />
+					<p>华为</p>
+					<p class="grey">4.0分 <em>|</em> 124条信息</p>
+					<em class="num blue">10人 <i class="arrow_g"></i></em>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="../images/img_05.jpg" alt="" />
+					<p>华为</p>
+					<p class="grey">4.0分 <em>|</em> 124条信息</p>
+					<em class="num blue">10人 <i class="arrow_g"></i></em>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="../images/img_05.jpg" alt="" />
+					<p>华为</p>
+					<p class="grey">4.0分 <em>|</em> 124条信息</p>
+					<em class="num blue">10人 <i class="arrow_g"></i></em>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="../images/img_05.jpg" alt="" />
+					<p>华为</p>
+					<p class="grey">4.0分 <em>|</em> 124条信息</p>
+					<em class="num blue">10人 <i class="arrow_g"></i></em>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="../images/img_05.jpg" alt="" />
+					<p>华为</p>
+					<p class="grey">4.0分 <em>|</em> 124条信息</p>
+					<em class="num blue">10人 <i class="arrow_g"></i></em>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="../images/img_05.jpg" alt="" />
+					<p>华为</p>
+					<p class="grey">4.0分 <em>|</em> 124条信息</p>
+					<em class="num blue">10人 <i class="arrow_g"></i></em>
+				</a>
+			</li>
+		</ul>
+		<p class="e_see"><a href="" class="btn_grey_large">更多...</a></p>
+		<ul class="v_menu">
+			<li>
+				<a href="">查看“易宝支付”招聘<i class="arrow_g"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+</html>
+
+

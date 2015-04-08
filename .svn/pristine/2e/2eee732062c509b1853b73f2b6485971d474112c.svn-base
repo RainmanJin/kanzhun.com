@@ -1,0 +1,96 @@
+@import "../../common/var";
+
+ul.job_listings {
+  li {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid @grey_e7;
+    overflow: hidden;
+    *zoom: 1;
+
+    a {
+      &.logo {
+        float: left;
+        display: block;
+        width: 62px;
+        height: 62px;
+        border: 1px solid @grey_e7;
+        font-size: 0;
+        overflow: hidden;
+        text-decoration: none;
+
+        img {
+          width: 62px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        span {
+          display: inline-block;
+          width: 0;
+          height: 100%;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    p.collection {
+      position: absolute;
+      top: 20px;
+      right: 0;
+
+      a {
+        color: @grey_99; 
+
+        &.hadcollection {
+          cursor: default;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }  
+      }
+
+      i {
+        margin-right: 4px;
+        vertical-align: -2px;
+      }
+    }
+
+    div.cmpinfo {
+      margin-left: 75px;
+
+      p {
+        i.directsup {
+          vertical-align: -3px;
+          margin-left: 5px;
+        }
+
+        &.cmp_name {
+          padding: 5px 0;
+        }
+
+        b.red {
+          color: #eb7676;
+        }
+      }
+
+      span.grade_star {
+        vertical-align: -4px;
+      }
+    }
+
+    /* dl {
+      float: left;
+      width: 285px;
+      padding-top: 35px;
+    
+      
+    
+      dd.experience {
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    } */
+  }
+}

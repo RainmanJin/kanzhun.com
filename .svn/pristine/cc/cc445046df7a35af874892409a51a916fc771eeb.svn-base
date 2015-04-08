@@ -1,0 +1,13 @@
+/**
+ * Created by zhuchongyue on 2015/3/13.
+ */
+$(function(){
+    var per = 100;
+    $(".progress .finish").each(function(i,val){
+        $(val).width(per+"%");
+        per-=10;
+    });
+    setTimeout(function(){
+        $("#obtain .name").addClass("name1");
+    },1000);
+});

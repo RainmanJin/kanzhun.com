@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>看准出品-企业金评莓奖</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/step2.css"/>
+</head>
+<body>
+    <section class="content" id="content">
+          <div class="title">
+                <img  class="mark" src="images/title.png" alt=""/>
+                <img  class="vertical" src="images/vertical.png" alt=""/>
+                <p class="word">公司提名</p>
+         </div>
+
+         <div class="form">
+             <select name="prize" id="prize">
+                 <option value="0" selected>请选择TA的提名奖项</option>
+                 <option value="1">永不加薪奖</option>
+                 <option value="2">压力山大奖</option>
+                 <option value="3">员工过劳奖</option>
+                 <option value="4">宫斗内耗奖</option>
+                 <option value="4">福利扣出翔奖</option>
+             </select>
+             <!--<p class="tip">*您已经提名<span>2</span>次，还可以提名<span>18</span>次</p>-->
+             <div class="center-wrap">
+                 <p class="h2">请选择提名理由</p>
+                 <div class="re-wrap">
+                     <input type="radio" name="reason" id="r1"/>
+                     <label for="r1">每次谈加薪老板就谈情怀</label>
+                     <p class="bg"></p>
+                 </div>
+                 <div class="re-wrap">
+                     <input type="radio" name="reason" id="r2"/>
+                     <label for="r2">呆满12个月0涨薪</label>
+                     <p class="bg"></p>
+                 </div>
+                 <div class="re-wrap">
+                     <input type="radio" name="reason" id="r3"/>
+                     <label for="r3">工资已无法买鸡蛋灌饼</label>
+                     <p class="bg"></p>
+                 </div>
+
+                 <textarea name="" id="" cols="30" rows="3" placeholder="我自己填..."></textarea>
+                 <a href="#" class="next">完成</a>
+                 <p class="protocol">
+                     <input type="checkbox" checked/>
+                     参与活动即刻表明我认同并遵守<a href="rank.html">《游戏规则》</a>
+                 </p>
+             </div>
+         </div>
+    </section>
+</body>
+</html>

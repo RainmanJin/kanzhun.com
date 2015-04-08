@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>公司面经页面</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css"/>
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/company/view.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/company/view.js"></script>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+<% include ../modules/mini-search %>
+<% include piece/co-header %>
+
+	<div class="container_v2 clearfix">
+		<section class="f_l_con clearfix">
+			<!-- 面试整体感受 -->
+			<div class="wrap_style mb15">
+				<div class="cmp_tt">
+					<span class="grey_99 fright">最后更新七天内（2015-01-29）</span>
+					<h1>顺丰速运面试</h1>
+				</div>
+				<p class="line"></p>
+				<div class="iv_grade">
+					<dl class="total">
+						<dt>面试整体感受</dt>
+						<dd class="pie_chart">
+							<canvas width="62" height="62" class="reviewsPieChart" data-ratio="0.18_0.65_0.17"></canvas>
+							<div class="pie_bar">
+								<p><span class="easy"></span>容易的&nbsp;&nbsp;&nbsp;&nbsp;18%</p>
+								<p><span class="normal"></span>一般的&nbsp;&nbsp;&nbsp;&nbsp;65%</p>
+								<p><span class="hard"></span>困难的&nbsp;&nbsp;&nbsp;&nbsp;17%</p>
+							</div>
+						</dd>
+					</dl>
+					<dl class="level">
+						<dt>面试难度</dt>
+						<dd class="circle_chart">
+							<div class="doughnua_chart">
+								<span>2.8</span>
+								<canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.5599999999999999_0.44000000000000006"></canvas>
+							</div>
+							<h5>难度一般</h5>
+						</dd>
+					</dl>
+					<dl class="from">
+						<dt>如何获得面试机会率</dt>
+						<dd class="pie_chart">
+							<canvas width="62" height="62" class="reviewsFromPieChart" data-ratio="0.31_0.55_0.07_0.03_0.01_0.03"></canvas>
+							<div class="pie_bar">
+								<p><span class="wlzp"></span>网络招聘 &nbsp;&nbsp;31%</p>
+								<p><span class="xyzp"></span>校园招聘 &nbsp;&nbsp;55%</p>
+								<p><span class="shzp"></span>社会招聘 &nbsp;&nbsp;7%</p>
+								<p class="none"><span class="nbtj"></span>内部推荐 &nbsp;&nbsp;3%</p>
+								<p class="none"><span class="lttj"></span>猎头推荐 &nbsp;&nbsp;1%</p>
+								<p class="none"><span class="qt"></span>其他 &nbsp;&nbsp;3%</p>
+								<div class="pie-bar-toggle">
+                  <div class="C-toggler" id="moreChartInfo">展开<i></i></div>
+                </div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- 面试整体感受 -->
+
+      <% include piece/co-left-interview-filter.ejs %>
+
+			<!-- 面试 -->
+      <% include piece/co-left-interview-item.ejs %>
+
+      <div class="wrap_style mb15">
+        <dl class="c_s_result co-break">
+          <dt class="anonymous_portrait"><img src="/images/view_v2-img/xiaoren.jpg" alt=""></dt>
+          <dd class="c_s_result_detail">
+            <p class="f_16 blue">“你在这里工作过？”</p>
+            <p>分享你的经验，帮助求职者看得更准！</p>
+
+            <a class="btn yellow_btn" href="#">我来写条点评</a>
+          </dd>
+        </dl>
+      </div>
+
+			<div class="wrap_style mb15">
+				<dl class="c_s_result">
+					<dt class="anonymous_portrait"><img src="/images/view_v2-img/xiaoren.jpg" alt=""></dt>
+					<dd class="c_s_result_detail">
+						<h2><a href=""><span>“</span>易宝支付是锻炼行业产品经理的好地方<span>”</span></a></h2>
+						<p class="f_12 grey_99 view_address">匿名用户&nbsp;&nbsp;&nbsp;&nbsp;面试易宝支付的<a href="">产品经理</a>&nbsp;-&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+						
+						<!-- 没有登录不让看 -->
+							<div class="js-filterblur i_filterblur mb10 noevent">
+								<div class="nologin">
+									<div class="send_info">
+										<p class="t_center tt">发条面试经历并成为看准会员<br>即可查看完整信息</p>
+										<p class="grey_99 mb10" style="font-size: 12px;">所有信息均为匿名，请放心填写</p>
+										<p>
+											<a ka="pop-interviewugc" href="/interviewugc/" target="_blank">立即发一条面试经历&gt;&gt;</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						<!-- 没有登录不让看 -->
+						<div class="c_s_v_result mb20">
+							<i class="view_fail mr10"></i><em class="f_12">面试通过</em><span class="grade_rect_fifteen"><i style="width:68px;"></i></span><em class="grey_99 f_12">面试整体感受困难</em><span class="grade_rect_fifteen"><i style="width:14px;"></i></span><span class="grey_99 f_12">面试有难度</span>
+						</div>
+						<div class="view_feel_tags">
+							<span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span>
+						</div>
+						<p class="line_only"></p>
+						<div class="u_c_s">
+							<p class="fright u_options">
+								<a href="" class="helpful mr15 marked" data-mtype="useful.json" data-sid="753822"><span class="u_feel_helpful"></span>有用<em class="grey_99">（</em><i class="grey_99">0</i><em class="grey_99">）</em></a><a href="" class="comment mr15 marked"><span class="u_comment"></span>评论<em class="grey_99">（0）</em></a><a href="" data-desc="" data-url="/gsmsh753822.html" class="share marked"><span class="u_share"></span>分享</a>
+							</p>
+							<timer class="grey_99 f_12">今天 21:22</timer>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!-- 面试 -->
+		</section>
+
+		<!-- 右半部分 -->
+		<section class="f_r_con">
+      <% include piece/co-right-publish.ejs %>
+      <a href="" class="advertis_area mb15" style="height: 58px;"><img src="/images/view_v2-img/r_img.jpg" alt=""></a>
+      <% include piece/co-right-companylist.ejs %>
+		</section>
+		<!-- 右半部分 -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@import "common/var";
+@import "modules/company/common";
+
+div.container .l_con {
+  min-height: 500px;
+  padding-bottom: 0;
+}
+h1.professional_tt {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h2.recommended_tt {
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #e7e7e7;
+  height: 35px;
+  line-height: 35px;
+
+  span {
+    display: inline-block;
+    border-bottom: 1px solid #7cb228;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 20px -1px 0;
+    position: relative;
+    zoom: 1;
+  }
+}
+
+article{
+  &.co_intro{
+    line-height: 1.6em;
+    padding: 10px 0;
+
+    i {
+      margin-left: 10px;
+      white-space: nowrap;
+      color: #007ead;
+      cursor: pointer;
+    }
+  }
+}
+ul {
+  &.rankRequirement {
+    overflow: hidden;
+    *zoom: 1;
+    padding: 5px 0 10px 0;
+
+    li {
+      float: left;
+      .ellipsis(ellipsis);
+      width: 210px;
+      margin-right: 5px;
+      height: 2em;
+      line-height: 2em;
+    }
+  }
+
+  &.fcolor {
+    a {
+      color: @def;
+    }
+  }
+
+  &.job_ranking {
+    li {
+      .ellipsis(ellipsis);
+      width: 264px;
+      line-height: 2em;
+      i {
+        display: inline-block;
+        vertical-align: -4px;
+        *vertical-align: 0;
+        width: 18px;
+        height: 18px;
+        border-radius: 2px;
+        background-color: #d7d7d7;
+        text-align: center;
+        line-height: 18px;
+        overflow: hidden;
+        color: #fff;
+        margin-right: 5px;
+
+        &.hot {
+          background-color: @green;
+        }
+      }
+    }
+  }
+}
+
+p {
+  &.statement {
+    display: block;
+    margin: 30px -20px 0 -20px;
+    padding: 20px;
+    background-color: #fff7ed;
+
+    span {
+      color: #ef8786;
+    }
+  }
+}
+
+div.chartsline {
+  position: relative;
+
+  p {
+    position: absolute;
+    left: 44px;
+    top: 210px;
+    .ellipsis(ellipsis);
+    width: 593px;
+    text-align: center;
+    color: @grey_99;
+  }
+}

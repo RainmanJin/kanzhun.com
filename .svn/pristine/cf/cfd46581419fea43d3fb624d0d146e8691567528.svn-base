@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公共样式-manageLeft</title>
+	<link rel="stylesheet" type="text/css" href="css/manageLeftDemo.css">
+	<style type="text/css">
+	body{
+		background: #fff;
+	}
+	</style>
+</head>
+<body>
+<aside class="manageLeft">
+	<a class="btn_green b" href="#">发布新职位</a>
+	<dl>
+		<dt>
+			<i class="base letter"></i>
+			<span href="#">我收到的简历</span>
+		</dt>
+		<dd class="current">
+			<a href="#">待处理简历</a>
+		</dd>
+		<dd>
+			<a href="#">已通知面试简历</a>
+		</dd>	
+		<dd>
+			<a href="#">不合适简历</a>
+		</dd>			
+	</dl>
+	<dl>
+		<dt>
+			<i class="base flag"></i>
+			<span href="#">我发布的职位</span>
+		</dt>
+		<dd>
+			<a href="#">有效职位</a>
+		</dd>
+		<dd>
+			<a href="#">已下线职位</a>
+		</dd>			
+	</dl>	
+</aside>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>注册</title>
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/profiles.css" />
+<script src="../js/zepto.js"></script>
+<script src="../js/mvalidator.js"></script>
+<script src="../js/register.js"></script>
+</head>	
+<body>
+<div class="kanzhun">
+	<div id="container">
+		<div class="wrapper profile">
+			<div class="content">	
+				<header class="page_hd">		
+					<a class="fleft" href="login.html">登录</a>
+					<strong>注册</strong>
+				</header>
+				
+				<section class="p20">
+					<form action="/" method="post" id="registerForm" class="proflies_f">
+						<div class="divCommonInput bdefault"><input type="text" placeholder="邮箱" name="account" /></div>
+						<p class="err" data-msg="邮箱不能为空！"><i class="i i_err"></i></p>
+						<div class="divCommonInput bdefault mt15"><input type="text" placeholder="密码" name="password"  /></div>
+						<p class="err" data-msg="密码不能为空！"><i class="i i_err"></i></p>
+						<div class="divCommonInput bdefault mt15"><input type="text" placeholder="确认密码" name="confirmPassword" /></div>
+						<p class="err" data-msg="确认密码不能为空！"><i class="i i_err"></i></p>
+						<div class="authcode">
+							<img src="../images/authcode.jpg" /><div class="divCommonInput bdefault"><input type="text" placeholder="验证码"></div>
+						</div>
+						
+
+						<p class="mt15">
+							<input type="checkbox" name="" id="agm" />&nbsp;<label for="agm" class="grey">我已阅读并同意<a href="#" class="blue">看准网用户协议</a></label></p>
+						<p class="mt15"><input type="submit" value="注 册" class="btn_submit_1" /></p>
+					</form>
+
+					<p class="grey mt20">使用以下账号直接登录：</p>
+					<p class="mt15"><a class="btn_grey_large" href=""><i class="i i_wb"></i> 微博登录</a></p>
+					<p class="mt15"><a class="btn_grey_large" href=""><i class="i i_rr"></i> 人人登录</a></p>
+				</section>
+			</div>
+		</div>
+		<footer class="page_ft">
+			<p>电脑版  |  移动版</p>
+			<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+		</footer>
+	</div>
+</div>
+</body>
+</html>

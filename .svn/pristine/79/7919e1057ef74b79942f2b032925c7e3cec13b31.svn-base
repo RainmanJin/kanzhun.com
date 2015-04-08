@@ -1,0 +1,142 @@
+@import "../../../../css/common/var";
+@import "../../var";
+@import '../../../../components/toggler/toggler';   //展开的样式
+
+div {
+	&.container-search {
+		width: 990px;
+		margin: 15px auto 0 auto;
+	}
+}
+
+//有边带阴影的盒子外形
+.wrap_style {
+	padding: 0 15px;
+	border: 1px solid @grey_dc;
+	background-color: #ffffff;
+	.box-shadow(0 1px 0 #e6e6e6);
+}
+
+section {
+	&.s_r_con {
+		float: right;
+		width: 711px;
+	}
+	
+	&.s_l_con {
+		float: left;
+		width: 264px;
+	}
+}
+
+//链接的颜色变化
+a {
+  color: #2c84cc;
+  &.links {
+    &:hover {
+      color: #2472b4;
+      text-decoration: none;
+    }
+  }
+
+  &.hover_deff {
+      &:hover {
+          color: @def;
+      }
+  }
+}
+
+//带颜色的小三角
+.tangle_init {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+
+dl.search-options{
+  padding: 15px;
+
+  dt{
+    strong{
+      font-size: 16px;
+
+      span{
+        color: @red;
+      }
+    }
+
+    a{
+      float: right;
+
+      span{
+        color: @red;
+      }
+    }
+  }
+
+  dd{
+    margin: 15px -15px 0;
+    padding: 15px 15px 0;
+    border-top: 1px solid #e2e2e2;
+
+    span{
+     color: #fff;
+     background-color: @green;
+     padding: 4px 5px;
+     border-radius: 2px;
+     margin-right: 10px;
+     font-size: 12px;
+
+
+     a{
+       color: #fff;
+       margin-left: 4px;
+       padding: 2px 0 2px 2px;
+       vertical-align: 1px;
+
+       &:hover{
+         text-decoration: none;
+       }
+     }
+    }
+  }
+}
+
+.search-list-co-brief{
+  padding: 15px 0;
+
+  img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #E7E7E7;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+
+.search-list-co-brief-grey{
+  padding: 15px;
+  margin: 0 -15px;
+  background-color: #f6f6f6;
+}
+
+.search-noresult{
+  text-align: center;
+  padding: 100px 0 200px;
+
+  >img{
+    vertical-align: top;
+  }
+
+  >div{
+    margin-left: 20px;
+    text-align: left;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: top;
+  }
+}
+
+

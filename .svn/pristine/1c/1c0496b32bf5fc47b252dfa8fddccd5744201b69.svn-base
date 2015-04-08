@@ -1,0 +1,8 @@
+
+/**
+ * Created by zcy on 2015/3/26.
+ */
+$(function(){
+    var height = $("#popup").height();
+    $("#popup").animate({ top:"-"+height+"px"},30*1000);
+});

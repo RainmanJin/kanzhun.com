@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>看准网新闻列表页</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/widget.css" />
+<link rel="stylesheet" href="css/news.css" />
+</head>
+
+<body>
+  <div class="hdtop">
+    <p><span><a href="">登录</a><em>|</em><a href="">注册</a></span><a href="">看准首页</a><em>|</em><a href="">招聘</a><em>|</em><a href="">公司</a><em>|</em><a href="">查工资</a><em>|</em><a href="">聊面试</a><em>|</em><a href="">我要点评</a><em>|</em><a href="">职业评测</a></p>
+  </div>
+  <div class="search"><a href="" class="logo"><img src="images/logo.jpg" alt="看准网资讯"></a><div><input type="text" class="searchipt" placeholder="搜索您关心的公司"><input type="submit" class="sub" value=""></div></div>
+  <header class="globlenav">
+    <nav><a href="">首页</a><a href="">看准报告</a><a href="">热点聚焦</a><a href="" class="current">名企动态</a><a href="">高管轶事</a><a href="">股市风云</a><a href="">行业分析</a><a href="">职场规则</a><a href="">职场八卦</a></nav>
+  </header>
+  <div class="container clearfix">
+    <p class="breadnav"><a href="" class="def">名企动态</a>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<a href="" class="def">名企动态</a></p>
+    <section class="l_con clearfix">
+      <h2 class="resulttt"><em>职场八卦</em></h2>
+      <p class="gossiptt mt10"><em>2014-09-09</em>微信圈地：绕不过的社交基因瓶颈</p>
+      <dl class="content gossipcon mt10 pb15">
+        <dt><a href="" class="articleimg"><img src="images/temp/index_img1.jpg" alt=""><span></span></a></dt>
+        <dd class="grey_99 mt15">今天的微信，像足了当年PC平台强推拍拍购物。为了让拍拍与淘宝一拼，QQ甚至拿出了最强杀手锏--QQ弹窗支持，不过结果仍然是拍拍败北。推广三年的拍拍业务复合增长不超过50%，而淘宝增速仍然在400%。<a href="">【详细】</a></dd>
+      </dl>
+      <p class="gossiptt mt10"><em>2014-09-09</em>微信圈地：绕不过的社交基因瓶颈</p>
+      <dl class="content gossipcon mt10 pb15">
+        <dt><a href="" class="articleimg"><img src="images/temp/index_img1.jpg" alt=""><span></span></a></dt>
+        <dd class="grey_99 mt15">今天的微信，像足了当年PC平台强推拍拍购物。为了让拍拍与淘宝一拼，QQ甚至拿出了最强杀手锏--QQ弹窗支持，不过结果仍然是拍拍败北。推广三年的拍拍业务复合增长不超过50%，而淘宝增速仍然在400%。<a href="">【详细】</a></dd>
+      </dl>
+      <p class="gossiptt mt10"><em>2014-09-09</em>微信圈地：绕不过的社交基因瓶颈</p>
+      <dl class="content gossipcon mt10 pb15">
+        <dt><a href="" class="articleimg"><img src="images/temp/index_img1.jpg" alt=""><span></span></a></dt>
+        <dd class="grey_99 mt15">今天的微信，像足了当年PC平台强推拍拍购物。为了让拍拍与淘宝一拼，QQ甚至拿出了最强杀手锏--QQ弹窗支持，不过结果仍然是拍拍败北。推广三年的拍拍业务复合增长不超过50%，而淘宝增速仍然在400%。<a href="">【详细】</a></dd>
+      </dl>
+      <p class="gossiptt mt10"><em>2014-09-09</em>微信圈地：绕不过的社交基因瓶颈</p>
+      <dl class="content gossipcon mt10 pb15">
+        <dt><a href="" class="articleimg"><img src="images/temp/index_img1.jpg" alt=""><span></span></a></dt>
+        <dd class="grey_99 mt15">今天的微信，像足了当年PC平台强推拍拍购物。为了让拍拍与淘宝一拼，QQ甚至拿出了最强杀手锏--QQ弹窗支持，不过结果仍然是拍拍败北。推广三年的拍拍业务复合增长不超过50%，而淘宝增速仍然在400%。<a href="">【详细】</a></dd>
+      </dl>
+      <p class="gossiptt mt10"><em>2014-09-09</em>微信圈地：绕不过的社交基因瓶颈</p>
+      <dl class="content gossipcon mt10 pb15">
+        <dt><a href="" class="articleimg"><img src="images/temp/index_img1.jpg" alt=""><span></span></a></dt>
+        <dd class="grey_99 mt15">今天的微信，像足了当年PC平台强推拍拍购物。为了让拍拍与淘宝一拼，QQ甚至拿出了最强杀手锏--QQ弹窗支持，不过结果仍然是拍拍败北。推广三年的拍拍业务复合增长不超过50%，而淘宝增速仍然在400%。<a href="">【详细】</a></dd>
+      </dl>
+      <p class="gossiptt mt10"><em>2014-09-09</em>微信圈地：绕不过的社交基因瓶颈</p>
+      <dl class="content gossipcon mt10 pb15">
+        <dt><a href="" class="articleimg"><img src="images/temp/index_img1.jpg" alt=""><span></span></a></dt>
+        <dd class="grey_99 mt15">今天的微信，像足了当年PC平台强推拍拍购物。为了让拍拍与淘宝一拼，QQ甚至拿出了最强杀手锏--QQ弹窗支持，不过结果仍然是拍拍败北。推广三年的拍拍业务复合增长不超过50%，而淘宝增速仍然在400%。<a href="">【详细】</a></dd>
+      </dl>
+      <p class="gossiptt mt10"><em>2014-09-09</em>微信圈地：绕不过的社交基因瓶颈</p>
+      <dl class="content gossipcon mt10 pb15">
+        <dt><a href="" class="articleimg"><img src="images/temp/index_img1.jpg" alt=""><span></span></a></dt>
+        <dd class="grey_99 mt15">今天的微信，像足了当年PC平台强推拍拍购物。为了让拍拍与淘宝一拼，QQ甚至拿出了最强杀手锏--QQ弹窗支持，不过结果仍然是拍拍败北。推广三年的拍拍业务复合增长不超过50%，而淘宝增速仍然在400%。<a href="">【详细】</a></dd>
+      </dl>
+      <p class="gossiptt mt10"><em>2014-09-09</em>微信圈地：绕不过的社交基因瓶颈</p>
+      <dl class="content gossipcon mt10 pb15">
+        <dt><a href="" class="articleimg"><img src="images/temp/index_img1.jpg" alt=""><span></span></a></dt>
+        <dd class="grey_99 mt15">今天的微信，像足了当年PC平台强推拍拍购物。为了让拍拍与淘宝一拼，QQ甚至拿出了最强杀手锏--QQ弹窗支持，不过结果仍然是拍拍败北。推广三年的拍拍业务复合增长不超过50%，而淘宝增速仍然在400%。<a href="">【详细】</a></dd>
+      </dl>
+      <div class="pager np_pager">
+        <a href="">&lt;</a><a href="" class="current">1</a><a href="">2</a><a href="">3</a><a href="">4</a><span>... </span><a href="">&gt;</a> 共50页&nbsp;&nbsp;&nbsp;&nbsp;去<input type="text" />页
+      </div>
+    </section>
+    <section class="r_con">
+      <h2 class="tt">热门文章</h2>
+      <p class="onlyline mt10"></p>
+      <ul class="hotarticles">
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""><span></span></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""><span></span></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""><span></span></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""><span></span></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""><span></span></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+      </ul>
+      <h2 class="tt mt30">热门标签</h2>
+      <p class="onlyline mt10"></p>
+      <div class="hottags"><a href="">手机</a><a href="">手机</a><a href="">手机东东</a><a href="">手机</a><a href="">手的机</a><a href="">手机</a><a href="">手机</a><a href="">手的机</a><a href="">手机</a></div>
+      <h2 class="tt mt30">关注我们</h2>
+      <p class="widthline mt10 mb15"></p>
+      <aside class="attention">
+        <p>
+          <a target="">
+            <img src="images/right_img.jpg" alt="" />
+          </a>
+          <a href="" target="" class="btn_o_s">+ 关注</a>
+        </p>
+        <img src="images/right_img2.jpg" alt="" />
+    </aside>
+    </section>
+  </div>
+</body>
+</html>

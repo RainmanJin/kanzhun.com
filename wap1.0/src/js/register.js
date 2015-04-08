@@ -1,0 +1,67 @@
+$(function(){
+    window.changeAuthCode = function(target){
+        if(target){
+            target.setAttribute('src', target.getAttribute('src').split('&t=')[0] + '&t=' + (new Date()).getTime());
+        }
+    };
+    
+    $('#registerForm').MValidator({
+        elems: 'input[type=text], input[type=password]',
+        prompt: {
+            succ: function(target, e){
+                target.parent().next('p.err').hide();
+            },
+            err: function(target, msg, e){
+                var elem = target.parent().next('p.err');
+                elem.html('<i class="i i_err"></i>'+ (msg || elem.data('msg'))).show();
+            },
+            normal: function(target, e){
+                target.parent().next('p.err').hide();
+            }
+        },
+        more: {
+            account: {
+                type: 'isMail',
+                msg: '邮箱格式不正确！'
+            },
+            password: {
+                type:  /^(?![^a-zA-Z]+$)(?!\D+$).{6,14}$/,
+                msg: '请输入6-14位密码，必须包含数字和字母！',
+                fn: function(_this, prompt){
+                    var re = _this.form.find('input[name=confirmPassword]'), val = $.trim(re.val());
+                    if(val !== '' && this.value != val){
+                        prompt.err($(this), '两次输入的密码不一致！');
+                        prompt.normal(re);
+                        return false;
+                    }else{
+                        prompt.succ($(this));
+
+                        if(val !== ''){
+                            prompt.succ(re);
+                        }
+                        return true;
+                    }
+                }
+            },
+            confirmPassword: {
+                type:  /^(?![^a-zA-Z]+$)(?!\D+$).{6,14}$/,
+                msg: '请输入6-14位密码，必须包含数字和字母！',
+                fn: function(_this, prompt){
+                    var pwd = _this.form.find('input[name=password]'), val = $.trim(pwd.val());
+                    if(val !== '' && this.value != val){
+                        prompt.err($(this), '两次输入的密码不一致！');
+                        prompt.normal(pwd);
+                        return false;
+                    }else{
+                        prompt.succ($(this));
+                        
+                        if(val !== ''){
+                            prompt.succ(pwd);
+                        }
+                        return true;
+                    }
+                }
+            }
+        }
+    }).submit();
+});

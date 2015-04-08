@@ -1,0 +1,30 @@
+.accountInfo_dialog {
+  width: 680px;
+}
+.accountInfo_dialog table {
+  margin-top: 20px;
+}
+.accountInfo_dialog table tr {
+  height: 35px;
+  text-align: left;
+}
+.accountInfo_dialog table tr td {
+  border: 1px solid #b3b3b3;
+  padding-left: 10px;
+}
+.accountInfo_dialog table tr.current td {
+  background-color: #e7fff9;
+}
+.dialog {
+  width: 400px;
+}
+.dialog .dc_content {
+  padding: 20px 20px 0;
+}
+.dialog .dc_content .p1 em {
+  font-weight: bold;
+  color: #08c093;
+}
+.dialog .dc_content .i_hook {
+  vertical-align: middle;
+}

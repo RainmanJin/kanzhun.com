@@ -1,0 +1,33 @@
+@import "var";
+
+#header{
+  /* position: fixed; */
+  height: 60px;
+  background: #fff;
+  z-index: 12;
+  border-bottom: 1px solid #ccc;
+  section{
+    width: 990px;
+    margin: 0 auto;
+  }
+}
+div.container{
+  height: 1063px;
+  background: url(../images/code_bg.jpg) no-repeat left top;
+
+  h1{
+    font-size: 50px;
+    color: @white;
+    text-align: center;
+    font-weight: bold;
+    .text-shadow(0 2px 2px #000);
+    padding: 77px 0 33px 0;
+  }
+
+  div{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 60px auto;
+    .box-shadow(2px 2px 10px #000);
+  }
+}

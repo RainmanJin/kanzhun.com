@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>查看朋友公司</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="stylesheet" href="css/report.css"/>
+</head>
+
+<body>
+  <div class="form-tt" style="background-image:url(images/tt.jpg)">只要输入TA的<b>2项</b>基本信息 <br/>TA的工资状况就可以尽收眼底！</div>
+  <ul class="form-c">
+    <li>
+      <input type="text" name="" placeholder="输入TA的职位" >
+    </li>
+    <li>
+      <select name="">
+        <option value="1">选择TA的行业</option>
+        <option value="2">1</option>
+        <option value="3">2</option>
+        <option value="4">3</option>
+      </select>
+      <span></span>
+    </li>
+  </ul>
+  <p class="form-err">暂时还没有相关职位信息，请再输入一个试试吧！</p>
+
+  <p class="p10"><input type="submit" class="btn" value="立即查看"></p>
+  <p class="t-center f16">你有1次查询机会， <a href="#" class="red u-l">获取更多查询机会</a></p>
+
+<script src="js/zepto.js"></script>
+<script src="js/wx.js"></script>
+</body>
+</html>

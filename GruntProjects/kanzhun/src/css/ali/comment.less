@@ -1,0 +1,180 @@
+@import "../common/var";
+
+p {
+  &.c_tt {
+    padding: 20px 0 10px 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+
+    span {
+      color: #bcbbbb;
+      font-weight: normal;
+    }
+  }
+}
+
+strong {
+  &.ok {
+    color: #ff9503;
+  }
+
+  &.err {
+    color: red;
+  }
+}
+
+.option_sub {
+  color: #ccc;
+  input {
+    background-color: @green;
+    border: none;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  em {
+    display: inline-block;
+    padding-top: 6px;
+  }
+}
+
+div {
+  &.ipt_comment {
+    textarea {
+      width: 595px;
+      margin-bottom: 5px;
+      border: 1px solid #d9d9d9;
+      border-color: #e7e7e7;
+      border-radius: 3px;
+      background-color: #f8f8f8;
+      .box-shadow(0 0 2px #d9d9d9);
+      line-height: 1.5em;
+      height: 1.5em;
+      padding: 10px;
+      outline: 0;
+      overflow-y: hidden;
+      .transition(height .2s ease);
+      overflow: hidden;
+      *zoom: 1;
+
+      &.current {
+        border-color: @green;
+      }
+    }
+  }
+}
+
+ul.comment_list{
+  li{
+    border-bottom: 1px dashed #969595;
+    padding: 15px 0;
+
+    div.con{
+      overflow: hidden;
+      zoom: 1;
+      
+      div {
+        position: relative;
+        float: left;
+        width: 56px;
+        height: 56px;
+
+        img {
+          width: 56px;
+          height: 56px;
+        }
+
+        span {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 56px;
+          height: 56px;
+          background: url(../../images/ali_img11.png) no-repeat center;
+        }
+      }
+
+      p{
+        float: left;
+        width: 500px;
+        padding: 8px 0 0 10px;
+        color: #fff;
+
+        em{
+          display: block;
+          color: @grey_99;
+        }
+      }
+
+      aside{
+        padding-top: 8px;
+        width: 3em;
+        white-space: nowrap;
+        float: right;
+        text-align: right;
+        em{
+          display: block;
+          color: @grey_99;
+        }
+
+        a{
+          display: block;
+          color: @grey_99;
+
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+p.loading {
+  text-align: center;
+  padding: 15px 0;
+  color: #999;
+  display: none;
+}
+
+//shine
+@-webkit-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-moz-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@-ms-keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+@keyframes twinkle{
+  0%{background-color: #fff;}
+  20%{background-color: #eaacac;}
+  40%{background-color: #fff;}
+  60%{background-color: #eaacac;}
+  80%{background-color: #fff;}
+  100%{background-color: #eaacac;}
+}
+.shine{
+  .animation(twinkle .6s ease none);
+}

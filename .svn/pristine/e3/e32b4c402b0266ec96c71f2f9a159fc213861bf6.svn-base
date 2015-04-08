@@ -1,0 +1,34 @@
+
+/**
+ * Created by zcy on 2015/3/26.
+ */
+$(function(){
+    var height = $("#popup").height();
+    $("#popup").animate({ top:"-"+height+"px"},height * 50);
+
+     setTimeout(function(){
+         $.getJSON("data.json",function(data){
+
+             for(var p in data){
+                 var $li= $("#unique").clone(true);
+                 $li.children("img").attr("src","images/"+data[p].logo);
+                 $li.children(".text").html(data[p].content);
+
+                 $("#popup").append($li);
+             }
+         });
+     },10000);
+
+    /*$.getJSON("data.json",function(data){
+
+        for(var p in data){
+            var $li= $("#popup ul li").clone(true);
+            $li.children("img").attr("src","images/"+data[p].logo);
+            $li.children(".text").html(data[p].content);
+
+            $("#popup ul").append($li);
+        }
+    });*/
+
+
+});

@@ -1,0 +1,109 @@
+@import "common/var";
+@import "common/reset";
+@import "common/common";
+@import "module/animate";
+
+body,html{
+  height: 100%;
+}
+
+body{
+  background: #f8bb00 url("../images/51talk-site.jpg") no-repeat center bottom;
+  .background-size(100px);
+}
+
+.swiper-container{
+  height: 100%;
+}
+.swiper-wrapper{
+  height: 100%;
+}
+.logo{
+  width: 32%;
+  min-width: 108.5px;
+  margin: 5% 0 0 10px;
+  display: none;
+}
+.page{
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  dl{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    left: 0;
+
+    dt{
+      text-align: center;
+      img{
+        width: 100%;
+        display: none;
+      }
+    }
+    dd{
+      display: none;
+      background: url("../images/blackboard.jpg") no-repeat;
+      .background-size(100%);
+      min-height: 246.5px;
+
+      img{
+        width: 100%;
+        display: block;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+#page1{
+  text-align: center;
+  #index1{
+    margin-top: 30%;
+  }
+
+  p{
+    margin: 10% auto;
+    text-align: center;
+    display: none;
+  }
+}
+
+#page6{
+  text-align: center;
+
+  img{
+    margin: 30% auto;
+    display: block;
+  }
+}
+
+
+.slide_up{
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -13px;
+  z-index: 20;
+  i{
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+    background: url("@{img_path}/up.png") no-repeat;
+    background-size: 25px;
+    -webkit-animation: arrowsUp 1s infinite linear;
+  }
+}
+@-webkit-keyframes arrowsUp{
+  0%{
+    -webkit-transform: translate(0,0);
+  }
+  50%{
+    -webkit-transform: translate(0,-3px);
+  }
+  100%{
+    -webkit-transform: translate(0,0);
+  }
+}
+

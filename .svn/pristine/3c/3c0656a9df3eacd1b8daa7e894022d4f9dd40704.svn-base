@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>发布新职位</title>
+	<!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+	<link rel="stylesheet" href="../../css/base.css" />
+	<link rel="stylesheet" href="../../css/manage.css" />
+	<script src="../../js/utils/sort-select.js"></script>
+	<script>
+		$(function(){
+			$('.sort_select').sortSelect();
+		});
+	</script>
+</head>
+<body>
+    <header class="global">
+        <div class="header">
+            <img class="logo" src="../../images/logo.jpg"/>
+            <span class="title">企业用户专区</span  >
+            <!--<div class="user"><a href="#" class="mr15">登录</a><a href="#">注册</a></div>-->
+            <div class="user hello">
+                <dl>
+                    <dt>你好，117064092@qq.com&nbsp;<i></i></dt>
+                    <dd style="display: none;">
+                        <a ka="h_change_password" id="js_changePwd" href="javascript:;">修改密码</a>
+                    </dd>
+                </dl>
+                <em>|</em><a ka="logout" href="/logout/" class="logout"><i class="base logout"></i>退出</a>
+            </div>
+        </div>
+    </header>
+    <section class="co_header clearfix">
+        <a rel="nofollow" href="/gso36459.html" class="co_logo">
+            <img src="http://img.kanzhun.com/images/logo/20140704/96d2f08e5fe2e075d8fcdf2bf7054334.jpg" width="150" title="北汽福田汽车" alt="北汽福田汽车logo">
+            <span></span>
+        </a>
+        <div class="co_info">
+            <h2 id="companyName">北汽福田汽车</h2>
+            <p class="msg">
+                <strong>4.8</strong><span class="grey_66">分</span>&nbsp;&nbsp;<span class="grade_star_b"> <i style="width:80px;"></i>
+                    </span>946人评价
+            </p>
+            <p class="params">
+                互联网<em>|</em>杭州<em>|</em>1000-9999人
+            </p>
+        </div>
+        <nav class="clearfix">
+            <a href="" class="current">招聘管理</a><a href="">简历库</a><a href="">测评管理</a><a href="">公司管理</a><a href="">个人设置</a>
+        </nav>
+    </section>
+	<section class="manageContent">
+		<aside class="manageLeft">
+			<!--<a class="btn_green b" href="#">发布新职位</a>
+			<dl>
+				<dt> <i class="base letter"></i>
+					<span href="#">我收到的简历</span>
+				</dt>
+				<dd>
+					<a href="#">待处理简历</a>
+				</dd>
+				<dd>
+					<a href="#">已通知面试简历</a>
+				</dd>
+				<dd>
+					<a href="#">不合适简历</a>
+				</dd>
+			</dl>-->
+			<dl class="mb20">
+				<dt>
+					<i class="base flag"></i>
+					<span href="#">招聘管理</span>
+				</dt>
+				<dd class="current">
+					<a href="#">有效职位</a>
+				</dd>
+				<dd>
+					<a href="#">已下线职位</a>
+				</dd>
+
+			</dl>
+            <p class="grey_99 f_12 pl15 pr15">使用过程中有任何问题，请发送邮件到：<span class="grey_33">liuna@kanzhun.com</span></p>
+		</aside>
+		<div class="manageRight">
+			<h3 class="p_tt mt15 mb20"><!--<p>您已有 <span>3</span> 个有效职位，还可以发布 <span>7</span> 个职位</p>-->发布新职位</h3>
+			<div class="job_edit">
+				<ul>
+					<li>
+						<label><em>*</em> 职位名称</label>
+						<input type="text" class="ipt" maxlength="10">&nbsp;&nbsp;<span class="red" style="" data-msg="请输入职位名称，2-20个字"><i class="base errormsg"></i> 请输入职位名称，2-20个字</span>
+					</li>
+					<li>
+						<label>所属部门</label>
+						<input type="text" class="ipt" maxlength="10">
+					</li>
+
+					<li class="sel">
+						<label><em>*</em> 职位类别</label>
+						<dl class="sort_select">
+							<dt>
+								<input type="text" name="" value="" readonly placeholder="请选择(最多选择三项)"/><div></div><span class="btn"><i></i></span>
+							</dt>
+							<dd style="display: none">
+								<div class="close"><i class="base close_three"></i></div>
+								<div class="btn"><a href="javascript:;" class="btn_grey_s">确定</a></div>
+								<div class="s_tt">
+									<ul>
+										<li class="current">
+											<a href="javascript:;" data-node-type="default">
+												<em>请选择</em><i></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="s_tt_con"  data-node-type="first_tree">
+									<ul>
+										<li><a href="javascript:;">销售/客服/技术支持</a></li>
+										<li><a href="javascript:;">电子/通信</a></li>
+									</ul>
+								</div>
+								<div class="s_tt_con" style="display: none" data-node-type="second_tree">
+									<ul  style="display: none" >
+										<li><a href="javascript:;">销售/客服/技术支持2</a></li>
+										<li><a href="javascript:;">电子/通信</a></li>
+									</ul>
+									<ul style="display: none" >
+										<li><a href="javascript:;">销售/客服/技术支持</a></li>
+										<li><a href="javascript:;">电子/通信2</a></li>
+									</ul>
+								</div>
+								<div class="s_tt_con" style="display: none" data-node-type="third_tree">
+									<ul style="display: none" >
+										<li><a href="javascript:;">销售/客服/技术支持3</a></li>
+										<li><a href="javascript:;">电子/通信</a></li>
+										<li><a href="javascript:;">媒体/广告/出版/艺术创意</a></li>
+										<li><a href="javascript:;">财务/人力资源/行政</a></li>
+										<li><a href="javascript:;">金融</a></li>
+										<li><a href="javascript:;">服务业</a></li>
+										<li><a href="javascript:;">高级管理/项目管理</a></li>
+										<li><a href="javascript:;">房地产/建筑</a></li>
+										<li><a href="javascript:;">生产制造/造纸印刷/服装服饰</a></li>
+										<li><a href="javascript:;">市场/公关</a></li>
+										<li><a href="javascript:;">制药/医疗</a></li>
+										<li><a href="javascript:;">能源/采掘/化工/环保</a></li>
+										<li><a href="javascript:;">采购/贸易/物流/交通运输</a></li>
+										<li><a href="javascript:;">教育/培训</a></li>
+										<li><a href="javascript:;">农业/畜牧业</a></li>
+										<li><a href="javascript:;">IT/互联网</a></li>
+										<li><a href="javascript:;">咨询/法律/翻译/商标/专利</a></li>
+										<li><a href="javascript:;">公务员/实习生/其他</a></li>
+									</ul>
+									<ul style="display: none" >
+										<li><a href="javascript:;">销售/客服/技术支持</a></li>
+										<li><a href="javascript:;">电子/通信3</a></li>
+										<li><a href="javascript:;">媒体/广告/出版/艺术创意</a></li>
+										<li><a href="javascript:;">财务/人力资源/行政</a></li>
+										<li><a href="javascript:;">金融</a></li>
+										<li><a href="javascript:;">服务业</a></li>
+										<li><a href="javascript:;">高级管理/项目管理</a></li>
+										<li><a href="javascript:;">房地产/建筑</a></li>
+										<li><a href="javascript:;">生产制造/造纸印刷/服装服饰</a></li>
+										<li><a href="javascript:;">市场/公关</a></li>
+										<li><a href="javascript:;">制药/医疗</a></li>
+										<li><a href="javascript:;">能源/采掘/化工/环保</a></li>
+										<li><a href="javascript:;">采购/贸易/物流/交通运输</a></li>
+										<li><a href="javascript:;">教育/培训</a></li>
+										<li><a href="javascript:;">农业/畜牧业</a></li>
+										<li><a href="javascript:;">IT/互联网</a></li>
+										<li><a href="javascript:;">咨询/法律/翻译/商标/专利</a></li>
+										<li><a href="javascript:;">公务员/实习生/其他</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>&nbsp;&nbsp;<span class="red" style="" data-msg="请选择职位类别"><i class="base errormsg"></i> 请选择职位类别</span>
+					</li>
+					<li class="tLine radio">
+						<label><em>*</em> 工作性质</label>
+						<span class="current">全职<i></i></span><span>兼职<i></i></span><span>实习<i></i></span>
+					</li>	
+					<li>
+						<label><em>*</em> 月薪范围</label>
+						<input type="text" class="ipt m" maxlength="10" placeholder="最低月薪"><span class="ml10 mr10">K</span>
+						<input type="text" class="ipt m" maxlength="10" placeholder="最高月薪"><span class="ml10 mr10">K</span>&nbsp;<span class="red" style="" data-msg="请输入月薪范围"><i class="base errormsg"></i> 请输入月薪范围</span>
+					</li>	
+					<li>
+						<label><em>*</em> 工作城市</label>
+						<input type="text" class="ipt" maxlength="10" placeholder="请输入，如“北京”">&nbsp;&nbsp;<span class="red" style="" data-msg="请输入城市"><i class="base errormsg"></i> 请输入城市</span>
+					</li>	
+					<li class="tLine sel">
+						<label><em>*</em> 工作经验</label>
+						<dl class="select">
+					    <dt><input type="text" name="" value="1~3年" readonly /><div></div><span class="btn"><i></i></span></dt>
+					    <dd>
+					      <a href="javascript:;">职位</a>
+					      <a href="javascript:;">公司</a>
+					      <a href="javascript:;">工资</a>
+					      <a href="javascript:;">面试</a>
+					    </dd>
+					  </dl>&nbsp;&nbsp;<span class="red" style="" data-msg="请选择工作经验"><i class="base errormsg"></i> 请选择工作经验</span>
+					</li>
+					<li class="sel">
+						<label><em>*</em> 学历要求</label>
+                        <dl class="select">
+                            <dt><input type="text" name="" value="本科" readonly /><div></div><span class="btn"><i></i></span></dt>
+                            <dd>
+                                <a href="javascript:;">职位</a>
+                                <a href="javascript:;">公司</a>
+                                <a href="javascript:;">工资</a>
+                                <a href="javascript:;">面试</a>
+                            </dd>
+                        </dl>&nbsp;&nbsp;<span class="red" style="" data-msg="请输入学历要求"><i class="base errormsg"></i> 请输入学历要求</span>
+					</li>		
+					<li class="tLine good">
+						<label><em>*</em> 职位诱惑</label>
+						<div class="rGood">
+							<dl class="self">
+								<dd>网页产品经理<input name="jobLures" type="hidden" value="五险一金"><a href=""><i></i></a></dd>
+							</dl>
+							<div class="input"><input type="text" class="ipt" maxlength="10"><a href="#" class="links">添加</a></div>
+							<dl class="hot">
+								<dt>根据您发布的职位，系统为您推荐如下标签&nbsp;&nbsp;<span class="js_jobLuresMsg red" style="" data-msg=" 请添加职位诱惑"><i class="base errormsg"></i> 请添加职位诱惑</span></dt>
+								<dd>网页产品经理</dd>
+								<dd>网页产品经理</dd>
+								<dd>网页产品经理</dd>
+								<dd>网页产品经理</dd>
+							</dl>
+						</div>
+					</li>	
+					<li class="textarea">
+						<label><em>*</em> 职位描述</label>
+						<div class="tR">
+							<p class="p1">
+							(建议分条描述工作职责等。请勿输入公司邮箱、联系电话及其他外链，否则将自动删除)
+							</p>
+							<textarea class="text" rows="6" maxlength="2000"></textarea>
+						</div>&nbsp;&nbsp;<span class="red clear" data-msg="请输入20-2000字的职位描述"><i class="base errormsg"></i> 请输入20-2000字的职位描述</span>
+					</li>
+                    <li class="tLine code">
+                        <label><em class="red">*</em> 验证码</label>
+                        <input id="randomKey" name="randomKey" type="hidden" value="AWGbDfbJfg3lW3fRTM1KC1FnoixhP8WX">
+                        <input id="captcha" name="captcha" class="v ipt err" placeholder="输入验证码" ka="register_account" type="text" value="" maxlength="4" autocomplete="off"><img src="/captcha/?randomKey=AWGbDfbJfg3lW3fRTM1KC1FnoixhP8WX" onclick="changeAuthCode(this);" title="看不清？点击换一张">&nbsp;&nbsp;<span class="red clear" data-msg="请输入验证码"><i class="base errormsg"></i> 请输入验证码</span>
+                    </li>
+					<li class="sbm">
+						<span class="btn_yellow_b"><input type="submit" value="发布"></span>
+					</li>																			
+				</ul>
+			</div>	
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@import "../common/var";
+
+aside.links {
+  clear: both;
+  margin: 10px auto;
+  padding: 10px 0;
+  border-top: 1px solid @grey_e7;
+  background-color: #fff;
+  ul{
+    overflow: hidden;
+  }
+  li{
+    float: left;
+    padding: 0 10px;
+    line-height: 14px;
+    border-left: 1px solid @grey_e7;
+    margin: 5px 0 5px -1px;
+    a{
+      white-space: nowrap;
+      color: @grey_99;
+      &:hover{
+        color: @blue;
+      }
+    }
+  }
+  b{
+    margin-right: 10px;
+  }
+  p.grey_99{
+    padding-bottom: 5px;
+  }
+}

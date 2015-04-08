@@ -1,0 +1,29 @@
+<section class="auth" id="loginDialog">
+  <h3><span><a href="/register/" class="jump">立即注册<i></i></a></span>登录</h3>
+  <form id="loginForm" action="/login.json" method="post">
+    <input id="redirect" name="redirect" type="hidden" value="http://www.kanzhun.com/"/>
+    <p class="sys_err"><span></span></p>
+    <ul id="loginField">
+      <li>
+        <div>
+          <label><i class="user"></i></label><input id="account" name="account" placeholder="请输入邮箱/手机号" ka="login_account" class="ifd" type="text" value="forlala@163.com"/>
+          <p class="err" data-msg="请输入邮箱或手机号！"></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label><i class="pwd"></i></label><input id="password" name="password" placeholder="输入6-14位密码，必须含数字和字母" ka="login_password" class="ifd" type="password" value="" maxlength="14"/>
+          <p class="err" data-msg="请输入登录密码！"></p>
+        </div>
+      </li>
+    </ul>
+    <p class="agree"><a class="fright" href="/password/forgot/" target="_blank" ka="login_forgot">忘记密码？</a><input id="remember" name="remember" ka="login_remember" type="checkbox" value="true" checked="checked"/><input type="hidden" name="_remember" value="on"/><label for="remember">记住我</label></p>
+    <p><input type="submit" value="登 录" class="auth_btn" ka="login_btn"></p>
+  </form>
+  <aside>
+    <p>使用以下账号直接登录</p>
+    <p>
+      <a href="/connect/weibo/" target="_blank" ka="login_weibo"><i class="wb"></i></a><a href="/connect/qq/" ka="login_qq"><i class="qq"></i></a><a href="/connect/renren/" target="_blank" ka="login_renren"><i class="rr"></i></a>
+    </p>
+  </aside>
+</section>

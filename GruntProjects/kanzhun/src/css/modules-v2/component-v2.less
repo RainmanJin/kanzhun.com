@@ -1,0 +1,105 @@
+@import "../common/var";
+@field_icons: url("@{img}/field/field_icons.png");
+
+//icons
+.icons_base(){
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-image: @field_icons;
+  background-repeat: no-repeat;
+}
+
+i {
+	&.big_dot {
+		.icons_base;
+		width: 6px;
+		height: 6px;
+		background-position: 0 0;
+	}
+
+	&.small_dot {
+		.icons_base;
+		width: 4px;
+		height: 4px;
+		background-position: 0 -10px;
+	}
+
+	&.default_share {
+		.icons_base;
+		width: 16px;
+		height: 14px;
+		background-position: -30px 0;
+	}
+
+	&.total_ranking {
+		.icons_base;
+		width: 18px;
+		height: 18px;
+		background-position: -50px 0;
+	}
+
+	&.surpport {
+		.icons_base;
+		width: 16px;
+		height: 14px;
+		background-position: -72px 0;
+	}
+
+	&.recommend {
+		.icons_base;
+		width: 18px;
+		height: 14px;
+		background-position: -92px 0;
+	}
+}
+
+//start
+//大一点的星星（18*17）
+.green_b_star{
+	width: 94px;
+	height: 18px;
+	overflow: hidden;
+	display: inline-block;
+	font-size: 0;
+	background: @field_icons no-repeat 0 -48px;
+	line-height: 0;
+
+	i{
+		display: inline-block;
+		width: 94px;
+		height: 18px;
+		overflow: hidden;
+		display: inline-block;
+		font-size: 0;
+		background: @field_icons no-repeat 0 -28px;
+	}
+}
+
+//小一点的星星（15*15）
+.green_s_star{
+	width: 79px;
+	height: 15px;
+	overflow: hidden;
+	display: inline-block;
+	font-size: 0;
+	background: @field_icons no-repeat 0 -93px;
+	line-height: 0;
+
+	i{
+		display: inline-block;
+		width: 79px;
+		height: 15px;
+		overflow: hidden;
+		display: inline-block;
+		font-size: 0;
+		background: @field_icons no-repeat 0 -75px;
+	}
+}
+
+//线
+.f_line_only {
+	border-bottom: 1px solid #e5e5e5;
+	height: 0;
+	overflow: hidden;
+}

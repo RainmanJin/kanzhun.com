@@ -1,0 +1,66 @@
+@import "common/var";
+@import "modules/common";
+@import "modules/paging";
+@import "modules/right_con";
+@import "modules/left_con";
+
+div {
+  &.picture_news {
+    h2 {
+      a {
+        display: block;
+        padding-bottom: 10px;
+        font-weight: normal;
+        line-height: 1em;
+        font-size: 28px;
+        .ellipsis(ellipsis);
+        color: @black;
+
+        &:hover {
+          color: @blue;
+          text-decoration: none;
+        }
+      }
+    }
+
+    a.picture_news {
+      display: block;
+
+      img {
+        width: 649px;
+        height: 422px;
+      }
+    }
+
+    p {
+      &.text {
+        padding-bottom: 10px;
+        color: @grey_79;
+        font-size: 18px;
+        .ellipsis(ellipsis);
+        width: 30em;
+      }
+
+      &.tagging {
+        padding: 10px 0 10px 0;
+        font-size: 12px;
+
+        span {
+          margin-right: 20px;
+          padding: 0 1px;
+          background-color: @yellow;
+          color: #fff;
+        }
+
+        a {
+          margin-right: 20px;
+
+          &.comment {
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+

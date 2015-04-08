@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>实习生</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget-v2.css"/>
+  <link rel="stylesheet" href="../css/intern/intern.css"/>
+</head>
+
+<body>
+<section class="maskui_dialog intern-dialog intern-dialog-b" style="display: block">
+  <div class="dialog_con">
+    <a href="javascript:;" class="dialog_close"></a>
+    <div class="i-d-dd i-d-rem">
+      <div class="i-d-grey">
+        <p class="i-d-dt">产品经理</p>
+        <p>北京天天向上有限公司 - <span>广州 发布时间：2014-03-13</span></p>
+        <p>中专 <em>|</em> 全职 <em>|</em> <strong>3k-5k</strong></p>
+      </div>
+
+      <p class="i-d-jd-flag"></p>
+
+      <p>任职资格</p>
+      <p>1、美术、动画等相关专业，大专以上学历； <br/>
+        2、具有1年以上视频和影视后期包装制作经验； <br/>
+        3、熟练使用After Effects、Premiere、Photoshop、3dsmax、Maya等后期剪辑、特效、包装类软件；<br/>
+        4、熟悉视频类型及相应制作流程，有良好的构图、色彩、镜头运动感；<br/>
+        5、熟悉各种视频、音频文件格式转换编码；<br/>
+        6、具有良好的沟通能力和团队合作意识；<br/>
+        7、热爱培训行业，有IT培训行业工作经验者优先。<br/>
+      </p>
+      <p>注：简历中请附上您的近期作品，谢谢！</p>
+      <p class="line"></p>
+      <p class="t-center mt20 pt10"><a class="btn_o_l" href="">&nbsp;&nbsp;&nbsp;&nbsp;投递实习职位&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="maskui_dialog intern-dialog" style="display: block;">
+  <div class="dialog_con">
+    <a href="javascript:;" class="dialog_close"></a>
+    <dl>
+      <dt class="i-d-dt">如果您对该职位感兴趣，请留下您的信息</dt>
+      <dd class="i-d-dd form-def i-d-yours">
+        <form action="#">
+          <ul>
+            <li>
+              <label class="def"><em>*</em> 姓名</label> <input type="text" class="ifd" name="" maxlength="30" value=""  >
+              <p class="err" data-msg="请输入姓名！" ></p>
+            </li>
+
+            <li>
+              <label class="def"><em>*</em> 性别</label>
+              <p class="f-def-radio">
+                <input type="radio" name="gender" id="male" class="mr10" value="1" checked="checked"><label for="male">男</label>
+                <input type="radio" name="gender" id="female" class="ml15 mr10" value="2"><label for="female">女</label>
+              </p>
+            </li>
+
+            <li>
+              <label class="def"><em>*</em> 学校名称</label> <input type="text" class="ifd" name="" maxlength="30" value="" >
+              <p class="err" data-msg="请输入！" ></p>
+            </li>
+
+            <li>
+              <label class="def"><em>*</em> 专业</label> <input type="text" class="ifd" name="" maxlength="30" value="" >
+              <p class="err" data-msg="请输入！" ></p>
+            </li>
+
+            <li>
+              <label class="def"><em>*</em> 学历</label> <input type="text" class="ifd" name="" maxlength="30" value="" >
+              <p class="err" data-msg="请输入！" ></p>
+            </li>
+
+            <li style="z-index: 8;">
+              <label class="def"><em>*</em> 时间</label>
+              <dl class="select select_s">
+                <dt>
+                  <input type="hidden" name="" value="" class="v" data-necessary="1">
+                  <input type="button" name="" value="年" readonly="readonly"><span class="btn"><i></i></span>
+                </dt>
+                <dd>
+                  <a href="javascript:;" rel="nofollow" data-val="7">1</a>
+                </dd>
+              </dl>
+              <span class="f-d-dash">--</span>
+              <dl class="select select_s">
+                <dt>
+                  <input type="hidden" name="" value="" class="v" data-necessary="1">
+                  <input type="button" name="" value="年" readonly="readonly"><span class="btn"><i></i></span>
+                </dt>
+                <dd>
+                  <a href="javascript:;" rel="nofollow" data-val="7">1</a>
+                </dd>
+              </dl>
+              <p class="err" data-msg="请选择工作年限！"></p>
+            </li>
+
+            <li>
+              <label class="def"><em>*</em> 联系电话</label> <input type="text" class="ifd" name="" maxlength="30" value="" >
+              <p class="err" data-msg="请输入！" ></p>
+            </li>
+
+            <li>
+              <label class="def"><em>*</em> 常用邮箱</label> <input type="text" class="ifd" name="" maxlength="30" value="" >
+              <p class="err" data-msg="请输入！" ></p>
+            </li>
+
+            <li class="auto_h">
+              <label class="def"><em>*</em> 自我介绍</label>
+              <textarea name=""  rows="4" ></textarea>
+              <p class="err" data-msg="请输入！" ></p>
+            </li>
+
+            <li>
+              <label class="def"></label>
+              <input type="submit" value="&nbsp;&nbsp;确定&nbsp;&nbsp;" class="btn_o_l mr20">
+              <a class="grey_99" href="#">取消</a>
+            </li>
+          </ul>
+        </form>
+      </dd>
+    </dl>
+  </div>
+</section>
+
+<section class="maskui_dialog intern-dialog" style="display: block;">
+  <div class="dialog_con">
+    <a href="javascript:;" class="dialog_close"></a>
+    <dl>
+      <dt class="i-d-dt">如果您对该实习生感兴趣请留下您的信息</dt>
+      <dd class="i-d-dd form-def i-d-its">
+        <form action="${pageContext.request.contextPath}/internship/job/totrainee.json">
+          <input type="hidden" name="internshipTraineeId" />
+          <input type="hidden" name="randomKey" value="${randomKey}" />
+          <ul>
+            <li>
+              <label class="def"><em>*</em> 常用邮箱</label> <input type="text" class="ifd" name="email" maxlength="30" value="" placeholder="如果您对该实习生感兴趣，请留下您的邮箱" >
+              <p class="err" data-msg="请输入常用邮箱！" ></p>
+            </li>
+
+            <li class="auto_h">
+              <label class="def"><em>*</em> 详情</label>
+              <textarea name="description"  rows="4" placeholder="我对您/您的职位非常感兴趣，请您联系我！"></textarea>
+              <p class="err" data-msg="请输入详情！" ></p>
+            </li>
+
+            <li>
+              <label class="def"><em>*</em> 验证码</label>
+              <img src="/captcha/?randomKey=${randomKey}" title="看不清？点击换一张" height="35" class="ml20" />
+              <input type="text" class="ifd ifd-short" name="captcha" placeholder="请输入验证码" maxlength="4"  />
+            </li>
+
+            <li>
+              <label class="def"></label>
+              <input type="submit" value="&nbsp;&nbsp;确定&nbsp;&nbsp;" class="btn_o_l mr20">
+              <a class="grey_99" href="#">取消</a>
+            </li>
+          </ul>
+        </form>
+      </dd>
+    </dl>
+  </div>
+</section>
+
+<section class="maskui_dialog intern-dialog" style="display: block;">
+  <div class="dialog_con">
+    <a href="javascript:;" class="dialog_close"></a>
+      <dl>
+        <dt class="i-d-dt">提示</dt>
+        <dd class="i-d-dd t-center">
+          <p class="f_18"><i class="suc_p"></i>发送成功！</p>
+          <p>请您及时查看您的邮箱以查看反馈！</p>
+          <p class="mt20"><a class="btn_grey_b" href="javascript:;">&nbsp;&nbsp;确定&nbsp;&nbsp;</a></p>
+        </dd>
+      </dl>
+  </div>
+</section>
+
+<section class="maskui_dialog intern-dialog" style="display: block;">
+  <div class="dialog_con">
+    <a href="javascript:;" class="dialog_close"></a>
+    <dl>
+      <dt class="i-d-dt">简历</dt>
+      <dd class="i-d-rem i-d-dd">
+        <p style="font-size: 26px;">张女士 <span>的简历</span></p>
+        <p>女 <em>|</em> 32岁 <em>|</em> 本科</p>
+
+        <p class="i-d-tt">基本信息</p>
+        <p><span>实习意向：</span>  互联网产品专员/助理、互联网产品经理/主管 </p>
+        <p><span>期望行业：</span>  互联网/电子商务</p>
+        <p><span>实习时间：</span>  2014年12月</p>
+
+        <p class="i-d-tt">教育经历</p>
+        <p>2013/08 -- 2014/04</p>
+        <p>北京工商大学 </p>
+        <p>工业设计-产品设计方向 <em>|</em> 本科</p>
+
+        <p class="i-d-tt">自我介绍</p>
+        <p>自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍</p>
+
+        <p class="t-center mt20 pt10"><a class="btn_o_l" href="">&nbsp;&nbsp;&nbsp;&nbsp;联系该实习生&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+      </dd>
+    </dl>
+  </div>
+</section>
+
+
+</body>
+</html>

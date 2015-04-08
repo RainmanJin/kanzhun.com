@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>UGC-发评论</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/ugc.css" />
+<script src="../js/require.js" data-main="../js/site/ugc.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<p class="loginfo"><a href="#">我的看准</a><i>|</i><a href="#">退出</a></p>
+		</div>
+	</header>
+	
+	
+
+	<div class="ugc clearfix">
+		<header>
+			<img src="../images/anonymous.jpg" /><img src="../images/ugc-tt-r.jpg" />
+		</header>
+
+		<section class="ugc_l">
+			<p class="line_d"></p>
+			<fieldset class="ground g_rv_co">
+				<ul>
+					<li><label>公司名称</label> <input type="text" class="uf" /></li>
+					<li><label>城市</label> <input type="text" class="uf" /></li>
+				</ul>
+				
+				<figure>
+					<span></span>
+					<p>4.0分 <br>来自235条信息</p>
+				</figure>
+			</fieldset>
+
+			<fieldset class="ground">
+				<p><a href="#" class="status mb15 mr10">目前<br>在易宝支付工作</a><a href="#" class="status_checked mb15 ml20">曾经<br>在易宝支付工作</a></p>
+				<div class="date clearfix">
+					<dl class="select select_s" style="z-index:2">
+						<dt><input type="text" name="" value="1998年" readonly="readonly" /><span class="btn"><i></i></span></dt>
+						<dd>
+							<a href="#">1000年</a>
+							<a href="#">1000年</a>
+							<a href="#">1000年</a>	
+							<a href="#">1000年</a>
+						</dd>
+					</dl>
+					<dl class="select select_s" style="z-index:2">
+						<dt><input type="text" name="" value="1999年" readonly="readonly" /><span class="btn"><i></i></span></dt>
+						<dd>
+							<a href="#">2000年</a>
+							<a href="#">2000年</a>
+							<a href="#">2000年</a>	
+							<a href="#">2000年</a>
+						</dd>
+					</dl>
+					<strong>进入易宝支付</strong>
+				</div>
+
+				<div class="date clearfix">
+					<dl class="select select_s">
+						<dt><input type="text" name="" value="1998年" readonly="readonly" /><span class="btn"><i></i></span></dt>
+						<dd>
+							<a href="#">1000年</a>
+							<a href="#">1000年</a>
+							<a href="#">1000年</a>	
+							<a href="#">1000年</a>
+						</dd>
+					</dl>
+					<dl class="select select_s">
+						<dt><input type="text" name="" value="1999年" readonly="readonly" /><span class="btn"><i></i></span></dt>
+						<dd>
+							<a href="#">2000年</a>
+							<a href="#">2000年</a>
+							<a href="#">2000年</a>	
+							<a href="#">2000年</a>
+						</dd>
+					</dl>
+					<strong>离开易宝支付</strong>
+				</div>
+			</fieldset>
+
+			<fieldset class="ground mt20">
+				<ul>
+					<li><label>职位</label> <input type="text" class="uf" placeholder="产品经理" /><span class="prompt">该公司已存在， <a href="#">查看公司</a></span></li>
+				</ul>
+			</fieldset>
+			<p class="line_d"></p>
+			<p class="t-center mt20"><input type="submit" value="下一步" class="btn_o_g"></p>
+		</section>
+
+		<section class="ugc_r">
+			<dl class="example">
+				<dt><a href="#" class="close_example"></a><i></i></dt>
+				<dd>
+					<p>1、你提供的工资福利信息是完全匿名的，不属于你的发言，但将被作为与公司相关的信息进行显示，以便于其他用户查询。 </p>
+					<p>2、你提供的工资福利信息是完全匿名的，不属于你你的发言你的发言你的发言你的发言你的发言你的发言你的发言的发言。</p>
+				</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>

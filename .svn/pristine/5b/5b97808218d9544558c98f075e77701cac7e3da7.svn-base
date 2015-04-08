@@ -1,0 +1,32 @@
+span {
+  /*
+  //分享
+  &.u_share {
+    .icons_v1_base;
+    width: 16px;
+    height: 13px;
+    background-position: -74px -198px;
+  }*/
+}
+span.u_feel_helpful {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-image: url(../images/manage_icons.png);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 13px;
+  background-position: -110px -198px;
+  margin-right: 5px;
+}
+span.u_comment {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-image: url(../images/manage_icons.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 13px;
+  background-position: -92px -198px;
+  margin-right: 5px;
+}

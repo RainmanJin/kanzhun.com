@@ -1,0 +1,12 @@
+<!--公司模块-右侧-平均工资入口/点评-->
+
+<div class="wrap_style average mb15">
+    <h2 class="title">淘宝平均工资<a href="">查看详细&gt;</a></h2>
+
+    <div class="item">
+        <p class="t">平均 <span>￥11,580</span></p>
+        <div>比同行业平均水平<span><i class="tangle_init"></i>高30%</span></div>
+        <p class="t-center mt10">来自28个样本</p>
+    </div>
+
+</div>

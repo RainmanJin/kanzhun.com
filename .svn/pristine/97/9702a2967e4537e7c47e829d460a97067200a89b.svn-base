@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>我的看准</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+  <link rel="stylesheet" href="../css/profile.css" />
+<script src="../js/require.js" data-main="../js/site/openDialogs.js"></script>
+</head>
+
+<body>
+<p class="mb20 ml20 mt20">
+	<input type="button" value="静态DIALOG" class="btn_grey_b" id="btn1" />
+	<input type="button" value="动态DIALOG" class="btn_grey_b" id="btn2" />
+	<input type="button" value="ALERT" class="btn_grey_b" id="btn3" />
+	<input type="button" value="CONFIRM" class="btn_grey_b" id="btn4" />
+  <input type="button" value="closeCallback" class="btn_grey_b" id="btn5" />
+</p>
+	
+	<section class="p_dialog" id="profileDialog">
+		<div class="dialog_con">
+			<a href="#" class="dialog_close maskuiclose"></a>
+				<h3>修改邮箱</h3>
+				<form action="xxxxx.json" method="post" id="modifyEmailForm" autocomplete="off">
+					<ul class="profile_form">
+						<li>
+							<span class="field"><input type="text" name="aaa" placeholder="不是必填，不用验证" /></span><i></i>
+							<p class="err" data-msg="xxx不能为空！"></p>
+						</li>
+						<li>
+							<span class="field"><input type="text" name="bbb" placeholder="不是必填项，填了就必须验证" data-v="isMail" data-unnecessary="1" class="v"  /></span><i></i>
+							<p class="err" data-msg="xxx不能为空！"></p>
+						</li>
+						<li>
+							<span class="field"><input type="text" name="mail" placeholder="输入邮箱" data-v="isMail" class="v" /></span><i></i>
+							<p class="err" data-msg="邮箱不能为空！"></p>
+						</li>
+						<li>
+							<span class="field"><input type="text" name="phone" placeholder="输入手机号" data-v="isPhone" class="v"  /></span><i></i>
+							<p class="err" data-msg="手机不能为空！"></p>
+						</li>
+						<li>
+							<span class="field"><input type="text" name="password" placeholder="看准网密码" data-v="pwd"  class="v" /></span><i></i>
+							<p class="err" data-msg="密码不能为空！"></p>
+						</li>
+						<li>
+							<span class="field"><input type="text" name="repassword" placeholder="确认密码" data-v="repwd"  class="v" /></span><i></i>
+							<p class="err" data-msg="确认密码不能为空！"></p>
+						</li>
+						<li><input type="submit" value="确定" class="btn_grey_s" /> <a href="#" class="a_grey ml15 maskuiclose">取消</a></li>
+					</ul>
+				</form>
+		</div>
+	</section>
+
+	<section class="p_dialog">
+		<div class="dialog_con">
+			<a href="#" class="dialog_close maskuiclose"></a>
+		</div>
+	</section>
+
+	
+
+</body>
+</html>

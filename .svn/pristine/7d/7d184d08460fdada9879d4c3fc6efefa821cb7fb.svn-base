@@ -1,0 +1,154 @@
+@import "../../common/var";
+
+dl.interview_detail {
+  overflow: hidden;
+  *zoom: 0;
+
+  & > dt {
+    float: left;
+    position: relative;
+
+    img {
+      width: 56px;
+      height: 56px;
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 56px;
+      height: 56px;
+      background: url(../images/positionimgs/po_imgs1.png) no-repeat left top;
+    }
+  }
+
+  & > dd {
+    margin-left: 70px;
+
+    &.i_tt {
+      overflow: hidden;
+      *zoom: 1;
+
+      em {
+        display: block;
+        float: left;
+      }
+
+      h3 {
+        float: left;
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+    
+    &.i_con {
+      position: relative;
+      padding: 15px;
+      border: 1px solid @grey_e7;
+
+      & > span {
+         &.triangleEdge {
+          left: -10px;
+          top: 10px;
+          border-width: 10px 10px 10px 0;
+          border-style: dashed solid;
+          border-color: transparent @grey_e7 transparent  transparent; 
+        }
+        
+        &.triangleCon {
+          left: -9px;
+          top: 10px;
+          border-width: 10px 10px 10px 0;
+          border-style: dashed solid;
+          border-color: transparent #fff transparent  transparent; 
+        } 
+      }
+
+      h4 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: normal;
+
+        a.cmp_logos {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          padding: 2px;
+          margin-right: 10px;
+          background-color: #fff;
+          border: 1px solid #E7E7E7;
+          font-size: 0;
+          text-align: center;
+          overflow: hidden;
+          vertical-align: middle;
+
+          img {
+            width: 30px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          span {
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      strong {
+        display: block;
+        padding-bottom: 5px;
+      }
+
+      dl.i_questions {
+        overflow: hidden;
+        *zoom: 1;
+
+        dt {
+          float: left;
+        }
+
+        dd {
+          margin-left: 55px;
+        }
+      }
+
+      p.comments {
+        em.line {
+          color: @grey_e7;
+        }
+      }
+
+      div.i_filterblur {
+        height: 200px;
+        background: url(../images/positionimgs/po_imgs3.jpg) no-repeat left center;
+        padding-top: 1px;
+
+        div {
+          margin: 20px auto 0 auto;
+          width: 380px;
+          border: 1px solid #cfcfcf;
+          padding: 32px 0;
+          text-align: center;
+          background: #fff url(../images/ugc_interrupt.jpg) no-repeat 15px bottom;
+
+          h5{
+            font-size: 15px;
+            margin-bottom: 15px;
+            font-weight: normal;
+          }
+
+          p {
+            text-align: right;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

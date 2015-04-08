@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ali</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<!-- <script type="text/javascript">
+	window.CONTEXTPATH=location.host;
+</script> -->
+<link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/ali/question.css" />
+<script src="../js/require.js" data-main="../js/site/ali/question.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	<section class="qa_bg">
+		<div class="qa_content">
+			<h3><是阿里人都知道>测试</h3>
+			<div class="qc">
+				<div class="qc_l"></div>
+				<div class="qList" id="q_list">
+					<ul class="clearfix">
+						<li class="qc_c" data-num="1">
+							<div class="qcc_bg"></div>
+							<div class="ql_up">
+								<i class="i i_tip"><em>1</em>/5</i>
+								<dl class="dl_q">
+									<dt>华星科技著名的快餐是_____：</dt>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											蓝草莓
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											红草莓
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											红苹果
+										</a>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="qc_c" data-num="2">
+							<div class="qcc_bg"></div>
+							<div class="ql_up">
+								<i class="i i_tip"><em>2</em>/5</i>
+								<a class="prev" href="javascript:;">
+									<i class="i i_rl"></i>
+								</a>
+								<dl class="dl_q">
+									<dt>淘宝创始团队的入职必备要求之一是_____</dt>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											三大
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											游泳
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											倒立
+										</a>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="qc_c" data-num="3">
+							<div class="qcc_bg"></div>
+							<div class="ql_up">
+								<i class="i i_tip"><em>3</em>/5</i>
+								<a class="prev" href="javascript:;">
+									<i class="i i_rl"></i>
+								</a>
+								<dl class="dl_q">
+									<dt>阿里巴巴最著名的休闲组织是_____</dt>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											MM club
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											GG club
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											DD club
+										</a>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="qc_c" data-num="4">
+							<div class="qcc_bg"></div>
+							<div class="ql_up">
+								<i class="i i_tip"><em>4</em>/5</i>
+								<a class="prev" href="javascript:;">
+									<i class="i i_rl"></i>
+								</a>
+								<dl class="dl_q">
+									<dt>2003年非典时期阿里巴巴唯一没有被隔离的团队是_____</dt>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											口碑团队
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											支付宝团队
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											淘宝团队
+										</a>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li class="qc_c" data-num="5">
+							<div class="qcc_bg"></div>
+							<div class="ql_up">
+								<i class="i i_tip"><em>5</em>/5</i>
+								<a class="prev" href="javascript:;">
+									<i class="i i_rl"></i>
+								</a>
+								<dl class="dl_q">
+									<dt>淘宝十周年庆，马总造了一个关键字是_____</dt>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											明空
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											阿里
+										</a>
+									</dd>
+									<dd>
+										<a href="javascript:;">
+											<span class="bg"></span>
+											亲心
+										</a>
+									</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>					
+				</div>
+				<div class="qc_r"></div>
+			</div>
+			<div class="qa_bottom">
+				<p class="p1">不是阿里厂工...</p>
+				<p class="p2">
+					进入票选现场，投出你最感兴趣的问题
+					<a href="#">进入票选现场>></a>
+				</p>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

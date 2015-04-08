@@ -1,0 +1,174 @@
+@import "../common/var";
+
+.p_dialog{
+	width: 480px;
+	background-color: #e9e9e9;
+	background-color: rgba(233, 233, 233, 0.8);
+	padding: 8px;
+	border-radius: 8px;
+	.box-shadow(0 0 10px #666);
+	display: none;
+
+	h3.poptitle {
+		font-size: 18px;
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+
+	.dialog_con{
+		position: relative;
+		border: 1px solid #a0a0a0;
+		min-height: 100px;
+		_height: 100px;
+		background-color: #fff;
+		padding: 10px 20px 20px 20px;
+	}
+
+	.dialog_close {
+		width: 23px;
+		height: 23px;
+		display: inline-block;
+		position: absolute;
+		background: transparent url(../../images/manage_icons.png) no-repeat -120px 0;
+		right: 10px;
+		top: 10px;
+		.transition(all .2s linear);
+		
+
+		&:hover{
+			background-color: #eee;
+		}
+	}
+
+	h3{
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	.dialog_alert {
+    padding: 20px 0;
+    text-align: center;
+
+    p{
+      margin-top: 20px;
+    }
+  }
+
+  .dialog_resume_ret{
+		p{
+			&.d_con {
+				margin-top: 20px;
+			}
+		}
+
+		.email_con {
+			width: 310px;
+			height: 80px;
+			padding: 10px;
+			border: 1px solid @grey_99;
+			overflow-y: auto;
+			zoom: 1;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+      line-height: 1.5em;
+		}
+
+		ul {
+			li {
+				margin-bottom: 10px;
+				overflow: hidden;
+				zoom: 1;
+
+				div.email_con {
+					float: right;
+					width: 310px;
+					margin-right: 35px;
+
+					textarea {
+						font-size: 14px;
+						width: 310px;
+					}
+				}
+
+				&.options {
+					margin: 30px 0 0 71px;
+				}
+			}
+		}
+	}
+
+  .r_confirm{
+    text-align: left;
+
+    strong{
+      display: block;
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .reset{
+    border: 0;
+    color: @blue;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+
+  p{
+    &.err{
+      color: @red;
+      padding: 2px 0 2px;
+      display: none;
+    }
+  }
+
+  .resume_err{
+    p.err{
+      padding: 2px 0 2px 6em;
+    }
+  }
+}
+
+.interview_notice {
+	width: 590px;
+
+	.dialog_con {
+		padding-right: 10px;
+	}
+}
+
+.select_point {
+	p{
+		margin-right: -10px;
+	}
+  a {
+    display: inline-block;
+    zoom: 1;
+    width: 8em;
+    height: 30px;
+    line-height: 30px;
+    //padding: 0 15px;
+    padding: 0 2px;
+    margin: 0 10px 10px 0;
+    background-color: #ededed;
+    text-align: center;
+    color: @grey_99;
+
+    &:hover {
+      background-color: @green;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }	
+}
+
+.changepwd {
+	width: 450px;
+	
+	.dialog_alert {
+		padding-left: 35px;
+	}
+}
+

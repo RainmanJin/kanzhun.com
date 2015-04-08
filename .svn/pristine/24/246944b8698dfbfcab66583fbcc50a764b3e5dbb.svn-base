@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/q1.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+</head>
+<body>
+    <header>
+        <h3>3/3</h3>
+        <img src="images/logo.png" class="logo"/>
+        <img src="images/q1/person.png" class="person"/>
+    </header>
+
+    <section id="page3" class="swiper-slide">
+        <h2>Q3.请选择您每天加班时间</h2>
+
+        <div class="times">
+            <button class="btn1 btn">
+                <!--<img src="images/q3/one.png" class="word"/>-->
+                <p class="word">
+                    <em>每天少于 <i>1</i>小时</em>
+                </p>
+                <img src="images/q3/tip1.png" class="tip"/>
+            </button>
+            <button class="btn2 btn">
+                <!--<img src="images/q3/two.png" class="word"/>-->
+                <p class="word">
+                    <em>每天 <i>2</i>小时加班</em>
+                </p>
+                <img src="images/q3/tip2.png" class="tip"/>
+
+            </button>
+            <button class="btn3 btn">
+                <!--<img src="images/q3/three.png" class="word"/>-->
+                <p class="word">
+                    <em>每天 <i>3</i>小时加班</em>
+                </p>
+                <img src="images/q3/tip3.png" class="tip"/>
+            </button>
+            <button class="btn4 btn">
+                <!--<img src="images/q3/four.png" class="word"/>-->
+                <p class="word">
+                    <em>每天 <i>4</i>小时加班</em>
+                </p>
+                <img src="images/q3/tip4.png" class="tip"/>
+            </button>
+            <button class="btn5 btn">
+                <!--<img src="images/q3/five.png" class="word"/>-->
+                <p class="word">
+                    <em>每天 <i>5</i>小时及以上</em>
+                </p>
+                <img src="images/q3/tip5.png" class="tip"/>
+            </button>
+        </div>
+        <div class="result">
+            <a href="result.html" class="submit">
+                查看结果
+            </a>
+        </div>
+    </section>
+    </div>
+    </section>
+    <script type="text/javascript" src="js/lib/zepto.js"></script>
+    <script type="text/javascript" src="js/site/q3.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@import "../../common/var";
+
+&.po_header {
+  *z-index: 2;
+  position: relative;
+  width: 990px;
+  background-color: #fff;
+  margin: 15px auto 0 auto;
+
+  div.po_name {
+    padding: 30px 0 0 20px;
+    h1 {
+      float: left;
+      font-size: 26px;
+      color: #000;
+    }
+
+    dl.po_other {
+      position: relative;
+      left: 15px;
+      top: 10px;
+      z-index: 4;
+
+      dt {
+        font-size: 16px;
+        cursor: pointer;
+
+        i {
+          border-width: 6px 5px 0 5px;
+          border-style: solid;
+          border-color: #6f6e6e transparent transparent transparent;
+          margin-left: 5px;
+          .transition(all .2s linear);
+          //.transform(rotate(90deg));
+          vertical-align: 1px;
+          
+          &.rotate_jiao {
+            .transform(rotate(180deg));
+          }
+        }
+      }
+
+      dd {
+        position: absolute;
+        left: 0;
+        top: 25px;
+        padding-top: 14px;
+
+        ul {
+          /* margin-top: 14px; */
+          padding: 15px 0 15px 20px;
+          width: 240px;
+          background-color: #fff;
+          border: 1px solid @grey_e7;
+          overflow: hidden;
+          *zoom: 1;
+
+          li {
+            .ellipsis(ellipsis);
+            width: 100px;
+            margin-right: 20px;
+            float: left;
+            
+            a {
+              color: @def;
+            }
+          }
+        }
+        
+        & > span {
+          &.triangleEdge {
+            left: 25px;
+            top: 5px;
+            border-width: 0 10px 10px 10px;
+            border-style: solid dashed;
+            border-color: transparent transparent @grey_e7 transparent; 
+          }
+
+          &.triangleCon {
+            left: 25px;
+            top: 6px;
+            border-width: 0 10px 10px 10px;
+            border-style: solid dashed;
+            border-color: transparent transparent #fff transparent; 
+          }
+        }
+      }
+    }
+  }
+
+  nav{
+    height: 40px;
+    line-height: 40px;
+    background-color: @grey_6e;
+
+    a{
+      float: left;
+      width: 110px;
+      font-size: 17px;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      border-right: 1px solid #999999;
+      white-space: nowrap;
+
+      &:last-child{
+        border-right: 0;
+      }
+
+      &:hover{
+        text-decoration: none;
+      }
+      &.current{
+        background-color: @green;
+        border: 1px solid @green;
+        border-radius: 2px;
+        position: relative;
+        top: -1px;
+        left: -1px;
+      }
+    }
+
+    &.fixed_nav {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      width: 990px;
+      margin-left: -495px;
+      z-index: 22;
+    }
+  }
+
+  p.params {
+    padding: 10px 0 25px 20px;
+
+    em {
+      margin: 0 5px;
+      color: @grey_e7;
+    }
+  }
+}

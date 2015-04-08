@@ -1,0 +1,58 @@
+header.page_hd {
+  padding: 9px 10px;
+  text-align: center;
+  background-color: #7cb228;
+  position: relative;
+}
+header.page_hd strong {
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+}
+header.page_hd a {
+  width: 60px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #96c153;
+  border-radius: 2px;
+  color: #fff;
+  position: absolute;
+}
+header.page_hd a.fleft,
+header.page_hd a.top_back {
+  left: 10px;
+}
+header.page_hd a.fright {
+  right: 10px;
+}
+header.page_hd a.top_back {
+  float: left;
+}
+header.page_hd a.top_back i {
+  width: 7px;
+  height: 12px;
+  background: transparent url(../images/icons_2.png) no-repeat 0 -35px;
+  display: inline-block;
+  vertical-align: -1px;
+  -webkit-background-size: 100px;
+  -moz-background-size: 100px;
+  -o-background-size: 100px;
+  background-size: 100px;
+  margin-right: 5px;
+}
+header.page_hd .menu {
+  display: block;
+  left: 10px;
+  width: 40px;
+  height: 36px;
+  padding: 9px 10px 0 0;
+  border: 0;
+  top: 0;
+}
+header.page_hd .menu img {
+  border: 1px solid #96c153;
+  padding: 5px 10px;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+}

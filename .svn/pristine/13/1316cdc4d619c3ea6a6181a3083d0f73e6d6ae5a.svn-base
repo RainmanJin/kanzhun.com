@@ -1,0 +1,35 @@
+@import "../common/var";
+@import "../modules/reset";
+@import "../common/effect";
+
+body{
+  background-color: #fff;
+}
+h2{
+  &.title{
+    margin-top: 60px;
+  }
+}
+div.banner{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.bt_orange{
+  background-color: #f38100;
+  height: 35px;
+  line-height: 35px;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 0;
+  &:hover{
+    text-decoration: none;
+    background-color: #fa8712;
+  }
+}

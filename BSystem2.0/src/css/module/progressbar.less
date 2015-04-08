@@ -1,0 +1,47 @@
+@import "../common/var";
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+ul.progress {
+  padding-top: 60px;
+  padding-bottom: 45px;
+
+  li{
+    &.step {
+      width: 646px;
+      height: 32px;
+      background-image: url(../images/v2/progress_bar_v2.png);
+      background-repeat: no-repeat;
+    }
+
+    &.onestep {
+      background-position: left top;
+    }
+
+    &.twostep {
+      background-position: left -37px;
+    }
+
+    &.threestep {
+      background-position: left -74px;
+    }
+
+    &.words{
+      //padding-left: 15px;
+      margin-top: 5px;
+    }
+  }
+
+  em {
+    display: inline-block;
+    width: 209px;
+    text-align: center;
+
+    &.current {
+      color: @green;
+    }
+  }
+}

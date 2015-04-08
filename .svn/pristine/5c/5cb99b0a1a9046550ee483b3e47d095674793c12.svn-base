@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>confession</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/confession.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <header><img src="images/banner-s.jpg" /></header>
+  <section class="content">
+    <h3>帮助成功！</h3>
+    <p class="bd">抢话费这种事儿，怎么能少得了我呢？</p>
+    <p class="f16 mt20 t-center mb20 grey">参加看准网“你表白，我买单”活动， <br/>
+      即可获得5元、50元、100元话费中的一种。</p>
+
+    
+    <p class="pt15"><a class="btn bt_transmit" href="javascript:;">我也要抢</a></p>
+  </section>
+</div>
+
+<script src="js/zepto.js"></script>
+<script src="js/wx_c.js"></script>
+</body>
+</html>

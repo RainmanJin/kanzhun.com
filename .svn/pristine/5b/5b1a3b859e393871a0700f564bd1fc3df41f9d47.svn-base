@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ali</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<!-- <script type="text/javascript">
+	window.CONTEXTPATH=location.host;
+</script> -->
+<link rel="stylesheet" href="../css/widget.css" />
+<link rel="stylesheet" href="../css/ali/index.css" />
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	<div class="index_banner">
+		<a class="enter" href="#">进入票选现场</a>
+	</div>
+	<div class="index_content">
+		<ul class="clearfix">
+			<li class="li_l">
+				<a class="round_l" href="#"></a>
+				<p>阿里厂工提问马云<p>
+			</li>
+			<li class="li_c">
+				<a class="round_c" href="#"></a>
+				<p>全民票选决定现场提问</p>
+			</li>
+			<li class="li_r">
+				<a class="round_r" href="#"></a>
+				<p>马云现场解答问题</p>
+			</li>
+		</ul>
+		<div class="index_time clear">
+			<img src="../images/ali/index_time.jpg">
+		</div>
+	</div>
+</body>
+</html>

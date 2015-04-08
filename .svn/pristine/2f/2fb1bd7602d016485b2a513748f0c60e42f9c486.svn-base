@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>UGC-发布公司环境照片</title>
+		<!--[if lte IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!--[if gt IE 9]><!-->
+		<script src="../js/jquery-2.1.0.min.js"></script>
+		<![endif]-->
+        <link rel="stylesheet" href="../css/ugc.css" />
+        <script src="../js/require.js" data-main="../js/site/ugc.js"></script>
+	</head>
+
+	<body>
+		<header class="global">
+			<div class="header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<p class="loginfo"><a href="#">我的看准</a><i>|</i><a href="#">退出</a></p>
+			</div>
+	    </header>
+
+	    <div class="ugc clearfix">
+	    	<header>
+				<img src="../images/anonymous.jpg" /><img src="../images/ugc-ce-tt.jpg" />
+			</header>
+
+			<section class="ugc_l">
+				<p class="line_d"></p>
+				<fieldset class="ground g_rv_co">
+                	<ul>
+                		<li>
+                			<label>公司名称</label>
+                			<input type="text" class="uf textshadow" placeholder="易宝支付"/>
+                		</li>
+                		<li>
+                			<label>城市</label>
+                			<input type="text" class="uf textshadow" placeholder="北京"/>
+                		</li>
+                	</ul>
+                	<figure>
+                		<span class="s_score"><img src="../images/img-06.jpg" /></span><p>4.0分<br>来自345条信息</p>
+                	</figure>
+                </fieldset>
+
+                <fieldset class="ground g_rv_co">
+                	<ul>
+                		<li>
+                			<label class="cphoto"><img src="../images/img_cphoto.jpg" /></label>
+                			<textarea name="" class="photodetail" placeholder="输入照片描述（可选）"></textarea>
+                		</li>
+                		<p class="line_d"></p>
+                		<li>
+                			<label class="cphoto"><img src="../images/img_cphoto.jpg" /></label>
+                			<textarea name="" class="photodetail" placeholder="输入照片描述（可选）"></textarea>
+                		</li>
+                		<p class="line_d"></p>
+                	</ul>
+                	<p class="t-right mb10"><a href="#" class="btn_grey_b">+添加照片</a></p>
+                </fieldset>
+
+                <p class="line_d"></p>
+			    <p class="t-center mt20"><input type="submit" value="下一步" class="btn_o_g"></p>
+
+			</section>
+
+			<section class="ugc_r">
+				<dl class="example ce_example">
+					<dt><a href="#" class="close_example"></a><i></i></dt>
+					<dd>
+						<p>1、你提供的工资福利信息是完全匿名的，不属于你的发言，但将被作为与公司相关的信息进行显示，以便于其他用户查询。 </p>
+						<p>2、你提供的工资福利信息是完全匿名的，不属于你你的发言你的发言你的发言你的发言你的发言你的发言你的发言的发言。</p>
+					</dd>
+				</dl>
+			</section>
+	    </div>
+
+	</body>
+</html>

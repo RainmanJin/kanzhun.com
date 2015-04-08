@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>找回密码-重置密码</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+  <header class="global">
+    <div class="header">
+      <img class="logo" src="../images/logo.jpg"/>
+      <span class="title">企业用户专区</span>
+      <div class="user"><a href="#">登录企业账户</a></div>
+    </div>
+  </header>
+  <div class="container findpws clearfix">
+    <h1>找回密码</h1>
+    <ul class="progress">
+      <li class="step threestep"></li>
+      <li class="words">
+        <em class="current">输入邮箱地址</em>
+        <em class="current">邮箱验证</em>
+        <em class="current">重置密码</em>
+      </li>
+    </ul>
+    <p class="mt20 f_14 grey_99 mb10">邮箱地址：<strong class="def">caiyaohui@163.com</strong></p>
+    <ul class="registerData resetpwd">
+      <li>
+        <input type="text" class="ipt" placeholder="请输入新密码">&nbsp;&nbsp;<span class="red"><i class="base errormsg"></i>&nbsp;密码不能为空</span>
+      </li>
+      <li>
+        <input type="text" class="ipt" placeholder="请输入新密码">&nbsp;&nbsp;<span class="red"><i class="base errormsg"></i>&nbsp;确认密码不能为空</span>
+      </li>
+    </ul>
+    <p class="mt15"><span class="btn_grey_s"><input type="submit" value="确定"/></span><a href="" class="backlogin">取消</a></p>
+  </div>
+</body>
+</html>

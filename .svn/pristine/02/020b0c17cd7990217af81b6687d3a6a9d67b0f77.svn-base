@@ -1,0 +1,145 @@
+@import "../../common/var";
+@import "uploadPortrait_dialog";
+//公司纠错弹框
+.co_corr_dialog{
+	width: 200px;
+	ul.enterlist{
+		li{
+			padding: 8px 0;
+			border-bottom: 1px dashed #e7e7e7;
+		}
+	}
+	&.form{
+		width: 360px;
+		ul.fieldset{
+			li{
+				position: relative;
+                margin-bottom: 20px;
+				label{
+					width: 4.5em;
+					margin-right: 5px;
+					text-align: right;
+					display: inline-block;
+					&.cphoto{
+						width: 45px;
+						height: 45px;
+						padding: 2px;
+						background: #fff;
+						border: 1px solid #ccc;
+						img{
+							width: 45px;
+							height: 45px;
+						}
+					}
+				}
+				input.ifd{ 
+					width: 218px;
+					vertical-align: middle;
+					border-width: 2px 2px 1px 1px;
+					border-color: #ebebeb #d6d6d6 #e7e7e7 #f4f4f4;
+				}
+				p.err{
+					position: absolute;
+					top: 35px;
+					padding-left: 5.5em;
+					left: 0!important;
+					color: @red;
+					i.i_err{
+						display: inline-block;
+						width: 6px;
+						height: 9px;
+						background: url("@{img}/rem/err_tg.png") no-repeat;
+					}
+				}
+				.btn_grey_b{
+					width: 100px;
+					height: 28px;
+					padding: 0;
+					line-height: 28px;
+				}
+				&.time{
+					label{
+						float: left;
+						margin-top: 8px;
+						margin-right: 8px;
+					}
+					.select_u{
+						width: 115px;
+						float: left;
+						border-width: 2px 2px 1px 1px;
+						border-color: #ebebeb #d6d6d6 #e7e7e7 #f4f4f4;
+					}
+					&.long{
+						.select_u{
+							width: 243px;
+						}
+					}
+				}
+				&.add_competitors{
+					dl{
+						dt{
+							margin-bottom: 5px;
+						}
+						dd{
+							float: left;
+							margin: 0 5px 5px 0;
+							padding: 3px 3px 3px 10px;
+							background-color: #fff;
+							border: 1px solid #cfcfcf;
+							i{
+								cursor: pointer;
+							}
+						}
+					}
+				}
+				&.add_co{
+					.add_co_f {
+						margin-top: 10px;
+						padding: 15px;
+						border: 1px dashed #ccc;
+						border-radius: 4px;
+						input.ifd{ 
+							width: 187px;
+						}
+						label{
+							float: left;
+							margin-top: 8px;
+							margin-right: 8px;
+						}
+						.select_u{
+							width: 211px;
+							float: left;
+							border-width: 2px 2px 1px 1px;
+							border-color: #ebebeb #d6d6d6 #e7e7e7 #f4f4f4;
+						}
+						li.sbm{
+							margin-bottom: 0;
+						}
+					}
+				}
+				&.co_desc{
+					textarea{
+						background: #fff;
+						padding-left:5px;
+						width: 307px;
+					}
+				}
+			}
+		}
+		.sbm{
+			text-align: center;
+			.btn_o_l{
+				width: 100px;
+				height: 30px;
+				padding: 0;
+				line-height: 30px;
+			}
+			.btn_grey_b{
+				width: 100px;
+				height: 28px;
+				padding: 0;
+				line-height: 28px;
+			}
+		}
+	}
+}

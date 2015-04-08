@@ -1,0 +1,917 @@
+@import "../common/var";
+@img: '../../images';
+//@import "../modules/mini_search";
+@import "../../v2/css/modules/top-search";
+@import "../modules/maskui";
+
+
+section{
+  &.l_con{
+    width: 645px;
+    float: left;
+    padding: 0 20px 20px;
+    margin-top: 20px;
+    border-right: 1px solid @grey_e7;
+  }
+
+  &.r_con{
+    width: 264px;
+    padding: 20px;
+    float: right;
+  }
+}
+
+.rem_banner{
+  height: 350px;
+  position: relative;
+
+  a.banner_inner {
+    display: block;
+    height: 350px;
+    background: url(../../images/rem/rem_b.jpg) no-repeat left top;
+
+    em.report_go{
+      display: none;
+    }
+  }
+  
+  p{
+    position: absolute;
+    width: 114px;
+    bottom: 78px;
+    right: 30px;
+    text-align: center;
+
+    a{
+      display: block;
+      font-weight: bold;
+      font-size: 16px;
+
+      &.a_u {
+        &:hover {
+          color: #2c84cc;
+        }
+      }
+
+
+      &.re_experience {
+        width: 114px;
+        height: 114px;
+        margin-bottom: 15px;
+        background: url(../../images/rem/experience.png) no-repeat left top;
+
+        &:hover {
+          background: url(../../images/rem/experience.png) no-repeat -120px 0;
+        }
+      }
+    }
+  }
+
+}
+
+h3{
+  &.rem_tt{
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: 1px solid @grey_e7;
+
+    span{
+      float: left;
+      border-bottom: 1px solid @green;
+      padding: 5px 0;
+      position: relative;
+      bottom: -1px;
+    }
+
+    a{
+      float: right;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+
+  &.rem_tt_r{
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: 1px solid @grey_e7;
+    padding: 5px 0;
+  }
+}
+
+div{
+  &.rem_hot_co{
+    overflow: hidden;
+    zoom: 1;
+    padding: 20px 0;
+
+    p{
+      width: 665px;
+    }
+
+    a{
+      float: left;
+      width: 111px;
+      height: 111px;
+      border: 1px solid @grey_e7;
+      position: relative;
+      margin-right: 20px;
+
+      img{
+        width: 111px;
+        height: 111px;
+      }
+
+      span{
+        width: 111px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        white-space: normal;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: @grey_e7;
+        color: @blue;
+        opacity: .8;
+      }
+    }
+  }
+
+  &.rem_hot_s{
+    dl{
+      width: 199px;
+      float: left;
+      margin-top: 20px;
+      border: 1px solid @grey_e7;
+    }
+
+    dt{
+      background: #f5f5f5 url("@{img}/rem/icon_rem.jpg") no-repeat 10px 7px;
+      height: 30px;
+      line-height: 30px;
+      padding-left: 50px;
+    }
+
+    dd{
+      padding: 0 10px;
+    }
+  }
+}
+
+ul{
+  &.rem_list{
+    li{
+      color: @grey_99;
+      line-height: 2.4em;
+      overflow: hidden;
+      zoom: 1;
+
+      i{
+        width: 18px;
+        height: 18px;
+        margin: 7px 5px 0 0;
+        border-radius: 2px;
+        background-color: #d7d7d7;
+        text-align: center;
+        line-height: 18px;
+        overflow: hidden;
+        color: #fff;
+        &.hot{
+          background-color: @green;
+        }
+        float: left;
+      }
+
+      a{
+        float: left;
+        .ellipsis(ellipsis);
+        width: 6em;
+        white-space: nowrap;
+        color: @grey_99;
+      }
+
+      span{
+        float: right;
+
+        em{
+          color: @red;
+        }
+      }
+    }
+  }
+
+  &.rem_list_r{
+    padding: 10px 0;
+    li{
+      a{
+        width: 10em;
+      }
+    }
+  }
+}
+
+div.rem_mess{
+  padding: 5px 0;
+  margin-left: -10px;
+  overflow: hidden;
+  *zoom: 1;
+
+  a{
+    display: block;
+    float: left;
+    margin: 8px 0;
+    line-height: 1em;
+    color: @grey_99;
+    padding: 0 10px;
+    border-right: 1px solid @grey_e7;
+    white-space: nowrap;
+  }
+}
+
+section{
+  &.r_content{
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  &.r_f{
+    padding: 20px 110px;
+  }
+}
+
+.r_you{
+  img{
+    float: left;
+  }
+
+  h2{
+    font-size: 20px;
+    margin-left: 138px;
+  }
+
+  dl{
+    margin-left: 138px;
+    border: 1px solid @grey_e7;
+    padding: 10px 15px;
+    margin-top: 15px;
+    position: relative;
+
+    dt{
+      float: left;
+    }
+
+    dd{
+      overflow: hidden;
+      zoom: 1;
+      padding-right: 100px;
+      margin-left: 6em;
+
+      &.trangle{
+        position: absolute;
+        top: -11px;
+        left: 25px;
+        padding: 0;
+        margin: 0;
+
+        i{
+          width: 23px;
+          height: 11px;
+          display: block;
+          background: url("@{img}/rem/rem_icons.png") no-repeat 0 -71px;
+        }
+      }
+
+      &.edit{
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        left: auto;
+        padding: 0;
+        margin: 0;
+        width: 80px;
+      }
+
+      &.download{
+        position: absolute;
+        top: -46px;
+        right: 0px;
+        padding: 0;
+        margin: 0;
+        height: 36px;
+        color: #ffffff;
+        display: inline-block;
+        background-color: #85c15d;
+        padding: 0 20px;
+        line-height: 36px;
+        a{
+          color: #fff;
+        }
+        i{
+          width: 23px;
+          height: 22px;
+          background: url("@{img}/rem/rem_icons.png") no-repeat;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+      }
+
+      &.download_tip{
+        position: absolute;
+        padding: 18px 15px 15px;
+        border-radius: 5px;
+        border: 1px solid #bde381;
+        background-color: #fff;
+        right: 80px;
+        top: 5px;
+        z-index: 5;
+        overflow: visible;
+
+        img{
+          width: 12px;
+          position: absolute;
+          right: 8px;
+          top: 8px;
+          cursor: pointer;
+        }
+
+        span{
+          width: 18px;
+          height: 16px;
+          display: block;
+          position: absolute;
+          top: -16px;
+          right: 50px;
+          background: url("@{img}/rem/rem_icons.png") no-repeat 0 -195px;
+        }
+
+        b{
+          color: @green;
+        }
+
+        i{
+          width: 12px;
+          height: 16px;
+          background: url("@{img}/rem/rem_icons.png") no-repeat 0 -166px;
+          display: inline-block;
+          vertical-align: -5px;
+          margin-right: 5px;
+        }
+      }
+    }
+    
+    p{
+      float: left;
+      width: 250px;
+      white-space: nowrap;
+
+      span{
+        color: @grey_99;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.r_filter{
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  margin-top: 30px;
+
+  .r_filter_i{
+    float: left;
+    padding-top: 10px;
+    margin-right: 20px;
+    
+    i{
+      width: 23px;
+      height: 21px;
+      background: url("@{img}/rem/rem_icons.png") no-repeat 0 -24px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .r_ifd{
+    float: left;
+    width: 160px;
+    border-width: 2px 1px 1px 2px;
+    border-style: solid;
+    border-color: #CFCFCF;
+    margin-right: 20px;
+    background-color: #f7f6f6;
+    padding: 10px;
+    line-height: 1.2em;
+  }
+
+  .select,.select_big{
+    float: left;
+    width: 180px;
+  }
+}
+
+.r_warm{
+  background-color: #fff7ed;
+  padding: 10px 15px;
+  border: 1px solid #fbe6ba;
+  margin-top: 20px;
+
+  i{
+    width: 23px;
+    height: 17px;
+    float: left;
+    background: url("@{img}/rem/rem_icons.png") no-repeat 0 -84px;
+  }
+
+  p{
+    margin-left: 33px;
+  }
+  a{
+    margin: 0 10px;
+  }
+}
+
+.r_chart{
+  padding: 20px;
+  border: 1px solid @grey_e7;
+  margin-top: 20px;
+
+  h4{
+    font-size: 18px;
+    font-weight: normal;
+    b{
+      color:@orange;
+      font-weight: normal;
+    }
+    i{
+      width: 23px;
+      height: 18px;
+      background: url("@{img}/rem/rem_icons.png") no-repeat 0 -49px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+  .r_chart_title{
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    span{
+      margin-right: 30px;
+      b{
+        font-size: 26px;
+        color: #eb7676;
+        vertical-align: middle;
+      } 
+      i.rect{
+        display: inline-block;
+        background-color: #c5dcf2;
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+      }     
+    }
+  }
+  .r_chart_c{
+    margin-top: 10px;
+    width: 660px;
+    height: 260px;
+    margin:0 auto;
+  }
+  .r_chart_line{
+    margin-left: 190px;
+    margin-top: 20px;
+    .line{
+      width: 540px;
+      height: 21px;
+      background-color: #eb7676;
+      position: relative;
+      overflow: visible;
+      .inner{
+        height: 100%;
+        background-color: #4ebbc5;
+        i{
+          position: absolute;
+          top: -29px;
+          margin-left: -18px;
+          display: inline-block;
+          width: 44px;
+          height: 35px;
+          line-height: 30px;
+          text-align: center;
+          color: #999;
+          background: url("@{img}/rem/rem_icons.png") no-repeat 0 -120px;
+        }
+      }
+    }
+    p.intr{
+      b{
+        color: @orange;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+
+.r_form_tt{
+  overflow: hidden;
+
+  img{
+    width: 62px;
+    float: left;
+  }
+
+  h2{
+    margin-left: 80px;
+    font-size: 26px;
+    padding-top: 10px;
+    font-weight: normal;
+  }
+}
+
+
+div{
+  &.r_form{
+    padding: 20px;
+    border: 1px solid @grey_e7;
+    margin-top: 20px;
+
+    h3{
+      font-size: 22px;
+      font-weight: normal;
+      color: @green;
+      margin-bottom: 20px;
+    }
+
+
+    .ifd{
+      border: 1px solid #cfcfcf;
+      border-width: 2px 1px 1px 2px;
+      float: left;
+      width: 206px;
+      font-size: 14px;
+      line-height: 1em;
+    }
+
+    .ifd_full{
+      width: 575px;
+    }
+
+    li{
+      height: 55px;
+      position: relative;
+
+
+      &.auto_h{
+        height: auto;
+        overflow: hidden;
+        zoom: 1;
+        *margin-bottom: 25px;
+
+        p.err{
+          top: auto;
+          bottom: 4px;
+        }
+      }
+
+      &.line{
+        clear: both;
+        height: 20px;
+        border-top: 1px solid @grey_e7;
+        border-bottom: 0;
+        margin: 0;
+      }
+
+      &.space_radio{
+        height: 30px;
+        line-height: 30px;
+
+        input{
+          vertical-align: middle;
+          margin-right: 2px;
+        }
+
+        label{
+          margin-right: 15px;
+        }
+      }
+
+      &.space_short{
+        clear: both;
+        
+        em{
+          float: left;
+          width: 30px;
+          color: @grey_99;
+          margin-top: 5px;
+          text-align: center;
+        }
+      }
+
+      &.rem_s_d{
+        width: 564px;
+        height: auto;
+        margin-left: 7em;
+        padding-left: 10px;
+        background-color: #f4f4f4;
+        padding: 15px;
+        margin-bottom: 20px;
+
+        .space{
+          height: auto;
+          width: 270px;
+        }
+        
+        .ifd{
+          width: 156px;
+          margin-bottom: 10px;
+        }
+
+        .ifd_disa{
+          background-color: #e5e5e5;
+        }
+
+        label.def{
+          width: 5em;
+        }
+      }
+    }
+
+    #leaveFiled{
+      p.err{
+        left: 2em;
+      }
+    }
+
+    label{
+      &.def{
+        width: 6em;
+        text-align: right;
+        float: left;
+        margin-right: 15px;
+        height: 35px;
+        line-height: 35px;
+      }
+
+      em{
+        color: @red;
+      }
+    }
+
+    p.err{
+      clear: both;
+      color: @red;
+      padding-top: 2px;
+      padding-left: 20px;
+      position: absolute;
+      top: 34px;
+      left: 7em;
+      display: none;
+      background: url("@{img}/rem/err_tg.png") no-repeat 10px 8px;
+    }
+
+    .select{
+      float: left;
+      width: 230px;
+      z-index: 2;
+    }
+
+    .selecttime{
+      width: 120px;
+    }
+
+    .space{
+      float: left;
+      display: inline;
+      height: 55px;
+      position: relative;
+      width: 360px;
+    }
+
+    .none{
+      display: none;
+    }
+
+    span.inktime{
+      margin: 10px 17px 0 7px;
+    }
+    .lh{
+      line-height: 35px;
+      float: left;
+      input{
+        vertical-align: -2px;
+      }
+    }
+
+    .date{
+      .select{
+        width: 98px;
+        margin-right: 10px;
+      }
+    }
+
+    .rsm_portrait{
+      top: 10px;
+      right: 150px;
+
+      p{
+        position: absolute;
+        bottom: 2px;
+        opacity: 0.3;
+        filter: alpha(opacity=50);
+        background-color: #000;
+        height: 30px;
+        width: 115px;
+        text-align: center;
+      }
+      a{
+        position: absolute;
+        display: inline-block;
+        bottom: 2px;
+        color: #fff;
+        height: 30px;
+        line-height: 30px;
+        width: 115px;
+        text-align: center;
+        z-index: 2;
+        cursor: pointer;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+
+    textarea{
+      width: 578px;
+      float: left;
+      border: 1px solid #cfcfcf;
+      border-width: 2px 1px 1px 2px;
+      padding: 5px 10px;
+      line-height: 1.8em;
+      resize: none;
+      margin-bottom: 25px;
+    }
+
+    input.cancel{
+      border: 0;
+      background-color: transparent;
+      color: @blue;
+      cursor: pointer;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    p.sys_err{
+      color: @red;
+      padding-bottom: 10px;
+      font-size: 15px;
+      margin-left: 6em;
+      background: url("@{img}/prompt.png") no-repeat 0 2px;
+      padding-left: 25px;
+    }
+
+    .r_submit{
+      width: 230px;
+      height: 42px;
+      line-height: 42px;
+      background-color: #85c15d;
+      text-align: center;
+      font-size: 18px;
+      color: #ffffff;
+      border: 0;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+}
+
+div.rem_reg{
+  margin-top: 15px;
+  padding: 15px 75px;
+  width: 840px;
+  min-height: 800px;
+
+  h3{
+    font-size: 18px;
+  }
+
+  .rem_step{
+    background: url("@{img}/rem/rem_step.jpg") no-repeat;
+    height: 66px;
+    margin: 30px 0 50px;
+  }
+
+  .rem_step_d{
+    height: 66px;
+    margin: 30px 0 50px;
+    background: url("@{img}/rem/rem_step.jpg") no-repeat 0 -67px;
+  }
+
+  .rem_reg_form{
+    p{
+      margin-bottom: 15px;
+    }
+
+    a.btn_grey_b{
+      width: 80px;
+      margin-right: 15px;
+    }
+  }
+}
+
+@-webkit-keyframes arrowsUp{
+  0%{
+    -webkit-transform: translate(0,0);
+  }
+  50%{
+    -webkit-transform: translate(10px,-10px);
+  }
+  100%{
+    -webkit-transform: translate(0,0);
+  }
+}
+
+
+div.rem_demo{
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 15px;
+  position: relative;
+
+  a{
+    position: absolute;
+    right: 26px;
+    top: 20px;
+    display: inline-block;
+    background-color: #ef7778;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 2px;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  img.rem_arrow{
+    position: absolute;
+    right: 230px;
+    top: 40px;
+  }
+}
+
+#reportDialog{
+  .green_btn{
+    background: #85c15d;
+    padding: 5px 10px;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 20px;
+    border: 0;
+    cursor: pointer;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .disa_btn{
+    background: #d8d8d8;
+    padding: 5px 10px;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 20px;
+    cursor: no-drop;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .r_form{
+    border: 0;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

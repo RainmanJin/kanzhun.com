@@ -1,0 +1,355 @@
+require.config({
+    baseUrl: '/js/site',
+    paths: {
+        u: '../utils',
+        c: '.',
+        comp: '../../components',
+        highcharts: 'http://s.kanzhun.com/js/utils/highcharts'
+    }
+});
+
+require(['c/auth_dialog', 'c/user_response', 'c/general', 'u/validator', 'c/company_common', 'company/salary_desc'], function(auth_dialog, user_response){
+	$(function(){
+		var sForm = $('#searchForm');
+		$('dl#salaryCitySelect').DIYSelect({
+        keepDefault: true
+		});
+
+		//Date of Employee
+		var inservicetimeSelect = $( 'dl#inservicetime' ),
+		    startDate = inservicetimeSelect.find('[name="entryDate"]'),
+		    quittimeSelect = $( 'dl#quittime' ),
+		    endDate = quittimeSelect.find('input[name="dimissionDate"]'),
+				zhi = $( 'span.zhi' ),
+				experience = $( 'dl.experience' ),
+				experienceval = experience.find( '[name="jobExperience"]' ),
+				companyJobSuggest = $('#companyJobSuggest');
+
+		$('p.radios').on('click', 'input, label', function(){
+			var self = $(this);
+			self.parent().find('input.hidvl').val(self.data('vl'));
+			
+			if(self.data('vl') == '2'){
+				quittimeSelect.show();
+				zhi.show();
+        $('div.prompt_wrap').show();
+			}else{
+				quittimeSelect.hide();
+				zhi.hide();
+        $('div.prompt_wrap').hide();
+			}
+		});
+
+
+    var salaryControler = {
+      checkDate: function(by, ey){
+            ey = parseInt($('input[name=' + ey +']').val(), 10);
+            var year = ey - parseInt($('input[name=' + by +']').val(), 10);
+
+            if(year < 0){
+                return false;
+            }else if(year === 0){
+                return false;
+            }else{
+                return true;
+            }
+        }
+    };
+
+		$('dl.selecttime').DIYSelect({
+			listCallback: function(itemsWrap, field, target){
+        var hids = $('input:hidden', target);
+        hids.val($(this).data('val')).parent().parent().parent().find('>p.err').hide();
+				var name = field.attr('name'),
+						val = parseInt($(this).data('val'), 10),
+						index = $(this).index();
+						/*console.log( itemsWrap );*/
+
+				if(quittimeSelect.is(':hidden')){
+					if ( name == 'entryDateYear' ){
+						startDate.val(val);
+					}
+					return false;
+				}
+
+				if(name == 'entryDateYear'){
+						startDate.val(val);
+            return true;
+				}else if(name == 'dimissionDateYear'){
+						endDate.val(val);
+            return true;
+				}
+				
+			}
+		});
+
+		experience.DIYSelect({
+			listCallback: function(){
+				experienceval.val(parseInt($(this).data('val'), 10));
+			}
+		});
+
+
+
+		//choose city autocomplete
+		var searchSuggestCity = $('#companyCitySuggest'),
+		    hid = $('input[name="encryptCityCode"]');
+    searchSuggestCity.autocomplete({
+      serviceUrl: CONTEXTPATH + '/autocomplete/city.json',
+      paramName: 'query',
+      dataType: 'json',
+      transformResult: function (response) {
+        return {
+          suggestions: $.map(response.suggestions, function (dataItem) {
+            return { value: dataItem.value, data: dataItem.data};
+          })
+        };
+      },
+      onSelect: function (suggestion) {
+        hid.val(suggestion.data);
+      },
+      onSearchStart: function () {
+        //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+        hid.val('');
+      },
+      onInvalidateSelection: function () {
+        hid.val('');
+      },
+      onSearchComplete: function (query, suggestions) {
+        if (suggestions.length === 0) {
+          hid.val('');
+          return;
+        }
+        //auto select when only one result
+        if (suggestions.length === 1) {
+          hid.val(suggestions[0].data);
+        }
+      },
+      autoSelectFirst: true
+    });
+
+    //职位
+    var companyJobSuggest = $('#jobautocomplete');
+	  if (companyJobSuggest.length) {
+	    companyJobSuggest.autocomplete({
+	      serviceUrl: CONTEXTPATH + '/autocomplete/jobtitle.json',
+	      paramName: 'query',
+	      params: function (query) {
+	        return {
+	          query: query,
+	          code: companyJobSuggest.data('coid')
+	        };
+	      },
+	      dataType: 'json',
+	      transformResult: function (response) {
+	        response = response || {};
+	        return {
+	          suggestions: $.map(response.suggestions || [], function (dataItem) {
+	            return { value: dataItem.value, data: dataItem.data};
+	          })
+	        };
+	      }
+	    });
+	  }
+
+      var salaryDetail = $('ul.adddetail input:text'),
+          sDetailErr = $('span#sDetailErr'),
+          salaryBase  = $('#salaryBase'),
+          salaryTotal = $('input#salaryPayBase'); 
+
+          salaryDetailFn = function(){
+            var others = 0, total = parseInt(salaryTotal.val());
+            salaryDetail.not('[name=salaryPayBase]').each(function(i, v){
+              var val = parseInt(v.value) || 0;
+              if(!(/^(([1-9]\d*)|0)$/).test(val)){
+                sDetailErr.html('请输入正确的数额！').show();
+                return false;
+              }else {
+                others += val;
+              }
+            });
+
+            var base = total - others;
+            if(base < 0){
+              sDetailErr.html('工资明细不能大于月薪，请重新输入。').show();
+              salaryBase.val('');
+              return;
+            }else {
+              sDetailErr.hide();
+            }
+
+            salaryBase.val(base || 0);
+          }
+          salaryDetail.keyup(function () {
+            var val = this.value.replace(/^0(?=\d+)|\D/g, '');
+            $(this).val(val);
+            salaryDetailFn(val);
+          });
+
+          salaryTotal.on('keyup', function(){
+            var val = this.value.replace(/^0(?=\d+)|\D/g, '');
+            $(this).val(val);
+            salaryDetailFn(val);
+          });
+    //添加工资明细
+      $('#addincome').click(function () {
+        var detail = $('ul.add_salary_detail');
+        if(detail.is(':hidden')){
+          $(this).html('收起<i class="putaway"></i>');
+          detail.removeClass('none');
+        }else{
+          $(this).html('添加工资明细<i class="open"></i>');
+          detail.addClass('none');
+          sDetailErr.hide();
+          salaryBase.val(salaryTotal.val());
+        }
+      });
+
+    $('#salryUgcMiniForm').validatorAll({
+    	elems: 'input:text, input:hidden',
+    	prompt: {
+    		succ: function(target, e){
+            var err;
+            if(target.attr('type') === 'hidden'){
+                err = $('>p.err', target.parent().parent().parent());
+            }else{
+                err = $('>p.err', target.parent());
+            }
+            err.hide();
+        },
+        err: function(target, msg, e){
+            var err;
+            if(target.attr('type') === 'hidden'){
+                err = $('>p.err', target.parent().parent().parent());
+            }else{
+                err = $('>p.err', target.parent());
+            }
+            err.html(msg || err.data('msg')).show();
+        },
+        normal: function(target, e){
+            var err;
+            if(target.attr('type') === 'hidden'){
+                err = $('>p.err', target.parent().parent().parent());
+            }else{
+                err = $('>p.err', target.parent());
+            }
+            err.hide();
+        }
+    	},
+    	more: {
+          salaryPayBase: {
+          	type: 'isNumber',
+          	msg: '月薪必须是纯数字！'
+          },
+
+          cityName: function (_this, prompt, e) {
+          var s = setTimeout(function () {
+            clearTimeout(s);
+            if (hid.val() === '') {
+              searchSuggestCity.val('').trigger('blur');
+            }
+            return true;
+          }, 300);
+          return true;
+        }
+      },
+
+      ajaxSubmit: {
+      	  elems: 'input:text, input:hidden, input[type="radio"]',
+          dataType: 'json',
+          beforeSend: function(){},
+       		success: function(data){
+            if(data.rescode =='1'){
+							$( 'p.thanks' ).show();
+              cityValue = $('#companyCitySuggest').val(),
+              cityValueCode = $('input#cityCodes').val();
+							$('#salryUgcMiniForm')[0].reset();
+              $('input#inservice').trigger('click');
+              inservicetimeSelect.find('dt').find('input[type="button"]').val("2012年");
+              startDate.val(2012);
+              quittimeSelect.find('dt').find('input[type="button"]').val("2013年");
+              endDate.val(2013);
+              experience.find('dt').find('input[type="button"]').val("1年");
+              experience.find('dt').find('input[type="hidden"]').val(2);
+              //if (cityValue !== ''){
+                $('#companyCitySuggest').val(cityValue);
+                $('input#cityCodes').val(cityValueCode);
+              //}
+             /*setTimeout(function(){
+               $( 'p.thanks' ).hide();
+             }, 3000);*/
+         }
+      }
+    }
+  }).init().submit(function(){
+    	//未登录处理
+
+      if(!quittimeSelect.is(':hidden') & !salaryControler.checkDate('entryDate', 'dimissionDate')){
+          $('#salryUgcMiniForm dl#quittime').next('p.err').html('请选择正确的日期范围！').show();
+          return false;
+      }/*else if(!isLogged){
+          auth_dialog.open('#login?authcb=authCallback');
+          window.authCallback = function(ret){
+          isLogged = true;
+          $('#authFrame').remove();
+          $('#salryUgcMiniForm').trigger('submit');
+        };
+        return false;
+      }*/else {
+        return true;
+      }
+    });
+
+		//直接点击按钮 请款citycode
+		$('#salarySearchBtn').on('click', function(e){
+			e.preventDefault();
+			sForm.find('input[name=cityCode]').val('');
+			sForm.submit();
+		});
+
+		//sort
+		$('#salarySortWrapper').on('click', 'a', function(e){
+			e.preventDefault();
+			sForm.find('input[name=pagenum]').val('1');
+			sForm.find('input[name=sortMethod]').val($(this).data('sort'));
+			sForm.submit();
+		});
+
+		$('#showSalarySearch').on('click', function(){
+			$('#salarySearch').toggleClass('none');
+		});
+
+		$('.search_close', '#salarySearch').on('click', function(){
+			$('#salarySearch').addClass('none');
+		});
+
+
+    //分享公司
+    var shareComments = user_response.share();
+    shareComments.build({
+      selectors: 'a.share_co'
+    });
+
+     //离开时间提示
+    var wrapbox = $('div.prompt_box');
+    $('div.prompt_wrap i').hover(function(){
+      wrapbox.removeClass('none');
+      $(document).one('click', function (e) {
+        if($(e.target).attr("class")!='prompt_box'){
+          wrapbox.addClass('none');
+        }
+      });
+    });
+
+    $('a.closeprompt').click(function(){
+      wrapbox.addClass('none');
+    });
+
+    //工资图标
+    var salaryDesc = require('company/salary_desc');
+    salaryDesc({
+      table: $('#salaryDescTable')
+    });
+
+	});
+});

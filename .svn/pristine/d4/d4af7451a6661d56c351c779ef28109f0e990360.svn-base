@@ -1,0 +1,9 @@
+/**
+ * Created by zcy on 2015/3/28.
+ */
+$(function(){
+	$("#prize").on("change",function(){
+		var index = $("#prize option:selected").index();
+		$(".items").eq(index).addClass("actived").siblings(".items").removeClass("actived").find("input[type=checkbox]").removeAttr("checked")
+	});
+});

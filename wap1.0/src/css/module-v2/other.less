@@ -1,0 +1,65 @@
+@import "../common/var";
+
+//标题
+h2.f_tt {
+	padding: 15px 0 10px 0;
+	font-size: 16px;
+	color: @grey_33;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+//按钮
+.f_btn_seemore {
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	color: #2c84cc;
+	font-size: 16px;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+}
+
+//带阴影的区块
+.shadow_area {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #fff;
+	.box-shadow(0 1px 3px rgba(4, 0, 0, .1));
+	&.none{
+		display: none;
+	}
+}
+
+//领域标签
+a.tags_item {
+	display: inline-block;
+	height: 28px;
+	padding: 0 10px;
+	margin: 0 10px 10px 0;
+	line-height: 28px;
+	white-space: normal;
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	.box-shadow(1px 1px 3px #E4E4E4);
+	span{
+		font-size: 12px;
+		color: #c1f4b8;
+	}
+	&.current {
+		background-color: @green-v2;
+		border-color: @green-v2;
+		color: #fff;
+	}
+}
+
+//分数展示
+strong.scores {
+	display: inline-block;
+	padding: 0 5px;
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	color: #fff;
+	background-color: @green-v2;
+	border-radius: 2px;
+}

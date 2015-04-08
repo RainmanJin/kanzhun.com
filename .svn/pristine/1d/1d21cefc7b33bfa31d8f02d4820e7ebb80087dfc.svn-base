@@ -1,0 +1,127 @@
+@import "../common/var";
+i.i{
+	display: inline-block;
+	background: url("@{img_path}/icons.png") no-repeat;
+	.background-size(100px);
+	&.i_back{
+		width: 9px;
+		height: 17px;
+	}
+	&.i_eq{
+		width: 9px;
+		height: 9px;
+		background-position: -20px 0;
+	}
+	&.i_tdown{
+		width: 7px;
+		height: 6px;
+		background-position: -40px 0;
+	}
+	&.i_hand{
+		width: 15px;
+		height: 13px;
+		background-position: -20px -60px;
+	}		
+	&.i_hand_grey{
+		width: 15px;
+		height: 13px;
+		background-position: 0 -60px;
+	}
+  &.i_edit{
+    width: 15px;
+    height: 15px;
+    background-position: -82px -39px;
+  }
+	&.i_star{
+		width: 17px;
+		height: 16px;
+		background-position: -60px -60px;
+	}		
+	&.i_star_grey{
+		width: 17px;
+		height: 16px;
+		background-position: -40px -60px;
+	}
+	&.i_down_blue{
+		width: 14px;
+		height: 7px;
+		background-position: -60px 0;
+	}
+	&.i_r_grey{
+		width: 9px;
+		height: 14px;
+		background-position: -80px -20px;
+		vertical-align: middle;
+	}				
+}
+i.i_rect{
+	display: inline-block;
+	background: url("@{img_path}/icons.png") no-repeat;
+	.background-size(100px);
+	width: 78px;
+	height: 14px;
+	background-position: 0 -20px;
+	vertical-align: -2px;
+	font-size: 0;
+	em{
+		display: inline-block;
+		background: url("@{img_path}/icons.png") no-repeat;
+		.background-size(100px);
+		width: 78px;
+		height: 14px;
+		background-position: 0 -40px;
+	}
+	.em_0{
+		display: none;
+	}	
+	.em_1{
+		width: 20%;
+	}	
+	.em_2{
+		width: 40%;
+	}	
+	.em_3{
+		width: 60%;
+	}	
+	.em_4{
+		width: 80%;
+	}	
+	.em_5{
+		width: 100%;
+	}						
+}
+
+.grade_star{
+  width: 69px;
+  height: 13px;
+  display: inline-block;
+  font-size: 0;
+  vertical-align: -2px;
+  overflow: hidden;
+  background: transparent url("@{img_path}/m_grade.png") no-repeat 0px 0;
+  .background-size(auto 26px);
+
+  i{
+    height: 13px;
+    float: left;
+    background: transparent url("@{img_path}/m_grade.png") no-repeat 0 -13.5px;
+    .background-size(auto 26px);
+
+    &.s_1{
+      width: 13px;
+    }
+    &.s_2{
+      width: 27px;
+    }
+    &.s_3{
+      width: 41px;
+    }
+    &.s_4{
+      width: 54px;
+    }
+    &.s_5{
+      width: 69px;
+    }
+  }
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>DEMO</title>
+  <link rel="stylesheet" href="css/jpm-new.css?q=12312">
+</head>	
+<body>
+  <section class="slide-menu slideout-menu" id="menu">
+    <h2><img src="images/logo-s.png" width="74" height="26"></h2>
+    <ul>
+      <li><a href="">IT/互联网行业排行榜</a></li>
+      <li><a href="">电子/通信/硬件行业排行榜</a></li>
+      <li><a href="">金融行业排行榜</a></li>
+      <li><a href="">汽车行业排行榜</a></li>
+      <li><a href="">广告/传媒/文化行业排行榜</a></li>
+      <li><a href="">房地产/建筑行业排行榜</a></li>
+      <li><a href="">机械/制造行业排行榜</a></li>
+      <li><a href="">消费品行业排行榜</a></li>
+      <li><a href="">教育/培训行业排行榜</a></li>
+      <li><a href="">专业服务行业排行榜</a></li>
+      <li><a href="">其他行业排行榜</a></li>
+    </ul>
+    <p class="feedback"><a href="#"><i></i>我要反馈</a></p>
+  </section>
+
+  <div class="wrapper">
+    <div class="container slideout-panel" id="panel">
+      <header class="rank">
+        <div class="menu">
+          <!--<i></i>-->
+          换行业
+        </div>
+        <select name="" id="">
+          <option value="1">永不加薪榜</option>
+        </select>
+
+        <div class="search"><i></i></div>
+      </header>
+      <dl class="rank">
+        <dt>
+              <div>
+                1231票
+                 <div class="default">
+                   <i></i>
+                   上去
+                 </div>
+                </div>
+              <em>NO.1</em>
+              <img src="http://img.kanzhun.com/image/l11514.gif">百度在线
+        </dt>
+        <dt><div>1231票<div class="past">明天<br>再来</div></div><em>NO.4</em><img src="http://img.kanzhun.com/images/logo/20150215/bc36e52be88e925f53b169bf3bdbd799.jpg">百度在线</dt>
+        <dt><div>1231票<div class="past">明天<br>再来</div></div><em>NO.4</em><img src="http://img.kanzhun.com/images/logo/20150215/bc36e52be88e925f53b169bf3bdbd799.jpg">百度在线</dt>
+        <dt><div>1231票<div class="past">明天<br>再来</div></div><em>NO.4</em><img src="http://img.kanzhun.com/images/logo/20150215/bc36e52be88e925f53b169bf3bdbd799.jpg">百度在线</dt>
+        <dt><div>1231票<div class="past">明天<br>再来</div></div><em>NO.4</em><img src="http://img.kanzhun.com/images/logo/20150215/bc36e52be88e925f53b169bf3bdbd799.jpg">百度在线</dt>
+        <dt><div>1231票<div class="past">明天<br>再来</div></div><em>NO.4</em><img src="http://img.kanzhun.com/images/logo/20150215/bc36e52be88e925f53b169bf3bdbd799.jpg">百度在线</dt>
+        <dt><div>1231票 <div class="default"> <i></i> 上去</div></div> <em>NO.1</em><img src="http://img.kanzhun.com/image/l11514.gif">百度在线</dt>
+        <dt><div>1231票 <div class="default"> <i></i> 上去</div></div> <em>NO.1</em><img src="http://img.kanzhun.com/image/l11514.gif">百度在线</dt>
+        <dt><div>1231票 <div class="default"> <i></i> 上去</div></div> <em>NO.1</em><img src="http://img.kanzhun.com/image/l11514.gif">百度在线</dt>
+        <dt><div>1231票 <div class="default"> <i></i> 上去</div></div> <em>NO.1</em><img src="http://img.kanzhun.com/image/l11514.gif">百度在线</dt>
+        <dt><div>1231票 <div class="default"> <i></i> 上去</div></div> <em>NO.1</em><img src="http://img.kanzhun.com/image/l11514.gif">百度在线</dt>
+        <dt><div>1231票 <div class="default"> <i></i> 上去</div></div> <em>NO.1</em><img src="http://img.kanzhun.com/image/l11514.gif">百度在线</dt>
+      </dl>
+    </div>
+  </div>
+
+  <footer class="btns">
+    <a href="#">分享</a><a href="#">提名公司</a>
+  </footer>
+
+  <section class="search-float">
+    <div>
+      <input type="text">
+    </div>
+  </section>
+  <script src="js/lib/zepto.js"></script>
+  <script src="js/utils/slideout.js"></script>
+  <script src="js/site/jpm.js?q=123333"></script>
+</body>
+</html>
+
+

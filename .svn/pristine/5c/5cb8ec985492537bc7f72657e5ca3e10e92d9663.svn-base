@@ -1,0 +1,491 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "../modules/top-search";
+@import 'piece/co-header';  //公司级页面头部样式
+@import 'piece/common-v2';  //公司级页面公布部分（目前只是面试和点评页面）
+@import "../../../css/modules-v2/dialog-v2";
+//左侧
+@import "piece/co_left_hr_enter_part"; //b端入口样式
+@import "piece/co_left_review_co_grade"; //点评公司等级
+@import "piece/co_left_review_item"; //点评
+@import "../../../css/modules/company/salary_desc"; //工资图表
+@import 'piece/interview_detail';  //面试
+@import 'piece/co-review-grade';  //左侧点评打分
+//右侧
+@import 'piece/right_con';  //右侧看了该公司的还看了
+@import 'piece/co-right-want-part';  //右侧想去调查
+@import 'piece/co-right-report-part';  //右侧媒体报道
+.co_tb{
+  background-color: #fff;
+  padding: 20px 15px 15px;
+  overflow: hidden;
+  zoom:1;
+
+  dt{
+    float: left;
+    overflow: hidden;
+    zoom: 1;
+    div {
+      &.cmphoto {
+        position: relative;
+        margin-bottom: 5px;
+        width: 292px;
+        text-align: center;
+
+        img{
+          background-color: #fff;
+          height: 150px;
+          width: 290px;
+        }
+
+        .sendphoto {
+          position: absolute;
+          left: 9px;
+          top: 6px;
+          display: none;
+          background: url(../images/sendphoto.png) repeat left top;
+          width: 202px;
+          height: 142px;
+          //opacity: 0.5;
+
+          p {
+            text-align: center;
+            font-size: 17px;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            font-weight: normal;
+            //opacity: 1;
+          }
+
+          a {
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            padding: 7px 30px;
+            background-color: #6e6e6e;
+            border-radius: 2px;
+            //opacity: 1;
+          }
+        }
+
+      }
+    }
+
+    p{
+      overflow: hidden;
+      zoom: 1;
+      img{
+        background-color: #fff;
+        width: 69px;
+        height: 37px;
+        float: left;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      a.addimg{
+        display: block;
+        float: left;
+        width: 50px;
+        height: 34px;
+        border: 1px dashed #dddddd;
+        text-align: center;
+        margin-right: 5px;
+        background: url(../images/cmpimg.png) no-repeat center;
+      }
+    }
+  }
+
+  dd{
+    margin-left: 322px;
+    //padding-top: 5px;
+    strong{
+      color: @grey_99;
+      font-weight: normal;
+      width: 6em;
+      display: inline-block;
+    }
+
+    span.urlinfo {
+      display: inline-block;
+      .ellipsis(ellipsis);
+      width: 12em;
+    }
+
+    color: @grey_99;
+
+    .edit{
+      float: right;
+      top: auto;
+      bottom: 0;
+      &:hover{
+        .i_correction{
+          background-position: -16px -560px;
+        }
+      }
+    }
+    p{
+      line-height: 1.9em;
+
+      /* &.competitors{
+        display: block;
+        a{
+          display: inline-block;
+          white-space: nowrap;
+          margin-right: 10px;
+        }
+      } */
+    }
+
+    div.competitors {
+      overflow: hidden;
+      zoom: 1;
+
+      strong {
+        display: block;
+        float: left;
+      }
+
+      div {
+        float: left;
+        width: 260px;
+
+        a{
+          display: inline-block;
+          white-space: nowrap;
+          margin-right: 10px;
+        }
+      }
+    }
+
+  }
+}
+
+div.tt {
+  position: relative;
+  border-bottom: 1px solid @grey_e7;
+
+  h1,h2 {
+    float: left;
+    padding-bottom: 5px;
+    *padding-bottom: 10px;
+    margin-bottom: -1px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    vertical-align: bottom;
+    //border-bottom: 1px solid @green;
+  }
+
+  em {
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 12px;
+    color: @grey_e7;
+    font-weight: 400;
+  }
+
+  a {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: normal;
+    margin-top: -5px;
+    font-size: 12px;
+    &.def{
+      text-decoration: none;
+      color: @grey_66;
+    }
+  }
+}
+
+article{
+  &.co_intro{
+    line-height: 1.6em;
+    padding: 10px 0;
+    p{
+      text-indent: 2em;
+    }
+    .more_details{
+      display: none;
+    }
+    .more{
+      i{
+        margin-left: 10px;
+        white-space: nowrap;
+        color: @blue;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+//点评相关--start
+.dash_tb{
+  border-top: 1px dashed #e3e3e3;
+}
+//点评相关--end
+
+//面试相关--start
+//面试总体感觉
+div.iv_grade {
+  padding-bottom: 20px;
+  overflow: hidden;
+  zoom:1;
+
+  dl {
+    float: left;
+
+    &.total {
+      width: 220px;
+    }
+
+    &.level {
+      width: 165px;
+      padding-left: 20px;
+      border-left: 1px solid @grey_e7;
+      border-right: 1px solid @grey_e7;
+      padding-bottom: 25px;
+    }
+
+    &.from {
+      padding-left: 20px;
+
+      p {
+        line-height: 1.8em;
+      }
+
+      span {
+        margin: 0 5px;
+      }
+    }
+
+  }
+
+  dt {
+    height: 32px;
+    line-height: 32px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+}
+.pie_chart {
+  canvas {
+    float: left;
+  }
+
+  .pie_bar {
+    margin-left: 90px;
+  }
+
+  p {
+    line-height: 1.7em;
+    white-space: nowrap;
+    color: @grey_66;
+  }
+
+  span {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+
+    &.easy {
+      background-color: @green;
+    }
+    &.normal {
+      background-color: #abd667;
+    }
+    &.hard {
+      background-color: #ededed;
+    }
+    &.wlzp {
+      background-color: #a7dbff;
+    }
+    &.xyzp {
+      background-color: #16b6cc;
+    }
+    &.nbtj {
+      background-color: #05c1f1;
+    }
+    &.lttj {
+      background-color: #0ca6f0;
+    }
+    &.shzp {
+      background-color: #147cde;
+    }
+    &.qt {
+      background-color: #0870c9;
+    }
+  }
+
+  .pie-bar-toggle{
+    padding-left: 22px;
+  }
+}
+
+.total {
+  padding-bottom: 10px;
+}
+
+
+
+.circle_chart{
+  overflow: hidden;
+  zoom:1;
+
+  .doughnua_chart{
+    float: left;
+
+    span {
+      z-index: 2;
+    }
+  }
+  canvas{
+    vertical-align: middle;
+  }
+
+  h5{
+    padding: 12px 0 0 8px;
+    margin-left: 60px;
+    font-weight: normal;
+    font-size: 14px;
+    color: @grey_66;
+  }
+  .js_correctionceo_bt{
+    &:hover{
+      .i_correction{
+        background-position: -16px -560px;
+      }
+    }
+  }
+}
+//面试相关--end
+
+
+//随便说说--start
+.chat_field{
+  border-radius: 2px;
+  border: 3px solid @grey_e7;
+  margin: 10px 0;
+  overflow: hidden;
+  _width: 618px;
+  zoom:1;
+
+  textarea{
+    width: 661px;
+    height: 72px;
+    color: @def;
+    padding: 5px;
+    resize:none;
+    outline: none;
+    border: 1px solid #ddd;
+    float: left;
+    margin: 0;
+  }
+}
+
+#shortViewPrompt{
+  margin-right: 15px;
+
+  strong{
+    font-size: 15px;
+
+    &.ok{
+      color: @green;
+    }
+
+    &.err{
+      color: #ff0000;
+    }
+  }
+}
+.reviews{
+  padding-top: 20px;
+
+  li{
+    padding: 10px 0;
+    border-bottom: 1px solid @grey_e7;
+
+    i{
+      //评
+      &.r{
+        width: 25px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat -94px -81px;
+      }
+
+      //聊
+      &.c{
+        width: 25px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat -123px -81px;
+      }
+
+      //面
+      &.i{
+        width: 25px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat -152px -81px;
+      }
+
+      //￥
+      &.m{
+        width: 25px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat 0 -81px;
+      }
+
+      //图
+      &.p{
+        width: 25px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: @icons no-repeat -30px -81px;
+      }
+
+      &.topic_0{
+        width: 25px;
+        height: 21px;
+        font-size: 0;
+        float: left;
+        background: url('@{img}/topic_0.png') no-repeat;
+      }
+    }
+
+    div{
+      margin-left: 35px;
+      line-height: 1.8em;
+      overflow: hidden;
+    }
+
+    .panel{
+      padding-top: 10px;
+      color: @grey_99;
+
+      span{
+        margin: 0 10px;
+        color: @grey_e7;
+      }
+    }
+    .color_y{
+      color: #ffcd00;
+    }
+  }
+}
+//随便说说--end
+
+

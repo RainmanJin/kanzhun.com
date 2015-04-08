@@ -1,0 +1,226 @@
+@import "var";
+
+section{
+  &.l_con{
+    float: left;
+    width: 640px;
+    margin-right: 7px;
+    padding-bottom: 70px;
+    background: #354257 url(../images/l_con_bg.jpg) no-repeat left top;
+  }
+
+  &.r_con{
+    float: left;
+    width: 313px;
+    padding: 15px 15px 20px 15px;
+    background-color: @white_f3;
+    box-shadow: 1px 1px 2px #d8dad9;
+  }
+
+  &.ugcl_con{
+    float: left;
+    width: 317px;
+    min-height: 1000px;
+    _height: 1000px;
+    margin-right: 7px;
+    padding: 0 13px;
+    background: #354257 url(../images/ugc_img_01.jpg) no-repeat left top;
+  }
+
+  &.ugcr_con{
+    float: left;
+    width: 640px;
+    min-height: 1000px;
+    _height: 1000px;
+    background-color: @white_f3;
+  }
+
+  &.ugc_cons{
+    width: 590px;
+    padding: 40px 25px 0 25px;
+    min-height: 960px;
+  }
+}
+
+div{
+  &.title{
+    padding: 41px 49px 45px 28px;
+    overflow: hidden;
+    zoom: 1;
+
+    dl{
+      float: left;
+      padding-top: 50px;
+      dd{
+        font-size: 18px;
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: @white;
+      em {
+        color: @green;
+      }
+    }
+  }
+
+  &.t_ugc{
+    height: 178px;
+    background: url(../images/l_con_bg.jpg) no-repeat left top;
+  }
+}
+
+/*头像*/
+.modifyhead{
+  position: relative;
+  float: right;
+  width: 180px;
+  height: 180px;
+  img{
+    width: 180px;
+    height: 180px;
+  }
+  em{
+    display: block;
+    width: 180px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: 2;
+    height: 50px;
+    line-height: 0;
+    background-color: #000;
+    opacity: .35;
+  }
+  span{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 0;
+    left: 0;
+    background: url(../images/img_07.png) no-repeat center;
+    z-index: 3;
+  }
+  a{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    color: @white;
+    text-align: center;
+    z-index: 4;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+&.ugc_m{
+  width: 115px;
+  height: 115px;
+  margin: 36px auto 20px auto;
+  float: none;
+  img{
+    width: 115px;
+    height: 115px;
+  }
+  span{
+    width: 115px;
+    height: 115px;
+    background: url(../images/ugc_img_02.png) no-repeat center;
+  }
+}
+
+.sidenav{
+  padding-top: 45px;
+  p{
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    a{
+      display: block;
+      color: @def;
+      background-color: @white;
+      text-align: center;
+      border: 1px solid #848b97;
+
+      &:hover, &.current, &.current:hover{
+        color: @white;
+        text-decoration: none;
+        background-color: @green;
+        border: 1px solid #206461;
+      }
+    }
+  }
+}
+
+p{
+  &.step{
+    color: @white;
+    font-size: 16px;
+    margin: 0;
+    i{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      color: @def;
+      background: @icons no-repeat -58px top;
+      font-size: 18px;
+      text-align: center;
+      line-height: 20px;
+      overflow: hidden;
+      vertical-align: -3px;
+      *vertical-align: 0;
+    }
+  }
+}
+
+.temptation{
+  overflow: hidden;
+  zoom: 1;
+
+  span{
+    clear: both;
+    display: block;
+    text-align: right;
+    color: @placeholder;
+    padding-right: 15px;
+  }
+}
+
+.keywords{
+  overflow: hidden;
+  zoom: 1;
+
+  li{
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    background-color: #e1e3e2;
+    margin: 0 7px 7px 0;
+
+    span{
+      float: left;
+      width: 118px;
+      color: @grey_99;
+      cursor: pointer;
+    }
+  }
+}
+
+strong{
+  &.ok{
+      color: @blue;  
+    }
+    
+    &.err{
+      color: #ff0000; 
+    }
+}

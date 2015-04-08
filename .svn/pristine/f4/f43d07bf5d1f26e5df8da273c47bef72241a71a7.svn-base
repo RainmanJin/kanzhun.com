@@ -1,0 +1,257 @@
+@import "var";
+@img-path: '../../images/questionnaire/1111';
+
+body{
+  background-color: #f2f2f2;
+}
+
+section.ques-banner{
+  height: 468px;
+  width: 100%;
+  min-width: 990px;
+  background: #d73d2b url("@{img-path}/banner.jpg") no-repeat center top;
+  .box-shadow(0 5px 20px #bbb);
+}
+
+
+section.ques-list{
+  background-color: #fff;
+  width: 890px;
+  margin: 40px auto 100px;
+  padding: 50px;
+  position: relative;
+  .box-shadow(0 4px 20px #e0e0e0);
+
+  .ques-count{
+    position: absolute;
+    right: 50px;
+    top: -5px;
+    background: url("@{img-path}/count.png") no-repeat;
+    width: 277px;
+    height: 106px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+
+    strong{
+      font-size: 30px;
+      vertical-align: middle;
+    }
+  }
+
+
+  dl{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #d0d0d0;
+
+
+    &.err{
+      background-color: #ffffea;
+    }
+
+    
+    dt{
+      font-size: 20px;
+      background: url("@{img-path}/img-1107-1.png") no-repeat 10px 0;
+      padding-left: 50px;
+      height: 30px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+
+    dd{
+      padding: 5px 65px;
+      font-size: 16px;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover{
+        color: #d03f3b;
+      }
+      
+      &.current{
+        color: #d03f3b;
+      }
+    }
+
+    input{
+      margin-top: 5px;
+      margin-right: 8px;
+      float: left;
+      cursor: pointer;
+    }
+
+    label{
+      cursor: pointer;
+      float: left;
+      margin-right: 20px;
+      max-width: 600px;
+    }
+  }
+}
+
+p.ques-submit{
+  text-align: center;
+  padding: 30px;
+
+  input{
+    font-size: 22px;
+    padding: 10px 50px;
+    background-color: #cb2f1e;
+    font-weight: bold;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+
+    &.forbidden{
+      background-color: #cccccc;
+    }
+  }
+}
+
+div.ret-tt{
+  margin-top: 30px;
+  background: url("@{img-path}/succ.jpg") no-repeat;
+  padding-left: 60px;
+  h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  p{
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+div.share{
+  background-color: #f6f6f6;
+  padding: 10px 60px;
+
+  span{
+    margin: 5px 20px 0 0;
+    float: left;
+  }
+}
+
+
+@-webkit-keyframes sliding {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+@-ms-keyframes sliding {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes sliding {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.sliding {
+  -webkit-animation-name: sliding;
+  -ms-animation-name: sliding;
+  -moz-animation-name: sliding;
+  animation-name: sliding;
+  -webkit-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+div.ret-con{
+  padding-top: 90px;
+  margin-top: 40px;
+  position: relative;
+
+  .ret-h{
+    position: absolute;
+    left: -50px;
+    top: 0;
+  }
+
+  .ratio{
+    width: 550px;
+    height: 20px;
+    float: right;
+    overflow: hidden;
+
+    p{
+      background-color: #e7e7e7;
+      border-radius: 8px;
+      height: 15px;
+      width: 480px;
+      float: left;
+      margin-top: 5px;
+
+      span{
+        display: block;
+        height: 15px;
+
+
+        i{
+          border-radius: 8px;
+          width: 100%;
+          display: block;
+          height: 15px;
+          .sliding;
+
+          &.ratio-1{
+            background-color: #f3bfce;
+          }
+
+          &.ratio-2{
+            background-color: #d4cbeb;
+          }
+
+          &.ratio-3{
+            background-color: #9fdacf;
+          }
+
+          &.ratio-4{
+            background-color: #ffd985;
+          }
+
+          &.ratio-5{
+            background-color: #aad0e6;
+          }
+        }
+      }
+    }
+
+    strong{
+      margin-left: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+

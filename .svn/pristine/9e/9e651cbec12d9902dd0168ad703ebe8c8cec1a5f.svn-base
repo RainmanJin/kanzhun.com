@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>使用帮助</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/profile.css" />
+<script src="../js/require.js" data-main="../js/site/profile.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">招聘</a>
+				<a href="#">公司</a>
+				<a href="#">工资</a>
+				<a href="#">面试</a>
+				<a href="#" class="mycomment">我要点评</a>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="container profiles clearfix">
+		<aside class="profiles_nav usehelp_nav">
+			<nav>
+				<p><a href="#">关于看准</a></p>
+				<p><a href="#">意见反馈</a></p>
+				<p class="current"><a href="#">使用帮助</a></p>
+				<p><a href="#">用户协议</a></p>
+			</nav>
+		</aside>
+
+		<section class="profiles_con">
+			<h3 class="p_tt usehelp_tt">使用帮助</h3>
+			<dl class="rule">
+				<dt><strong>注册规则</strong></dt>
+				<dd>1） 用户应当严格遵循看准网系统设置的注册流程完成注册。</dd>
+				<dd>2）用户在选择其看准网用户名时应遵守国家法律法规，不得包含违法、涉嫌侵犯他人权利或干扰网站运营秩序等相关信息。</dd>
+			</dl>
+			<dl class="rule">
+				<dt><strong>如何使用第三方登录？</strong></dt>
+				<dd>1） 第三方登录是指用其他社交平台帐号登录看准网，目前支持新浪微博平台和人人平台，您可在登录页点击相应的按钮通过第三方登录看准网，如果是第一次登录需要授权，看准网承诺不会泄露您的任何私人信息。</dd>
+				<dd>2） 使用第三方入口登录的用户，下次登录看准仍需要点击第三方入口的按钮，不可通过输入邮箱密码正常登录看准。您也可在个人中心中设置看准网的账户及密码，设置成功后下次即可输入设置的邮箱和密码正常登录看准网。</dd>
+			</dl>
+			<dl class="rule">
+				<dt><strong>忘记密码怎么找回？</strong></dt>
+				<dd>1） 在登录页面点击“忘记密码”，进入找回密码页。</dd> 
+				<dd>2） 在找回密码页输入您注册时填写的邮箱，点击确认后系统会发送给您一封重置密码的邮件。</dd> 
+				<dd>3） 打开您的邮箱，按照邮件的提示内容及步骤重置密码。</dd>
+			</dl>
+			<dl class="rule">
+				<dt><strong>面经发布规则</strong></dt>
+				<dd>1） 禁止抄袭雷同面经：抄袭网站简介、他人面经、媒体资料、官方介绍等，频繁引用他人或他处文字，或是未经原作者同意，擅自复制其文字内容，不做任何修改或与原内容相似度90%，视为文字盗用字。</dd>
+				<dd>2） 禁止灌水面经：面经字数不满200字，相似内容反复发布，缺少实质体验的面经等。</dd>
+				<dd>3） 禁止炒作面经：出于明显商业利益的商家炒作性质面经。</dd>
+				<dd>4） 禁止广告面经：出于商业或个人利益的广告性质面经。</dd>
+				<dd>5） 禁止含不当语言面经：面经中含有辱骂、侮辱或人身攻击等不当语言。</dd>
+				<dd>6） 禁止违法违规面经：存在违反相关法律、法规内容的面经。</dd>
+				<dd>7） 禁止重复面经：因操作不当或是恶意刷屏造成的重复面经。</dd>
+				<dd>8） 禁止发布招聘信息：包含招聘信息内容的面经。</dd>
+			</dl>			
+		</section>
+	</div>
+	
+	
+</body>
+</html>

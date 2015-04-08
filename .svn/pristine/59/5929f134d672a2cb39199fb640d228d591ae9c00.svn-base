@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/pk.css"/>
+  <title>DEMO</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="fav">
+    <a href="#">点此收藏&gt;&gt;</a><img src="images/logo.png" width="42" height="30">好玩就收藏下，以后随时查！
+  </div>
+
+  <div class="pk-choose pk-items wrapper-bg">
+    <div class="">
+      <div class="co fleft" id="pkLeft">
+          <span>
+            <i><img src="images/corner.png" width="100%" height="100%"></i>
+            <img src="http://img.kanzhun.com/images/logo/20141122/25cbc5c63ab546e79f003f94a8374cb2.jpg">
+          </span>
+        <p>华为</p>
+      </div>
+
+      <p></p>
+
+      <div class="co fright">
+          <span>
+            <img src="images/def.jpg" class="def">
+          </span>
+        <p class="f-666">添加公司</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="job">
+      <span>按职位比较</span>
+      <button type="button">请选择 <i></i></button>
+    </div>
+
+    <p class="space"></p>
+
+    <div class="pk-list">
+      <dl class="pk-item">
+        <dt>
+          <span>工资</span>
+        </dt>
+
+        <dd class="t-center">
+          <div class="salary">
+            <em class="pk-color">平均</em>
+            <span>
+              <strong>￥17,400</strong>
+              来自 222 样本
+            </span>
+          </div>
+
+          <p><a href="#">查看全部</a></p>
+        </dd>
+
+        <dt>
+          <span>评分</span>
+        </dt>
+
+        <dd>
+          <div class="grade">
+            <strong>5.0</strong>
+            <div>
+              <p>
+                <span style="width: 60%"></span>
+              </p>
+              <em>来自 222 样本</em>
+            </div>
+          </div>
+
+          <div class="grade-more">职业成长<p><span style="width: 30%;"></span></p></div>
+          <div class="grade-more">个人技能<p><span style="width: 40%;"></span></p></div>
+          <div class="grade-more">工作压力<p><span style="width: 50%;"></span></p></div>
+          <div class="grade-more">公司发展<p><span style="width: 60%;"></span></p></div>
+          <div class="grade-more">环境压力<p><span style="width: 70%;"></span></p></div>
+        </dd>
+
+        <dt>
+          <span>点评</span>
+        </dt>
+
+        <dd>
+          <ul class="pk-interview">
+            <li><i></i><span>姨妈假 <em>(807)</em></span></li>
+            <li class="current"><i></i><span>福利好 <em>(44)</em></span></li>
+            <li><i></i><span>美女多 <em>(1024)</em></span></li>
+          </ul>
+
+          <ul class="pk-interview-list">
+            <li>
+              <div class="tt">
+                <p>客服说</p>
+                2014-11-22
+              </div>
+
+              <div class="text">
+                <strong>优点：</strong>
+                <p>优点优点优点优点优点优点优点</p>
+
+                <strong>缺点：</strong>
+                <p>缺点缺点缺点缺点缺点缺点缺点缺点缺点</p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn-orange">查看全部点评</a>
+        </dd>
+      </dl>
+
+      <dl class="pk-item">
+        <dt>
+          <span>工资</span>
+        </dt>
+
+        <dd class="t-center">
+          <div class="salary">
+            <em class="pk-color">平均</em>
+            <span>
+              <strong>￥17,400</strong>
+              来自 222 样本
+            </span>
+          </div>
+
+          <p><a href="#">查看全部</a></p>
+        </dd>
+
+        <dt>
+          <span>评分</span>
+        </dt>
+
+        <dd>
+          <div class="grade">
+            <strong>5.0</strong>
+            <div>
+              <p>
+                <span style="width: 60%"></span>
+              </p>
+              <em>来自 222 样本</em>
+            </div>
+          </div>
+
+          <div class="grade-more">职业成长<p><span style="width: 30%;"></span></p></div>
+          <div class="grade-more">个人技能<p><span style="width: 40%;"></span></p></div>
+          <div class="grade-more">工作压力<p><span style="width: 50%;"></span></p></div>
+          <div class="grade-more">公司发展<p><span style="width: 60%;"></span></p></div>
+          <div class="grade-more">环境压力<p><span style="width: 70%;"></span></p></div>
+        </dd>
+
+        <dt>
+          <span>点评</span>
+        </dt>
+
+        <dd>
+          <ul class="pk-interview">
+            <li><i></i><span>姨妈假 <em>(807)</em></span></li>
+            <li class="current"><i></i><span>福利好 <em>(44)</em></span></li>
+            <li><i></i><span>美女多 <em>(1024)</em></span></li>
+          </ul>
+
+          <ul class="pk-interview-list">
+            <li>
+              <div class="tt">
+                <p>客服说</p>
+                2014-11-22
+              </div>
+
+              <div class="text">
+                <strong>优点：</strong>
+                <p>优点优点优点优点优点优点优点</p>
+
+                <strong>缺点：</strong>
+                <p>缺点缺点缺点缺点缺点缺点缺点缺点缺点</p>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="btn-orange">查看全部点评</a>
+        </dd>
+      </dl>
+    </div>
+  </div>
+
+  <p class="mt10 mb10"><img src="images/kz.jpg" width="100%"></p>
+</div>
+<p style="height: 50px;"></p>
+<a class="bottomFix" href="#">我也要查一查</a>
+
+<div class="slide-mask none"></div>
+<section class="add-co">
+  <a class="close" href="javascript:;"><img src="/images/activity/bcompany/close.png"></a>
+  <div>
+    <p class="t-center mb10 f_16">选择对比职位</p>
+    <p class="space"></p>
+
+    <ul>
+      <li>美团</li>
+      <li>腾讯网</li>
+      <li>Intel</li>
+      <li>上海大众汽车</li>
+    </ul>
+  </div>
+</section>
+</body>
+</html>
+
+

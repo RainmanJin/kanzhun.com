@@ -1,0 +1,255 @@
+@import "../../../css/common/var";
+@import "../var";
+@import "piece/ugc-framework";
+@import "piece/ugc-form-control";
+@import "../../../css/auth-fresh";
+@import "../../../components/auth/embed-auth";
+@import "../../../css/modules/autocomplete";
+@import "../../../css/modules/prompt_box";
+@auth-icons: url("@{img}/auth.png");
+
+
+.ugc-main{
+  padding: 30px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+}
+.ugc-begin{
+  font-size: 26px;
+  color: #000;
+}
+
+
+.ugc-main-tabs{
+  margin-top: 25px;
+  //overflow: hidden;
+
+  .u-m-selector{
+    width: 180px;
+    float: left;
+
+    li{
+      font-size: 18px;
+
+      text-align: center;
+      background-color: #f6f6f6;
+      border: 1px solid #eaeaea;
+      border-radius: 2px;
+      margin-bottom: 10px;
+      
+      a{
+        color: @def;
+        display: block;
+        padding: 15px 0;
+
+        &:hover{
+          text-decoration: none;
+          color: @green;
+          background-color: #f9f9f9;
+        }
+      }
+      
+      &.current{
+        margin-right: -11px;
+        border-right: 1px solid #f6f6f6;
+
+        a{
+          padding: 15px 20px 15px 0px;
+          border-left: 10px solid @green;
+          color: @green;
+
+          &:hover{
+            background-color: #f6f6f6;
+          }
+        }
+      }
+    }
+  }
+
+  .u-m-panel{
+    margin-left: 190px;
+    background-color: #f6f6f6;
+    border: 1px solid #eaeaea;
+    padding: 35px 0 100px 55px;
+    min-height: 400px;
+
+    figure{
+      overflow: hidden;
+      margin-left: 50px;
+      margin-bottom: 50px;
+
+      img{
+        width: 60px;
+        height: 62px;
+        float: left;
+        background-image: url("@{img}/v2/ugc-v2.png");
+        background-repeat: no-repeat;
+
+        &.f-review{
+          background-position: -63px 0;
+        }
+
+        &.f-salary{
+          background-position: -126px 0;
+        }
+
+        &.f-photo{
+          background-position: -189px 0;
+        }
+      }
+      
+      p{
+        margin-left: 70px;
+        font-size: 18px;
+        color: #666666;
+        padding-top: 5px;
+      }
+    }
+  }
+}
+
+.ugc-completed{
+  padding: 40px 75px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  min-height: 745px;
+
+  .u-cpl-succ{
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .embed-auth{
+    margin: 20px auto;
+
+    section.auth{
+      margin: 0 auto;
+    }
+  }
+}
+
+.no-co-suggestion{
+  clear: both;
+  padding-top: 10px;
+  margin-left: 5em;
+  width: 287px;
+  display: none;
+
+  p{
+    background-color: #ffe1e1;
+    padding: 10px;
+    border-left: 4px solid #e85253;
+    color: #666666;
+  }
+}
+
+
+div.autocomplete-suggestions.cmp_select {
+  max-height: 350px;
+  overflow-y: auto;
+
+  div {
+    height: 55px;
+    line-height: 1em;
+    padding-left: 0;
+    background-color: #fff;
+    cursor: pointer;
+
+    dl {
+      padding: 10px 0 10px 10px;
+      overflow: hidden;
+      background-color: #fff;
+
+      dt {
+        float: left;
+        width: 33px;
+        height: 33px;
+        border: 1px solid #e7e7e7;
+        border-radius: 3px;
+        padding: 0;
+
+        img {
+          display: block;
+          width: 33px;
+          height: 33px;
+        }
+      }
+
+      dd {
+        margin-left: 45px;
+        border: none;
+        padding-top: 4px;
+        p{
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    &.autocomplete-selected {
+      background-color: #007ead;
+
+      dl, dl dd {
+        background-color: #007ead;
+      }
+
+      dd {
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  & > p {
+    margin: 0 10px;
+    height: 35px;
+    line-height: 35px;
+    border-top: 1px solid @grey_e7;
+    font-size: 12px;
+  }
+
+  .suggestion-force{
+    border-top: 1px solid @grey_e7;
+    padding: 10px;
+    height: auto;
+    background-color: #ffe1e1;
+
+    p{
+      font-size: 12px;
+      padding-top: 7px;
+    }
+  }
+}
+
+.ugc-suc-redirect{
+  text-align: center;
+  padding: 50px 0;
+
+  button {
+    background-color: transparent;
+    outline: none;
+    font-weight: bold;
+    color: #e85253;
+    margin-right: 2px;
+  }
+}
+
+//离开时间提示框
+div.prompt_wrap {
+  position: absolute;
+  left: 190px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+
+  div {
+    width: 13em;
+    top: 30px;
+    left: -25px;
+    color: @grey_99;
+  }
+}

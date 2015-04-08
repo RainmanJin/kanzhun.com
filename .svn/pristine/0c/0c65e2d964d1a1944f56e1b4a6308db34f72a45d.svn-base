@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>KANZHUN NEWS</title>
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body class="kz-news">
+  <div class="wrapper">
+    <div class="container">
+      <header>
+        <strong>看准资讯</strong>
+        <a href="#" class="slide-menu"><img src="images/slide-menu.png" ></a>
+        <a class="publish" href="#"><img src="images/publish.png"></a>
+      </header>
+
+      <div class="writing">
+        <h2>看准资讯 投稿\爆料</h2>
+        <ul>
+          <li>看准网资讯专注行业和职场最新资讯</li>
+          <li>帮助职场人及时了解最新动态 </li>
+          <li>把握自己的职业方向</li>
+        </ul>
+
+        <p>欢迎公司和职场人士投稿：</p>
+        <p><a href="mailto:kanzhuntg@gmail.com">kanzhuntg@gmail.com</a></p>
+        <p class="mt20">欢迎职场人士爆料：</p>
+        <p><a href="mailto:blkanzhun@gmail.com">blkanzhun@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-mask"></div>
+  <aside class="slide-wrapper">
+    <div>
+      <div>
+        <strong>看准资讯</strong>
+        <a href="#">登录</a>
+      </div>
+
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">看准报告</a></li>
+        <li><a href="#">热点聚焦</a></li>
+        <li><a href="#">名企动态</a></li>
+        <li><a href="#">高管轶事</a></li>
+        <li><a href="#">股市风云</a></li>
+        <li><a href="#">首行业分析</a></li>
+        <li><a href="#">职场规则</a></li>
+        <li><a href="#">小道消息</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <footer class="page_ft">
+    <p><a ka="index" href="/index.html" rel="nofollow">首页</a>|<a ka="aboutus" href="/about.html" rel="nofollow">关于我们</a>|<a ka="feedback" href="/contact_us.html" rel="nofollow">意见反馈</a></p>
+    <p><a ka="mobile" class="a-green" href="http://m.kanzhun.com">移动版</a>|<a ka="computer" href="http://www.kanzhun.com?wytl=1">电脑版</a></p>
+  </footer>
+
+  <script src="js/lib/zepto.js"></script>
+  <script src="js/module/slide-menu.js"></script>
+</body>
+</html>
+
+

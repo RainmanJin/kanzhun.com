@@ -1,0 +1,83 @@
+@import "../common/var";
+
+.init() {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  background-image: @icons;
+  background-repeat: no-repeat;
+}
+
+i {
+  &.submission {
+    .init();
+    width: 18px;
+    height: 19px;
+    background-position: 0 0;
+  }
+
+  &.comment {
+    .init();
+    width: 16px;
+    height: 15px;
+    background-position: -23px 0;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  &.commented {
+    .init();
+    width: 16px;
+    height: 15px;
+    background-position: -44px 0;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  &.tag {
+    .init();
+    width: 21px;
+    height: 21px;
+    background-position: -65px 0;
+  }
+
+  &.hasuse {
+    .init();
+    width: 13px;
+    height: 14px;
+    background-position: -91px 0;
+    vertical-align: middle;
+  }
+
+  &.hasused{
+    .init();
+    width: 13px;
+    height: 14px;
+    vertical-align: middle;
+    background-position: -109px 0;
+
+  }
+
+  &.share {
+    .init();
+    width: 9px;
+    height: 13px;
+    background-position: -127px 0;
+  }
+
+  &.list_style {
+    .init();
+    width: 7px;
+    height: 10px;
+    background-position: -155px 0;
+  }
+
+  &.i-new {
+    .init();
+    width: 21px;
+    height: 11px;
+    background-position: -167px 0;
+  }
+}
+

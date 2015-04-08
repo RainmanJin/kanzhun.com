@@ -1,0 +1,110 @@
+div.contact {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+div.contact dl {
+  text-align: left;
+}
+div.contact dt {
+  padding-bottom: 5px;
+}
+ul.whyisme {
+  padding: 0 0 0 30px;
+  overflow: hidden;
+  zoom: 1;
+}
+ul.whyisme li {
+  float: left;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #83919b;
+  margin: 0 22px 16px 0;
+}
+ul.whyisme li a {
+  float: left;
+  width: 146px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #343434;
+  font-size: 16px;
+}
+ul.address {
+  margin: 0 20px 45px 20px;
+  background-color: #216463;
+  padding: 10px 0 10px 24px;
+}
+ul.address li {
+  color: #ffffff;
+  line-height: 2em;
+}
+p.recruitmen {
+  padding: 75px 50px 75px 30px;
+}
+h2.tt {
+  margin-bottom: 30px;
+}
+h2.tt i {
+  display: inline-block;
+  height: 18px;
+  width: 4px;
+  background-color: #0a9c7a;
+  vertical-align: -2px;
+  *vertical-align: 0px;
+  margin-right: 10px;
+}
+dl.terminus {
+  margin-bottom: 45px;
+  overflow: hidden;
+  zoom: 1;
+}
+dl.terminus dt {
+  float: left;
+  width: 8em;
+}
+dl.terminus dt a {
+  position: relative;
+  display: block;
+  width: 79px;
+  height: 79px;
+  margin: 0 auto 5px auto;
+  overflow: hidden;
+}
+dl.terminus dt a img {
+  width: 79px;
+  height: 79px;
+}
+dl.terminus dt a span {
+  position: absolute;
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  top: 0;
+  left: 0;
+  background: url(../images/img.png) no-repeat center;
+}
+dl.terminus dt p {
+  text-align: center;
+}
+dl.terminus dd {
+  *float: left;
+  width: 213px;
+  margin-left: 100px;
+  *margin: 0 -15px 0 -10px;
+}
+dl.terminus dd a {
+  display: block;
+  color: #fff;
+  background: url(../images/img_02.png) no-repeat left top;
+}
+dl.terminus dd a p {
+  padding: 10px 10px 10px 20px;
+  background: url(../images/img_03.png) repeat-x 10px bottom;
+}
+dl.terminus dd a:hover {
+  background: url(../images/img_05.png) no-repeat left top;
+  text-decoration: none;
+}
+dl.terminus dd a:hover p {
+  background: url(../images/img_04.jpg) no-repeat 10px bottom;
+}

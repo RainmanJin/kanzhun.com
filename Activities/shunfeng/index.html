@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>洗车</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/shunfeng.css" />
+  <link rel="stylesheet" href="css/wx.css" />
+</head>
+<body class="index">
+<section class="banner">
+  <img class="banner_bg" src="images/banner.jpg" width="100%">
+  <div class="list" id="phoneList">
+  	<div class="inner">
+		  <ul>
+		  	<li>183****4561已成功领取！</li>
+		  	<li>183****4562已成功领取！</li>
+		  	<li>183****4563已成功领取！</li>
+		  	<li>183****4564已成功领取！</li>
+		  	<li>183****4565已成功领取！</li>
+		  	<li>183****4511已成功领取！</li>
+		  	<li>183****4522已成功领取！</li>
+		  	<li>183****4533已成功领取！</li>
+		  	<li>183****4544已成功领取！</li>
+		  	<li>183****4555已成功领取！</li>
+		  </ul>
+	  </div>
+  </div>
+</section>
+<section class="content">
+  <form action="">
+	<h2>1. 请输入您的手机号：</h2>
+
+	<ul class="form clearfix">
+		<li><input type="text" name="phone" maxlength="11"></li>
+	</ul>
+
+  <h2 class="mt20">2. 选择优惠券类型：</h2>
+  <ul class="form clearfix">
+    <li id="sfType">
+      <button type="button" value="1"><strong>￥50</strong><span>满200使用<br/>剩余500张</span></button>
+      <button type="button" value="2"><strong>￥80</strong><span>满299使用<br/>剩余300张</span></button>
+      <input type="hidden" name="type" value="" >
+    </li>
+  </ul>
+    <a class="orange_btn mt20" id="sfSubmit">提&nbsp;&nbsp;交</a>
+  </form>
+
+	<p class="b_info clearfix">
+		<a href="#">活动详情</a>
+		<span>此活动最终解释权归看准网所有</span>
+	</p>
+</section>
+
+<div class="mask sf-mask ">
+  <p>哎呀！不好意思~此类型的 <br/>优惠券被抢光了，换个类型试试吧~<br/>近期会有很多活动，敬请期待哦！</p>
+</div>
+<div class="mask sf-mask hidden">
+  <p>您好，您已经领取过一张<br/>优惠券了哦，让朋友也来领一张吧~<br/>近期会有很多活动，敬请期待！</p>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/shunfeng.js"></script>
+<script type="text/javascript" src="js/wx.js"></script>
+</html>

@@ -1,0 +1,24 @@
+header.person_header {
+  background-color: #08c093;
+  height: 60px;
+}
+header.person_header .inner {
+  width: 990px;
+  margin: 0 auto;
+  color: #fff;
+}
+header.person_header .inner .inner_r {
+  float: right;
+  margin-top: 20px;
+  font-size: 16px;
+}
+header.person_header .inner .inner_r i {
+  vertical-align: middle;
+}
+header.person_header .inner .inner_r em {
+  color: #6de0c3;
+  margin: 0 10px;
+}
+header.person_header .inner .inner_r a {
+  color: #fff;
+}

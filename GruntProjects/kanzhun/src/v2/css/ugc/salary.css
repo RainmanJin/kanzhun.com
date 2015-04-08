@@ -1,0 +1,208 @@
+.u-m-form-control li {
+  padding-bottom: 25px;
+  position: relative;
+  zoom: 1;
+}
+.u-m-form-control li:before,
+.u-m-form-control li:after {
+  content: "";
+  display: table;
+}
+.u-m-form-control li:after {
+  clear: both;
+  overflow: hidden;
+}
+.u-m-form-control li:first-child {
+  display: inline-block;
+}
+.u-m-form-control li label {
+  float: left;
+  margin-top: 9px;
+  white-space: nowrap;
+}
+.u-m-form-control li label em {
+  color: #fb0d1b;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+.u-m-form-control li.col-label-4 label {
+  width: 5em;
+}
+.u-m-form-control li.col-label-4 p.err {
+  padding-left: 6em;
+}
+.u-m-form-control li.col-label-5 label {
+  width: 6em;
+}
+.u-m-form-control li.col-label-5 p.err {
+  padding-left: 7em;
+}
+.u-m-form-control li.col-label-6 label {
+  width: 7em;
+}
+.u-m-form-control li.col-btn-3 button.radio {
+  width: 85px;
+  margin-right: 16px;
+}
+.u-m-form-control li input.ifd {
+  border-color: #cccccc;
+  border-width: 2px 1px 1px 2px;
+  border-radius: 3px;
+  padding: 9px 12px;
+  float: left;
+  background-color: #fbfbfb;
+}
+.u-m-form-control li input.ifd:hover {
+  background-color: #fff;
+}
+.u-m-form-control li input.ifd.active {
+  background-color: #fff;
+  border-color: #7cb228;
+}
+.u-m-form-control li input.err {
+  border-color: #e85253;
+}
+.u-m-form-control li .select {
+  width: 284px;
+  float: left;
+  border-radius: 3px;
+}
+.u-m-form-control li .select dt {
+  background-color: #fbfbfb;
+}
+.u-m-form-control li .select.err {
+  border-color: #e85253;
+}
+.u-m-form-control li .select:hover dt {
+  background-color: #fff;
+}
+.u-m-form-control li p.err {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  color: #fb0d1b;
+  font-size: 12px;
+  display: none;
+}
+.u-m-form-control li p.err i {
+  background: url("/images/v2/ugc-v2.png") no-repeat -236px -72px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+.u-m-form-control li .ifd-unit {
+  float: left;
+  margin: 0.7em 0 0 -2em;
+}
+.u-m-form-control button.radio {
+  height: 34px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  text-align: center;
+  width: 132px;
+  margin-right: 22px;
+  background: url("/images/icons.png") repeat-x 0 -162px;
+  cursor: pointer;
+  outline: none;
+}
+.u-m-form-control button.radio:hover {
+  background: #ffffff url('');
+}
+.u-m-form-control button.radio-checked {
+  background: #fff;
+  border: 1px solid #7cb228;
+  position: relative;
+}
+.u-m-form-control button.radio-checked i {
+  width: 34px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url("/images/v2/ugc-v2.png") no-repeat 0 -85px;
+}
+.u-m-form-control .ugc-orange-btn {
+  border: 0;
+  background-color: #fb7200;
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 0;
+  text-align: center;
+  border-radius: 5px;
+  width: 287px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+div.C-toggler {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  color: #999999;
+}
+div.C-toggler i {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-width: 4px 4px 0 4px;
+  border-style: solid dashed;
+  border-color: #999999 transparent transparent transparent;
+  vertical-align: 2px;
+}
+div.C-toggler.active i {
+  border-width: 0 4px 4px 4px;
+  border-color: transparent transparent #999999 transparent;
+}
+div.C-toggler.active:hover i {
+  border-bottom-color: #7cb228;
+}
+div.C-toggler:hover {
+  color: #7cb228;
+}
+div.C-toggler:hover i {
+  border-top-color: #7cb228;
+}
+ul.salary-detail {
+  margin-left: 6em;
+  background-color: #fafafa;
+  padding: 20px 30px;
+  width: 320px;
+  display: none;
+}
+ul.salary-detail li:first-child {
+  display: block;
+}
+ul.salary-detail li {
+  padding-bottom: 15px;
+}
+ul.salary-detail .ifd {
+  width: 220px;
+}
+.salary-detail-tt {
+  padding-left: 6em;
+  padding-bottom: 10px;
+}
+.salary-detail-tt .C-toggler {
+  color: #2c84cc;
+  font-size: 14px;
+}
+.salary-detail-tt .C-toggler:hover {
+  color: #2472b4;
+}
+.salary-done {
+  clear: both;
+  margin-left: 6em;
+  padding-left: 120px;
+}
+.salary-done .ugc-orange-btn {
+  width: auto;
+  display: inline-block;
+  padding: 7px 45px;
+  margin: 30px 0 100px;
+}

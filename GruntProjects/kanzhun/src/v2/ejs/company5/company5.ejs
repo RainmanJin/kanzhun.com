@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>公司简介页</title>
+    <!--[if lte IE 9]>
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"> </script>
+    <!--[if gt IE 9]><!-->
+    <script src="/js/jquery-2.1.0.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css"/>
+   <link rel="stylesheet" href="<%= previewUrl %>/v2/css/company5/company5.css"/>
+    <script>
+        var CONTEXTPATH = '/';
+        var require = {
+            baseUrl: '/',
+            urlArgs: "v=1.0.7"
+        };
+    </script>
+    <script src="/js/require.js" data-main="/v2/js/company/company.js"></script>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+<% include ../modules/top-search %>
+<!--% include piece/co-header %>-->
+
+<div class="container">
+
+    <div class="f_l_con clearfix">
+
+        <div class="co-indu"><!--热门行业-->
+
+        </div>
+        <div class="co-employee"><!--雇主-->
+
+        </div>
+        <div class="co-exposute"><!--员工曝光-->
+
+        </div>
+
+    </div><!-- end  左边container-->
+
+    <div class="f_r_con">
+
+        <div class="co-tags"><!--标签-->
+
+        </div>
+
+        <div class="co-comment"><!--评论    -->
+
+        </div>
+
+        <div class="co-popular"><!--大家都在看-->
+
+        </div>
+
+    </div><!-- end  右边container-->
+
+</div>
+
+</body>
+</html>

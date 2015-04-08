@@ -1,0 +1,108 @@
+i.i {
+  background: url("../../images/ugc/icons.png") no-repeat;
+  display: inline-block;
+}
+i.i.i_greydown {
+  background-position: -160px 0;
+  width: 13px;
+  height: 8px;
+}
+i.i.i_blackup {
+  background-position: -180px 0;
+  width: 15px;
+  height: 8px;
+}
+i.i.i_right {
+  background-position: -160px -20px;
+  width: 8px;
+  height: 14px;
+}
+i.i.i_people {
+  background-position: 0 0;
+  width: 20px;
+  height: 22px;
+}
+i.i.i_people.current {
+  background-position: -40px 0;
+}
+i.i.i_info {
+  background-position: 0 -40px;
+  width: 25px;
+  height: 20px;
+}
+i.i.i_info.current {
+  background-position: -40px -40px;
+}
+i.i.i_heart {
+  background-position: 0 -80px;
+  width: 24px;
+  height: 20px;
+}
+i.i.i_heart.current {
+  background-position: -40px -80px;
+}
+i.i.i_opus {
+  background-position: 0 -120px;
+  width: 24px;
+  height: 20px;
+}
+i.i.i_opus.current {
+  background-position: -40px -120px;
+}
+i.i.i_work {
+  background-position: 0 -160px;
+  width: 23px;
+  height: 22px;
+}
+i.i.i_work.current {
+  background-position: -40px -160px;
+}
+i.i.i_hat {
+  background-position: 0 -200px;
+  width: 26px;
+  height: 20px;
+}
+i.i.i_hat.current {
+  background-position: -40px -200px;
+}
+i.i.i_necktie {
+  background-position: 0 -240px;
+  width: 16px;
+  height: 27px;
+}
+i.i.i_necktie.current {
+  background-position: -40px -240px;
+}
+i.i.i_necktieplus {
+  background-position: 0 -280px;
+  width: 20px;
+  height: 27px;
+}
+i.i.i_necktieplus.current {
+  background-position: -40px -280px;
+}
+i.i.i_quit {
+  background-position: 0 -320px;
+  width: 24px;
+  height: 22px;
+}
+i.i.i_sclose {
+  background-position: -160px -40px;
+  width: 13px;
+  height: 13px;
+}
+i.i.i_gtips {
+  background-position: -80px 0;
+  width: 42px;
+  height: 28px;
+}
+i.i.i_plus {
+  background-position: -80px -40px;
+  width: 25px;
+  height: 25px;
+}
+i.i.i_redpoint {
+  background-position: -180px -40px;
+  width: 10px;
+  height: 10px;
+}

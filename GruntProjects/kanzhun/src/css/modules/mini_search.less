@@ -1,0 +1,126 @@
+@import "../common/var";
+@import "autocomplete";
+
+.ps_header {
+  padding: 8px 0;
+  background-color: #e5e5e5;
+  div {
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    z-index: 6;
+
+    .select {
+      position: relative;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      text-align: center;
+      vertical-align: middle;
+      width: 121px;
+      height: 30px;
+      background: @icons repeat-x 0 -162px;
+      border: 1px solid #cfcfcf;
+      z-index: 9;
+      dt {
+        height: 30px;
+        background: none;
+      }
+      input {
+        *display: inline-block;
+        height: 16px;
+        line-height: 16px;
+        border: 0;
+        background: none;
+        margin-top: 7px;
+        width: 100%;
+        color: @grey_99;
+      }
+      span {
+        width: 35px;
+        height: 16px;
+        padding-top: 14px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        background: none;
+        border: none;
+        font-size: 0;
+        text-align: center;
+        cursor: pointer;
+        i {
+          display: inline-block;
+          font-size: 0;
+          width: 9px;
+          height: 5px;
+          overflow: hidden;
+          .transition(all .2s linear);
+          .transform(rotate(0deg));
+          background: transparent url("@{img}/trangle.png") no-repeat;
+        }
+      }
+      dd {
+        top: 31px;
+        z-index: 4;
+        a {
+          text-align: left;
+          color: @def;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+    input.ps_ipt {
+      border: none;
+      width: 176px;
+      height: 16px;
+      line-height: 16px;
+      padding: 7px 0 7px 13px;
+      border-top: 1px solid #cfcfcf;
+      border-bottom: 1px solid #cfcfcf;
+      background-color: #fff;
+      vertical-align: middle;
+      &.yibao {
+        width: 233px;
+        border-right: 1px solid #cfcfcf;
+      }
+    }
+    .btn_grey_ps {
+      border: none;
+      background: none;
+      height: 30px;
+      line-height: 30px;
+      background: @icons repeat-x 0 -162px;
+      border: 1px solid #cfcfcf;
+      padding: 0;
+      text-align: center;
+      color: @def;
+      cursor: pointer;
+      white-space: nowrap;
+      vertical-align: middle;
+      display: inline-block;
+      input, button {
+        height: 30px;
+        cursor: pointer;
+        display: block;
+        padding: 0 25px;
+        border: 0;
+        background-color: transparent;
+        width: 100%;
+        overflow: visible;
+        color: @def;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: @grey_99;
+      }
+    }
+  }
+}
+
+.field_mini_bg {
+  background-color: #dbdbdb;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>公司照片</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css">
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/ugc/ugc-main.css">
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <!--<script src="/js/require.js" data-main="/v2/js/company/view.js"></script>-->
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+
+<div class="container-ugc clearfix">
+  <div class="ugc-con-l">
+    <div class="ugc-main">
+      <p class="ugc-begin">您要发布一条：</p>
+
+      <div class="ugc-main-tabs">
+        <ul class="u-m-selector">
+          <li><a href="/v2/ejs/ugc/main-review">公司点评</a></li>
+          <li><a href="/v2/ejs/ugc/main-interview">面试经验</a></li>
+          <li><a href="/v2/ejs/ugc/main-salary">工资信息</a></li>
+          <li class="current"><a href="/v2/ejs/ugc/main-photo">公司照片</a></li>
+        </ul>
+
+        <div class="u-m-panel">
+          <figure>
+            <img src="/images/blank.gif" class="f-photo">
+            <p>匿名发布您的面试经历。 <br/>
+              真实的记录面试感受。</p>
+          </figure>
+
+          <p class="f_18">所在的公司：</p>
+
+          <ul class="u-m-form-control pt15">
+            <li class="col-label-4">
+              <label>公司简称</label>
+              <input type="text" class="ifd err" placeholder="请输入，如“百度”">
+            </li>
+            <li class="col-label-4">
+              <label>所在城市</label>
+              <input type="text" class="ifd" placeholder="请输入，如“北京”">
+              <p class="err"><i></i>还没有输入所在城市</p>
+            </li>
+            <li class="col-label-4">
+              <label></label>
+              <input class="ugc-orange-btn" type="submit" value="选好了，去发布">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <% include piece/ugc-right.ejs %>
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta http-equiv="Cache-Control" content="no-transform ">
+  <meta name="viewport" content="width=device-width">
+  <script type="text/javascript">
+    var CONTEXTPATH='';
+    var STATICURL='http://img.kanzhun.com';
+    var require = {
+      urlArgs : "v=v1.1.31"
+    };
+  </script>
+  <!--[if lte IE 9]>
+      <script src="http://s.kanzhun.com/js/html5shiv.js"></script>
+      <script src="http://s.kanzhun.com/js/jquery-1.11.0.min.js"></script>
+      <!--[if gt IE 9]><!-->
+  <script src="http://s.kanzhun.com/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/css/widget.css?tv=v1.1.31" />
+  <title>登录</title>
+  <link rel="stylesheet" href="/css/auth-dialog-fresh.css?tv=v1.1.31" />
+  <script src="/js/require.js" data-main="/js/site/auth.js?tv=v1.1.31"></script>
+</head>
+</head>
+<body class="auth-wrap">
+<section class="auth" id="registerDialog">
+  <h3><span>已注册, <a href="#login" class="jump">立即登录<i></i></a></span>邮箱注册 <a href="#" class="dialog_close"></a></h3>
+  <form action="/register/email.json" method="post" id="registerForm">
+    <p class="sys_err"><span></span></p>
+    <ul>
+      <li>
+        <div>
+          <label><i class="user"></i></label><input type="text" class="ifd" placeholder="请输入您的常用邮箱" name="account" ka="register_account"><input type="hidden" name="accountCheck" value="" />
+          <p class="err" data-msg="请输入您的常用邮箱！"></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label><i class="pwd"></i></label><input class="ifd" type="password" name="password" placeholder="输入6-14位密码，必须含数字和字母" maxlength="14" ka="register_password">
+          <p class="err" data-msg="密码不能为空！"></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label><i class="pwd"></i></label><input class="ifd" type="password" name="confirmPassword" placeholder="密码确认" ka="register_confirmpassword">
+          <p class="err" data-msg="确认密码不能为空！"></p>
+        </div>
+      </li>
+      <li class="code">
+        <img src="/captcha/?randomKey=qAJncUicvtc1iGnbVmvaIa1pMmOthdnt" onclick="changeAuthCode(this);" title="看不清？点击换一张" />
+        <div>
+          <input type="hidden" name="randomKey" value="qAJncUicvtc1iGnbVmvaIa1pMmOthdnt" />
+          <input type="text" class="ifd" name="captcha" placeholder="输入验证码" maxlength="8" ka="register_captcha" />
+          <p class="err" data-msg="请输入验证码！"><i></i></p>
+        </div>
+      </li>
+    </ul>
+    <p class="agree"><input type="checkbox" name="" id="agreeCb" checked ka="register_agree"><label for="agreeCb">同意并愿意遵守<a href="/term.html" target="_blank">《用户协议》</a></label></p>
+    <p><input type="submit" value="注 册" class="auth_btn" ka="register_btn"></p>
+  </form>
+  <aside>
+    <p>使用以下账号直接登录</p>
+    <p>
+      <a href="/connect/weibo/" target="_blank"><i class="wb"></i></a><a href="/connect/qq/"><i class="qq"></i></a><a href="/connect/renren/" target="_blank""><i class="rr"></i></a>
+    </p>
+  </aside>
+</section>
+
+<section class="auth" id="loginDialog">
+  <h3><span><a href="#register" class="jump">立即注册<i></i></a></span>登录 <a href="#" class="dialog_close"></a></h3>
+  <form action="/login.json" method="post" id="loginForm">
+    <p class="sys_err"><span></span></p>
+    <ul id="loginField">
+      <li>
+        <div>
+          <label><i class="user"></i></label><input type="text" class="ifd" placeholder="请输入邮箱/手机号" name="account" ka="login_account">
+          <p class="err"  data-msg="请输入邮箱或手机号！"></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label><i class="pwd"></i></label><input class="ifd" type="password" name="password" placeholder="输入6-14位密码，必须含数字和字母" maxlength="14" ka="login_password">
+          <p class="err"  data-msg="请输入登录密码！"></p>
+        </div>
+      </li>
+    </ul>
+    <p class="agree"><a class="fright" href="/password/forgot/" target="_blank" ka="login_forgot">忘记密码？</a><input type="checkbox" name="remember" id="remember" checked ka="login_remember"><label for="remember">记住我</label></p>
+    <p><input type="submit" value="登 录" class="auth_btn"></p>
+  </form>
+
+  <aside>
+    <p>使用以下账号直接登录</p>
+    <p id="thirdpartyLogin">
+      <a href="javascript:;" data-original="/connect/weibo/" ka="login_weibo"><i class="wb"></i></a><a href="javascript:;" data-original="/connect/qq/" ka="login_qq"><i class="qq"></i></a><a href="javascript:;"  data-original="/connect/renren/" ka="login_renren"><i class="rr"></i></a>
+    </p>
+  </aside>
+</section>
+<span class="middle-helper"></span>
+</body>
+</html>

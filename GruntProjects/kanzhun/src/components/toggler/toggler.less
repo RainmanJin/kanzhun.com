@@ -1,0 +1,44 @@
+@import '../../css/common/var';
+
+div.C-toggler{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  color: @grey_99;
+
+  i{
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-width: 4px 4px 0 4px;
+    border-style: solid dashed;
+    border-color: #999999 transparent transparent transparent;
+    vertical-align: 2px;
+  }
+
+  &.active{
+    i{
+      border-width: 0 4px 4px 4px;
+      border-color: transparent transparent #999999 transparent;
+    }
+
+    &:hover {
+      i {
+        border-bottom-color: @green;
+      }
+    }
+  }
+
+  &:hover {
+    color: @green;
+
+    i {
+      border-top-color: @green;
+    }
+  }
+}
+

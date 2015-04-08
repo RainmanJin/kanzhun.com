@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>晒工资-1</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/ugc_page.css">
+</head>	
+<body>
+<div class="wrapper">
+<form name="salaryForm" action="/usgz/store">	
+<div class="js_salary content">	
+	<header class="page_hd">		
+		<a class="top_back" href="javascript:;"><i></i>返回</a>
+		<strong>晒工资</strong>	
+	</header>
+	<dl class="co_info">
+		<dt>
+			<img src="http://img.kanzhun.com//images/logo/20140220/8158bbafd5b75c368d6b1c2bc8c3a3a0.jpg">
+		</dt>
+		<dd>
+			<h1>中国移动</h1>
+			<p>
+				<span class="grade_star">
+					<i class="s_4"></i>
+				</span>3.8分
+			</p>
+			<p>235 条工资<a href="#"><i class="i i_edit"></i>发其他公司工资</a></p>
+		</dd>
+	</dl>	
+	<h2 class="comment_title">
+		<i class="i i_o_trangle">匿名</i>
+		<p>分享你的职位工资，为其他求职者擦亮双眼！！</p>
+	</h2>
+	<section class="salary_content">
+		<div class="divInput_1 bdefault">
+			<label>职位</label>
+			<input name="jobTitle" type="text">
+			<em class="js_error error"  style="display:none">职位不能为空</em>
+		</div>
+		<div class="divInput_1 bdefault mt20">
+			<label>月薪</label>
+			<input name="salaryPayMonth" type="text" data-type="salaryPay" v-type="num">
+			<strong>元</strong>
+			<em class="js_error error"  style="display:none">月薪不能为空</em>
+		</div>
+		<p class="mt20"><a class=" js_addDetail blue" href="javascript:;">+添加工资明细</a></p>
+		<div id="salaryDetail" class="salary_detail" style="display:none">
+			<i class="i_triangle_greyT"></i>
+			<a class="js_close close">
+				<i class="i i_thin_no"></i>
+			</a>
+			<h3>工资明细 <span class="grey">(选填项)</span><p class="sys_err" style="margin-left:0;display:none">工资收入已超过月薪</p></h3>			
+			<div class="divInput_1 bdefault disable mt20">
+				<label>基本工资</label>
+				<input name="" type="text" value=0 data-type="salary" disabled>
+				<strong>元</strong>
+				<em class="js_error error" style="display:none"></em>
+			</div>
+			<div class="divInput_1 bdefault mt20">
+				<label>奖金</label>
+				<input name="" type="text" value=0 data-type="salary" v-type="num">
+				<strong>元</strong>
+				<em class="js_error error" style="display:none"></em>
+			</div>	
+			<div class="divInput_1 bdefault mt20">
+				<label>补助</label>
+				<input name="" type="text" value=0 data-type="salary" v-type="num">
+				<strong>元</strong>
+				<em class="js_error error" style="display:none"></em>
+			</div>	
+			<div class="divInput_1 bdefault mt20">
+				<label>销售提成</label>
+				<input name="" type="text" value=0 data-type="salary" v-type="num">
+				<strong>元</strong>
+				<em class="js_error error"  style="display:none"></em>
+			</div>
+			<div class="divInput_1 bdefault mt20 mb20">
+				<label>其他收入</label>
+				<input name="" type="text" value=0 data-type="salary" v-type="num">
+				<strong>元</strong>
+				<em class="js_error error"  style="display:none"></em>
+			</div>				
+		</div>
+
+		<div class="divInput_1 bdefault mt20">
+			<label>所在城市</label>
+			<input name="city" type="text" value="北京">
+			<em class="js_error error"  style="display:none">城市不能为空</em>
+		</div>
+		<div class="js_employeeStatus work_status mt20">
+			<label>您是否在仍在易宝工作：</label>
+			<ul class="bt_change">
+				<li class="l on" node-value="1">在职</li>
+				<li class="r" node-value="2">曾经在职</li>
+				<input name="employeeStatus" type="hidden">
+			</ul>	
+		</div>
+		<div class="divInput_1 bdefault mt10 mb20">
+			<label>职位经验</label>
+			<p class="selectP">
+				<select name="">
+					<option value="0">未选择</option>		
+					<option value="1">1年</option>
+				</select>
+			</p>
+			<em class="js_error error" style="display:none">请选择行业</em>		
+		</div>							
+	</section>
+	<div class="ml10 mr10 mt10"><button class="js_submit btn_submit_1" type="button">提交</button></div>	
+	<p class="grey ml10 mr10 mt10 mt10">所有信息均匿名发布，您的真实身份不会被他人知晓。</p>		
+</div>
+</form>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/common.js"></script>
+<script src="js/m-kanzhun.js"></script>	
+</html>
+
+

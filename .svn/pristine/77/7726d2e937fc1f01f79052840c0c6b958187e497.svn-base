@@ -1,0 +1,254 @@
+header {
+  background-color: #1a1a1c;
+  height: 44px;
+  line-height: 44px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+div.kz-tip {
+  height: 40px;
+  padding-top: 6px;
+  position: relative;
+  background-color: rgba(26, 26, 28, 0.4);
+  text-align: center;
+  line-height: 1.2em;
+}
+div.kz-tip img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 16px;
+}
+div.kz-tip.test-tip {
+  padding: 0 15px;
+  line-height: 40px;
+  text-align: left;
+}
+div.wrapper {
+  padding: 15px 15px 50px;
+}
+div.panel {
+  margin-bottom: 15px;
+  background-color: rgba(228, 229, 236, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+div.panel strong.tt {
+  font-size: 16px;
+  color: #ff9503;
+  display: block;
+  margin-bottom: 5px;
+}
+p.line {
+  border-top: 1px solid rgba(152, 152, 152, 0.6);
+  height: 0;
+  margin: 10px 0;
+}
+div.vote {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ff9503;
+  overflow: hidden;
+  font-size: 12px;
+  top: 15px;
+  right: 20px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+div.vote p {
+  color: #bcbcbc;
+  height: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+div.vote p i {
+  height: 13px;
+  margin: 4px 0 0 1px;
+  line-height: 14px;
+  width: 6px;
+  display: inline-block;
+  background-image: url("/images/activity/ali/number.png");
+  -webkit-background-size: 6px;
+  -moz-background-size: 6px;
+  -o-background-size: 6px;
+  background-size: 6px;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  -ms-background-position-y: 14px;
+  background-position-y: 14px;
+}
+div.vote button {
+  height: 30px;
+  vertical-align: top;
+  width: 100%;
+  display: block;
+  border: 0;
+  border-style: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  background: transparent url("/images/activity/ali/moon.png") no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+div.voted {
+  border: 1px solid #bcbcbc;
+  -webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+}
+div.voted p {
+  color: #bcbcbc;
+}
+div.voted button {
+  background: transparent url("/images/activity/ali/moon2.png") no-repeat;
+}
+div.rank {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ffffff;
+  text-align: center;
+  line-height: 28px;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+}
+div.rank p {
+  padding-top: 12px;
+  line-height: 16px;
+  height: 16px;
+  font-size: 10px;
+  width: 56.5px;
+  margin-top: -5px;
+  margin-left: 1px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+div.rank .rank-1 {
+  background-color: #e85252;
+}
+div.rank .rank-2 {
+  background-color: #52a0e8;
+}
+div.rank .rank-3 {
+  background-color: #97b921;
+}
+div.panel-digit {
+  padding-top: 5px;
+  overflow: hidden;
+  color: #d0d0d0;
+  font-size: 12px;
+}
+div.panel-digit p {
+  float: right;
+}
+div.panel-digit img {
+  width: 13px;
+  vertical-align: -2px;
+  margin-right: 4px;
+}
+div.panel-digit span {
+  margin-left: 15px;
+  margin-right: 5px;
+  color: #d0d0d0;
+}
+div.panel-btn {
+  overflow: hidden;
+  margin-top: 5px;
+  background-color: #ab9794;
+  margin: 0 -10px -10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+div.panel-btn a {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  white-space: nowrap;
+}
+div.panel-btn a:nth-of-type(1) {
+  overflow: hidden;
+  float: left;
+}
+div.panel-btn a:nth-of-type(1) em {
+  float: right;
+  color: rgba(255, 255, 255, 0.4);
+}
+div.panel-btn a:nth-of-type(2) {
+  float: right;
+}
+.btn-orange {
+  font-size: 16px;
+  background-color: #ff9503;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  border: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.mask {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.transmitDialog {
+  position: fixed;
+  z-index: 10;
+  top: 150px;
+  left: 50%;
+  margin-left: -128px;
+  margin-top: -61px;
+  width: 257px;
+}
+.transmitDialog i.arrows {
+  display: inline-block;
+  background: url("/images/activity/ali/arrows.png") no-repeat;
+  background-size: 63px;
+  width: 63px;
+  height: 65px;
+  position: absolute;
+  top: -70px;
+  right: -5px;
+  -webkit-animation: arrowsUp 1s infinite linear;
+}
+.transmitDialog p {
+  color: #fff;
+  text-align: center;
+}
+@-webkit-keyframes arrowsUp {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(10px, -10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}

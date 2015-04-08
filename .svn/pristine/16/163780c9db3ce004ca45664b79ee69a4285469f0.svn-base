@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>看准 - 运营管理系统</title>
+<!--[if lte IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/company.css" />
+<script src="js/require.js" data-main="js/site/company.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="#" class="logo"><img src="images/logo.jpg" width="260" height="60" /></a>
+	<div class="u">月月，下午好！<span>|</span><a href="">设置</a><span>|</span><a href="">退出</a></div>
+	<nav>
+		<a href="">审核任务</a>
+		<a href="" class="current">公司列表</a>
+		<a href="">用户管理</a>
+		<a href="">账户管理</a>
+	</nav>
+</header>
+
+<section class="container company w_990">
+	<h4 class="breadcrumb">OP-公司列表 &gt; <a href="#">公司详情</a> &gt; <a href="#">公司评论列表</a> &gt;</h4>	
+	
+	<table class="company_map tb_grey mt15" cellspacing="0" border="0" cellpadding="0" width="100%" >
+		<tr>
+			<td>100013阿里巴巴</td>
+			<td><a href="#" class="blue">基础信息</a><em class="new"></em></td>
+			<td><a href="#" class="blue">评论</a> 123 <b class="f_red">2</b></td>
+			<td><a href="#" class="blue">薪酬</a> 123 <b class="f_red">2</b></td>
+			<td><a href="#" class="blue">面试</a> 123 <b class="f_red">2</b></td>
+			<td><a href="#" class="blue">照片</a> 123 <b class="f_red">2</b></td>
+		</tr>
+	</table>
+	
+	<p class="grey_line mt15"></p>
+	<h3><a href="#" class="btn_grey fright">全部通过 (4)</a>待审核图片 <span class="f_blue c_count">(3条)</span></h3>
+	
+	<div class="pic_checking">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="images/img-01.jpg" width="174" height="216" /></td>
+			</tr>
+			<tr class="t-center">
+				<td><a href="" class="green">通过</a></td>
+				<td><a href="" class="red">驳回</a></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>User-1247 北京 2013-09-06</b></td>
+			</tr>
+			<tr>
+				<td colspan="2">桌面，壁纸，平铺，皮肤，简单大图，纯底色桌面壁纸，平铺壁纸，文字壁纸。</td>
+			</tr>
+		</table>
+
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="images/img-01.jpg" width="174" height="216" /></td>
+			</tr>
+			<tr class="t-center">
+				<td><a href="" class="green">通过</a></td>
+				<td><a href="" class="red">驳回</a></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>User-1247 北京 2013-09-06</b></td>
+			</tr>
+			<tr>
+				<td colspan="2">桌面，壁纸，平铺，皮肤，简单大图，纯底色桌面壁纸，平铺壁纸，文字壁纸。</td>
+			</tr>
+		</table>
+
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="images/img-01.jpg" width="174" height="216" /></td>
+			</tr>
+			<tr class="t-center">
+				<td><a href="" class="green">通过</a></td>
+				<td><a href="" class="red">驳回</a></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>User-1247 北京 2013-09-06</b></td>
+			</tr>
+			<tr>
+				<td colspan="2">桌面，壁纸，平铺，皮肤，简单大图，纯底色桌面壁纸，平铺壁纸，文字壁纸。</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="images/img-01.jpg" width="174" height="216" /></td>
+			</tr>
+			<tr class="t-center">
+				<td><a href="" class="green">通过</a></td>
+				<td><a href="" class="red">驳回</a></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>User-1247 北京 2013-09-06</b></td>
+			</tr>
+			<tr>
+				<td colspan="2">桌面，壁纸，平铺，皮肤，简单大图，纯底色桌面壁纸，平铺壁纸，文字壁纸。</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="images/img-01.jpg" width="174" height="216" /></td>
+			</tr>
+			<tr class="t-center">
+				<td><a href="" class="green">通过</a></td>
+				<td><a href="" class="red">驳回</a></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>User-1247 北京 2013-09-06</b></td>
+			</tr>
+			<tr>
+				<td colspan="2">桌面，壁纸，平铺，皮肤，简单大图，纯底色桌面壁纸，平铺壁纸，文字壁纸。</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="images/img-01.jpg" width="174" height="216" /></td>
+			</tr>
+			<tr class="t-center">
+				<td><a href="" class="green">通过</a></td>
+				<td><a href="" class="red">驳回</a></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>User-1247 北京 2013-09-06</b></td>
+			</tr>
+			<tr>
+				<td colspan="2">桌面，壁纸，平铺，皮肤，简单大图，纯底色桌面壁纸，平铺壁纸，文字壁纸。</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="images/img-01.jpg" width="174" height="216" /></td>
+			</tr>
+			<tr class="t-center">
+				<td><a href="" class="green">通过</a></td>
+				<td><a href="" class="red">驳回</a></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>User-1247 北京 2013-09-06</b></td>
+			</tr>
+			<tr>
+				<td colspan="2">桌面，壁纸，平铺，皮肤，简单大图，纯底色桌面壁纸，平铺壁纸，文字壁纸。</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="images/img-01.jpg" width="174" height="216" /></td>
+			</tr>
+			<tr class="t-center">
+				<td><a href="" class="green">通过</a></td>
+				<td><a href="" class="red">驳回</a></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>User-1247 北京 2013-09-06</b></td>
+			</tr>
+			<tr>
+				<td colspan="2">桌面，壁纸，平铺，皮肤，简单大图，纯底色桌面壁纸，平铺壁纸，文字壁纸。</td>
+			</tr>
+		</table>
+	</div>
+	
+	<p class="grey_line mt15 mb15"></p>
+	
+	<h3>已发布图片</h3>
+	
+	<ul class="pic_list">
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+			<p><input type="text" class="small mr10" /><a href="#" class="btn_grey_s">保存</a></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+			<p><input type="text" class="small mr10" /><a href="#" class="btn_grey_s">保存</a></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+			<p><input type="text" class="small mr10" /><a href="#" class="btn_grey_s">保存</a></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+			<p><input type="text" class="small mr10" /><a href="#" class="btn_grey_s">保存</a></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+			<p><input type="text" class="small mr10" /><a href="#" class="btn_grey_s">保存</a></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+			<p><input type="text" class="small mr10" /><a href="#" class="btn_grey_s">保存</a></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+			<p><input type="text" class="small mr10" /><a href="#" class="btn_grey_s">保存</a></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+			<p><input type="text" class="small mr10" /><a href="#" class="btn_grey_s">保存</a></p>
+		</li>
+	</ul>
+
+	<p class="grey_line mt15 mb15"></p>
+	<h3>已驳回图片</h3>
+	<ul class="pic_list">
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+		</li>
+		<li>
+			<img src="images/img-01.jpg" width="110" height="110" />
+			<p><b>User-1247 <br>北京 2013-09-06</b></p>
+		</li>
+	</ul>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta http-equiv="Cache-Control" content="no-transform ">
+  <meta name="viewport" content="width=device-width">
+  <script type="text/javascript">
+    var CONTEXTPATH='';
+    var STATICURL='http://img.kanzhun.com';
+    var require = {
+      urlArgs : "v=v1.1.31"
+    };
+  </script>
+  <!--[if lte IE 9]>
+      <script src="http://s.kanzhun.com/js/html5shiv.js"></script>
+      <script src="http://s.kanzhun.com/js/jquery-1.11.0.min.js"></script>
+      <!--[if gt IE 9]><!-->
+  <script src="http://s.kanzhun.com/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/v2/css/widget.css" />
+  <title>邮箱弹出框</title>
+  <link rel="stylesheet" href=/v2/css/bind_email/bind_email.css />
+</head>
+<body>
+<div class="bind_email">
+  <h3>
+    绑定邮箱账号并验证，<br>
+    即可查看所有完整信息
+  </h3>
+  <p class="mt15"><a class="auth_btn" href="javascript:;">去绑定或验证邮箱账号</a></p>
+</div>
+<section class="auth">
+  <h3>绑定邮箱账号<a href="javascript:;" class="dialog_close"></a></h3>
+  <p class="mt10">请输入邮箱，绑定您现在登录的QQ账号。</p>
+  <p class="f_12 grey_66">绑定后，使用QQ账号或者邮箱地址都可以登录到你现有的账号。</p>
+  <form action="" method="post" id="">
+    <p class="sys_err"><span></span></p>
+    <ul>
+      <li>
+        <div>
+          <label><i class="user"></i></label><input type="text" class="ifd" placeholder="请输入您的常用邮箱" name="account" ka="register_account"><input type="hidden" name="accountCheck" value="" />
+          <p class="err" data-msg="请输入您的常用邮箱！"></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label><i class="pwd"></i></label><input class="ifd" type="password" name="password" placeholder="输入6-14位密码，必须含数字和字母" maxlength="14" ka="register_password">
+          <p class="err" data-msg="密码不能为空！"></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label><i class="pwd"></i></label><input class="ifd" type="password" name="confirmPassword" placeholder="密码确认" ka="register_confirmpassword">
+          <p class="err" data-msg="确认密码不能为空！"></p>
+        </div>
+      </li>
+    </ul>
+    <p><input type="submit" value="绑 定" class="auth_btn"></p>
+  </form>
+</section>
+<section class="auth">
+  <h3>验证邮箱<a href="javascript:;" class="dialog_close"></a></h3>
+  <p class="mt10">您可以激活邮箱完成绑定。</p>
+  <p class="red">注：激活验证邮箱后你才可以观看看准网全部内容</p>
+  <p class="f_12 grey_66 mt15">我们已将邮件发送至邮箱：renyanhong@126.com<br>
+    点击邮件内链接即可完成绑定。</p>
+  <p class="mt15"><a class="auth_btn" href="#">登录验证邮箱</a></p>
+  <p class="f_12 grey_66 mt15">
+    稍等几分钟，若没有收到验证邮件，怎么办？<br>
+    1、邮件地址填写错误？<a href="#">重新发送验证邮件；</a><br>
+    2、看看是否在邮箱的垃圾邮件、广告邮件目录里；<br>
+    3、稍等几分钟还未收到验证邮件？<a href="#">重新发送验证邮件；</a>
+  </p>
+  <p class="t-center grey_66 mt20">5秒钟后自动跳转</p>
+</section>
+<section class="auth">
+  <h3>验证邮箱<a href="javascript:;" class="dialog_close"></a></h3>
+  <p class="mt10">请验证您的邮箱地址，以便查看更多内容</p>
+  <ul class="mt15">
+    <li>
+      <div>
+        <input type="text" class="ifd" style="margin-left: 0" placeholder="请输入您的常用邮箱" name="account">
+        <p class="err" data-msg="请输入您的常用邮箱！"></p>
+      </div>
+    </li>
+  </ul>
+  <p class="f_12 grey_99">可修改现有邮箱地址</p>
+  <p class="mt15"><input type="submit" value="验 证 邮 箱" class="auth_btn"></p>
+</section>
+</body>
+</html>

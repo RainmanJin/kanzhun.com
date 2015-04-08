@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>UGC 完成</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css">
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/ugc/ugc-main.css">
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/ugc/main-complete.js"></script>
+</head>
+
+<body class="field_bg">
+<% include ../modules/header %>
+
+<div class="container-ugc clearfix">
+  <div class="ugc-con-l">
+    <div class="ugc-completed">
+      <p class="u-cpl-succ"><i class="suc_p"></i>公司评价发布成功！</p>
+      <p class="f_18 t-center mb20">感谢您提供的信息，请您登录后查看所有面试经验</p>
+      <p class="grey_99">您发布的信息需要通过审核后才能正式发布，如内容中存在敏感信息或涉及隐私，将被驳回或进行过滤处理。 <a href="#">查看我的面试经历</a></p>
+
+      <!--未登录状态-->
+      <!--<div class="embed-auth">-->
+        <!--<!--登陆-->-->
+        <!--<% include ../../../components/auth/login %>-->
+
+        <!--<!--注册-->-->
+        <!--<% include ../../../components/auth/register %>-->
+      <!--</div>-->
+
+      <!--已登录状态-->
+      <p class="pt10">您是否已经入职一段时间了？匿名点评一下这家公司吧！</p>
+      <p><a href="" class="btn_grey_b mr20 mt10">发一条点评</a><a href="">返回公司面试页</a></p>
+
+      <div class="ugc-suc-redirect">
+        <button type="button" value="http://baidu.com">5</button>秒钟后自动跳转...
+      </div>
+    </div>
+  </div>
+
+  <% include piece/ugc-right.ejs %>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+@import "../../common/var";
+
+//面试列表展示（显示3条）
+ul.command {
+  li {
+    padding: 15px 0;
+    border-bottom: 1px solid #E7E7E7;
+    overflow: hidden;
+    zoom: 1;
+    p.cmpimg {
+      display: block;
+      float: left;
+      margin-right: 15px;
+      width: 93px;
+      a.logo {
+        float: none;
+        margin-right: 0;
+      }
+      strong.cmpname {
+        display: block;
+        width: 6em;
+        margin: 0 auto;
+        padding-top: 5px;
+        text-align: center;
+        font-weight: normal;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+    a.logo {
+      text-decoration: none;
+      display: block;
+      float: left;
+      width: 91px;
+      height: 91px;
+      border: 1px solid #E7E7E7;
+      margin-right: 15px;
+      overflow: hidden;
+      font-size: 0;
+      img {
+        width: 91px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span {
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+    div {
+      float: left;
+      width: 112px;
+      padding-top: 6px;
+      span {
+        margin: 5px 0;
+      }
+      &.np_bishi {
+        width: 324px;
+      }
+      .laizi {
+        line-height: 2em;
+      }
+    }
+    dl {
+      margin-left: 240px;
+      padding-top: 6px;
+      &.np_a {
+        margin-left: 444px;
+      }
+      dd {
+        a {
+          color: @def;
+          &:hover {
+            color: @blue;
+            text-decoration: underline;
+          }
+        }
+        &.laizi {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

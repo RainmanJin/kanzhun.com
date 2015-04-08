@@ -1,0 +1,89 @@
+@import "../common/var";
+@import "../modules/reset";
+@import "../common/effect";
+
+div.header{
+  height: 60px;
+  background-color: #232628;
+  width: 100%;
+  overflow-y:scroll;
+}
+div.jump{
+  width: 1000px;
+  margin: 0 auto;
+  
+  .logo{
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+
+  ul{
+    float: left;
+    height: 60px;
+    list-style: none;
+
+    a{
+      color: #ffffff;
+      float: left;
+      height: 60px;
+      line-height: 60px;
+      padding-left: 20px;
+      font-size: 16px;
+      position: relative;
+
+      &:hover{
+        background-color: #7cb228;
+        text-decoration: none;
+        top: 0;
+        left: -2px;
+        padding-left: 22px;
+
+        em{
+          visibility: hidden;
+          margin-left: 18px;
+        }
+      }
+      font-size: 14px;
+    }
+
+    em{
+      color: #cccccc;
+      display: inline-block;
+      font-size: 14px;
+      margin-left: 20px;
+    }
+  }
+  
+  li{
+    float: left;
+    font-size: 0;
+  }
+
+}
+
+div.jump_form{
+  float: right;
+  margin-top: 15px;
+  .box-shadow(1px 1px 3px #8a8b8c);
+
+  input{
+    height: 15px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    width: 210px;
+    font-size: 12px;
+    float: left;
+  }
+
+  button{
+    float: left;
+    line-height: 29px;
+    width: 85px;
+    height: 29px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+}

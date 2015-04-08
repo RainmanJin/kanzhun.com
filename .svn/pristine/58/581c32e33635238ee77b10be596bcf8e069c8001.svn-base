@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>看准 - 运营管理系统</title>
+<!--[if lte IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/enterprise.css" />
+<script src="js/utils/webuploader.js"></script>
+<script src="js/site/enterprise.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="#" class="logo"><img src="images/logo.jpg" width="260" height="60" /></a>
+	<div class="u">月月，下午好！<span>|</span><a href="">设置</a><span>|</span><a href="">退出</a></div>
+	<nav>
+		<a href="">审核任务</a>
+		<a href="" class="current">公司列表</a>
+		<a href="">用户管理</a>
+		<a href="">账户管理</a>
+	</nav>
+</header>
+
+<section class="container enterprise w_990">
+	<p class="mb10">注册编号 10012</p>
+	<p class="mb10">提交时间 2012-10-10  16:47:32</p>
+	<div class="detail">
+		<div class="detailL">
+			<img src="images/temp/img_1.jpg" width="570" height="330">
+			<div class="btn_b"><a id="filebtn" href="javascript:;">替换营业执照</a></div>
+		</div>
+		<ul class="detailR">
+			<li><label>座机电话</label><span>010-88285056-8268</span></li>
+			<li><label>用户邮箱</label><span>caiyaohui@techwolf.cn</span></li>
+			<li><label>认领公司</label><span>百度</span> <a class="blue" href="#">查询该公司</a></li>
+			<li><label>原指定邮箱</label><span>@baidu.com</span></li>
+			<li><label>已有用户</label><span>3</span> <a href="javascript:;">确定</a></li>
+			<li>
+				<label>公司修改为</label><input class="def" type="text" name="" id="">  
+				<a class="blue" href="javascript:;">确定</a>
+			</li>
+			<li>
+				<label>邮箱修改为</label><input class="def" type="text" name="" id="">
+				<a class="blue" href="javascript:;">确定</a>
+			</li>
+			<li style="text-align:right"><a class="btn_grey" href="javascript:;">通过</a></li>
+			<li>
+				<select>
+					<option>请选择驳回原因</option>
+					<option>原因1</option>
+					<option>原因2</option>
+				</select>
+				<a class="btn_grey" href="javascript:;">驳回</a>
+			</li>
+		</ul>		
+	</div>
+</section>
+</body>
+</html>

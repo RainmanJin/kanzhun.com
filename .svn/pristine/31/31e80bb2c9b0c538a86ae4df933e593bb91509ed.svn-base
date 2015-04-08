@@ -1,0 +1,265 @@
+@import "common/var";
+@import "common/reset";
+@import "common/effect";
+
+@-moz-keyframes zoomIn{from{opacity:0;-moz-transform:scale(0);} to{opacity:1;-moz-transform:scale(1);}}
+@-webkit-keyframes zoomIn{from{opacity:0;-webkit-transform:scale(0);} to{opacity:1;-webkit-transform:scale(1);}}
+@-ms-keyframes zoomIn{from{opacity:0;-ms-transform:scale(0);} to{opacity:1;-ms-transform:scale(1);}}html{height:100%;}
+@keyframes zoomIn{from{opacity:0;-ms-transform:scale(0);} to{opacity:1;-ms-transform:scale(1);}}html{height:100%;}
+
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+.animated {
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+body{
+  &.grey_bd{
+    background-color: @def_green;
+  }
+}
+
+header{
+  &.header{
+    background-color: @def_green;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    min-width: 990px;
+    div {
+      width: 990px;
+      height: 46px;
+      margin: 0 auto;
+
+      img.logo {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+div {
+  &.wrapper {
+    width: 100%;
+    min-height: 752px;
+    background: url(../images/login_bg.jpg) no-repeat center top;
+  }
+
+  &.content {
+    width: 990px;
+    margin: 0 auto; 
+    overflow: hidden;
+    zoom: 1;
+  }
+}
+
+section {
+  &.leftcon {
+    width: 362px;
+    float: left;
+    padding: 124px 82px 0 0;
+  }
+
+  &.rightcon {
+    width: 480px;
+    padding: 205px 0 120px 0;
+    float: left;
+    background: url(../images/loginbox_bg.png) no-repeat 55px bottom;
+
+    div.login {
+      padding: 30px 50px;
+      background-color: #c2e0db;
+
+      .sys_err{
+        color: #d60000;
+        height: 16px; 
+        text-align: left;
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+
+      ul{
+        div{
+          border-width: 1px;
+          border-style: solid;
+          border-color: #d5d5d5 #dfdfdf #d9dbdb #d4d6d5;
+          height: 26px;
+          border-radius: 4px;
+          padding: 8px 0;
+          background-color: #fff;
+          margin-bottom: 15px;
+          position: relative;
+          .transition(all .2s ease);
+
+          &.focus{
+            border-width: 1px;
+            border-style: solid;
+            border-color: @def_green;
+          }
+
+          &.error{
+            border-width: 1px;
+            border-style: solid;
+            border-color: @red;
+          }
+        }
+
+        label{
+          width: 18px;
+          padding: 2px 12px 0 12px;
+          height: 26px;
+          border-right: 1px solid #e1e1e1;
+          float: left;
+          font-size: 0;
+
+          i{
+            background-image: url(../images/login_icons.png);
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 26px;
+            display: inline-block;
+            &.user{
+              background-position: 0 0;
+            }
+
+            &.pwd{
+              background-position: -21px 0;
+            }
+          }
+        }
+        .ifd{
+          border: 0;
+          background-color: transparent;
+          line-height: 16px;
+          font-size: 16px;
+          color: #999;
+          width: 307px;
+          padding: 5px 10px;
+          margin-left: 42px;
+          display: block;
+        }
+
+        p.err{
+          font-size: 12px;
+          display: none;
+          width: 122px;
+          height: 28px;
+          position: absolute;
+          left: 225px;
+          top: -15px;
+          color: @red;
+          padding-left: 32px;
+          line-height: 22px;
+          overflow: hidden;
+          background: url(../images/login_icons.png) no-repeat -56px 0;
+          z-index: 2;
+        }
+
+        .code{
+          div{
+            width: 250px;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: middle;
+            margin-top: 0;
+          }
+        
+          .ifd{
+            width: 230px;
+            margin: 0;
+            background-color: #fff;
+          }
+        
+          img{
+            height: 44px;
+            float: right;
+            border-radius: 4px;
+            width: 100px;
+          }
+        } 
+      }
+
+      .agree{
+        font-size: 14px;
+        color: #999999;
+        margin-bottom: 15px;
+
+        input{
+          vertical-align: -2px;
+          margin-right: 2px;
+        }
+      }
+
+      .login_btn{
+        display: block;
+        width: 380px;
+        height: 42px;
+        border: 0;
+        background-color: @def_green;
+        color: #fff;
+        line-height: 42px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 2px;
+
+        .transition(background-color .2s ease);
+
+        &:hover{
+          background-color: #01b087;
+        }
+      }
+    }
+  }
+}
+
+
+//placeholder
+input,textarea:-webkit-input-placeholder { color:@placeholder; }
+input,textarea:-moz-placeholder { color:@placeholder; }
+input,textarea:-ms-input-placeholder { color:@placeholder; }
+input.onholder{color:@placeholder;}
+span.onholder{color:@placeholder; position: absolute;z-index: 8;}
+
+

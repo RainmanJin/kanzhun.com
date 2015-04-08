@@ -1,0 +1,7 @@
+<nav class="top-search-nav">
+  <a href="#" class="current">公司</a>
+  <a href="#">工资</a>
+  <a href="#">招聘</a>
+  <a href="#">面试</a>
+  <a class="hrEnter links" href="http://boss.kanzhun.com/" target="_blank" ka="hrenter">您是公司HR吗？立即认证</a>
+</nav>

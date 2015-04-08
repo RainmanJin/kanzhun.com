@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>公司照片</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/photo.css" />
+<script src="../js/require.js" data-main="../js/site/photo.js"></script>
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">公司</a>
+				<a href="#">薪酬</a>
+				<a href="#">面试</a>
+				<a href="#">招聘</a>
+				<a href="#">我的生涯</a>
+			</nav>
+			<p class="loginfo"><a href="#">登陆</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="co_header clearfix">
+		<a href="#"><img src="../images/img-04.jpg" width="150" height="150" alt="" class="co_logo" /></a>
+		<div class="co_info">
+			<h1>易宝支付</h1>
+			<p class="msg"><span class="grade_star_b"><i style="width:56px;"></i></span><strong>2.2</strong>分<em>|</em><a href=""><b>235条</b></a>信息</p>
+			<p class="params">互联网<em>|</em>www.yeepay.com<em>|</em>北京<em>|</em>500-100人</p>
+		</div>
+		<nav class="clearfix">
+			<a href="#" class="current">简介</a><a href="#">薪酬</a><a href="#">评论</a><a href="#">面试</a><a href="#">照片</a><a href="#">员工</a>
+		</nav>
+		<aside>
+			<a href="#" class="btn_o_l comment">我要点评公司</a>
+			<a href="" class="btn_grey_b follow"><b>+</b> 关注公司</a>
+		</aside>
+	</section>
+
+	<div class="container clearfix">
+		<section class="l_con clearfix">
+			<p class="f_16">易宝支付照片</p>
+			<div class="photo_search">
+				<dl class="select">
+					<dt><input type="text" name="" value="全部城市" /><a href=""></a></dt>
+					<dd class="none">
+						<a href="#">全部城市(235条)</a>
+						<a href="#">北京（129条）</a>
+						<a href="#">上海（85条）</a>	
+						<a href="#">天津（111条）</a>
+					</dd>
+				</dl>
+				<p class="pt10">12张照片<span class="grey_99 ml10 mr10">|</span><a href="">返回查看全部</a></p>
+			</div>
+
+			<div class="gallery" id="companyGallery">
+				<div class="list">
+					<a href="#" class="prev forbidden_p"></a>
+					<div class="list_w">
+						<ul>
+							<li class="current"><img src="../photos/thumb/1.jpg" data-original="../photos/1.jpg" alt="" /></li>
+							<li><img src="../photos/thumb/2.jpg" data-original="../photos/2.jpg" alt="" /></li>
+							<li><img src="../photos/thumb/3.jpg" data-original="../photos/3.jpg" alt="" /></li>
+							<li><img src="../photos/thumb/4.jpg" data-original="../photos/4.jpg" alt="" /></li>
+							<li><img src="../photos/thumb/5.jpg" data-original="../photos/5.jpg" alt="" /></li>
+							<li><img src="../photos/thumb/6.jpg" data-original="../photos/6.jpg" alt="" /></li>
+							
+						</ul>
+					</div>
+					<a href="#" class="next"></a>
+				</div>
+				<figure>
+					<ul>
+						<li class="current">
+							<img src="../photos/1.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案1–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="" data-original="../photos/2.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案2–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="../photos/3.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案333–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="../photos/4.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案444–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="../photos/5.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案555–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="../photos/6.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案666–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="../photos/7.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="../photos/8.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="../photos/9.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="../photos/10.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+						<li>
+							<img src="../photos/11.jpg" alt=""  />
+							<p class="mt10 grey_99">易宝支付 - 北京 7月4日上传</p>
+							<figcaption>技术解决方案–美国–世界总部世界总部世界总部世界总–美国–世界总部部世界总部</figcaption>
+							<p><a href="#">有用（15）</a><a href="" class="ml15">没用（65）</a></p>
+						</li>
+					</ul>
+				</figure>
+			</div>
+
+			<div class="send_photo">
+				<a href="" class="btn_grey_b mr20">+发布照片（匿名）</a>
+				<p class="grey_99">如果您（曾）在易宝支付工作，请您发一张公司环境照片，用户匿名提供的信息正在帮助广大求职者。</p>
+			</div>
+			
+			<h3 class="tt"><img src="../images/tt_chat.jpg"  alt="公司印象" /></h3>
+			<div class="chat_field">
+				<textarea name="" placeholder="对这家公司印象如何？" ></textarea>
+			</div>
+			<p class="t-right"><input type="button" value="发布" class="btn_grey_s" /></p>
+
+			<ul class="reviews">
+				<li>
+					<i class="r"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+				<li>
+					<i class="i"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作.
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+				<li>
+					<i class="c"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”.
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+			</ul>
+			
+			<div id="fetchMoreReviews">
+				<p class="mt20 t-center"><a href="#" class="btn_grey_b">&nbsp;&nbsp;&nbsp;&nbsp;更多......&nbsp;&nbsp;</a></p>
+			</div>
+			<p class="loading"><img src="../images/loading.gif" />加载中...</p>
+			
+		</section>
+		<section class="r_con">
+			<h3 class="r_tt">互联网行业产品经理薪酬</h3>
+			<ul class="salary_show">
+				<li><em>2496条薪酬数据</em><i class="hot">1</i><a href="">百度</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">2</i><a href="">腾讯</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">3</i><a href="">阿里巴巴</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>4</i><a href="">盛大集团</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>5</i><a href="">新浪</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>6</i><a href="">360安全卫士</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>7</i><a href="">唯美购</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>8</i><a href="">IBM</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>9</i><a href="">Google</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>10</i><a href=""n>搜狐畅游</a>-产品经理</li>
+			</ul>
+
+			<h3 class="r_tt mt20">热门职位</h3>
+			<ul class="jobs_show">
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度在线网络技术有限公司 – 广州</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />基础架构部_云安全研发工程师（上海）<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+			</ul>
+
+			
+				<p class="fright"><a href="">查看更多</a></p>
+
+			
+
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+footer.auth_footer {
+  position: relative;
+  width: 990px;
+  margin: 140px auto;
+  z-index: 3;
+}
+footer.auth_footer nav {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #e5e5e5;
+}
+footer.auth_footer nav,
+footer.auth_footer p {
+  text-align: center;
+  padding: 10px 0;
+  color: #797979;
+}
+footer.auth_footer nav a,
+footer.auth_footer p a {
+  color: #666666;
+}
+footer.auth_footer nav a.micro_message,
+footer.auth_footer p a.micro_message {
+  position: relative;
+}
+footer.auth_footer nav a.micro_message i,
+footer.auth_footer p a.micro_message i {
+  display: none;
+}
+footer.auth_footer nav a.micro_message:hover i,
+footer.auth_footer p a.micro_message:hover i {
+  position: absolute;
+  top: -238px;
+  left: -70px;
+  display: inline-block;
+  width: 202px;
+  height: 232px;
+  background: url(../images/footer_weixin_hover.png) no-repeat center;
+}
+footer.auth_footer nav em,
+footer.auth_footer p em {
+  margin: 0 15px;
+  color: #d7d6d6;
+}
+footer.footbottom {
+  width: 100%;
+  min-width: 990px;
+  margin-top: 40px;
+  padding: 30px 0;
+  background-color: #6f6e6e;
+}
+footer.footbottom nav {
+  text-align: center;
+}
+footer.footbottom nav a {
+  display: inline-block;
+  color: #fff;
+  margin: 0 30px 15px 0;
+}
+footer.footbottom nav a.micro_message {
+  position: relative;
+}
+footer.footbottom nav a.micro_message i {
+  display: none;
+}
+footer.footbottom nav a.micro_message:hover i {
+  position: absolute;
+  top: -240px;
+  left: -70px;
+  display: inline-block;
+  width: 202px;
+  height: 232px;
+  background: url(../images/footer_weixin_hover.png) no-repeat center;
+}
+footer.footbottom nav a.a_green {
+  color: #7cb228;
+}
+footer.footbottom p {
+  text-align: center;
+  color: #999999;
+}
+div#quick {
+  position: fixed;
+  bottom: 150px;
+  right: 10px;
+  width: 48px;
+}
+div#quick a {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/backimgs_03.png);
+  background-repeat: no-repeat;
+}
+div#quick a.back {
+  float: left;
+  background-position: center top;
+  display: none;
+}
+div#quick a.back:hover {
+  background-position: center bottom;
+}
+div#quick a.suggestions {
+  float: left;
+  background-position: center -76px;
+  clear: both;
+}
+div#quick a.suggestions:hover {
+  background-position: center -144px;
+}

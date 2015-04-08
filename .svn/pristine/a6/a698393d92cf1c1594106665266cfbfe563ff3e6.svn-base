@@ -1,0 +1,76 @@
+@import "../../../../css/common/var";
+@import "../../var";
+
+//面试无结果页面面试列表的标题
+div.other_cmp_interviw {
+  border-bottom-width: 0;
+
+  p.line {
+    margin-bottom: 0;
+  }
+}
+ .noresult {
+	margin-top: 10px;
+	padding: 40px 120px 35px 220px;
+	background: url("@{img}/no_result_user.jpg") no-repeat 145px 40px;
+	line-height: 1.8em;
+
+	.btn_grey_b {
+		strong {
+			font-size: 27px;
+			font-weight: 400;
+			vertical-align: middle;
+		}
+	}
+}
+
+.jobs_recommend {
+	padding-top: 15px;
+	padding-bottom: 10px;
+
+	a {
+		display: inline-block;
+		white-space: nowrap;
+		height: 22px;
+		line-height: 22px;
+		padding: 0 5px;
+		background-color: #f6f6f6;
+		margin-right: 15px;
+		color: @grey_33;
+		margin-bottom: 15px;
+	}
+}
+
+/*.staff_noresult{
+	border-width: 0;
+}
+
+.current_noresult{
+	border-width: 0 0 1px 0;
+}
+
+aside.attention {
+	margin-top: 48px;
+}
+
+//员工无结果页面
+.cmp_list{
+	overflow: hidden;
+	zoom: 1;
+	padding-top: 5px;
+	li{
+		float: left;
+		width: 10em;
+		margin-right: 40px;
+		overflow: hidden;
+		a{
+			color: @def;
+			white-space: nowrap;
+			&:hover{
+				text-decoration: underline;
+				color: @blue;
+			}
+		}
+	}
+}
+ */

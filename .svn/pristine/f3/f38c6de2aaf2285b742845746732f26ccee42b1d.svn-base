@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>公司首页</title>
+		<!--[if lte IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!--[if gt IE 9]><!-->
+		<script src="../js/jquery-2.1.0.min.js"></script>
+		<![endif]-->
+    <link rel="stylesheet" href="../css/widget.css" />
+		<link rel="stylesheet" href="../css/homepage.css" />
+		<script src="../js/require.js" data-main="../js/site/ugc.js"></script>
+	</head>
+
+	<body>
+		
+		<header class="global">
+			<div class="header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<nav>
+					<a href="#">招聘</a>
+					<a href="#" class="current">公司</a>
+					<a href="#">工资</a>
+					<a href="#">面试</a>
+					<a href="#" class="mycomment">我要点评</a>
+				</nav>
+				<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+			</div>
+		</header>
+
+		<section class="banner clearfix">
+			<h1>查看其他公司</h1>
+			<dl class="banner_dl">
+				<dt><a href="">找工作</a><em>|</em><a href="" class="current">查公司</a><em>|</em><a href="">比工资</a><em>|</em><a href="">学面试</a></dt>
+				<dd>
+					<input type="text" placeholder="公司名称/关键词" class="c_ipt"/><input type="text" placeholder="城市" class="c_ipt"/><input type="button" value="搜索" class="btn_o_l"/>
+				</dd>
+			</dl>
+			<p>超过250000家公司的员工匿名评论，工资和更多</p>
+		</section>
+
+		<div class="container ps_con clearfix">
+			<section class="l_con clearfix">
+				<h1>查看公司评价，判断职业价值</h1>
+				<p class="ci_nav clearfix">
+					<a href="" class="current">点评</a><a href="">工资</a><a href="">面试</a>
+				</p>
+				<div class="dianping">
+					<ul class="command">
+						<li>
+							<a href="" class="logo"><img src="../images/np_c_img_03.jpg" alt="" width="91" /><span></span></a>
+							<div>
+								<h3>易宝支付</h3>
+								<span class="grade_star"><i style="width:75px;"></i></span><br />
+								<em class="grey_99">基于800条点评</em>
+							</div>
+							<dl>
+								<dt class="mb10">
+									<a href="">华为，一个锻炼技能的绝佳之地</a>
+								</dt>
+								<dd><a href="">笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等，比较符合个人胃口。笔试都是大题，比较开放式，涉及比较广有线程调度比、算法、语言、系统设计等...</a></dd>
+								<dd class="laizi"><em class="grey_99">华为工程师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布于今天</em></dd>
+							</dl>
+						</li>
+						<li>
+							<a href="" class="logo"><img src="../images/np_c_img_02.jpg" alt="" width="91" /><span></span></a>
+							<div>
+								<h3>T-Mobile公司</h3>
+								<span class="grade_star"><i style="width:75px;"></i></span><br />
+								<em class="grey_99">基于800条点评</em>
+							</div>
+							<dl>
+								<dt class="mb10">
+									<a href="">华为，一个锻炼技能的绝佳之地</a>
+								</dt>
+								<dd><a href="">笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等，比较符合个人胃口。笔试都是大题，比较开放式，涉及比较广有线程调度比、算法、语言、系统设计等...</a></dd>
+								<dd class="laizi"><em class="grey_99">华为工程师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布于今天</em></dd>
+							</dl>
+						</li>
+						<li>
+							<a href="" class="logo"><img src="../images/np_c_img_03.jpg" alt="" width="91" /><span></span></a>
+							<div>
+								<h3>阿里巴巴</h3>
+								<span class="grade_star"><i style="width:75px;"></i></span><br />
+								<em class="grey_99">基于800条点评</em>
+							</div>
+							<dl>
+								<dt class="mb10">
+									<a href="">华为，一个锻炼技能的绝佳之地</a>
+								</dt>
+								<dd><a href="">笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等，比较符合个人胃口。笔试都是大题，比较开放式，涉及比较广有线程调度比、算法、语言、系统设计等...</a></dd>
+								<dd class="laizi"><em class="grey_99">华为工程师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布于今天</em></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<p class="t-right mt10"><a href="">查看所有公司点评</a></p>
+				<div class="paid">
+					<ul class="companypaids">
+						<li>
+							<a href=""><img src="../images/np_paid_img_03.jpg" alt="" width="30" /><span></span></a>
+							<p>红孩子<em class="grey_99 ml10 mr10">|</em><i class="grey_99">共135条工资</i></p>
+							<div><b>￥55.00</b>&nbsp;&nbsp;<i class="grey_99">平均工资/月</i></div>
+						</li>
+						<li>
+							<a href=""><img src="../images/np_paid_img_04.jpg" alt="" width="30" /><span></span></a>
+							<p>红孩子<em class="grey_99 ml10 mr10">|</em><i class="grey_99">共135条工资</i></p>
+							<div><b>￥100.00</b>&nbsp;&nbsp;<i class="grey_99">平均工资/月</i></div>
+						</li>
+						<li>
+							<a href=""><img src="../images/np_paid_img_05.jpg" alt="" width="30" /><span></span></a>
+							<p>红孩子<em class="grey_99 ml10 mr10">|</em><i class="grey_99">共135条工资</i></p>
+							<div><b>￥55.00</b>&nbsp;&nbsp;<i class="grey_99">平均工资/月</i></div>
+						</li>
+						<li>
+							<a href=""><img src="../images/np_paid_img_06.jpg" alt="" width="30" /><span></span></a>
+							<p>红孩子<em class="grey_99 ml10 mr10">|</em><i class="grey_99">共135条工资</i></p>
+							<div><b>￥55.00</b>&nbsp;&nbsp;<i class="grey_99">平均工资/月</i></div>
+						</li>
+						<li>
+							<a href=""><img src="../images/np_paid_img_07.jpg" alt="" width="30" /><span></span></a>
+							<p>红孩子<em class="grey_99 ml10 mr10">|</em><i class="grey_99">共135条工资</i></p>
+							<div><b>￥55.00</b>&nbsp;&nbsp;<i class="grey_99">平均工资/月</i></div>
+						</li>
+						<li>
+							<a href=""><img src="../images/np_paid_img_08.jpg" alt="" width="30" /><span></span></a>
+							<p>红孩子<em class="grey_99 ml10 mr10">|</em><i class="grey_99">共135条工资</i></p>
+							<div><b>￥55.00</b>&nbsp;&nbsp;<i class="grey_99">平均工资/月</i></div>
+						</li>
+						<li>
+							<a href=""><img src="../images/np_paid_img_09.jpg" alt="" width="30" /><span></span></a>
+							<p>红孩子<em class="grey_99 ml10 mr10">|</em><i class="grey_99">共135条工资</i></p>
+							<div><b>￥55.00</b>&nbsp;&nbsp;<i class="grey_99">平均工资/月</i></div>
+						</li>
+						<li>
+							<a href=""><img src="../images/np_paid_img_10.jpg" alt="" width="30" /></a>
+							<p>红孩子<em class="grey_99 ml10 mr10">|</em><i class="grey_99">共135条工资</i></p>
+							<div><b>￥55.00</b>&nbsp;&nbsp;<i class="grey_99">平均工资/月</i></div>
+						</li>
+					</ul>
+				</div>
+				<p class="t-right mt10"><a href="">查看所有公司工资</a></p>
+				<div class="dianping">
+					<ul class="command">
+						<li>
+							<a href="" class="logo"><img src="../images/np_a_img_02.jpg" alt="" /><span></span></a>
+							<div class="np_bishi">
+								<h3 class="mb10"><a href="">“笔试都是答题”</a></h3>
+								<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等...&nbsp;<a href="" class="underline">查看更多</a></p>
+								<p class="laizi"><em class="grey_99">华为工程师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布于今天</em></p>
+							</div>
+							<dl class="np_a" style="">
+								<dt class="mb10">
+									<h3>面试问题:</h3>
+								</dt>
+								<dd>笔试都是大题，比较开放式，涉及比较广有线程度比</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="" class="logo"><img src="../images/np_a_img_03.jpg" alt="" /><span></span></a>
+							<div class="np_bishi">
+								<h3 class="mb10"><a href="">“笔试都是答题”</a></h3>
+								<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等...&nbsp;<a href="" class="underline">查看更多</a></p>
+								<p class="laizi"><em class="grey_99">华为工程师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布于今天</em></p>
+							</div>
+							<dl class="np_a" style="padding-top: 6px;">
+								<dt class="mb10">
+									<h3>面试问题:</h3>
+								</dt>
+								<dd>笔试都是大题，比较开放式，涉及比较广有线程度比</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="" class="logo"><img src="../images/np_a_img_04.jpg" alt="" /><span></span></a>
+							<div class="np_bishi">
+								<h3 class="mb10"><a href="">“笔试都是答题”</a></h3>
+								<p>笔试都是大题，比较开放式，涉及比较广有线程度比、算法、语言、系统设计等...&nbsp;<a href="" class="underline">查看更多</a></p>
+								<p class="laizi"><em class="grey_99">华为工程师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布于今天</em></p>
+							</div>
+							<dl class="np_a" style="padding-top: 6px;">
+								<dt class="mb10">
+									<h3>面试问题:</h3>
+								</dt>
+								<dd>笔试都是大题，比较开放式，涉及比较广有线程度比</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<p class="t-right mt10"><a href="">查看所有公司面试</a></p>
+				<h3 class="tt ci_environmena"><img src="../images/np_company_index_img_02.jpg"  alt="知名企业环境照片" /></h3>
+				<div class="photoshow">
+					<ul class="show np_c_environmena clearfix">
+						<li class="a_hover"><a href=""><img src="../images/sr_img_06.jpg" alt=""/></a><a href="" class="photo_name">腾讯网</a></li>
+						<li><a href=""><img src="../images/sr_img_07.jpg" alt=""/></a></li>
+						<li><a href=""><img src="../images/sr_img_08.jpg" alt=""/></a></li>
+						<li><a href=""><img src="../images/sr_img_09.jpg" alt=""/></a></li>
+					</ul>
+				</div>
+				<p class="t-right mt10"><a href="">更多照片</a></p>
+				<h3 class="tt ci_recommend "><img src="../images/np_company_index_img_05.jpg"  alt="热门工作推荐" /></h3>
+				<dl class="core">
+					<dt>
+						<a href=""><img src="../images/np_company_index_img_07.jpg" alt="" width="88"><span></span></a><a href=""><img src="../images/np_company_index_img_08.jpg" alt="" width="88"></a>
+					</dt>
+					<dd>
+						<p class="c_name"><a href="">阿里巴巴</a></p>
+						<p>阿里巴巴（英语：Alibaba Corporation；港交所：1688），中国最大的网络公司和世界第二大网络公司，是由马云在1999年一手创立企业对企业的网上贸易市场平台。2003年5月，投资一亿元人民币建立个人网上贸易市场平台——淘宝网。2004年10月，阿里巴巴投资成立支付宝公司，面向中国电子商务市场推出基于中介的安全交易服务...</p>
+					</dd>
+				</dl>
+				<h3 class="tt ci_recommend "><img src="../images/np_company_index_img_05.jpg"  alt="热门工作推荐" /></h3>
+				<p class="grey_99 mt15">找工作要容易和透明。这就是为什么你会发现在一个地方的所有来源的数千数以百万计的工作。此外，社区成员分享他们的薪水和数以百万计的经验帮助你做出更好的决定。</p>
+				<ul class="search_hangye">
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">政府公司</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">消费服务公司</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">施工\维修公司</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">商业服务公司</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">生物技术与制药公司</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">艺术\休闲娱乐公司</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+					<li><a href="" title="计算机服务">会计与法律</a><em>（IT行业）</em></li>
+				</ul>
+			</section>
+
+			<section class="r_con clearfix">
+				<div class="ugc"><a href=""><img src="../images/np_company_index_img_01.jpg" alt="" width="267"/></a></div>
+				<h3 class="r_tt">热门职位</h3>
+				<ul class="jobs_show">
+					<li><a href="#">系统部_PHP研发工程师<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">广州分公司_高级销售经理<br /><span>百度在线网络技术有限公司 – 广州</span></a></li>
+					<li><a href="#">基础架构部_云安全研发工程师（上海）<br /><span>百度在线网络技术 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发师师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">系统部_PHP研发工程师<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">广州分公司_高级销售经理<br /><span>百度在线网络技术有限公司 – 广州</span></a></li>
+					<li><a href="#">基础架构部_云安全研发工程师（上海）<br /><span>百度在线网络技术 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+				</ul>
+				<p><a href="">查看更多</a></p>
+				<h3 class="r_tt our">关注我们</h3>
+				<aside>
+					<p><img src="../images/np_company_index_img_04.jpg" alt="" /><a href="" class="btn_o_s">+ 关注</a></p>
+					<img src="../images/np_company_index_img_06.jpg" alt="" />
+				</aside>
+			</section>
+		</div>
+		
+		<footer>
+			<nav>
+				<a href="">关于我们</a><a href="">意见反馈</a><a href="">使用帮助</a><a href="">用户协议</a><a href="" class="micro_message">看准网微信<i></i></a><a href="">看准网微博</a>
+			</nav>
+			<p>Copyright@ 2010 kanzhun.com苏ICP备08022608号2009-2014, kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+			<div class="quick">
+				<a href="" class="back mb30"></a><a href="" class="suggestions"></a>
+			</div>
+		</footer>
+	</body>
+</html>

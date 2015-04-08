@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>看准出品-企业金评莓奖</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/step2.css"/>
+</head>
+<body>
+    <section class="content" id="content">
+          <div class="title">
+                <img  class="mark" src="images/title.png" alt=""/>
+                <img  class="vertical" src="images/vertical.png" alt=""/>
+                <p class="word">公司提名</p>
+         </div>
+
+         <div class="form">
+             <div class="select-wrap">
+                 <!--
+                 <select name="prize" id="prize">
+                     <option value="0" selected>请选择TA的提名奖项</option>
+                     <option value="1">永不加薪奖</option>
+                     <option value="2">压力山大奖</option>
+                     <option value="3">员工过劳奖</option>
+                     <option value="4">宫斗内耗奖</option>
+                     <option value="4">福利扣出翔奖</option>
+                 </select>
+                  -->
+                 <button id="prize" name="prize"></button>
+                 <div class="down"></div>
+             </div>
+
+             <!--<p class="tip">*您已经提名<span>2</span>次，还可以提名<span>18</span>次</p>-->
+             <div class="center-wrap">
+                 <p class="h2">请选择提名理由</p>
+                 <div class="re-wrap">
+                     <input type="radio" name="reason" id="r1"/>
+                     <label for="r1">每次谈加薪老板就谈情怀</label>
+                     <p class="bg"></p>
+                 </div>
+                 <div class="re-wrap">
+                     <input type="radio" name="reason" id="r2"/>
+                     <label for="r2">呆满12个月0涨薪</label>
+                     <p class="bg"></p>
+                 </div>
+                 <div class="re-wrap">
+                     <input type="radio" name="reason" id="r3"/>
+                     <label for="r3">工资已无法买鸡蛋灌饼</label>
+                     <p class="bg"></p>
+                 </div>
+
+                 <textarea name="" id="" cols="30" rows="3" placeholder="我自己填..."></textarea>
+                 <a href="#" class="next">完成</a>
+
+             </div>
+         </div>
+        <p class="protocol">
+            <input type="checkbox" checked/>
+            参与活动即刻表明我认同并遵守<a href="rank.html">《游戏规则》</a>
+        </p>
+    </section>
+
+<section class="reason_dialog">
+    <ul>
+        <li data-val="1">
+            <img class="i" src="images/reason1.png" alt=""/>
+            <div>
+                <p class="h2">永不加班榜</p>
+                加班容易加薪难。我们要加薪，不要谈心
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+        <li data-val="2">
+            <img class="i" src="images/reason2.png" alt=""/>
+            <div>
+                <p class="h2">压力山大榜</p>
+                上班的心情比上坟还沉重……
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+        <li data-val="3">
+            <img class="i" src="images/reason4.png" alt=""/>
+            <div>
+                <p class="h2">员工过劳榜</p>
+                珍爱“绳命”，远离过劳。
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+        <li data-val="4">
+            <img class="i" src="images/reason3.png" alt=""/>
+            <div>
+                <p class="h2">宫廷内斗榜</p>
+                为什么受伤的总是我？不怕枪林弹雨，就怕站错队!
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+        <li data-val="5">
+            <img class="i" src="images/reason5.png" alt=""/>
+            <div>
+                <p class="h2">福利扣出翔榜</p>
+                没有补贴没有爱！没有奖金不发礼物就是耍流氓！
+            </div>
+            <img class="arrow" src="images/arrow.png" alt=""/>
+        </li>
+    </ul>
+</section>
+</body>
+<script src="js/lib/jquery-2.1.1.min.js"></script>
+<script src="js/utils/maskui.js"></script>
+<script>
+    $('#prize').on('click',function(){
+        var reasonDialog=$('section.reason_dialog');
+        $.maskUI.open({
+            elem:reasonDialog
+        });
+        reasonDialog.one('click','li',function(){
+            var _t=$(this);
+            $('#prize').html(_t.find('.h2').html()).val(_t.data('val'));
+            $.maskUI.close();
+        });
+
+    });
+
+</script>
+</html>

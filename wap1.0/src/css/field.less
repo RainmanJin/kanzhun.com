@@ -1,0 +1,266 @@
+@import "common/var";
+@import "module-v2/minor_nav";
+@import "module-v2/other";
+@import "module-v2/cmp_salary_pk";
+
+//热门公司
+ul.hot_cmp {
+	overflow: hidden;
+	margin-right: -10px;
+
+	li {
+		width: 25%;
+		float: left;
+		padding-bottom: 10px;
+
+		a {
+			display: block;
+			padding-right: 10px;
+
+			span {
+				display: block;
+				border: 1px solid #e7e7e7;
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			& > p {
+				.ellipsis(ellipsis);
+				height: 20px;
+				line-height: 20px;
+			}
+		}
+	}
+}
+
+//排行列表
+dl.ranking_list {
+	margin: 0 -10px;
+	padding: 15px 10px;
+	overflow: hidden;
+
+		dt {
+			float: right;
+			width: 110px;
+
+			p {
+				font-size: 12px;
+				color: @grey;
+			}
+
+			div {
+				&.doughnua_chart {
+					position: relative;
+					float: left;
+					width: 45px;
+					height: 45px;
+					//padding-top: 2px;
+
+					span {
+						position: absolute;
+						left: 0;
+						top: 0;
+						display: block;
+						width: 45px;
+						height: 45px;
+						line-height: 45px;
+						text-align: center;
+						font-size: 14px;
+						font-weight: 700;
+						color: #000;
+						z-index: 2;
+					}
+				}
+
+				&.recommend_count {
+					margin-left: 52px;
+					padding-top: 2px;
+
+					p {
+						&:first-child {
+							padding-top: 5px;
+						}
+					}
+				}
+
+				&.scores_show {
+					padding-top: 5px;
+				}
+
+				span.green_start {
+					vertical-align: middle;
+					margin-right: 5px;
+				}
+			}
+		}
+
+		dd {
+			margin-right: 120px;
+			overflow: hidden;
+
+			& > i {
+				float: left;
+				margin: 1px 5px 0 0;
+			}
+
+			img {
+				vertical-align: middle;
+				float: left;
+				width: 46px;
+				height: 46px;
+				margin-right: 7px;
+				border: 1px solid #e7e7e7;
+
+			}
+
+			div {
+				h4 {
+					line-height: 1em;
+					font-size: 14px;
+					font-weight: normal;
+					padding-bottom: 5px;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					a {
+						color: #2472b4;
+					}
+				}
+
+				p {
+					line-height: 1em;
+					font-size: 12px;
+					color: @grey_66;
+
+					a {
+						color: @grey_66;
+					}
+
+					&.count_scale {
+						padding-bottom: 5px;
+
+						em {
+							margin: 0 2px;
+							color: #e7e7e7;
+						}
+					}
+				}
+			}
+		}
+	&.current{
+		background-color: #f8f8f8;
+	}
+}
+
+//公司列表
+ul.cmp_list {
+	margin-right: -10px;
+	overflow: hidden;
+
+	& > li {
+		width: 50%;
+		float: left;
+		margin-bottom: 10px;
+
+		& > div {
+			margin-right: 10px;
+			padding-bottom: 10px;
+			background-color: #fff;
+			border: 1px solid #f3f3f3;
+
+			&.current {
+				background-color: #f6f6f6;
+			}
+
+			& > div {
+				position: relative;
+				height: 42px;
+				margin-bottom: 23px;
+				background-color: #f7f7f7;
+
+				a {
+					position: absolute;
+					top: 10px;
+					left: 50%;
+					width: 46px;
+					height: 46px;
+					margin-left: -25px;
+					padding: 1px;
+					border: 1px solid #e7e7e7;
+
+					img {
+						width: 46px;
+						vertical-align: middle;
+					}
+				}
+			}
+
+			h4 {
+				width: 90%;
+				margin: 0 auto;
+				text-align: center;
+				font-weight: normal;
+				a {
+					display: block;
+					.ellipsis(ellipsis);
+					color: #2472b4;
+				}
+			}
+
+			span.green_start {
+				display: block;
+				padding-bottom: 10px;
+				margin: 0 auto;
+			}
+
+			& > ul {
+				overflow: hidden;
+				width: 90%;
+				margin: 0 auto 10px auto;
+
+				li {
+					float: left;
+					width: 33.3%;
+
+					p {
+						padding: 0 5px;
+						line-height: 1em;
+						text-align: center;
+
+						&:first-child {
+							padding-bottom: 4px;
+						}
+					}
+				}
+			}
+
+			& > p {
+				text-align: center;
+				height: 28px;
+				overflow: hidden;
+
+				a {
+					height: 25px;
+					line-height: 25px;
+					padding: 0 8px;
+					margin: 0 5px 10px 5px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.touchstart{
+	>dl{
+		background-color: #e7e7e7;
+		&.current{
+			background-color: #e7e7e7;
+		}
+	}
+}

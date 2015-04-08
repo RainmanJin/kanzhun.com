@@ -1,0 +1,15 @@
+@investigationQuestionInfoList  问题列表{
+  @type 问题类型{
+    1 单选
+    2 多选
+  }
+
+  @id  问题ID 即 答案的name  eg: q_id
+
+  @answerNum 多选上限数
+  @investigationAnswerInfoList 答案列表{
+    id  答案的ID 即需要post的value 
+    name 答案
+  }
+}
+

@@ -1,0 +1,59 @@
+@import "../common/var";
+
+section {
+  &.n_l {
+    float: left;
+    width: 649px;
+    padding: 0 10px 0 20px;
+  }
+
+  &.n_r {
+    float: left;
+    width: 272px;
+    padding: 0 20px 0 19px;
+  }
+}
+
+//line
+//虚线
+.dashedline {
+  height: 0;
+  overflow: hidden;
+  border-bottom: 1px dashed #e7e7e7;
+}
+
+
+
+//星星
+.np_sr_grade_start {
+  width: 94px;
+  height: 17px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  background: @icons no-repeat left -97px;
+  margin-right: 10px;
+  line-height: 0;
+  vertical-align: middle;
+
+  i {
+    display: inline-block;
+    width: 75px;
+    height: 17px;
+    overflow: hidden;
+    font-size: 0;
+    background: @icons no-repeat left -77px;
+  }
+}
+
+//评论
+a.comment {
+  color: @grey_99;
+  &:hover{
+    text-decoration: none;
+    i.comment{
+      background-position: -44px 0;
+    }
+  }
+}
+

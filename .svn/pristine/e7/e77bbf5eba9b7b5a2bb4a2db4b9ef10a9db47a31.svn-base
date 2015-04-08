@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>领域公司列表页面</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"> </script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../css/widget-v2.css" />
+<link rel="stylesheet" href="../css/field/field.css" />
+</head>
+
+<body>
+	<header class="global">
+		<div class="header">
+			<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+			<nav>
+				<a href="#">招聘</a>
+				<a href="#" class="current">公司</a>
+				<a href="#">工资</a>
+				<a href="#">面试</a>
+				<a href="#" class="mycomment">我要点评</a>
+			</nav>
+			<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+		</div>
+	</header>
+	
+	<section class="ps_header clearfix">
+		<div class="clearfix">
+			<form action="/companyl/search/" method="get" id="minisearchForm">
+				<input id="MSSQType" value="2" type="hidden">
+				<input name="stype" id="MSSSType" value="" type="hidden">
+				<dl class="select ps_salary_slt" id="minisearchS">
+					<dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly" /><div></div><span class="btn"><i></i></span></dt>
+				<dd>
+					<a href="/jobl/p/">职位</a>
+					<a href="/companyl/search/">公司</a>
+					<a href="/salaryl/search/">工资</a>
+					<a href="/interviewl/search/">面试</a>
+				</dd>
+				</dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value="" /><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" /><input type="hidden" id="cityCode" name="cityCode" value="" /><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索" /></span>
+			</form>
+		</div>
+	</section>
+
+	<div class="f_container clearfix">
+		<section class="f_l_con clearfix">
+			<div class="secondary_nav mb15">
+				<h1>互联网金融领域</h1>
+				<ul class="fright">
+					<li><i class="big_dot"></i><a href="">领域概况</a></li>
+					<li><i class="big_dot"></i><a href="">排行榜</a></li>
+					<li><i class="big_dot"></i><a href="">公司列表</a></li>
+				</ul>
+				<p>所属行业：互联网<em>|</em>公司：共221家</p>
+			</div>
+			<div class="wrap_style">
+				<div class="cmp_list_tt mb15"><h2 class="fleft f_tt">公司列表</h2><em class="fleft grey_66">&nbsp;-&nbsp;共221家</em></div>
+				<div class="cmp_list_wrap mb10">
+					<ul class="cmp_list">
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+						<li>
+							<p class="cmp_logo mb30"><a href=""><img src="../images/field/f_img5.jpg" alt=""><span></span></a></p>
+							<p class="f_16 t-center"><a href="" class="grey_33 links">北京大学</a></p>
+							<span class="green_b_star"><i style="width: 45px;"></i></span>
+							<ul>
+								<li>
+									<em>9</em><a href="" class="links">点评</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">工资</a>
+								</li>
+								<li>
+									<em>9</em><a href="" class="links">面试</a>
+								</li>
+							</ul>
+							<div class="cmp_tags f_cmp_tags">
+								<a href="">电子商务</a><a href="">B2C</a><a href="">B2C</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="pager t-center">
+					<a href="" class="page_ctrl">&lt;&nbsp;上一页</a><a href="" class="current">1</a><span>... </span><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a><a href="">7</a><a href="">8</a><a href="">9</a><span>... </span><a href="" class="page_ctrl page_ctrl_next">&gt;&nbsp;下一页</a>
+				</div>
+			</div>
+		</section>
+		<section class="f_r_con">
+			<div class="advertis_area mb15">
+				<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+			</div>
+			<div class="wrap_style mb15">
+				<h2 class="f_tt mt20 mb15">热门领域</h2>
+				<ul class="hot_field_list mb10">
+					<li><i class="small_dot"></i><a href="" class="links">互联网</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+					<li><i class="small_dot"></i><a href="" class="links">排行榜</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+					<li><i class="small_dot"></i><a href="" class="links">公司列表</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+					<li><i class="small_dot"></i><a href="" class="links">排行榜</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+					<li><i class="small_dot"></i><a href="" class="links">公司列表</a>&nbsp;<em class="f_12 grey_99">（2100家）</em></li>
+				</ul>
+			</div>
+			<div class="wrap_style">
+				<h2 class="f_tt mt20 mb15"><a href="" class="fright links seemore">查看所有</a>B2C领域热门公司</h2>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+				<dl class="hot_cmp">
+					<dt>
+						<a href=""><img src="../images/field/f_img3.jpg" alt=""><span></span></a>
+					</dt>
+					<dd>
+						<p><a href="" class="links grey_33">华为</a></p>
+						<span class="green_s_star mr10"><i style="width: 40px;"></i></span><em class="f_12 grey_99">400条点评</em>
+					</dd>
+				</dl>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

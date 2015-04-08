@@ -1,0 +1,62 @@
+aside.resumeLeft {
+  float: left;
+  width: 206px;
+  padding-right: 15px;
+}
+aside.resumeLeft dl.l_nav {
+  border: 1px solid #e7e7e7;
+  border-bottom: none;
+}
+aside.resumeLeft dl.l_nav dt {
+  height: 40px;
+  line-height: 40px;
+  color: #999999;
+  padding-left: 15px;
+  border-bottom: 1px solid #e7e7e7;
+}
+aside.resumeLeft dl.l_nav dt span {
+  font-size: 14px;
+  vertical-align: -2px;
+  margin-left: 10px;
+}
+aside.resumeLeft dl.l_nav dd {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e7e7e7;
+}
+aside.resumeLeft dl.l_nav dd a {
+  color: #000;
+  display: block;
+  padding-left: 55px;
+}
+aside.resumeLeft dl.l_nav dd.current {
+  background-color: #ededed;
+}
+aside.resumeLeft dl.l_nav dd.current a {
+  color: #7cb228;
+}
+aside.resumeLeft dl.l_nav dd.current a:hover {
+  text-decoration: none;
+}
+aside.resumeLeft dl.l_nav dd strong {
+  margin: 0 5px;
+}
+aside.resumeLeft dl.l_nav dd span {
+  display: inline-block;
+  width: 57px;
+  padding: 0 5px;
+  font-weight: bold;
+  text-align: right;
+}
+aside.resumeLeft dl.history_search {
+  border: 1px solid #e7e7e7;
+}
+aside.resumeLeft dl.history_search dt {
+  padding: 10px 15px;
+}
+aside.resumeLeft dl.history_search dd a {
+  display: block;
+  padding: 10px 0;
+  margin: 0 15px;
+  border-top: 1px dashed #e7e7e7;
+}

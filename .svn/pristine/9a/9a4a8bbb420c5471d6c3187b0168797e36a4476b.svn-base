@@ -1,0 +1,278 @@
+@import "var";
+
+//布局
+section {
+  &.l_con {
+    float: left;
+    width: 690px;
+    padding-right: 13px;
+    min-height: 1000px;
+  }
+
+  &.r_con {
+    float: left;
+    width: 275px;
+    padding-left: 12px;
+  }
+}
+
+//左侧
+p {
+  &.breadnav {
+    width: 677px;
+    border-bottom: 1px solid @grey_ee;
+    padding-bottom: 10px;
+  }
+}
+
+dl {
+  &.content {
+    overflow: hidden;
+    zoom: 1;
+    dt {
+      float: left;
+      width: 150px;
+      height: 100px;
+
+      a {
+        margin-right: 0;
+
+        img {
+          width: 150px;
+          height: 100px;
+        }
+      }
+    }
+
+    dd {
+      margin-left: 160px;
+    }
+  }
+}
+
+ul {
+  &.contentlist {
+    li {
+      .ellipsis(ellipsis);
+      padding-bottom: 8px;
+      overflow: hidden;
+
+      div {
+        min-height: 119px;
+        a.tt {
+          white-space: normal;
+        }
+
+        span {
+          white-space: normal;
+          word-break: break-all;
+        }
+      }
+    }
+
+    a {
+      color: @def;
+
+      &:hover {
+        color: @blue;
+        text-decoration: none;
+      }
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+//右侧
+h2 {
+  &.tt {
+    height: 18px;
+    padding: 10px 0;
+    line-height: 18px;
+    border-top: 2px solid @green;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 18px;
+    font-weight: normal;
+    position: relative;
+    overflow: hidden;
+
+    span {
+      position: absolute;
+      top: 14px;
+      left: 80px;
+      padding-right: 20px;
+      color: #cccccc;
+      font-size: 12px;
+      background: url(../images/right_img4.jpg) no-repeat right 3px;
+    }
+  }
+
+  &.resulttt {
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid @grey_db;
+    font-weight: normal;
+    font-size: 18px;
+
+    em {
+      display: inline-block;
+      width: 4em;
+      border-bottom: 1px solid @green;
+      margin-bottom: -1px;
+      font-size: 18px;
+    }
+  }
+}
+
+a {
+  &.articleimg {
+    display: block;
+    float: left;
+    text-decoration: none;
+    margin-right: 10px;
+    overflow: hidden;
+    font-size: 0;
+    cursor: pointer;
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  &.articlett {
+    display: block;
+    height: 55px;
+    color: @def;
+    font-size: 14px;
+    word-break: break-all;
+  }
+}
+
+ul {
+  &.hotarticles {
+    overflow: hidden;
+    li {
+      overflow: hidden;
+      zoom: 1;
+      border-bottom: 1px solid @grey_ee;
+      padding: 15px 0;
+
+      a.articleimg {
+        img {
+          width: 114px;
+          height: 76px;
+        }
+      }
+    }
+  }
+}
+
+div {
+  &.hottags {
+    padding-top: 5px;
+    a {
+      display: inline-block;
+      padding: 0 10px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+      color: @green;
+      margin: 10px 10px 0 0;
+      white-space: nowrap;
+      border: 1px solid #e7e7e7;
+      .transition(all .3s ease);
+
+      &:hover {
+        background-color: @green;
+        border-color: @green;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+dl.weibo {
+  overflow: hidden;
+  *zoom: 1;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #e7e7e7;
+
+  dt {
+    float: left;
+  }
+
+  dd {
+    margin-left: 140px;
+    p {
+      width: 50px;
+      margin-bottom: 5px;
+      padding-top: 15px;
+      background: url(../images/right_img5.jpg) no-repeat right 18px;
+    }
+
+    a {
+      display: block;
+      width: 60px;
+      height: 24px;
+      line-height: 24px;
+      color: #fff;
+      text-align: center;
+      background-color: #f38000;
+    }
+  }
+}
+
+div.weixin {
+  border-bottom: 1px dashed #e7e7e7;
+  padding-bottom: 15px;
+}
+
+/* aside {
+  &.attention {
+    p {
+      padding-bottom: 8px;
+      background: url(../images/right_img3.jpg) no-repeat left bottom;
+      margin-bottom: 15px;
+
+      img {
+        margin-right: 14px;
+      }
+    }
+  }
+} */
+
+.btn_grey_b {
+  border: 1px solid #dfdfdf;
+  height: 32px;
+  line-height: 32px;
+  background: url(../images/icons.png) repeat-x 0 -68px;
+  display: inline-block;
+  padding: 0 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #343434;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  /* input, button {
+    height: 33px;
+    cursor: pointer;
+    display: block;
+    padding: 0 30px;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    overflow: visible;
+    color: @def;
+  } */
+
+  &:hover {
+    border: 1px solid #d3d3d3;
+    background: #f6f6f6 url('');
+    text-decoration: none;
+  }
+}

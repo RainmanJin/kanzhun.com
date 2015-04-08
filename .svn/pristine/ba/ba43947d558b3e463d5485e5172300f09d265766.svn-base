@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>Ye.Fan</title>
+  <link rel="stylesheet" href="css/bingbing.css"/>
+</head>	
+<body>
+<div class="swiper-container" id='pages'>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide page" id="page1">
+
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+    <div class="swiper-slide page" id="page2">
+
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page" id="page3">
+
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+    <div class="swiper-slide page" id="page4">
+
+      <span class="slide_up"><i class="up"></i></span>
+    </div>
+
+
+    <div class="swiper-slide page" id="page5">
+
+    </div>
+    <span class="slide_up"><i class="up"></i></span>
+  </div>
+</div>
+
+<div class="barrage">
+  <p><span>1111</span><span>123</span>发士大夫<span>发送到发送到</span><span>阿布</span><span>个</span><span>24发士大夫</span><span>的方法的实得分是的发送到</span><span>是东莞市的改哈哈哈是滴是滴</span></p>
+  <p><span>fljsdfkjk发生的昆仑镜</span><span>解放了开始的减肥is交定金</span><span>进看风景SD卡龙卷风</span><span>交发神经的交罚款</span><span>发奖金</span><span>福建省的飞松岛枫昆仑镜风口浪尖圣诞快乐放假</span><span>家乐福卡数据库</span><span>了罚款圣诞节</span><span>进亮晶晶快</span><span></span></p>
+  <p><span>蜂蜜</span><span>米哦你好</span><span>分尼克斯的境况</span><span>空房间12</span><span>he</span><span>丰盛的讲客家话分进</span><span>丰盛的发接口fsf</span><span>fsdf</span><span></span><span>m,fnsd房门口时京东方会计师的福建省的快乐飞机了</span></p>
+</div>
+
+<script src="js/lib/jquery-2.1.1.min.js"></script>
+<script src="js/utils/idangerous.swiper.js"></script>
+<script src="js/utils/jquery.keyframes.min.js"></script>
+<script src="js/site/bingbing.js"></script>
+</body>
+</html>
+
+

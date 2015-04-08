@@ -1,0 +1,338 @@
+@import "common/var";
+@import "modules/company/common";
+@import "modules/ps_common";
+@import "modules/dialog";
+@import "modules/comment";
+@import "modules/share";
+@import "modules/company/bottomlinks";
+@import "modules/company/salary_desc"; //工资图表
+@import "modules-v2/field/field_tags";   //领域标签
+
+.l_con {
+	p.ps_time {
+		color: @grey_99;
+	}
+	p.au_top {
+		position: relative;
+		height: 32px;
+		margin-top:32px;
+		padding: 0 13px 0 57px;
+		line-height: 32px;
+		border-top: 1px solid #cccccc;
+		border-bottom: 1px solid #e7e7e7;
+		background-color: #f5f5f5;
+		clear: both;
+		z-index: 6;
+		a.logo {
+			display: block;
+			position: absolute;
+			left: 10px;
+			top: -10px;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			padding: 2px;
+			background-color: #fff;
+			border: 1px solid #E7E7E7;
+			font-size: 0;
+			text-align: center;
+			overflow: hidden;
+			img {
+				width: 30px;
+				display: inline-block;
+				line-height: 30px;
+			}
+			span {
+				display: inline-block;
+				width: 0;
+				height: 100%;
+				vertical-align: middle;
+			}
+		}
+		a.moreview {
+			float: right;
+		}
+	}
+}
+
+
+dl.suggestions {
+	padding: 125px 0 64px 125px;
+	background: url(../images/company_notfind.jpg) no-repeat 35px 44px;
+	color: @def;
+	dd{
+		i{
+			font-size: 0;
+			line-height: 0;
+			display: inline-block;
+			width: 4px;
+			height: 4px;
+			background-color: @def;
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+	}
+}
+
+.send_review{
+	background-color: #f3f3f3;
+	padding: 15px 20px;
+	width: 645px;
+	position: relative;
+	left: -20px;
+	top: -1px;
+
+	.btn_grey_b{
+		float: right;
+		padding: 0 52px;
+		margin: 4px 40px 0 0;
+	}
+
+	p {
+		width: 26em;
+	}
+}
+
+ul{
+	&.hotcomment{
+		border-top: 1px solid #E7E7E7;
+		li{
+			height: 52px;
+			line-height: 52px;
+			border-bottom: 1px solid #E7E7E7;
+			overflow: hidden;
+			zoom: 1;
+			a.company_logo {
+				float: left;
+				display: block;
+				width: 30px;
+				height: 30px;
+				border: 1px solid #E7E7E7;
+				padding: 2px;
+				background-color: #fff;
+				overflow: hidden;
+				line-height: 30px;
+				margin-top: 8px;
+				font-size: 0;
+				img {
+					width: 30px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+				span {
+					display: inline-block;
+					width: 0;
+					height: 100%;
+					vertical-align: middle;
+				}
+			}
+			p{
+				&.cmp_name{
+					float: left;
+					width: 10em;
+					margin-left: 28px;
+				}
+				&.scores{
+					float: right;
+				}
+			}
+			div{
+				float: left;
+				width: 25em;
+				//margin-left: 50px;
+				p{
+					line-height: 1.5em;
+					padding-top: 8px;
+					em{
+						white-space: nowrap;
+					}
+				}
+			}
+		}
+	}
+
+	&.wagelist{
+		border-top: 1px solid #E7E7E7;
+		li{
+			height: 52px;
+			line-height: 52px;
+			padding-left: 12px;
+			border-bottom: 1px solid #E7E7E7;
+			overflow: hidden;
+			zoom: 1;
+			em.salary{
+				float: right;
+				strong{
+					font-size: 16px;
+					vertical-align: middle;
+				}
+			}
+			em.industry{
+				display: inline-block;
+				width: 10em;
+			}
+			span{
+				display: inline-block;
+				//margin-left: 60px;
+				width: 375px;
+				height: 12px;
+				vertical-align: middle;
+				line-height: 0;
+				font-size: 0;
+				zoom: 1;
+				i{
+					display: inline-block;
+					zoom: 1;
+					height: 12px;
+					background-color: #7cb228;
+				}
+			}
+		}
+	}
+}
+
+h3.hot{
+	font-size: 16px;
+}
+
+
+
+#jobTitleNologin{
+  .comments{
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+//工资页面等不添加图表
+dl.wage_c_explain {
+	padding: 10px 0 5px 0;
+	overflow: hidden;
+	*zoom: 1;
+
+	dt {
+		float: left;
+	}
+
+
+	dd {
+		margin-left: 360px;
+		padding-top: 5px;
+
+		li {
+			color: @grey_99;
+			font-size: 12px;
+			line-height: 1.7em;
+			overflow: hidden;
+			*zoom: 1;
+			padding-bottom: 5px;
+
+			i {
+				float: left;
+				overflow: hidden;
+				font-size: 0;
+				line-height: 0;
+				width: 5px;
+				height: 5px;
+				margin-top: 7px;
+				background-color: #999999;
+				border-radius: 5px;
+			}
+
+			p {
+				margin-left: 10px;
+			}
+
+			span {
+				color: @def;
+			}
+		}
+
+		p {
+			i {
+				display: inline-block;
+				font-size: 0;
+				line-height: 0;
+				width: 11px;
+				height: 11px;
+				margin-right: 10px;
+				background-color: #c5dcf2;
+			}
+
+			&.w_tt {
+				padding-bottom: 5px;
+			}
+		}
+	}
+}
+
+//细分领域
+div.l_c_tags {
+	position: relative;
+	cursor: pointer;
+
+	a {
+		float: left;
+		white-space: nowrap;
+	}
+
+	& > div {
+		position: absolute;
+		width: 40px;
+		height: 30px;
+		line-height: 30px;
+		bottom: 5px;
+		right: 0;
+
+		span {
+			position: absolute;
+			right: 0;
+			display: inline-block;
+			height: 0;
+			width: 0;
+			overflow: hidden;
+			border-width: 5px 5px 0 5px;
+			border-style: solid dashed;
+			.transition(ease all .2s);
+
+			&.wrap_trangle {
+				top: 12px;
+				border-color: #343434 transparent transparent transparent;
+			}
+
+			&.inner_trangle {
+				top: 11px;
+				border-color: #ffffff transparent transparent transparent;
+			}
+
+			&.wrap_trangle_click {
+				top: 11px;
+				border-width: 0 5px 5px 5px;
+				border-color: transparent transparent #343434 transparent;
+			}
+
+			&.inner_trangle_click {
+				top: 12px;
+				border-width: 0 5px 5px 5px;
+				border-color: transparent transparent #ffffff transparent;
+			}
+		}
+
+	}
+
+	/*&.pr {
+		padding-right: 40px;
+	}*/
+
+	&.hide_more {
+		height: 115px;
+		overflow: hidden;
+	}
+}
+
+
+
+
+
+

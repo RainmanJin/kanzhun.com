@@ -1,0 +1,86 @@
+span.u_feel_helpful {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-image: url(../images/manage_icons.png);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 13px;
+  background-position: -110px -198px;
+}
+span.u_comment {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-image: url(../images/manage_icons.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 13px;
+  background-position: -92px -198px;
+}
+span.u_share {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-image: url(../images/manage_icons.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 13px;
+  background-position: -74px -198px;
+}
+p.u_options a {
+  color: #666666;
+  font-size: 12px;
+}
+p.u_options a:hover {
+  color: #2c84cc;
+  text-decoration: none;
+}
+p.u_options a:hover em,
+p.u_options a:hover i {
+  color: #2c84cc;
+}
+p.u_options a.marked {
+  color: #666666;
+}
+p.u_options a.marked:hover {
+  color: #666666;
+}
+p.u_options a.marked:hover em,
+p.u_options a.marked:hover i {
+  color: #999999;
+}
+p.u_options span {
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+a.helpful:hover span {
+  background-position: -110px -214px;
+}
+a.comment:hover span {
+  background-position: -92px -214px;
+}
+a.share:hover span {
+  background-position: -74px -214px;
+}
+a.helpful.marked {
+  cursor: default;
+}
+a.helpful.marked span.u_feel_helpful {
+  background-position: -110px -198px;
+}
+a.helpful.marked:hover span {
+  background-position: -110px -198px;
+}
+a.comment.marked span {
+  background-position: -92px -198px;
+}
+a.comment.marked:hover span {
+  background-position: -92px -198px;
+}
+a.share.marked span {
+  background-position: -74px -198px;
+}
+a.share.marked:hover span {
+  background-position: -74px -198px;
+}

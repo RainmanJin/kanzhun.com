@@ -1,0 +1,83 @@
+@import "../../../css/common/var";
+@import "../var";
+
+section.top-search{
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  .box-shadow(0 1px 0 #e6e6e6);
+  width: 988px;
+  margin: 15px auto;
+
+  &.active{
+    background-color: #fff;
+  }
+
+  .top-search-form{
+    padding: 15px;
+    overflow: hidden;
+
+    fieldset{
+      border: 1px solid #cccccc;
+      height: 32px;
+      background-color: #fafafa;
+      float: left;
+
+      input[type=text]{
+        float: left;
+        border: 0;
+        padding: 8px 10px;
+        width: 380px;
+        height: 16px;
+        line-height: 16px;
+        background-color: transparent;
+      }
+
+      input[type=submit]{
+        border: 0;
+        background: transparent url("@{img}/v2/search_icon.png") no-repeat 0 6px;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 10px 0 25px;
+        float: left;
+        cursor: pointer;
+        color: #cccccc;
+      }
+    }
+
+    p{
+      float: left;
+      margin: 6px 0 0 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      
+      a{
+        color: #666;
+        margin: 0 6px;
+      }
+    }
+  }
+}
+
+.top-search-nav{
+  overflow: hidden;
+  border-top: 1px solid #eaeaea;
+  background-color: #fafafa;
+  .box-shadow(0 1px 0 #e6e6e6);
+  width: 988px;
+  margin: -16px auto 15px;
+
+  a{
+    padding: 10px 30px;
+    float: left;
+    border-right: 1px solid #eaeaea;
+    color: #333;
+
+    &.current{
+      font-weight: bold;
+      background-color: #fff;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

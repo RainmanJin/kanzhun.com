@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>会员中心-登录页</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+  <link rel="stylesheet" href="../css/auth-dialog-1.0.css" />
+</head>
+
+<body class="auth-wrap">
+  <section class="auth" style="display: inline-block;">
+    <h3><span>已注册, <a href="#">立即登录</a><i></i></span>注册 <a href="#" class="dialog_close"></a></h3>
+    <form action="">
+      <p class="sys_err"><span></span></p>
+      <ul>
+        <li>
+          <div class="focus">
+            <label><i class="user"></i></label><input type="text" class="ifd" placeholder="请输入邮箱" >
+          </div>
+        </li>
+        <li>
+          <div class="error">
+            <label><i class="pwd"></i></label><input type="text" class="ifd" placeholder="设置登录密码" >
+            <p class="err">设置登录密码</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <label><i class="pwd"></i></label><input type="text" class="ifd" placeholder="确认密码" >
+          </div>
+        </li>
+        <li class="code">
+          <img src="http://192.168.1.12:8080/captcha/?randomKey=Uhf3N5VJYAYcD3dBEKz3xRIkrME6BfxL&t=1401781686547"  onclick="changeAuthCode(this);" title="看不清？点击换一张" />
+          <div>
+            <input type="text" class="ifd" placeholder="输入验证码" >
+            <p class="err"></p>
+          </div>
+        </li>
+      </ul>
+      <p class="agree"><input type="checkbox" name="" id=""/><label for="">同意并愿意遵守<a href="">《用户协议》</a></label></p>
+      <p><input type="submit" value="注 册" class="auth_btn"></p>
+    </form>
+
+    <aside>
+      <p>使用以下账号直接登录</p>
+      <p>
+        <a href="#"><i class="wb"></i></a><a href="#"><i class="qq"></i></a><a href="#"><i class="rr"></i></a>
+      </p>
+    </aside>
+  </section>
+
+  <section class="auth" style="display: none;">
+    <h3><span><a href="#">立即注册</a><i></i></span>登录</h3>
+    <form action="">
+      <p class="sys_err"><span></span></p>
+      <ul>
+        <li>
+          <div class="focus">
+            <label><i class="user"></i></label><input type="text" class="ifd" placeholder="请输入邮箱/手机号" >
+          </div>
+        </li>
+        <li>
+          <div class="error">
+            <label><i class="pwd"></i></label><input type="text" class="ifd" placeholder="请输入密码" >
+            <p class="err">请输入密码</p>
+          </div>
+        </li>
+        <li class="code">
+          <img src="http://192.168.1.12:8080/captcha/?randomKey=Uhf3N5VJYAYcD3dBEKz3xRIkrME6BfxL&t=1401781686547"  onclick="changeAuthCode(this);" title="看不清？点击换一张" />
+          <div>
+            <input type="text" class="ifd" placeholder="输入验证码" >
+            <p class="err"></p>
+          </div>
+        </li>
+      </ul>
+      <p class="agree"><a class="fright" href="#">忘记密码？</a><input type="checkbox" name="" id=""/><label for="">记住我</label></p>
+      <p><input type="submit" value="登 录" class="auth_btn"></p>
+    </form>
+
+    <aside>
+      <p>使用以下账号直接登录</p>
+      <p>
+        <a href="#"><i class="wb"></i></a><a href="#"><i class="qq"></i></a><a href="#"><i class="rr"></i></a>
+      </p>
+    </aside>
+  </section>
+
+  <span class="middle-helper"></span>
+</body>
+</html>

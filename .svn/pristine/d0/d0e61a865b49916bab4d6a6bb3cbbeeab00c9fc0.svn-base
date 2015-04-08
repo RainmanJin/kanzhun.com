@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>DEMO</title>
+  <link rel="stylesheet" href="css/secret.css">
+</head>
+<body class="grey-body">
+
+<div class="company">
+  <p><i class="co"></i><strong>阿里巴巴</strong></p>
+  <p><strong>15,000</strong> 平均工资</p>
+</div>
+
+<div class="co-chart-wrap">
+  <p class="chart-nav f_16">
+    <a class="l" href="javascript:;" data-type="chart">百度公司工资分布</a>
+    <a class="r" href="javascript:;" data-type="comment">评论<i class="i-count">111</i></a>
+  </p>
+  <div class="co-chart" style="display:none"></div>
+  <div class="comment">
+    <div class="comment-form">
+      <p>
+        <input type="text" placeholder="请填写对该公司的评论">
+      </p>
+      <a class="bt-comment" href="javascript:;">确定</a>
+    </div>
+    <div class="comment-list">
+      <p class="no-result" style="display: none"><i class="excl"></i>还没有人评论哦！</p>
+      <ul>
+        <li>
+          <p class="grey">12/21  18:59</p>
+          <div>假期很多，有各种假期，例如：30天的带薪病假，1天的公益假等</div>
+        </li>
+        <li>
+          <p class="grey">12/21  18:59</p>
+          <div>假期很多，有各种假期，例如：30天的带薪病假，1天的公益假等</div>
+        </li>
+        <li>
+          <p class="grey">12/21  18:59</p>
+          <div>假期很多，有各种假期，例如：30天的带薪病假，1天的公益假等</div>
+        </li>
+        <li>
+          <p class="grey">12/21  18:59</p>
+          <div>假期很多，有各种假期，例如：30天的带薪病假，1天的公益假等</div>
+        </li>
+      </ul>
+      <a href="javascript:;" class="btn_more more_details" data-page="2" data-lastid="527210" ka="more" data-ctype="2">更多</a>
+    </div>
+  </div>
+  <p class="ml10 mr10"><a class="btn-orange" href="#">分享到朋友圈</a></p>
+</div>
+
+<ul class="search-ret">
+  <li>
+    <a href="#">
+      <p>
+        <em>产品经理</em>
+      </p>
+      <strong>￥17,400 <i></i></strong>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <p>
+        <em>web前端开发工程师web前端开发工程师</em>
+      </p>
+      <strong>￥17,400 <i></i></strong>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <p>
+        <em>UI设计师</em>
+      </p>
+      <strong>￥17,400 <i></i></strong>
+    </a>
+  </li>
+</ul>
+</body>
+</html>
+
+

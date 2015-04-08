@@ -1,0 +1,69 @@
+//colors
+@blue: #53cac3;
+@def: #262c2f;  //标题黑
+@grey_79: #797979;  //默认文字的颜色
+@grey_cc:#cccccc; //边框
+@grey_6cr: #6c6c70; //边框加深
+@grey_5a: #5a5a5a; //边框更深
+@white:#fff;
+@red:#ff5800; 
+
+//css3 
+.transform(...){
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-ms-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
+}
+
+.animation(...){
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	-ms-animation: @arguments;
+	-o-animation: @arguments;
+	animation: @arguments;
+}
+
+.transition(...){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-ms-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.box-shadow(...){
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-ms-box-shadow: @arguments;
+	box-shadow: @arguments;
+}
+
+.flex(...){
+	-webkit-flex: @arguments;
+	flex: @arguments;
+}
+
+.background-size(...){
+	-webkit-background-size: @arguments;
+	-moz-background-size: @arguments;
+	-o-background-size: @arguments;
+	background-size: @arguments;
+}
+.box-sizing(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ellipsis(...){
+  text-overflow: @arguments;
+  -o-text-overflow: @arguments;
+  -ms-text-overflow: @arguments;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}

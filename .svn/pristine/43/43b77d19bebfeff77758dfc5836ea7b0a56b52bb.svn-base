@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>公司点评页面</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../../../v2/css/widget.css"/>
+  <link rel="stylesheet" href="../../../v2/css/company/review.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/require.js" data-main="/v2/js/company/review.js"></script>
+</head>
+
+<body class="field_bg">
+<header class="global">
+  <div class="header">
+    <a ka="head-index" href="/" class="logo"><img src="/images/logo.png" width="136" height="40"></a>
+    <nav>
+      <a ka="head-com" href="/gs.html">公司</a>
+      <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+      <a ka="head-recruit" href="/job/">招聘</a>
+      <a ka="head-interview" href="/msh/">面试</a>
+      <a ka="head-news" target="_blank" href="/news/">资讯</a>
+      <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+    </nav>
+    <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+  </div>
+</header>
+<section class="ps_header field_mini_bg clearfix">
+  <div class="clearfix">
+    <form action="/companyl/search/" method="get" id="minisearchForm">
+      <input id="MSSQType" value="2" type="hidden">
+      <input name="stype" id="MSSSType" value="" type="hidden">
+      <dl class="select ps_salary_slt" id="minisearchS">
+        <dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly"><div></div><span class="btn"><i></i></span></dt>
+        <dd>
+          <a href="/jobl/p/">职位</a>
+          <a href="/companyl/search/">公司</a>
+          <a href="/salaryl/search/">工资</a>
+          <a href="/interviewl/search/">面试</a>
+        </dd>
+      </dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value=""><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" autocomplete="off"><input type="hidden" id="cityCode" name="cityCode" value=""><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索"></span>
+    </form>
+  </div>
+</section>
+<!--公司模块-公司头部-->
+
+<section class="co_header clearfix" style="z-index: 4;">
+    <input id="shareTextHid" type="hidden" value="">
+    <input id="shareCoTextHid" type="hidden" value="">
+    <input type="hidden" id="shareImgHid" value="">
+    <a href="" class="co_logo">
+        <i class="tag cubeugc_icon_my"></i><img src="http://img.kanzhun.com/images/logo/20140925/3aaa7746fa42066c1dfd3912c0afb025.jpg" width="150" title="华为" alt="华为logo" data-bd-imgshare-binded="1"><span></span>
+    </a>
+    <div class="co_info">
+        <p class="cmpname" id="companyName">华为 <a href="" class="share_pk">公司PK</a></p>
+        <div class="msgs"><strong>3.5</strong><span class="grade_star_b"><i style="width:83px;"></i></span><a href="" class="grey_99">19556人评价</a></div>
+        <p class="grey_99">通讯<em>|</em>西安<em>|</em>10000人以上<em>|</em>民营</p>
+    </div>
+    <nav class="clearfix">
+        <p id="fixedCoNav">
+            <span class="f_n_name" id="fixedcmpname"><em>华为</em></span>
+            <a href="" title="">简介</a>
+            <a href="" title="">工资</a>
+            <a href="" title="">点评</a>
+            <a href="" title="">招聘</a>
+            <a href="" class="current" title="">面试</a>
+            <a href="" title="">照片</a>
+            <a href="" title="">员工</a>
+        </p>
+    </nav>
+    <aside>
+        <div><a href="" id="headerfollow" class="fright" data-hadattention="no" data-cid="3131" data-mtype="follow.json" class="follow attention_collection">+&nbsp;关注<span class="tangle_init"></span></a><em>233333912人浏览</em></div>
+    </aside>
+</section>
+<div class="container_v2 clearfix">
+  <section class="f_l_con clearfix">
+    <div class="wrap_style mb15">
+      <div class="cmp_tt clearfix">
+        <span class="grey_99 fright">最后更新七天内（2015-01-29）</span>
+        <h1>易宝支付怎么样</h1>
+        <p class="ml10">互联网行业雇主综合排名<em>NO.1</em>，<a href="#">查看排名</a></p>
+      </div>
+      <p class="line"></p>
+      <div class="co_grade clearfix">
+        <div class="cg_t clearfix">
+          <ul class="cgt_l clearfix">
+            <li class="cgtl_l">
+              <div class="font_h2">10<em>%</em></div>
+            </li>
+            <li class="cgtl_r">
+              <p class="font_h3">员工认为公司靠谱<a class="ml10 js_bt_showCgd" href="javascript:;"><i class="i_question_blue"></i></a></p>
+              <p class="grey_99">来自1729人评价</p>
+              <div class="co_grade_detail none">
+                <i class="tangle_greyb_left"></i>
+                <ul class="cgd_t">
+                  <li class="font_h2">10<em>%</em></li>
+                  <li>
+                    <p class="font_h3">员工认为公司靠谱</p>
+                    <p class="grey_99">来自1729人评价</p>
+                  </li>
+                </ul>
+                <ul class="cgd_m">
+                  <li class="mb10"><span class="grade_star_b mr10"><i style="width:92px;"></i></span><strong>4.8</strong>分</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column"><em style="width: 50px"></em></span> 100%</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column" style="50px"></span> 50%</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column"></span> 100%</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column"></span> 100%</li>
+                  <li><span class="green_s_star_2 mr15"><i style="width:57px;"></i></span><span class="column"></span> 100%</li>
+                </ul>
+                <ul class="cgd_b clearfix">
+                  <li>职业成长<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                  <li class="ml10">技能成长<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                  <li>环境氛围<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                  <li class="ml10">工作压力<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                  <li>公司前景<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span>4.0分</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="cgt_r">
+            <div class="ceo">
+              <img src="http://img.kanzhun.com/image/9595.gif">
+              <p class="f_14">田国立<br><em class="grey_99 f_12">首席执行官</em></p>
+              <a class="fright grey_99 mt10 js_correctionceo_bt" href="javascript:;" data-coid="9595" ka="review-ceo-edit"><i class="i_correction"></i>纠错</a>
+            </div>
+            <span class="tangle_init"></span>
+          </div>
+        </div>
+        <ul class="cg_b">
+          <li class="circle_chart">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>54%的员工<br>愿意推荐朋友来<br>这里工作</h5>
+          </li>
+          <li class="circle_chart">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>54%的员工<br>看好公司<br>未来发展</h5>
+          </li>
+          <li class="circle_chart li_last">
+            <div class="doughnua_chart"><span>54%</span><canvas width="62" height="62" class="reviewsDoughnutChart" data-ratio="0.54_0.45999999999999996"></canvas></div>
+            <h5>54%的员工<br>支持CEO马化腾</h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--公司模块-面经/点评 - 筛选-->
+
+<div class="wrap_style mb15">
+  <dl class="conditional_search clearfix">
+    <dt>
+      <input type="text" name="q" autocomplete="off" value="" class="v_s_field" placeholder="全部职位"><span class="btn_grey_l"><input type="submit" value="按职位查询" id="viewSearchBtn"></span>
+      <a class="a_checkbox" href="#"><span class="input_checkbox" href="javascript:;"><i class="i_check_green"></i></span> 在职员工</a>
+    </dt>
+    <dd>
+      <a href="" class="current"><span>面试筛选</span></a>
+      <!--<a href=""><span>面试印象</span></a>-->
+    </dd>
+  </dl>
+  <div class="panel">
+    <dl class="c_s_detail">
+      <dt>热门职位：</dt>
+      <dd class="has_spread">
+        <a href="/msh/g9595-z0/?result=" class="current">全部</a>
+
+        <a ka="blocker2-hot-1" href="/msh/g9595-z55095/?result=">外贸工作人员<span class="grey_99">(269)</span></a>
+
+        <a ka="blocker2-hot-2" href="/msh/g9595-z3626/?result=">实习生<span class="grey_99">(79)</span></a>
+
+        <a ka="blocker2-hot-3" href="/msh/g9595-z62764/?result=">秩序队长<span class="grey_99">(36)</span></a>
+
+        <a ka="blocker2-hot-4" href="/msh/g9595-z601/?result=">兼职<span class="grey_99">(34)</span></a>
+
+        <a ka="blocker2-hot-5" href="/msh/g9595-z73380/?result=">汽车租赁业务员<span class="grey_99">(20)</span></a>
+
+        <a ka="blocker2-hot-6" href="/msh/g9595-z243245/?result=">operation intern<span class="grey_99">(16)</span></a>
+
+        <a ka="blocker2-hot-7" href="/msh/g9595-z92661/?result=">冲压模具维修师傅<span class="grey_99">(12)</span></a>
+
+        <a ka="blocker2-hot-8" href="/msh/g9595-z99177/?result=">业绩核算专员<span class="grey_99">(11)</span></a>
+
+        <a ka="blocker2-hot-9" href="/msh/g9595-z175266/?result=">一般储干<span class="grey_99">(11)</span></a>
+
+        <a ka="blocker2-hot-10" href="/msh/g9595-z40563/?result=">渠道部资深理财经理<span class="grey_99">(10)</span></a>
+
+        <a ka="blocker2-hot-11" href="/msh/g9595-z190052/?result=">外聘员工<span class="grey_99">(10)</span></a>
+
+        <a ka="blocker2-hot-12" href="/msh/g9595-z246180/?result=">第四制造部二期外观<span class="grey_99">(9)</span></a>
+
+        <a ka="blocker2-hot-13" href="/msh/g9595-z87004/?result=">aet<span class="grey_99">(9)</span></a>
+
+        <a ka="blocker2-hot-14" href="/msh/g9595-z101170/?result=">店长兼区域管理<span class="grey_99">(7)</span></a>
+
+        <a ka="blocker2-hot-15" href="/msh/g9595-z190575/?result=">调运<span class="grey_99">(7)</span></a>
+
+        <a ka="blocker2-hot-16" href="/msh/g9595-z165069/?result=">后勤主任助理<span class="grey_99">(7)</span></a>
+
+        <a ka="blocker2-hot-17" href="/msh/g9595-z11866/?result=">软件项目维护工程师<span class="grey_99">(6)</span></a>
+
+        <a ka="blocker2-hot-18" href="/msh/g9595-z76757/?result=">勤务工<span class="grey_99">(6)</span></a>
+
+        <a ka="blocker2-hot-19" href="/msh/g9595-z96035/?result=">部名经理<span class="grey_99">(5)</span></a>
+
+        <a ka="blocker2-hot-20" href="/msh/g9595-z15591/?result=">电子商务客服人员<span class="grey_99">(5)</span></a>
+
+        <aside class="grey_99"><div class="C-toggler" id="showCoFilterJobs">展开<i></i></div></aside>
+      </dd>
+    </dl>
+    <dl class="c_s_detail">
+      <dt>城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市：</dt>
+      <dd class="has_spread">
+      <a href="/gsm9595c0.html?result=" class="current">全部</a>
+
+      <a ka="city-1" href="/gsm9595c7.html?result=">北京<span class="grey_99">(142)</span></a>
+
+      <a ka="city-2" href="/gsm9595c34.html?result=">广州<span class="grey_99">(99)</span></a>
+
+      <a ka="city-3" href="/gsm9595c1.html?result=">上海<span class="grey_99">(94)</span></a>
+
+      <a ka="city-4" href="/gsm9595c12.html?result=">成都<span class="grey_99">(32)</span></a>
+
+      <a ka="city-5" href="/gsm9595c49.html?result=">深圳<span class="grey_99">(27)</span></a>
+
+      <a ka="city-6" href="/gsm9595c42.html?result=">杭州<span class="grey_99">(23)</span></a>
+
+      <a ka="city-7" href="/gsm9595c50.html?result=">苏州<span class="grey_99">(23)</span></a>
+
+      <a ka="city-8" href="/gsm9595c9.html?result=">重庆<span class="grey_99">(20)</span></a>
+
+      <a ka="city-9" href="/gsm9595c2.html?result=">南京<span class="grey_99">(13)</span></a>
+
+      <a ka="city-10" href="/gsm9595c105.html?result=">西安<span class="grey_99">(12)</span></a>
+
+      <a ka="city-11" href="/gsm9595c15.html?result=">长沙<span class="grey_99">(11)</span></a>
+
+      <a ka="city-12" href="/gsm9595c88.html?result=">天津<span class="grey_99">(11)</span></a>
+
+      <a ka="city-13" href="/gsm9595c8.html?result=">大连<span class="grey_99">(10)</span></a>
+
+      <a ka="city-14" href="/gsm9595c28.html?result=">东莞<span class="grey_99">(10)</span></a>
+
+      <a ka="city-15" href="/gsm9595c75.html?result=">青岛<span class="grey_99">(10)</span></a>
+
+      <a ka="city-16" href="/gsm9595c96.html?result=">无锡<span class="grey_99">(10)</span></a>
+
+      <a ka="city-17" href="/gsm9595c209.html?result=">南昌<span class="grey_99">(10)</span></a>
+
+      <a ka="city-18" href="/gsm9595c40.html?result=">佛山<span class="grey_99">(9)</span></a>
+
+      <a ka="city-19" href="/gsm9595c152.html?result=">呼和浩特<span class="grey_99">(9)</span></a>
+
+      <a ka="city-20" href="/gsm9595c167.html?result=">南宁<span class="grey_99">(9)</span></a>
+
+      <a ka="city-21" href="/gsm9595c66.html?result=">兰州<span class="grey_99">(8)</span></a>
+
+      <a ka="city-22" href="/gsm9595c85.html?result=">石家庄<span class="grey_99">(8)</span></a>
+
+      <a ka="city-23" href="/gsm9595c111.html?result=">郑州<span class="grey_99">(8)</span></a>
+
+      <a ka="city-24" href="/gsm9595c163.html?result=">宁波<span class="grey_99">(8)</span></a>
+
+      <a ka="city-25" href="/gsm9595c51.html?result=">沈阳<span class="grey_99">(6)</span></a>
+
+      <a ka="city-26" href="/gsm9595c53.html?result=">武汉<span class="grey_99">(6)</span></a>
+
+      <a ka="city-27" href="/gsm9595c140.html?result=">珠海<span class="grey_99">(6)</span></a>
+
+      <a ka="city-28" href="/gsm9595c156.html?result=">昆明<span class="grey_99">(6)</span></a>
+
+      <a ka="city-29" href="/gsm9595c32.html?result=">贵阳<span class="grey_99">(5)</span></a>
+
+      <a ka="city-30" href="/gsm9595c55.html?result=">济南<span class="grey_99">(5)</span></a>
+
+      <a ka="city-31" href="/gsm9595c292.html?result=">广东省<span class="grey_99">(5)</span></a>
+
+      <a ka="city-32" href="/gsm9595c41.html?result=">合肥<span class="grey_99">(4)</span></a>
+
+      <a ka="city-33" href="/gsm9595c59.html?result=">惠州<span class="grey_99">(4)</span></a>
+
+      <a ka="city-34" href="/gsm9595c90.html?result=">台州<span class="grey_99">(4)</span></a>
+
+      <a ka="city-35" href="/gsm9595c91.html?result=">太原<span class="grey_99">(4)</span></a>
+
+      <a ka="city-36" href="/gsm9595c27.html?result=">东营<span class="grey_99">(3)</span></a>
+
+      <a ka="city-37" href="/gsm9595c31.html?result=">哈尔滨<span class="grey_99">(3)</span></a>
+
+      <a ka="city-38" href="/gsm9595c70.html?result=">泉州<span class="grey_99">(3)</span></a>
+
+      <a ka="city-39" href="/gsm9595c108.html?result=">西宁<span class="grey_99">(3)</span></a>
+
+      <a ka="city-40" href="/gsm9595c109.html?result=">邢台<span class="grey_99">(3)</span></a>
+
+      <a ka="city-41" href="/gsm9595c112.html?result=">广西<span class="grey_99">(3)</span></a>
+
+      <a ka="city-42" href="/gsm9595c116.html?result=">徐州<span class="grey_99">(3)</span></a>
+
+      <a ka="city-43" href="/gsm9595c136.html?result=">镇江<span class="grey_99">(3)</span></a>
+
+      <a ka="city-44" href="/gsm9595c287.html?result=">山西省<span class="grey_99">(3)</span></a>
+
+      <a ka="city-45" href="/gsm9595c403.html?result=">顺德<span class="grey_99">(3)</span></a>
+
+      <a ka="city-46" href="/gsm9595c36.html?result=">赣州<span class="grey_99">(2)</span></a>
+
+      <a ka="city-47" href="/gsm9595c37.html?result=">福州<span class="grey_99">(2)</span></a>
+
+      <a ka="city-48" href="/gsm9595c38.html?result=">阜阳<span class="grey_99">(2)</span></a>
+
+      <a ka="city-49" href="/gsm9595c39.html?result=">抚顺<span class="grey_99">(2)</span></a>
+
+      <a ka="city-50" href="/gsm9595c45.html?result=">海口<span class="grey_99">(2)</span></a>
+
+      <a ka="city-51" href="/gsm9595c57.html?result=">江门<span class="grey_99">(2)</span></a>
+
+      <a ka="city-52" href="/gsm9595c63.html?result=">洛阳<span class="grey_99">(2)</span></a>
+
+      <a ka="city-53" href="/gsm9595c68.html?result=">绵阳<span class="grey_99">(2)</span></a>
+
+      <a ka="city-54" href="/gsm9595c71.html?result=">衢州<span class="grey_99">(2)</span></a>
+
+      <a ka="city-55" href="/gsm9595c98.html?result=">温州<span class="grey_99">(2)</span></a>
+
+      <a ka="city-56" href="/gsm9595c106.html?result=">厦门<span class="grey_99">(2)</span></a>
+
+      <a ka="city-57" href="/gsm9595c120.html?result=">扬州<span class="grey_99">(2)</span></a>
+
+      <a ka="city-58" href="/gsm9595c135.html?result=">中山<span class="grey_99">(2)</span></a>
+
+      <a ka="city-59" href="/gsm9595c142.html?result=">自贡<span class="grey_99">(2)</span></a>
+
+      <a ka="city-60" href="/gsm9595c149.html?result=">揭阳<span class="grey_99">(2)</span></a>
+
+      <a ka="city-61" href="/gsm9595c166.html?result=">南通<span class="grey_99">(2)</span></a>
+
+      <a ka="city-62" href="/gsm9595c177.html?result=">乌鲁木齐<span class="grey_99">(2)</span></a>
+
+      <a ka="city-63" href="/gsm9595c192.html?result=">常熟<span class="grey_99">(2)</span></a>
+
+      <a ka="city-64" href="/gsm9595c195.html?result=">九江<span class="grey_99">(2)</span></a>
+
+      <a ka="city-65" href="/gsm9595c198.html?result=">金华<span class="grey_99">(2)</span></a>
+
+      <a ka="city-66" href="/gsm9595c331.html?result=">江苏<span class="grey_99">(2)</span></a>
+
+      <a ka="city-67" href="/gsm9595c337.html?result=">泰州<span class="grey_99">(2)</span></a>
+
+      <a ka="city-68" href="/gsm9595c404.html?result=">香港<span class="grey_99">(2)</span></a>
+
+      <a ka="city-69" href="/gsm9595c411.html?result=">黄石<span class="grey_99">(2)</span></a>
+
+      <a ka="city-70" href="/gsm9595c3.html?result=">广东<span class="grey_99">(1)</span></a>
+
+      <a ka="city-71" href="/gsm9595c10.html?result=">池州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-72" href="/gsm9595c11.html?result=">郴州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-73" href="/gsm9595c13.html?result=">潮州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-74" href="/gsm9595c14.html?result=">常州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-75" href="/gsm9595c18.html?result=">长春<span class="grey_99">(1)</span></a>
+
+      <a ka="city-76" href="/gsm9595c19.html?result=">沧州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-77" href="/gsm9595c20.html?result=">百色<span class="grey_99">(1)</span></a>
+
+      <a ka="city-78" href="/gsm9595c21.html?result=">滨州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-79" href="/gsm9595c26.html?result=">鄂尔多斯<span class="grey_99">(1)</span></a>
+
+      <a ka="city-80" href="/gsm9595c29.html?result=">德州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-81" href="/gsm9595c30.html?result=">德阳<span class="grey_99">(1)</span></a>
+
+      <a ka="city-82" href="/gsm9595c33.html?result=">桂林<span class="grey_99">(1)</span></a>
+
+      <a ka="city-83" href="/gsm9595c44.html?result=">邯郸<span class="grey_99">(1)</span></a>
+
+      <a ka="city-84" href="/gsm9595c48.html?result=">四川<span class="grey_99">(1)</span></a>
+
+      <a ka="city-85" href="/gsm9595c54.html?result=">秦皇岛<span class="grey_99">(1)</span></a>
+
+      <a ka="city-86" href="/gsm9595c58.html?result=">葫芦岛<span class="grey_99">(1)</span></a>
+
+      <a ka="city-87" href="/gsm9595c60.html?result=">淮南<span class="grey_99">(1)</span></a>
+
+      <a ka="city-88" href="/gsm9595c65.html?result=">临沂<span class="grey_99">(1)</span></a>
+
+      <a ka="city-89" href="/gsm9595c77.html?result=">清远<span class="grey_99">(1)</span></a>
+
+      <a ka="city-90" href="/gsm9595c81.html?result=">汕头<span class="grey_99">(1)</span></a>
+
+      <a ka="city-91" href="/gsm9595c82.html?result=">上饶<span class="grey_99">(1)</span></a>
+
+      <a ka="city-92" href="/gsm9595c83.html?result=">商丘<span class="grey_99">(1)</span></a>
+
+      <a ka="city-93" href="/gsm9595c101.html?result=">潍坊<span class="grey_99">(1)</span></a>
+
+      <a ka="city-94" href="/gsm9595c107.html?result=">新疆<span class="grey_99">(1)</span></a>
+
+      <a ka="city-95" href="/gsm9595c113.html?result=">盐城<span class="grey_99">(1)</span></a>
+
+      <a ka="city-96" href="/gsm9595c121.html?result=">烟台<span class="grey_99">(1)</span></a>
+
+      <a ka="city-97" href="/gsm9595c126.html?result=">义乌<span class="grey_99">(1)</span></a>
+
+      <a ka="city-98" href="/gsm9595c128.html?result=">湛江<span class="grey_99">(1)</span></a>
+
+      <a ka="city-99" href="/gsm9595c129.html?result=">漳州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-100" href="/gsm9595c138.html?result=">株洲<span class="grey_99">(1)</span></a>
+
+      <a ka="city-101" href="/gsm9595c146.html?result=">大理<span class="grey_99">(1)</span></a>
+
+      <a ka="city-102" href="/gsm9595c148.html?result=">嘉兴<span class="grey_99">(1)</span></a>
+
+      <a ka="city-103" href="/gsm9595c161.html?result=">吉林<span class="grey_99">(1)</span></a>
+
+      <a ka="city-104" href="/gsm9595c170.html?result=">盘锦<span class="grey_99">(1)</span></a>
+
+      <a ka="city-105" href="/gsm9595c173.html?result=">绍兴<span class="grey_99">(1)</span></a>
+
+      <a ka="city-106" href="/gsm9595c175.html?result=">唐山<span class="grey_99">(1)</span></a>
+
+      <a ka="city-107" href="/gsm9595c180.html?result=">乐山<span class="grey_99">(1)</span></a>
+
+      <a ka="city-108" href="/gsm9595c183.html?result=">连云港<span class="grey_99">(1)</span></a>
+
+      <a ka="city-109" href="/gsm9595c184.html?result=">芜湖<span class="grey_99">(1)</span></a>
+
+      <a ka="city-110" href="/gsm9595c194.html?result=">承德<span class="grey_99">(1)</span></a>
+
+      <a ka="city-111" href="/gsm9595c199.html?result=">娄底<span class="grey_99">(1)</span></a>
+
+      <a ka="city-112" href="/gsm9595c233.html?result=">丹阳<span class="grey_99">(1)</span></a>
+
+      <a ka="city-113" href="/gsm9595c234.html?result=">丽水<span class="grey_99">(1)</span></a>
+
+      <a ka="city-114" href="/gsm9595c237.html?result=">亳州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-115" href="/gsm9595c243.html?result=">内蒙古<span class="grey_99">(1)</span></a>
+
+      <a ka="city-116" href="/gsm9595c261.html?result=">南充<span class="grey_99">(1)</span></a>
+
+      <a ka="city-117" href="/gsm9595c270.html?result=">哈密<span class="grey_99">(1)</span></a>
+
+      <a ka="city-118" href="/gsm9595c280.html?result=">安庆<span class="grey_99">(1)</span></a>
+
+      <a ka="city-119" href="/gsm9595c284.html?result=">宜春<span class="grey_99">(1)</span></a>
+
+      <a ka="city-120" href="/gsm9595c285.html?result=">宿州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-121" href="/gsm9595c286.html?result=">山东省<span class="grey_99">(1)</span></a>
+
+      <a ka="city-122" href="/gsm9595c316.html?result=">拉萨<span class="grey_99">(1)</span></a>
+
+      <a ka="city-123" href="/gsm9595c330.html?result=">汕尾<span class="grey_99">(1)</span></a>
+
+      <a ka="city-124" href="/gsm9595c332.html?result=">江西省<span class="grey_99">(1)</span></a>
+
+      <a ka="city-125" href="/gsm9595c340.html?result=">海南<span class="grey_99">(1)</span></a>
+
+      <a ka="city-126" href="/gsm9595c351.html?result=">湖南<span class="grey_99">(1)</span></a>
+
+      <a ka="city-127" href="/gsm9595c354.html?result=">滁州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-128" href="/gsm9595c362.html?result=">白山<span class="grey_99">(1)</span></a>
+
+      <a ka="city-129" href="/gsm9595c365.html?result=">福建省<span class="grey_99">(1)</span></a>
+
+      <a ka="city-130" href="/gsm9595c373.html?result=">衡阳<span class="grey_99">(1)</span></a>
+
+      <a ka="city-131" href="/gsm9595c378.html?result=">贵州省<span class="grey_99">(1)</span></a>
+
+      <a ka="city-132" href="/gsm9595c384.html?result=">达州<span class="grey_99">(1)</span></a>
+
+      <a ka="city-133" href="/gsm9595c389.html?result=">邵阳<span class="grey_99">(1)</span></a>
+
+      <a ka="city-134" href="/gsm9595c405.html?result=">马鞍山<span class="grey_99">(1)</span></a>
+
+      <a ka="city-135" href="/gsm9595c409.html?result=">黄冈<span class="grey_99">(1)</span></a>
+
+      <a ka="city-136" href="/gsm9595c415.html?result=">宁夏<span class="grey_99">(1)</span></a>
+
+      <a ka="city-137" href="/gsm9595c416.html?result=">淮北<span class="grey_99">(1)</span></a>
+
+      <a ka="city-138" href="/gsm9595c451.html?result=">澳门<span class="grey_99">(1)</span></a>
+
+        <aside class="grey_99"><div class="C-toggler" id="showCoFilterCities">展开<i></i></div></aside>
+      </dd>
+    </dl>
+    <dl class="c_s_detail">
+      <dt>面试结果：</dt>
+      <dd>
+        <a href="" class="current">全部</a><a href="">面试通过<span class="grey_99">(54)</span></a><a href="">感觉靠谱<span class="grey_99">(504)</span></a><a href="">感觉没戏<span class="grey_99">(58)</span></a><a href="">未通过<span class="grey_99">(54)</span></a>
+      </dd>
+    </dl>
+
+    <dl class="c_s_detail boborder">
+      <dt>筛选条件：</dt>
+      <dd class="co-searched-options">
+        <span>客服 <a href="#"><i class="close_conditions"></i></a></span><span>北京 <a href="#"><i class="close_conditions"></i></a></span><span>面试通过 <a href="#"><i class="close_conditions"></i></a></span>
+      </dd>
+    </dl>
+  </div>
+  <div class="panel none">
+    <div class="cmp_images">
+      <span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span><span class="cmp_images mr15 mb15">面试官很萌</span>
+      <aside class="grey_99">展开<i class="tangle_init t_grey_99"></i></aside>
+    </div>
+  </div>
+</div>
+
+<dl class="wrap_style c_s_show mb15">
+  <dt class="f_12 grey_99">排序：<a href="">推荐</a><em>|</em><a href="">最新</a></dt>
+  <dd>
+    <a href="">易宝支付</a>&nbsp;共有11090条面试
+  </dd>
+</dl>
+    <!--公司模块-点评列表项-->
+
+<div class="wrap_style">
+  <dl class="c_s_result">
+    <dt class="anonymous_portrait"><img src="/images/view_v2-img/xiaoren.jpg" alt=""></dt>
+    <dd class="c_s_result_detail">
+      <h2><a href=""><span>“</span>易宝支付是锻炼行业产品经理的好地方<span>”</span></a></h2>
+      <p class="f_12 grey_99 view_address">在职员工 - 2年外勤业务专员业务专员 -&nbsp;&nbsp;<i class="cmp_address"></i>广州 </p>
+      <p class="c_s_result_text"><em>公司优点：</em>笔试都是大题，比较开放式，涉及比较广有线程调度。</p>
+      <p class="c_s_result_text"><em>公司缺点：</em>笔试都是大题，比较开放式，涉及比较广有线程调度。</p>
+      <p class="c_s_result_text mb30"><em>意见和建议：</em>笔试都是大题，比较开放式，涉及比较广有线程调度、算法、语言、系统设计等，比较符合个人胃口。
+        1面刚开始直接就写两个程序，然后问了问项目以及一些数据结构和网络方面的知识，只记得其中有个问题是如何判断程序中堆和栈增长方向;
+        2面是电面，主要问了些算法问题，让设计一个图片存储系统，并进行优化，问的很细，让把主要的数据结构和调度算法都设计出来，然后根据你设计的系统提一些更高的要求并进行优化;3面是部门经理的电面，就问我喜欢玩哪种类型的英雄(当然是根据团队需要，缺啥玩啥，哈哈)，技术主要以项目为主，问的很深，问了好多项目中涉及到细节的问题，而且问题一针见血，不得不佩服百度还是牛人多，参加的其他面试都没问过这么深入的... <a href="">查看全部&gt;</a></p>
+      <div class="c_s_v_result mb20">
+        <span class="green_s_star_2 js_hover_gd"><i style="width:57px;"></i></span><i class="tangle_init"></i><em>一般</em><i class="i_rect color_g mr5"></i><em class="grey_99 f_12">愿意推荐朋友</em><i class="i_rect color_r mr5"></i><em class="grey_99 f_12">不支持CEO</em><i class="i_rect color_y mr5"></i><span class="grey_99 f_12">公司发展一般</span>
+        <div class="grade_detail">
+          <i class="tangle_greyb_up"></i>
+          <ul>
+            <li>职业成长<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span></li>
+            <li>技能成长<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span></li>
+            <li>环境氛围<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span></li>
+            <li>工作压力<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span></li>
+            <li>公司前景<span class="grade_rect_fifteen ml5"><i style="width:14px;"></i></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="view_feel_tags">
+        <span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span><span class="cmp_images mr15 mb20">面试官很萌</span>
+      </div>
+      <p class="line_only"></p>
+      <div class="u_c_s">
+        <p class="fright u_options">
+          <a href="" class="helpful mr15 marked" data-mtype="useful.json" data-sid="753822"><span class="u_feel_helpful"></span>有用<em class="grey_99">（</em><i class="grey_99">0</i><em class="grey_99">）</em></a><a href="" class="comment mr15"><span class="u_comment"></span>评论<em class="grey_99">（0）</em></a><a href="" data-desc="" data-url="/gsmsh753822.html" class="share"><span class="u_share"></span>分享</a>
+        </p>
+        <time class="grey_99 f_12">今天 21:22</time>
+      </div>
+    </dd>
+  </dl>
+</div>
+    <!--打分-->
+    <!--点评打分-->
+
+<div class="wrap_style co-review-grade mt15">
+  <h2><b>“你在这里工作过？”</b>分享你的经验，帮助求职者看得更准！</h2>
+
+  <dl>
+    <dt><img src="http://img.kanzhun.com/image/l55255.gif" alt=""></dt>
+    <dd>
+      <div class="form">
+        <h3>易宝支付</h3>
+        <div>
+          <a href="#">
+            <img src="../../../../images/v2/large_start.jpg" alt=""/><br/>
+          </a>
+          <p class="grey_99 mt5">点击星星为公司打分</p>
+        </div>
+        <textarea class="js_textarea_enter" data-url="/test" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="link">
+        <a href="#">+晒晒你的工资</a>
+        <a href="#">+发一条面经</a>
+        <a href="#">+发一张公司靓照</a>
+      </div>
+    </dd>
+  </dl>
+</div>
+    <!--打分-->
+  </section>
+  <!-- 右半部分 -->
+  <section class="f_r_con clearfix">
+    <!--公司模块-右侧-写一条评论/面经-->
+
+<div class="wrap_style send_interview mb15">
+  <p class="t-center mb15"><a href="" class="yellow_btn">写一条面经</a></p>
+  <p><img src="/images/view_v2-img/send_message.jpg"></p>
+</div>
+
+    <!--公司模块-右侧-平均工资入口/点评-->
+
+<div class="wrap_style average mb15">
+    <h2 class="title" title="百度">百度平均工资</h2>
+    <div class="item">
+        <a href="">
+            <p class="t grey_33"><span><em class="f_14">￥</em><strong>12398</strong></span>&nbsp;/月</p>
+            <div>比同行业水平<span><i class="tangle_init"></i>高16%</span></div>
+        </a>
+        <p class="employee_share grey_99 mt10"><a href="" class="fright links">查看更多&gt;</a>来自4292名员工分享</p>
+
+    </div>
+</div>
+    <!--公司模块-右侧带星星的公司列表-->
+
+<div class="wrap_style">
+  <h2 class="f_tt mt20 mb15">汽车信息领域热门公司</h2>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+  <dl class="hot_cmp">
+    <dt>
+      <a href=""><img src="http://img.kanzhun.com/image/l55255.gif" alt=""><span></span></a>
+    </dt>
+    <dd>
+      <p><a href=""  class="links grey_33">易车网</a></p>
+      <span class="green_s_star mr10"><i style="width: 57px;"></i></span><em class="f_12 grey_99">195条点评</em>
+    </dd>
+  </dl>
+</div>
+    <!--公司模块-右侧-热门职位/点评-->
+
+<div class="wrap_style sy_hotpost mb15">
+    <h2 class="title">热门职位</h2>
+
+    <ul class="item">
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+        <li>
+            <h5>淘宝网消费者维权客服</h5>
+            <div><span>4-6K</span>淘宝网 - 杭州</div>
+        </li>
+
+    </ul>
+
+</div>
+  </section>
+  <!-- 右半部分 -->
+</div>
+
+</body>
+</html>

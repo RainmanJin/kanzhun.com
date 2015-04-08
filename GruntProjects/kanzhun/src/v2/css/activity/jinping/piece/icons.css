@@ -1,0 +1,121 @@
+i.i {
+  display: inline-block;
+  background: url("/images/activity/jinping/icons.png") no-repeat;
+}
+i.i.i_hand {
+  width: 80px;
+  height: 51px;
+}
+i.i.i_hill {
+  width: 71px;
+  height: 45px;
+  background-position: -100px 0;
+}
+i.i.i_head {
+  width: 44px;
+  height: 61px;
+  background-position: 0 -60px;
+}
+i.i.i_hat {
+  width: 87px;
+  height: 55px;
+  background-position: -60px -60px;
+}
+i.i.i_shit {
+  width: 60px;
+  height: 51px;
+  background-position: 0 -140px;
+}
+i.i.i_first {
+  width: 34px;
+  height: 42px;
+  background-position: -80px -220px;
+}
+i.i.i_second {
+  width: 34px;
+  height: 42px;
+  background-position: -40px -220px;
+}
+i.i.i_third {
+  width: 34px;
+  height: 42px;
+  background-position: 0 -220px;
+}
+i.i.i_corner {
+  width: 50px;
+  height: 48px;
+  background-position: -120px -200px;
+}
+i.i.i_pk {
+  width: 122px;
+  height: 40px;
+  background-position: -60px -140px;
+}
+i.i.i_pk_s {
+  width: 69px;
+  height: 25px;
+  background-position: 0 -280px;
+}
+i.i.i_face {
+  width: 88px;
+  height: 138px;
+  background-position: 0 -320px;
+}
+i.i.i_face_s {
+  width: 53px;
+  height: 53px;
+  background-position: -100px -400px;
+}
+i.i.i_weibo {
+  width: 42px;
+  height: 42px;
+  background-position: -120px -280px;
+}
+i.i.i_weixin {
+  width: 42px;
+  height: 42px;
+  background-position: -120px -340px;
+}
+i.i.i_goTop {
+  width: 16px;
+  height: 9px;
+  background-position: -180px -320px;
+}
+.bt {
+  display: inline-block;
+  width: 166px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+}
+.bt:hover {
+  text-decoration: none;
+}
+.bt.color_y {
+  background-color: #e7be00;
+}
+.bt.color_o {
+  background-color: #e77200;
+}
+p.statement {
+  color: #fff;
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 800px;
+}
+a.float_weixin {
+  position: relative;
+}
+a.float_weixin img {
+  position: absolute;
+  bottom: 50px;
+  right: -40px;
+  display: none;
+}
+a.float_weixin:hover img {
+  display: inline-block;
+}

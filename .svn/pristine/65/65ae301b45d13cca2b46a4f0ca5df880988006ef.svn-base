@@ -1,0 +1,347 @@
+section.body {
+  width: 990px;
+  margin: 0 auto;
+  min-height: 1000px;
+  background-color: #32323a;
+}
+section.body .body_l {
+  float: left;
+  height: 100%;
+  width: 315px;
+  background-color: #32323a;
+  color: #fff;
+}
+section.body .body_l .header {
+  background-color: #32323a;
+  height: 260px;
+}
+section.body .body_l .header .hTop {
+  height: 130px;
+  background-color: #28282e;
+}
+section.body .body_l .header .hTop .logo {
+  padding-top: 20px;
+  text-align: center;
+}
+section.body .body_l .header .hBottom {
+  position: relative;
+}
+section.body .body_l .header .hBottom .base {
+  position: absolute;
+  top: -61px;
+  width: 100%;
+}
+section.body .body_l .header .hBottom .p1 {
+  text-align: center;
+  font-size: 24px;
+}
+section.body .body_l .header .hBottom .p2 {
+  text-align: center;
+  font-size: 16px;
+}
+section.body .body_l ul.nav {
+  border-top: 1px solid #3b3b43;
+}
+section.body .body_l ul.nav li {
+  height: 65px;
+  line-height: 65px;
+  border-bottom: 1px solid #3b3b43;
+  position: relative;
+}
+section.body .body_l ul.nav li a {
+  padding: 0 20px 0 35px;
+  color: #95a0aa;
+  font-size: 20px;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+section.body .body_l ul.nav li a em {
+  vertical-align: middle;
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  margin-right: 10px;
+  line-height: 100%;
+}
+section.body .body_l ul.nav li a .i.i_right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -7px;
+}
+section.body .body_l ul.nav li a:hover,
+section.body .body_l ul.nav li a.current {
+  background-color: #53cac4;
+  text-decoration: none;
+  color: #fff;
+}
+section.body .body_l ul.nav li a:hover .i.i_right,
+section.body .body_l ul.nav li a.current .i.i_right {
+  background-position: -180px -20px;
+}
+section.body .body_l ul.nav li a:hover .i.i_people,
+section.body .body_l ul.nav li a.current .i.i_people {
+  background-position: -40px 0;
+}
+section.body .body_l ul.nav li a:hover .i.i_info,
+section.body .body_l ul.nav li a.current .i.i_info {
+  background-position: -40px -40px;
+}
+section.body .body_l ul.nav li a:hover .i.i_heart,
+section.body .body_l ul.nav li a.current .i.i_heart {
+  background-position: -40px -80px;
+}
+section.body .body_l ul.nav li a:hover .i.i_opus,
+section.body .body_l ul.nav li a.current .i.i_opus {
+  background-position: -40px -120px;
+}
+section.body .body_l ul.nav li a:hover .i.i_work,
+section.body .body_l ul.nav li a.current .i.i_work {
+  background-position: -40px -160px;
+}
+section.body .body_l ul.nav li a:hover .i.i_hat,
+section.body .body_l ul.nav li a.current .i.i_hat {
+  background-position: -40px -200px;
+}
+section.body .body_l ul.nav li a:hover .i.i_necktie,
+section.body .body_l ul.nav li a.current .i.i_necktie {
+  background-position: -40px -240px;
+}
+section.body .body_l ul.nav li a:hover .i.i_necktieplus,
+section.body .body_l ul.nav li a.current .i.i_necktieplus {
+  background-position: -40px -280px;
+}
+section.body .body_l ul.nav li a.quit {
+  color: #ed5565;
+}
+section.body .body_l ul.nav.fixed {
+  position: fixed;
+  width: 315px;
+  top: 0;
+}
+section.body .body_r {
+  float: left;
+  height: 100%;
+  width: 675px;
+  background-color: #f1f1f1;
+}
+section.body .body_r header {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+section.body .body_r header ul .hm {
+  float: left;
+  width: 70px;
+  line-height: 60px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+section.body .body_r header ul .tt {
+  float: left;
+  color: #666;
+  padding: 13px 0 0 20px;
+  font-size: 18px;
+}
+section.body .body_r header ul .tt span {
+  font-size: 24px;
+}
+section.body .body_r header ul .tt em {
+  font-size: 24px;
+  padding: 0 8px;
+}
+section.body .body_r header ul .dl {
+  float: right;
+  width: 70px;
+  line-height: 60px;
+  text-align: center;
+}
+section.body .body_r section.form {
+  margin: 17px;
+  border-bottom: 2px solid #e3e4e8;
+  background-color: #fff;
+}
+section.body .body_r section.form h2.title {
+  height: 58px;
+  line-height: 58px;
+  color: #53cac4;
+  font-size: 23px;
+  font-weight: normal;
+  background: #dbf3f3;
+  padding: 0 20px;
+}
+section.body .body_r section.form .content {
+  color: #768082;
+  padding: 20px 20px 40px;
+}
+section.body .body_r section.form .content ul.field {
+  margin-right: -40px;
+}
+section.body .body_r section.form .content ul.field .list {
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  position: relative;
+}
+section.body .body_r section.form .content ul.field .list label {
+  display: block;
+  margin-bottom: 5px;
+}
+section.body .body_r section.form .content ul.field .list .select {
+  float: left;
+}
+section.body .body_r section.form .content ul.field .list em.mline {
+  display: inline-block;
+  border-top: 2px solid #abadb3;
+  width: 17px;
+  vertical-align: middle;
+}
+section.body .body_r section.form .content ul.show .list {
+  border: 2px solid #e3e4e8;
+  border-radius: 5px;
+  padding: 30px 20px 20px;
+  position: relative;
+  margin-bottom: 15px;
+}
+section.body .body_r section.form .content ul.show .list ul.set {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+section.body .body_r section.form .content ul.show .list ul.set li {
+  float: left;
+  margin-left: 15px;
+}
+section.body .body_r section.form .content ul.show .list ul.set li a {
+  color: #c3c3c3;
+}
+section.body .body_r section.form .content ul.show .list h3 {
+  color: #53cac4;
+  font-size: 20px;
+  font-weight: normal;
+}
+section.body .body_r section.form .content ul.show .list h3 p {
+  float: right;
+}
+section.body .body_r section.form .content ul.show .list.edit ul {
+  margin-right: -20px;
+}
+section.body .body_r section.form .content ul.show .list.edit ul li {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+section.body .body_r section.form .content ul.show .list.edit ul li label {
+  display: block;
+  margin-bottom: 5px;
+}
+section.body .body_r section.form .content ul.show .list.edit ul li input {
+  width: 244px;
+}
+section.body .body_r section.form .content ul.show .list.edit ul li textarea {
+  width: 532px;
+}
+section.body .body_r section.form .content ul.show .list.edit ul li .select {
+  float: left;
+  width: 244px;
+}
+section.body .body_r section.form .content ul.show .list.edit ul li em.mline {
+  float: left;
+  display: inline-block;
+  border-top: 2px solid #abadb3;
+  width: 17px;
+  vertical-align: middle;
+  margin: 20px 10px 0;
+}
+section.body .body_r section.form .content .add {
+  background-color: #f6f8fa;
+  border: 2px dashed #e3e4e8;
+  text-align: center;
+  padding: 25px;
+}
+section.body .body_r section.form .content .add a {
+  display: block;
+  color: #acacac;
+  font-size: 16px;
+}
+section.body .body_r section.form .content .add a i {
+  margin-top: 3px;
+}
+section.body .body_r section.form .content .add a:hover {
+  text-decoration: none;
+}
+section.body .body_r section.form .content .sbm {
+  margin-top: 20px;
+  text-align: center;
+}
+p.err {
+  position: absolute;
+  color: #ed5565;
+  top: 70px;
+}
+.protrait {
+  width: 122px;
+  height: 122px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.protrait img {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.protrait em {
+  display: inline-block;
+  width: 122px;
+  height: 122px;
+  background: url("../../images/ugc/round.png") no-repeat;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+.protrait span.bg {
+  display: inline-block;
+  width: 122px;
+  height: 122px;
+  position: absolute;
+  left: 0;
+  background: #000;
+  opacity: 0.3;
+  z-index: 2;
+}
+.protrait a {
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 4;
+  top: 55px;
+  text-align: center;
+  display: inline-block;
+}
+.i_radio {
+  color: #abadb3;
+}
+.i_radio i {
+  background: url("../../images/ugc/icons.png") no-repeat;
+  background-position: -80px -80px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.i_radio.current i {
+  background-position: -100px -80px;
+}
+.i_radio:hover {
+  text-decoration: none;
+}

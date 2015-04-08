@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>找工作因素</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/idangerous.swiper.css" />
+  <link rel="stylesheet" href="css/findjob.css"/>
+</head>
+
+<body class="index">
+  <section class="content">
+    <a class="bt" href="findjob.html">那么问题来了>></a>
+    <p class="mt5">调研因素共6组，每组皆可多选或单选，选择完成后滑动屏幕或点击按钮进入下一组。</p>
+    <p class="red" style="font-size: 12px">我们将随机送出紫米移动电源和家政服务券作为回馈！</p>
+  </section>
+</body>
+</html>

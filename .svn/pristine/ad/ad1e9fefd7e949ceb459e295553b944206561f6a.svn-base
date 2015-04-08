@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scrollbar</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.scrollbar.css">
+	<style type="text/css">
+	html,body{
+		height: 100%;
+	}
+	.body_outer{
+     height: 100%
+  }
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.div1{
+		width: 200px;
+		height:400px;
+	}
+	</style>	
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollbar.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.scrollbar-macosx').scrollbar();
+		});
+	</script>
+</head>
+<body>
+	<div class="body_outer scrollbar-macosx">
+  	<div class="div1 scrollbar-macosx">
+      <p class="permanent">
+          Traditionally scrollbars are permanently displayed whenever an area of a webpage is
+          scrollable. By contrast, scrollbars in OSX Lion are hidden from sight, and revealed only
+          when scrolling content. In this example, scrollbars are revealed when mouse is over content.
+      </p>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+          scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+          Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+          hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+          pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+          sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+          ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+          nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+          viverra nisi, in interdum massa nibh nec erat.
+      </p>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+          scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+          Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+          hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+          pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+          sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+          ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+          nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+          viverra nisi, in interdum massa nibh nec erat.
+      </p>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+          scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+          Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+          hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+          pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+          sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+          ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+          nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+          viverra nisi, in interdum massa nibh nec erat.
+      </p>
+  	</div>
+  	<div>
+      <p>
+          Traditionally scrollbars are permanently displayed whenever an area of a webpage is
+          scrollable. By contrast, scrollbars in OSX Lion are hidden from sight, and revealed only
+          when scrolling content. In this example, scrollbars are revealed when mouse is over content.
+      </p>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+          scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+          Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+          hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+          pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+          sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+          ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+          nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+          viverra nisi, in interdum massa nibh nec erat.
+      </p>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+          scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+          Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+          hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+          pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+          sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+          ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+          nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+          viverra nisi, in interdum massa nibh nec erat.
+      </p>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+          scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+          Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+          hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+          pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+          sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+          ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+          nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+          viverra nisi, in interdum massa nibh nec erat.
+      </p>
+      <p class="permanent">
+          Traditionally scrollbars are permanently displayed whenever an area of a webpage is
+          scrollable. By contrast, scrollbars in OSX Lion are hidden from sight, and revealed only
+          when scrolling content. In this example, scrollbars are revealed when mouse is over content.
+      </p>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+          scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+          Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+          hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+          pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+          sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+          ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+          nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+          viverra nisi, in interdum massa nibh nec erat.
+      </p>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+          scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+          Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+          hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+          pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+          sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+          ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+          nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+          viverra nisi, in interdum massa nibh nec erat.
+      </p>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a,
+          scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+          Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel
+          hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue,
+          pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam
+          sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare,
+          ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget
+          nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam
+          viverra nisi, in interdum massa nibh nec erat.
+      </p>      
+  	</div>  	
+	</div>
+</body>
+</html>
+

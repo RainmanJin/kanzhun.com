@@ -1,0 +1,55 @@
+@import "../common/var";
+
+.autocomplete-suggestions {
+  border: 1px solid #e7e7e7;
+  background: #FFF;
+  cursor: default;
+  overflow: auto;
+
+  strong {
+    font-weight: bold;
+    color: #007ead;
+  }
+
+
+  dl{
+    background-color: #f5f5f5;
+    dt{
+      width: 2em;
+      padding: 0 1em;
+      float: left;
+      color: #999;
+      padding-top: 5px;
+
+      &.bd{
+        border-top: 1px solid #eeeeee;
+      }
+    }
+
+    dd{
+      border-left: 1px solid #eeeeee;
+      margin-left: 4em;
+      background-color: #fff;
+
+      &.bd{
+        border-top: 1px solid #eeeeee;
+      }
+    }
+  }
+}
+
+.autocomplete-suggestion {
+  height: 36px;
+  line-height: 36px;
+  padding-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.autocomplete-selected {
+  background: #eee;
+  strong {
+    color: @a-blue;
+  }
+}
+

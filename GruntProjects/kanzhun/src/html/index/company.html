@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>公司首页</title>
+<!--[if lte IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="../js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+	window.CONTEXTPATH=location.host;
+</script>
+<link rel="stylesheet" href="../../css/widget.css" />
+<link rel="stylesheet" href="../../css/company.css" />
+<script src="../js/require.js" data-main="../js/site/company.js"></script>
+</head>
+
+<body>
+  <header class="global hd-christmas">
+    <div class="hd-bg"></div>
+    <div class="header">
+      <a ka="head-index" href="/" class="logo"><img src="../images/days/logo-c.png" width="136" height="40"></a>
+      <nav>
+        <a ka="head-com" href="/gs.html">公司</a>
+        <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+        <a ka="head-recruit" class="current" href="/job/">招聘</a>
+        <a ka="head-interview" href="/msh/">面试</a>
+        <!--<a ka="index-zj" href="/zhiji/">职业体检</a>-->
+        <a ka="head-news" target="_blank" href="/news/">资讯</a>
+        <a ka="head-baobao" href="http://baobao.kanzhun.com" class="h_i h_baobao_tdc">曝曝 <i class="i_new"></i><img src="/images/baobao/baobao-kz.png"></a>
+        <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+      </nav>
+      <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+    </div>
+  </header>
+	
+	<section class="co_header clearfix">
+		<a href="#" class="co_logo"><i class="tag cubeugc_icon_my"></i><img src="../images/img-04.jpg" width="150" alt=""  /><span></span></a>
+		<div class="co_info">
+			<h1>易宝支付</h1>
+			<p class="msg"><span class="grade_star_b"><i style="width:56px;"></i></span><strong>2.2</strong>分<em>|</em><a href=""><b>235条</b></a>信息</p>
+			<p class="params">互联网<em>|</em>www.yeepay.com<em>|</em>北京<em>|</em>500-100人</p>
+		</div>
+		<nav class="clearfix">
+			<span class="f_n_name" style="cursor:pointer;" id="fixedcmpname" ka="com-blocker1-name"><em>诺基亚（Nokia）</em></span><a href="#" class="current">简介</a><a href="#">薪酬</a><a href="#">评论</a><a href="#">面试</a><a href="#">照片</a><a href="#">员工</a>
+		</nav>
+		<aside>
+			<a href="javascript:;" class="btn_o_l comment js_ugc_bt" data-type="comment">我要点评公司</a>
+			<a href="" class="btn_grey_b follow"><b>+</b> 关注公司</a>
+		</aside>
+	</section>
+
+	<div class="container clearfix">
+		<section class="l_con clearfix">
+			<a class="cube_ugcEnter" href="javascript:;">
+				<i class="icon_cubeugc"></i>
+			</a>
+			<div class="cube_ugc">
+				<a class="a_close" href="javascript:;"><i class="close"></i>不再显示</a>
+				<p class="h">您在这家公司工作过么？</p>
+				<div class="p">
+					<a class="btn_grey_b" href="javacript:;">在这里工作过</a>
+					<a class="btn_grey_b" href="javacript:;">想去</a>
+					<a class="btn_grey_b" href="javacript:;">感兴趣</a>
+					<a class="skip" href="javacript:;">以后再说</a>
+				</div>
+			</div>
+			<div class="cube_ugc">
+				<form id="cubeUgcForm">
+				<input class="v" value="" type="hidden">
+				<a class="a_close" href="javascript:;"><i class="close"></i>不再显示</a>
+				<p class="h">你在这家公司的工作时间是？</p>
+				<div class="p">
+					<dl class="js_select select select_s">
+						<dt>
+							<input type="hidden" value="" class="v" data-necessary="1">
+							<input type="button" value="开始年份" readonly="readonly"><span class="btn"><i></i></span>
+						</dt>
+						<dd>
+							<a href="javascript:;" data-val="2014">2014年</a>
+						</dd>
+					</dl>
+					<dl class="js_select select select_s month">
+						<dt>
+							<input type="hidden" value="" class="v" data-necessary="1">
+							<input type="button" value="月份" readonly="readonly"><span class="btn"><i></i></span>
+						</dt>
+						<dd>
+							<a href="javascript:;" data-val="1">1月</a>
+							<a href="javascript:;" data-val="2">2月</a>
+						</dd>
+					</dl>	
+					<dl class="js_select select select_s">
+						<dt>
+							<input type="hidden" value="" class="v" data-necessary="1">
+							<input type="button" value="结束年份" readonly="readonly"><span class="btn"><i></i></span>
+						</dt>
+						<dd>
+							<a href="javascript:;" data-val="2014">2014年</a>
+						</dd>
+					</dl>
+					<dl class="js_select select select_s month">
+						<dt>
+							<input type="hidden" value="" class="v" data-necessary="1">
+							<input type="button" value="月份" readonly="readonly"><span class="btn"><i></i></span>
+						</dt>
+						<dd>
+							<a href="javascript:;" data-val="1">1月</a>
+							<a href="javascript:;" data-val="2">2月</a>
+						</dd>
+					</dl>	
+					<input class="sbm" type="submit" value="确定">		
+				</div>
+				</form>
+			</div>
+			<div class="cube_ugc">
+				<a class="a_close" href="javascript:;"><i class="close"></i>不再显示</a>
+				<p class="h">您在这里工作过，向他家分享一些信息吧！</p>
+				<div class="p">
+					<a class="btn_grey_b" href="javacript:;">+匿名发布一条工资</a>
+					<a class="skip" href="javacript:;">以后再说</a>
+				</div>
+			</div>
+			<div class="cube_ugc">
+				<a class="a_close" href="javascript:;"><i class="close"></i>不再显示</a>
+				<form id="cubeugc_salaryForm">
+				<ul class="salarycon">
+					<li class="clearfix">
+						<div class="space mr25">
+							<label class="tt">职位名称</label>
+							<input ka="jobtitle" type="text" id="jobautocomplete" class="field_b salaryipt v" placeholder="如：产品经理" name="jobTitle" autocomplete="off" data-coid="4" maxlength="32">
+							<p class="err" data-msg="请输入职位名称！"></p>
+						</div>
+						<div class="space clearfix">
+							<label class="tt">职位经验</label>
+							<dl class="select experience">
+								<dt ka="salary1-experience">
+									<input ka="jobyear" type="hidden" name="jobExperience" value="2">
+									<input ka="jobyear" type="button" name="jobExperienceDes" value="1年" readonly="readonly"><span class="btn"><i></i></span>
+								</dt>
+								<dd>
+									<a href="javascript:;" rel="nofollow" data-val="1">1年以下</a>
+								</dd>
+							</dl>
+							<p class="err" data-msg="请选择职位经验！"></p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="space mr25">
+							<label class="tt">月薪</label>
+							<input ka="salary1-salary-average" type="text" class="field_b salaryipt" placeholder="每月税前工资，如5000" name="salaryPayTotal" maxlength="10" autocomplete="off" id="salaryPayBase" value="">
+							<span class="unit" style="right: 10px">元</span>
+							<p class="err" data-msg="请输入月薪！"></p>
+						</div>
+						<div class="space">
+							<label class="tt">工作城市</label>
+							<input ka="jobcity" type="text" class="field_b salaryipt" name="cityName" maxlength="50" id="companyCitySuggest" autocomplete="off" placeholder="如：北京">
+							<input type="hidden" name="encryptCityCode" value="7" id="cityCodes">
+							<p class="err" data-msg="请输入工作城市！" style="display: none;"></p>
+						</div>
+					</li>
+					<li class="addincome">
+						<a href="javascript:;" class="salaryDetaile" id="addincome" ka="salary1-open">
+							+ 添加工资明细
+							<i class="open_white"></i>
+						</a>
+						<span class="none" id="sDetailErr"></span>
+					</li>
+					<li class="adddetail">
+						<ul class="adddetail none">
+							<li>
+								<label class="tt">基本工资</label>
+								<input type="text" class="field_b onlyready" name="salaryPayBase" maxlength="10" autocomplete="off" id="salaryBase" readonly="readonly" data-unnecessary="1">
+								<span class="unit">元</span>
+							</li>
+							<li>
+								<label class="tt">奖金</label>
+								<input ka="salary1-bonus" type="text" name="salaryPayBonus" class="field_b" data-unnecessary="1">
+								<span class="unit">元</span>
+							</li>
+							<li>
+								<label class="tt">补助</label>
+								<input ka="salary1-allowance" type="text" name="salaryPaySubsidy" class="field_b" data-unnecessary="1"><span class="unit">元</span>
+							</li>
+							<li>
+								<label class="tt">销售提成</label>
+								<input ka="salary1-sell" type="text" name="salaryPaySalesCommission" class="field_b" data-unnecessary="1">
+								<span class="unit">元</span>
+							</li>
+							<li>
+								<label class="tt">其他收入</label>
+								<input ka="salary1-other" type="text" name="salaryPayOthers" class="field_b" data-unnecessary="1">
+								<span class="unit">元</span>
+							</li>
+						</ul>
+					</li>
+					<li class="clearfix" style="margin-bottom:0">
+						<label class="tt"></label>
+						<input type="submit" ka="ugc-salary1" class="btn_grey_b" value="确定">
+					</li>
+				</ul>
+				</form>
+			</div>
+			<div class="cube_ugc">
+				<a class="a_close" href="javascript:;"><i class="close"></i>不再显示</a>
+				<p class="h">您在这里工作过，向他家分享一些信息吧！</p>
+				<div class="p">
+					<a class="btn_grey_b" href="javacript:;">+匿名发布一条公司点评</a>
+					<a class="skip" href="javacript:;">以后再说</a>
+				</div>
+			</div>
+			<div class="cube_ugc">
+				<a class="a_close" href="javascript:;"><i class="close"></i>不再显示</a>
+				<p class="h">Logo是空的...<br>请帮忙给这家公司添加一个Logo好吗？</p>
+				<div class="p">
+					<a class="btn_grey_b" id="uploadLogo" href="javacript:;">+添加Logo</a>
+					<a class="skip" href="javacript:;">别烦我...</a>
+				</div>
+			</div>
+
+			<dl class="co_tb">
+				<dt><img src="../images/img-01.jpg" alt="" /><p><a href="#">查看更多</a></p></dt>
+				<dd>
+					<p><a href="#" class="edit"><i class="i_correction"></i>信息有误？编辑</a><strong>官方主页</strong>www.baidu.com</p>
+					<p><strong>行业</strong>互联网</p>
+					<p><strong>城市</strong>北京</p>
+					<p><strong>规模</strong>大型(1000人以上)</p>
+					<p><strong>CEO</strong>李彦宏</p>
+					<p class="competitors"><strong>竞争对手</strong><a href="#" target="_blank">网易有道</a><a href="#" target="_blank">奇虎360</a><a href="#" target="_blank">Google（谷歌中国）</a></p>
+				</dd>
+			</dl>
+
+
+			<h3 class="tt"><img src="../images/tt_intro.jpg"  alt="公司介绍" /></h3>
+			<article class="co_intro">
+				<p>易宝支付(北京通融通信息技术有限公司)是国内领先的独立第三方支付公司，于2011年5月26日获得央行发放的首批第三方支付业务许可证。</p><br>
+				<p>公司自2003年8月成立以来一直致力于为广大商家和消费者提供“安全、简单、快乐”的专业电子支付解决方案和服务。并以随需应变，量身定制为原则，陆续推出了航旅，游戏、网上购物、教育考试等行业的专用支付解决方案。易宝支付在电子支付领域创新而务实的风格、领先的技术和负责任的爱心企业公民形象，深得银行等合作伙伴认同。易宝支付的卓越服务得到了业界的广泛认<span class="more_details"></span><span class="more">... <i>展开</i></span></p>
+			</article>
+			<p class="grey_99">公司介绍来自看准用户的整理和编辑</p>
+
+			<h3 class="tt"><span>所有点评由该公司员工匿名提交</span><img src="../images/tt_review.jpg"  alt="公司点评" /></h3>
+			
+			<div class="co_grade co_grade_i">
+				<dl class="total">
+					<dt>员工对公司的总体评分</dt>
+					<dd class="total_chart_w">
+						<p><span class="grade_star_b mr10"><i style="width:56px;"></i></span>2.2分<em>|</em>来自235条信息</p>
+						<p class="mt15">互联网行业排名第42位，<a href="#">查看行业内公司排名</a></p>
+					</dd>
+					<dd class="circle_chart"></dd>
+				</dl>
+				<dl class="ceo">
+					<dt>CEO支持率</dt>
+					<dd>
+						<img src="../images/img-02.jpg" alt="" />
+						<p>李彦宏 <br>首席执行官</p>
+					</dd>
+				</dl>
+			</div>
+			<p class="line"></p>
+			<p class="grey_99">
+				产品经理 在易宝支付工作过1年 发布于 1月20日
+			</p>
+			<dl class="detail_v">
+				<dt>“易宝支付是锻炼行业产品经理的好地方”</dt>
+				<dd>
+					<p><span class="grade_star"><i style="width:40px;"></i></span><span class="mr10"> 4.0分</span>点评来自在易宝支付工作过1年的产品经理 <span class="grey_99 ml10">- 发布于 1月20日 北京</span></p>
+					<p class="mt10">公司的优点：1、公司待遇不错，至少在成都还是很有竞争力的。2、公司够大，转岗机会还是比较多。3、公司整体上升趋势，一般还是没有裁员或者倒闭的风险。4、比较透明，付出有收获。年终奖和股票都不错... <a href="" class="more">展开</a></p>
+				</dd>
+			</dl>
+			<dl class="detail_v">
+				<dt>“易宝支付是锻炼行业产品经理的好地方”</dt>
+				<dd>
+					<p><span class="grade_star"><i style="width:40px;"></i></span><span class="mr10"> 4.0分</span>点评来自在易宝支付工作过1年的产品经理 <span class="grey_99 ml10">- 发布于 1月20日 北京</span></p>
+					<p class="mt10">公司的优点：1、公司待遇不错，至少在成都还是很有竞争力的。2、公司够大，转岗机会还是比较多。3、公司整体上升趋势，一般还是没有裁员或者倒闭的风险。4、比较透明，付出有收获。年终奖和股票都不错 </p>
+				</dd>
+			</dl>
+			<p class="mt15"><a href="" class="btn_grey_s mr20">写一条点评</a> <a href="#">查看全部员工点评（共294条）</a></p>
+
+			
+			<h3 class="tt"><span>所有工资由该公司员工匿名提交</span><img src="../images/tt_salary.jpg"  alt="薪酬" /></h3>
+
+			<div class="salary_sort">
+				<ul id="salarySort">
+					<li class="current"><i class="sort_p"></i>图表</li>
+					<li><i class="sort_t"></i>文字</li>
+				</ul>
+				<em class="blue">易宝支付各职位的员工工资</em> <span class="grey_99">最后更新 七天内</span>
+			</div>
+
+			<div class="salary_slide">
+				<div class="slide_con" id="salarySlide">
+				<table class="salary_chart salary_chart_p" cellspacing="0" cellspacing="0">
+					<tr>
+						<th width="149">职位</th>
+						<th width="80">平均工资/月</th>
+						<th width="10">&nbsp;</th>
+						<th width="63">￥0</th>
+						<th width="63">￥10K</th>
+						<th width="63">￥20K</th>
+						<th width="63">￥30K</th>
+						<th width="63">￥40K</th>
+						<th width="63">￥50K</th>
+						<th>&nbsp;</th>
+					</tr>
+					<tr>
+						<td class="blue">java工程师(8条)</td>
+						<td>￥18000</td>
+						<td colspan="8" class="chart">
+							<figure>
+								<div style="margin-left: 39px;width: 78px;" id="aaaa"></div>
+							</figure>
+						</td>
+					</tr>
+					<tr>
+						<td class="blue">产品经理(6条)</td>
+						<td>￥12000</td>
+						<td colspan="8" class="chart">
+							<figure>
+								<div style="margin-left: 130px;width: 260px;">
+									<dl>
+										<dt></dt>
+										<dd>技术工程师工资 <br><span class="grey_99">工资范围：</span>￥2,000-￥20,000 <br><span class="grey_99">平均工资：</span>￥9,000 <br><span class="blue">靠谱（123）</span></dd>
+									</dl>
+								</div>
+							</figure>
+						</td>
+					</tr>
+					<tr>
+						<td class="blue">技术工程师(18条)</td>
+						<td>￥11000</td>
+						<td colspan="8" class="chart">
+							<figure>
+								<div style="margin-left: 78px;width: 130px;">
+									<dl>
+										<dt></dt>
+										<dd>技术工程师工资 <br><span class="grey_99">工资范围：</span>￥2,000-￥20,000 <br><span class="grey_99">平均工资：</span>￥9,000 <br><span class="blue">靠谱（123）</span></dd>
+									</dl>
+								</div>
+							</figure></td>
+					</tr>
+					<tr>
+						<td class="blue">技术工程师(18条)</td>
+						<td> - </td>
+						<td colspan="8" class="chart grey_99">为保护用户隐私，同一职位3条数据以上才会展示 <a href="" class="salary_y">[为什么]</a></td>
+					</tr>
+				</table>
+				<table class="salary_chart" cellspacing="0" cellspacing="0">
+					<tr>
+						<th width="140">职位</th>
+						<th width="100">平均工资/月</th>
+						<th>工资范围</th>
+					</tr>
+					<tr>
+						<td class="blue">java工程师(8条)</td>
+						<td>￥18000</td>
+						<td class="chart"><span class="grey_99">最低工资：</span> ￥8,000 <span class="grey_99 ml15">最高工资：</span> ￥8,000 <a href="#" class="ml20">靠谱（123）</a></td>
+					</tr>
+					<tr>
+						<td class="blue">产品经理(6条)</td>
+						<td>￥12000</td>
+						<td class="chart"><span class="grey_99">最低工资：</span> ￥8,000 <span class="grey_99 ml15">最高工资：</span> ￥8,000 <a href="#" class="ml20">靠谱（123）</a></td>
+					</tr>
+					<tr>
+						<td class="blue">技术工程师(18条)</td>
+						<td>￥11000</td>
+						<td class="chart"><span class="grey_99">最低工资：</span> ￥8,000 <span class="grey_99 ml15">最高工资：</span> ￥8,000 <a href="#" class="ml20">靠谱（123）</a></td>
+					</tr>
+					<tr>
+						<td class="blue">技术工程师(18条)</td>
+						<td> - </td>
+						<td class="chart grey_99">请你<a href="" class="register">注册</a>或<a href="" class="login">登录</a>以更多查看薪酬信息</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+			<section class="dialog salary_why" id="salaryWhy">
+				<div class="dialog_con">
+					<a href="#" class="direct direct_l"></a>
+					<a href="#" class="dialog_close"></a>
+					为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么
+				</div>
+			</section>
+			<p><a href="" class="btn_grey_s mr20">发一条工资</a> <a href="#">查看全部工资（共294条工资，16个职位）</a></p>
+			<h3 class="tt"><span>所有面试经历由该面试过该公司职位的用户匿名提交</span><img src="../images/tt_interview.jpg"  alt="面试经历" /></h3>
+			<dl class="detail_v">
+				<dt>“我经历过的最难的面试，不好忽悠啊”</dt>
+				<dd>
+					<p><i class="succ"></i><span class="grey_99 mr10">面试通过</span>点评来自在易宝支付工作过1年的产品经理 <span class="grey_99 ml10">- 发布于 1月20日 北京</span></p>
+					<p class="mt10">我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历... <a href="" class="more">展开</a></p>
+					<p class="mt10"><span class="grey_99 mr10">面试官提出的问题：</span>如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？　<a href="#">查看答案</a></p>
+				</dd>
+			</dl>
+			<dl class="detail_v">
+				<dt>“我经历过的最难的面试，不好忽悠啊”</dt>
+				<dd>
+					<p><i class="fail"></i><span class="grey_99 mr10">面试通过</span>点评来自在易宝支付工作过1年的产品经理 <span class="grey_99 ml10">- 发布于 1月20日 北京</span></p>
+					<p class="mt10">我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历，我是面试经历... <a href="" class="more">展开</a></p>
+					<p class="mt10"><span class="grey_99 mr10">面试官提出的问题：</span>如果老板和女朋友同时掉到水里，你是否要先改完紧急的Bug？　<a href="#">查看答案</a></p>
+				</dd>
+			</dl>
+			<p class="mt15"><a href="" class="btn_grey_s mr20">写一条面经</a> <a href="#">查看全部面经（共294条）</a></p>
+			<h3 class="tt"><img src="../images/tt_chat.jpg"  alt="公司印象" /></h3>
+			<div class="chat_field">
+				<textarea name="" placeholder="对这家公司印象如何？" ></textarea>
+			</div>
+			<p class="t-right"><input type="button" value="发布" class="btn_grey_s" /></p>
+
+			<ul class="reviews">
+				<li>
+					<i class="topic_0"></i>
+					<div><span class="color_y">#晒晒你的年终奖#</span> 最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+				<li>
+					<i class="i"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作.
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+				<li>
+					<i class="c"></i>
+					<div>最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”，非常推荐去百度工作最看重百度的文化氛围“简单可依赖”.
+						<p class="panel">看准评论用户 <span>|</span> 2013-01-01 <span>|</span> <a href="">有用（3）</a><span>|</span><a href="">没用（2）</a><span>|</span><a href="">查看完整点评</a></p>
+					</div>
+				</li>
+			</ul>
+
+			<p class="mt20 t-center"><a href="#" class="btn_grey_b">&nbsp;&nbsp;&nbsp;&nbsp;更多......&nbsp;&nbsp;</a></p>
+		</section>
+		<section class="r_con">
+			<h3 class="r_tt">最新公司点评</h3>
+			<ul class="co_r_reviewlist">
+				<li>
+					<span class="crr_l">
+						<img src="../../images/xiaoren_30_30.png">
+					</span>
+					<div class="crr_r">
+						<i class="tangle_init"></i>
+						<a href="#">
+							<p>当时是接到京东HR电话的面试邀请，于是去了...<span>查看详情</span></p>
+							<p class="grey_99">腾讯的产品经理</p>
+						</a>
+					</div>
+				</li>
+				<li>
+					<span class="crr_l">
+						<img src="../../images/xiaoren_30_30.png">
+					</span>
+					<div class="crr_r">
+						<i class="tangle_init"></i>
+						<a href="#">
+							<p>当时是接到京东HR电话的面试邀请，于是去了...<span>查看详情</span></p>
+							<p class="grey_99">腾讯的产品经理</p>
+						</a>
+					</div>
+				</li>
+			</ul>
+			<a class="btn_o_l" href="#">看看大家怎么说腾讯腾讯腾讯... ></a>
+			<h3 class="r_tt">互联网行业产品经理薪酬</h3>
+			<ul class="salary_show">
+				<li><em>2496条薪酬数据</em><i class="hot">1</i><a href="">百度</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">2</i><a href="">腾讯</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i class="hot">3</i><a href="">阿里巴巴</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>4</i><a href="">盛大集团</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>5</i><a href="">新浪</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>6</i><a href="">360安全卫士</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>7</i><a href="">唯美购</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>8</i><a href="">IBM</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>9</i><a href="">Google</a>-产品经理</li>
+				<li><em>2496条薪酬数据</em><i>10</i><a href=""n>搜狐畅游</a>-产品经理</li>
+			</ul>
+
+			<h3 class="r_tt mt20">热门职位</h3>
+			<ul class="jobs_show">
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度在线网络技术有限公司 – 广州</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />基础架构部_云安全研发工程师（上海）<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+				<li><a href="#"><img src="../images/img-03.jpg" alt="" />系统部_PHP研发工程师<br><span>百度 – 上海</span></a></li>
+			</ul>
+
+			<p class="fright"><a href="">查看更多</a></p>
+		</section>
+	</div>
+
+<section class="p_dialog" id="portrait">
+	<div class="dialog_con">
+		<a href="#" rel="nofollow" class="dialog_close" id="dialogClose"></a>
+		<div id="uploadLogoFlash">
+			<h3>上传公司Logo</h3>
+			<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="550" height="440">
+				<param name="movie" value="/images/portrait.swf" />
+				<param name="quality" value="high" />
+				<param name="wmode" value="transparent" />
+				<param name="flashVars" value="uploadURL=/companyugc/upload/logo.json?c=uploadPortrit&amp;jsCallback=uploadOk" />
+				<!--[if !IE]>-->
+			  <object type="application/x-shockwave-flash" data="/images/portrait.swf" width="550" height="440">
+			   <!--<![endif]-->
+					<param name="quality" value="high" />
+					<param name="wmode" value="transparent" />
+					<param name="flashVars" value="uploadURL=/companyugc/upload/logo.json?c=uploadPortrit&amp;jsCallback=uploadOk" />
+				<!--[if !IE]>-->
+			  </object>
+			  <!--<![endif]-->
+			</object>
+		</div>
+	</div>
+</section>	
+
+<section class="p_dialog ugc_dialog" id="ugc_dialog_review">
+	<div class="dialog_con">
+	  <a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>匿名点评公司 <span>分享一条公司评价，为更多的求职者提供帮助</span></h3>
+		<p class="line_d"></p>
+		<div class="form">
+			<form>
+				<figure>
+					<span>
+						<img src="http://img.kanzhun.com/images/logo/20140623/8a657b6b56d8cfa8f0c8a672a958608f.jpg">
+					</span>
+				</figure>
+				<ul class="fieldset">
+					<li class="fieldset">
+						<label>&nbsp公司名称：</label> 
+						<span class="js_coName_span">
+							<span data-name="companyName">去哪网</span>
+							<!--
+							<a class="ml10 js_change_bt" data-type="coName" href="javascript:;">更改公司</a>
+							-->
+							<input type="hidden" name="companyName" value="去哪网">
+						</span>
+						<span class="js_coName_ipt" style="display:none">
+							<input type="text" class="ifd mr10" style="width:130px" name="changeCompanyName" maxlength="200" autocomplete="off" id="companyNameSuggest">
+							<a href="javascript:;" class="btn_grey_b mr10" data-type="ok">确定</a>
+							<a href="javascript:;" data-type="cancel">取消</a>
+						</span>
+					</li>
+					<li class="fieldset">
+						<em class="red">*</em><label>是否在职：</label>
+						<input class="v" type="radio" name="employeeStatus" value=1>
+						<span class="mr10" data-type="radio">在职</span>
+						<input class="v" type="radio" name="employeeStatus" value=2>
+						<span data-type="radio">离职</span>
+						<span class="err ml10" data-msg="请选择"><i class="i_err"></i> </span>
+					</li>
+					<li class="fieldset es_detail leave" style="display:none">
+						<i class="i_up"></i>
+						<div class="time clearfix">
+							<label><em class="red">*</em>入职时间：</label>
+							<dl class="select select_u" style="z-index: 3">
+								<dt ka="common-since">
+								<input type="text" name="entryDateYear" value="2012年" readonly="readonly">
+								<input type="hidden" name="entryDate" value="2012"><div></div><span class="btn"><i></i></span>
+								</dt>
+								<dd>
+								<a href="javascript:;" data-val="2014">2014年</a>
+								</dd>
+							</dl>
+							<label class="ml10 mr10" data-type="label">至</label>
+							<dl class="select select_u" data-type="leave" style="z-index: 3">
+								<dt ka="common-since">
+								<input type="text" name="entryDateYear" value="2012年" readonly="readonly">
+								<input type="hidden" name="entryDate" value="2012"><div></div><span class="btn"><i></i></span>
+								</dt>
+								<dd>
+								<a href="javascript:;" data-val="2014">2014年</a>
+								</dd>
+							</dl>						
+						</div>
+						<div class="clearfix mb10">
+							<div class="s_l">
+								<label><em class="red">*</em>职位名称：</label>
+								<input type="text" class="ifd v mr10" style="width:200px;" name="jobTitle" autocomplete="off" maxlength="32" id="companyJobSuggest" value="">
+								<p class="err" data-msg="职位名称不能为空！"><i class="i_err"></i></p>
+							</div>
+							<div class="s_r">
+								<label><em class="red">*</em>工作城市：</label>
+								<input type="text" class="ifd v" style="width:120px" name="cityName" maxlength="50" id="companyCitySuggest" autocomplete="off" value="">
+								<p class="err" data-msg="工作城市不能为空！"><i class="i_err"></i></p>
+							</div>
+						</div>
+					</li>
+					<li class="fieldset"><p class="line_d"></p></li>
+					<li class="fieldset">
+						<label><em class="red">*</em>对去哪儿网的总体评分：</label>
+						<span class="rating_star" id="totalRating">
+							<input type="hidden" name="rating" value="" class="v" data-necessary="1">
+							<a href="javascript:;" rel="nofollow" title="非常不好"></a>
+							<a href="javascript:;" rel="nofollow" title="不太好 "></a>
+							<a href="javascript:;" rel="nofollow" title="一般 "></a>
+							<a href="javascript:;" rel="nofollow" title="不错"></a>
+							<a href="javascript:;" rel="nofollow" title="非常好"></a>
+						</span>
+						<em class="grey_99 middle"></em>
+						<span class="err" data-msg="请选择"><i class="i_err"></i></span>
+						<a class="more_review" href="javascript:;" data-is-show="0">更多对去哪儿网印象评价 <i class="open"></i></a>
+					</li>
+					<li class="fieldset rv_detail" style="display:none">
+						<ul class="more_rating" id="moreRating">
+							<li>
+								职业成长
+								<span class="rating_rect" ka="review2-occupation">
+									<input type="hidden" class="pi" name="ratingCareer" value="">         
+									<a href="javascript:;" rel="nofollow" title="很不满意"></a>
+									<a href="javascript:;" rel="nofollow" title="不满意"></a>
+									<a href="javascript:;" rel="nofollow" title="一般"></a>
+									<a href="javascript:;" rel="nofollow" title="满意"></a>
+									<a href="javascript:;" rel="nofollow" title="非常满意"></a>
+								</span>
+								<em class="grey_99 ml10"></em>
+							</li>
+							<li>
+								个人技能成长
+								<span class="rating_rect">
+									<input type="hidden" class="pi" name="ratingSkill" value="">
+									<a href="javascript:;" rel="nofollow" title="很不满意"></a>
+									<a href="javascript:;" rel="nofollow" title="不满意"></a>
+									<a href="javascript:;" rel="nofollow" title="一般"></a>
+									<a href="javascript:;" rel="nofollow" title="满意"></a>
+									<a href="javascript:;" rel="nofollow" title="非常满意"></a>
+								</span>
+								<em class="grey_99 ml10"></em>
+							</li>
+							<li>
+								环境氛围
+								<span class="rating_rect">
+									<input type="hidden" class="pi" name="ratingAtmosphere" value="">
+									<a href="javascript:;" rel="nofollow" title="很不满意"></a>
+									<a href="javascript:;" rel="nofollow" title="不满意"></a>
+									<a href="javascript:;" rel="nofollow" title="一般"></a>
+									<a href="javascript:;" rel="nofollow" title="满意"></a>
+									<a href="javascript:;" rel="nofollow" title="非常满意"></a>
+								</span>
+								<em class="grey_99 ml10"></em>
+							</li>
+							<li>
+								工作压力&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span class="rating_rect rating_r_">
+									<input type="hidden" class="pi" name="ratingPressure" value="">
+									<a href="javascript:;" rel="nofollow" title="很轻松"></a>
+									<a href="javascript:;" rel="nofollow" title="不大"></a>
+									<a href="javascript:;" rel="nofollow" title="正常"></a>
+									<a href="javascript:;" rel="nofollow" title="偶尔大"></a>
+									<a href="javascript:;" rel="nofollow" title="非常大"></a>
+								</span>
+								<em class="grey_99 ml10"></em>
+							</li>
+							<li>
+								公司前景
+								<span class="rating_rect">
+									<input type="hidden" class="pi" name="ratingProspect" value="">
+									<a href="javascript:;" rel="nofollow" title="不看好"></a>
+									<a href="javascript:;" rel="nofollow" title="不太看好"></a>
+									<a href="javascript:;" rel="nofollow" title="一般"></a>
+									<a href="javascript:;" rel="nofollow" title="看好"></a>
+									<a href="javascript:;" rel="nofollow" title="非常看好"></a>
+								</span>
+								<em class="grey_99 ml10"></em>
+							</li>
+						</ul>
+					</li>
+					<li class="fieldset choose">
+						<label>&nbsp;对公司CEO的看法：</label>
+						<span class="ceo">
+							<a href="javascript:;" rel="nofollow" class="current" data-vl="1"></a>
+							<a href="javascript:;" rel="nofollow" class="t_d" data-vl="2"></a>
+							<input type="hidden" class="pi" name="ratingCeo" value="">
+						</span>
+					</li>
+					<li class="fieldset choose">
+						<label>&nbsp;是否会推荐朋友来这里：</label>
+						<span class="rcmd">
+							<a href="javascript:;" rel="nofollow" class="current" data-vl="2"></a>
+							<a href="javascript:;" rel="nofollow" class="t_d" data-vl="1"></a>
+							<input type="hidden" class="pi" name="recommendFriend" value="">
+						</span>
+					</li>
+					<li class="fieldset choose">
+						<label>&nbsp;对公司未来半年发展预测：</label>
+						<span class="trend">
+							<a href="javascript:;" rel="nofollow" data-vl="1"></a>
+							<a href="javascript:;" rel="nofollow" class="t_n" data-vl="2"></a>
+							<a href="javascript:;" rel="nofollow" class="t_d" data-vl="3"></a>
+							<input type="hidden" name="futureStatus" class="pi" value="">
+						</span>
+					</li>
+					<li class="fieldset ta">
+						<label><em class="red">*</em>点评标题：</label>
+						<textarea class="uta v" name="title" rows=1 maxlength=20 placeholder="请一句话概况您对这家公司的整体感受（20字以内）"></textarea>
+						<p class="err" data-msg="点评标题不能为空！"><i class="i_err"></i></p>
+					</li>
+					<li class="fieldset ta">
+						<label><em class="red">*</em>详细点评：</label>
+						<textarea class="uta v" name="detail" rows=6 >【公司优点】&#13;&#10;【公司缺点】&#13;&#10;【给CEO的意见和建议】
+						</textarea>
+						<p class="err" style="top: 145px;" data-msg="详细点评不能为空！"><i class="i_err"></i> </p>
+						<p class="guide">已输入<span node-type="num">26</span>个字（最少50字）</p>
+					</li>
+					<li class="fieldset sbm">
+						<div class="sbm_l"><input type="submit" value="提交" class="btn_o_l"></div>
+						<div class="sbm_r">
+							成功发布点评，可参加抽奖呦！<br>
+							<a href="#">查看详情</a>
+						</div>
+					</li>
+				</ul>
+			</form>	
+		</div>
+	</div>
+</section>	
+
+<section class="p_dialog ugc_dialog" id="ugc_dialog_review_suc">
+	<div class="dialog_con">
+		<a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>匿名点评公司 <span>分享一条公司评价，为更多的求职者提供帮助</span></h3>
+		<p class="line_d"></p>
+		<div class="ugc_suc">
+			<div class="h1">
+				<i class="suc_p"></i>公司评价发布成功！ 
+				<span>感谢您提供的信息。</span>
+			</div>
+			<p class="line_d"></p>
+			<p class="mb20">
+				您发布的信息需要通过审核后才能正式发布，如内容中存在敏感信息或涉及隐私，将被驳回或进行过滤处理。
+				<a>查看审核状态</a>
+			</p>
+			<div class="ugc_prompt">
+				<i></i>
+				<em>还差一步，注册/登录后即可永久保存发布的信息。还有机会参加抽奖哟！</em>
+				<a class="btn_o_l" href="">立即注册</a>
+			</div>	
+		</div>	
+	</div>
+</section>	
+
+
+	<!--公司纠错dialog begin-->
+<section class="maskui_dialog co_corr_dialog" style="display:block">
+	<div class="dialog_con">
+		<a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>报错类型</h3>
+		<p class="line_d"></p>
+		<ul class="enterlist">
+			<li><a href="javascript:;">公司基本信息有误</a></li>
+			<li><a href="javascript:;">CEO信息有误</a></li>
+			<li><a href="javascript:;">公司竞争对手信息有误</a></li>
+			<li><a href="javascript:;">公司重复收录</a></li>
+			<li><a href="javascript:;">此公司已关闭</a></li>
+		</ul>
+	</div>		
+</section>
+
+<section class="maskui_dialog co_corr_dialog form" data-type="basic" style="display:block">
+	<div class="dialog_con">
+		<a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>修改公司基本信息</h3>
+		<p class="line_d"></p>
+		<form action="test" method="post">
+		<ul class="fieldset">
+			<li>
+				<label><em class="red">*</em>公司简称</label>
+				<input ka="createcom1-abbreviation" type="text" class="ifd v" name="companyName" maxlength="32">
+				<p class="err" data-msg="请输入公司简称！"></p>
+			</li>
+			<li>
+				<label>公司全称</label>
+				<input ka="createcom1-fullname" type="text" class="ifd" name="fullName" maxlength="64">
+				<p class="err" data-msg="请输入公司全称！"></p>
+			</li>
+			<li class="time clearfix">      		
+			  <label>成立时间</label>
+		    <dl class="select select_u">
+     			<dt ka="createcom1-year">
+     				<input type="button" name="selectflag_y" value="年" readonly="readonly">
+     				<input type="hidden" name="startUpYear">
+     				<span class="btn"><i></i></span>
+     			</dt>
+     			<dd>
+						<a href="#" rel="nofollow" data-val="1949">1949年</a>
+     			</dd>
+		    </dl>
+		    <dl class="select select_u ml10">
+     			<dt ka="createcom1-month">
+     				<input type="button" name="selectflag_m" value="月" readonly="readonly">
+     				<input type="hidden" name="startUpMonth">
+     				<span class="btn"><i></i></span>
+     			</dt>
+		      <dd>      	
+						<a href="#" rel="nofollow" data-val="01">1月</a>
+					</dd>
+		    </dl>
+			</li>
+			<li>
+				<label><em class="red">*</em>官网</label>
+				<input ka="createcom1-website" type="text" class="ifd" name="url" placeholder="www.abc.com" maxlength="180">
+			</li>
+			<li class="time long clearfix">
+				<label><em class="red">*</em>所属行业</label>
+		    <dl class="select select_u">
+					<dt ka="createcom1-industry">
+						<input type="button" name="selectflag_i" value="通讯" class="v" readonly="readonly">
+						<input type="hidden" name="industryCode" value="6"><span class="btn"><i></i></span>
+					</dt>
+     			<dd>
+						<a href="#" rel="nofollow" data-val="1">互联网</a>
+     			</dd>
+		    </dl>				
+			</li>
+			<li class="time long clearfix">
+				<label><em class="red">*</em>公司规模</label>
+		    <dl class="select select_u">
+		    	<dt ka="createcom1-scale">
+		    		<input type="button" name="selectflag_s" value="10000人以上" class="v" readonly="readonly">
+		    		<input type="hidden" name="scale" value="6">
+		    		<span class="btn"><i></i></span>
+		    	</dt>
+     			<dd>
+						<a href="#" rel="nofollow" data-val="1">10000人以上</a>
+     			</dd>
+		    </dl>				
+			</li>
+		</ul>
+		<div class="sbm">
+			<input class="btn_o_l" type="submit" value="提交修改">
+			<a class="btn_grey_b ml10" href="javascript:;">取消</a>
+		</div>
+		</form>
+	</div>		
+</section>
+
+<section class="maskui_dialog co_corr_dialog form" data-type="competitor" style="display:block">
+	<div class="dialog_con">
+		<a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>修改公司竞争对手信息</h3>
+		<p class="line_d"></p>
+		<ul class="fieldset">
+			<li class="add_competitors clearfix">
+				<dl>
+					<dt>竞争对手<input type="hidden" name="competitorIds" value="1,2,3,4,5"></dt>
+					<dd>百度<i class="err_v" data-id="1"></i></dd>
+					<dd>百度<i class="err_v" data-id="2"></i></dd>
+					<dd>北京58信息技术有限公司上海分公司<i class="err_v" data-id="3"></i></dd>
+					<dd>百度<i class="err_v" data-id="4"></i></dd>
+					<dd>百度<i class="err_v" data-id="5"></i></dd>
+				</dl>
+				<input ka="createcom1-rival" type="text" class="ifd mr10" placeholder="请输入竞争对手公司，最多5个" name="competitor" autocomplete="off"><a class="js_addCompetitor_bt" href="javascript:;" rel="nofollow" ka="createcom1-add">添加</a>
+			</li>
+			<li class="add_co">
+				<p class="f12">请告诉我们“ <span>eee</span> ”的一些基本信息，或者 <br> <a href="/companyugc/?initname=" target="_blank">建立完整公司档案</a>
+				</p>
+				<ul class="add_co_f">
+					<li>
+						<label>官网</label>
+						<input type="text" class="ifd vv" name="url" data-unnecessary="1">
+						<p class="err" data-msg="网址里不要包含中文！" style="display: none;"></p>
+					</li>
+					<li class="clearfix">
+						<label>所属行业</label>
+						<dl class="select select_u" style="z-index: 2">
+							<dt>
+								<input type="button" name="sflag" readonly="readonly" class="vv"><input type="hidden" name="industryCode" value=""><span class="btn"><i></i></span>
+							</dt>
+							<dd>
+								<a href="javascript:;" data-val="4">互联网</a>
+							</dd>
+						</dl>
+						<p class="err" data-msg="请选择所属行业！"></p>
+					</li>
+					<li class="clearfix">
+						<label>公司规模</label>
+						<dl class="select select_u">
+							<dt>
+								<input type="button" name="sflag" class="vv" readonly="readonly"><input type="hidden" name="scale" value=""><span class="btn"><i></i></span>
+							</dt>
+							<dd>
+								<a href="javascript:;" data-val="1">0-20人</a> 
+							</dd>
+						</dl>
+						<p class="err" data-msg="请选择公司规模！"></p>
+					</li>
+					<li>
+						<label>总部城市</label>
+						<input type="text" class="ifd vv" name="addCityName" autocomplete="off">
+						<input type="hidden" name="addEncryptCityCode" value="">
+					</li>
+					<li class="sbm">
+						<input type="button" id="addCompanySubmit" value="确定" class="btn_grey_b">
+						<a href="javascript:;" class="ml10 a_grey">取消</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="sbm">
+			<input class="btn_o_l" type="submit" value="提交修改">
+			<a class="btn_grey_b ml10" href="javascript:;">取消</a>
+		</div>
+	</div>
+</section>
+
+<section class="maskui_dialog co_corr_dialog form" style="display:block">
+	<div class="dialog_con">
+		<a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>修改公司CEO信息</h3>
+		<p class="line_d"></p>
+		<ul class="fieldset">
+			<li>
+				<label>CEO姓名</label><input ka="createcom1-ceo" type="text" class="ifd" name="ceo" maxlength="32">
+			</li>
+			<li>
+				<label>CEO照片</label>
+				<label class="cphoto">
+					<img id="uploadPortraitAlias" src="http://img.kanzhun.com/image/3131.gif" alt="">
+					<input type="hidden" name="ceoPic">
+				</label>
+				<a href="javascript:;" rel="nofollow" class="btn_grey_b upload" ka="createcom1-upload-ceo">修改头像</a>
+			</li>
+		</ul>
+		<div class="sbm">
+			<input class="btn_o_l" type="submit" value="提交修改">
+			<a class="btn_grey_b ml10" href="javascript:;">取消</a>
+		</div>
+	</div>
+</section>
+
+<section class="maskui_dialog co_corr_dialog form" style="display:block">
+	<div class="dialog_con">
+		<a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>修改公司介绍</h3>
+		<p class="line_d"></p>
+		<ul class="fieldset">
+			<li class="co_desc">
+				<textarea class="uta" name="introduction" rows="6"></textarea>
+			</li>
+		</ul>
+		<div class="sbm">
+			<input class="btn_o_l" type="submit" value="提交修改">
+			<a class="btn_grey_b ml10" href="javascript:;">取消</a>
+		</div>
+	</div>
+</section>
+
+<section class="maskui_dialog co_corr_dialog form" style="display:block">
+	<div class="dialog_con">
+		<a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>提示</h3>
+		<p class="line_d"></p>
+		<p class="t-center mt20 mb20">确认该公司被重复收录？</p>
+		<div class="sbm">
+			<input class="btn_o_l" type="submit" value="提交修改">
+			<a class="btn_grey_b ml10" href="javascript:;">取消</a>
+		</div>
+	</div>
+</section>
+
+<section class="maskui_dialog co_corr_dialog form" style="display:block;width:420px;">
+	<div class="dialog_con">
+		<a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>感谢您提供的信息！</h3>
+		<p class="line_d"></p>
+		<p>工作人员会尽快审核。您的信息一旦被采用，我们会将回复邮件发送至您填入的邮箱中</p>
+		<ul class="fieldset mt10">
+			<li>
+				<label>常用邮箱</label>
+				<input class="ifd" style="width:160px;" type="input" name="email"/>
+				<input class="btn_grey_b" type="submit" value="确定">
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="maskui_dialog co_corr_dialog form" style="display:block;width:420px;">
+	<div class="dialog_con">
+		<a href="javascript:;" class="dialog_close maskuiclose"></a>
+		<h3>感谢您提供的信息！</h3>
+		<p class="line_d"></p>
+		<p>工作人员会尽快审核。您的信息一旦被采用，我们会将回复邮件发送至您填入的邮箱中</p>
+		<ul class="fieldset mt10">
+			<li>
+				<p class="grey_99">
+					<i class="suc_p" style="vertical-align:middle;"></i>123456789@163.com <a class="maskuiclose ml10" href="javascript:;">关闭</a>
+				</p>
+			</li>
+		</ul>
+	</div>
+</section>
+	<!--公司纠错dialog end-->
+
+	<!--立体ugc用到的邮箱dialog begin-->
+	<section class="maskui_dialog email_dialog" style="display:block">
+		<div class="dialog_con">
+			<a href="javascript:;" class="dialog_close maskuiclose"></a>
+			<h3>下您的邮箱，方便您持续获取该公司最新动态</h3>
+			<p class="mt30">
+				<input class="ifd" style="width:160px;" type="input" name="email"/><input class="btn_grey_b ml10" type="submit" value="立即订阅"><a class="maskuiclose ml20" href="javascript:;">以后再说</a>
+			</p>
+		</div>
+	</section>
+	<section class="maskui_dialog email_dialog" style="display:block">
+		<div class="dialog_con">
+			<a href="javascript:;" class="dialog_close maskuiclose"></a>
+			<h3 class="t-center"><i class="suc_p" style="vertical-align:middle;"></i>订阅成功！</h3>
+			<p class="mt10 grey_99 t-center">感谢您对看准的支持，我们会定期将公司最新动态发至您的邮箱</p>
+			<p class="mt10 t-center"><a class="btn_grey_b maskuiclose" href="javascript:;">确定</a></p>
+		</div>
+	</section>
+	<!--立体ugc用到的邮箱dialog end-->
+
+
+  <footer class="footbottom">
+    <a class="left-feedback" href="#"><i></i>反馈</a>
+    <nav>
+      <a ka="footer-about" href="/about.html" rel="nofollow">关于我们</a><a ka="footer-feedback" href="/contact_us.html" rel="nofollow">意见反馈</a><a ka="footer-help" href="/help.html" rel="nofollow">使用帮助</a><a ka="footer-user" href="/term.html" rel="nofollow">用户协议</a><a ka="footer-weibo" href="http://www.weibo.com/fenzhi" target="_blank" rel="nofollow">看准网微博</a><a ka="footer-mobile" href="http://m.kanzhun.com/" target="_blank" id="toMobile" class="a_green" style="color: #7cb228;">移动版</a>
+    </nav>
+    <p>Copyright © 2014 kanzhun.com京ICP备14013441号-1 , kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+  </footer>
+</body>
+</html>

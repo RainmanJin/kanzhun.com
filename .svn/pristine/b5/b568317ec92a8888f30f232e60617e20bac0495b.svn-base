@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>发照片-1</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/ugc_page.css">
+</head>	
+<body>
+<div class="wrapper">
+<div class="content">	
+	<header class="page_hd">		
+		<a class="top_back" href="javascript:;"><i></i>返回</a>
+		<strong>发照片</strong>	
+	</header>
+	<dl class="co_info">
+		<dt>
+			<img src="http://img.kanzhun.com//images/logo/20140220/8158bbafd5b75c368d6b1c2bc8c3a3a0.jpg">
+		</dt>
+		<dd>
+			<h1>中国移动</h1>
+			<p>
+				<span class="grade_star">
+					<i class="s_4"></i>
+				</span>3.8分
+			</p>
+			<p>235 条信息<a href="#"><i class="i i_pic"></i>发其他公司照片</a></p>
+		</dd>
+	</dl>	
+	<h2 class="comment_title">
+		<i class="i i_o_trangle">匿名</i>
+		<p>分享公司照片，让其他求职者先睹为快！</p>
+	</h2>
+	<section class="photo_content">
+		<div class="js_upload_prompt upload_prompt">
+			<em>
+				<img class="js_photo" style="display:none" width=98 height=98>
+				<img class="js_loading loading" src="images/loading.gif" width=70 height=71 ></span>
+			</em>
+			<p><textarea name="imgdesc" placeholder="拍得不错，给照片起个名字或者写点描述吧" rows="5"></textarea><p>
+			<em class="js_error error" style="display:none">描述不能为空</em>
+			<div class="mask" style="display:none">
+				<a class="changeImg" href="javascript:;">
+					更换照片
+					<input type="file" name="imgFile"/>	
+				</a>
+			</div>
+		</div>
+		<a class="js_bt_upload bt_upload" style="display:none">
+			<i class="i i_plus"></i>
+			<em>添加图片</em>
+			<input type="file" name="imgFile"/>		
+		</a>
+	</section>
+	<p class="ml10 mr10 mt20 grey">所有信息均匿名发布，您的真实身份不会被他人知晓</p>
+	<div class="ml10 mr10 mt10"><button class="js_submit btn_submit_1" type="button" >下一步</button></div>			
+</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/uploadFile.js"></script>
+<script src="js/photo.js"></script>
+</html>
+
+

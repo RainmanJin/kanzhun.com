@@ -1,0 +1,623 @@
+@import "../common/var";
+@import "comment";
+@import "../modules/share";
+@img_path:'../../images/ali/';
+
+div {
+  &.main_top {
+    width: 100%;
+    height: 101px;
+    background: url("@{img_path}ali_img1.jpg") no-repeat center top;
+
+    div {
+      width: 990px;
+      margin: 0 auto;
+
+      img {
+        width: 156px;
+        height: 38px;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &.main_con_wrap {
+    width: 100%;
+    padding: 48px 0 50px 0;
+    background: #2b1a23 url("@{img_path}ali_img2.jpg") no-repeat center top;
+  }
+
+  &.main_con {
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  //透明背景
+  &.bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: .3;
+    filter:alpha(opacity=30);
+    border-radius: 5px;
+    z-index: 1;
+  }
+}
+
+//排名
+span{
+  &.ranking {
+    position: absolute;
+    width: 62px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &.r_red {
+    background-color: #e85252;
+  }
+
+  &.r_blue {
+    background-color: #52a0e8;
+  }
+
+  &.r_green {
+    background-color: #7cb228;
+  }
+}
+
+section {
+  &.m_l {
+    float: left;
+    width: 677px;
+    margin-right: 11px;
+  }
+
+  &.m_r {
+    float: left;
+    width: 302px;
+  }
+/* 
+  &.rk_r {
+    padding-top: 47px;
+  } */
+}
+
+//内容
+div {
+  &.l_tt {
+    padding-left: 29px;
+    margin-bottom: 22px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 24px;
+    color: #fff;
+    background: url("@{img_path}ali_img4.png") no-repeat left bottom;
+
+    span {
+      display: inline-block;
+      font-size: 20px;
+      line-height: 1em;
+      vertical-align: bottom;
+
+      em {
+        color: #f38100;
+      }
+    }
+
+    &.l_tt_detail {
+      background: url("@{img_path}ali_img15.png") no-repeat left bottom;
+    }
+  }
+
+  &.l_question {
+    position: relative;
+    padding: 0 30px 30px 30px;
+
+    span.ranking {
+      left: 0;
+      top: 7px;
+    }
+
+    div {
+      &.btn_send {
+        position: relative;
+        z-index: 2;
+        padding: 30px 0  15px 145px;
+        a {
+          display: inline-block;
+          width: 154px;
+          height: 35px;
+          margin-right: 10px;
+          line-height: 35px;
+          color: #fff;
+          text-align: center;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &.hadsend {
+            background-color: #999999;
+            cursor: default;
+          }
+
+          &.send {
+            background-color: #ff9503;
+
+            &:hover {
+              background-color: #f28d03;
+            }
+          }
+
+          &.sharesend {
+            background-color: #e0e0e0;
+            color: #666666;
+
+            &:hover {
+              background-color: #e6e6e6;
+            }
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    dl {
+      position: relative;
+      z-index: 2;
+      border-bottom: 1px dashed #847e80;
+
+      dt {
+        padding-top: 40px;
+        float: left;
+
+        a {
+          display: block;
+          width: 101px;
+          height: 100px;
+          background: url("@{img_path}ali_img6.png") no-repeat center;
+
+          span {
+            display: block;
+            height: 50px;
+            line-height: 55px;
+            color: #bcbcbc;
+            font-size: 16px;
+            text-align: center;
+          }
+
+          p {
+            color: #fff;
+            height: 49px;
+            line-height: 49px;
+            text-align: center;
+          }
+          
+          //投票
+          &.send_ticket {
+             background: url("@{img_path}ali_img14.png") no-repeat center;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      dd {
+        margin-left: 132px;
+
+        div {
+          padding: 30px 0 15px 0;
+          p {
+            float: right;
+            color: #b2b2b2;
+            padding-top: 5px;
+          }
+
+          span {
+            font-size: 18px;
+            color: #f38100;
+          }
+        }
+
+        p {
+          &.q_con {
+            color: #fff;
+            min-height: 85px;
+            padding-bottom: 15px;
+          }
+
+          &.share_c {
+            padding-bottom: 20px;
+            text-align: right;
+
+            a {
+              display: inline-block;
+              height: 15px;
+              line-height: 15px;
+              color: #f38100;
+              cursor: pointer;
+
+              &.share {
+                cursor: pointer;
+                padding-left: 18px;
+                background: url("@{img_path}ali_img7.png") no-repeat left center;
+              }
+
+               &.comment {
+                cursor: pointer;
+                padding-left: 27px;
+                background: url("@{img_path}ali_img8.png") no-repeat left center;
+              }
+            }
+
+            em {
+              margin: 0 14px;
+              color: #6a616d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//右侧
+div {
+  &.r_tt {
+    color: #fff;
+    background: url("@{img_path}ali_img5.png") no-repeat left center;
+    padding-left: 36px;
+    font-size: 24px;
+    line-height: 1em;
+    margin-bottom: 22px;
+
+    a {
+      float: right;
+      font-size: 16px;
+      color: #f38100;
+      line-height: 1em;
+      padding-top: 9px;
+      cursor: pointer;
+    }
+  }
+}
+
+dl.r_ranking {
+  position: relative;
+  z-index: 2;
+  dt {
+    float: left;
+
+    a {
+      display: block;
+      width: 74px;
+      height: 74px;
+      background: url("@{img_path}ali_img12.png") no-repeat center;
+
+      span {
+        display: block;
+        height: 36px;
+        line-height: 43px;
+        color: #bcbcbc;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      p {
+        color: #fff;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+      }
+      
+      //投票
+      &.send_ticket {
+         background: url("@{img_path}ali_img9.png") no-repeat center;
+
+         span {
+          color: #ff9503;
+         }
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  dd {
+    margin-left: 88px;
+
+    h2 {
+      font-size: 18px;
+      color: #f38100;
+      font-weight: normal;
+      padding-bottom: 10px;
+    }
+
+    p {
+      &.q_con {
+        line-height: 1.3em;
+        padding-bottom: 5px;
+
+        a {
+          color: #fff;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &.explain {
+        color: #b2b2b2;
+      }
+    }
+  }
+}
+
+div {
+  &.r_wrap {
+    position: relative;
+    padding: 20px 15px 20px 15px;
+
+    span.ranking {
+      right: 15px;
+      top: 0;
+    }
+
+    div.con {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &.code {
+    p {
+      color: #fff;
+      text-align: center;
+
+      span {
+        color: @green;
+      }
+    }
+
+    img {
+      padding-top: 10px;
+      display: block;
+      width: 178px;
+      height: 178px;
+      margin: 0 auto;
+    }
+  }
+}
+
+//评论
+div {
+  &.l_comment {
+    position: relative;
+    padding: 0 30px 50px 30px;
+
+    div.comments_con {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+//排行榜
+div {
+  &.rk_tt {
+    background: url("@{img_path}ali_img5.png") no-repeat left center;
+    padding-left: 36px;
+
+    em {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 1em;
+      padding-top: 6px;
+
+      strong {
+        color: #ff9503;
+      }
+      
+    }
+  }
+
+  &.rangking_l_con {
+    padding: 25px 30px 15px 30px;
+
+    dl.noborder {
+      border-bottom: none;
+
+      dt {
+        padding-top: 25px;
+      }
+
+
+
+      div {
+        padding-top: 0;
+
+        span {
+          font-weight: normal;
+        }
+      }
+
+      p{
+        &.share_c {
+          padding-bottom: 0;
+        }
+
+        &.q_con {
+          min-height: 80px;
+          a {
+            color: #fff;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+a.immediate_question {
+  display: block;
+
+  img {
+    width: 302px;
+    height: 198px;
+  }
+}
+
+.pager {
+   color: #fff;
+ a {
+    border: none;
+    color: #999999;
+  }
+}
+
+//我的排行榜
+div.mrk_con {
+  p {
+    &.mrk_tt {
+      font-size: 16px;
+      color: #fff;
+      line-height: 1em;
+      padding-bottom: 15px;
+      border-bottom: 1px dashed #8d868c;
+      margin-bottom: 10px;
+
+      em {
+        color: #52a0e8;
+        margin-right: 50px;
+
+        &.r_red {
+          color: #e85252;
+        }
+
+        &.r_blue {
+          color: #52a0e8;
+        }
+
+        &.r_green {
+          color: #7cb228;
+        }        
+      }
+
+      span {
+        color: #ff9503;
+      }
+    }
+
+    &.share_c {
+      text-align: right;
+
+      a {
+        display: inline-block;
+        height: 15px;
+        line-height: 15px;
+        color: #f38100;
+        cursor: pointer;
+
+         &.comment {
+          padding-left: 27px;
+          background: url("@{img_path}ali_img8.png") no-repeat left center;
+        }
+      }
+    }
+  }
+
+  div {
+    &.text {
+      a {
+        color: #fff;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.btn_send {
+      padding: 30px 0  10px 0;
+      a {
+        display: inline-block;
+        width: 124px;
+        height: 35px;
+        line-height: 35px;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.send {
+          background-color: #ff9503;
+          margin-right: 20px;
+
+          &:hover {
+            background-color: #f28d03;
+          }
+        }
+
+        &.hadsend {
+          background-color: #999999;
+          cursor: default;
+          margin-right: 20px;
+        }
+
+        &.sharesend {
+          background-color: #e0e0e0;
+          color: #666666;
+
+          &:hover {
+            background-color: #e6e6e6;
+          }
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+footer.footbottom {
+  margin-top: 0;
+}
+
+//弹窗按钮
+div.dialog_ac {
+  p {
+    a.dialog_btn, a.confirm_ok {
+      background-color: #ff9503;
+      border: none;
+      color: #fff;
+
+      &:hover {
+        background: #ff9503 url('');
+        border: none;
+      }
+    }
+  }
+}
+
+//分享关闭按钮
+#shareDialog i.s_close {
+  background-image: url(../../images/profiles.png);
+}

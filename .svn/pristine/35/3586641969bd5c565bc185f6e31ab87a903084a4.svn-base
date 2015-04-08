@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>CCTV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/cctv.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <section class="index">
+    <div class="tt">您是第 <strong class="yellow">45</strong> 位 <br/>匿名分享工资的CCTV <span class="yellow">~电视民工~</span></div>
+
+    <div class="p10 mb20">
+      <dl class="salary">
+        <dt> <span class="fright mt15"><b class="orange">20</b>人分享</span>频道总监副总监</dt>
+        <dd>
+          <div><p><img src="images/l.jpg" />最低</p>￥12000</div>
+          <div><p><img src="images/n.jpg" />平均</p>￥12000</div>
+          <div><p><img src="images/h.jpg" />最高</p>￥12000</div>
+        </dd>
+      </dl>
+
+
+      <p class="mt20 white mb10">CCTV制片人工资分享： <span id="sErr" class="err ml10 hidden">请输入正整数！</span></p>
+
+      <form action="/c.json" id="cctvSalaryForm">
+        <input class="ifd" type="text" placeholder="输入您每个月的底薪" />
+        <input class="ifd" type="text" placeholder="输入您每个月的绩效" />
+        <input class="ifd" type="text" placeholder="输入您每个月的增收节支奖" />
+        <input name="min" type="hidden" value="100"/>
+        <input name="max" type="hidden" value="1000"/>
+        <p><input class="btn" type="submit" value="匿名分享"/></p>
+        <p>&nbsp;</p>
+      </form>
+    </div>
+  </section>
+</div>
+
+<script src="js/zepto.js"></script>
+<script src="js/cctv.js"></script>
+</body>
+</html>

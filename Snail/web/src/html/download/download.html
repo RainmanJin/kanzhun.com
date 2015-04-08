@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <title>蜗牛</title>
+  <link rel="stylesheet" href="../../css/site/download.css"/>
+</head>
+
+<body>
+  <div class="snail">
+    <div class="banner">
+      <div class="banner-wrap">
+        <div class="banner-con">
+          <img class="phone" src="../../images/download/ios-p.png">
+
+          <ul class="info">
+            <li class="tt"><img class="" src="../../images/download/h1.png"></li>
+            <li><img src="../../images/download/h2.png"></li>
+            <li><img src="../../images/download/h3.png"></li>
+            <li class="code"><img class="" src="../../images/download/ios-code.png"></li>
+          </ul>
+        </div>
+        <div class="banner-con">
+          <img class="phone" src="../../images/download/android-p.png">
+
+          <ul class="info">
+            <li class="tt"><img class="" src="../../images/download/h1.png"></li>
+            <li><img src="../../images/download/h2.png"></li>
+            <li><img src="../../images/download/h3.png"></li>
+            <li class="code"><a href="#"><img class="" src="../../images/download/android-code.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="download">
+      <span class="middle-helper"></span>
+      <a href="javascript:;" class="ios current"></a>
+      <a href="javascript:;" class="android"></a>
+    </div>
+
+    <div class="footer">
+      <span class="middle-helper"></span>
+      Copyright © 2015 kanzhun.com京ICP备14013441号-1，kanzhun.com.保留所有版权. 使用这些服务遵守用户协议
+    </div>
+  </div>
+
+  <script src="../../js/lib/jquery-1.11.0.min.js"></script>
+  <script>
+    $(function(){
+      var banner = $('div.banner-wrap');
+      var ios = $('a.ios');
+      var android = $('a.android');
+      $('div.download').on('mouseover', 'a.ios', function(){
+        banner.stop().animate({'left': 0}, 400);
+        ios.addClass('current');
+        android.removeClass('current');
+      }).on('mouseover', 'a.android', function(){
+        banner.stop().animate({'left': '-100%'}, 400);
+        android.addClass('current');
+        ios.removeClass('current');
+      });
+
+      var items = $('li', banner);
+      setTimeout(function(){
+        items.eq(0).addClass('lightSpeedIn').one('animationend webkitAnimationEnd oAnimationEnd', function () {
+          items.eq(1).addClass('flipInX');
+          setTimeout(function(){
+            items.eq(2).addClass('flipInX');
+          }, 1000)
+        });
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

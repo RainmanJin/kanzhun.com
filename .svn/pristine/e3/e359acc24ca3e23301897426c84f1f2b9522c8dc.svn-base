@@ -1,0 +1,251 @@
+require.config({
+  baseUrl: '/js/site',
+  paths: {
+    u: '../utils',
+    c: '.'
+  }
+});
+require(['u/validator', 'c/autosearch'], function () {
+  $(function() {
+    //-----发送验证码逻辑-----
+    $("#phone_code_btn").click(function () {
+      var phone = $("#user_phone").val();
+      if (!phone || !(/^1\d{10}$/).test(phone)) {
+        return;
+      }
+      ;
+      var self = $(this);
+      $.ajax({
+        url: "/setting/mobile/sendValidCode.json",
+        type: "POST",
+        dataType: "json",
+        data: {
+          mobile: phone
+        },
+        beforeSend: function () {
+          self.val('正在发送验证码...').prop('disabled', true);
+        },
+        success: function (ret) {
+          if (ret && ret.rescode == 1) {
+
+            //开始倒计时延迟开启重新发送
+            var countdown = 60, t;
+            var c = countdown;
+            //var sendBtn = $('button.resend');
+            var timeCountdown = function () {
+              self.val(c + '秒后重新发送');
+              c = c - 1;
+              t = setTimeout(timeCountdown, 1000);
+              if (c < 0) {
+                c = countdown;
+                clearTimeout(t);
+                self.val("重新发送验证码");
+                self.prop("disabled", false);
+              }
+            };
+            timeCountdown();
+            alert("验证码发送成功！");
+          } else {
+            self.prop('disabled', false);
+            alert("验证码发送失败！");
+          }
+
+        }
+      });
+    });
+
+    //------------------validate email start --------------------
+    var phone_binding_dialog = $('#phone_binding_dialog');
+    $("a.bind_email").click(function (e) {
+      e.preventDefault();
+      $.maskUI.open({
+        elem: phone_binding_dialog
+      });
+    });
+
+    //修改验证手机号码
+    var phoneAccountCheck = $('input[name=phoneAccountCheck]');
+    $('#reset_phone').validatorAll({
+      elems: 'input.v',
+      prompt: {
+        succ: function (target) {
+          $('.red', target.parent()).html('').hide();
+          target.removeClass('error focus');
+        },
+        err: function (target, msg) {
+          var elem = $('.red', target.parent());
+          elem.html('<i class="base errormsg"></i> ' + (msg || elem.data('msg'))).show();
+          target.removeClass('focus').addClass('error');
+        },
+        normal: function (target) {
+          $('.red', target.parent()).html('').hide();
+          target.removeClass('error').addClass('focus');
+        }
+      },
+      focusMore: function(prompt){
+        $(this).removeClass('error').addClass('focus');
+        $('.red', $(this).parent()).html('').hide();
+        return true;
+      },
+      more: {
+        mobile: {
+          type: 'isPhone',
+          msg: '请输入格式正确的手机号',
+          fn: function (_this, prompt, e) {
+            if (!e) {
+              return true;
+            }
+            var self = $(this),
+              val = $(this).val();
+
+            if(phoneAccountCheck.val() == val){
+              prompt.err(self, '此手机号已被绑定');
+              return false;
+            }
+
+            $.ajax({
+              url: '/setting/checkMobile.json',
+              type: "POST",
+              dataType: "json",
+              data: {
+                m: val
+              },
+              success: function (ret) {
+                if (ret.rescode == 0) {
+                    prompt.err(self, '此手机号已被绑定');
+                }
+              }
+            });
+            return true;
+
+          }
+        }
+      },
+      ajaxSubmit: {
+        elems: 'input.v',
+        success: function (ret) {
+          if (ret) {
+            if(ret.rescode == 1){
+              //$('#person_info_ipt #phone_ipt').html($('#reset_phone #phone_ipt').val());
+              window.location.reload();
+            }else{
+              $.maskUI.alert(ret.resmsg || '验证码错误！');
+            }
+          } else {
+            $.maskUI.alert('服务器异常，请稍后再试！');
+          }
+        }
+      }
+    }).init().submit();
+
+    $('#person_info_ipt').validatorAll({
+      elems: 'input.v',
+      prompt: {
+        succ: function (target) {
+          $('.red', target.parent()).html('').hide();
+          target.removeClass('error focus');
+        },
+        err: function (target, msg) {
+          var elem = $('.red', target.parent());
+          elem.html('<i class="base errormsg"></i> ' + (msg || elem.data('msg'))).show();
+          target.removeClass('focus').addClass('error');
+        },
+        normal: function (target) {
+          $('.red', target.parent()).html('').hide();
+          target.removeClass('error').addClass('focus');
+        }
+      },
+      more: {
+        mobile: {
+          type: 'isPhone',
+          msg: '请输入格式正确的手机号'
+        }
+      },
+      ajaxSubmit: {
+        elems: 'input.v, input:checked',
+        success: function (ret, _this) {
+          ret = ret || {};
+          if (ret.rescode == 1) {
+              window.location.reload();
+          }else {
+            $('#person_info_ipt p.sys_err').html(ret.resmsg || '服务器异常！');
+          }
+        }
+      }
+    }).init().submit();
+
+    //------------------修改密码 --------------------
+    $('#changepwdForm').validatorAll({
+      elems: 'input.v',
+      prompt: {
+        succ: function (target) {
+          $('.red', target.parent()).html('').hide();
+          target.removeClass('error focus');
+        },
+        err: function (target, msg) {
+          var elem = $('.red', target.parent());
+          elem.html('<i class="base errormsg"></i> ' + (msg || elem.data('msg'))).show();
+          target.removeClass('focus').addClass('error');
+        },
+        normal: function (target) {
+          $('.red', target.parent()).html('').hide();
+          target.removeClass('error').addClass('focus');
+        }
+      },
+
+      ajaxSubmit: {
+        elems: 'input:password',
+        success: function (ret) {
+          //window.location.reload();
+          //$.maskUI.alert('提交失败，请稍后再试！');
+          $.maskUI.alert(ret.resmsg || '修改失败！');
+        }
+      },
+
+      more: {
+        password: {
+          type: /^(?![^a-zA-Z]+$)(?!\D+$).{8,20}$/,
+          msg: '请输入8-20位密码，必须包含数字和字母！',
+          fn: function (_this, prompt) {
+            var re = _this.form.find('input[name=repassword]'), val = $.trim(re.val());
+            if (val !== '' && this.value != val) {
+              prompt.err($(this), '两次输入的密码不一致！');
+              prompt.normal(re);
+              return false;
+            } else {
+              prompt.succ($(this));
+
+              if (val !== '') {
+                prompt.succ(re);
+              }
+              return true;
+            }
+          }
+        },
+        repassword: {
+          type: /^(?![^a-zA-Z]+$)(?!\D+$).{8,20}$/,
+          msg: '请输入8-20位密码，必须包含数字和字母！',
+          fn: function (_this, prompt) {
+            var pwd = _this.form.find('input[name=password]'), val = $.trim(pwd.val());
+            if (val !== '' && this.value != val) {
+              prompt.err($(this), '两次输入的密码不一致！');
+              prompt.normal(pwd);
+              return false;
+            } else {
+              prompt.succ($(this));
+
+              if (val !== '') {
+                prompt.succ(pwd);
+              }
+              return true;
+            }
+          }
+        }
+      }
+    }).init().submit();
+
+  });
+});
+
+
+

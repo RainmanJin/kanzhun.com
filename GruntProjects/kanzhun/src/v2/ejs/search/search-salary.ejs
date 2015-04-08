@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>搜索公司页面</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css">
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/search/search-salary.css"/>
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <!--<script src="/js/require.js" data-main="/v2/js/company/view.js"></script>-->
+</head>
+
+<body class="grey-bg">
+<% include ../modules/header %>
+<% include ../modules/top-search.ejs %>
+<% include piece/top-search-nav.ejs %>
+
+<div class="container-search clearfix">
+<section class="s_l_con clearfix">
+  <% include piece/search_conditions %>
+</section>
+
+<section class="s_r_con clearfix">
+  <dl class="wrap_style search-options">
+    <dt><a href="#">查看与 “<span>百度</span>” 相关的职位工资 &gt;</a> <strong>找到 30 个与“<span>百度</span>”相关的工资</strong></dt>
+    <dd>
+      筛选条件：
+      <span>客服<a href="#"><i class="close_conditions"></i></a></span>
+      <span>北京<a href="#"><i class="close_conditions"></i></a></span>
+      <span>面试通过<a href="#"><i class="close_conditions"></i></a></span>
+    </dd>
+  </dl>
+
+  <div class="wrap_style mt15">
+    <table class="salary-desc salary-desc-th" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="145">职位</td>
+        <td width="85" class="s-d-average">平均工资/月</td>
+        <td>
+          <div class="s-d-digit">
+            <em class="s-d-digit-min">最低</em><p></p><em class="s-d-digit-max">最高</em>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="wrap_style mt15">
+    <div class="search-list-co-brief">
+      <a href="" class="fright mt15">查看更多 &gt;</a>
+      <a ka="job3-logo" href="/gso3321.html" target="_blank"><img src="http://img.kanzhun.com/images/logo/20140707/ea1558006b083ebfe594d9681576e32e.jpg" title="中兴通讯" width="65"></a>
+      <span class="f_16">百度的工资</span> <span class="grey_99">（3044条）</span>
+    </div>
+    <table class="salary-desc" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr id="SD_642323" data-url="/xs/salary/3131/barchart.json?job=%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="show_flip">
+      <td width="145"><a href="/gzxs642323.html" ka="comsalary-blocker2-jobname1">软件开发工程师(3722条)</a></td>
+      <td class="s-d-average" width="85">￥11060</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname1show">
+          <p>
+            <em class="s-d-l">￥6600</em>
+            <span style="margin-left: 46px;"></span>
+            <em class="s-d-r">￥26100</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_642323_C" class="s-d-c">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥26,100</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥6,600</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="642323" ka="comsalary-blocker2-up1">
+                <i></i>靠谱 <em>8</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart" data-highcharts-chart="0">
+            <div class="highcharts-container" id="highcharts-0"
+                 style="position: relative; overflow: hidden; width: 420px; height: 190px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+              <svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="420" height="190">
+                <desc>Created with Highcharts 4.0.3</desc>
+                <defs>
+                  <clipPath id="highcharts-1">
+                    <rect x="0" y="0" width="362" height="139"></rect>
+                  </clipPath>
+                </defs>
+                <rect x="0" y="0" width="420" height="190" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect>
+                <g class="highcharts-grid" zIndex="1"></g>
+                <g class="highcharts-grid" zIndex="1">
+                  <path fill="none" d="M 48 9.5 L 410 9.5" stroke="#f2f2f2" stroke-width="1" zIndex="1" opacity="1"></path>
+                  <path fill="none" d="M 48 80.5 L 410 80.5" stroke="#f2f2f2" stroke-width="1" zIndex="1" opacity="1"></path>
+                  <path fill="none" d="M 48 149.5 L 410 149.5" stroke="#f2f2f2" stroke-width="1" zIndex="1" opacity="1"></path>
+                </g>
+                <g class="highcharts-axis" zIndex="2">
+                  <path fill="none" d="M 150.5 149 L 150.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 202.5 149 L 202.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 254.5 149 L 254.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 306.5 149 L 306.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 357.5 149 L 357.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 410.5 149 L 410.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 99.5 149 L 99.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 47.5 149 L 47.5 159" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                  <path fill="none" d="M 48 149.5 L 410 149.5" stroke="#007ead" stroke-width="1" zIndex="7" visibility="visible"></path>
+                </g>
+                <g class="highcharts-axis" zIndex="2">
+                  <path fill="none" d="M 47.5 10 L 47.5 149" stroke="#007ead" stroke-width="1" zIndex="7" visibility="visible"></path>
+                </g>
+                <g class="highcharts-series-group" zIndex="3">
+                  <g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(48,10) scale(1 1)" clip-path="url(#highcharts-1)">
+                    <path fill="rgba(124,181,236,0.3)"
+                          d="M 25.857142857142858 135.83775 L 77.57142857142857 67.03275 L 129.28571428571428 33.60325 L 181 31.622500000000002 L 232.71428571428572 107.169 L 284.4285714285714 121.347 L 336.1428571428571 128.9225 L 336.1428571428571 139 L 25.857142857142858 139"
+                          zIndex="0"></path>
+                    <path fill="none"
+                          d="M 25.857142857142858 135.83775 L 77.57142857142857 67.03275 L 129.28571428571428 33.60325 L 181 31.622500000000002 L 232.71428571428572 107.169 L 284.4285714285714 121.347 L 336.1428571428571 128.9225"
+                          stroke="#7cb5ec" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path>
+                    <path fill="none"
+                          d="M 15.857142857142858 135.83775 L 25.857142857142858 135.83775 L 77.57142857142857 67.03275 L 129.28571428571428 33.60325 L 181 31.622500000000002 L 232.71428571428572 107.169 L 284.4285714285714 121.347 L 336.1428571428571 128.9225 L 346.1428571428571 128.9225"
+                          stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path>
+                  </g>
+                  <g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(48,10) scale(1 1)" clip-path="none" style="">
+                    <path fill="#7db2e6" d="M 336 123.92250000000001 C 342.66 123.92250000000001 342.66 133.9225 336 133.9225 C 329.34 133.9225 329.34 123.92250000000001 336 123.92250000000001 Z" stroke="#fff"
+                          stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 284 116.347 C 290.66 116.347 290.66 126.347 284 126.347 C 277.34 126.347 277.34 116.347 284 116.347 Z" stroke="#fff" stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 232 102.169 C 238.66 102.169 238.66 112.169 232 112.169 C 225.34 112.169 225.34 102.169 232 102.169 Z" stroke="#fff" stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 181 26.622500000000002 C 187.66 26.622500000000002 187.66 36.6225 181 36.6225 C 174.34 36.6225 174.34 26.622500000000002 181 26.622500000000002 Z" stroke="#fff"
+                          stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 129 28.603250000000003 C 135.66 28.603250000000003 135.66 38.60325 129 38.60325 C 122.34 38.60325 122.34 28.603250000000003 129 28.603250000000003 Z" stroke="#fff"
+                          stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 77 62.03274999999999 C 83.66 62.03274999999999 83.66 72.03275 77 72.03275 C 70.34 72.03275 70.34 62.03274999999999 77 62.03274999999999 Z" stroke="#fff" stroke-width="2"></path>
+                    <path fill="#7db2e6" d="M 25 130.83775 C 31.66 130.83775 31.66 140.83775 25 140.83775 C 18.34 140.83775 18.34 130.83775 25 130.83775 Z" stroke="#fff" stroke-width="2"></path>
+                  </g>
+                </g>
+                <g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7">
+                  <text x="73.85714285714286" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">0-6k</text>
+                  <text x="125.57142857142858" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">6-10k</text>
+                  <text x="177.28571428571428" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">10-12k</text>
+                  <text x="229" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">12-16k</text>
+                  <text x="280.7142857142857" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">16-20k</text>
+                  <text x="332.42857142857144" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">20-25k</text>
+                  <text x="384.14285714285717" text-anchor="middle" style="width:32px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="170" opacity="1">&gt;25k</text>
+                </g>
+                <g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7">
+                  <text x="33" text-anchor="end" style="width:119px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="153" opacity="1">0%</text>
+                  <text x="33" text-anchor="end" style="width:119px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="83.5" opacity="1">20%</text>
+                  <text x="33" text-anchor="end" style="width:119px;color:#999999;cursor:default;font-size:12px;fill:#999999;" y="14" opacity="1">40%</text>
+                </g>
+                <g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)">
+                  <path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996"
+                        stroke-width="5" transform="translate(1, 1)"></path>
+                  <path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999"
+                        stroke-width="3" transform="translate(1, 1)"></path>
+                  <path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1"
+                        transform="translate(1, 1)"></path>
+                  <path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0"></path>
+                  <text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="21"></text>
+                </g>
+              </svg>
+            </div>
+          </section>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_143442" data-url="/xs/salary/3131/barchart.json?job=%E7%A0%94%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="">
+      <td><a href="/gzxs143442.html" ka="comsalary-blocker2-jobname2">研发工程师(758条)</a></td>
+      <td class="s-d-average">￥11600</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname2show">
+          <p>
+            <em class="s-d-l">￥7381</em>
+            <span style="margin-left: 43px;"></span>
+            <em class="s-d-r">￥26860</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_143442_C" class="s-d-c none">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥26,860</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥7,381</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="143442" ka="comsalary-blocker2-up2">
+                <i></i>靠谱 <em>19</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart">
+          </section>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_118333" data-url="/xs/salary/3131/barchart.json?job=%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="">
+      <td><a href="/gzxs118333.html" ka="comsalary-blocker2-jobname3">工程师(675条)</a></td>
+      <td class="s-d-average">￥12640</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname3show">
+          <p>
+            <em class="s-d-l">￥6600</em>
+            <span style="margin-left: 48px;"></span>
+            <em class="s-d-r">￥31600</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_118333_C" class="s-d-c none">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥31,600</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥6,600</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="118333" ka="comsalary-blocker2-up3">
+                <i></i>靠谱 <em>21</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart">
+          </section>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_25962" data-url="/xs/salary/3131/barchart.json?job=%E7%A1%AC%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="">
+      <td><a href="/gzxs25962.html" ka="comsalary-blocker2-jobname4">硬件工程师(464条)</a></td>
+      <td class="s-d-average">￥11600</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname4show">
+          <p>
+            <em class="s-d-l">￥7920</em>
+            <span style="margin-left: 48px;"></span>
+            <em class="s-d-r">￥23200</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_25962_C" class="s-d-c none">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥23,200</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥7,920</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="25962" ka="comsalary-blocker2-up4">
+                <i></i>靠谱 <em>18</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart">
+          </section>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_135367" data-url="/xs/salary/3131/barchart.json?job=%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88&amp;cityCode=0" class="">
+      <td><a href="/gzxs135367.html" ka="comsalary-blocker2-jobname5">测试工程师(404条)</a></td>
+      <td class="s-d-average">￥10560</td>
+      <td>
+        <div class="s-d-digit" ka="comsalary-blocker2-jobname5show">
+          <p>
+            <em class="s-d-l">￥6525</em>
+            <span style="margin-left: 46px;"></span>
+            <em class="s-d-r">￥23925</em>
+          </p>
+          <i class="s-d-show"></i>
+        </div>
+      </td>
+    </tr>
+    <tr id="SD_135367_C" class="s-d-c none">
+      <td colspan="3">
+        <div class="s-d-chart">
+          <ul>
+            <li class="s-d-low"><span class="grey_99">最高工资</span> ￥23,925</li>
+            <li class="s-d-high"><span class="grey_99">最低工资</span> ￥6,525</li>
+            <li class="s-d-mark">
+              <a href="javascript:;" rel="nofollow" class="helpful mark" data-mtype="useful.json" data-sid="135367" ka="comsalary-blocker2-up5">
+                <i></i>靠谱 <em>20</em>
+              </a>
+            </li>
+          </ul>
+          <section id="salaryDescriptionChart">
+          </section>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+
+  <div class="wrap_style mt15">
+    <p class="mt15">图例： <span class="s-c-flag"></span>工资范围 <span class="s-c-flag s-c-flag2"></span>平均工资</p>
+    <p class="mt10 mb15">说明： <span class="grey_99">所有工资数据来自用户匿名分享。工资水平受地域、工作年限等多种因素影响，仅供参考。</span></p>
+  </div>
+
+  <div class="page_wrap mt20">
+    <div class="f_pager t-right fright">
+      <a ka="paging1" href="/gsx3131.html" class="current">1</a>
+      <a ka="paging2" href="/gsx3131p2.html" rel="nofollow">2</a>
+      <a ka="paging3" href="/gsx3131p3.html" rel="nofollow">3</a>
+      <a ka="paging4" href="/gsx3131p4.html" rel="nofollow">4</a>
+      <a ka="paging2" href="/gsx3131p2.html" data-page="2" rel="nofollow" class="p_next"><i class="p_next">&gt;</i></a>
+    </div>
+  </div>
+</section>
+</div>
+</body>
+</html>

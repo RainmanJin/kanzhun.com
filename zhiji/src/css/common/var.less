@@ -1,0 +1,64 @@
+@img_path:"../images/";
+//colors
+@def: #343434;
+@grey_e5: #e5e5e5;
+@grey_e7: #e7e7e7;
+@grey_99: #999999;
+@grey_6e: #6e6e6e;
+@black: #000000;
+@blue: #007ead;
+@orange: #f38100;
+@green: #08c093;
+@placeholder: #999999;
+@red: #e60e0e;
+
+//css3
+.transform(...){
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-ms-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
+}
+
+.animation(...){
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	-ms-animation: @arguments;
+	-o-animation: @arguments;
+	animation: @arguments;
+}
+
+.transition(...){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-ms-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.box-shadow(...){
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-ms-box-shadow: @arguments;
+	box-shadow: @arguments;
+}
+
+.text-shadow(...){
+	-webkit-text-shadow: @arguments;
+	-moz-text-shadow: @arguments;
+	-ms-text-shadow: @arguments;
+	text-shadow: @arguments;
+}
+
+.ellipsis(...){
+  text-overflow: @arguments;
+  -o-text-overflow: @arguments;
+  -ms-text-overflow: @arguments;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: normal;
+}
+
+

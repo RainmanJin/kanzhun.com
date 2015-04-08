@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>confession</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/confession.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <header><img src="images/banner.jpg" /></header>
+  <section class="content">
+    <form action="progress.html" class="phone" id="confessionForm">
+      <p>请输入您的手机号： <em id="p_err">手机号格式有误！</em></p>
+      <p><input type="text" name="phone" maxlength="11" /></p>
+      <p><input type="submit" class="btn" value="立即邀请，领取话费"/></p>
+    </form>
+
+    <div class="info">
+      <p class="mb10">活动时间：即日起--2014年7月8日18:00</p>
+      <p>活动规则： <br/>
+        ① 集齐5个小伙伴为你加油，即可获得5元、50元、100元话费中的一种。<br/>
+        ② 每个微信号/手机号只可以领取一次话费。<br/>
+        ③ 部分特殊手机号我们会将话费打入您的支付宝。<br/>
+        ④ 我们会在5个工作日之内，为完成任务的用户进行手机话费充值。<br/>
+        活动截止时间：8月3日
+      </p>
+    </div>
+  </section>
+</div>
+
+<script src="js/zepto.js"></script>
+<script src="js/wx_c.js"></script>
+</body>
+</html>

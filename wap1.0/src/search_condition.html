@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>筛选条件</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/ugc_page.css">
+</head>	
+<body class="js_searchCondition">
+<header class="page_hd">		
+	<a class="top_back" href="javascript:;"><i></i>返回</a>
+	<strong>筛选条件</strong>
+	<a href="javascript:;" class="fright">确定</a>		
+</header>
+<form name="searchConditionForm" action="test">
+<section class="searchCondition_content">
+	<ul>
+		<li class="js_first">
+			<label>行业类别：</label>
+			<em>全部</em>
+			<a href="javascript:;" class="plus">+</a>
+			<input name="industryCode" type="hidden">			
+		</li>
+		<ul style="display:none">
+			<li class="ok" node-value="0">
+				<em>全部</em>
+				<a href="javascript:;"><i class="i i_ok_h"></i></a>
+			</li>
+			<li class="no_ok" node-value="1">
+				<em>互联网</em>
+				<a href="javascript:;"><i>></i></a>
+			</li>
+			<li class="no_ok" node-value="2">
+				<em>金融</em>
+				<a href="javascript:;"><i>></i></a>
+			</li>	
+		</ul>					
+		<li class="js_first">
+			<label>发布时间：</label>
+			<em>全部</em>
+			<a href="javascript:;" class="plus">+</a>
+			<input name="timeRange" type="hidden">			
+		</li>
+		<ul  style="display:none">
+			<li class="ok" node-value="0">
+				<em>全部</em>
+				<a href="javascript:;"><i class="i i_ok_h"></i></a>
+			</li>
+			<li class="no_ok" node-value="1">
+				<em>最近一周</em>
+				<a href="javascript:;"><i>></i></a>
+			</li>
+			<li class="no_ok" node-value="2">
+				<em>最近一个月</em>
+				<a href="javascript:;"><i>></i></a>
+			</li>	
+		</ul>		
+		<li class="js_first">
+			<label>工作经验：</label>
+			<em>不限</em>
+			<a href="javascript:;" class="plus">+</a>
+			<input name="experience" type="hidden">	
+		</li>
+		<ul style="display:none">
+			<li class="ok" node-value="0">
+				<em>不限</em>
+				<a href="javascript:;"><i class="i i_ok_h"></i></a>
+			</li>
+			<li class="no_ok" node-value="1">
+				<em>一年</em>
+				<a href="javascript:;"><i>></i></a>
+			</li>
+			<li class="no_ok" node-value="2">
+				<em>三年</em>
+				<a href="javascript:;"><i>></i></a>
+			</li>	
+		</ul>				
+		<li class="js_first">
+			<label>薪酬范围：</label>
+			<em>不限</em>
+			<a href="javascript:;" class="plus">+</a>
+			<input name="salary" type="hidden">			
+		</li>
+		<ul style="display:none">
+			<li class="ok" node-value="0">
+				<em>不限</em>
+				<a href="javascript:;"><i class="i i_ok_h"></i></a>
+			</li>
+			<li class="no_ok" node-value="1">
+				<em>1000-3000</em>
+				<a href="javascript:;"><i>></i></a>
+			</li>
+			<li class="no_ok" node-value="2">
+				<em>3000-5000</em>
+				<a href="javascript:;"><i>></i></a>
+			</li>	
+		</ul>		
+		<li class="js_first">
+			<label>学历要求：</label>
+			<em>不限</em>
+			<a href="javascript:;" class="plus">+</a>
+			<input name="degree" type="hidden">				
+		</li>
+		<ul style="display:none">
+			<li class="ok" node-value="0">
+				<em>不限</em>
+				<a href="javascript:;"><i class="i i_ok_h"></i></a>
+			</li>	
+			<li class="no_ok" node-value="1">
+				<em>本科</em>
+				<a href="javascript:;"><i>></i></a>
+			</li>
+		</ul>														
+	</ul>			
+</section>
+</action>
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/m-kanzhun.js"></script>	
+</html>
+
+

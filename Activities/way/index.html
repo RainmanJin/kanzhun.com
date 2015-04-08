@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>比比谁更远</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/way.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <header><img src="images/banner.jpg" width="100%" /></header>
+  <section class="content">
+    <form action="ret.html">
+      <h2><img src="images/7.png" width="15" />交通方式</h2>
+      <ul class="traffic">
+        <li><img src="images/4.png" width="46" /><p>开车</p></li>
+        <li><img src="images/2.png" width="46" /><p>地铁</p></li>
+        <li class="current"><img src="images/3.png"  width="46" /><p>公交</p></li>
+        <li><img src="images/5.png" width="46" /><p>骑车</p></li>
+        <li><img src="images/1.png" width="30" /><p>步行</p></li>
+      </ul>
+
+      <h2 class="mt20 mb10"><img src="images/6.png" width="14" />需要时间</h2>
+      <ul class="time">
+        <li><a href="#">15分钟以内</a></li>
+        <li><a href="#" class="current">15-30分钟</a></li>
+        <li><a href="#">30-60分钟</a></li>
+        <li><a href="#">60-90分钟</a></li>
+        <li><a href="#">90分钟以上</a></li>
+      </ul>
+
+      <input name="a" type="hidden" id="waya"/>
+      <input name="b" type="hidden" id="wayb"/>
+      <p><button class="red_btn" type="submit"><img src="images/8.png" width="29">走 起</button></p>
+      <p>&nbsp;</p>
+    </form>
+  </section>
+</div>
+
+<script src="js/zepto.js"></script>
+<script src="js/way.js"></script>
+</body>
+</html>

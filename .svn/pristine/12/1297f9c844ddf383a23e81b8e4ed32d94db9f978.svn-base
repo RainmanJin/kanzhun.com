@@ -1,0 +1,220 @@
+require.config({
+  baseUrl: '/js/site',
+  paths: {
+    u: '../utils',
+    c: '.',
+    comp: '../../components'
+  }
+});
+
+
+require(['c/auth_dialog', 'c/widgets','comp/toggler/toggler','comp/scroll/scroll'], function () {
+  $(function () {
+
+    /*---以下添加右侧栏的行业查看添加的js,通过home.js 一并require引入  by zhuchonyue 2015/3/9 */
+    var toggler = require('comp/toggler/toggler');
+    toggler({
+      el: $('div.c1'),
+      on: function(){
+        $('.industrys').show();
+      },
+      off: function(){
+        $('.industrys').hide();
+      }
+    });
+
+    //search
+    var bigsearchForm = $('#bigsearchForm'),
+      bigSearchSuggestFloor = $('#BSSFloor');
+
+
+    /*//choose city autocomplete
+    bigSearchSuggestCity.autocomplete({
+      serviceUrl: CONTEXTPATH + '/autocomplete/city.json',
+      paramName: 'query',
+      dataType: 'json',
+      transformResult: function (response) {
+        return {
+          suggestions: $.map(response.suggestions, function (dataItem) {
+            return { value: dataItem.value, data: dataItem.data};
+          })
+        };
+      },
+      onSelect: function (suggestion) {
+        hid.val(suggestion.data);
+      },
+      onSearchStart: function () {
+        //防止选中后不失去焦点接着搜 强制选择的地方都要加这个
+        hid.val('');
+      },
+      onInvalidateSelection: function () {
+        hid.val('');
+      },
+      onSearchComplete: function (query, suggestions) {
+        if (suggestions.length === 0) {
+          hid.val('');
+          return;
+        }
+        //auto select when only one result
+        if (suggestions.length === 1) {
+          hid.val(suggestions[0].data);
+        }
+      },
+      autoSelectFirst: true
+    });
+
+    bigSearchSuggestCity.on('focus', function () {
+      hid.val('');
+    });*/
+
+
+    //company and job  autocomplete
+    bigSearchSuggestFloor.autocomplete({
+      serviceUrl: CONTEXTPATH + '/autocomplete/searchkey.json',
+      paramName: 'query',
+      params: function (query) {
+        return {
+          query: query,
+          type: $('#BSSQType').val()
+        };
+      },
+      dataType: 'json',
+      transformResult: function (response) {
+        return {
+          suggestions: $.map(response.suggestions, function (dataItem) {
+            return { value: dataItem.value, type: dataItem.type};
+          })
+        };
+      },
+
+      customHTML: function (suggestions, className, formatResult, value) {
+        var html = [],
+          co = [],
+          job = [],
+          type;
+        $.each(suggestions || [], function (i, suggestion) {
+          if(i === 0){type = suggestion.type;}
+          if (suggestion.type == '1') {
+            co.push('<div class="' + className + '" data-index="' + i + '">' + formatResult(suggestion, value) + '</div>');
+          } else {
+            job.push('<div class="' + className + '" data-index="' + i + '">' + formatResult(suggestion, value) + '</div>');
+          }
+        });
+
+        if (job.length) {
+          /*if (co.length) {
+            html.push('<dt>公司</dt><dd>' + co.join('') + '</dd>');
+          }*/
+
+          var op = type == 0 ? 'unshift' : 'push';
+          if(op == 'unshift') {
+            html[op]('<dt>职位</dt><dd>' + job.join('') + '</dd>');
+
+            if (co.length) {
+              html.push('<dt class="bd">公司</dt><dd class="bd">' + co.join('') + '</dd>');
+            }
+          }else {
+            html[op]('<dt class="bd">职位</dt><dd class="bd">' + job.join('') + '</dd>');
+
+            if (co.length) {
+              html.unshift('<dt>公司</dt><dd>' + co.join('') + '</dd>');
+            }
+          }
+          
+        }else{
+          //搜索公司时 不需要分类显示
+          if (co.length) {
+            html = [];
+            html.push(co.join(''));
+
+            return html.join('');
+          }
+        }
+
+        if (html.length === 1) {
+          return ''
+        } else {
+          return '<dl>'+ html.join('') +'</dl>';
+        }
+
+      },
+//      autoSelectFirst: true,
+
+      onSelect: function(suggestion){
+        $('#BSSSType').val(suggestion.type);
+        bigsearchForm.submit();
+      }
+    });
+
+    $('input:text', bigsearchForm).placeholder();
+
+    /*bigsearchForm.on('submit', function (e) {
+      if (hid.val() === '' && $.trim(bigSearchSuggestCity.val()) !== '') {
+        bigSearchSuggestCity.val('');
+        return false;
+      } else {
+        return true;
+      }
+    });*/
+
+
+    //tabs
+    var bigSearchTitle = ['找工作，看准了你再跳', '好公司，你说了算', '查工资，看看你值多少钱', '聊面试，帮你过关更轻松'];
+    var bigSearchDesc = [
+      ['职位/公司名称', '搜索日均超过2,000,000个热门职位招聘信息'],
+      ['公司名称', '查看超过1,000,000家公司的员工匿名点评、工资和面试经验'],
+      ['职位/公司名称', '比较不同公司、不同职位内部员工匿名发布的工资信息'],
+      ['职位/公司名称', '了解不同公司的面试问题和面试细节']
+    ];
+    $('dl.banner_dl').tabs({
+      tabSelector: 'dt>a',
+      current: 'current',
+      panelCancel: true,
+      callback: function (index, panel) {
+        $('#BSSQType').val(parseInt(index) + 1);
+        bigsearchForm.attr('action', $(this).attr('href'));
+        $('#bigsearchForm input[name=q]').attr('placeholder', bigSearchDesc[index][0]).trigger('blur');
+        $('section.banner p').html(bigSearchDesc[index][1]);
+        $('section.banner h1').html(bigSearchTitle[index]).removeClass().addClass('flipInX animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+          $(this).removeClass();
+        });
+      }
+    });
+
+    $('#index_tabs').tabs({
+      tabSelector: 'nav a',
+      current: 'current',
+      tabPanel: 'div.panel',
+      callback: function (index, panel) {
+        if ($.support.css3Property('transition')) {
+          this.parent().css({'background-position': 102 * index + 'px 0'});
+        } else {
+          this.parent().animate({'background-position-x': 102 * index}, 200);
+        }
+
+      },
+      animate: 'fadeIn'
+    });
+
+    //友情链接
+    $('div.links').on('click', 'a.sprech', function(){
+      $(this).parent('div.links').find('ul').toggleClass('js-links');
+      if( $(this).parent('div.links').find('ul').height() > 24 ){
+        $(this).html('收起<i class="up"></i>');
+      }else {
+        $(this).html('展开<i class="pull_down"></i>');
+      }
+      //if(  )
+      //$(this).addClass('none')
+    })
+
+/*    $('#coInvPhotos').on('mouseenter', 'li', function () {
+      $(this).addClass('a_hover');
+    }).on('mouseleave', 'li', function () {
+      $(this).removeClass('a_hover');
+    });*/
+
+
+
+  });
+});

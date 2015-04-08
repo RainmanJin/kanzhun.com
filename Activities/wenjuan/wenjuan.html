@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>问卷</title>
+<!--[if lte IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/wenjuan.css" />
+</head>
+<body>
+	<div class="wj_wrapper">
+		<div class="wj_inner">
+			<h1 class="title">看准网企业用户调查</h1>
+			<div class="intro">
+				尊敬的客户您好，感谢您对看准网的关注与信任。您对看准网企业端产品的使用，是对看准网及所有员工最大的激励和鼓舞，非常感谢！为了更好地能改善产品功能，也为了您能更方便地进行使用，我们特意发起了本次调研，您只需要3-5分钟即可完成，希望您能提出您的宝贵意见，给我们重要的指导，谢谢！
+			</div>
+			<div class="wj_hr"></div>
+			<form id="wjForm" action="test" method="post">
+			<div class="question_box">
+				<dl class="ques">
+					<dt>1、您对看准网发布职位的操作系统是否满意？原因是什么？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a1" value="1" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>满意</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a1" value="2" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>一般</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a1" value="3" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>不满意</label>
+						<label class="ml20">原因：</label>
+						<input class="ipt" name="ar1" type="text" />
+					</dd>
+				</dl>
+				<dl class="ques">
+					<dt>2、	现在看准网发布职位的功能是否符合对招聘的基本要求？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a2" value="1" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>符合</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a2" value="2" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>一般</label>
+					</dd>
+					<dd>
+						<input type="radio" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>说不清</label>
+						<label class="ml20">原因：</label>
+						<input class="ipt" type="text" />
+					</dd>
+				</dl>	
+				<dl class="ques">
+					<dt>3、	看准网发布职位信息时,选择公司行业和职位是否足够清晰方便?<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a3" value="1" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>是</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a3" value="2" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>否</label>
+						<label class="ml20">您希望的状态是：</label>
+						<input class="ipt" name="ar3" type="text" />
+					</dd>
+				</dl>	
+				<dl class="ques">
+					<dt>4、	发布职位的页面布局是否符合您的使用习惯？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a4" value="1" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>是</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a4" value="2" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>否</label>
+						<label class="ml20">改进建议：</label>
+						<input class="ipt" name="ar4" type="text" />
+					</dd>
+				</dl>
+				<dl class="ques">
+					<dt>5、	面试通知邮件模板使用是否便捷？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a5" value="1" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>是</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a5" value="2" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>否</label>
+					</dd>
+				</dl>
+				<dl class="ques">
+					<dt>6、	看准网的薪酬数据对岗位定薪是否有用?<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a6" value="1"  style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>是</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a6" value="2" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>否</label>
+					</dd>
+				</dl>
+				<dl class="ques">
+					<dt>7、	您是否希望定期收到行业薪酬报告？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a7" value="1" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>希望收到行业薪酬报告</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a7" value="2"  style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>希望收到地区薪酬报告</label>
+					</dd>
+					<dd>
+						<input type="radio" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>没有这样的需求</label>
+					</dd>
+					<dd>
+						<input type="radio" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>其它需求：</label>
+						<input class="ipt" type="text" />
+					</dd>			
+				</dl>
+				<dl class="ques">
+					<dt>8、	您的企业是否使用测评产品？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a8" value="1" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>是</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a8" value="2" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>否</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a8" value="3" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>其它情况：</label>
+						<input class="ipt" name="ar8" type="text" />
+					</dd>			
+				</dl>
+				<dl class="ques">
+					<dt>9、	如果使用测评产品，您希望应用于何处？（可多选）<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="checkbox" name="a9" value="1" style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>校园招聘</label>
+					</dd>
+					<dd>
+						<input type="checkbox" name="a9" value="2" style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>社会招聘</label>
+					</dd>
+					<dd>
+						<input type="checkbox" name="a9" value="3" style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>内部竞聘</label>
+					</dd>	
+					<dd>
+						<input type="checkbox" name="a9" value="4" style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>人力资源盘点</label>
+					</dd>
+					<dd>
+						<input type="checkbox" name="a9" value="5" style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>储备干部评估/继任计划</label>
+					</dd>
+					<dd>
+						<input type="checkbox" name="a9" value="6"  style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>满意度/敬业度调查</label>
+					</dd>			
+					<dd>
+						<input type="checkbox" name="a9" value="7" style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>培训评估</label>
+					</dd>	
+					<dd>
+						<input type="checkbox" name="a9" value="8" style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>360度评估</label>
+					</dd>	
+					<dd>
+						<input type="checkbox" name="a9" value="9" style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>其它方向：<input class="ipt" name="ar9" type="text" /></label>
+					</dd>	
+				</dl>
+				<dl class="ques">
+					<dt>10、	如果有测评工具可以使用，您希望可以评估到候选人的？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a10" value="1"  style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>能力素质/智力水平</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a10" value="2" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>性格</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a10" value="3" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>动机</label>
+					</dd>	
+					<dd>
+						<input type="radio" name="a10" value="4" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>倾向（职业倾向）</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a10" value="5" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>行为风格</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a10" value="6" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>心理健康/精神稳定 </label>
+					</dd>			
+					<dd>
+						<input type="radio" name="a10" value="7" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>领导力相关</label>
+					</dd>	
+					<dd>
+						<input type="radio" name="a10" value="8" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>岗位匹配相关</label>
+					</dd>	
+					<dd>
+						<input type="radio" name="a10" value="9" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>胜任素质相关</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a10" value="10" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>由他人进行的评估</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a10" value="11" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>其它：<input class="ipt" name="ar10" type="text" /></label>
+					</dd>	
+				</dl>
+				<dl class="ques">
+					<dt>11、 您是否会根据招聘需求的不同级别选择相应的招聘网站？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="radio" name="a11" value="1" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>是</label>
+					</dd>
+					<dd>
+						<input type="radio" name="a11" value="2" style="display:none" />
+						<a class="radio" href="javascript:;"></a>
+						<label>否</label>
+					</dd>	
+				</dl>
+				<dl class="ques">
+					<dt>12、	您经常使用的招聘网站有哪些？（可多选）<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<input type="checkbox" name="a12" value="1"  style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>前程无忧 </label>
+					</dd>
+					<dd>
+						<input type="checkbox" name="a12" value="2"  style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>智联招聘c</label>
+					</dd>
+					<dd>
+						<input type="checkbox" name="a12" value="3"  style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>中华英才网</label>
+					</dd>	
+					<dd>
+						<input type="checkbox" name="a12" value="4"  style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>猎聘网</label>
+					</dd>
+					<dd>
+						<input type="checkbox" name="a12" value="5"  style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>拉勾网</label>
+					</dd>
+					<dd>
+						<input type="checkbox" name="a12" value="6"  style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>地区性人才网站</label>
+					</dd>			
+					<dd>
+						<input type="checkbox" name="a12" value="7"  style="display:none" />
+						<a class="checkbox" href="javascript:;"></a>
+						<label>其它网站</label>
+					</dd>	
+				</dl>
+				<dl class="ques">
+					<dt>13、 如果企业端产品开发新的功能，您认为做哪个功能会最让您感兴趣？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<textarea class="tarea v" name="a13" rows="4"></textarea>
+					</dd>		
+				</dl>
+				<dl class="ques">
+					<dt>14.	您对看准网有什么建议？<span class="err ml20"></span>
+					</dt>
+					<dd>
+						<textarea class="tarea v" name="a14" rows="4"></textarea>
+					</dd>		
+				</dl>
+			</div>
+			<div class="user_box">
+				<p class="intro">
+					本次回访旨在取得您的宝贵意见，以便于我们改进产品，更好地为您服务，如果您愿意留下联系方式，我们将安排人员对您进行回访，了解您的个性化需求，为您的企业提供更多优惠服务。您的资料看准网郑重承诺不会公开，座机/手机号码可任选，仅限于客户回访或抽取幸运礼品时使用。
+				</p>
+				<dl>
+					<dt>联系方式</dt>
+					<dd><label>座机：</label><input class="ipt" type="text" /></dd>
+					<dd><label>手机：</label><input class="ipt" type="text" /></dd>
+				</dl>
+			</div>
+			<div class="sbm">
+				<a class="js_bt_submit btn_submit" href="javascript:;">提交</a>
+			</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/wenjuan.js"></script>
+</html>

@@ -1,0 +1,48 @@
+@import "common/var";
+@import "module/swiper";
+@import "module/menu";
+@import "module/list_show";
+
+/* nav.nav{
+	ul{
+		overflow: hidden;
+		li{
+			padding-top: 10px;
+			width: 25%;
+			text-align: center;
+			float: left;
+		}
+	}
+	margin-bottom: 10px;
+} */
+.banner{
+	clear: both;
+	.swiper-container{
+		img{
+			width: 100%;
+		}
+	}
+	.info{
+		margin:0 10px 20px;
+		overflow: hidden;
+		.pagination{
+			float: right;
+			.swiper-pagination-switch{
+				vertical-align: middle;
+				display: inline-block;
+				border-radius: 50%;
+				margin-right: 5px;
+				opacity: 0.8;
+				width: 4px;
+				height: 4px;
+				background: @grey;
+				&.swiper-visible-switch{
+					width: 6px;
+					height: 6px;
+					background: @green;
+				}
+			}
+
+		}
+	}
+}

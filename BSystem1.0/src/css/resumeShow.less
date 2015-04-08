@@ -1,0 +1,327 @@
+
+@import "common/var";
+@import "module/resume_common";
+
+div {
+  &.r_container {
+    width: 720px;
+    margin-top: 20px;
+    padding: 20px 165px 200px 105px;
+  }
+
+  &.rs_l {
+    width: 330px;
+    float: left;
+  }
+
+  &.rs_r {
+    float: right;
+    width: 304px;
+    padding: 5px;
+    border: 1px dashed #e7e7e7;
+    background-color: #fff;
+
+    div {
+      padding: 10px 0 20px 20px;
+      background-color: #f6f6f6;
+
+      dl {
+        margin-bottom: 10px;
+        height: 30px;
+        line-height: 30px;
+
+        dt {
+          float: left;
+        }
+
+        dd {
+          margin-left: 30px;
+          border-bottom: 1px solid #fff;
+          .ellipsis(ellipsis); 
+          width: 17em;
+
+          span {
+            display: inline-block;
+            width: 60px;
+            text-align: left;
+          }
+        }
+
+        &.haveborder {
+          padding-bottom: 10px;
+          border-bottom: 1px dashed #e9e9e9;
+
+          dd {
+            border-bottom: none;
+          }
+        }/* 
+        
+        &.username {
+          dd {
+            .ellipsis(ellipsis); 
+            width: 17em;
+          }
+        } */
+      }
+
+      a.btn_download_pdf {
+        display: inline-block;
+        height: 35px;
+        width: 122px;
+        text-align: center;
+        line-height: 35px;
+        background-color: #f38100;
+        color: #fff;
+
+        &:hover {
+          text-decoration: none;
+          background-color: #f28d03;
+        }
+      }
+
+      a.none {
+        display: none;
+      }
+    }
+  }
+
+  &.r_modular_wrap {
+    padding-left: 29px;
+  }
+}
+
+h2.r_t {
+  padding: 0 0 15px 30px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+section.resume_summary {
+  padding-left: 30px;
+}
+
+h4 {
+  &.rsl_tt {
+    padding: 10px 0 15px 0;
+    font-size: 14px;
+    font-weight: normal;
+
+    i {
+      margin-right: 15px;
+
+      &.r_experience {
+        margin-right: 14px;
+      }
+
+      &.r_education {
+        margin-left: -8px;
+        vertical-align: -2px;
+        margin: 0 8px 0 -2px;
+      }
+    }
+  }
+}
+
+dl {
+  &.rsl_abc {
+    overflow: hidden;
+    *zoom: 1;
+
+    dt {
+      float: right;
+      padding-right: 15px;
+
+      img {
+        width: 90px;
+        height: 90px;
+        padding: 1px;
+        background-color: #fff;
+        border: 1px solid #eeeeee;
+      }
+    }
+
+    dd {
+      p {
+        padding-bottom: 5px;
+
+        &.padding_l {
+          padding-left: 28px;
+        }
+
+        em {
+          margin: 0 5px;
+          color: #eaeaea;
+        }
+      }
+
+      i {
+        margin-right: 15px;
+        vertical-align: -4px;
+      }
+    }
+  }
+  //最近工作经历
+  &.rsl_experience {
+    padding: 5px 0;
+    margin-left: 33px;
+    //background-color: #c00;
+    border-left: 1px solid #cccccc;
+
+    dt {
+      float: left;
+      height: 52px;
+      line-height: 52px;
+      margin-left: -5px;
+    }
+
+    dd {
+      float: left;
+      margin-left: 37px;
+      position: relative;
+      padding: 5px 20px 5px 10px;
+      background-color: #ededed;
+      height: 42px;
+
+      span {
+        position: absolute;
+        left: -30px;
+        top: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        font-size: 0;
+        border-width: 26px 30px 26px 0;
+        border-style: dashed solid;
+        border-color: transparent #ededed transparent transparent;
+      }
+
+      em {
+          margin: 0 5px;
+          color: #dbdbdb;
+      }
+    }
+  }
+}
+
+p {
+  &.r_modular_con {
+    padding-left: 28px;
+
+    em {
+      margin: 0 auto;
+      color: #eaeaea;
+    }
+  }
+}
+
+//求职意向
+div {
+  &.r_tt {
+    padding-left: 20px;
+    border-bottom: 1px solid #eeeeee;
+
+    h3 {
+      float: left;
+      padding: 0 10px 1px 10px;
+      //border-left: 8px solid @green;
+      margin-bottom: -4px;
+      background-color: #fff;
+      line-height: 1em;
+      font-size: 20px;
+      font-weight: normal;
+
+      i {
+        float: left;
+        height: 20px;
+        width: 8px;
+        margin-right: 10px;
+        line-height: 0;
+        overflow: hidden;
+        background-color: @green;
+      }
+    }
+
+    p {
+      line-height: 1em;
+      color: #e5e5e5;
+    }
+  }
+}
+
+ul {
+  &.r_modular_cons {
+    overflow: hidden;
+    *zoom: 1;
+
+    li {
+      margin-bottom: 8px;
+      overflow: hidden;
+      *zoom: 1;
+
+      p {
+        margin-left: 70px;
+      }
+    }
+
+    &.mb35 {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+dl {
+  &.r_modular_cons {
+    background: url(../images/resume_img1.png) no-repeat 154px bottom;
+
+    dt {
+      float: left;
+      width: 165px;
+      height: 28px;
+      line-height: 28px;
+      background-color: #fff;
+
+      span {
+        display: inline-block;
+        width: 145px;
+      }
+
+      i {
+        padding-bottom: 2px;
+      }
+    }
+
+    dd {
+      padding-top: 5px;
+      margin: 0  0 25px 175px;
+
+      h5 {
+        font-size: 15px;
+        margin-bottom: 8px;
+
+        &.r_j_d_education {
+          font-weight: normal;
+        }
+      }
+    }
+
+    em {
+      margin: 0 5px;
+      color: #e7e7e7;
+    }
+  }
+
+  &.r_modular_cons_education {
+    background: url(../images/resume_img2.png) no-repeat 154px bottom;
+  }
+}
+
+//弹窗
+section.p_dialog {
+  width: 360px;
+
+  p.con {
+    width: 245px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+}

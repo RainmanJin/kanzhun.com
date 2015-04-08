@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>工资未找到</title>
+		<!--[if lte IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!--[if gt IE 9]><!-->
+		<script src="../js/jquery-2.1.0.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="../css/paid.css" />
+		<script src="../js/require.js" data-main="../js/site/ugc.js"></script>
+	</head>
+
+	<body>
+		
+		<header class="global">
+			<div class="header">
+				<a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+				<nav>
+					<a href="#">招聘</a>
+					<a href="#">公司</a>
+					<a href="#">工资</a>
+					<a href="#" class="current">面试</a>
+					<a href="#" class="mycomment">我要点评</a>
+				</nav>
+				<p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+			</div>
+		</header>
+
+		<section class="ps_header clearfix">
+			<div class="clearfix">
+				<dl class="select ps_salary_slt">
+					<dt>
+						<input type="text" name="" value="面试" readyonly="readyonly" /><span class="btn"><i></i></span>
+					</dt>
+					<dd>
+						<a href="#">2014年</a>
+                		<a href="#">2014年</a>
+                		<a href="#">2014年</a>
+                		<a href="#">2014年</a>
+					</dd>
+				</dl><input type="text" class="ps_ipt yibao" placeholder="产品经理"/><input type="text" class="ps_ipt city" placeholder="全部城市"/><input type="submit" value="搜索" class="btn_grey_ps search" />
+			</div>
+		</section>
+
+		<div class="container ps_con clearfix">
+			<section class="l_con clearfix">
+				<h3 class="r_tt">工资搜索结果</h3>
+				<div class="ps_title clearfix">
+					<em>找到0个结果</em><p><label>排序</label><input type="text" value="相关度" placeholder="相关度" readonly="readonly" /></p>
+				</div>
+				<dl class="suggestions">
+					<dt class="mb10">建议：</dt>
+					<dd class="grey_99">看看选择的条件是否合理</dd>
+					<dd class="grey_99">看看输入的文字是否有错误，或者换一个关键词试试</dd>
+				</dl>
+			</section>
+			<section class="r_con clearfix">
+				<h3 class="r_tt">热门职位</h3>
+				<ul class="jobs_show">
+					<li><a href="#">系统部_PHP研发工程师<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">广州分公司_高级销售经理<br /><span>百度在线网络技术有限公司 – 广州</span></a></li>
+					<li><a href="#">基础架构部_云安全研发工程师（上海）<br /><span>百度在线网络技术 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发师师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">系统部_PHP研发工程师<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">广州分公司_高级销售经理<br /><span>百度在线网络技术有限公司 – 广州</span></a></li>
+					<li><a href="#">基础架构部_云安全研发工程师（上海）<br /><span>百度在线网络技术 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+					<li><a href="#">LBS搜索部_前端研发工程师（上海）<br /><span>百度 – 上海</span></a></li>
+				</ul>
+				<p><a href="">查看更多</a></p>
+				<h3 class="r_tt mt20">热门公司面试</h3>
+				<ul class="salary_show">
+					<li><em>2496条工资</em><i class="hot">1</i><a href="">百度</a>- 4.0</li>
+					<li><em>2496条工资</em><i class="hot">2</i><a href="">腾讯</a>- 4.0</li>
+					<li><em>2496条工资</em><i class="hot">3</i><a href="">阿里巴巴</a>- 4.0</li>
+					<li><em>2496条工资</em><i>4</i><a href="">盛大集团</a>- 4.0</li>
+					<li><em>2496条工资</em><i>5</i><a href="">新浪</a>- 4.0</li>
+					<li><em>2496条工资</em><i>6</i><a href="">360安全卫士</a>- 4.0</li>
+					<li><em>2496条工资</em><i>7</i><a href="">唯美购</a>- 4.0</li>
+					<li><em>2496条工资</em><i>8</i><a href="">IBM</a>- 4.0</li>
+					<li><em>2496条工资</em><i>9</i><a href="">Google</a>- 4.0</li>
+					<li><em>2496条工资</em><i>10</i><a href=""n>搜狐畅游</a>- 4.0</li>
+				</ul>
+				<p class="mt10"><a href="">查看更多</a></p>
+			</section>
+		</div>
+
+	</body>
+</html>

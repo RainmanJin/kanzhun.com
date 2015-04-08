@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>kanzhun</title>
+<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+<div class="wrapper detail">
+	<div class="content">
+	<header class="page_hd">
+		<a href="index.html" class="top_back"><i></i>返回</a>
+		<strong>职位详情</strong>
+		<a href="city.html" class="fright">主页</a>
+	</header>
+	
+	<h1 class="job_h1"><span>百度 4.0分</span>产品助理</h1>
+
+	<h2 class="tt"><span>职位信息</span></h2>
+	<fieldset>
+		<ul class="col">
+		<li><span>工作经验</span><p>1-3年</p></li>
+		<li><span>学历要求</span><p>本科</p></li>
+		<li><span>工作类型</span><p>全职</p></li>
+		<li><span>工资范围</span><p>￥5000 -￥10000</p></li>
+		<li><span>其他</span><p>六险一金+发展前景+成长型+弹性上班时间</p></li>
+		</ul>
+	</fieldset>
+	
+	<h2 class="tt"><span>职位描述</span></h2>
+	<fieldset>
+		<p>1、负责用户端产品规划、设计以及持续改进，不断创新、挖掘、设计新的产品或功能；</p>
+		<p>2、负责产品需求收集、整理，撰写，进行用户需求分析，了解竞品动态与行业情况； </p>
+		<p>3、负责与seo部门对接，优化招聘的seo和sem； </p>
+		<p>4、进行持续的数据监控及分析，把握用户需求，不断对产品优化迭代。</p>
+	</fieldset>
+
+	<h2 class="tt"><span>职位要求</span></h2>
+	<fieldset>
+		<p>1、本科或以上学历，2年以上互联网产品工作经历；</p>
+		<p>2、擅长产品数据分析，能够从数据中挖掘内在的隐性规律，并找到改进方向；</p>
+		<p>3、熟悉各种需求分析工具， 熟练掌握axure等界面原型设计工具；</p>
+		<p>4、有良好的团队合作精神，较强的责任心、学习能力及抗压能力；</p>
+		<p>5、招聘类项目背景的经验优先。</p>
+	</fieldset>
+	
+	<a href="interview-details.html" class="btn_grey">立即申请职位</a>
+	<p class="grey ml10 mr10 mt10">看准网参考信息</p>
+	<ul class="v_menu">
+		<li><a href="#">查看“产品助理”的工资范围 <i class="arrow_g"></i></a></li>
+		<li><a href="#">查看“产品助理”的面试经历 <i class="arrow_g"></i></a></li>
+		<li><a href="#">查看“百度”的公司信息 <i class="arrow_g"></i></a></li>
+	</ul>
+	</div>
+</div>
+<footer class="page_ft">
+	<p>看准网移动版 m.kanzhun.com</p>
+	<p>电脑版  |  移动版</p>
+</footer>
+</body>
+</html>
+
+

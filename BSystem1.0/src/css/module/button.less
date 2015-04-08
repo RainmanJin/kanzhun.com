@@ -1,0 +1,238 @@
+@import "../common/var";
+
+.btn_grey{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	background: @btn_bgs;
+	border: 1px solid @grey_e5;
+	input{
+		height: 30px;
+		border: 0;
+		background-color: transparent;
+		padding: 0 25px;
+		cursor: pointer;
+		overflow: visible;
+	}
+}
+.btn_grey_small{
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	background: @btn_bgs;
+	border: 1px solid @grey_e5;
+	input{
+		height: 24px;
+		border: 0;
+		background-color: transparent;
+		padding: 0 25px;
+		cursor: pointer;
+		overflow: visible;
+	}
+}
+.sbm_grey{
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  background-color: #d9d9d9;
+  border: 0;
+  width: 76px;
+  border-radius: 3px; 
+  vertical-align: middle;
+  &:hover{
+    background-color: #86b839;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+.btn_green{
+	display: inline-block;
+	height: 42px;
+	line-height: 42px;
+	background-color: #86b839;
+	border: 0;
+	width: 240px;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 3px;
+	text-align: center;
+	&:hover{
+		background-color: #96ca46;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	&.s{
+		width: 54px;
+	}
+	&.m{
+		width: 104px;
+	}
+	&.b{
+		width: 204px;
+	}
+}
+.btn_orange{
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  background-color: @orange;
+  border: 0;
+  width: 154px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+  text-align: center; 
+  &:hover{
+    cursor: pointer;
+    text-decoration: none;
+  }   
+}
+//鼠标经过变绿
+.grey_green {
+	border: 1px solid #dfdfdf;
+  height: 33px;
+  line-height: 33px;
+  background: @btn_bgs repeat-x 0 -42px;
+  display: inline-block;
+  padding: 0 25px;
+  text-align: center;
+  font-size: 14px;
+  color: @def;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  input, button {
+    height: 33px;
+    cursor: pointer;
+    display: block;
+    //padding: 0 30px;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    overflow: visible;
+    color: @def;
+  }
+
+  &:hover {
+  	border-color: @green;
+  	background: @green url('');
+  	color: #fff;
+  	text-decoration: none;
+  }
+}
+
+.btn_grey_b {
+  border: 1px solid #dfdfdf;
+  height: 33px;
+  line-height: 33px;
+  background: @btn_bgs repeat-x 0 -42px;
+  display: inline-block;
+  //padding: 0 25px;
+  text-align: center;
+  font-size: 14px;
+  color: @def;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  input, button {
+    height: 33px;
+    cursor: pointer;
+    display: block;
+    padding: 0 25px;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    overflow: visible;
+    color: @def;
+  }
+
+  &:hover {
+    border: 1px solid #d3d3d3;
+    background: #f6f6f6 url('');
+    text-decoration: none;
+  }
+}
+
+.btn_grey_s {
+  border: 1px solid #dfdfdf;
+  height: 24px;
+  line-height: 24px;
+  background: @btn_bgs repeat-x 0 -88px;
+  display: inline-block;
+  padding: 0 26px;
+  text-align: center;
+  color: @def;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  input, button {
+    height: 24px;
+    cursor: pointer;
+    display: block;
+    //padding: 0 26px;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    overflow: visible;
+    color: @def;
+  }
+
+  &:hover {
+    border: 1px solid #d3d3d3;
+    background: #f6f6f6 url('');
+    text-decoration: none;
+  }
+}
+
+//a标签button
+.btn_grey_a_s{
+  border: 1px solid #dfdfdf;
+  height: 24px;
+  line-height: 24px;
+  background: @btn_bgs;
+  display: inline-block;
+  padding: 0 26px;
+  text-align: center;
+  color: @def;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  &:hover {
+    border: 1px solid #d3d3d3;
+    background: #f6f6f6 url('');
+    text-decoration: none;
+  }
+}
+.btn_green_a_1{
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  background-color: #ededed;
+  border: 0;
+  width: 100px;
+  color: #898888;
+  border-radius: 3px; 
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #86b839;
+  }
+}
+
+//简历库中的button
+.r_btn_green {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 35px;
+  background-color: @green;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}

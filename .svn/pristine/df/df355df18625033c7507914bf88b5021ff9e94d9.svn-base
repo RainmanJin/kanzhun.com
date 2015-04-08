@@ -1,0 +1,33 @@
+@import "module/reset";
+@import "common/common";
+
+#content{
+  position: relative;
+  width: 100%;
+  .bg{
+    width: 100%;
+    display: block;
+  }
+
+  .logo{
+    position: absolute;
+    width: 13%;
+    margin: 3%;
+    top: 0px;
+    left: 0px;
+  }
+
+
+  .btn_wrap{
+    position: absolute;
+    left: 26%;
+    top: 80%;
+    text-align: center;
+    width:48%;
+    padding: 0px;
+
+    img{
+      width: 100%;
+    }
+  }
+}

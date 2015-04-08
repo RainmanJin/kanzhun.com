@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/rank.css">
+
+</head>
+<body>
+<header>
+    <h3></h3>
+    <img src="images/logo.png" class="logo"/>
+    <img src="images/q1/person.png" class="person"/>
+</header>
+<section id="content">
+    <h2>加班行业排行榜</h2>
+    <div class="ranks">
+        <ol>
+            <li>
+                <span class="indu" id="indu1">1.IT互联网 </span>    <span class="time">平均每人每天<em>5.6</em>小时</span>
+                <hr />
+            </li>
+            <li>
+                <span class="indu" id="indu2">2.金融 </span>        <span class="time">平均每人每天<em>5.6</em>小时</span>
+                <hr />
+            </li>
+            <li>
+                <span class="indu" id="indu3">3.电子通信硬件 </span> <span class="time">平均每人每天<em>5.6</em>小时</span>
+                <hr />
+            </li>
+            <li>
+                <span class="indu">4.广告传媒文化 </span> <span class="time">平均每人每天<em>5.6</em>小时</span>
+                <hr />
+            </li>
+            <li>
+                <span class="indu">5.机械制造</span>     <span class="time">平均每人每天<em>5.6</em>小时</span>
+            </li>
+        </ol>
+    </div>
+
+</section>
+<section id="oper">
+    <a href="#" class="share">立刻分享</a>
+    <a href="#" class="worktime">我的加班时间</a>
+</section>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>查看朋友公司</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="stylesheet" href="css/report.css"/>
+</head>
+
+<body>
+<div class="form-tt" style="background-image:url(images/tt.jpg)">邀请朋友来帮你解锁， <br/>凑齐<b>3个</b>朋友，即可不限次数使用查询功能！</div>
+
+<p class="mt20 p10">已经有２个朋友帮助了你，只差一个了！</p>
+<ul class="friends">
+  <li class="on"></li><li></li><li></li>
+</ul>
+<p class="p10">
+  <a class="btn" href="">立即分享</a>
+  <a class="btn btn-grey mt10" href="">返回首页</a>
+  <a class="btn mt10" style="background-color:#d53738" href="#">雾霾马拉松找终点</a>
+</p>
+
+<p class="kz">
+  <img src="images/kz.jpg"  >
+</p>
+
+<script src="js/zepto.js"></script>
+<script src="js/wx.js"></script>
+</body>
+</html>

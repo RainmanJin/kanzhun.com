@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>看准 - 运营管理系统</title>
+<!--[if lte IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/company.css" />
+<script src="js/require.js" data-main="js/site/company.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="#" class="logo"><img src="images/logo.jpg" width="260" height="60" /></a>
+	<div class="u">月月，下午好！<span>|</span><a href="">设置</a><span>|</span><a href="">退出</a></div>
+	<nav>
+		<a href="">审核任务</a>
+		<a href="" class="current">公司列表</a>
+		<a href="">用户管理</a>
+		<a href="">账户管理</a>
+	</nav>
+</header>
+
+<section class="container company w_990">
+	<h4 class="breadcrumb">OP-公司列表 &gt; <a href="#">公司详情</a> &gt; <a href="#">公司评论列表</a> &gt;</h4>	
+	
+	<table class="company_map tb_grey mt15" cellspacing="0" border="0" cellpadding="0" width="100%" >
+		<tr>
+			<td>100013阿里巴巴</td>
+			<td><a href="#" class="blue">基础信息</a><em class="new"></em></td>
+			<td><a href="#" class="blue">评论</a> 123 <b class="f_red">2</b></td>
+			<td><a href="#" class="blue">薪酬</a> 123 <b class="f_red">2</b></td>
+			<td><a href="#" class="blue">面试</a> 123 <b class="f_red">2</b></td>
+			<td><a href="#" class="blue">照片</a> 123 <b class="f_red">2</b></td>
+		</tr>
+	</table>
+	
+	<p class="grey_line mt15"></p>
+
+	
+	<div class="comment_status">
+		<form action="">
+			<p class="status_info"><label>评论编号：</label> 10012 <br>
+				<label>提交时间：</label> 2012-09-24 <br>
+				<label>设置权限：</label> <input type="text" class="def" /><input type="button" class="btn_grey" value="保存" />
+			</p>
+			
+			<p class="status_event">
+				<a href="" class="btn_grey btn_err"><span></span>驳回</a>
+				<a href="" class="btn_grey btn_ok"><span></span>保存(2)并发布</a>
+			</p>
+			<!-- 
+			<p class="status_view">
+				已发布 <img src="images/status_ok.png" />
+			</p>
+
+			<p class="status_view">
+				已驳回 <img src="images/status_err.png" />
+			</p>
+			 -->
+		</form>
+	</div>
+
+	<dl class="evalution">
+		<dt>
+			<p><img src="images/status_ok.png" />&nbsp;&nbsp;&nbsp;&nbsp;获得职位</p>
+			<p><img src="images/status_err.png" />&nbsp;&nbsp;&nbsp;&nbsp;未获得职位</p>
+			<p>困难的面试</p>
+			<p>感受很好的面试</p>
+		</dt>
+		<dd>
+			<p><span class="fright">有用（9）没用（2）</span>产品经理 在易宝支付工作过1年</p>
+			<textarea class="def">我是公司优点...</textarea>
+			<textarea class="def hightlight">我是公司优点...</textarea>
+			<textarea class="def">我是公司优点...</textarea>
+			<textarea class="def">我是公司优点...</textarea>
+		</dd>
+	</dl>
+	
+</section>
+
+
+</body>
+</html>

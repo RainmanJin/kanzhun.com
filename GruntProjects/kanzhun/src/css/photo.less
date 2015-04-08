@@ -1,0 +1,166 @@
+@import "common/var";
+@import "modules/company/common";
+@import "modules/company/cmp_titles";
+//@import "modules/dialog";
+@import "modules-v2/dialog-v2";
+@import "modules/comment";
+@import "modules/share";
+@import "modules/company/financing";  //公司融资信息
+@import '../v2/css/company/piece/co-header';  //公司级页面头部样式
+
+.photo_search{
+	background-color: #f3f3f3;
+	height: 46px;
+	position: relative;
+	top: 0;
+	left: -20px;
+	width: 625px;
+	padding: 10px 20px 0;
+	margin-top: 10px;
+	z-index: 11;
+
+	.select{
+		width: 194px;
+		float: right;
+
+		dd{
+			z-index: 12;
+		}
+	}
+}
+
+.send_photo{
+	background-color: #f3f3f3;
+	padding: 15px 20px;
+	width: 645px;
+	position: relative;
+	left: -20px;
+	top: 0;
+
+	.btn_grey_b{
+		float: left;
+	}
+}
+
+.gallery{
+	background-color: #f3f3f3 ;
+	margin: 20px auto;
+	border: 1px solid @grey_e7;
+	padding-bottom: 20px;
+
+	.list{
+		background-color: #fff;
+		height: 70px;
+		padding: 10px 18px 0;
+		border-bottom: 1px solid @grey_e7;
+
+		a{
+			width: 19px;
+			height: 52px;
+			margin-top: 4px;
+			float: left;
+			background-image: url(../images/photo-btn.png);
+			background-repeat: no-repeat;
+			background-color: transparent;
+
+			&.prev{
+				background-position:  -81px 14px;
+				&:hover{
+					background-position: -102px 14px;
+				}
+			}
+
+			&.next{
+				background-position: -21px 14px;
+				&:hover{
+					background-position: 1px 14px;
+				}
+			}
+
+			&.forbidden_p{
+				cursor: default;
+				background-position:  -62px 14px;
+				&:hover{
+					background-position: -62px 14px;
+				}
+			}
+			&.forbidden_n{
+				cursor: default;
+				background-position:  -41px 14px;
+				&:hover{
+					background-position: -41px 14px;
+				}
+			}
+		}
+
+		ul{
+			width: auto;
+			height: 62px;
+			position: absolute;
+			z-index: 2;
+			white-space: nowrap;
+			left: 0;
+			top: 0;
+		}
+
+		li{
+			float: left;
+			cursor: pointer;
+			padding: 5px;
+			background-color: #fff;
+			.transition(background-color .2s linear);
+			&.current{
+				background-color: #f9c07f;
+			}
+		}
+
+		img{
+			border: 1px solid #fff;
+			width: 50px;
+			height: 50px;
+			.box-shadow(1px 1px 4px #ccc);
+		}
+	}
+
+	.list_w{
+		float: left;
+		overflow: hidden;
+		zoom:1;
+		display: inline;
+		margin: 0 5px;
+		width: 558px;
+		position: relative;
+		height: 62px;
+		z-index: 3;
+	}
+
+	figure{
+		margin: 0 auto;
+		background: url(../images/photo-frame.jpg) no-repeat 15px 14px;
+
+		ul{
+			padding: 30px 0 10px 30px;
+			
+		}
+
+		li{
+			display: none;
+
+			&.current{
+				display: block;
+			}
+		}
+		img{
+			width: 575px;
+		}
+		.gallery_bottom{
+			background: url(../images/photo-frame.jpg) no-repeat 15px bottom;
+			height: 20px;
+		}
+	}
+
+	figcaption{
+		padding: 5px 35px 5px 0;
+	}
+}
+

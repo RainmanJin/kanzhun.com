@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/zyb.css"/>
+<title>DEMO</title>
+</head>	
+<body>
+  <header>
+    <img src="images/name.png">
+  </header>
+
+  <div class="container">
+    <dl class="test-list">
+      <dt><a href="#">互联网职业病</a></dt>
+      <dd><a href="#" class="w">重度 8/9</a></dd>
+      <dt><a href="#">职场拖延症</a></dt>
+      <dd><a href="#">立即去体检</a></dd>
+      <dt><a href="#">职场强迫/选择恐惧症</a></dt>
+      <dd><a href="#" class="w">重度 8/9</a></dd>
+      <dt><a href="#">懒人综合症</a></dt>
+      <dd><a href="#">立即去体检</a></dd>
+      <dt><a href="#">上班三大症之强迫症</a></dt>
+      <dd><a href="#">立即去体检</a></dd>
+      <dt><a href="#">上班三大症之选择恐惧症</a></dt>
+      <dd><a href="#">立即去体检</a></dd>
+    </dl>
+
+    <p class="pt15 mt10">
+      <a href="#" class="purple-btn">下载蜗牛，与病友好好聊聊</a>
+    </p>
+
+    <p class="t-center pt15 purple">
+      蜗牛 看准网旗下匿名职场社区App
+    </p>
+    <p>&nbsp;</p>
+  </div>
+
+  <script src="js/lib/zepto.js"></script>
+  <script src="js/site/zyb.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,42 @@
+//公司模块-右侧-热门职位/面经
+
+@import "../../../../css/common/var";
+
+.sy_hotpost {
+  padding:15px;
+  margin-top:15px;
+  h2{
+    font-size: 16px;
+    color: @grey_33;
+    border-bottom: 1px solid @grey_e7;
+    padding-bottom: 15px;
+    line-height: normal;
+  }
+
+  .item {
+    overflow: hidden;
+    zoom:1;
+    li{
+      margin-top: 15px;
+      border-bottom: 1px dashed @grey_e7;
+      padding-bottom: 15px;
+      h5{
+        font-size: 14px;
+        color: @grey_66;
+        font-weight: normal;
+      }
+      div {
+        margin-top:5px;
+        color: @placeholder;
+        span {
+          float: right;
+          color: #e85253;
+          font-size: 14px;
+        }
+      }
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+}

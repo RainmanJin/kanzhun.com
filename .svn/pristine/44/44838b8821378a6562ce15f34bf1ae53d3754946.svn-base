@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>知己-首页</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]>
+  <!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+  <link rel="stylesheet" href="../css/zhiji.css" />
+  <script src="../js/site/zhiji.js"></script>
+</head>
+
+<body>
+  <header class="global">
+    <div class="header">
+      <a href="#" >
+        <img src="../images/logo.jpg" width="136" height="40" class="logo" />
+      </a>
+      <p class="loginfo">
+        <a href="#">我的看准</a> <i>|</i>
+        <a href="#">退出</a>
+      </p>
+    </div>
+  </header>
+  <section class="index_info">
+    <p>
+      上次体检时间2014年12月17日，已经回答32题，
+      <a href="javascript:;">继续回答</a>
+      | 重新测评 | 清除记录
+    </p>
+    <a class="close" href="javacript:;"></a>
+  </section>
+  <section class="banner">
+    <div class="explain">
+      <p class="p3">大五特质</p>
+      <p class="p3">潜能矩阵</p>
+      <div class="enter">
+        <a class="round" href="javascript:;">
+          <span>我要测试</span> <i class="right"></i>
+        </a>
+      </div>
+      <p class="look">
+        <a href="javascript:;">上次体检结果</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="index_content">
+    <div class="content_img"></div>
+    <ul class="content_info">
+      <li class="li1">
+        <h3>你很迷茫？</h3>
+        <p>困惑于职业转型期或上升期的迷茫</p>
+      </li>
+      <li class="li2">
+        <h3>全面评测</h3>
+        <p>困惑于职业转型期或上升期的迷茫？</p>
+      </li>
+      <li class="li3">
+        <h3>全面评测</h3>
+        <p>通过N、E、O、A、C五个维度对你进行分析和描述</p>
+      </li>
+    </ul>
+  </section>
+  <section class="p_dialog" style="display:block">
+    <div class="dialog_con">
+      <a class="dialog_close"href="javascript:;"></a>
+      <h3>提示</h3>
+      <p class="t-center mb10">
+        您上次体检的时间为 2014/06/08
+        <br>已经回答32题</p>
+      <p class="t-center mt25">
+        <a class="btn_grey_s" href="javascript:;">继续上次体检</a>
+        &nbsp;&nbsp;
+        <a class="btn_grey_s" href="javascript:;">重新开始体检</a>
+      </P>
+    </div>
+  </section>
+  <footer class="footbottom">
+    <nav>
+      <a ka="footer-about" href="/about.html" rel="nofollow">关于我们</a>
+      <a ka="footer-feedback" href="/contact_us.html" rel="nofollow">意见反馈</a>
+      <a ka="footer-help" href="/help.html" rel="nofollow">使用帮助</a>
+      <a ka="footer-user" href="/term.html" rel="nofollow">用户协议</a>
+      <a ka="footer-weixin" href="javascript:;" class="micro_message" rel="nofollow">
+        看准网微信
+        <i></i>
+      </a>
+      <a ka="footer-weibo" href="http://www.weibo.com/fenzhi" target="_blank" rel="nofollow">看准网微博</a>
+      <a ka="footer-mobile" href="http://m.kanzhun.com/" target="_blank" rel="nofollow" id="toMobile" class="a_green" style="color: #7cb228;">移动版</a>
+    </nav>
+    <p>
+      Copyright© 2014 kanzhun.com京ICP备14013441号-1 , kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。
+    </p>
+  </footer>
+</body>
+</html>

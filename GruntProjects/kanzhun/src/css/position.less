@@ -1,0 +1,674 @@
+@import "common/var";
+@import "modules/company/common";
+@import "modules/prompt_box";   //离开时间
+@import "modules/job/po_header";   //职位页的头部
+@import "modules/job/po_rightcon";  //职位页右侧
+/* @import "modules/job/po_salarytable";  //职位工资 */
+@import "modules/company/salary_desc"; //工资图表
+@import "modules/job/others";   //其他
+@import "modules/job/ipt_salary_details";  //工资明细
+@import "modules/job/po_charts";    //图表
+@import "modules/comment";
+//@import "modules/component";      
+@import "modules/share";
+@import "modules/company/interview_detail";  //面试详情
+@import "modules/company/select_interview";  //面试信息筛选条件
+@import "modules/company/send_views";  //匿名发一条面经
+@import "modules/job/po_joblist";   //
+@import "modules/job/po_dialog";
+
+p {
+  &.salaryComment {
+    padding-left: 37px;
+
+    a {
+      margin-left: 15px;
+    }
+  }
+}
+
+div {
+  &.salaryrange {
+    padding-bottom: 30px;
+    color: @grey_99;
+    overflow: hidden;
+    zoom: 1;
+    span {
+      display: block;
+      float: left;
+      vertical-align: top;
+      color: #eb7676;
+      font-weight: bold;
+      margin-right: 30px;
+
+      em {
+        font-size: 26px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1em;
+      }
+    }
+    
+    p {
+      display: block;
+      float: left;
+      padding-top: 5px;
+      line-height: 1em;
+      &.s_average{
+        i {
+          display: inline-block;
+          overflow: hidden;
+          font-size: 0;
+          line-height: 0;
+          width: 10px;
+          height: 10px;
+          background-color: #c5dcf2;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &.salaryLevelcon {
+    float: left;
+    padding: 20px 0 0 15px;
+  }
+}
+
+aside.s_account {
+  margin-left: 460px;
+
+  dt {
+    padding-bottom: 5px;
+  }
+
+  dd {
+    padding-bottom: 5px;
+    color: @grey_99;
+
+    i {
+      float: left;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      width: 5px;
+      height: 5px;
+      background-color: @grey_99;
+      border-radius: 5px;
+      margin: 7px 5px 0 0;
+    }
+
+    p {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+  }
+
+  p.s_average {
+    i {
+      display: inline-block;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #c5dcf2;
+      margin-right: 5px;
+    }
+  }
+}
+
+div {
+  //按条件筛选（灰色横条）
+  &.view_search{
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    width: 645px;
+    position: relative;
+    left: -20px;
+    top: -1px;
+
+    .field_b{
+      float: left;
+      width: 230px;
+      margin-right: 15px;
+    }
+
+    .select{
+      float: left;
+      width: 180px;
+      margin-right: 15px;
+
+      dt {
+        input {
+          padding-left: 5px;
+        }
+      }
+    }
+    
+    .btn_grey_l{
+      float: left;
+      width: 120px;
+      padding: 0;
+
+      input{
+        padding: 0;
+        width: 120px;
+        text-align: center;
+      }
+    }
+
+    .search_close{
+      float: right;
+      margin-top: 12px;
+      color: @blue;
+      cursor: pointer;
+    }
+
+    .search_cancel{
+      display: block;
+      width:4em;
+      float: right;
+      margin-top: 12px;
+    }
+
+    .search_hot{
+      position: relative;
+      clear:both;
+      overflow: hidden;
+      zoom:1;
+      line-height: 18px;
+      padding: 10px 0 0 0;
+
+      span{
+        float: left;
+        margin-top: 3px;
+      }
+
+      ul {
+        width: 530px;
+        float: left;
+        overflow: hidden;
+
+        li {
+          float: left;
+          line-height: 1em;
+          margin: 5px 0 5px -6px;
+          padding: 0 10px;
+
+          a {
+            white-space: nowrap;
+          }
+
+          &.morejobs {
+            display: none;
+          }
+        }
+      }
+
+      a{      
+        &.options {
+          position: absolute;
+          right: 0;
+          top: 13px;
+          color: @def;
+          i {
+            float: none;
+            display: inline-block;
+            font-size: 0;
+            zoom: 1;
+            width: 9px;
+            height: 5px;
+            margin-left: 2px;
+            overflow: hidden;
+            vertical-align: middle;
+            .transition(all .2s linear);
+            .transform(rotate(0deg));
+            background: transparent url(../images/trangle.png) no-repeat;
+
+            &.toggles {
+              .transform(rotate(180deg));
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//职位概况
+dl {
+  &.po_info {
+    overflow: hidden;
+    *zoom: 1;
+
+    a.edit {
+      top: 0;
+      &:hover{
+      .i_correction{
+        background-position: -16px -560px;
+      }
+    }
+    }
+
+    dt {
+      h3 {
+        font-size: 14px;
+        line-height: 14px;
+        i {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          line-height: 0;
+          font-size: 0;
+          margin-right: 10px;
+          background-color: @green;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    dd {
+      overflow: hidden;
+      padding: 0 0 30px 22px;
+
+      &.ponsibility {
+        i {
+          color: @blue;
+        }
+
+        span.more {
+          i {
+            margin: 0;
+          }
+        }
+      }
+
+      &.expertise {
+        span.skill {
+          overflow: hidden;
+          position: relative;
+          display: inline-block;
+          margin: 0 15px 10px 0;
+          padding-right: 20px;
+          height: 29px;
+          line-height: 29px;
+          background: url(../images/positionimgs/icons.png) no-repeat right -22px;
+
+          b {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 29px;
+            width: 10px;
+            background: url(../images/positionimgs/icons.png) no-repeat left -22px;
+          }
+
+          em {
+            display: block;
+            padding: 0 0 0 10px;
+            line-height: 29px;
+
+            &.hasclose {
+              margin-right: 5px;
+            }
+          }
+
+          i {
+            position: absolute;
+            right: 9px;
+            top: 9px;
+            width: 11px;
+            height: 11px;
+            font-size: 0;
+            line-height: 0;
+            background: url(../images/positionimgs/icons.png) no-repeat left top;
+            cursor: pointer;
+          }
+
+        }
+
+        a.addskill {
+          display: inline-block;
+          margin: 0 15px 0 0;
+          width: 149px;
+          height: 29px;
+          line-height: 29px;
+          text-align: center;
+          background: url(../images/positionimgs/icons.png) no-repeat right -56px;
+          cursor: pointer;
+          overflow: hidden;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      p {
+        &.submitskill {
+          padding-top: 10px;
+        }
+
+        a.btn_o_l {
+          padding: 0 25px;
+          vertical-align: middle;
+        }
+      }
+
+      input.addskill {
+        width: 220px;
+        height: 14px;
+        line-height: 14px;
+        padding: 9px 10px;
+        margin-right: 15px;
+        background-color: #fff;
+        border-width: 2px 1px 1px 2px;
+        border-color: #cfcfcf;
+        border-style: solid;
+        vertical-align: middle;
+      }
+      
+    }
+  }
+}
+
+//标题
+div.op_ttt {
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: 1px solid @grey_e7;
+  //overflow: hidden;
+  *zoom: 1;
+  h2 {
+    font-size: 16px;
+    line-height: 16px;
+    float: left;
+    border-bottom: 1px solid @green;
+    margin-bottom: -1px;
+    padding-bottom: 5px;
+  }
+  .fright{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+  }
+}
+
+p.charts_tt {
+  width: 500px;
+  margin: 0 auto;
+  i {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+    background-color: #78b3ec;
+  }
+}
+
+//问答
+ul.l_questions {
+  line-height: 2em;
+  
+  a {
+    float: left;
+   .ellipsis(ellipsis);
+    width: 500px; 
+    color: @def;
+  }
+}
+
+//就业趋势页面
+dl {
+  &.trend {
+    overflow: hidden;
+    *zoom: 1;
+
+    dt {
+      float: left;
+    }
+
+    dd {
+      margin: 80px 0 0 500px;
+      width: 6em;
+      padding: 20px;
+      background-color: #fdfaf3;
+    }
+  }
+
+  &.data_explain {
+    margin-left: 60px;
+    padding: 10px;
+    border: 1px solid @grey_e7;
+
+    dt {
+      padding-bottom: 5px;
+    }
+
+    dd {
+      font-size: 12px;
+      color: #797979;
+      overflow: hidden;
+      *zoom: 1;
+
+      i {
+        float: left;
+        margin-top: 5px;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+        width: 5px;
+        height: 5px;
+        border-radius: 3px;
+        background-color: @grey_99;
+      }
+
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+ul {
+  &.trend_selects {
+    padding-left: 52px;
+
+    li {
+      float: left;
+      height: 27px;
+      line-height: 27px;
+
+      i {
+        &.box {
+          display: inline-block;
+          font-size: 0;
+          line-height: 0;
+          width: 11px;
+          height: 11px;
+          margin-right: 5px;
+        }
+
+        &.blue_box {
+          background-color: #c5dcf2;
+          margin-left: 8px;
+        }
+
+        &.warning {
+          display: inline-block;
+          font-size: 0;
+          line-height: 0;
+          overflow: hidden;
+          width: 20px;
+          height: 17px;
+          margin-right: 5px;
+          background: url(../images/positionimgs/icons.png) no-repeat -16px 0; 
+          vertical-align: -1px;
+        }
+      }
+
+      dl {
+        width: auto;
+
+        dt {
+          span {
+            display: inline-block;
+            font-size: 0;
+            line-height: 0;
+            width: 11px;
+            height: 11px;
+            margin-right: 5px;
+            background-color: #b0b0b2;
+          }
+        }
+      }
+    }
+  }
+  //如何找人
+  &.howfind {
+    overflow: hidden;
+    *zoom: 1;
+    padding-top: 10px;
+
+    li {
+      float: left;
+
+      p {
+        padding-left: 20px;
+      }
+    }
+  }
+//相关就业趋势
+  &.relevant_trend {
+    overflow: hidden;
+    *zoom: 1;
+    padding-top: 10px;
+
+    li {
+      float: left;
+      .ellipsis(ellipsis);
+      width: 135px;
+      margin-right: 25px;
+      padding-bottom: 10px;
+
+      a {
+        color: @def;
+      }
+    }
+  }
+}
+
+div.hot_ranking {
+  overflow: hidden;
+  *zoom: 1;
+
+  dl {
+    float: left;
+    width: 310px;
+
+    dt {
+      padding-bottom: 10px;
+
+      em {
+        &.green {
+          color: @green;
+        }
+
+        &.yellow {
+          color: #ebc657;
+        }
+      }
+    }
+
+    dd {
+      overflow: hidden;
+      *zoom: 1;
+      margin-bottom: 10px;
+
+      i {
+        float: left;
+        width: 16px;
+        height: 16px;
+        margin: 2px 10px 0 0;
+        line-height: 16px;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        background-color: #d7d7d7;
+        border-radius: 2px;
+
+        &.green {
+          background-color: @green;
+        }
+
+        &.yellow {
+          background-color: #ebc657;
+        }
+      }
+
+      h2 {
+        display: block;
+        float: left;
+        width: 2em;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: normal;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      ul {
+        float: left;
+        width: 140px;
+        height: 10px;
+        padding-top: 5px;
+
+        li {
+          float: left;
+          height: 10px;
+          background-color: @green;
+
+          &.yellow {
+            background-color: #ebc657;
+          }
+        }
+      }
+
+      em {
+        .ellipsis(ellipsis);
+        width: 90px;
+        text-align: right;
+      }
+
+      &.sorry_nodata {
+        p {
+          padding: 120px 10px 0 20px;
+          font-size: 20px;
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+section.l_con {
+  div.noresult {
+    padding: 45px 0 55px 145px;
+    background: url(../images/positionimgs/po_img7.jpg) no-repeat 145px 45px;
+
+    p {
+      padding-left: 95px;
+      &.po_con_one {
+        font-size: 18px;
+        padding-top: 10px;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<!--公司模块-评论功能-->
+
+<div class="wrap_style comments_con mb30">
+  <input type="hidden" name="companyId" value="11514">
+  <input type="hidden" name="originId" value="737321">
+  <input type="hidden" name="type" value="6">
+  <input type="hidden" name="parentId" value="737321">
+  <input type="hidden" name="parentFloor" value="0">
+  <p class="l_tt_16 mb15">评论</p>
+  <p class="line"></p>
+  <dl class="ipt_comments mb10">
+    <dt><img src="../../images/view_v2-img/xiaoren.jpg" alt=""><span></span></dt>
+    <dd><span class="tangle_init angle_wrap"></span><span class="tangle_init angle_inner"></span><textarea class="content_ipt" name="commentContent" placeholder="请输入评论内容" style="height: 4.5em;"></textarea></dd>
+  </dl>
+  <p class="t-right"><b class="red mr20 none">发布失败:-(</b><span class="cmt_w mr10">您还可以输入<strong class="ok">138</strong>字</span><span class="btn_grey_b pub_cmt"><input type="button" value="提交评论"></span></p>
+  <ul class="mt15 comment_list" id="reviewsWrapper">
+    <li>
+      <div class="con">
+        <span class="avatar18"><i></i></span>
+        <p><em>看准用户 &nbsp;2015-01-21</em>还不错</p>
+        <aside>
+          <em>1楼</em><a href="" class="add_reply" data-pid="757275" data-pnum="1">回复</a>
+          <a href="" class="helpful mark" data-mtype="useful.json" data-pid="757275" ka="user-pk1"><span class="img helpful"></span><i>0</i></a>
+        </aside>
+      </div>
+      <div class="reply">
+        <div>
+          <div>
+            <textarea class="content_ipt" name="commentContent" placeholder="回复评论"></textarea>
+          </div>
+        </div>
+        <p class="t-right clear">
+          <b class="red mr20 none">发布失败 : ( </b><span class="cmt_w mr20">您还可以输入<strong class="ok">140	</strong>字</span><a href="javascript:;" class="cancel_reply mr20">取消</a><span class="btn_grey_b pub_cmt" data-pid="757275" data-pnum="1"><input type="button" ka="print" value="回复"></span>
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <title>创建账号</title>
+  <!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/lib/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/business.css" />
+</head>
+<body>
+<nav class="nav_l">
+  <dl>
+    <dt>
+      <img src="../../images/b_logo.png">
+    </dt>
+    <dd><a href="#"><em><i class="i i_home"></i></em>首页</a></dd>
+    <dd><a href="#" class="current"><em><i class="i i_account"></i></em>账号管理</a></dd>
+    <dd><a href="#"><em><i class="i i_report"></i></em>报告管理</a></dd>
+    <dd><a href="#"><em><i class="i i_data"></i></em>数据统计</a></dd>
+    <dd><a href="#"><em><i class="i i_temp"></i></em>定制模版</a></dd>
+    <dd><a href="#"><em><i class="i i_set"></i></em>系统管理</a></dd>
+  </dl>
+</nav>
+<div class="body_r">
+  <header class="business_header">
+      <div class="inner_r">
+        <i class="i i_person"></i>
+        alicesu<em>|</em><a href="javascript:;"><i class="i i_quit"></i> 退出</a>
+      </div>
+  </header>
+  <section class="content">
+    <div  class="content_inner">
+      <ul class="cNav clearfix">
+        <li class="current"><a href="#">社会招聘</a></li>
+        <li><a href="#">校园招聘</a></li>
+      </ul>
+      <div class="account_step">
+        <h2 class="step_h2 mt30">完成三步即可创建测评</h2>
+        <div data-type="school_step_1">
+          <h3 class="step_h3 mt20"><i class="i i_round">1</i>选择测评岗位<a class="green_btn fright" href="#">自定义测评模版</a></h3>
+          <ul class="accountList clearfix">
+            <li class="check_on">
+              <div class="bg"></div>
+              <a href="javascript:;">
+                <h4>销售</h4>
+                <i class="i i_mAccount"></i>
+                <div class="detail">
+                  <div class="detailInner">
+                    <p>测评维度：</p>
+                    <p>社交热情；性格内外向；成功驱力；社交倾向；数学运用；言语理解；</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="custom">
+              <div class="bg"></div>
+              <a href="javascript:;">
+                <i class="i i_corner"></i>
+                <h4>销售</h4>
+                <i class="i i_mOAccount"></i>
+                <div class="detail">
+                  <div class="detailInner">
+                    <p>测评维度：</p>
+                    <p>社交热情；性格内外向；成功驱力；社交倾向；数学运用；言语理解；</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div data-type="social_step_1" style="display: none">
+          <h3 class="step_h3 mt20"><i class="i i_round">1</i>选择测评岗位<a class="green_btn fright" href="#">自定义测评模版</a></h3>
+          <ul class="accountList clearfix">
+            <li class="check_on">
+              <div class="bg"></div>
+              <a href="javascript:;">
+                <h4>销售</h4>
+                <i class="i i_mAccount"></i>
+                <div class="detail">
+                  <div class="detailInner">
+                    <p>测评维度：</p>
+                    <p>社交热情；性格内外向；成功驱力；社交倾向；数学运用；言语理解；</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="custom">
+              <div class="bg"></div>
+              <a href="javascript:;">
+                <i class="i i_corner"></i>
+                <h4>销售</h4>
+                <i class="i i_mOAccount"></i>
+                <div class="detail">
+                  <div class="detailInner">
+                    <p>测评维度：</p>
+                    <p>社交热情；性格内外向；成功驱力；社交倾向；数学运用；言语理解；</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <h3 class="step_h3 mt20"><i class="i i_round">2</i>添加测评工具</h3>
+        <ul class="accountList clearfix">
+          <li>
+            <a href="javascript:;">
+              <h4>销售</h4>
+              <i class="i i_bag"></i>
+              <div class="detail">
+                <div class="detailInner">
+                  <p>测评维度：</p>
+                  <p>社交热情；性格内外向；成功驱力；社交倾向；数学运用；言语理解；</p>
+                </div>
+              </div>
+            </a>
+          </li>
+         </ul>
+
+        <h3 class="step_h3 mt20"><i class="i i_round">3</i>输入测评数量<input class="ipt ml15" type="text"></h3>
+        <div class="mt20 mb20" style="margin-left: 165px">
+          <a class="green_btn" href="javascript:;">生成测试账号</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

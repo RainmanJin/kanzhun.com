@@ -1,0 +1,132 @@
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr25 {
+  margin-right: 25px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pt15 {
+  padding-top: 15px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.f_12 {
+  font-size: 12px;
+}
+.f_14 {
+  font-size: 14px;
+}
+.f_15 {
+  font-size: 15px;
+}
+.f_16 {
+  font-size: 16px;
+}
+.f_18 {
+  font-size: 18px;
+}
+@font-face {
+  font-family: 'AVGARDNI';
+  src: url('../images/AVGARDNI.TTF');
+}
+body {
+  font: normal 14px/1.5 Arial, STHeiti, Microsoft YaHei, simsun, Helvetica, sans-serif;
+  color: #303030;
+  background-color: #f2f2f2;
+}
+input,
+button,
+textarea {
+  font: normal 14px/1.5 Arial, STHeiti, Microsoft YaHei, simsun, Helvetica, sans-serif;
+}
+a {
+  color: #007ead;
+}
+.red {
+  color: #ff0000;
+}
+.black {
+  color: #303030;
+}
+.blue {
+  color: #007ead;
+}
+.grey_99 {
+  color: #999999;
+}
+.grey_79 {
+  color: #797979;
+}
+.grey_af {
+  color: #afafaf;
+}
+.green {
+  color: #62bb6a;
+}
+div.container {
+  width: 990px;
+  padding: 35px 0 25px 0;
+  margin: 25px auto 0 auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(4, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(4, 0, 0, 0.2);
+  -ms-box-shadow: 0 5px 10px rgba(4, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(4, 0, 0, 0.2);
+}

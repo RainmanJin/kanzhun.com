@@ -1,0 +1,165 @@
+@import "common/var";
+@import "modules/company/common";
+h3.title{
+	font-size: 16px;
+	border-left: 6px solid #3396cf;
+	padding-left: 6px;
+	font-weight: normal;
+	b{
+		font-size: 20px;
+		font-weight: normal;
+	}
+}
+section.banner_bg{
+	background: url(../images/compare_salary_bannerX.png) repeat-x;
+	height: 800px;
+	.banner{
+		min-width: 990px;
+		height: 278px;
+		margin: 0 auto;		
+		background: url(../images/compare_salary_banner.jpg) no-repeat center;
+		overflow: hidden;
+		position: relative;
+	}
+}
+section.content{
+	width: 990px;
+	margin: -522px auto 0;
+	padding: 20px 0;
+	background-color: #fff;
+	.info{
+		margin: 0 20px;
+		padding: 20px;
+		background-color: #3396cf;
+		color: #fff;
+		overflow: hidden;
+		.chart_pic{
+			float: left;
+			.chart{
+				//background-color: #f3f3f3;
+				position: relative;
+				.percent{
+					line-height: 80px;
+					position: absolute;
+					display: inline-block;
+					width: 80px;
+					font-size: 20px;
+					font-weight: bold;
+					text-align: center;
+				}
+			}
+		}
+		.chart_info{
+			float: left;
+			padding-left:20px;
+			p{
+				b{
+					font-size:30px;
+					font-weight: bold;
+				}
+			}			
+		}
+		.barRed{
+			color: #eb7676;
+		}
+		.barOrange{
+			color: #f38100;
+		}
+		.barGreen{
+			color: #c1f96b;
+		}
+	}
+	.pk_salary{
+		margin: 20px 20px 0;
+		padding-left: 25px;
+		border: 1px solid @grey_e7;
+		height: 90px;
+		background: #f3f3f3;
+		ul{
+			li{
+				float: left;
+				margin-right: 12px;
+				padding-top: 15px;
+				.ifd{
+					border: 1px solid #cfcfcf;
+					border-width: 2px 1px 1px 2px;
+					width: 150px;
+				}
+				.btn_o_l{
+					margin-top: 20px;
+					width: 106px;
+					padding:0;
+				}
+				.select{
+					width: 177px;
+				}
+			}
+		}
+	}
+	.hot{
+		margin: 20px 20px 0;
+		line-height: 1;
+		overflow: hidden;
+		.company{
+			float: left;
+			width: 677px;
+			ul{
+				overflow: hidden;
+				margin-right: -25px;
+				li{
+					width: 92px;
+					float: left;
+					padding-right: 25px;
+					padding-top: 20px;
+					.logo{
+						display: inline-block;
+						border:1px solid @grey_e7;
+						img{
+							width: 90px;
+						}
+					}
+					.name{
+						padding-top: 10px;
+						text-align: center;
+						color: @grey_99;
+						.ellipsis(ellipsis);
+					}
+				}
+			}
+			.more{
+				text-align: right;
+			}
+		}
+		.job{
+			float: left;
+			margin-left: 40px;
+			width: 233px;
+			.jobs_show{
+				margin-top: 20px;
+				li{
+					line-height: 1.3;
+					em{
+						float: right;
+						color: #eb7676;
+					}
+					span{
+						.ellipsis(ellipsis);
+						width: 150px;
+						display: inline-block;
+					}
+					a{
+						.ellipsis(ellipsis);
+						width: 150px;
+						display: inline-block;
+					}
+					margin-bottom: 10px;
+				}
+			}
+			.more{
+				text-align: right;
+			}			
+		}
+	}
+}
+
+

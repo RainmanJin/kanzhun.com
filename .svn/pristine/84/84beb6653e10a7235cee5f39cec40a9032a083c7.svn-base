@@ -1,0 +1,121 @@
+@import "var";
+@icons: url(../images/icons.png);
+
+//小图标
+i {
+  &.base {
+    display: inline-block;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: middle;
+  }
+
+  &.searchimg {
+    width: 20px;
+    height: 20px;
+    background: @icons no-repeat left top;
+  }
+
+  &.dots {
+    width: 6px;
+    height: 5px;
+    background: @icons no-repeat -23px top;
+  }
+
+  &.submission {
+    width: 12px;
+    height: 12px;
+    background: @icons no-repeat -86px top;
+  }
+}
+
+//line
+.onlyline {
+  border-bottom: 1px solid @grey_db;
+  height: 0;
+  overflow: hidden;
+}
+
+.greydbline {
+  border-bottom: 1px solid @grey_ee;
+}
+
+.widthline {
+  border-bottom: 2px solid #ebebeb;
+  height: 0;
+  overflow: hidden;
+}
+
+//button
+.btn_o_s {
+  background-color: #f38100;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  padding: 0 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 0;
+
+  &:hover {
+    text-decoration: none;
+    background-color: #fa8712;
+  }
+}
+
+.btn_grey_b {
+  border: 1px solid #dfdfdf;
+  height: 33px;
+  line-height: 33px;
+  background: @icons repeat-x 0 -68px;
+  display: inline-block;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 14px;
+  color: @def;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  input, button {
+    height: 33px;
+    cursor: pointer;
+    display: block;
+    padding: 0 30px;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    overflow: visible;
+    color: @def;
+  }
+
+  &:hover {
+    border: 1px solid #d3d3d3;
+    background: #f6f6f6 url('');
+    text-decoration: none;
+  }
+}
+
+//start
+.np_sr_grade_start {
+  width: 95px;
+  height: 18px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  background: @icons no-repeat left -26px;
+  margin-right: 10px;
+  line-height: 0;
+  vertical-align: middle;
+  i {
+    display: inline-block;
+    width:80px;
+    height: 15px;
+    overflow: hidden;
+    font-size: 0;
+    background: @icons no-repeat left -44px;
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DEMO</title>
+  <!--<link rel="stylesheet" href="http://www.kanzhun.com/css/widget.css">-->
+  <link rel="stylesheet" href="css/questionnaire-1111.css">
+  <script src="js/jquery-2.1.0.min.js"></script>
+  <script>
+    var questionnaireJSON = {
+      "id": 1,
+      "title": "双11",
+      "count": 0,
+      "realCount": 0,
+      "addUser": 0,
+      "addTime": "2014-11-07 10:04:11",
+      "investigationQuestionInfoList": [
+
+        {
+          "id": 1,
+          "investigationId": 1,
+          "name": "问题1",
+          "type": 1,
+          "answerNum": 0,
+          "addUser": 0,
+          "addTime": "2014-11-07 10:04:31",
+          "investigationAnswerInfoList": [
+
+            {
+              "id": 1,
+              "questionId": 1,
+              "name": "选项11",
+              "count": 0,
+              "realCount": 0,
+              "addUser": 0,
+              "addTime": "2014-11-07 10:05:04"
+            },
+            {
+              "id": 2,
+              "questionId": 1,
+              "name": "选项12",
+              "count": 0,
+              "realCount": 0,
+              "addUser": 0,
+              "addTime": "2014-11-07 10:05:40"
+            },
+            {
+              "id": 3,
+              "questionId": 1,
+              "name": "选项13",
+              "count": 0,
+              "realCount": 0,
+              "addUser": 0,
+              "addTime": "2014-11-07 10:06:41"
+            }]
+        },
+        {
+          "id": 2,
+          "investigationId": 1,
+          "name": "问题2",
+          "type": 2,
+          "answerNum": 0,
+          "addUser": 0,
+          "addTime": "2014-11-07 10:04:51",
+          "investigationAnswerInfoList": [
+
+            {
+              "id": 4,
+              "questionId": 2,
+              "name": "选项21",
+              "count": 0,
+              "realCount": 0,
+              "addUser": 0,
+              "addTime": "2014-11-07 10:06:50"
+            },
+            {
+              "id": 5,
+              "questionId": 2,
+              "name": "选项22",
+              "count": 0,
+              "realCount": 0,
+              "addUser": 0,
+              "addTime": "2014-11-07 10:06:57"
+            }]
+        }]
+    };
+  </script>
+</head>
+
+<body>
+  <section class="ques-banner"></section>
+
+  <section class="ques-list">
+    <form id="questionnaireFrom" action="xx.json">
+    <div class="ques-count">已有 <strong>39030</strong> 人参与</div>
+
+    <script type="text/tmpl" id="template">
+      {{~it.investigationQuestionInfoList: value:index}}
+      {{var qType = value.type;}}
+
+      <dl data-qtype="{{=qType}}">
+        <dt><strong>{{=value.name}}</strong></dt>
+        {{var name = value.id;}}
+
+          {{~value.investigationAnswerInfoList: v:i}}
+            {{var id = v.id;}}
+
+            {{?qType == 1}}
+            <dd><input type="radio" name="q_{{=name}}" value="q_{{=id}}" id="q_{{=name}}_{{=id}}"><label for="q_{{=name}}_{{=id}}">{{=v.name}}</label></dd>
+
+            {{??qType == 2}}
+            <dd><input type="checkbox" name="q_{{=name}}" value="q_{{=id}}" id="q_{{=name}}_{{=id}}"><label for="q_{{=name}}_{{=id}}">{{=v.name}}</label></dd>
+            {{?}}
+          {{~}}
+      </dl>
+      {{~}}
+    </script>
+
+    <p class="ques-submit">
+      <input type="submit" value="提交并查看投票结果">
+    </p>
+    </form>
+  </section>
+
+  <script>
+    var require = {
+      baseUrl: 'js/',
+      urlArgs : "v=v1.1.6"
+    };
+  </script>
+  <script src="http://www.kanzhun.com/news/js/lib/require.js" data-main="ques-1111.js"></script>
+</body>
+</html>

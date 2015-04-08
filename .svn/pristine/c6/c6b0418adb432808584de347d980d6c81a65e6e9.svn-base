@@ -1,0 +1,494 @@
+require.config({
+  baseUrl: '/js/site',
+  paths: {
+    u: '../utils',
+    c: '.',
+    comp: '../../components',
+	  highcharts: 'http://s.kanzhun.com/js/utils/highcharts'
+  }
+});
+
+require(['c/auth_dialog', 'c/user_response', 'c/widgets', 'c/mini_search','c/cube_ugc','c/seo/bottomlinks', 'highcharts', 'company/salary_desc', 'c/general', 'comp/fav/js/collection'], function (auth_dialog, user_response) {
+  $(function () {
+
+    $('div#loadcon').load($('#jobintierviewloadurl').val());
+
+
+    //工资图表
+    var salaryDesc = require('company/salary_desc');
+    salaryDesc({
+      table: $('#salaryDescTable')
+    });
+
+
+    //过期职位展示内容
+    $('a#seemore').click(function(){
+       $('div.jobinfocon').toggle('fast');
+       $(this).find('i').toggleClass('more');
+    });
+
+
+    //
+    $('#jobRetSortSlt').DIYSelect({
+      keepDefault: true,
+      listCallback: function (list, field, target) {
+
+      }
+    });
+
+    $('#intJobSortSel').DIYSelect({
+      keepDefault: true,
+      listCallback: function (list, field, target) {
+
+      }
+    });
+
+    /*//job detail favorite
+    $('#jdFavorite').on('click', function (e) {
+      if (!auth_dialog.isLogged()) {
+        auth_dialog.open('#login');
+        return;
+      }
+      var self = $(this), param = self.data('j');
+      if (param) {
+        $.getJSON(CONTEXTPATH + '/job/adduserjc.json?jobId=' + param, function (ret) {
+          ret = ret || {};
+          if (ret.rescode == 1011) {
+            auth_dialog.open('#login');
+          } else if (ret.rescode == 1) {
+            self.attr('class', 'hadcollection').data('j', null).prop('disabled', true);
+            self.html('<i class="hadcollection"></i>已收藏');
+          }
+        });
+      }
+    });*/
+
+    //job deliver投递简历
+    $('#deliverResume').on('click', function (e) {
+      var self = $(this);
+
+      if( self.data('state') == 'disabled' ){
+        return false;
+      }
+
+      $.maskUI.open({
+        elem: $('section#deliverResumePop')
+      });
+
+      var boxType,boxFlag = true;
+      $('div.deliver_resume_option').each(function(i, v){
+        if( !$(v).hasClass('none') ){
+          boxType = $(v).data('boxtype');
+        }
+      })
+
+      if( isLogged ){
+        $('input.yanzheng').removeClass('v');
+      }
+
+      //单选按钮判断
+      $('input.radio_ipt').click(function(){
+        $('input.radio_ipt').parent().find('input').removeClass('v');
+        $(this).parent().find('input').addClass('v');
+        $('p.hide_err').hide();
+      })
+
+     /* window.loginCallback = function(){
+        //window.open("/resume/",'resume')
+        //console.log(1)
+        $('a.change_resume').attr('href', '/resume/');
+        $('a.change_resume').attr('href', '/resume/');
+        window.location.href = $('a.change_resume').attr('href', '/resume/')
+      }*/
+
+      $('a.change_resume').click(function(){
+        if( !isLogged ){
+          auth_dialog.open('#login');
+        }
+      })
+
+      function intiWebUpload(itemId, itemText){
+        var uploader = WebUploader.create({
+          // 选完文件后，是否自动上传。
+          auto: true,
+          // swf文件路径
+          swf: '/images/Uploader.swf',
+          // 文件接收服务端。
+
+          server: '/resume/upload.json',
+          // 选择文件的按钮。可选。
+          // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+          pick: {
+            id: itemId,
+            label: itemText
+          },
+          fileSingleSizeLimit: 2097152,
+          // 控制上传文件类型。
+          accept: {
+              title: 'Applications',
+              extensions: 'doc,docx,pdf',
+              mimeTypes: 'application/msword,application/pdf'
+          }
+        });
+
+        uploader.on( 'error', function( type ) {
+          if( type == 'F_EXCEED_SIZE' ){
+            alert('上传简历不能超过2M!');
+          }
+        });
+        
+        uploader.on( 'uploadSuccess', function( file , response ) {
+            if(response.rescode == 1){
+              $("#license").val(response.docData);
+              $('#fileName').val(response.docName);
+              if( boxFlag ){
+                $('#uploaders').addClass('none');
+                $('#uploader').removeClass('none');
+                intiWebUpload('#picker', '重新上传');
+                $('#rDeliverResume').trigger('click').attr('checked', true);
+              }
+            }else {
+                alert(response.resmsg)
+              }
+        });
+      }
+
+      if( boxType == 'uploader' ){
+        intiWebUpload('#pickers', '上传简历');
+      }else {
+        intiWebUpload('#picker', '重新上传');
+        boxFlag = false;
+      }
+
+      $('a.go_login').click(function(){
+        auth_dialog.open('#login?authcb=authCallback');
+      })
+      
+    
+      $('#deliverFrm').validatorAll({
+        elems: 'input.v',
+        prompt: {
+          succ: function(target, e){
+              var err;
+              if(target.attr('type') === 'hidden'){
+                  err = $('>p.err', target.parent().parent().parent());
+              }else{
+                  err = $('>p.err', target.parent());
+              }
+              err.hide();
+              target.parent().addClass('focus'); 
+          },
+          err: function(target, msg, e){
+              var err;
+              if(target.attr('type') === 'hidden'){
+                  err = $('>p.err', target.parent().parent().parent());
+              }else{
+                  err = $('>p.err', target.parent());
+              }
+              err.html(msg || err.data('msg')).show();
+              target.parent().removeClass('focus').addClass('error');
+          },
+          normal: function(target, e){
+              var err;
+              if(target.attr('type') === 'hidden'){
+                  err = $('>p.err', target.parent().parent().parent());
+              }else{
+                  err = $('>p.err', target.parent());
+              }
+              err.hide();
+              target.parent().addClass('focus'); 
+          }
+        },
+        more: {
+            email: {
+              type: 'isMail',
+              msg: '邮箱格式不对！'
+            },
+
+            resumeId: function (_this, prompt, e) {
+              return true;
+            }
+        },
+        ajaxSubmit: {
+            elems: '.v',
+            dataType: 'json',
+            beforeSend: function(){},
+            success: function(data){
+              if(data.rescode =='1'){
+                self.data('state', 'disabled').removeClass('btn_o_l').addClass('had_deliver').html('已投递');
+                $('input.parameters').val('null');
+                $('div.success_con').html(data.html);
+           }else {
+            alert(data.resmsg);
+            return false;
+           }
+        }
+      }
+      }).init().submit(function(){
+        /*console.log(1)
+        if( $('#uploader').is(':hidden') ){
+          $('#uploaders p.err').show();
+          return false;
+        }else {*/
+          /*if( !$('.yanzheng').parent().hasClass('none') ){
+
+            if( $('.yanzheng').val() == '' ){
+                $('.yanzheng').parent().find('p.hide_err').show();
+                return false;
+            }else {
+              return true;
+            }
+          }else {*/
+            return true;
+          /*}  */    
+      });
+    });
+
+    //投递表单验证
+    
+
+    /*//未登录
+    $('#btnlogin').on('click', function (e) {
+      auth_dialog.open('#login');
+    });
+
+    //完善简历
+    $('#btnupdateresume').on('click', function (e) {
+      $.maskUI.open({
+        elem: $('section#updateresumes')
+      });
+    });
+
+    //未创建简历
+
+    $('#btncreateresume').on('click', function (e) {
+      $.maskUI.open({
+        elem: $('section#createresumes')
+      });
+    });*/
+    
+    //投递简历按钮fixed
+    var fixedPositionInfo = $('#positionInfo');
+    if(fixedPositionInfo.length){
+      var f_n_s = setTimeout(function(){
+        var positionPos = fixedPositionInfo.offset().top;
+        $(window).on('scroll', function(){
+          var st = $(document).scrollTop();
+          if(st > positionPos){
+            fixedPositionInfo.addClass('fixed_info');
+          }else{
+            fixedPositionInfo.removeClass('fixed_info');
+          }
+        });
+      }, 1000);
+    }
+
+    
+
+    //job title show nologin
+    $('#jobTitleNologin').on('mouseenter', 'div.filterblur', function () {
+      if ($(this).hasClass('noevent')) {
+        return;
+      }
+      $(this).find('div.nologin').fadeIn(200);
+    }).on('mouseleave', 'div.filterblur', function () {
+      if ($(this).hasClass('noevent')) {
+        return;
+      }
+      $(this).find('div.nologin').hide();
+    }).on('click', 'a.btn_o_s', function (e) {
+      e.preventDefault();
+      auth_dialog.open($(this).attr('href'));
+    });
+
+    //
+    $('#salarySlide').on('click', 'a[href=#login],a[href=#register]', function (e) {
+      e.preventDefault();
+      auth_dialog.open($(this).attr('href'));
+    });
+
+    //左侧的tab
+    $('#index_tabs').tabs({
+      tabSelector: 'nav a[isclick=1]',
+      tabPanel: 'div.panel',
+      callback: function (index, panel) {
+        var index = $(this).index();
+        if ($.support.css3Property('transition')) {
+          this.parent().css({'background-position': 161 * index + 'px bottom'});
+        } else {
+          this.parent().animate({'background-position-x': 161 * index}, 200);
+        }
+
+      },
+      animate: 'fadeIn'
+    });
+
+    //搜索职位
+    var jobSearch = $('#jobSearch');
+    $('#jobSearch').on('click', 'div.relevant-src a', function (e) {
+      e.preventDefault();
+      jobSearch.attr('action', $(this).attr('title'));
+      jobSearch.submit();
+    })
+
+
+    //share
+
+    var shareComments = user_response.share();
+    shareComments.build({
+      selectors: 'a.share_job'
+    });
+
+    //分享公司
+    var shareComments = user_response.share();
+    shareComments.build({
+      selectors: 'a.share_co'
+    });
+
+//    $('body').upOrDown({
+//      delegate: 'a.mark'
+//    });
+//
+
+
+    //职位薪资柱状图
+    try{
+      var sXcategories = [],
+          sSeryData = [],
+          tooltipt = [];
+      $.each(salaryStat||[],function(i,v){
+        sXcategories.push(v.item.name);
+        sSeryData.push(v.percent);
+        /*tooltipt.push(v.percent);*/
+      });
+      $('#average_wage').highcharts({
+        chart: {
+          type: 'column',
+          marginTop: 0,
+          marginRight: 0,
+          spacingLeft: 0
+        },
+        title:{
+          text:''
+        },
+        xAxis:{
+          categories: sXcategories,
+          lineColor:"#007ead",
+          lineWidth:1,
+          tickColor: "#007ead",
+          tickPosition: 'inside',
+          tickLength: 4,
+          endOnTick: false,
+          labels: {
+            style: {
+              color: "#343434",
+              fontSize: "12px"
+            },
+            y: 16
+          }
+        },
+        plotOptions: {
+            series: {
+                color: '#c5dcf2',
+                states: {
+                    hover: {
+                        enabled: false
+                    }
+                }
+            },
+            column: {
+              pointWidth: 25
+            }
+        },
+        tooltip: {
+          useHTML: true,
+          headerFormat: '',
+          backgroundColor: '#bcd891',
+          shadow: false,
+          borderWidth: 0,
+          formatter: function () {
+              return sSeryData[this.point.x] + '%'
+          }
+        },
+        yAxis:{
+          title:{
+            text:""
+          },
+          lineColor:"#007ead",
+          lineWidth:1,
+          gridLineColor: "#e7e7e7",
+          tickPosition: 'outside',
+          tickWidth: 1,
+          tickLength: 6,
+          endOnTick: false,
+          showFirstLabel: false,
+          maxPadding: 0.01,
+          labels: {
+            style: {
+              color: '#343434',
+              fontSize: '12px'
+            },
+            format: '{value}%',
+            x: -10
+          }
+        },
+        series: [{
+          data: sSeryData
+        }],
+        legend: {
+          enabled: false
+        },
+        credits: {
+          enabled: false //隐藏highcharts标识
+        }
+      })
+      //柱状图结束
+    }catch (err){}
+
+    //细分领域
+    /*var listCmpTags = $('div.l_c_tags'),
+        lHeight = listCmpTags.height();
+    if(lHeight <= 120) {
+      listCmpTags.removeClass('hide_more').removeClass('pr').find('div').addClass('none');
+    }else {
+      listCmpTags.addClass('hide_more').addClass('pr').find('div').removeClass('none');
+    }
+
+    $('div.l_c_tags').on('click', 'div', function(){
+      if($(this).find('i').text() == '展开') {
+        listCmpTags.removeClass('hide_more').find('div').html('<i>收起</i><span class="wrap_trangle wrap_trangle_click"></span><span class="inner_trangle inner_trangle_click"></span>');
+      }else {
+        listCmpTags.addClass('hide_more').find('div').html('<i>展开</i><span class="wrap_trangle"></span><span class="inner_trangle"></span>');
+      }
+    })*/
+
+    //展开行业全部 去掉！
+    var industrydetail = $('dd.industrydetail'),
+        identification = $('a#moreindustry').next('i'),
+        onOff = $.support.css3Property('transition');
+
+    $('a#moreindustry').parent('dd').click(function(){
+      if( !onOff ){
+        $(this).toggleClass('up'); 
+      }
+
+      if(industrydetail.is(':hidden')){
+        if( onOff ){
+          identification.addClass('industryclose');
+        }else {
+          identification.addClass('industryclose_nocss3');
+        }
+        industrydetail.removeClass('none');
+      }else {
+        industrydetail.addClass('none');
+        if( onOff ){
+          identification.removeClass('industryclose');
+        }else {
+          identification.removeClass('industryclose_nocss3');
+        }
+        
+      }
+    });
+  });
+});
+

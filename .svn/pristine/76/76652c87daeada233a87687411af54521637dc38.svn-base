@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>UGC照片</title>
+  <!--[if lte IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/v2/css/widget.css">
+  <link rel="stylesheet" href="/v2/css/ugc/ugc_view.css">
+  <link rel="stylesheet" href="/v2/css/ugc/ugc_photo.css">
+  <script>
+    var CONTEXTPATH = '/';
+    var require = {
+      baseUrl: '/',
+      urlArgs: "v=1.0.7"
+    };
+  </script>
+  <script src="/js/utils/webuploader.js?tv=v1.2.1"></script>
+  <script src="/js/require.js" data-main="/v2/js/ugc/ugc_photo.js"></script>
+</head>
+
+<body>
+<header class="global">
+  <div class="header">
+    <a ka="head-index" href="/" class="logo"><img src="/images/logo.png" width="136" height="40"></a>
+    <nav>
+      <a ka="head-com" href="/gs.html">公司</a>
+      <a ka="head-salary" class="head_salary " href="/xs/">工资<i></i></a>
+      <a ka="head-recruit" href="/job/">招聘</a>
+      <a ka="head-interview" href="/msh/">面试</a>
+      <a ka="head-news" target="_blank" href="/news/">资讯</a>
+      <a ka="head-ugc" rel="nofollow" class="mycomment" href="/ugc/">我要点评</a>
+    </nav>
+    <p class="loginfo"><a ka="head-signin" href="/login" rel="nofollow">登录</a><a ka="head-signup" href="/register" rel="nofollow">注册</a><span class="ml15">|</span><a ka="ep" href="http://boss.kanzhun.com" target="_blank">企业客户入口</a></p>
+  </div>
+</header>
+
+<div class="container-ugc clearfix">
+  <div class="ugc-con-l">
+    <div class="wrap_style co_header mb15">
+    <div class="ch_t">匿名点评公司<a class="links fright" href="#">< 返回上一步</a></div>
+    <dl class="ch_c">
+        <dt><img src="http://img.kanzhun.com/image/l55255.gif"></dt>
+        <dd>
+            <p class="f_h">易宝支付</p>
+            <p class="f_p">在职 产品经理 - <i class="cmp_address"></i> 北京</p>
+        </dd>
+    </dl>
+</div>
+    <div class="wrap_style clearfix">
+      <h3 class="photo_h3">支持jpg/gif/jpeg格式，单张不超过20M，单次上传最多支持3张</h3>
+      <div class="photo_content">
+        <div class="pc_list">
+          <form id="ugcForm" name="ugcForm" action="/photougc/save" method="post" autocomplete="off">
+            <ul class="clearfix">
+              <li>
+                <div class="photo_show">
+                  <div class="ps_img">
+                    <div class="bg"></div>
+                    <img src="http://img.kanzhun.com/image/p1133.gif">
+                    <a class="bt_close"><i></i></a>
+                  </div>
+                  <textarea name="imgdesc" maxlength="128" class="v" data-unnecessary="1" placeholder="点击输入照片描述..."></textarea>
+                </div>
+                <div class="photo_add t-center filebtn">
+                  <img src="/images/v2/add_photo.jpg">
+                  <p class="p1 mt10">继续添加照片</p>
+                </div>
+                <div class="uploading t-center"><img src="/images/loading.gif" /></div>
+              </li>
+              <li>
+                <div class="photo_show">
+                  <div class="ps_img">
+                    <div class="bg"></div>
+                    <img src="http://img.kanzhun.com/image/p1133.gif">
+                    <a class="bt_close"><i></i></a>
+                  </div>
+                  <textarea name="imgdesc" maxlength="128" class="v" data-unnecessary="1" placeholder="点击输入照片描述..."></textarea>
+                </div>
+                <div class="photo_add t-center filebtn">
+                  <img src="/images/v2/add_photo.jpg">
+                  <p class="p1 mt10">继续添加照片</p>
+                </div>
+                <div class="uploading t-center"><img src="/images/loading.gif" /></div>
+              </li>
+              <li>
+                <div class="photo_show">
+                  <div class="ps_img">
+                    <div class="bg"></div>
+                    <img src="http://img.kanzhun.com/image/p1133.gif">
+                    <a class="bt_close"><i></i></a>
+                  </div>
+                  <textarea name="imgdesc" maxlength="128" class="v" data-unnecessary="1" placeholder="点击输入照片描述..."></textarea>
+                </div>
+                <div class="photo_add t-center filebtn">
+                  <img src="/images/v2/add_photo.jpg">
+                  <p class="p1 mt10">继续添加照片</p>
+                </div>
+                <div class="uploading t-center"><img src="/images/loading.gif" /></div>
+              </li>
+            </ul>
+            <div class="form_set t-center">
+              <input class="btn_o_g" type="submit" value="提交"><a class="links ml10 filebtn" href="javascript:;">继续添加</a>
+            </div>
+          </form>
+        </div>
+        <div class="pc_add none">
+          <p class="t-center">
+            <a class="btn_o_g filebtn"href="javascript:;"><i class="i_addPhoto"></i>选择照片</a>
+          </p>
+          <!--<div id="fileupload" ka="picture1-add"></div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ugc-con-r">
+  <div class="ugc-anonymous">
+    <img src="/images/v2/ugc-r-msg.gif" width="262" height="475">
+  </div>
+
+  <div class="ugc-notice">
+    <p class="f_16 mb15"><i></i>温馨提示</p>
+    <p class="grey_66">
+      看准网非常珍视您贡献的每条信息，我们对所有信息都会进行审核，审核通过后正式发布。但是如果您发布的评论中含有如下内容，我们将会予以删除：
+      <ul>
+        <li>包含侮辱、攻击性、低俗、辱骂或不文明用语；</li>
+        <li>涉及隐私披露，指名道姓；</li>
+        <li>含有完全不相关，大量标题，无逻辑堆砌而成的内容等。</li>
+      </ul>
+    </p>
+  </div>
+</div>
+</div>
+</body>
+</html>

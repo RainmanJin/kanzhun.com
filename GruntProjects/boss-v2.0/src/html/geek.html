@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BOSS</title>
+  <!--[if lte IE 9]>
+  <script src="../js/lib/html5shiv.js"></script>
+  <script src="../js/lib/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/lib/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/ugc/base.css" />
+  <link rel="stylesheet" href="../css/ugc/ugc.css" />
+  <script src="../js/lib/require.js" data-main="../js/site/ugc/geek.js"></script>
+</head>
+<body>
+  <section class="body clearfix">
+    <div class="body_l">
+      <div class="header">
+        <div class="hTop">
+          <div class="logo"><img src="../images/ugc/logo.png"/></div>
+        </div>
+        <div class="hBottom">
+          <div class="base">
+            <div class="protrait">
+              <img src="../images/ugc/temp/img_1.jpg" width="122" height="122">
+              <em></em>
+              <a href="javacript:;">修改头像</a>
+            </div>
+            <p class="p1">老罗</p>
+            <p class="p2">产品VP</p>
+          </div>
+        </div>
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#" class="current">
+            <em><i class="i i_people"></i></em>
+            我的简介
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_info"></i></em>
+            基本资料
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_heart"></i></em>
+            牛人诱惑
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_opus"></i></em>
+            作品展示
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_work"></i></em>
+            工作经历
+            <i class="i i_right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <em><i class="i i_hat"></i></em>
+            教育经历
+            <i class="i i_right"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="body_r">
+      <header>
+        <ul>
+          <li class="hm">
+            <a href="#"><img src="../images/ugc/icon_home.png" ></a>
+          </li>
+          <li class="tt"><span>BOSS直聘</span><em>|</em>牛人版</li>
+          <li class="dl">
+            <a href="#">
+              <img src="../images/ugc/icon_dl.png">
+            </a>
+          </li>
+        </ul>
+      </header>
+      <section class="form">
+        <h2 class="title">我的简介</h2>
+        <div class="content">
+          <ul class="field clearfix">
+            <li class="list">
+              <label>姓名</label>
+              <input class="ipt" type="text" placeholder="请输入(最多可输入4个字)" maxlength="4">
+              <p class="err" data-msg="请输入姓名！"></p>
+            </li>
+            <li class="list">
+              <label>经验</label>
+              <input class="ipt" style="width:200px" readonly type="text" placeholder="请输入(最多可输入15个字)" maxlength="15">
+              <a class="i_radio current" href="javascript:;"><i></i>面议</a>
+              <p class="err" data-msg="请输入经验！"></p>
+            </li>
+            <!--
+            <li class="list clear">
+              <label>完成度</label> 
+              <span class="progressbar mb20">
+                <em style="width:50%;"></em>
+                <i class="i i_gtips" style="left: 50%;">50%</i>
+              </span>           
+            </li>
+            -->
+          </ul>
+          <div class="sbm">
+            <input class="btn_green" type="submit" value="保存">
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <h2 class="title">基本资料</h2>
+        <div class="content">
+          <ul class="field clearfix">
+            <li class="list">
+              <label>出生日期</label>
+              <dl class="select" style="width:75px;z-index:10">
+                <dt>
+                  <input type="button" name="entryDateYear" value="2008" readonly="readonly">
+                  <input type="hidden" name="entryDate" value="1">
+                  <span class="btn on"><i class="i i_greydown"></i></span>
+                </dt>
+                <dd>
+                  <div class="inner">
+                    <i class="i i_blackup"></i>     
+                    <a href="javascript:;" data-val="2008">2008</a>  
+                    <a href="javascript:;" data-val="2013">2008</a> 
+                  </div> 
+                </dd>
+              </dl>
+              <dl class="select ml10" style="width:56px;z-index:10">
+                <dt>
+                  <input type="button" name="entryDateYear" value="2008" readonly="readonly">
+                  <input type="hidden" name="entryDate" value="1">
+                  <span class="btn on"><i class="i i_greydown"></i></span>
+                </dt>
+                <dd>
+                  <div class="inner">
+                    <i class="i i_blackup"></i>     
+                    <a href="javascript:;" data-val="2008">2008</a>  
+                    <a href="javascript:;" data-val="2013">2008</a> 
+                  </div> 
+                </dd>
+              </dl>
+              <dl class="select ml10" style="width:56px;z-index:10">
+                <dt>
+                  <input type="button" name="entryDateYear" value="2008" readonly="readonly">
+                  <input type="hidden" name="entryDate" value="1">
+                  <span class="btn on"><i class="i i_greydown"></i></span>
+                </dt>
+                <dd>
+                  <div class="inner">
+                    <i class="i i_blackup"></i>     
+                    <a href="javascript:;" data-val="2008">2008</a>  
+                    <a href="javascript:;" data-val="2013">2008</a> 
+                  </div> 
+                </dd>
+              </dl>
+              <p class="err" data-msg="请选择出生日期！"></p>
+            </li>
+            <li class="list">
+              <label>学历</label>
+              <dl class="select" style="z-index:9">
+                <dt>
+                  <input type="button" name="entryDateYear" value="本科" readonly="readonly">
+                  <input type="hidden" name="entryDate" value="1">
+                  <span class="btn on"><i class="i i_greydown"></i></span>
+                </dt>
+                <dd>
+                  <div class="inner">
+                    <i class="i i_blackup"></i>     
+                    <a href="javascript:;" data-val="2014">本科</a>  
+                    <a href="javascript:;" data-val="2013">本科</a> 
+                  </div> 
+                </dd>
+              </dl>
+              <p class="err" data-msg="请选择学历！"></p>
+            </li>
+            <li class="list">
+              <label>性别</label>
+              <dl class="select" style="z-index:8">
+                <dt>
+                  <input type="button" name="entryDateYear" value="男" readonly="readonly">
+                  <input type="hidden" name="entryDate" value="1">
+                  <span class="btn on"><i class="i i_greydown"></i></span>
+                </dt>
+                <dd>
+                  <div class="inner">
+                    <i class="i i_blackup"></i>     
+                    <a href="javascript:;" data-val="2014">男</a>  
+                    <a href="javascript:;" data-val="2013">男</a> 
+                  </div> 
+                </dd>
+              </dl>
+              <p class="err" data-msg="请选择性别！"></p>
+            </li>
+            <li class="list">
+              <label>期望工作地</label>
+              <dl class="select" style="width:100px;z-index:7">
+                <dt>
+                  <input type="button" name="entryDateYear" value="北京" readonly="readonly">
+                  <input type="hidden" name="entryDate" value="1">
+                  <span class="btn on"><i class="i i_greydown"></i></span>
+                </dt>
+                <dd>
+                  <div class="inner">
+                    <i class="i i_blackup"></i>     
+                    <a href="javascript:;" data-val="2014">北京</a>  
+                    <a href="javascript:;" data-val="2013">上海</a> 
+                  </div> 
+                </dd>
+              </dl>
+              <dl class="select ml10" style="width:123px;z-index:7">
+                <dt>
+                  <input type="button" name="entryDateYear" value="北京" readonly="readonly">
+                  <input type="hidden" name="entryDate" value="1">
+                  <span class="btn on"><i class="i i_greydown"></i></span>
+                </dt>
+                <dd>
+                  <div class="inner">
+                    <i class="i i_blackup"></i>     
+                    <a href="javascript:;" data-val="2014">北京</a>  
+                    <a href="javascript:;" data-val="2013">上海</a> 
+                  </div> 
+                </dd>
+              </dl>
+              <p class="err" data-msg="请选择期望工作地！"></p>
+            </li>
+            <li class="list">
+              <label>邮箱</label>
+              <input class="ipt" type="text" placeholder="请输入(最多可输入40个字)" maxlength="40">
+              <p class="err" data-msg="请输入邮箱！"></p>
+            </li>
+            <li class="list">
+              <label>求职状态</label>
+              <dl class="select">
+                <dt>
+                  <input type="button" name="entryDateYear" value="离职，正在找工作" readonly="readonly">
+                  <input type="hidden" name="entryDate" value="1">
+                  <span class="btn on"><i class="i i_greydown"></i></span>
+                </dt>
+                <dd>
+                  <div class="inner">
+                    <i class="i i_blackup"></i>     
+                    <a href="javascript:;" data-val="2014">离职，正在找工作</a>  
+                    <a href="javascript:;" data-val="2013">离职，正在找工作</a> 
+                  </div> 
+                </dd>
+              </dl>
+              <p class="err" data-msg="请选择求职状态！"></p>
+            </li>
+            <li class="list">
+              <label>期望工作</label>
+              <input class="ipt" type="text" placeholder="请输入(最多可输入10个字)" maxlength="10">
+              <p class="err" data-msg="请输入期望工作！"></p>
+            </li>
+            <li class="list">
+              <label>期望薪资</label>
+              <input class="ipt" type="text" placeholder="填写期望薪资" maxlength="10">
+              <p class="err" data-msg="请输入期望薪资！"></p>
+            </li>
+          </ul>
+          <div class="sbm">
+            <input class="btn_green" type="submit" value="保存">
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <h2 class="title">牛人诱惑</h2>
+        <div class="content">
+          <ul class="field clearfix">
+            <li class="list">
+              <label>诱惑语</label>
+              <textarea class="tarea" placeholder="请输入(最多可输入140个字)" maxlength="140" rows="3"></textarea>
+              <p class="err" style="top:112px;" data-msg="请输入诱惑语！"></p>
+            </li>
+          </ul>
+          <ul class="field clearfix">
+            <li class="list" style="margin-bottom:0">
+              <label>关键词（输入或选择最多5个关键词）</label>
+              <ul class="kword clearfix">
+              </ul>
+              <input class="ipt mr10" type="input"  placeholder="请输入(最多可输入6个字)" maxlength="6"><a class="btn_green" style="width:80px;" href="javascript:;">添加</a>
+              <ul class="kword grey clearfix mt10">
+                <li>App客户端</li>
+                <li>App客户端</li>
+                <li>App客户端</li>
+                <li>App客户端</li>
+                <li>App客户端</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sbm">
+            <input class="btn_green" type="submit" value="保存">
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <h2 class="title">作品展示</h2> 
+        <div class="content">
+          <ul class="show">
+            <li class="list">
+              <ul class="set">
+                <li><a href="javascript:;">上移</a></li>
+                <li><a href="javascript:;">删除</a></li>
+                <li><a href="javascript:;">修改</a></li>
+              </ul>
+              <h3>看准网 <p>http://www.kanzhun.com</p></h3>
+              <p>
+              是中国最好的职场交流网站,专注于公司评论,晒工资,工资待遇,面试,公司福利等。你可以在看
+              准网上匿名分享您的职业信息
+              </p>
+            </li>
+            <li class="list edit">
+              <ul class="clearfix">
+                <li>
+                  <label>作品名称</label>
+                  <input class="ipt" type="text"  placeholder="请输入(最多可输入8个字)" maxlength="8">  
+                  <p class="err" data-msg="请输入作品名称！"></p>
+                </li> 
+                <li>
+                  <label>作品链接</label>
+                  <input class="ipt" type="text"  placeholder="请输入(最多可输入15个字)" maxlength="15"> 
+                  <p class="err" data-msg="请输入作品链接！"></p> 
+                </li>
+                <li>
+                  <label>作品描述</label>
+                  <textarea class="tarea"  placeholder="请输入(最多可输入140个字)" maxlength="140" rows="3"></textarea>
+                  <p class="err" style="top:112px;" data-msg="请输入作品描述！"></p> 
+                </li>
+              </ul> 
+              <div class="sbm">
+                <input class="btn_green" type="submit" value="保存">
+                <a class="btn_red ml10"href="javascript:;">取消</a>
+              </div>                         
+            </li>
+          </ul> 
+          <div class="add">
+            <a href="javascript:;">
+              添加个人作品<br>
+              <i class="i i_plus"></i>
+            </a>
+          </div>        
+        </div>  
+      </section>
+      <section class="form">
+        <h2 class="title">工作经历</h2> 
+        <div class="content">
+          <ul class="show">
+            <li class="list">
+              <ul class="set">
+                <li><a href="javascript:;">上移</a></li>
+                <li><a href="javascript:;">删除</a></li>
+                <li><a href="javascript:;">修改</a></li>
+              </ul>
+              <h3>看准网 - 产品经理</h3>
+              <p class="mt5">产品部 | 2013-06 至 2016-06</p>
+              <p class="mt5">
+              是中国最好的职场交流网站,专注于公司评论,晒工资,工资待遇,面试,公司福利等。你可以在看
+              准网上匿名分享您的职业信息
+              </p>
+            </li>
+            <li class="list edit">
+              <ul class="clearfix">
+                <li>
+                  <label>公司名称</label>
+                  <input class="ipt" type="text"  placeholder="请输入(最多可输入16个字)" maxlength="16">
+                  <p class="err" data-msg="请输入公司名称！"></p>   
+                </li> 
+                <li class="clear">
+                  <label>工作时间</label>
+                  <dl class="select" style="width:75px;z-index:10">
+                    <dt>
+                      <input type="button" name="entryDateYear" value="2012" readonly="readonly">
+                      <input type="hidden" name="entryDate" value="1">
+                      <span class="btn on"><i class="i i_greydown"></i></span>
+                    </dt>
+                    <dd>
+                      <div class="inner">
+                        <i class="i i_blackup"></i>     
+                        <a href="javascript:;" data-val="2014">2012</a>  
+                        <a href="javascript:;" data-val="2013">2012</a> 
+                      </div> 
+                    </dd>
+                  </dl>
+                  <dl class="select ml10" style="width:56px;z-index:10">
+                    <dt>
+                      <input type="button" name="entryDateYear" value="1" readonly="readonly">
+                      <input type="hidden" name="entryDate" value="1">
+                      <span class="btn on"><i class="i i_greydown"></i></span>
+                    </dt>
+                    <dd>
+                      <div class="inner">
+                        <i class="i i_blackup"></i>     
+                        <a href="javascript:;" data-val="2014">2012</a>  
+                        <a href="javascript:;" data-val="2013">2012</a> 
+                      </div> 
+                    </dd>
+                  </dl>
+                  <em class="mline"></em>
+                  <dl class="select" style="width:75px;z-index:10">
+                    <dt>
+                      <input type="button" name="entryDateYear" value="2012" readonly="readonly">
+                      <input type="hidden" name="entryDate" value="1">
+                      <span class="btn on"><i class="i i_greydown"></i></span>
+                    </dt>
+                    <dd>
+                      <div class="inner">
+                        <i class="i i_blackup"></i>     
+                        <a href="javascript:;" data-val="2014">2012</a>  
+                        <a href="javascript:;" data-val="2013">2012</a> 
+                      </div> 
+                    </dd>
+                  </dl>
+                  <dl class="select ml10" style="width:56px;z-index:10">
+                    <dt>
+                      <input type="button" name="entryDateYear" value="1" readonly="readonly">
+                      <input type="hidden" name="entryDate" value="1">
+                      <span class="btn on"><i class="i i_greydown"></i></span>
+                    </dt>
+                    <dd>
+                      <div class="inner">
+                        <i class="i i_blackup"></i>     
+                        <a href="javascript:;" data-val="2014">2012</a>  
+                        <a href="javascript:;" data-val="2013">2012</a> 
+                      </div> 
+                    </dd>
+                  </dl>
+                  <p class="err" data-msg="请选择工作时间！"></p>
+                </li>
+                <li>
+                  <label>职位名称</label>
+                  <input class="ipt" type="text"  placeholder="请输入(最多可输入6个字)" maxlength="6"> 
+                  <p class="err" data-msg="请输入职位名称！"></p> 
+                </li>
+                <li>
+                  <label>所属部门</label>
+                  <input class="ipt" type="text"  placeholder="请输入(最多可输入6个字)" maxlength="6"> 
+                  <p class="err" data-msg="请输入所属部门！"></p> 
+                </li>
+                <li>
+                  <label>工作职责</label>
+                  <textarea class="tarea"  placeholder="请输入(最多可输入140个字)" maxlength="140" rows="3"></textarea>
+                  <p class="err" data-msg="请输入工作职责！"></p>
+                </li>
+              </ul> 
+              <div class="sbm">
+                <input class="btn_green" type="submit" value="保存">
+                <a class="btn_red ml10"href="javascript:;">取消</a>
+              </div>                         
+            </li>
+          </ul> 
+          <div class="add">
+            <a href="javascript:;">
+              添加工作经历<br>
+              <i class="i i_plus"></i>
+            </a>
+          </div>        
+        </div>  
+      </section>
+      <section class="form">
+        <h2 class="title">教育经历</h2> 
+        <div class="content">
+          <ul class="show">
+            <li class="list">
+              <ul class="set">
+                <li><a href="javascript:;">上移</a></li>
+                <li><a href="javascript:;">删除</a></li>
+                <li><a href="javascript:;">修改</a></li>
+              </ul>
+              <h3>湖北经济学院 - 国际金融</h3>
+              <p class="mt5">本科 | 2013-06 至 2016-06</p>
+            </li>
+            <li class="list edit">
+              <ul class="clearfix">
+                <li>
+                  <label>学校</label>
+                  <input class="ipt" type="text"  placeholder="请输入(最多可输入15个字)" maxlength="15"> 
+                  <p class="err" data-msg="请输入学校！"></p> 
+                </li> 
+                <li class="clear">
+                  <label>时间</label>
+                  <dl class="select" style="width:75px;z-index:10">
+                    <dt>
+                      <input type="button" name="entryDateYear" value="2012" readonly="readonly">
+                      <input type="hidden" name="entryDate" value="1">
+                      <span class="btn on"><i class="i i_greydown"></i></span>
+                    </dt>
+                    <dd>
+                      <div class="inner">
+                        <i class="i i_blackup"></i>     
+                        <a href="javascript:;" data-val="2014">2012</a>  
+                        <a href="javascript:;" data-val="2013">2012</a> 
+                      </div> 
+                    </dd>
+                  </dl>
+                  <dl class="select ml10" style="width:56px;z-index:10">
+                    <dt>
+                      <input type="button" name="entryDateYear" value="1" readonly="readonly">
+                      <input type="hidden" name="entryDate" value="1">
+                      <span class="btn on"><i class="i i_greydown"></i></span>
+                    </dt>
+                    <dd>
+                      <div class="inner">
+                        <i class="i i_blackup"></i>     
+                        <a href="javascript:;" data-val="2014">2012</a>  
+                        <a href="javascript:;" data-val="2013">2012</a> 
+                      </div> 
+                    </dd>
+                  </dl>
+                  <em class="mline"></em>
+                  <dl class="select" style="width:75px;z-index:10">
+                    <dt>
+                      <input type="button" name="entryDateYear" value="2012" readonly="readonly">
+                      <input type="hidden" name="entryDate" value="1">
+                      <span class="btn on"><i class="i i_greydown"></i></span>
+                    </dt>
+                    <dd>
+                      <div class="inner">
+                        <i class="i i_blackup"></i>     
+                        <a href="javascript:;" data-val="2014">2012</a>  
+                        <a href="javascript:;" data-val="2013">2012</a> 
+                      </div> 
+                    </dd>
+                  </dl>
+                  <dl class="select ml10" style="width:56px;z-index:10">
+                    <dt>
+                      <input type="button" name="entryDateYear" value="1" readonly="readonly">
+                      <input type="hidden" name="entryDate" value="1">
+                      <span class="btn on"><i class="i i_greydown"></i></span>
+                    </dt>
+                    <dd>
+                      <div class="inner">
+                        <i class="i i_blackup"></i>     
+                        <a href="javascript:;" data-val="2014">2012</a>  
+                        <a href="javascript:;" data-val="2013">2012</a> 
+                      </div> 
+                    </dd>
+                  </dl>
+                  <p class="err" data-msg="请输选择时间！"></p>
+                </li>
+                <li>
+                  <label>专业</label>
+                  <input class="ipt" type="text"  placeholder="请输入(最多可输入15个字)" maxlength="15">
+                  <p class="err" data-msg="请输入专业！"></p>  
+                </li>
+                <li>
+                  <label>学历</label>
+                  <dl class="select">
+                    <dt>
+                      <input type="button" name="entryDateYear" value="本科" readonly="readonly">
+                      <input type="hidden" name="entryDate" value="1">
+                      <span class="btn on"><i class="i i_greydown"></i></span>
+                    </dt>
+                    <dd>
+                      <div class="inner">
+                        <i class="i i_blackup"></i>     
+                        <a href="javascript:;" data-val="2014">本科</a>  
+                        <a href="javascript:;" data-val="2013">本科</a> 
+                      </div> 
+                    </dd>
+                  </dl>
+                  <p class="err" data-msg="请选择学历！"></p>
+                </li>
+              </ul> 
+              <div class="sbm">
+                <input class="btn_green" type="submit" value="保存">
+                <a class="btn_red ml10"href="javascript:;">取消</a>
+              </div>                         
+            </li>
+          </ul> 
+          <div class="add">
+            <a href="javascript:;">
+              添加教育经历<br>
+              <i class="i i_plus"></i>
+            </a>
+          </div>        
+        </div>  
+      </section>
+    </div>
+  </section>
+</body>
+</html>

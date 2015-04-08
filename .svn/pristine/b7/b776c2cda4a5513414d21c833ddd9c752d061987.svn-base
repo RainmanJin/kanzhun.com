@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>领域排行榜页面</title>
+<link rel="stylesheet" href="../css/base-v2.css" />
+<link rel="stylesheet" href="../css/field.css" />
+</head>	
+<body>
+	<div class="wrapper f_wrapper">
+		<div class="f_content container">
+			<header class="f_h">
+			  <div><a href="javascript:;" class="slide-menu"><i class="i i_menu"></i></a></div>
+			  <h1>互联网金融领域</h1>
+			  <p>所属行业：互联网<em>|</em>公司：共221家</p>
+			</header>
+			<nav class="f_minor_nav">
+				<p>
+					<a href="">员工推荐排行</a><a href="">综合排行</a><a href="">CEO排行</a>
+				</p>
+			</nav>
+			<!-- 员工推荐排行榜 -->
+			<div class="f_minor_con mb15">
+				<dl>
+					<dt><i class="i i_recommend"></i></dt>
+					<dd>
+						<h3>员工推荐排行榜</h3>
+						<p>按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+						<ul>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_blue">2</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_green">3</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<a href="" class="f_btn_seemore">查看完整榜单</a>
+			</div>
+			<!-- 员工推荐排行榜 -->
+			<!-- 综合排行榜 -->
+			<div class="f_minor_con mb15">
+				<dl>
+					<dt><i class="i i_comprehensive"></i></dt>
+					<dd>
+						<h3>综合评分排行榜</h3>
+						<p>按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+						<ul>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="comprehensive">
+										<span class="green_start"><i style="width: 14.5px;"></i></span>
+										<p class="t-center mb20"><strong class="scores">4.0</strong></p>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_blue">2</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="comprehensive">
+										<span class="green_start"><i style="width: 14.5px;"></i></span>
+										<p class="t-center mb20"><strong class="scores">4.0</strong></p>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_green">3</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="comprehensive">
+										<span class="green_start"><i style="width: 14.5px;"></i></span>
+										<p class="t-center mb20"><strong class="scores">4.0</strong></p>
+									</div>
+									<p class="grey_66 t-center">员工推荐率</p>
+								</div>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<a href="" class="f_btn_seemore">查看完整榜单</a>
+			</div>
+			<!-- 综合排行榜 -->
+			<!-- CEO排行	 -->
+			<div class="f_minor_con mb15">
+				<dl>
+					<dt><i class="i i_ceo"></i></dt>
+					<dd>
+						<h3>CEO支持率排行榜</h3>
+						<p>按照公司员工愿意推荐朋友到该公司工作的百分比进行排行。</p>
+						<ul>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_red">1</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">CEO支持率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_blue">2</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">CEO支持率</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p><i class="i_s_custom i_order_green">3</i>阿里巴巴阿里巴巴阿里巴巴</p>
+									<div class="doughnua_chart">
+										<span>2.4</span>
+										<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+									</div>
+									<p class="grey_66 t-center">CEO支持率</p>
+								</div>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<a href="" class="f_btn_seemore">查看完整榜单</a>
+			</div>
+			<!-- CEO排行	 -->
+
+			<div class="shadow_area mb15">
+				<h2 class="f_tt mb15">员工推荐排行榜TOP10</h2>
+				<dl class="ranking_list">
+					<dt>
+						<div class="doughnua_chart">
+							<span>2.4</span>
+							<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+						</div>
+						<div class="recommend_count">
+							<p>12000人</p>
+							<p>参与评价</p>
+						</div>
+					</dt>
+					<dd>
+						<i class="i_b_custom i_order_red">1</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京中华人民北京中华人民北京中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="ranking_list">
+					<dt>
+						<div class="doughnua_chart">
+							<span>2.4</span>
+							<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+						</div>
+						<div class="recommend_count">
+							<p>12000人</p>
+							<p>参与评价</p>
+						</div>
+					</dt>
+					<dd>
+						<i class="i_b_custom i_order_blue">2</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="ranking_list">
+					<dt>
+						<div class="doughnua_chart">
+							<span>2.4</span>
+							<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+						</div>
+						<div class="recommend_count">
+							<p>12000人</p>
+							<p>参与评价</p>
+						</div>
+					</dt>
+					<dd>
+						<i class="i_b_custom i_order_green">3</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="ranking_list">
+					<dt>
+						<div class="doughnua_chart">
+							<span>2.4</span>
+							<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+						</div>
+						<div class="recommend_count">
+							<p>12000人</p>
+							<p>参与评价</p>
+						</div>
+					</dt>
+					<dd>
+						<i class="i_b_custom">4</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="ranking_list">
+					<dt>
+						<div class="doughnua_chart">
+							<span>2.4</span>
+							<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+						</div>
+						<div class="recommend_count">
+							<p>12000人</p>
+							<p>参与评价</p>
+						</div>
+					</dt>
+					<dd>
+						<i class="i_b_custom">5</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="ranking_list">
+					<dt>
+						<div class="doughnua_chart">
+							<span>2.4</span>
+							<canvas width="45" height="45" class="reviewsDoughnutChart" data-ratio="0.48_0.52"></canvas>
+						</div>
+						<div class="recommend_count">
+							<p>12000人</p>
+							<p>参与评价</p>
+						</div>
+					</dt>
+					<dd>
+						<i class="i_b_custom">6</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="ranking_list">
+					<dt>
+						<div class="scores_show">
+							<span class="green_start"><i style="width: 14.5px;"></i></span><strong class="scores">4.0</strong>
+						</div>
+						<p class="t-right">90人参与评价</p>
+					</dt>
+					<dd>
+						<i class="i_b_custom">7</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="ranking_list">
+					<dt>
+						<div class="scores_show">
+							<span class="green_start"><i style="width: 14.5px;"></i></span><strong class="scores">4.0</strong>
+						</div>
+						<p class="t-right">90人参与评价</p>
+					</dt>
+					<dd>
+						<i class="i_b_custom">8</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="ranking_list">
+					<dt>
+						<div class="scores_show">
+							<span class="green_start"><i style="width: 14.5px;"></i></span><strong class="scores">4.0</strong>
+						</div>
+						<p class="t-right">90人参与评价</p>
+					</dt>
+					<dd>
+						<i class="i_b_custom">9</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+				<dl class="ranking_list">
+					<dt>
+						<div class="scores_show">
+							<span class="green_start"><i style="width: 14.5px;"></i></span><strong class="scores">4.0</strong>
+						</div>
+						<p class="t-right">90人参与评价</p>
+					</dt>
+					<dd>
+						<i class="i_b_custom">10</i>
+						<a href=""><img src="../images/field/f_img2.jpg" alt=""></a>
+						<div>
+							<h4><a href="">中华人民北京</a></h4>
+							<p class="count_scale">北京<em>|</em>1000-9999人</p>
+							<p><a href="">互联网</a></p>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+	<!-- 侧边栏 -->
+	<div class="slide-mask"></div>
+	<aside class="slide-wrapper">
+	  <div class="slide_bg">
+	    <div class="shadow_area mb15">
+	      <p><a href=""><i class="i i_home"></i>看准首页</a></p>
+	      <div class="line"></div>
+	      <p><a href="">返回上一级</a></p>
+	    </div>
+	    <div class="shadow_area mb15">
+	      <p><a href="">领域概况</a></p>
+	      <div class="line"></div>
+	      <p><a href="">公司排行榜</a></p>
+	      <div class="line"></div>
+	      <p><a href="">公司列表</a></p>
+	    </div>
+	    <div class="shadow_area">
+	      <p><i class="i i_weixin"></i>关注看准微信号：kanzhunwang</p>
+	    </div>
+	  </div>
+	</aside>
+	<!-- 侧边栏 -->
+	<footer class="f_footer">
+	  <p class="kanzhun">看准网移动版 m.kanzhun.com</p>
+	  <p><a href="http://m.kanzhun.com">移动版</a><em>|</em><a href="http://www.kanzhun.com?wytl=1">电脑版</a></p>
+	</footer>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script>
+		$(function(){
+		  $('aside.slide-wrapper').on('touchstart', 'li', function(e){
+		    $(this).addClass('current').siblings('li').removeClass('current');
+		  });
+
+		  $('a.slide-menu').on('click', function(e){
+		    var wh = $('div.wrapper').height();
+		    $('div.slide-mask').css('height', wh).show();
+		    $('aside.slide-wrapper').css('height', wh).addClass('moved');
+		  });
+
+		  $('div.slide-mask').on('click', function(){
+		    $('div.slide-mask').hide();
+		    $('aside.slide-wrapper').removeClass('moved');
+		  });
+
+		  //back
+		  $('header>strong.channel').on('click', function(){
+		    if(document.referrer.length>0){
+		      history.back();
+		    }else{
+		      location.href="/news";
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>
+
+

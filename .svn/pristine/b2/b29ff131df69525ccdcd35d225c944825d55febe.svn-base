@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="css/q1.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+</head>
+<body>
+    <header>
+        <h3>2/3</h3>
+        <img src="images/logo.png" class="logo"/>
+        <img src="images/q1/person.png" class="person"/>
+    </header>
+    <section id="page2" class="swiper-slide">
+            <h2>Q2.选择你每周上班天数</h2>
+
+        <div class="days">
+            <a href="qestion3.html">
+
+                <!-- <img src="images/q2/normal.png" alt=""/>-->
+                <em>正常-5天工作制</em>
+            </a>
+            <a href="#">
+                <!--<img src="images/q2/finghting.png" alt=""/>-->
+                <em>奋斗-6天工作制度</em>
+            </a>
+            <a href="#" class="button">
+                <!-- <img src="images/q2/abnormal.png" alt=""/>-->
+                <em>变态-7天工作制度</em>
+            </a>
+        </div>
+
+    </section>
+    <script type="text/javascript" src="js/lib/zepto.js"></script>
+    <script type="text/javascript" src="js/site/q1.js"></script>
+</body>
+</html>

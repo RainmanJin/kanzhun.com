@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>公司首页</title>
+<!--[if lte IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 9]><!-->
+<script src="js/jquery-2.1.0.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/widget.css" />
+<link rel="stylesheet" href="css/news.css" />
+<script src="js/site/site.js"></script>
+</head>
+<body>
+  <div class="hdtop">
+    <p class="t-right"><a class="mr25" href="">看准首页</a><a href="">登录</a><em>|</em><a href="">注册</a><em>|</em><a href=""><i class="base submission"></i>投稿</a></p>
+  </div>
+  <!-- <div class="search"><a href="" class="logo"><img src="images/logo.jpg" alt="看准网资讯"></a><div><input type="text" class="searchipt" placeholder="搜索您关心的公司"><input type="submit" class="sub" value=""></div></div> -->
+  <header class="globlenav">
+    <div>
+      <a class="fleft" href=""><img src="images/logo_02.png" alt="看准网新闻资讯"></a><nav><a href="" class="current">首页</a><a href="">看准报告</a><a href="">热点聚焦</a><a href="">名企动态</a><a href="">高管轶事</a><a href="">股市风云</a><a href="">行业分析</a><a href="">职场规则</a><a href="">职场八卦</a></nav>
+    </div>
+  </header>
+  <div class="container clearfix">
+    <section class="l_con clearfix">
+      <div class="top_slide_wrap mb30">
+        <div class="bx-wrapper">
+          <ul class="slide_box">
+            <li>
+              <a href="www.baidu.com"><img src="images/temp/s1.jpg" alt=""><p>one儿童学挖掘机那家强？</p></a>
+            </li>
+            <li>
+              <a href="www.jd.com"><img src="images/temp/s2.jpg" alt=""><p>two儿童学挖掘机那家强？</p></a>
+            </li>
+            <li>
+              <a href="www.kanzhun.com"><img src="images/temp/s3.jpg" alt=""><p>three儿童学挖掘机那家强？</p></a>
+            </li>
+            <li>
+              <a href="www.baidu.com"><img src="images/temp/s4.jpg" alt=""><p>four儿童学挖掘机那家强？four儿童学挖掘机那家强？four儿童学挖掘机那家强？four儿童学挖掘机那家强？four儿童学挖掘机那家强？</p></a>
+            </li>
+          </ul>
+          <ul class="bx-controls">
+            <li>
+              <a class="actives" href="">
+                <img src="images/temp/ss1.jpg" alt="">
+                <span></span>
+                <p>one韩国仁川亚运会，中国乒乓球员刘诗雯发球的一瞬间</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/temp/ss2.jpg" alt="">
+                <span></span>
+                <p>two韩国仁川亚运会，中国乒乓球员刘诗雯发球的一瞬间</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/temp/ss3.jpg" alt="">
+                <span></span>
+                <p>three韩国仁川亚运会，中国乒乓球员刘诗雯发球的一瞬间</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/temp/ss4.jpg" alt="">
+                <span></span>
+                <p>four韩国仁川亚运会，中国乒乓球员刘诗雯发球的一瞬间</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+          <a class="options pre" href="javascript:;" data-drec="pre"><i class="pre"></i></a>
+          <a class="options next" href="javascript:;" data-drex="next"><i class="next"></i></a>
+      </div>
+      <!-- <div class="maincontent" id="maincontent">
+        <div class="innernav" id="innernav">
+          <a href="javascript:;" class="on">1</a><a href="javascript:;">2</a><a href="javascript:;">3</a>
+        </div>
+        <ul id="conbox">          
+          <li>
+            <a href="" class="imgshow"><img src="images/temp/banner_03.jpg" alt=""></a>
+            <dl>
+              <dt class="tt mb15"><a href="" class="def">孩子还是听妈妈的话吧孩子还是听妈妈</a></dt>
+              <dd class="grey_99 mb15">该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳</dd>
+              <dd class="grey_99">2014-09-09</dd>
+            </dl>
+          </li>
+          <li>
+            <a href="" class="imgshow"><img src="images/temp/banner_02.jpg" alt=""></a>
+            <dl>
+              <dt class="tt mb15"><a href="" class="def">的壳寻该不该搁下重重的壳寻该</a></dt>
+              <dd class="grey_99 mb15">该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳</dd>
+              <dd class="grey_99">2014-09-09</dd>
+            </dl>
+          </li>
+          <li>
+            <a href="" class="imgshow"><img src="images/temp/banner_01.jpg" alt=""></a>
+            <dl>
+              <dt class="tt mb15"><a href="" class="def">孩子还是听妈妈的话吧孩子还是听妈妈</a></dt>
+              <dd class="grey_99 mb15">该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳寻该不该搁下重重的壳</dd>
+              <dd class="grey_99">2014-09-09</dd>
+            </dl>
+          </li>
+        </ul>
+      </div> -->
+      <div class="items">
+        <dl>
+          <dt><em class="fright">看准网&nbsp;&nbsp;&nbsp;2014.10.11</em><p class="mb10"><a class="green" href="">看准报告</a>&nbsp;<span>Report</span></p></dt>
+          <dd>
+            <a href="/news/7437.html" ka="" class="fleft articleimg" target="_blank"><img src="http://img.kanzhun.com/images/news/20140920/21ea1346910a5fe91f197397d1d8e138.jpg" alt="" width="171" height="114"></a>
+            <div>
+              <h4><a href="">数据解读千亿美元互联网公司基因图谱</a></h4>
+              <p>阿里今天上市。阿里今天上市。阿里今天上市。阿里今天上市。这是继Amazon、Facebook、腾讯后，又一家横空出世的千亿“刀”级互联网公司。成百上千名服务于其中的员工，成百上千名服务于其中的员工，一夜之间将坐拥百万乃至千万美元的财富。</p>
+            </div>
+          </dd>
+        </dl>
+        <dl>
+          <dt><em class="fright">看准网&nbsp;&nbsp;&nbsp;2014.10.11</em><p class="mb10"><a class="pink" href="">热点聚焦</a>&nbsp;<span>Hot Focus</span></p></dt>
+          <dd>
+            <a href="/news/7437.html" ka="" class="fleft articleimg" target="_blank"><img src="http://img.kanzhun.com/images/news/20140920/21ea1346910a5fe91f197397d1d8e138.jpg" alt="" width="171" height="114"></a>
+            <div>
+              <h4>数据解读千亿美元互联网公司基因图谱</h4>
+              <p>阿里今天上市。阿里今天上市。阿里今天上市。阿里今天上市。这是继Amazon、Facebook、腾讯后，又一家横空出世的千亿“刀”级互联网公司。成百上千名服务于其中的员工，成百上千名服务于其中的员工，一夜之间将坐拥百万乃至千万美元的财富。</p>
+            </div>
+          </dd>
+        </dl>
+        <dl>
+          <dt><em class="fright">看准网&nbsp;&nbsp;&nbsp;2014.10.11</em><p class="mb10"><a class="bluegreen" href="">名企动态</a>&nbsp;<span>Enterprises Dynamic</span></p></dt>
+          <dd>
+            <a href="/news/7437.html" ka="" class="fleft articleimg" target="_blank"><img src="http://img.kanzhun.com/images/news/20140920/21ea1346910a5fe91f197397d1d8e138.jpg" alt="" width="171" height="114"></a>
+            <div>
+              <h4>数据解读千亿美元互联网公司基因图谱</h4>
+              <p>阿里今天上市。阿里今天上市。阿里今天上市。阿里今天上市。这是继Amazon、Facebook、腾讯后，又一家横空出世的千亿“刀”级互联网公司。成百上千名服务于其中的员工，成百上千名服务于其中的员工，一夜之间将坐拥百万乃至千万美元的财富。</p>
+            </div>
+          </dd>
+        </dl>
+        <dl>
+          <dt><em class="fright">看准网&nbsp;&nbsp;&nbsp;2014.10.11</em><p class="mb10"><a class="blue" href="">高管轶事</a>&nbsp;<span>Executives of Anecdotes</span></p></dt>
+          <dd>
+            <a href="/news/7437.html" ka="" class="fleft articleimg" target="_blank"><img src="http://img.kanzhun.com/images/news/20140920/21ea1346910a5fe91f197397d1d8e138.jpg" alt="" width="171" height="114"></a>
+            <div>
+              <h4>数据解读千亿美元互联网公司基因图谱</h4>
+              <p>阿里今天上市。阿里今天上市。阿里今天上市。阿里今天上市。这是继Amazon、Facebook、腾讯后，又一家横空出世的千亿“刀”级互联网公司。成百上千名服务于其中的员工，成百上千名服务于其中的员工，一夜之间将坐拥百万乃至千万美元的财富。</p>
+            </div>
+          </dd>
+        </dl>
+        <dl>
+          <dt><em class="fright">看准网&nbsp;&nbsp;&nbsp;2014.10.11</em><p class="mb10"><a class="yellow" href="">股市风云</a>&nbsp;<span>Stock Market</span></p></dt>
+          <dd>
+            <a href="/news/7437.html" ka="" class="fleft articleimg" target="_blank"><img src="http://img.kanzhun.com/images/news/20140920/21ea1346910a5fe91f197397d1d8e138.jpg" alt="" width="171" height="114"></a>
+            <div>
+              <h4>数据解读千亿美元互联网公司基因图谱</h4>
+              <p>阿里今天上市。阿里今天上市。阿里今天上市。阿里今天上市。这是继Amazon、Facebook、腾讯后，又一家横空出世的千亿“刀”级互联网公司。成百上千名服务于其中的员工，成百上千名服务于其中的员工，一夜之间将坐拥百万乃至千万美元的财富。</p>
+            </div>
+          </dd>
+        </dl>
+        <dl>
+          <dt><em class="fright">看准网&nbsp;&nbsp;&nbsp;2014.10.11</em><p class="mb10"><a class="shallow" href="">行业分析</a>&nbsp;<span>Analysis of The Industry</span></p></dt>
+          <dd>
+            <a href="/news/7437.html" ka="" class="fleft articleimg" target="_blank"><img src="http://img.kanzhun.com/images/news/20140920/21ea1346910a5fe91f197397d1d8e138.jpg" alt="" width="171" height="114"></a>
+            <div>
+              <h4>数据解读千亿美元互联网公司基因图谱</h4>
+              <p>阿里今天上市。阿里今天上市。阿里今天上市。阿里今天上市。这是继Amazon、Facebook、腾讯后，又一家横空出世的千亿“刀”级互联网公司。成百上千名服务于其中的员工，成百上千名服务于其中的员工，一夜之间将坐拥百万乃至千万美元的财富。</p>
+            </div>
+          </dd>
+        </dl>
+        <dl>
+          <dt><em class="fright">看准网&nbsp;&nbsp;&nbsp;2014.10.11</em><p class="mb10"><a class="caramel" href="">职场规则</a>&nbsp;<span>Workplace Rules</span></p></dt>
+          <dd>
+            <a href="/news/7437.html" ka="" class="fleft articleimg" target="_blank"><img src="http://img.kanzhun.com/images/news/20140920/21ea1346910a5fe91f197397d1d8e138.jpg" alt="" width="171" height="114"></a>
+            <div>
+              <h4>数据解读千亿美元互联网公司基因图谱</h4>
+              <p>阿里今天上市。阿里今天上市。阿里今天上市。阿里今天上市。这是继Amazon、Facebook、腾讯后，又一家横空出世的千亿“刀”级互联网公司。成百上千名服务于其中的员工，成百上千名服务于其中的员工，一夜之间将坐拥百万乃至千万美元的财富。</p>
+            </div>
+          </dd>
+        </dl>
+        <dl>
+          <dt><em class="fright">看准网&nbsp;&nbsp;&nbsp;2014.10.11</em><p class="mb10"><a class="purposered" href="">小道消息</a>&nbsp;<span>Hearsay</span></p></dt>
+          <dd>
+            <a href="/news/7437.html" ka="" class="fleft articleimg" target="_blank"><img src="http://img.kanzhun.com/images/news/20140920/21ea1346910a5fe91f197397d1d8e138.jpg" alt="" width="171" height="114"></a>
+            <div>
+              <h4>数据解读千亿美元互联网公司基因图谱</h4>
+              <p>阿里今天上市。阿里今天上市。阿里今天上市。阿里今天上市。这是继Amazon、Facebook、腾讯后，又一家横空出世的千亿“刀”级互联网公司。成百上千名服务于其中的员工，成百上千名服务于其中的员工，一夜之间将坐拥百万乃至千万美元的财富。</p>
+            </div>
+          </dd>
+        </dl>
+
+      </div>
+    </section>
+    <section class="r_con">
+      <h2 class="tt">热门文章<span>Popular Articles</span></h2>
+       <ul class="hotarticles">
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+      </ul>
+      <h2 class="tt mt30">热门标签<span>Popular Tags</span></h2>
+      <div class="hottags"><a href="">手机</a><a href="">手机</a><a href="">手机东东</a><a href="">手机</a><a href="">手的机</a><a href="">手机</a><a href="">手机</a><a href="">手的机</a><a href="">手机</a></div>
+      <h2 class="tt mt30">看准推荐&nbsp;<span>Recommend</span></h2>
+       <ul class="hotarticles">
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+        <li>
+          <a href="" class="articleimg"><img src="images/temp/index_img2.jpg" alt=""></a>
+          <a href="" class="articlett">大败局，国产手机们的一地鸡毛</a>
+          <p class="grey_99">2014-09-09</p>
+        </li>
+      </ul>
+      <h2 class="tt mt30 mb20">关注我们<span>About US</span></h2>
+      <dl class="weibo mb15">
+        <dt><img src="images/right_img7.jpg" alt="看准微博"></dt>
+        <dd>
+          <p>看准<i></i></p>
+          <a href="">+&nbsp;关注</a>
+        </dd>
+      </dl>
+      <div class="weixin"><img src="images/right_img6.jpg" alt="看准微信"></div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+@import "var";
+
+//百度招聘专场
+body{
+  .ac_header{
+    width: 1200px;
+    margin: 0 auto;
+    border: 0;
+    img{
+      width: 1200px;
+    }
+  }
+}
+
+
+.index_wrap {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: none;
+
+  div {
+    width: 1200px;
+  }
+}
+
+a.downloadlink{
+  display: inline-block;
+  width: 270px;
+  height: 64px;
+  line-height: 66px;
+  color: @green;
+  font-size: 24px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+  .box-shadow(0 1px 2px #000);
+  .transition(all .1s linear);
+  zoom: 1;
+
+  i{
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    vertical-align: middle;
+
+    &.iphone {
+      width: 34px;
+      height: 41px;
+      background: @icons no-repeat -244px top;
+      margin-bottom: 7px;
+    }
+    
+    &.android {
+      width: 35px;
+      height: 41px;
+      background: @icons no-repeat -283px top;
+      margin-bottom: 3px;
+    }
+
+  }
+  &:hover{
+    background-color: @green;
+    color: @white;
+    text-decoration: none;
+    .box-shadow(0 0 0 #000);
+
+    i {
+      &.iphone {
+        background-position: -244px -51px; 
+      }
+
+      &.android {
+        background-position: -283px -51px; 
+      }
+    }
+  }
+}
+
+ul {
+  &.owncon {
+    i {
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      width: 6px;
+      height: 6px;
+      background: @icons no-repeat -323px top;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    li {
+      color: #e1ebfe;
+      font-size: 22px;
+    }
+  }
+}
+
+h1{
+  &.title {
+    font-size: 66px;
+    font-weight: bold;
+    .text-shadow(0 2px 2px #000);
+  }
+
+  &.iam {
+    padding-top: 70px;
+    font-size: 50px;
+  }
+}
+
+div{
+  &.wrap{
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  &.bg_one{
+    padding-right: 130px;
+    height: 900px;
+    background: url(../images/index_img_2.jpg) no-repeat left top;
+  }
+
+  &.online{
+    height: 900px;
+    background: url(../images/index_img_4.jpg) no-repeat left top;
+
+    p {
+      font-size: 38px;
+      line-height: 1em;
+      padding-top: 30px;
+    }
+
+    h1 {
+      padding: 10px 0 20px 0;
+      line-height: 1em;
+    }
+  }
+}
+
+section.header{
+  height: 500px;
+  background: url(../images/index_img_1.jpg) no-repeat left top;
+  padding: 170px 0 30px 0;
+
+  p{
+    font-size: 16px;
+    color: #e1ebfe;
+    text-align: center;
+
+    &.appexplain {
+      height: 63px;
+      line-height: 63px;
+      font-size: 20px;
+      color: #03494b;
+    }
+  }
+
+  div{
+    padding-top: 40px;
+    text-align: center;
+  }
+}
+
+section.geek{
+  height: 900px;
+  padding-left: 105px;
+  background: url(../images/index_img_3.jpg) no-repeat left top;
+}
+
+section.hiring{
+  height: 672px;
+  padding: 400px 0 0 105px;
+  background: url(../images/index_img_5.jpg) no-repeat left top;
+  
+  li {
+    font-size: 24px;
+    color: #fff;
+  }
+
+  aside {
+    width: 106px;
+    height: 69px;
+    margin-left: 220px;
+    background: @icons no-repeat -334px top;
+  }
+
+  p {
+    &.download {
+      padding-bottom: 80px;
+      font-size: 35px;
+      font-weight: bold;
+
+      em {
+        font-weight: normal;
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,92 @@
+@import "../common/var";
+header.global{
+	height: 45px;
+	background-color: @green;
+	color: #fff;
+	.header{
+		width: 990px;
+		margin: 0 auto;
+		.logo{
+			float: left;
+			margin-right: 20px;
+			padding-top: 5px;
+		}
+		.title{
+			float: left;
+			font-size: 15px;
+			padding-top: 20px;
+            font-weight: bold;
+		}
+		.user{
+			float: right;
+			padding-top: 20px;
+			a{
+				color: #fff;
+			}
+		}
+
+			.hello {
+		text-align: right;
+		padding-top: 18px;
+		dl {
+			position: relative;
+			z-index: 4;
+			float: left;
+			text-align: right;
+			height: 26px;
+			cursor: pointer;
+			
+			dt {
+				color: #fff;
+				i {
+					display: inline-block;
+					font-size: 0;
+					overflow: hidden;
+					width: 9px;
+					height: 5px;
+					background: @manage_icons no-repeat -127px -31px;
+				}
+			}
+			dd {
+				position: absolute;
+				right: 0;
+				top: 20px;
+				width: 110px;
+				border: 1px solid #9a9999;
+				background-color: #fff;
+				display: none;
+				line-height: 28px;
+				a {
+					display: block;
+					text-align: left;
+					padding-left: 12px;
+					color: @def;
+					&:hover {
+						color: @blue;
+						//background-color: @green;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		em {
+			margin: 0 10px;
+			color: #88c331;
+		}
+		a {
+			color: #fff;
+
+          &.logout {
+            display: inline-block;
+
+            i {
+              margin-right: 5px;
+              vertical-align: -3px;
+            }
+          }
+		}
+	}
+	}
+
+
+}

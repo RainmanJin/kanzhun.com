@@ -1,0 +1,357 @@
+
+.mask-wrap{
+  overflow: hidden;
+}
+
+.popup {
+  position: relative;
+  float: left;
+  width: 320px;
+  height: 580px;
+  background-color: #44468f;
+  color: #fff;
+  padding: 10px 20px;
+
+
+  .title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  .t_name {
+    width: 90%;
+    padding: 6px 8px;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(45, 47, 121, 0.522);
+    opacity: 0.6;
+    box-shadow: 0.5px 0.866px 2px 0px rgb(142, 133, 114);
+  }
+
+  .company {
+    visibility: visible;
+    margin-top: 20px;
+
+    .info {
+      overflow: hidden;
+      width: 100%;
+      visibility: hidden;
+      .company_logo {
+        float: left;
+      }
+
+      .info_word {
+        float: left;
+        padding-left: 12px;
+
+        .c_name {
+          font-size: 21px;
+          font-weight: bold;
+          line-height: 40px;
+          width:200px;/*对宽度的定义,根据情况修改*/
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        ul li {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+    .ad {
+      margin-top: 30px;
+      position: relative;
+      visibility: hidden;
+      z-index: 3;
+      .count {
+        color: #fee441;
+      }
+      .h2 {
+        font-size: 22px;
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+      .detail {
+        background-color: #32347d;
+
+
+        p {
+          padding: 10px 30px 20px 30px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .friendtip {
+      text-align: center;
+      font-size: 16px;
+      color: rgb(153, 153, 153);
+      position: absolute;
+      bottom: 90px;
+      width: 90%;
+    }
+    .button_wrap {
+      margin-top: 40px;
+      text-align: center;
+      button {
+        background-color: #3e3f72;
+        color: rgb(153, 153, 153);
+        border-radius: 5px;
+        width: 200px;
+        height: 40px;
+        outline: none;
+      }
+    }
+
+    .sugesstion {
+      position: absolute;
+      bottom: 0px;
+    }
+
+  }
+
+/*右侧 曝名理由*/
+.reason {
+  float: left;
+  position: relative;
+  height: 600px;
+  width: 590px;
+  background-color: #f8f3ea;
+  color: #000;
+  padding: 0px 25px;
+  //display: none;
+
+  .title {
+    font-size: 26px;
+    color: rgb(68, 70, 143);
+    font-weight: bold;
+    margin: 10px 0px;
+  }
+
+  ul.items {
+    overflow: hidden;
+    width: 100%;
+
+    li {
+      background-color: #fff;
+      float: left;
+      margin-right: 5px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      &:last-child{
+        margin-right: 0px;
+      }
+
+      &.actived{
+        background-color: #44468f;
+        color: #fff;
+      }
+      img {
+        display: block;
+      }
+    }
+  }
+
+  .reason_item{
+    border: 1px dashed #000000;
+    height: 185px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+
+    & *{
+      visibility: hidden;
+    }
+
+    .up_trangle{
+      .trangle(up,#44468f,10px);
+      position: absolute;
+      top: -20px;
+      left: 50px;
+    }
+
+    &.active{
+      background-color: #44468f;
+      border:0;
+
+      *{
+        visibility: visible;
+      }
+
+
+      ul{
+        overflow: hidden;
+        width:100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #2c2f87;
+        li{
+          border: 1px solid #fff;
+          float: left;
+          padding: 4px 5px;
+          margin: 5px 5px 5px 0;
+          cursor: pointer;
+
+          &.actived{
+            color: #000000;
+            background-color:#fee441;
+          }
+
+          label{
+            cursor: pointer;
+          }
+
+          &.selected{
+            background-color: #fee441;
+            color: #000000;
+          }
+        }
+      }
+
+      ul.cause{
+        display: none;
+      }
+      ul.cause1{
+        display: block;
+      }
+
+      textarea{
+        margin-top: 10px;
+        width: 100%;
+        background-color:#d8d9e8;
+      }
+    }
+  }
+
+  .relation{
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f3e7d3;
+    .h2{
+        font-size: 20px;
+        color: rgb( 68, 70, 143 );
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    span.role{
+      background-color:#e7e4ee;
+      border-radius: 15px;
+      padding: 5px 10px;
+      cursor: pointer;
+
+      &.actived{
+        background-color: #fee441;
+      }
+    }
+
+    /*input[type=radio]{
+        visibility: hidden;
+        &:checked~label{
+          background-color: #fee441;
+        }
+
+    }*/
+  }
+
+  .protocol{
+    padding: 20px 0px;
+    vertical-align: middle;
+    input {
+      float: left;
+      margin-top: 0.5em;
+      margin-right: 5px;
+    }
+    p{
+      width: 400px;
+      float: left;
+      line-height:2em;
+    }
+
+    button{
+      background-color: #ff8313;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 5px 15px;
+      margin: 10px 0px 0px 1em;
+      outline: none;
+    }
+  }
+
+  span.tip{
+    color: #f00;
+    font-size: 16px;
+    display: none;
+    padding-left: 10px;
+  }
+
+}//reason
+
+
+/*三角  上 up   下down 左left 右right */
+.trangle(up,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-bottom: @height dashed @c;
+}
+
+.trangle(down,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-top: @height dashed @c;
+}
+
+
+.trangle(left,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-right: @height dashed @c;
+}
+
+.trangle(right,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-left: @height dashed @c;
+}
+
+.l_trangle{
+  .trangle(left,#f8f3ea,15px);
+  position: absolute;
+  top: 280px;
+  left: -30px;
+  z-index: 5;
+}
+
+
+.autocomplete-suggestions{
+  border: 1px solid #e7e7e7;
+  background: #FFF;
+  cursor: default;
+  overflow: auto;
+
+  .autocomplete-suggestion {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    &.autocomplete-selected {
+      background-color: #007ead;
+      color: #fff;
+    }
+  }
+}
+
+

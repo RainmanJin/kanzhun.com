@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/subway.css"/>
+<title>DEMO</title>
+</head>
+
+<body>
+  <header class="sw"><img src="images/banner.jpg">
+    <a href="#"><img src="http://img.kanzhun.com/images/logo/20140924/dbc35d721b298f53cd8bcda0ad036e60.jpg"></a>
+  </header>
+
+  <div class="co">
+    <p><strong>18000</strong>人想要 &nbsp;&nbsp;排名 <strong>2</strong></p>
+    <p class="warn"><img src="images/warn.jpg">该公司还没有发放补助</p>
+    <p><a class="orange-btn" href="#">拉票求补助</a></p>
+    <p class="warn">请放心，您的诉求看准网将匿名处理！</p>
+  </div>
+
+  <script>
+    var require = {
+      baseUrl: 'js/site/',
+      urlArgs : "v=1.0.1"
+    };
+  </script>
+  <script src="js/lib/jquery-2.1.1.min.js"></script>
+  <script src="js/lib/require.js"></script>
+  <script>
+    require.config({
+      paths: {
+        u: '../utils',
+        s: '.'
+      }
+    });
+    require(['u/wx-share'], function(wxShare){
+      $(function(){
+        wxShare($('a.orange-btn'), '<p>点击右上角的【分享按钮】<br>分享到朋友圈</p>');
+      });
+    });
+  </script>
+</body>
+</html>
+
+

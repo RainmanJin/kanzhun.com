@@ -1,0 +1,23 @@
+require.config({
+  paths: {
+    u: 'js/utils',
+    c: 'js/site',
+    comp: '../../components',
+    highcharts: 'http://s.kanzhun.com/js/utils/highcharts',
+    v2: 'v2/js'
+  }
+});
+
+require(['v2/search/search-left-filter', 'c/company/salary_desc'], function(){
+  $(function(){
+    //工资图标
+    var salaryDesc = require('c/company/salary_desc');
+    $('table.salary-desc').each(function(i, v){
+      salaryDesc({
+        table: $(v),
+        //第一个table是表头，所以这里为1
+        showFirst: i === 1 ? true :false
+      });
+    });
+  });
+});

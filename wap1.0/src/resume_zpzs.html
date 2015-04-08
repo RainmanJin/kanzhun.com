@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>作品展示</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/ugc_page.css">
+</head>	
+<body id="js_zpzs">
+
+<div class="wrapper">
+<div class="content">
+	<header class="page_hd">		
+		<a class="js_back top_back" href="javascript:;" node-type="zpzs"><i></i>返回</a>
+		<strong>作品展示</strong>	
+	</header>
+	<form name="zpzsForm" action="/resume/workshow/store">
+	<section class="field">	
+		<div class="splitInput_2">
+			<p class="divCommonInput bdefault">
+				<input name="linkUrl" type="text" placeholder="作品链接">
+			</p>
+		</div>				
+		<div class="divTextarea_1 bdefault mt20">
+			<textarea name="description" placeholder="说明文字" rows="6" maxlength="500"></textarea>
+		</div>
+		<div class="mt10 grey" style="overflow:hidden"><span class="fright">您可以输入500字</span></div>		      
+	</section>
+	<div class="ml10 mr10 mt10 mb10"><button class="js_submit btn_submit_1" type="button">保存</button></div>	
+	</form>	
+</div>
+</div>
+<footer class="page_ft">
+	<p>电脑版  |  移动版</p>
+	<p>关于我们  |  帮助  |  反馈  |  登录  |  注册 </p>	
+</footer>	
+
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/resume.js"></script>
+</html>

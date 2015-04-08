@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>seo搜索页面页面</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"> </script>
+  <!--[if gt IE 9]><!-->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/widget.css"/>
+  <link rel="stylesheet" href="<%= previewUrl %>/v2/css/search/search-seo.css"/>
+</head>
+
+<body class="bg_ea">
+<% include ../modules/header %>
+
+	<div class="container clearfix">
+        <section class="seo_search_nav mb10">
+            <ul>
+                <li>
+                    <a href="" class="current">职位名称</a>
+                </li>
+                <li>
+                    <a href="">职位面试</a>
+                </li>
+                <li>
+                    <a href="">职位工资</a>
+                </li>
+                <li>
+                    <a href="">职位招聘</a>
+                </li>
+                <li>
+                    <a href="">职位就业</a>
+                </li>
+            </ul>
+        </section>
+        <section class="wrap_style hot_job mb10">
+            <h2 class="mb20">热门职位</h2>
+            <ul class="job_list">
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">IOS开发</a></li>
+                <li><a href="">安卓开发</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">IOS开发</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">UI设计师</a></li>
+                <li><a href="">交互设计师</a></li>
+            </ul>
+        </section>
+        <section class="wrap_style sort_word mb10">
+            <dl>
+                <dt>A</dt>
+                <dd>
+                    <ul class="job_list">
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">安卓开发</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="wrap_style sort_word mb10">
+            <dl>
+                <dt>B</dt>
+                <dd>
+                    <ul class="job_list">
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">安卓开发</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="wrap_style sort_word mb10">
+            <dl>
+                <dt>C</dt>
+                <dd>
+                    <ul class="job_list">
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">安卓开发</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="wrap_style sort_word mb10">
+            <dl>
+                <dt>O</dt>
+                <dd>
+                    <ul class="job_list">
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">安卓开发</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="wrap_style sort_word mb10">
+            <dl>
+                <dt>P</dt>
+                <dd>
+                    <ul class="job_list">
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">安卓开发</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="wrap_style sort_word mb10">
+            <dl>
+                <dt>Q</dt>
+                <dd>
+                    <ul class="job_list">
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">安卓开发</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="wrap_style sort_word mb10">
+            <dl>
+                <dt>Z</dt>
+                <dd>
+                    <ul class="job_list">
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">安卓开发</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">IOS开发</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">UI设计师</a></li>
+                        <li><a href="">交互设计师</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+	</div>
+
+    <footer class="footbottom">
+        <a href="/contact_us.html" title="意见反馈" ka="contact-us-left" target="_blank" class="left-feedback"><i></i>反馈</a>
+        <nav>
+            <a ka="footer-about" href="/about.html" rel="nofollow">关于我们</a><a ka="footer-feedback" href="/contact_us.html" rel="nofollow">意见反馈</a><a ka="footer-help" href="/help.html" rel="nofollow">使用帮助</a><a ka="footer-user" href="/term.html" rel="nofollow">用户协议</a><a ka="footer-weibo" href="http://www.weibo.com/fenzhi" target="_blank" rel="nofollow">看准网微博</a><span
+                    href="" class="site_index">网站索引<div class="index_con clearfix"><span><i></i></span><a href="">职位名称</a><a href="">职位面试</a><a href="">职位工资</a><a href="">职位招聘</a><a
+                            href="" class="last">职位就业</a></div></span><a ka="footer-mobile" href="http://m.kanzhun.com/" target="_blank" id="toMobile" class="a_green" style="color: #7cb228;">移动版</a>
+        </nav>
+        <p>Copyright © 2015 kanzhun.com京ICP备14013441号-1 , kanzhun.com.保留所有版权. 使用这些服务遵守用户协议。</p>
+    </footer>
+</body>
+</html>

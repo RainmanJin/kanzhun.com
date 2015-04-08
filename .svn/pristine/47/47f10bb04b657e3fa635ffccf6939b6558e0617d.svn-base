@@ -1,0 +1,180 @@
+@import "common/var";
+@import "module/reset";
+@import "common/common";
+
+html{
+  font-size: 14px;
+}
+
+body{
+  background: url("@{img-path}/rank_bg.jpg") #06488e no-repeat top center;
+  background-size: 100% auto;
+}
+
+.nav{
+    height: 30px;
+    line-height: 30px;
+    background-color: #fefefe;
+    width: 100%;
+    .home{
+      margin-left: 15px;
+      img{
+        width: 50px;
+        vertical-align: top;
+      }
+    }
+
+    .l_trangle{
+      .trangle(left,rgb(51,51,51),5px);
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+   .tip{
+       font-size: 14px;
+       color: rgb(51,51,51);
+       font-weight: bold;
+   }
+}
+
+.content{
+  position: relative;
+  .title{
+    margin-top: 50px;
+    text-align: center;
+    .mark{
+      width:80%;
+    }
+    .vertical{
+      margin-top: -20px;
+      width:75%;
+    }
+    .word{
+      position: relative;
+      top: -2em;
+      font-size: 1.5rem;
+      color:red;
+      font-weight: bold;
+    }
+  }//title
+
+  .reasons{
+    padding-bottom: 40px;
+     ul li{
+        background-color: #ffffff;
+        border-radius: 10px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+       overflow: hidden;
+       img{
+         vertical-align: top;
+         width: 66px;
+         float: left;
+         padding: 10px;
+       }
+       .h2{
+         font-size: 1.5rem;
+         font-weight: bolder;
+       }
+     }
+  }//reasons
+
+
+}
+
+.foot{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  a{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    color: #ffffff;
+    padding:10px 0px;
+    margin: 0px;
+    border: 0px;
+    width:50%;
+  }
+  .share{
+    background-color: #4564ba;
+  }
+  .company{
+    background-color: #3d3d8b;
+  }
+}
+
+
+
+
+.popup{
+  position: absolute;
+  right: 5px;
+  top: 100%;
+  width: 60%;
+  ul li{
+    border-radius: 6px;
+    background-color: rgb( 51, 51, 51 );
+    opacity: 0.8;
+    color: #ffffff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    img{
+      float: left;
+      width: 30px;
+      margin: 0px 10px;
+    }
+  }
+
+}
+
+
+
+.circle{
+  width: 40px;
+  height: 40px;
+  border: 5px solid  rgb( 51, 51, 51 );
+  border-radius: 50%;
+  background-color: rgb( 255, 255, 255 );
+  position: fixed;
+  right: 10px;
+  top:60%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+
+
+/*三角  上 up   下down 左left 右right */
+.trangle(up,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-bottom: @height dashed @c;
+}
+
+.trangle(down,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-top: @height dashed @c;
+}
+
+
+.trangle(left,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-right: @height dashed @c;
+}
+
+.trangle(right,@c:#000,@height:5px){
+  width: 0;
+  height: 0;
+  border: @height dashed transparent;
+  border-left: @height dashed @c;
+}

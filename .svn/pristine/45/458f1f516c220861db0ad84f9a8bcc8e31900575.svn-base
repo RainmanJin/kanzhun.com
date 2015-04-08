@@ -1,0 +1,194 @@
+@import "../../common/var";
+
+p {
+  //我来发条工资
+  &.op_send {
+    height: 25px;
+    line-height: 25px;
+  }
+}
+
+  //我来发条工资按钮
+a.addsalary {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  font-weight: normal;
+}
+
+i {
+  //工资范围
+  &.chart_s_range {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 65px;
+    height: 17px;
+    background-color: #bcd891;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  //问答的小绿点
+  &.greendot {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 5px;
+    height: 5px;
+    background-color: @green;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+
+  //小三角形
+  &.op_triangle {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  &.s_prompt {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: 15px;
+    height: 15px;
+    background: url(../images/positionimgs/po_imgs2.png) no-repeat center;
+  }
+}
+
+//下拉的小三角
+span {
+  &.doubletriangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+  }
+} 
+
+//职位系列页面标题
+h2 {
+  &.po_tt {
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0px 0 10px;
+
+    a {
+      float: right;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 10px 0 0;
+      color: #fff;
+      font-size: 14px;
+      background-color: #f38100;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      span {
+        float: left;
+        width: 0;
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+        margin-right: 10px;
+        border-width: 13px 13px 13px 0;
+        border-style: dashed solid;
+        border-color: #fff #f38100 #fff #fff;
+        overflow: hidden;
+      }
+    }
+
+    &.po_special_tt {
+      line-height: 1em;
+      padding: 3px 0 13px;
+    }
+  }
+}
+
+//有用图标
+a.m_common {
+  color: @grey_99;
+  text-decoration: none;
+
+  &.marked{
+    color: @grey_99;
+
+    span {
+      &.reliable {
+        background-position: -41px 0;
+      }
+
+      &.toolow {
+        background-position: -59px 0;
+      }
+
+      &.toohigh {
+        background-position: -79px 0;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  span {
+    &.marks {
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      height: 12px;
+      width: 15px;
+      background-image: url(../images/positionimgs/icons.png);
+      vertical-align: middle;
+      margin-right: 5px;
+      vertical-align: -1px;
+    }
+
+    &.reliable {
+      width: 13px;
+      background-position: -99px 0;
+    }
+
+    &.toolow {
+      background-position: -117px 0;
+    }
+
+    &.toohigh {
+      background-position: -136px 0;
+    }
+  }
+
+  &:hover {
+    text-decoration: underline;
+
+    span {
+      &.reliable {
+        background-position: -41px 0;
+      }
+
+      &.toolow {
+        background-position: -59px 0;
+      }
+
+      &.toohigh {
+        background-position: -79px 0;
+      }
+    }
+  }
+}
+
+

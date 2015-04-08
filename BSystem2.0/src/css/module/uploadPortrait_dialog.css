@@ -1,0 +1,15 @@
+.p_dialog.uploadPortrait {
+  width: 550px;
+}
+.p_dialog.uploadPortrait .dialog_con {
+  padding: 0;
+  border: 0;
+}
+.p_dialog.uploadPortrait object {
+  float: left;
+}
+.p_dialog.uploadPortrait h3 {
+  border-bottom: 1px solid #ccc;
+  margin: 0 15px;
+  padding: 15px 0 5px;
+}

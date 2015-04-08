@@ -1,0 +1,80 @@
+@import "common/var";
+@import "modules/common";
+@import "modules/paging";
+@import "modules/right_con";
+@import "modules/left_con";
+@import "modules/btn";
+
+h2.list_tt {
+  font-size: 28px;
+  height: 28px;
+  margin-bottom: 35px;
+  line-height: 28px;
+  font-weight: normal;
+
+  p {
+    font-size: 16px;
+
+    span {
+      font-size: 34px;
+    }
+  }
+}
+
+p.tag {
+  i {
+    margin-right: 10px;
+    vertical-align: -3px;
+  }
+}
+
+div.h_tag {
+  position: relative;
+  padding-bottom: 20px;
+
+  p {
+    &.score {
+      padding-left: 30px;
+
+      em {
+        margin: 0 5px;
+        vertical-align: 1px;
+      }
+    }
+  }
+
+  a {
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+}
+
+section.n_d_l {
+  h2 {
+    height: 90px;
+    padding-left: 30px;
+    line-height: 90px;
+    font-size: 28px;
+  }
+  
+  div {
+    padding-left: 30px;
+  }
+
+  ul {
+    li {
+      i {
+        margin-right: 5px;
+        vertical-align: 2px;
+      }
+      padding-bottom: 10px;
+      color: #666666;
+      font-size: 18px;
+    }
+  }
+}
+
+
+
+

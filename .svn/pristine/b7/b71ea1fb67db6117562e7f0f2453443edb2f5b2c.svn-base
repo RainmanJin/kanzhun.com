@@ -1,0 +1,89 @@
+//公司模块-右侧-写一条评论/面经
+
+@import "../../../../css/common/var";
+
+.average {
+  padding:15px;
+  .title{
+    //margin-top:10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid @grey_e7;
+    font-size: 15px;
+    color: @grey_33;
+    overflow: hidden;
+    span {
+      .ellipsis(ellipsis);
+      width: 10em;
+    }
+    a {
+      float: right;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .item {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .t {
+      text-align:center;
+      font-size:14px;
+      margin-top: 20px;
+      span {
+        font-size:30px;
+        color:#e85253;
+      }
+    }
+    div {
+      padding-left: 24px;
+      border: 1px solid @grey_cc;
+      height: 24px;
+      line-height: 24px;
+      border-radius: 5px;
+      text-indent: 10px;
+      margin: 10px;
+      color: @grey_66;
+      span {
+        float: right;
+        background: #7cb228;
+        padding:0 5px;
+        color: #fff;
+        height:26px;
+        position: relative;
+        top:-1px;
+        right:-1px;
+        border-radius:0 5px 5px 0;
+
+        i.tangle_init{
+          border-width:5px;
+          border-style:dashed solid dashed dashed;
+          border-color:transparent  #7cb228  transparent transparent;
+          vertical-align: 3px;
+          position: absolute;
+          left:-10px;
+          top:35%;
+          display: block;
+        }
+        &.color_o{
+          background: @orange;
+          i.tangle_init{
+            border-color:transparent @orange transparent transparent;
+          }
+        }
+        &.color_r{
+          background: #e97778;
+          i.tangle_init{
+            border-color:transparent #e97778 transparent transparent;
+          }
+        }
+      }
+    }
+    p.employee_share {
+      margin: 0 10px;
+    }
+  }
+}

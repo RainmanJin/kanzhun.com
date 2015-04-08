@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>个人薪酬结果</title>
+  <!--[if lte IE 9]>
+  <script src="../js/html5shiv.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/widget.css" />
+  <link rel="stylesheet" href="../css/remuneration/remuneration.css"/>
+  <script type="text/javascript" src="../js/utils/highcharts.js"></script>
+  <script type="text/javascript" src="../js/site/rem/remuneration.js"></script>
+</head>
+
+<body>
+
+<header class="global">
+  <div class="header">
+    <a href="#" ><img src="../images/logo.jpg" width="136" height="40" class="logo" /></a>
+    <nav>
+      <a href="#">招聘</a>
+      <a href="#">公司</a>
+      <a href="#">工资</a>
+      <a href="#">面试</a>
+      <a href="#" class="mycomment">我要点评</a>
+    </nav>
+    <p class="loginfo"><a href="#">登录</a><a href="#">注册</a></p>
+  </div>
+</header>
+
+<section class="ps_header clearfix">
+  <div class="clearfix">
+    <form action="/companyl/search/" method="get" id="minisearchForm">
+      <input id="MSSQType" value="2" type="hidden">
+      <input name="stype" id="MSSSType" value="" type="hidden">
+      <dl class="select ps_salary_slt" id="minisearchS">
+        <dt ka="top-select"><input type="text" name="" value="公司" readonly="readonly"><div></div><span class="btn"><i></i></span></dt>
+        <dd>
+          <a href="/jobl/p/">职位</a>
+          <a href="/companyl/search/">公司</a>
+          <a href="/salaryl/search/">工资</a>
+          <a href="/interviewl/search/">面试</a>
+        </dd>
+      </dl><input ka="top-input-key" type="text" id="MSSFloor" autocomplete="off" class="ps_ipt yibao" placeholder="公司名称" name="q" maxlength="30" value=""><input ka="top-input-city" type="text" class="ps_ipt city" placeholder="全部城市" id="MSSCity" value="" autocomplete="off"><input type="hidden" id="cityCode" name="cityCode" value=""><span class="btn_grey_ps search"><input ka="top-search" type="submit" value="搜索"></span>
+    </form>
+  </div>
+</section>
+
+<div class="container clearfix ps_con">
+  <section class="r_content">
+    <div class="r_you">
+      <img src="../images/rem/rem_pic.jpg" alt=""/>
+      <h2>Matata的个人薪酬报告</h2>
+      <dl>
+        <dt>个人信息：</dt>
+        <dd class="clearfix">
+          <p><span>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</span>产品经理</p>
+          <p><span>公司</span>互联网行业 / 100-300人 / 北京</p>
+          <p><span>工作经验</span>1年</p>
+          <p><span>工资</span>￥10,000</p>
+        </dd>
+        <dd class="trangle"><i></i></dd>
+        <dd class="edit"><i></i><a href="#">修改</a></dd>
+        <dd class="download"><i></i>下载我的薪酬报告</dd>
+        <dd class="download_tip"><i></i><img src="../images/maskui-close.png" /><span></span>想要知道更多因素对您工资的影响，以及薪酬专家为您提供的涨薪秘籍吗？立即下载您的专属薪酬报告吧！</dd>
+      </dl>
+    </div>
+
+    <div class="r_filter clearfix">
+      <div class="r_filter_i"><i></i>筛选条件：</div>
+      <input type="text" class="r_ifd" value="产品经理" readonly />
+      <input type="text" class="r_ifd" value="互联网" readonly />
+
+      <dl class="select_big mr20">
+        <dt>
+          <input type="button" name="" value="不限地区" />
+          <input type="hidden" name="" value="" />
+          <span class="btn"><i></i></span>
+        </dt>
+        <dd style="display:block">
+          <div>所在地区： <a href="javascript:;" data-val="">北京</a></div>
+          <div>
+            其他地区：
+            <a href="javascript:;" data-val="">上海</a><em>|</em><a href="javascript:;" data-val="">上海</a><em>|</em><a href="javascript:;" data-val="">上海</a><em>|</em><a href="javascript:;" data-val="">上海</a><em>|</em><a href="javascript:;" data-val="">上海</a><em>|</em>
+          </div>
+        </dd>
+      </dl>
+
+      <dl class="select">
+        <dt>
+          <input type="button" name="" value="不限地区" />
+          <input type="hidden" name="" value="" />
+          <span class="btn"><i></i></span>
+        </dt>
+        <dd>
+          <a href="javascript:;" data-val="2014">2014年</a>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="r_warm">
+      <i></i>
+      <p>您的职位数据样本不足。</p>
+      <p>为您推荐： <a href="#">产品经理</a><a href="#">产品经理</a><a href="#">产品经理</a><a href="#">产品经理</a><a href="#">产品经理</a></p>
+    </div>
+
+
+    <div class="r_chart">
+      <h4><i></i>我在北京互联网行业的职业坐标</h4>
+      <div class="r_chart_title">
+        <span>平均工资￥ <b>6800</b></span>
+        <span>最低：￥1222 - 最高：￥23000</span>
+        <span><i class="rect"></i> 职位平均工资</span>
+      </div>
+      <div class="r_chart_c">
+        <p class="loading" style="padding-top: 50px;display: block;"><img src="../images/loading.gif" /></p>
+      </div>
+      <div class="r_chart_line">
+        <div class="line">
+          <div class="inner" style="width:80%;">
+            <i style="left:80%;">80%</i>
+          </div>
+        </div>
+        <p class="intr">你击败了 北京互联网行业 80% 的人</p>
+      </div>
+    </div>
+
+    <p class="mt20 f_16 ml20">数据说明：</p>
+    <p class="ml20">工资水平受地域、行业、公司规模、个人学历、工作经验等多方面因素影响，可下载 <a href="#" class="a_u">matata的薪酬报告</a>，查看您的工资测评详细结果。</p>
+  </section>
+</div>
+
+<section class="maskui_dialog" id="reportDialog" style="display: block">
+  <div class="dialog_con"><a href="javascript:;" class="dialog_close"></a>
+    <p><strong class="f_16">确认信息</strong></p>
+    <p>还需要您确认以下信息，才能生成完整版报告：</p>
+    <form action="">
+      <div class="r_form">
+        <ul>
+          <li style="z-index: 3;">
+            <div class="space">
+              <label class="def"><em>*</em> 学历</label>
+              <dl class="select select_s">
+                <dt>
+                  <input type="hidden" name="degree" value="" class="v" data-necessary="1">
+                  <input type="button" name="degree_s" value="请选择"><span class="btn"><i></i></span>
+                </dt>
+                <dd>
+                  <a href="javascript:;" rel="nofollow" data-val="4">中专</a>
+                </dd>
+              </dl>
+              <p class="err" data-msg="请选择学历！"></p>
+            </div>
+          </li>
+          <li>
+            <div class="space">
+              <label class="def"> 姓名</label> <input type="text" class="ifd" name="fullName" maxlength="30" value="" placeholder="真实姓名" ka="salary-inputname">
+            </div>
+          </li>
+          <li>
+            <div class="space">
+              <label class="def"> 常用邮箱</label> <input type="text" class="ifd" name="email" maxlength="30" value="forlala@163.com" ka="salary-inputemail">
+            </div>
+          </li>
+        </ul>
+
+        <p><input type="submit" class="green_btn" value="下载报告到本地" /><a href="javascript:;" class="disa_btn">发送报告到邮箱</a></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

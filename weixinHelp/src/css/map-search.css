@@ -1,0 +1,343 @@
+.green-btn {
+  background-color: #85c15d;
+  text-align: center;
+  padding: 8px 0;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+input[type=submit].green-btn {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.hollow-btn {
+  text-align: center;
+  padding: 8px 0;
+  color: #f38100;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #f38100;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  line-height: 1.5em;
+}
+.hollow-btn-g {
+  text-align: center;
+  padding: 8px 0;
+  color: #7cb228;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #7cb228;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 4px;
+  background-color: transparent;
+  display: block;
+}
+input[type=button].hollow-btn-g {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.maskui_dialog {
+  width: 100%;
+  display: none;
+}
+.maskui_dialog .dialog_con {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #666;
+  -moz-box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px #666;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.maskui_dialog .dialog_close {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  position: absolute;
+  background: transparent url("../images/maskui-close.png") no-repeat;
+  right: 10px;
+  top: 10px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.maskui_dialog .dialog_close:hover {
+  background-color: #eee;
+}
+.maskui_dialog .dialog_ac {
+  padding: 10px 0 10px;
+  text-align: center;
+}
+.maskui_dialog .dialog_ac p {
+  margin-top: 20px;
+}
+.maskui_dialog .dialog_btn {
+  border: 0;
+  height: 33px;
+  line-height: 33px;
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: #85c15d;
+  width: 100%;
+}
+.maskui_dialog .dialog_btn:hover {
+  text-decoration: none;
+}
+.maskui_dialog .confirm_ok {
+  margin-right: 10px;
+}
+.autocomplete-suggestions {
+  border: 1px solid #d1d1d1;
+  background: #FFF;
+  cursor: default;
+  overflow: auto;
+}
+.autocomplete-suggestions strong {
+  font-weight: bold;
+  color: #007ead;
+}
+.autocomplete-suggestion {
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.autocomplete-selected {
+  background: #007ead;
+  color: #fff;
+}
+.autocomplete-selected strong {
+  color: #ffd;
+}
+header.page_hd {
+  padding: 9px 10px;
+  text-align: center;
+  background-color: #7cb228;
+  position: relative;
+  z-index: 10;
+}
+header.page_hd strong {
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+}
+header.page_hd a {
+  width: 60px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #96c153;
+  border-radius: 2px;
+  color: #fff;
+  position: absolute;
+}
+header.page_hd a.fleft,
+header.page_hd a.top_back {
+  left: 10px;
+}
+header.page_hd a.fright {
+  right: 10px;
+}
+header.page_hd a.top_back {
+  float: left;
+}
+header.page_hd a.top_back i {
+  width: 7px;
+  height: 12px;
+  background: transparent url(http://m.kanzhun.com/images/icons_2.png) no-repeat 0 -35px;
+  display: inline-block;
+  vertical-align: -1px;
+  -webkit-background-size: 100px;
+  -moz-background-size: 100px;
+  background-size: 100px;
+  margin-right: 5px;
+}
+header.page_hd .menu {
+  display: block;
+  left: 10px;
+  width: 40px;
+  height: 36px;
+  padding: 9px 10px 0 0;
+  border: 0;
+  top: 0;
+}
+header.page_hd .menu img {
+  border: 1px solid #96c153;
+  padding: 5px 10px;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+}
+section.search-g {
+  position: relative;
+  z-index: 23;
+  -webkit-box-shadow: 0 0 0 #cccccc;
+  -ms-box-shadow: 0 0 0 #cccccc;
+  box-shadow: 0 0 0 #cccccc;
+}
+.map-search {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 97px 0 0px 0;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+#allmap {
+  height: 100%;
+  width: 100%;
+}
+dl.map-dialog {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+dl.map-dialog dt {
+  color: #e26060;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 10px;
+}
+dl.map-dialog dt span {
+  font-size: 16px;
+  color: #576b95;
+  width: 9em;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
+dl.map-dialog dd {
+  padding-top: 10px;
+}
+dl.map-dialog dd figure {
+  float: left;
+}
+dl.map-dialog dd figure > p {
+  background: url("../../images/weixin/distance.jpg") no-repeat 0 2px;
+  -webkit-background-size: 10px;
+  -moz-background-size: 10px;
+  background-size: 10px;
+  padding-left: 15px;
+  color: #999999;
+}
+dl.map-dialog dd figure img {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #e7e7e7;
+}
+dl.map-dialog dd > div {
+  margin-left: 85px;
+  font-size: 12px;
+}
+dl.map-dialog dd p {
+  color: #999999;
+}
+div.map-err {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  position: fixed;
+  left: 10%;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 50%;
+  z-index: 10;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: -25px;
+  text-align: center;
+}
+div.map-err p {
+  background: url("../../images/weixin/map-err.png") no-repeat;
+  -webkit-background-size: 17px;
+  -moz-background-size: 17px;
+  background-size: 17px;
+  padding-left: 27px;
+  display: inline-block;
+}
+aside.origin {
+  position: fixed;
+  left: 5px;
+  width: 35px;
+  height: 35px;
+  bottom: 5px;
+  z-index: 11111;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 4px #999999;
+  -ms-box-shadow: 2px 2px 4px #999999;
+  box-shadow: 2px 2px 4px #999999;
+}
+aside.origin img {
+  display: block;
+}
+aside.new-pointer {
+  position: absolute;
+  right: 10px;
+  bottom: 100px;
+  width: 35px;
+  height: 35px;
+  z-index: 10;
+  -webkit-box-shadow: 2px 2px 2px #999999;
+  -ms-box-shadow: 2px 2px 2px #999999;
+  box-shadow: 2px 2px 2px #999999;
+  border-radius: 4px;
+}
+aside.new-pointer img {
+  display: block;
+}
+aside.new-pointer p {
+  position: absolute;
+  right: 45px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  padding: 9px 10px;
+  white-space: nowrap;
+  border-radius: 3px;
+  font-size: 12px;
+}
+aside.new-pointer p span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  right: -20px;
+  top: 8px;
+  overflow: hidden;
+}
+aside.new-pointer p span i {
+  background-color: rgba(0, 0, 0, 0.65);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 8px;
+  height: 8px;
+  display: block;
+  margin-top: 5px;
+  margin-left: -4px;
+}

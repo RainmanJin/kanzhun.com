@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>马桶上的招聘节</title>
+  <link rel="stylesheet" href="css/count-down.css">
+</head>
+<body>
+  <a href="http://m.kanzhun.com"><img class="detail-link" src="images/detail-link.png"></a>
+  <span class="middle-helper"></span><div class="middle-content">
+    <div class="banner"><img src="images/timer.png" ></div>
+    <!--<div class="timer">
+      距离报名结束还有 <strong>3</strong> 天
+    </div>-->
+    <div class="btn-apply"><a href="#">立即报名</a></div>
+  </div>
+
+  <!--<footer class="apply"><img src="images/date.png"></footer>-->
+  <!--<footer class="count-down">
+    <dl>
+      <dt><img src="images/remain.png" ></dt>
+      <dd id="applyCountDown"><em>1</em><em>2</em> 时 <em>3</em><em>4</em> 分 <em>5</em><em>6</em> 秒 </dd>
+    </dl>
+  </footer>-->
+  <footer class="count-down">
+    <dl class="wb">
+      <dt><img src="images/remain2.png" ></dt>
+      <dd>
+        <span>微JD热度 <strong>21254</strong></span><span>活动排名 <strong>32121</strong></span>
+      </dd>
+    </dl>
+  </footer>
+
+  <script>
+    var applyCountDown = document.querySelector('#applyCountDown');
+    var fnTimeCountDown = function(dur, o){
+      var f = {
+        zero: function(n){
+          var n = parseInt(n, 10);
+          if(n > 0){
+            if(n <= 9){
+              n = "0" + n;
+            }
+            return String(n);
+          }else{
+            return "00";
+          }
+        },
+        dv: function(){
+          var pms = {
+            sec: "00",
+            mini: "00",
+            hour: "00",
+            day: "00",
+            month: "00",
+            year: "0"
+          };
+          if(dur > 0){
+            pms.sec = f.zero(dur % 60);
+            pms.mini = Math.floor((dur / 60)) > 0? f.zero(Math.floor((dur / 60)) % 60) : "00";
+            pms.hour = Math.floor((dur / 3600)) > 0? f.zero(Math.floor((dur / 3600)) % 24) : "00";
+            pms.day = Math.floor((dur / 86400)) > 0? f.zero(Math.floor((dur / 86400)) % 30) : "00";
+            //月份，以实际平均每月秒数计算
+            pms.month = Math.floor((dur / 2629744)) > 0? f.zero(Math.floor((dur / 2629744)) % 12) : "00";
+          }
+          return pms;
+        },
+        ui: function(){
+          var d = f.dv().day;
+          var h = f.zero(parseInt(f.dv().hour) + 24 * parseInt(d) + '');
+          var m = f.dv().mini;
+          var s = f.dv().sec;
+          var day = h > 99 ? '<em>'+ h.substring(2,3) +'</em>' : '';
+          applyCountDown.innerHTML =
+              '<em>'+ h.substring(0,1) +'</em><em>'+ h.substring(1,2) +'</em>'+ day +'时' +
+              '<em>'+ m.substring(0,1) +'</em><em>'+ m.substring(1,2) +'</em> 分' +
+              '<em>'+ s.substring(0,1) +'</em><em>'+ s.substring(1,2) +'</em> 秒';
+
+          dur--;
+
+          if(dur > -1){
+            setTimeout(f.ui, 1000);
+          }
+
+        }
+      };
+      f.ui();
+    };
+
+
+    //倒计时
+    //第一个参数是系统返回的剩余秒数
+
+    if(applyCountDown){
+      fnTimeCountDown(21600);
+    }
+  </script>
+</body>
+</html>
+
+

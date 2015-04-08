@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>公共样式-弹出框</title>
+  <!--[if lte IE 9]>
+  <script src="../../js/html5shiv.js"></script>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <!--[if gt IE 9]><!-->
+  <script src="../../js/jquery-2.1.0.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../css/module/dialog.css">
+</head>
+<body>
+  <section class="p_dialog" style="display:block">
+    <div class="dialog_con">
+      <h3 class="poptitle">删除</h3>
+      <a href="javascript:;" class="dialog_close maskuiclose"></a>
+      <div class="dialog_alert">
+        <p class="t-center f_14 mt10">确定要删除该简历吗？</p>
+        <p class="t-center mt20">
+          <a href="javascript:;" class="btn_grey_a_s confirm_ok">确定</a>
+          <a href="javascript:;" class="btn_grey_a_s maskuiclose ml20">取消</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="p_dialog" style="display:block">
+    <div class="dialog_con">
+      <h3 class="poptitle">不合适</h3>
+      <a href="javascript:;" class="dialog_close maskuiclose"></a>
+      <div class="dialog_alert">
+        <p class="mb10 f_14 d_con">系统将发送以下内容至用户邮箱</p>
+        <div class="email_con"><textarea name="" id="" cols="30" rows="10" placeholder="这是默认邮件内容"></textarea></div>
+        <p class="t-left mt30">
+          <a href="javascript:;" class="btn_grey_a_s confirm_ok">发送</a>
+          <a href="javascript:;" class="grey_99 ml20">取消</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="p_dialog" style="display:block">
+    <div class="dialog_con">
+      <h3 class="poptitle">面试通知</h3>
+      <a href="javascript:;" class="dialog_close maskuiclose"></a>
+      <div class="dialog_alert">
+        <ul class="notice_con mt20">
+          <li>
+            <label for="" class="ttlabel">收件人</label><em class="f_14">123456789@qq.com</em>
+          </li>
+          <li>
+            <label for="" class="ttlabel">主题</label><input type="text" placeholder="华品博睿：产品经理面试通知" class="ipt pop_ipt">
+          </li>
+          <li>
+            <label for="" class="ttlabel">面试时间</label><input type="text" class="ipt pop_ipt">
+          </li>
+          <li>
+            <label for="" class="ttlabel">面试地点</label><input type="text" placeholder="北京朝阳区西坝河恒川公寓L01" class="ipt pop_ipt">
+          </li>
+          <li>
+            <label for="" class="ttlabel">联系人</label><input type="text" class="ipt pop_ipt">
+          </li>
+          <li>
+            <label for="" class="ttlabel">联系电话</label><input type="text" placeholder="13552100000" class="ipt pop_ipt">
+          </li>
+          <li>
+            <div class="email_con"><textarea name="" id="" cols="30" rows="10" placeholder="请您准时参加面试，如遇特殊情况请提前来电或回复邮件至：caiyaohui@techwolf.cn"></textarea></div><label for="" class="ttlabel">补充内容</label>
+          </li>
+          <li class="options">
+            <a href="javascript:;" class="btn_grey_a_s confirm_ok">确定</a>
+            <a href="javascript:;" class="grey_99 ml20">取消</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="p_dialog interview_notice" style="display:block">
+    <div class="dialog_con">
+      <h3 class="poptitle">通知面试原因</h3>
+      <a href="javascript:;" class="dialog_close maskuiclose"></a>
+      <div class="dialog_alert">
+        <p class="mb10 f_14 d_con">请告诉我您看上他哪点了，以便以后为您推荐更合适的候选人</p>
+        <div class="select_point">
+          <a href="">网页产品经理经理</a><a href="">网页产品经理经理</a><a href="">网页产品经理</a><a href="">网页产品经理</a><a href="">网页产品经理</a><a href="">网页产品经理</a><a href="">网页产品经理经理</a><a href="">网页产品经理经理</a>
+        </div>
+        <p class="mt20"><input type="text" class="ipt mr10 otherreson" placeholder="其他原因"><span class="btn_grey_b"><input type="submit" value="提交"/></span></p>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="p_dialog changepwd" style="display:block">
+    <div class="dialog_con">
+      <h3 class="poptitle mb15">修改密码</h3>
+      <a href="javascript:;" class="dialog_close maskuiclose"></a>
+      <div class="dialog_alert">
+        <p class="mb10"><input type="text" class="ipt" placeholder="当前密码"><i class="ml10 base pwdok"></i></p>
+        <p class="mb10"><input type="text" class="ipt" placeholder="新的密码"></p>
+        <p class="mb10"><input type="text" class="ipt" placeholder="确认密码"></p>
+        <p class="mt20">
+          <a href="javascript:;" class="btn_grey_a_s confirm_ok">确定</a>
+          <a href="javascript:;" class="grey_99 ml20">取消</a></p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

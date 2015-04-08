@@ -1,0 +1,1 @@
+﻿此文件用于存放FE制作的静态资源文件（html,js,css,images）

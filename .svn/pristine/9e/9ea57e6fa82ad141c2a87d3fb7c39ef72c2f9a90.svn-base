@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>搜索无结果</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/weixin.css" />
+</head>	
+<body>
+<header class="header">
+  <a class="fleft">
+    <i class="i i_left"></i> 返回
+  </a>
+  <strong>Boss直聘</strong>
+  <a class="fright">分享</a>
+</header>
+<section class="search">
+  <div class="input_search">
+    <a type="submit"><i class="i i_search"></i></a>
+    <input type="text"/>
+  </div>
+</section>
+<div class="noResult">
+  <div class="l">
+    B<i class="i i_cry"></i>SS
+  </div>
+  <div class="r">
+    <h2>暂时没有符合该搜索条件的职位</h2>
+    <p>请重新修改搜索条件后再搜索</p>
+  </div>
+</div>
+</body>
+</html>
+
+

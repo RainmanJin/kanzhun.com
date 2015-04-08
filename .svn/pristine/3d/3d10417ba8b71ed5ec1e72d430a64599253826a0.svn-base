@@ -1,0 +1,259 @@
+@import "var";
+
+section {
+  &.l_i {
+    width: 322px;
+    float: left;
+    border-right: 1px solid @grey_ee;
+    padding-right: 16px;
+  }
+
+  &.r_i {
+    width: 322px;
+    float: left;
+    padding-left: 16px;
+  }
+}
+
+h2 {
+  &.smalltitle {
+    em {
+      width: 5em;
+    }
+
+    a {
+      float: right;
+      color: @grey_99;
+      cursor: pointer;
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//banner
+div {
+  &.maincontent {
+    width: 677px;
+    height: 282px;
+    background-color: @grey_ee;
+    overflow: hidden;
+    position: relative;
+
+    ul {
+      width: 2031px;
+      height: 282px;
+      .transition(all .2s ease);
+      li {
+        float: left;
+        width: 677px;
+        overflow: hidden;
+        zoom: 1;
+        a.imgshow {
+          display: block;
+          float: left;
+          width: 423px;
+          height: 282px;
+
+          img {
+            width: 423px;
+            height: 282px;
+          }
+        }
+
+        dl {
+          width: 216px;
+          float: left;
+          padding: 10px 0 0 15px;
+
+          dt {
+            font-size: 22px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed @grey_db;
+          }
+        }
+      }
+    }
+  }
+
+  &.innernav {
+    position: absolute;
+    right: 21px;
+    bottom: 5px;
+
+    a {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      line-height: 24px;
+      overflow: hidden;
+      text-align: center;
+      color: @def;
+      font-size: 14px;
+      background: url(../images/icons.png) no-repeat -32px top;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &.on {
+        background-position: -59px top;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+//news_list
+p {
+  &.gossiptt {
+    font-size: 16px;
+
+    em {
+      float: right;
+      color: @grey_99;
+      font-size: 12px;
+    }
+  }
+
+  &.infobtn {
+    a {
+      display: block;
+    }
+  }
+}
+
+dl {
+  &.gossipcon {
+    border-bottom: 1px solid @grey_ee;
+  }
+}
+
+//detail
+h1.newstt {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+aside {
+  &.detailtags {
+    span {
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      padding: 0 15px;
+      margin-right: 10px;
+      background-color: @grey_ee;
+    }
+  }
+
+  &.author {
+    em {
+      display: block;
+    }
+  }
+}
+
+article {
+  &.deatilscon {
+    p {
+      text-indent: 2em;
+      margin-top: 30px;
+    }
+  }
+}
+
+dl {
+  &.cmpinfo {
+    overflow: hidden;
+    zoom: 1;
+    dt {
+      float: left;
+
+      a {
+        width: 83px;
+        height: 83px;
+        padding: 4px;
+        background-color: #fff;
+        border: 1px solid @grey_ee;
+
+        img {
+          width: 83px;
+        }
+      }
+    }
+
+    dd {
+      margin-left: 100px;
+    }
+  }
+}
+
+//404
+div.error{
+  width: 990px;
+  margin: 15px auto 0 auto;
+  background-color: #fff;
+  min-height: 490px;
+
+  dl {
+  &.content {
+    overflow: hidden;
+    zoom: 1;
+    padding: 150px 0 0 160px;
+    dt{
+      float: left;
+      height: 134px;
+      width: 280px;
+      margin-top: 5px;
+      background: url(../images/errors.jpg) no-repeat;
+      &.fiveerror{
+        background-position: left top;
+      }
+      &.fourerror{
+        background-position: left -206px;
+      }
+    } 
+    dd{
+      margin-left: 305px;
+      h1{
+        width: 360px;
+        font-size: 22px;
+        border-bottom: 1px solid #f7f7f7;
+        font-weight: normal;
+      }
+      p{
+        &.youcan{
+          width: 350px;
+          border-top: 1px solid #f2f2f2;
+          padding: 10px 0;
+        }
+        a{
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          color: #797979;
+          padding: 0 15px;
+          border-radius: 15px;
+          background-color: #f6f6f6;
+          border: 1px solid @green;
+          margin-right: 15px;
+          &:hover{
+            background-color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  &.fourcontent {
+    background: url(../images/500and404error.png) no-repeat left top;
+  }
+  
+}
+}

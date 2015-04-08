@@ -1,0 +1,11 @@
+require.config({
+  paths: {
+    u: 'js/utils',
+    c: 'js/site',
+    comp: '../../components',
+    highcharts: 'http://s.kanzhun.com/js/utils/highcharts',
+    v2: 'v2/js'
+  }
+});
+
+require(['v2/search/search-left-filter'], function(){});
